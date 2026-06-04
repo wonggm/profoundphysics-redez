@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article — Profound Physics</title>
+  <meta name="description" content="A physics article from the Profound Physics archive.">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="top-nav" role="banner">
+    <div class="container top-nav__inner">
+      <a class="wordmark" href="./index.html" aria-label="Profound Physics — home">
+        <svg class="wordmark__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <g fill="currentColor">
+            <path d="M16 2 L18 14 L16 16 L14 14 Z"/>
+            <path d="M30 16 L18 18 L16 16 L18 14 Z"/>
+            <path d="M16 30 L14 18 L16 16 L18 18 Z"/>
+            <path d="M2 16 L14 14 L16 16 L14 18 Z"/>
+          </g>
+        </svg>
+        <span>Profound Physics</span>
+      </a>
+      <nav class="top-nav__right" aria-label="Primary">
+        <a class="nav-link" href="./index.html#archive">All articles</a>
+        <a class="nav-link" href="https://profoundphysics.com/" target="_blank" rel="noopener">profoundphysics.com</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="article-page" id="article-page">
+      <div class="container container--narrow" id="article-body">
+        <nav class="article-page__nav" aria-label="Breadcrumb">
+          <a href="./index.html#archive">← All articles</a>
+          <span id="article-nav-next"></span>
+        </nav>
+        <div id="article-content">
+          <!-- Populated by article.js -->
+          <p style="color: var(--color-muted); font-style: italic; padding: 48px 0;">Loading article…</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="wordmark" href="./index.html" aria-label="Profound Physics — home">
+            <svg class="wordmark__mark" viewBox="0 0 32 32" aria-hidden="true">
+              <g fill="currentColor">
+                <path d="M16 2 L18 14 L16 16 L14 14 Z"/>
+                <path d="M30 16 L18 18 L16 16 L18 14 Z"/>
+                <path d="M16 30 L14 18 L16 16 L18 18 Z"/>
+                <path d="M2 16 L14 14 L16 16 L14 18 Z"/>
+              </g>
+            </svg>
+            <span>Profound Physics</span>
+          </a>
+          <p class="footer__tagline">A literary archive of physics — fifty articles, organized by topic, written for the profoundly curious.</p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Read</p>
+          <ul>
+            <li><a href="./index.html#archive">All articles</a></li>
+            <li><a href="https://profoundphysics.com/" target="_blank" rel="noopener">profoundphysics.com</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Colophon</p>
+          <ul>
+            <li>Set in Cormorant Garamond &amp; Inter</li>
+            <li>Math by <a href="https://katex.org/" target="_blank" rel="noopener">KaTeX</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 · A literary physics magazine</span>
+        <span>Built for GitHub Pages</span>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+  <script defer src="./article.js"></script>
+</body>
+</html>

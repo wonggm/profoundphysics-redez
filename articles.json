@@ -1,0 +1,468 @@
+{
+  "meta": {
+    "source": "https://profoundphysics.com/wp-sitemap-posts-post-1.xml",
+    "category_taxonomy": [
+      "relativity",
+      "mathematics",
+      "general-physics",
+      "lagrangian-hamiltonian",
+      "quantum-mechanics"
+    ]
+  },
+  "articles": [
+    {
+      "slug": "general-relativity-for-dummies",
+      "title": "General Relativity for Dummies: An Intuitive Introduction",
+      "date": "2024-09-01",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/general-relativity-for-dummies/",
+      "excerpt": "One of the most beautiful theories of nature ever invented — but often seen as obscure and inaccessible.",
+      "featured": false
+    },
+    {
+      "slug": "special-relativity-for-dummies-an-intuitive-introduction",
+      "title": "Special Relativity for Dummies: An Intuitive Introduction",
+      "date": "2024-09-09",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/",
+      "excerpt": "The universe doesn't work the way your intuition says it does — and that's the most interesting part.",
+      "featured": false
+    },
+    {
+      "slug": "why-time-slows-down-near-a-black-hole",
+      "title": "Why Time Slows Down Near a Black Hole",
+      "date": "2024-09-02",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/why-time-slows-down-near-a-black-hole/",
+      "excerpt": "A gentle walk through gravitational time dilation and the Schwarzschild geometry.",
+      "featured": false
+    },
+    {
+      "slug": "can-light-orbit-a-black-hole-the-physics-explained",
+      "title": "How Light Orbits Around a Black Hole",
+      "date": "2024-09-06",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/can-light-orbit-a-black-hole-the-physics-explained/",
+      "excerpt": "Even light, the fastest thing in the universe, can be bent into a circular path by gravity.",
+      "featured": false
+    },
+    {
+      "slug": "black-hole-orbits",
+      "title": "Black Hole Orbits",
+      "date": "2023-02-08",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/black-hole-orbits/",
+      "excerpt": "What it means for an orbit to live near a black hole — and why stable orbits stop at 3 rₛ.",
+      "featured": false
+    },
+    {
+      "slug": "did-the-big-bang-happen-everywhere-at-once",
+      "title": "Did the Big Bang Happen Everywhere At Once?",
+      "date": "2024-09-05",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/did-the-big-bang-happen-everywhere-at-once/",
+      "excerpt": "The Big Bang was not an explosion into space — it was an expansion of space itself.",
+      "featured": false
+    },
+    {
+      "slug": "the-friedmann-equations-explained-a-complete-guide",
+      "title": "The Friedmann Equations Explained: A Complete Guide",
+      "date": "2024-09-04",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/the-friedmann-equations-explained-a-complete-guide/",
+      "excerpt": "Two equations that govern the entire expansion history of the universe.",
+      "featured": false
+    },
+    {
+      "slug": "metric-tensor-a-complete-guide-with-examples",
+      "title": "The Metric Tensor: A Complete Guide With Examples",
+      "date": "2024-08-27",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/metric-tensor-a-complete-guide-with-examples/",
+      "excerpt": "The metric is the mathematical object that defines distances — and therefore geometry.",
+      "featured": false
+    },
+    {
+      "slug": "the-ricci-tensor",
+      "title": "The Ricci Tensor: What It Is and How to Calculate It",
+      "date": "2025-07-10",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/the-ricci-tensor/",
+      "excerpt": "An important object in differential geometry that also shows up a lot in general relativity.",
+      "featured": false
+    },
+    {
+      "slug": "christoffel-symbols-a-complete-guide-with-examples",
+      "title": "Christoffel Symbols",
+      "date": "2025-07-27",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/christoffel-symbols-a-complete-guide-with-examples/",
+      "excerpt": "Connection coefficients of the Levi-Civita connection — they encode fictitious forces in curved coordinates.",
+      "featured": false
+    },
+    {
+      "slug": "einstein-field-equations-fully-written-out-what-do-they-look-like-expanded",
+      "title": "Einstein Field Equations Fully Written Out",
+      "date": "2024-09-01",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded/",
+      "excerpt": "Fewer than ten years after special relativity, Einstein wrote down the equations that govern spacetime itself. The compact gem is $G_{\\mu\\nu} = 8\\pi G\\, T_{\\mu\\nu}$.",
+      "featured": true,
+      "featured_role": "cornerstone"
+    },
+    {
+      "slug": "derivation-of-einstein-field-equations",
+      "title": "Derivation of the Einstein Field Equations",
+      "date": "2024-08-29",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/derivation-of-einstein-field-equations/",
+      "excerpt": "How the Einstein–Hilbert action leads to the field equations — variation, step by step.",
+      "featured": false
+    },
+    {
+      "slug": "how-to-learn-general-relativity-a-step-by-step-guide",
+      "title": "How to Learn General Relativity: A Step-by-Step Guide",
+      "date": "2024-09-01",
+      "category": "relativity",
+      "original_url": "https://profoundphysics.com/how-to-learn-general-relativity-a-step-by-step-guide/",
+      "excerpt": "A reading path through the math you actually need before you tackle curved spacetime.",
+      "featured": false
+    },
+    {
+      "slug": "gradient-in-different-coordinates",
+      "title": "The Gradient in Different Coordinates",
+      "date": "2024-09-05",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/gradient-in-different-coordinates/",
+      "excerpt": "Why ∇f looks different in Cartesian, polar, and spherical — and what stays invariant.",
+      "featured": false
+    },
+    {
+      "slug": "dot-product-in-physics-what-is-the-physical-meaning-of-it",
+      "title": "Dot Product in Physics: What Is the Physical Meaning?",
+      "date": "2024-09-06",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/dot-product-in-physics-what-is-the-physical-meaning-of-it/",
+      "excerpt": "The dot product isn't just algebra — it is the projection operator in disguise.",
+      "featured": false
+    },
+    {
+      "slug": "legendre-transformations-for-dummies-intuition-and-examples",
+      "title": "Legendre Transformations for Dummies",
+      "date": "2024-09-06",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/legendre-transformations-for-dummies-intuition-and-examples/",
+      "excerpt": "Why the Lagrangian and the Hamiltonian are related by a Legendre transform — and what that means physically.",
+      "featured": false
+    },
+    {
+      "slug": "how-to-learn-vector-calculus",
+      "title": "How to Learn Vector Calculus",
+      "date": "2024-09-05",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/how-to-learn-vector-calculus/",
+      "excerpt": "A practical reading order for divergence, curl, and the integral theorems that follow.",
+      "featured": false
+    },
+    {
+      "slug": "calculus-of-variations-for-beginners",
+      "title": "Calculus of Variations: A Complete Introduction",
+      "date": "2024-09-01",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/calculus-of-variations-for-beginners/",
+      "excerpt": "Another area of mathematics particularly important for physics — finding the function that extremizes a functional. The path integral ℒ dt is the gateway to Lagrangian mechanics.",
+      "featured": true,
+      "featured_role": "cream-1"
+    },
+    {
+      "slug": "generalized-coordinates",
+      "title": "Generalized Coordinates",
+      "date": "2024-09-03",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/generalized-coordinates/",
+      "excerpt": "Why you don't have to use x, y, z — and why choosing smart coordinates makes problems collapse.",
+      "featured": false
+    },
+    {
+      "slug": "constraints-in-lagrangian-mechanics",
+      "title": "Constraints in Lagrangian Mechanics",
+      "date": "2024-09-04",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/constraints-in-lagrangian-mechanics/",
+      "excerpt": "Holonomic, non-holonomic, scleronomic — the taxonomy of constraints and how to handle each.",
+      "featured": false
+    },
+    {
+      "slug": "conservative-and-non-conservative-forces-what-are-the-differences",
+      "title": "Conservative and Non-Conservative Forces: What Are the Differences?",
+      "date": "2024-09-06",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/conservative-and-non-conservative-forces-what-are-the-differences/",
+      "excerpt": "Path-independence is the defining property — and the source of potential energy.",
+      "featured": false
+    },
+    {
+      "slug": "rope-sliding-down-a-table-with-friction-step-by-step-solution",
+      "title": "Rope Sliding Off a Table With Friction: Step-by-Step",
+      "date": "2024-09-07",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/rope-sliding-down-a-table-with-friction-step-by-step-solution/",
+      "excerpt": "A worked example that shows you exactly when to use the Lagrangian and when to reach for F = ma.",
+      "featured": false
+    },
+    {
+      "slug": "friction-in-lagrangian-mechanics",
+      "title": "Friction in Lagrangian Mechanics",
+      "date": "2024-09-05",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/friction-in-lagrangian-mechanics/",
+      "excerpt": "Friction breaks the action principle — here is how to handle it anyway.",
+      "featured": false
+    },
+    {
+      "slug": "is-time-a-vector",
+      "title": "Is Time a Vector?",
+      "date": "2024-09-04",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/is-time-a-vector/",
+      "excerpt": "Why time has magnitude but not direction — and what special relativity forces us to give up.",
+      "featured": false
+    },
+    {
+      "slug": "is-time-always-the-independent-variable",
+      "title": "Is Time Always the Independent Variable?",
+      "date": "2024-09-04",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/is-time-always-the-independent-variable/",
+      "excerpt": "Not in relativistic mechanics, not in parametrized formulations, and not in optics.",
+      "featured": false
+    },
+    {
+      "slug": "physics-study-tips",
+      "title": "Physics Study Tips",
+      "date": "2024-09-03",
+      "category": "mathematics",
+      "original_url": "https://profoundphysics.com/physics-study-tips/",
+      "excerpt": "What actually works when you're learning physics on your own — and what is wasted effort.",
+      "featured": false
+    },
+    {
+      "slug": "if-photons-have-no-mass-how-can-they-have-momentum",
+      "title": "If Photons Have No Mass, How Can They Have Momentum?",
+      "date": "2024-09-06",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/if-photons-have-no-mass-how-can-they-have-momentum/",
+      "excerpt": "Massless particles still carry energy, and E = pc is the bridge between relativity and light.",
+      "featured": false
+    },
+    {
+      "slug": "why-do-photons-have-no-mass-simple-proof",
+      "title": "Why Do Photons Have No Mass: A Simple Proof",
+      "date": "2024-09-06",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/why-do-photons-have-no-mass-simple-proof/",
+      "excerpt": "If a photon had mass, Maxwell's equations would not be gauge invariant.",
+      "featured": false
+    },
+    {
+      "slug": "are-maxwell-equations-relativistic",
+      "title": "Are Maxwell's Equations Relativistic?",
+      "date": "2024-09-05",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/are-maxwell-equations-relativistic/",
+      "excerpt": "Yes — they were relativistic before special relativity. Einstein reverse-engineered them.",
+      "featured": false
+    },
+    {
+      "slug": "how-are-photons-affected-by-gravity-if-they-have-no-mass",
+      "title": "How Are Photons Affected by Gravity If They Have No Mass?",
+      "date": "2024-09-05",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/how-are-photons-affected-by-gravity-if-they-have-no-mass/",
+      "excerpt": "Gravity couples to energy–momentum, not mass — and photons carry plenty of the former.",
+      "featured": false
+    },
+    {
+      "slug": "why-do-moving-charges-create-a-magnetic-field",
+      "title": "Why Do Moving Charged Particles Create a Magnetic Field?",
+      "date": "2024-09-04",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/why-do-moving-charges-create-a-magnetic-field/",
+      "excerpt": "Special relativity plus Coulomb's law is the whole answer. Length contraction does the rest.",
+      "featured": false
+    },
+    {
+      "slug": "why-do-hot-things-glow",
+      "title": "Why Do Hot Things Glow?",
+      "date": "2024-09-05",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/why-do-hot-things-glow/",
+      "excerpt": "Blackbody radiation, Planck's quantization, and why your stove element turns red at exactly the temperature it does.",
+      "featured": false
+    },
+    {
+      "slug": "can-acid-dissolve-glass",
+      "title": "Can Acid Dissolve Glass?",
+      "date": "2024-09-06",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/can-acid-dissolve-glass/",
+      "excerpt": "Hydrofluoric acid is the exception — and the chemistry is genuinely surprising.",
+      "featured": false
+    },
+    {
+      "slug": "is-it-possible-to-melt-or-burn-diamonds",
+      "title": "Is It Possible to Melt or Burn Diamonds?",
+      "date": "2024-09-06",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/is-it-possible-to-melt-or-burn-diamonds/",
+      "excerpt": "Diamond burns in pure oxygen above ~700 °C. Melting requires ~4000 °C and high pressure.",
+      "featured": false
+    },
+    {
+      "slug": "does-flour-dissolve-in-water-and-why-the-science-explained",
+      "title": "Does Flour Dissolve in Water?",
+      "date": "2024-09-01",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/does-flour-dissolve-in-water-and-why-the-science-explained/",
+      "excerpt": "Flour forms a suspension, not a solution — starch granules are too big to dissolve.",
+      "featured": false
+    },
+    {
+      "slug": "does-gravity-do-work",
+      "title": "Does Gravity Do Work?",
+      "date": "2024-09-07",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/does-gravity-do-work/",
+      "excerpt": "It depends on what you mean by 'work' — and the answer reveals a subtle point about potential energy.",
+      "featured": false
+    },
+    {
+      "slug": "gravity-underground",
+      "title": "Gravity Underground",
+      "date": "2024-09-06",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/gravity-underground/",
+      "excerpt": "Below the Earth's surface, gravity actually decreases linearly with depth.",
+      "featured": false
+    },
+    {
+      "slug": "why-do-windows-reflect-at-night-the-physics-explained",
+      "title": "Why Do Windows Reflect at Night?",
+      "date": "2024-09-05",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/why-do-windows-reflect-at-night-the-physics-explained/",
+      "excerpt": "It's not a coating — it's basic Fresnel reflection, weighted by the brightness of what's on each side.",
+      "featured": false
+    },
+    {
+      "slug": "momentum-vs-kinetic-energy-the-key-differences",
+      "title": "Momentum vs Kinetic Energy: The Key Differences",
+      "date": "2024-09-07",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/momentum-vs-kinetic-energy-the-key-differences/",
+      "excerpt": "Two quantities that both involve mass and velocity, and almost nothing in common beyond that.",
+      "featured": false
+    },
+    {
+      "slug": "why-is-there-a-half-in-the-kinetic-energy-formula",
+      "title": "Why Is There a Half in the Kinetic Energy Formula?",
+      "date": "2024-09-06",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/why-is-there-a-half-in-the-kinetic-energy-formula/",
+      "excerpt": "The ½mv² falls out of integrating momentum over distance — the work–energy theorem in disguise.",
+      "featured": false
+    },
+    {
+      "slug": "why-is-momentum-conserved-but-kinetic-energy-is-not",
+      "title": "Why Is Momentum Conserved but Kinetic Energy Is Not?",
+      "date": "2024-09-04",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/why-is-momentum-conserved-but-kinetic-energy-is-not/",
+      "excerpt": "Momentum is conserved in every interaction; kinetic energy is conserved only in elastic ones.",
+      "featured": false
+    },
+    {
+      "slug": "is-classical-mechanics-still-relevant",
+      "title": "Is Classical Mechanics Still Relevant?",
+      "date": "2024-09-04",
+      "category": "general-physics",
+      "original_url": "https://profoundphysics.com/is-classical-mechanics-still-relevant/",
+      "excerpt": "Yes — and not just as an approximation to quantum mechanics. It is a complete theory in its own domain.",
+      "featured": false
+    },
+    {
+      "slug": "lagrangian-mechanics-for-beginners",
+      "title": "Lagrangian Mechanics for Beginners",
+      "date": "2024-08-27",
+      "category": "lagrangian-hamiltonian",
+      "original_url": "https://profoundphysics.com/lagrangian-mechanics-for-beginners/",
+      "excerpt": "The reformulation of mechanics that doesn't need forces — only energies and constraints. The Lagrangian ℒ = T − V is the whole game.",
+      "featured": false
+    },
+    {
+      "slug": "lagrangian-vs-hamiltonian-mechanics",
+      "title": "Lagrangian vs Hamiltonian Mechanics",
+      "date": "2024-09-04",
+      "category": "lagrangian-hamiltonian",
+      "original_url": "https://profoundphysics.com/lagrangian-vs-hamiltonian-mechanics/",
+      "excerpt": "The two most fundamental formulations of classical mechanics, side by side. Same physics, two pictures: configuration space vs phase space.",
+      "featured": false
+    },
+    {
+      "slug": "hamiltonian-mechanics-for-dummies",
+      "title": "Hamiltonian Mechanics for Dummies",
+      "date": "2024-09-03",
+      "category": "lagrangian-hamiltonian",
+      "original_url": "https://profoundphysics.com/hamiltonian-mechanics-for-dummies/",
+      "excerpt": "The Hamiltonian is energy expressed in terms of momentum — and the equations that follow are beautiful.",
+      "featured": false
+    },
+    {
+      "slug": "lagrangian-vs-newtonian-mechanics-the-key-differences",
+      "title": "Lagrangian vs Newtonian Mechanics: The Key Differences",
+      "date": "2024-09-03",
+      "category": "lagrangian-hamiltonian",
+      "original_url": "https://profoundphysics.com/lagrangian-vs-newtonian-mechanics-the-key-differences/",
+      "excerpt": "Newton gives you F = ma. Lagrange gives you a single scalar. They encode the same physics — but the scalar generalizes.",
+      "featured": false
+    },
+    {
+      "slug": "how-is-lagrangian-mechanics-useful",
+      "title": "How Is Lagrangian Mechanics Useful?",
+      "date": "2024-09-05",
+      "category": "lagrangian-hamiltonian",
+      "original_url": "https://profoundphysics.com/how-is-lagrangian-mechanics-useful/",
+      "excerpt": "Beyond its elegance: it's the only formulation that survives the jump to quantum mechanics and field theory.",
+      "featured": false
+    },
+    {
+      "slug": "noethers-theorem-a-complete-guide",
+      "title": "Noether's Theorem: A Complete Guide",
+      "date": "2025-08-27",
+      "category": "lagrangian-hamiltonian",
+      "original_url": "https://profoundphysics.com/noethers-theorem-a-complete-guide/",
+      "excerpt": "Often called the most important theorem in modern physics — symmetry $\\Leftrightarrow$ conservation. The deepest reason energy, momentum, and charge are conserved.",
+      "featured": true,
+      "featured_role": "cream-2"
+    },
+    {
+      "slug": "why-do-electrons-not-fall-into-the-nucleus",
+      "title": "Why Don't Electrons Fall Into the Nucleus?",
+      "date": "2025-09-22",
+      "category": "quantum-mechanics",
+      "original_url": "https://profoundphysics.com/why-do-electrons-not-fall-into-the-nucleus/",
+      "excerpt": "We're made of stable atoms, so something must prevent it. The answer is quantum, not classical — and it follows from $i\\hbar \\partial_t \\psi = \\hat{H}\\psi$.",
+      "featured": true,
+      "featured_role": "cream-3"
+    },
+    {
+      "slug": "time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference",
+      "title": "Time-Dependent vs Time-Independent Schrödinger Equation",
+      "date": "2025-09-22",
+      "category": "quantum-mechanics",
+      "original_url": "https://profoundphysics.com/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference/",
+      "excerpt": "The $i\\hbar \\partial_t \\psi = \\hat{H}\\psi$ and the $\\hat{H}\\psi = E\\psi$ are related — and the relation matters in every quantum problem you will ever solve.",
+      "featured": false
+    }
+  ]
+}
