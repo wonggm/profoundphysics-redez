@@ -125,8 +125,36 @@
         : '';
     }
 
+    // Protect math blocks from marked.js processing
+    const mathBlocks = [];
+    let protectedBody = body;
+
+    // Protect display math $$...$$
+    protectedBody = protectedBody.replace(/\$\$([\s\S]*?)\$\$/g, (match, math) => {
+      const idx = mathBlocks.length;
+      mathBlocks.push({ type: 'display', content: math });
+      return `@@MATH_BLOCK_${idx}@@`;
+    });
+
+    // Protect inline math $...$
+    protectedBody = protectedBody.replace(/\$([^\$\n]+?)\$/g, (match, math) => {
+      const idx = mathBlocks.length;
+      mathBlocks.push({ type: 'inline', content: math });
+      return `@@MATH_BLOCK_${idx}@@`;
+    });
+
     // Convert markdown to HTML
-    const html = window.marked.parse(body);
+    let html = window.marked.parse(protectedBody);
+
+    // Restore math blocks
+    html = html.replace(/@@MATH_BLOCK_(\d+)@@/g, (match, idx) => {
+      const block = mathBlocks[parseInt(idx)];
+      if (block.type === 'display') {
+        return `$$${block.content}$$`;
+      } else {
+        return `$${block.content}$`;
+      }
+    });
 
     const content = document.getElementById('article-content');
     if (content) {

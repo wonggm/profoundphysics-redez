@@ -50,6 +50,8 @@ Here we’ve arrived at Newton’s interpretation of how light is affected by gr
 
 We can apply all of Newton’s laws here – his third law tells us that the photon also doesn’t exert a force on the star and his first law tells us that since there is no force of gravity acting on the photon, **the photon travels in a straight line**!
 
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_2.jpg)
+
 These laws seemed infallible for a long time – they described everything we saw on Earth well for a long time. An issue came up with the orbit of Mercury.
 
 The technical term for this is orbital precession but we’ll get on to what that exactly means in a moment. First, we just need to know one fact: **orbits in Newtonian gravity are ellipses** – they look like squashed circles.
@@ -70,6 +72,8 @@ Specifically, we’ll discover that:
 - **Geodesics can be thought of as the shortest paths between two points**.
 - **In general relativity, the shortest path between two points might not always be a straight line**.
 - **Sometimes the shortest distance a photon can take between two points may actually be along a curved path, in which case it would appear to us that gravity has an effect on the photon’s path**.
+
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_4.jpg) 
 
 It may be funny to think that the shortest distance between two points could possibly be anything other than a straight line, but in general relativity, it indeed can. This is one of the many peculiarities of the theory.
 
@@ -120,6 +124,8 @@ With this in mind, Pythagoras’ theorem would read:
 $$ds^2=dx^2+dy^2$$
 
 This is what we call the **line element in Euclidean geometry**. This extends (like Pythagoras’ theorem) to three dimensions as ds2=dx2+dy2+dz2.
+
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_6.jpg)
 
 This line element describes a small distance *in space*. However, in general relativity, we model everything by describing **not only space, but spacetime**.
 
@@ -184,6 +190,8 @@ We can describe the position of something in space by three coordinates (x,y,z) 
 
 Instead, we use spherical coordinates (r, θ, φ) which describes **a radius r** and **two angles of rotation**:
 
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_8.jpg)
+
 Essentially, **we describe a point in space by specifying two angles and a radial coordinate** (distance from the center).
 
 In this way, spherical coordinates cover all the same space as (x, y, z) do and are equivalent but sometimes much easier to work with!
@@ -214,6 +222,8 @@ In the same manner, **gravity also affects distances in the Schwarzschild spacet
 
 With **line elements**, **metrics**, and **worldlines** safely under our belts, we can tackle the question at hand: How does gravity affect matter? And most importantly for us, **how does gravity affect photons if they have no mass**?
 
+[![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_10.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
 ## How Does Gravity Affect The Path of a Photon?
@@ -230,6 +240,8 @@ These paths have special names – **geodesics**! They can be assigned three dif
 
 To tell us about these paths, we define the line element in a specific way since this is telling us intimate details about the **geometry of our spacetime**. By convention, we say:
 
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_12.jpg)
+
 The important thing is that **light travels on a null geodesic** – We can now understand how gravity affects a photon by looking at these null geodesics in any given spacetime with gravity.
 
 Let’s think about this physically for a moment: we said before that ds2 is like a **distance in spacetime**, so a null geodesic means that light travels on paths that have *zero spacetime distance*.
@@ -239,6 +251,8 @@ This sounds funny but in general relativity, this is indeed possible; a photon c
 So essentially, **photons travel along the shortest paths through spacetime and at the same time, these paths always have zero spacetime length**. In this sense, it doesn’t make sense to talk about a “shortest distance” in spacetime for a photon, since the spacetime distance is always zero.
 
 In any case, **photons move along null geodesics in spacetime**. The shape and form of these geodesics depends on the spacetime we’re in.
+
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_14.jpg)
 
 Now, **how do we actually find the geodesics of photons**? The simplest and most brute force approach to get the trajectory is via the **geodesic equation**:
 
@@ -449,6 +463,8 @@ Essentially, this deflection angle describes how much a light ray would get bent
 
 This can be observed by looking at light rays (photons) coming from a distant star – since the light rays get deflected as they pass the Sun, for us, the distant star would appear to be in a **different position in the sky** compared to where we would expect it to be.
 
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_16.jpg)
+
 For some context, if we consider light just grazing the sun, this gives a measurement of 1.75 arcseconds – Arthur Eddington verified this empirically in 1919 and it was a key result in verifying general relativity experimentally!
 
 **The deflection angle δ is typically very small**. For scale, an arcsecond is 1/3600th of a degree – so the result is very very small as expected – but crucially it is *not zero* as we would expect in Newtonian gravity!
@@ -464,6 +480,8 @@ $$r\left(\varphi\right)=\frac{D^2}{M}\frac{1}{1+C\cos\varphi+\frac{D}{M}\sin\var
 Note; this is in units where G=c=1. In case you’re familiar with standard orbital mechanics, this may look somewhat similar to Kepler’s orbit equation describing, for example, the elliptical orbits of planets. In a sense, this is a more complicated “orbit equation” that describes the orbit of a photon.
 
 This describes the distance r of the photon to the star as a function of the angle φ in polar coordinates (see picture below).
+
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_18.jpg)
 
 From this, we can derive the deflection angle δ=4GM/c2D. You’ll see the full derivation of this below.
 
@@ -587,6 +605,8 @@ D and φ0 here are just some arbitrary constants that appear when we solve this 
 
 D, however, has some physical meaning for us – recall that since u=1/r , then D=r sin(φ − φ0). But in polar coordinates, we have y=r sin(φ) – this tells us that D is the vertical distance from a purely radial ray:
 
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_20.png)
+
 Not only does D have physical meaning but we can interpret this entire solution as the whole straight line a distance D from a purely radial ray. A straight line is exactly what we’d expect if there were zero gravity!
 
 Now, with this “no-gravity solution” in our hands, let’s try to obtain the full equation (with the “gravitational part” as well)!
@@ -645,6 +665,8 @@ Now, here comes the geometry part – let’s calculate the angle of deflection.
 
 Let’s choose the angles that the light comes in and leaves to be −ε1 and π+ε2, like in this diagram:
 
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_22.png)
+
 The figure isn’t quite drawn to scale, as otherwise we wouldn’t be able to see the important details on it, but it represents the path of the light that we’re considering. On this diagram, the angle that the light gets deflected is called δ. This is the change in the actual position of the star versus where we perceive the star!
 
 We know that this effect is small so ε1 and ε2 are both very small too. Since these are angles, we want to plug these in to our solution u(φ).
@@ -674,6 +696,8 @@ We can see that the arbitrary constant C had no physical meaning in terms of our
 Now we just need to figure out what ε1+ε2 means in relation to our deflection angle, the thing we want to calculate.
 
 By drawing two parallel lines to our horizontal line in the previous diagram, we can write the straight line trajectories as:
+
+![](../assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_24.png)
 
 How do we read this? The bottom horizontal line is our original line (the x-axis, essentially) and the two crossed lines are the straight lines we draw at angles −ε1 and ε2+π.
 

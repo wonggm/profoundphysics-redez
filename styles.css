@@ -206,7 +206,7 @@ input, textarea {
   margin-inline: auto;
   padding-inline: var(--s-lg);
 }
-.container--narrow { max-width: var(--container-narrow); }
+.container--narrow { max-width: 80%; margin-inline: auto; }
 
 /* ---------- Top nav ---------- */
 .top-nav {
@@ -783,11 +783,15 @@ input, textarea {
 .footer { --reveal-delay: 1800ms; }
 
 /* ---------- KaTeX adjustments ---------- */
-katex, .katex { font-size: 1.05em; }
+katex, .katex { font-size: 1.1em; }
 .katex-display {
-  margin: 0.5em 0;
+  margin: 1.5em 0;
   overflow-x: auto;
   overflow-y: hidden;
+  text-align: center;
+}
+.katex-display > .katex {
+  text-align: center;
 }
 
 /* ---------- Per-article long-form reading styles ---------- */
@@ -842,6 +846,13 @@ katex, .katex { font-size: 1.05em; }
   color: var(--color-body-strong);
 }
 .article-page__body p { margin-block: 0 1.2em; }
+.article-page__body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--r-lg);
+  margin: 1.5em 0;
+  display: block;
+}
 .article-page__body h2 {
   font-family: var(--font-display);
   font-size: 32px;

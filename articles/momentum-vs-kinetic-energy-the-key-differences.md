@@ -98,6 +98,8 @@ One of the most obvious differences between kinetic energy and momentum is that 
 
 This means that kinetic energy actually increases way faster with velocity as momentum does. A nice way to visualize this is by graphing them both as shown below.
 
+![](../assets/images/momentum-vs-kinetic-energy-the-key-differences/img_2.jpg)
+
 From this graph, we can see that kinetic energy will begin to increase much more rapidly than momentum once the velocity is greater than 2 m/s.
 
 Intuitively, the formula for momentum makes perfect logical sense as it is just the product of mass and velocity (although this definition is not entirely correct, as we’ll see later).
@@ -302,6 +304,8 @@ Now, momentum being negative is somewhat arbitrary since it only depends on whic
 
 Let’s say the positive direction is to the right and there is an object moving to the left with mass m and velocity v. In this case, the velocity and momentum are negative.
 
+![](../assets/images/momentum-vs-kinetic-energy-the-key-differences/img_5.jpg)
+
 The kinetic energy for this object will be:
 
 $$T=\frac{p^2}{2m}=\frac{\left(-mv\right)^2}{2m}=\frac{mv^2}{2}$$
@@ -337,6 +341,8 @@ In the case of multiple objects, however, it’s possible to have no momentum (z
 In the case of a **single object**, this is easy to see directly from the formula T=p2/2m. If the momentum of this object is zero, the kinetic energy will be as well.
 
 However, the case with **multiple objects** is easiest to understand through an example. Let’s say we have two objects of the same mass moving in opposite directions with the same velocity (equal magnitude but different sign). This means that they have **equal but opposite momentum**:
+
+![](../assets/images/momentum-vs-kinetic-energy-the-key-differences/img_7.jpg)
 
 In this case, the kinetic energy will be the **sum of the kinetic energies of each object**:
 
@@ -436,6 +442,8 @@ $$\Delta T=\int_{v_1}^{v_2}\vec{p}\cdot d\vec{v}$$
 Technically, this is actually a **line integral**, which simply means an integral along a specific path.
 
 Now, the physical meaning of this is that **by adding up (integrating) all the momenta at each point along a path described by a certain velocity at each point, we can calculate the total change in kinetic energy** between the end points of the path (see the picture below).
+
+![](../assets/images/momentum-vs-kinetic-energy-the-key-differences/img_9.jpg)
 
 Also, the mathematical proof you can use to verify that this works is extremely easy; just plug in p=mv and calculate the integral. You can see this quite easily by simply writing out the dot product and splitting out the integrals component by component:
 
@@ -555,6 +563,8 @@ $$T=\frac{p^2}{2m}-\frac{p^4}{8m^3c^2}+\frac{p^6}{16m^5c^4}+...$$
 
 From this, it may be easier to see the similarity to the classical equation:
 
+![](../assets/images/momentum-vs-kinetic-energy-the-key-differences/img_11.jpg)
+
 **The classical limit** is defined as the limit in which the speed of light c is MUCH larger than the velocity (or momentum). In this limit, all terms containing c in the denominator can be approximated as zero (since c is such a large number) and we retain the usual p2/2m relation.
 
 In special relativity, there is also an **analogous relation of momentum as the derivative of kinetic energy**. It is, however, slightly different as it contains an extra factor of γ2:
@@ -600,6 +610,8 @@ $$E\approx mc^2+\frac{p^2}{2m}-\frac{GMm}{r}$$
 This is the usual total energy for an object in a gravitational field. The first term is the **rest energy** (E=mc2), the second term is the **kinetic energy** and the last term is the **potential energy**.
 
 Anyway, the bottom line here is that **while there is definitely a concept of momentum in general relativity** (it’s actually called *four-momentum*, but that’s another story), **there does not exist a general definition of kinetic energy**.
+
+[![](../assets/images/momentum-vs-kinetic-energy-the-key-differences/img_13.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 

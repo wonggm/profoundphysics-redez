@@ -92,6 +92,8 @@ Down below I’ve collected the key concepts of general relativity, but for now,
 
 - These distances (more accurately, the square of the distance) are, in their most general form, described by the following equation:
 
+![](../assets/images/general-relativity-for-dummies/img_2.jpg)
+
 This ds2 is called “the line element of the metric gµν” and in general relativity, we typically represent a given spacetime by its line element, which has this form. At this point, I would highly recommend you read my [full guide on the metric tensor.](https://profoundphysics.com/metric-tensor-a-complete-guide-with-examples/)
 
 - An important principle underlying general relativity is the **equivalence principle**, according to which gravity and acceleration are completely equivalent, except for one thing; **tidal forces**. Tidal forces are something that can only appear due to gravity and they turn out to be the key thing in **defining gravity in general relativity**.
@@ -100,9 +102,13 @@ This ds2 is called “the line element of the metric gµν” and in general rel
 
 - **Objects under the influence of gravity move on geodesics through spacetime**. A geodesic is essentially just a straight line, along which an observer **does not experience any forces or acceleration**. Geodesics can be calculated from the **geodesic equation**:
 
+![](../assets/images/general-relativity-for-dummies/img_4.jpg)
+
 - This also describes how **gravity is not actually a force**. An object moves through spacetime in a straight line (geodesic), but if the spacetime is curved (gravity is present), this line will follow the curvature and may change direction (like if you were moving on the surface of a sphere, for example). This effect we call *gravity*. **So, gravity is not really a force, but rather a manifestation of the structure of spacetime.**
 
 - Sources of gravity (spacetime curvature) are described by the **Einstein field equations**. These describe how things such as energy, momentum, pressure and stresses (i.e. the *energy-momentum tensor*) cause the curvature of spacetime:
+
+![](../assets/images/general-relativity-for-dummies/img_6.jpg)
 
 Now, all of this may be a little overwhelming at first, but it will become more clear later when we discuss everything in much more detail and see just how all of these “pieces” fit together.
 
@@ -252,6 +258,8 @@ For the context of general relativity and physics, here are some important facts
 - **An equation involving ONLY tensor quantities is the same in all coordinate systems**. Thus, the laws of physics should be these kinds of equations, in other words, tensor equations.
 - **Vectors and scalars are mathematically also considered to be tensors**. Thus, they are also good for formulating the laws of general relativity.
 
+![](../assets/images/general-relativity-for-dummies/img_8.jpg)
+
 Interestingly, the use of tensors and this property of covariance can even explain **why specifically a moving charge creates a magnetic field**. I discuss the physics behind this phenomenon in [this article](https://profoundphysics.com/why-do-moving-charges-create-a-magnetic-field/).
 
 Now, the importance of tensors might not become clear before you actually start doing some calculations with them, so the bottom line for why tensors are used in general relativity goes as follows:
@@ -310,6 +318,8 @@ $$ds^2=g_{\mu\nu}dx^{\mu}dx^{\nu}$$
 In the above formula (and throughout this article), we will be taking advantage of the **Einstein summation convention**.
 
 This simply means that whenever there is an index repeated in both the upstairs and downstairs position, it is automatically summed over (from 0 to 3).
+
+![](../assets/images/general-relativity-for-dummies/img_10.jpg)
 
 I’d recommend not getting hung up on these mathematical details.
 
@@ -405,6 +415,8 @@ This definition really only works in “ordinary” space, which is not curved (
 
 The metric tensor then simply gives a measure of **how the basis vectors are aligned**, which is enough to determine the geometry of the space itself.
 
+![](../assets/images/general-relativity-for-dummies/img_13.jpg)
+
 The metric tensor (in 4-dimensional spacetime) can be represented as a 4×4 (symmetric) matrix as shown down below.
 
 Typically in general relativity, **the metric is written in terms of its line element**, ds2, by writing out the sum (see the formula from earlier). We’ll see how this works in practice later on.
@@ -422,6 +434,8 @@ This, we will do in 3-dimensional space as purely a mathematical example, so the
 The way this is done is by using spherical coordinates (r,θ,φ), which are related to the usual x,y,z coordinates like this:
 
 $$x=r\cos\varphi\sin\theta\\y=r\sin\varphi\sin\theta\\z=r\cos\theta$$
+
+![](../assets/images/general-relativity-for-dummies/img_15.png)
 
 Image source: [Andeggs, Public domain, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:3D_Spherical.svg).
 
@@ -467,6 +481,8 @@ There are essentially *two ways* to define the Christoffel symbols.
 
 This helps to understand what exactly the Christoffel symbols tell us about the structure of a space itself (or more accurately, the structure of the coordinate system you happen to be using):
 
+![](../assets/images/general-relativity-for-dummies/img_17.jpg)
+
 Down below, I’ve got a nice visual example of what these different Christoffel symbol components really represent.
 
 The key point here is that **the Christoffel symbols encode information about how the basis vectors change throughout spacetime**.
@@ -481,11 +497,15 @@ Let’s say we have some **arbitrarily curved coordinate system with the coordin
 
 **Now we will move along the x1-axis and see how the basis vector e2 changes**. The change in a vector along a coordinate axis is simply the (partial) derivative with respect to that particular coordinate. Here’s what we have in a picture form:
 
+![](../assets/images/general-relativity-for-dummies/img_19.png)
+
 To avoid clutter, I’ve dropped the vector signs above these basis vectors.
 
 This derivative vector (the red vector in the picture) can also **be divided into its components along the x1 and x2 axes**.
 
 This is done by **taking the dot product of this red vector with the different basis vectors** (in general, any single component of a vector can be calculated like this; for example, the y-component of an ordinary velocity vector is the dot product of the total velocity vector with the unit vector in the y-direction). These are the components of the Christoffel symbols (again, don’t pay much attention to the upstairs and downstairs index placement):
+
+![](../assets/images/general-relativity-for-dummies/img_21.png)
 
 In other words, **Christoffel symbols geometrically represent different components of the derivatives of basis vectors**. In general relativity, this is represented by greek indices (which run from 0 to 3) in spacetime as:
 
@@ -610,6 +630,10 @@ Here, I’ve written out the gradient vector and the e’s denote the basis vect
 
 Let’s now compare this to the definition of the Christoffel symbol in terms of the metric. The key idea here is to note that **the metric itself represents the gravitational potential in general relativity**.
 
+![](../assets/images/general-relativity-for-dummies/img_23.jpg)
+
+![](../assets/images/general-relativity-for-dummies/img_25.jpg)
+
 The link between the Christoffel symbols and the Newtonian gravitational field is the **weak-field limit**, in which the Christoffel symbols actually reduce pretty much exactly to the **Newtonian gravitational field**.
 
 This can be seen nicely by looking at geodesics in the weak-field limit and the corresponding Christoffel symbols, which you can read more about in [this article](https://profoundphysics.com/christoffel-symbols-a-complete-guide-with-examples/).
@@ -660,6 +684,8 @@ For example, in a *rotating* coordinate system (but in flat spacetime), the Chri
 
 It is only in **curved spacetime** that the Christoffel symbols MAY happen to have a nice interpretation of a gravitational force.
 
+[![](../assets/images/general-relativity-for-dummies/img_27.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
 ### The Covariant Derivative
@@ -688,6 +714,8 @@ In general relativity, since we are dealing with curved spacetime and curved coo
 The covariant derivative fixes that since it takes into account these coordinate changes as well.
 
 Therefore, **we should use covariant derivatives if we’re dealing with curved spaces** (although there are some exceptions where ordinary derivatives work fine in curved spaces too).
+
+![](../assets/images/general-relativity-for-dummies/img_29.jpg)
 
 Where Does The Covariant Derivative Actually Come From? (click to see more)
 
@@ -729,6 +757,8 @@ $$\frac{\partial\vec{A}}{\partial x^{\mu}}=\vec{e}_{\lambda}\frac{\partial A^{\l
 
 This thing in the parenthesis is defined as the covariant derivative:
 
+![](../assets/images/general-relativity-for-dummies/img_31.png)
+
 So, really the covariant derivative simply comes from the fact that the basis vectors are not constant in a curved spacetime.
 
 In general relativity, the main use of the covariant derivative is that it’s a covariant version of the ordinary derivative (ordinary partial derivatives are NOT covariant in general).
@@ -748,6 +778,8 @@ To do this, let’s consider the definition of a **directional derivative** (in 
 $$\vec{v}\cdot\vec{\nabla}f=v^x\frac{\partial f}{\partial x}+v^y\frac{\partial f}{\partial y}+v^z\frac{\partial f}{\partial z}$$
 
 This directional derivative tells you **the rate of change of the function f in the direction of the vector v**:
+
+![](../assets/images/general-relativity-for-dummies/img_33.png)
 
 An important aspect of the directional derivative is that **if the directional derivative is zero, this means that the function f is constant in the direction of the vector v**.
 
@@ -829,9 +861,15 @@ We’ll also see how all of these will piece together to produce a beautiful the
 
 - **The Riemann tensor**: this tensor gives a complete description of any curved space and is really all that is needed to describe spacetime curvature completely. The Riemann tensor is built out of derivatives and products of Christoffel symbols (or written in terms of the metric, basically second derivatives and “squares” of the metric):
 
+![](../assets/images/general-relativity-for-dummies/img_35.jpg)
+
 - **The Ricci tensor**: this tensor is built from the Riemann tensor, but it contains less information about the curvature. This tensor is, however, needed for general relativity and the Einstein field equations. Physically, the Ricci tensor describes how the *spacetime volume* of an object changes due to tidal forces (spacetime curvature). The Ricci tensor is mathematically defined as the *contracted Riemann tensor*:
 
+![](../assets/images/general-relativity-for-dummies/img_37.jpg)
+
 - **The Ricci scalar**: this tensor is actually a scalar (as the name may suggest), which is just a single number. Physically, the Ricci scalar describes the total change in the *spacetime volume* of an object (but does not give any information about the change in each direction specifically unlike the Ricci tensor). The Ricci scalar is the *contraction of the Ricci tensor*:
+
+![](../assets/images/general-relativity-for-dummies/img_39.jpg)
 
 - **The Einstein Tensor**: this tensor shows up in the Einstein field equations and it is useful for simplifying the equations a little bit. The Einstein tensor does not have any particularly important physical meaning and in some sense, it is just a convenient simplification. The Einstein tensor is defined in terms of the Ricci tensor and the Ricci scalar:
 
@@ -855,9 +893,13 @@ Imagine we have a vector that we move around some small loop in a curved spaceti
 
 Below I have a picture of this in two dimensions (since I can’t actually draw a four-dimensional spacetime).
 
+![](../assets/images/general-relativity-for-dummies/img_41.jpg)
+
 Technically, this spacetime is not really curved since it’s drawn on a *flat* two-dimensional computer screen. For the sake of intuition though, try to picture how this would look on a real curved surface (for example, a terrain with lots of hills and bumps).
 
 **The Riemann curvature tensor then describes how the components of this vector change due to curvature** (this is, in fact, enough to fully describe the curvature of any space).
+
+![This image has an empty alt attribute; its file name is image-15.jpg](../assets/images/general-relativity-for-dummies/img_43.jpg)
 
 Down below you’ll find a more mathematical way to see where the Riemann tensor actually comes from, which should be enlightening.
 
@@ -886,6 +928,8 @@ The way we can get a mathematical expression for this is by imagining we have so
 We then parallel transport it around a loop in two different ways (see the picture below): **first, we parallel transport it along the coordinate xν (path 1) and then along the other coordinate xµ (path 2)**. Then we do the same thing but in **opposite order** (so first along xµ, path 3 and then along xν, path 4).
 
 Now, if we imagine this loop as being very very small (infinitesimally small, to be exact), then parallel transporting the vector will really correspond to **taking the covariant derivative with respect to that coordinate**.
+
+![](../assets/images/general-relativity-for-dummies/img_45.png)
 
 When we do this, we may or may not end up having the vector orient in the same direction by doing it both ways. In fact, **if the vector ends up pointing in a different direction when doing it along paths 1 and 2 than by along paths 3 and 4, then the space must indeed be curved** (since the vector will change its direction differently depending on how it’s moved around in the space).
 
@@ -939,6 +983,8 @@ Now, while I can’t really draw a proper four-dimensional spacetime, it’s sti
 
 Imagine we have a two-dimensional spacetime with **two geodesics that enclose a volume between them** (practically it’s an area since we’re in two dimensions, but imagine it as a volume):
 
+![](../assets/images/general-relativity-for-dummies/img_47.jpg)
+
 Now, the Ricci tensor is useful for describing curvature mathematically in general relativity, but does it also have a specific physical meaning?
 
 **In short, the physical meaning of the Ricci tensor is that it describes how the spacetime volume of an object changes along a geodesic. Physically, the components of the Ricci tensor can be thought of as describing how much the spacetime volume of an object changes in each direction due to tidal forces.**
@@ -981,6 +1027,8 @@ The energy-momentum tensor tells us how **four-momentum flows through spacetime*
 
 Four-momentum in special relativity is a vector that combines both energy and momentum, which you can read about in [this special relativity article](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/) if you’re not familiar with the concept.
 
+![](../assets/images/general-relativity-for-dummies/img_49.jpg)
+
 The continuity equation for the energy-momentum tensor, ∇νTµν=0 is the statement of energy and momentum conservation laws in general relativity.
 
 The different components of the energy-momentum tensor therefore describe **how energy and momentum “flow through time”** (= energy and momentum density).
@@ -989,9 +1037,11 @@ The energy-momentum tensor also describe **how they flow through space** (= ener
 
 The components of the energy-momentum tensor can be nicely represented as a matrix:
 
- 
+![](../assets/images/general-relativity-for-dummies/img_51.jpg) 
 
 Here, I’ve written the components by using the coordinates (t,x,y,z) instead of just (0,1,2,3) to make the meaning of these components easier to understand intuitively:
+
+![](../assets/images/general-relativity-for-dummies/img_53.jpg)
 
 If you’re familiar with engineering mechanics, the purple part (the space-only components) is usually called the Cauchy stress tensor, which is used to study the elasticity of materials. In some sense, the energy-momentum tensor is just a relativistic extension of the Cauchy stress tensor.
 
@@ -1054,6 +1104,8 @@ Eventually, you’ll still end up where you started (you’ve looped around the 
 Thus, **the effect of curvature will determine how a straight line trajectory actually looks like** (in this case, curvature of the sphere).
 
 To you, it seemed as though you were heading on a straight line all along, but clearly if you went around the sphere, the trajectory was not really straight.
+
+![](../assets/images/general-relativity-for-dummies/img_55.jpg)
 
 Now, how does all this relate to physics? The best way to understand this is to think about what a “straight trajectory” actually means physically.
 
@@ -1167,9 +1219,13 @@ Technically, this is not *always* true since mathematically this could also corr
 
 Now that we’ve established what geodesics are, let’s look at the geodesic equation in more detail:
 
+![](../assets/images/general-relativity-for-dummies/img_57.jpg)
+
 In a more practical sense, **the geodesic equation is essentially the law of motion in general relativity** (just like Newton’s second law, F=ma, is in Newtonian physics).
 
 This can be quite easily seen if we express the force in Newton’s law as the **gradient of the gravitational potential** and **the ma -term as mdv/dt** (we can also multiply the geodesic equation by mass m on both sides):
+
+![](../assets/images/general-relativity-for-dummies/img_59.jpg)
 
 Also, the way you practically use the geodesic equation is absolutely equivalent to Newton’s law:
 
@@ -1181,6 +1237,8 @@ You’ll find an example of how the geodesic equation is practically used down b
 Practical Example: Geodesics on a Sphere (click to see more)
 
 For this example, we will consider a **particle that is allowed to move on the surface of a sphere**. This can be best done using spherical coordinates, r, θ and φ. In picture, these coordinates are as follows (also, note that we’re only looking at the spacial motion so we’re not considering the time component):
+
+![](../assets/images/general-relativity-for-dummies/img_61.png)
 
 However, a sphere is characterized by a constant radius, so the particle’s r-coordinate is actually the same at all times and thus, can be treated as *not a coordinate*. Let’s call this constant radius R.
 
@@ -1263,6 +1321,8 @@ In this gravitational field, both James' feet and upper body will each follow th
 
 Technically, each atom in James' body will have its own geodesic, but we'll look at this in a more macroscopic context.
 
+![](../assets/images/general-relativity-for-dummies/img_63.jpg)
+
 Mathematically, the effects of these tidal forces in general relativity are described by the **equation of geodesic deviation**.
 
 This, as the name may suggest, describes **how two geodesics deviate from one another due to spacetime curvature**.
@@ -1276,9 +1336,13 @@ $$\frac{D^2\epsilon^{\mu}}{D\tau^2}=R_{\rho\lambda\nu}^{\mu}u^{\rho}u^{\lambda}\
 
 Now, what do all these things mean? Let's dissect this equation and see what it really says:
 
+![](../assets/images/general-relativity-for-dummies/img_65.jpg)
+
 Visually, this separation vector describes **how two geodesics are separated** (each component of this vector tells you about each spacetime direction).
 
 This length and direction of this vector may change as you move along these geodesics:
+
+![](../assets/images/general-relativity-for-dummies/img_67.jpg)
 
 Interestingly, tidal forces are also described by a tensor in Newtonian gravity, but it does not give a relativistically valid description.
 
@@ -1430,6 +1494,8 @@ We know that Newtonian gravity works quite well in many cases, so the more accur
 This can only be done if we have these exact constants, 8πG/c4, in the Einstein field equations. In that case, Einstein's equation will reduce to the **Poisson equation**, which is the Newtonian equivalent of a gravitational field equation.
 
 If you want to see how exactly these constants are found from the **weak-field limit**, this is done in my article on the full derivation of Einstein's field equations (which you'll find [here](https://profoundphysics.com/derivation-of-einstein-field-equations/), or in PDF form [here](https://profoundphysics.gumroad.com/l/einstein-field-equations)).
+
+[![](../assets/images/general-relativity-for-dummies/img_69.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You'll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 

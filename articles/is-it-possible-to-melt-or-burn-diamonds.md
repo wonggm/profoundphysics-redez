@@ -76,6 +76,8 @@ Also, the concept of a “liquid diamond” is also a bit questionable as diamon
 
 Anyway, it is still possible to turn a diamond into a molten form under specific conditions.
 
+![](../assets/images/is-it-possible-to-melt-or-burn-diamonds/img_3.jpg) 
+
 Phase diagram of carbon, from which the melting point can be seen around 10 GPa and 4700 K (Picture from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Carbon_basic_phase_diagram.png)).
 
 The above picture is the **phase diagram of carbon**, which describes the specific forms (phases) of carbon and the general forming conditions for these phases.

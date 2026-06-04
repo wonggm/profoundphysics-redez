@@ -51,6 +51,8 @@ Now, in general relativity, all the physics that happens will take place in ***s
 
 The effects of this curvature of spacetime are then *observed* as gravity. This means that **objects under the influence of gravity move along the geometric structure of spacetime** and the paths these objects trace out are called **geodesics**.
 
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_2.jpg)
+
 The key idea summarized is therefore that **objects under the influence of gravity will naturally move along geodesics through spacetime**.
 
 Now, this idea applies to black holes and light as well; **light moves along a geodesic under the influence of the gravity of a black hole**.
@@ -100,6 +102,8 @@ Now, how do these null geodesics actually look like around a black hole? In othe
 The answer to this comes from looking at the so-called **effective potential for a photon** (light of course being made out of photons).
 
 The formula describing this is as follows:
+
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_4.jpg)
 
 Here, L is the photon’s angular momentum, rs is a parameter called the Schwarzschild radius (this is the radius of the black hole’s *event horizon*) and r is the radial coordinate of the photon (distance from the center of the black hole).
 
@@ -177,6 +181,8 @@ $$V_{eff}\left(r\right)=\left(1-\frac{r_s}{r}\right)\frac{L^2}{2r^2}=\frac{L^2}{
 
 The useful thing about the effective potential is that it allows us to **visualize orbital motion** by simply looking at the graph of the potential, which in this case, looks as follows:
 
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_6.jpg)
+
 Notice the peak in this potential; this turns out to correspond to an unstable circular orbit called the IBCO or the photon sphere. No such peaks (maxima of the potential), or unstable orbits, exist in Newtonian gravity.
 
 The key idea in visualizing orbits using this is that we essentially imagine this **potential graph as being a hill**, which the orbiting particle rolls along just like a **ball would roll on a hill**. I discuss this concept in more detail and how it applies to different potentials in my [guide to black hole orbits](https://profoundphysics.com/black-hole-orbits/).
@@ -193,15 +199,23 @@ The **energy of the photon** (essentially its initial velocity) will determine a
 
 Let’s see how the first case looks like on our potential graph:
 
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_8.jpg)
+
 Based on this, we can visualize how the actual **physical orbit in space** will look like (note that this graph only tells us the behavior of the radius of the orbit, but the photon’s orbital angle will also change).
 
 In this case, we have something called a **parabolic orbit** (as it kind of looks like a parabola):
+
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_10.jpg)
 
 This type of bending of a light ray around a massive body (it doesn’t necessarily have to be a black hole) can actually be used as experimental evidence for general relativity by measuring the *deflection angle* and comparing it to the result predicted by the mathematics of general relativity (δφ=2rs/b, where b is the *impact parameter* of the photon).
 
 In the second case, the energy of the photon is just right so that it is able to “climb up” to this peak and stay there:
 
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_12.jpg)
+
 This corresponds to a **circular orbit around the black hole** (since the photon is staying at the same radius at the peak and a circle, of course, is defined by having a constant radius):
+
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_14.jpg)
 
 As I discuss in my guide to black hole orbits (linked above), the IBCO defines a *limit for possible bound orbits* any particle (a massless particle as well) can have around a black hole.
 
@@ -209,7 +223,11 @@ Later in this article, we’ll derive the actual value of this radius from the e
 
 Anyway, the third possible orbit is one where the energy is too high, such that the photon is able to “climb over” this potential peak and thus, fall into the black hole:
 
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_16.jpg)
+
 This corresponds to a physical orbital trajectory where the photon **spirals into the black hole**:
+
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_18.jpg)
 
 These three types of orbits encompass all the possible trajectory types that light can move in around a (Schwarzschild) black hole.
 
@@ -239,6 +257,8 @@ An orbit any closer to the black hole would require moving at a speed greater th
 
 Now, the circular orbits for light always occur in a plane. But this orbital plane can be at any angle, so really, **the possible circular orbits of light form a sphere around the black hole** (the radius of the sphere being 1.5 rs). This is called the **photon sphere**.
 
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_20.jpg)
+
 But where exactly does this value of 1.5 Schwarzschild radii come from? And what is the Schwarzschild radius anyway? This is what we’ll look at next.
 
 ### How To Find The Radius of The Photon Sphere (Step-By-Step Derivation)
@@ -248,6 +268,8 @@ But where exactly does this value of 1.5 Schwarzschild radii come from? And what
 The full mathematical derivation of this can be found down below. The answer (not very surprisingly by now) is exactly 3rs/2 (i.e. 1.5 rs).
 
 In terms of visualizing this from the potential graph, the picture is quite simple:
+
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_22.jpg)
 
 Mathematically, the value of the radius at the maximum of the potential can be found, based on this, by taking the derivative of the potential (which gives us the slope at any point), setting it equal to zero (since the slope is zero at the maximum) and then solving for r.
 
@@ -294,6 +316,8 @@ Now, to understand why the photon sphere really corresponds to an **unstable orb
 **An orbit is always unstable if it occurs at a maximum of the effective potential. This is because any slight perturbation to an orbit at the maximum of the potential will cause the particle to permanently fall to a lower value of the potential, indicating that the orbit is unstable.**
 
 We can understand this quite intuitively from the effective potential graph (through our “ball rolling on a hill” -analogy):
+
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_24.jpg)
 
 In contrast, if a particle were in orbit at a *minimum* of the potential (imagine, for example, the bottom of a parabola), a slight perturbation would only cause very small oscillations around the minimum (i.e. the radius of the orbit changes very slightly). This would correspond to a *stable* orbit.
 
@@ -349,11 +373,15 @@ Note that in the Schwarzschild spacetime, the 1/r4 -term does not exist since Q=
 
 The extra 1/r4 -term here actually leads to **two possible solutions** for circular orbits, one corresponding to a **minimum** (stable orbit) and one to a **maximum** (unstable orbit). We can see this from the potential graph:
 
+![](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_26.jpg)
+
 Note; for an *extremal* charged black hole, the event horizon is located at rs/2, while the unstable photon sphere is at rs. This is because due to the extra gravitational forces resulting from the electric field of the black hole, all orbits exist slightly closer to the black hole than they would in the case of an uncharged black hole.
 
 The catch here, however, is that **unless the black hole is *extremal*** (its charge is as big as is allowed by general relativity), **this minimum does not exist**. So, **a stable photon orbit is only possible if the black hole is *maximally* charged**.
 
 If this is indeed the case, **the stable photon sphere lies at exactly the event horizon** of the black hole (which, for the extremal black hole, is at r = 0.5 rs).
+
+![This image has an empty alt attribute; its file name is image-5-1024x551.jpg](../assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_28.jpg)
 
 ---
 

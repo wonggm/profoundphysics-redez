@@ -78,6 +78,8 @@ In variational calculus, on the other hand, we look at how the **values of a fun
 
 So, we’re essentially looking at how a “function of a function” (called functional – more on these soon) changes with a small change in its input function.
 
+![](../assets/images/calculus-of-variations-for-beginners/img_2.jpg) 
+
 This δ-symbol here is typically used to denote the *variation* in a function or functional. We’ll discuss what this means soon.
 
 With all of this being said, it’s now time to actually get to the details concerning calculus of variations!
@@ -175,6 +177,8 @@ This “change in the input function y(x)” is denoted by this δy here (it’s
 
 In multivariable calculus, there is also the concept of the **total differential of a function**. For example, the differential of a multivariable function f(x,y) is given by:
 
+![](../assets/images/calculus-of-variations-for-beginners/img_4.jpg) 
+
 Intuitively, the total differential describes the total change in a function when varying all of its arguments – the total differential has the form of a sum of the “changes in the function with respect to all its variables multiplied by the changes in the variables themselves”.
 
 Similarly, there is an important concept in calculus of variations called the **variation of a functional**. This is basically the analogue of the total differential of an ordinary multivariable function, so in a sense, it described the “total change in a functional”.
@@ -251,6 +255,8 @@ Together, the minimum, maximum or saddle points of a function are called *statio
 
 We find the stationary points of a single-variable function f(x) by **setting its first derivative equal to zero** (df(x)/dx=0) and solving for the values of x that satisfy this.
 
+![](../assets/images/calculus-of-variations-for-beginners/img_6.jpg)
+
 Solving the equation df(x)/dx=0 for a given function gives us the value of the variable x at which the function is at a stationary point.
 
 Now, the story is not too different in calculus of variations. In calculus of variations, we often want to find stationary “points” of functionals.
@@ -302,9 +308,13 @@ In this example, we want to find the path of shortest distance between two point
 
 We can describe this problem using the standard Cartesian x,y -coordinate grid.
 
+![](../assets/images/calculus-of-variations-for-beginners/img_8.png)
+
 First, we need to find a functional that describes the length of this path or the distance from a to b. We can then use the Euler-Lagrange equation to find some curve y(x) in the x,y -plane that *minimizes* this functional, in other words, gives us curve of shortest distance between the two points.
 
 The key to this is that no matter which curve we have between the two points a and b, we can always break it down into small small “pieces of distance” along the curve:
+
+![](../assets/images/calculus-of-variations-for-beginners/img_10.png)
 
 If these ds-pieces are small enough (infinitesimal, to be precise), they look exactly like straight lines and we can apply the Pythagorean theorem:
 
@@ -400,6 +410,8 @@ So, the Beltrami identity is a useful special case of the Euler-Lagrange equatio
 
 The Beltrami identity also plays a key role in **Hamiltonian mechanics** – an alternative formulation of classical mechanics – in particular, for giving a nice interpretation to the Hamiltonian function.
 
+[![This image has an empty alt attribute; its file name is Thumbnail_1673015447877-1024x576.jpg](../assets/images/calculus-of-variations-for-beginners/img_12.jpg)](https://profoundphysicscourses.com/advanced-math/)
+
 ## Applications of Calculus of Variations
 
 We’ve now covered the main concepts used in calculus of variations.
@@ -417,6 +429,8 @@ One of the most important of these geometric applications is for **finding geode
 When we typically think of two points and some path joining them, a straight line naturally comes to mind – the shortest distance between two points is a straight line.
 
 However, this is only true when we talk about a *flat geometry*, such as a plane. If we’re on the surface of some curved geometry, geodesics are more complicated as they are constrained to the geometry of that particular surface.
+
+![](../assets/images/calculus-of-variations-for-beginners/img_14.jpg)
 
 Now, how is all of this described in calculus of variations?
 

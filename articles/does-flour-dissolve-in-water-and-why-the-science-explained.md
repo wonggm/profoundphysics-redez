@@ -45,6 +45,8 @@ These molecules and components all have their own properties in terms of structu
 
 For instance, depicted below is the structure of a **starch molecule**, which consists of chains of glucose molecules joined together through their hydroxyl groups (the little OH-parts) reacting with each other.
 
+![](../assets/images/does-flour-dissolve-in-water-and-why-the-science-explained/img_2.jpg)
+
 A starch molecule chain, consisting of multiple glucose units.
 
 Of course, these drawings like the one above are just simplistic 2-dimensional sketches of the starch molecule.
@@ -64,6 +66,8 @@ Usually, molecular size does not play much of an important role in water solubil
 In the case of starch, it is made of amylopectin and amylose molecules – in fact, amylopectin is a larger molecule, **yet it is still more water-soluble than amylose**.
 
 This comes down to the fact that amylose has a kind of helical structure (similar to DNA), which is a result of all the atoms aligning in the most low-energy way possible and therefore, they form this helix shape.
+
+![This image has an empty alt attribute; its file name is Amphipathic_Alpha_Helix.jpg](../assets/images/does-flour-dissolve-in-water-and-why-the-science-explained/img_4.jpg)
 
 Illustration of the helical structure found in amylose.
 

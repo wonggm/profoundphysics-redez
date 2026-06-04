@@ -47,6 +47,8 @@ For example, the Einstein field equations from general relativity that describe 
 
 Another example is that for slow velocities (around under 10 % of the speed of light), the theory of special relativity will reduce to ordinary Galilean relativity and Newtonian mechanics.
 
+[![](../assets/images/is-classical-mechanics-still-relevant/img_2.jpg)](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/)
+
 In my [introductory special relativity article](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/), I briefly go over how special relativity reduces to Newtonian mechanics under slow velocities. In [this article](https://profoundphysics.com/why-is-there-a-half-in-the-kinetic-energy-formula/), I explain how the kinetic energy formula (½mv2) is actually just an approximation of relativity.
 
 Also, it is worth realizing that classical mechanics is not relevant just because it has some useful applications in the context of say, engineering.

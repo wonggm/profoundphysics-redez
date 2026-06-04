@@ -59,6 +59,8 @@ In fact, **the kinetic and potential energy of an object is all you need to know
 
 Take for example the trajectory of a projectile (such as a ball thrown in the air):
 
+![](../assets/images/lagrangian-mechanics-for-beginners/img_2.jpg)
+
 This is, in fact, the basis for Lagrangian mechanics. It is fundamentally a description of changes in energy. This is done through a quantity called the **action**.
 
 > Lagrangian mechanics is fundamentally an optimization process of the kinetic and potential energies of objects and systems; this is how we predict their motion.
@@ -129,7 +131,11 @@ Potential energy, however, isn’t really something that describes motion by its
 
 This is why it makes sense to describe motion by **the difference of kinetic and potential energy, rather than the sum of the two**; it allows for a sensible trade-off between the kinetic and potential energies (i.e. they can convert into one another) because of the sign difference between them:
 
+![](../assets/images/lagrangian-mechanics-for-beginners/img_4.jpg)
+
 This kind of dynamic process happens even in **Newtonian mechanics**, in the good old **F=ma**. The similarities between this and Lagrangian mechanics can easily be seen if we express Newton’s second law in the form:
+
+![](../assets/images/lagrangian-mechanics-for-beginners/img_6.jpg)
 
 There is also another way to think about this and it is through the notion of **energy conservation**.
 
@@ -138,6 +144,8 @@ Since the total energy (T+V) is a conserved quantity, **it doesn’t change with
 **The difference in energies (T-V), on the other hand, is not a conserved quantity (meaning its values can change with time), so it makes for a much more useful tool for describing motion**.
 
 An interesting way to visualize this is by plotting the values for T+V and T-V for a pendulum (T+V being the total energy, which is called the Hamiltonian, but that’s not important for now):
+
+![](../assets/images/lagrangian-mechanics-for-beginners/img_8.jpg)
 
 I’m going to give credit where credit is due; I found this graph on a Physics Stack Exchange post [here](https://physics.stackexchange.com/questions/9686/the-meaning-of-action).
 
@@ -175,6 +183,8 @@ Now, this might be a lot to digest at once, so let’s explore it a bit. Firstly
 
 The answer to this is actually very simple and you might even know it from basic high school math. **A stationary point for a function is simply a point at which the tangent line is horizontal (i.e. the derivative at this point is zero)**:
 
+![](../assets/images/lagrangian-mechanics-for-beginners/img_10.jpg)
+
 Now, the same idea of stationary points applies to the action as well, but with a little more math involved.
 
 This is because the action is actually a **functional**, not just a function. If you want to know more about functionals and more generally, calculus of variations – which is the area of math Lagrangian mechanics is based on – you can check out [this article](https://profoundphysics.com/calculus-of-variations-for-beginners/).
@@ -186,6 +196,8 @@ The **principle of stationary action** mathematically:
 $$\delta\int_{t_1}^{t_2}L\ dt=0$$
 
 The path a system takes is then the path in which the action satisfies this equation.
+
+![This image has an empty alt attribute; its file name is image.jpg](../assets/images/lagrangian-mechanics-for-beginners/img_12.jpg)
 
 A functional differential essentially means varying the value of the action a little (infinitesimal) bit. The stationary points are then those at which a slight variance doesn’t actually affect the value of the action.
 
@@ -353,6 +365,10 @@ $$\frac{dp}{dt}=-\frac{\partial V}{\partial x}$$
 
 Let’s now compare this to the Euler-Lagrange equation and it will become obvious how similar they actually are:
 
+![](../assets/images/lagrangian-mechanics-for-beginners/img_16.jpg)
+
+![](../assets/images/lagrangian-mechanics-for-beginners/img_18.jpg)
+
 In fact, if you we’re to choose the kinetic energy as simply 1/2mv2, then the Euler-Lagrange equation would produce *exactly* F=ma.
 
 Derivation of F=ma From The Euler-Lagrange Equation (click to see more)
@@ -419,6 +435,8 @@ Here, I will go over the steps given above and show how they are used in practic
 **Step 1:** Find a set of convenient coordinates for the problem.
 
 For this, we will simply choose the regular Cartesian coordinates (x and y). The coordinates and velocities are given by the picture:
+
+![](../assets/images/lagrangian-mechanics-for-beginners/img_20.jpg)
 
 The x-component of velocity will be the time derivative of the x-coordinate, same for y. These are denoted by a dot, but it’s really just more compact notation for dx/dt and dy/dt.
 
@@ -490,6 +508,8 @@ An example of these are friction forces, like the viscous force in a fluid and f
 
 However, there are still ways of modifying Lagrangian mechanics in a way to include these forces, but they can’t directly come from the principle of least action.
 
+[![](../assets/images/lagrangian-mechanics-for-beginners/img_22.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
+
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 
 ## More Examples of Using Lagrangian Mechanics!
@@ -506,11 +526,15 @@ There are many ways to do that – one would be by describing how the x- and y-c
 
 Here’s the setup – we begin by placing the pendulum in an x,y -coordinate system such that the rod is attached to the origin. I’ll also denote the angle relative to the vertical (y-axis) as θ.
 
+![](../assets/images/lagrangian-mechanics-for-beginners/img_24.jpg)
+
 What we want to do is describe **how the angle θ changes with time** – so, it’s a function θ(t) here – by **constructing a Lagrangian** for this system and applying the **Euler-Lagrange equations**, just like we did previously in the case of a projectile. You’ll find out exactly how to do this below.
 
 Full solution of the simple pendulum
 
 The easiest way to begin is to first express the x- and y-coordinates of the pendulum bob in terms of the angle θ, as this will allow us to construct the Lagrangian very easily. The relations are shown below:
+
+![](../assets/images/lagrangian-mechanics-for-beginners/img_26.png) 
 
 Note that the y-coordinate is negative here since it’s measured below the x-axis.
 
@@ -572,6 +596,8 @@ Our goal is to find out how both the block and the ramp begin moving as time pas
 
 We’ll begin by placing the system in a Cartesian coordinate system with the ramp being initially at the origin. For the coordinate we’re interested in describing, we’ll choose the **x-coordinate of the ramp** and the **displacement s of the block** measured from the top of the ramp:
 
+![](../assets/images/lagrangian-mechanics-for-beginners/img_28.jpg)
+
 So, we want to find the equations of motion for the coordinates x and s as functions of time. You’ll find the full solution below.
 
 Full solution of the moving inclined plane
@@ -581,6 +607,8 @@ Let’s begin by first finding the Cartesian coordinates of both the block and t
 **For the ramp**, its Cartesian coordinates are simply just x, which is a function of time and also one of our generalized coordinates and y=0 at all times.
 
 **For the block**, we can express its y-coordinate in terms of s as (L-s)sinα. Its x-coordinate, on the other hand, is the x-coordinate of the ramp (just x) *plus* the horizontal distance of the of the block to the left edge of the ramp, which we can express as scosα:
+
+![](../assets/images/lagrangian-mechanics-for-beginners/img_30.png)
 
 So, the Cartesian coordinates of the ramp and the block in terms of our generalized coordinates of interest (x and s) are:
 
@@ -691,6 +719,8 @@ As you start using the Euler-Lagrange equation, there are clear patterns that st
 
 The most interesting of these is one of the terms in the Euler-Lagrange equation, which always somehow happens to give a momentum-like quantity. This term is, in fact, the definition for ***generalized momentum***:
 
+![](../assets/images/lagrangian-mechanics-for-beginners/img_32.jpg)
+
 Generalized momentum is also sometimes called canonical momentum.
 
 When you get into more advanced mechanics, regular momentum (also sometimes called **kinetic momentum**) is not going to be enough anymore.
@@ -756,6 +786,8 @@ Just like these are generalized momenta, there are also things called **generali
 Now, these aren’t directly expressed through the Lagrangian, but they are expressed by using **generalized coordinates** – that’s the whole point of generalized coordinates; to express laws of motion using them.
 
 The generalized forces are defined as (denoted by Q’s with the i-index being associated with the particular generalized coordinate qi):
+
+![](../assets/images/lagrangian-mechanics-for-beginners/img_34.jpg)
 
 The generalized forces are really just the usual Newtonian forces, but transformed to generalized coordinates, which we wish to use in Lagrangian mechanics.
 
@@ -889,6 +921,8 @@ Of course, you’re free to pick any resource you want, but if you want my recom
 The book will first cover basic **Newtonian mechanics** and also touch on some of the issues with Newton’s laws as a motivation for introducing Lagrangian mechanics. We then discuss **calculus of variations**, the area of math Lagrangian mechanics is based on.
 
 After this, the following chapters dive deep into various aspects of Lagrangian mechanics like generalized coordinates, momenta and forces, velocity-dependent potentials, constrained dynamics, dissipation functions, symmetries, conservation laws as well as how to solve Lagrangian mechanics problems in the most efficient way.
+
+[![](../assets/images/lagrangian-mechanics-for-beginners/img_36.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 

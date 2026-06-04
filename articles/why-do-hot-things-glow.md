@@ -51,6 +51,8 @@ However, nature is inherently lazy and everything wants to exist in the lowest e
 
 Energy cannot be destroyed, so where does this energy go? It gets **emitted from the atom in the form of photons**!
 
+![](../assets/images/why-do-hot-things-glow/img_2.jpg) 
+
 Note that you shouldn’t think of these energy levels here as some “circular orbits” where the electron circles around the nucleus at – quantum mechanically, a more accurate picture would be a probability cloud around the nucleus. This picture is meant to just illustrate the key idea.
 
 The energy of a photon can be described by the following formula:
@@ -153,6 +155,8 @@ Now, while the spectral radiance is a two-variable function, we can treat it as 
 
 We can then represent the spectral radiance curves, B(λ), by plotting them as functions of the wavelength for bodies of different temperatures:
 
+![](../assets/images/why-do-hot-things-glow/img_4.jpg)
+
 Here I’ve compared the spectral radiance of two black bodies at two different temperatures, 5000K and 3000K. I’ve overlaid the visible spectrum of light (380nm-750nm) along with the respective general colors.
 
 But what does this graph tell us? The graph is a **distribution of the energy of all the photons released by the black body**.
@@ -162,6 +166,8 @@ Remember that the energy of a photon is related to either its wavelength or freq
 So, if a point on the graph is higher than another (meaning the spectral radiance is higher), there are **more photons being released with that energy** (and that wavelength) and hence that particular color will be more prominent.
 
 As we can see, both of the graphs have a maximum height at a point we call the **peak wavelength**. Most of the photons radiated by the body will be of this peak wavelength, which means that this particular wavelength and color will be the **most prominent** when actually looking at the body.
+
+![](../assets/images/why-do-hot-things-glow/img_6.jpg)
 
 The surface of the Sun is around 5000K and from the graph above, the peak wavelength falls in the orange/yellow part of the visible spectrum – this is **why the Sun appears mostly yellow to us!**
 
@@ -217,6 +223,8 @@ The Lambert W is, however, technically, not a function since it is multivalued a
 
 We can then graph these together to get an idea of what the “function” W(x) would look like:
 
+![](../assets/images/why-do-hot-things-glow/img_8.png) 
+
 The two branches, W0 and W-1 meet at the point (-e-1,-1).
 
 Now, since y>0 in our above equation yey-5(ey-1)=0, the principal branch, W0, is all we need. For an equation of the form wew=a, we would have w=W0(a) defined as the solution to the equation.
@@ -248,6 +256,8 @@ Look back at the black body radiation graphs I plotted earlier. You can see that
 Since the peak wavelength represents the wavelength of the majority of the electromagnetic radiation the body is giving off and therefore, also determines the main color of the body, we observe that **as things get hotter, their glowing color gets bluer.**
 
 If you look at the flame produced by a candle or a lighter, the hotter bottom part closest to the source is blue and the “cooler” part on the edge is more of a red color.
+
+![](../assets/images/why-do-hot-things-glow/img_10.jpg)
 
 Wien’s displacement law helps us see exactly why that happens!
 

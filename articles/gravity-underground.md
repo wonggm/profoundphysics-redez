@@ -41,6 +41,8 @@ Based on this, if you make r (distance from the center of the Earth) smaller by 
 
 The problem is that, actually, **the gravity you’d experience is only due to the mass of the Earth that is inside the given radius r** (picture below), not any of the mass outside this radius. This means that if you go underground, there is actually less mass pulling you down, but at the same time, the radius r is smaller. So, is the gravity therefore stronger or weaker?
 
+![](../assets/images/gravity-underground/img_2.jpg)
+
 The fact that the gravity caused by the mass outside this blue region is zero is fundamentally because the gravitational forces caused by that outside mass exactly cancel from every direction, which is a result of something called **Gauss’s law**.
 
 Now, there are two mathematical models that we’ll take a look at in this article (don’t worry, I’ll explain these in detail soon):
@@ -122,6 +124,8 @@ If we plug in all the values (R=6371 km and for the other values, see above), we
 
 Gravitational acceleration g at different depths (measured from the surface of the Earth). Notice that at the depth of 6371 km (at the center of Earth), there is no gravity.
 
+![](../assets/images/gravity-underground/img_5.jpg)
+
 Gravitational acceleration as a function of depth (in an idealized case). Notice the linear decrease in gravity as depth increases.
 
 This model, as stated above, is really only an idealization and once you take into account the variation in Earth’s density as well, the results change quite a bit and become a little more complicated. The results, however, are very interesting and that is what we’ll look at next.
@@ -188,6 +192,8 @@ Now, the notable thing about the above function is that it is a polynomial with 
 
 This corresponds to a **gravitational acceleration of about 10.7 m/s2** (which is comparable to the gravity at the surface of Saturn!). For comparison, the gravitational acceleration at Earth’s surface is 9.81 m/s2.
 
+![](../assets/images/gravity-underground/img_7.jpg)
+
 Gravitational acceleration (g) as a function of the distance from Earth’s center (r) according to data from the Preliminary Reference Earth Model.
 
 Now, you may ask; why does the gravitational acceleration actually vary like this? Why is it at its maximum at 3470 km from the center of Earth? The answer comes from looking at the **different densities of each layer of Earth**.
@@ -197,6 +203,8 @@ Now, if you actually think about what affects gravity, it is only the mass insid
 The most dense layers of Earth actually happen to be the outer and inner core. Not surprisingly, at the distance 3470 km from Earth’s center is actually the **boundary between the mantle and the outer core** (this boundary is called the *Gutenberg discontinuity*).
 
 If you were standing at this boundary, the most dense layers of Earth (outer and inner core) would be right beneath your feet (see the picture below). You can then imagine how it makes sense that gravity is at its strongest right at this boundary.
+
+![](../assets/images/gravity-underground/img_9.jpg)
 
 Gravity peaks at the Gutenberg discontinuity (boundary between the mantle and outer core), which is about 2900 km underground or equivalently 3470 km as measured from Earth’s center.
 

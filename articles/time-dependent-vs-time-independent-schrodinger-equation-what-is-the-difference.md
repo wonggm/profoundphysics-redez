@@ -199,6 +199,8 @@ Yes, I know, this is the typical first example you’ll see in any quantum mecha
 
 Okay, let’s get started. We’ll consider a particle of mass m confined to an infinite potential well of width a, with potential V(x) = 0 inside the well (0<x<a) and V(x) = ∞ outside. In practice, an “infinite” potential just means the particle can physically never be found outside the well.
 
+![](../assets/images/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference/img_2.jpg)
+
 Inside the well, the potential is zero, so the **time-independent Schrödinger equation** takes the form:
 
 $$-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2}+V(x)\psi(x)=E\psi(x)\ \Rightarrow\ \frac{d^2\psi(x)}{dx^2}=-k^2\psi(x)$$
@@ -237,7 +239,11 @@ Finally, we have:
 
 $$\psi_n(x)=\sqrt{\frac{2}{a}}\sin(\frac{n\pi x}{a})$$
 
+![](../assets/images/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference/img_4.jpg)
+
 Here, we’ve plotted the first four energy levels (n=1,2,3,4) for the particle. The energy E1 is the *ground state energy*.
+
+![](../assets/images/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference/img_6.jpg)
 
 Here, we’ve plotted the wavefunctions corresponding to the first two energy levels (n=1,2). In the ground state, the particle is most likely found at x = a/2, while in the first excited stated, there is zero probability of finding it there.
 

@@ -138,6 +138,8 @@ After completing the Herculean task of creating a cosmological spacetime model t
 
 Without further ado, here are the **Friedmann equations**:
 
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_2.jpg)
+
 Let’s begin breaking these down! Below, you’ll find an explanation for each term appearing here in the above equations.
 
 However, on a bigger note, **the Friedmann equations essentially describe how the scale factor, a(t), changes with time based on the various matter and energy contents we want to put in our spacetime**.
@@ -151,6 +153,8 @@ These solutions, the scale factors a(t), then describe how different types of sp
 Constants of nature appear in almost every equation in physics and they give us small hints about what the equation might be **physically representing**.
 
 In the Friedmann equations, we have Newton’s constant G, pi, and the speed of light c.
+
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_4.jpg)
 
 **Newton’s constant** being present tells us that these equations are likely to involve gravity.
 
@@ -178,6 +182,8 @@ In the Friedmann equations, we see the **scale factor a(t)** as well as the scal
 
 The dot or double-dot above a(t) represents one or two **time derivatives** – they are measures of **how the scale factor changes with time**.
 
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_6.jpg)
+
 In the work of Isaac Newton, he stated his famous equation F=ma. The “a” in this case is the acceleration (not to be confused with the scale factor), it is the second derivative of the position function x(t).
 
 When we have two time derivatives, we can then **associate them with accelerations**.
@@ -197,6 +203,8 @@ A nice mental image of a universe model according to the cosmological principle 
 These dots simply represent “points” within space (not spacetime). Effectively, this infinite grid of dots represents the **universe** – these dots could be galaxies on a large scale, for example.
 
 Now choose a pair of dots and think of a line joining them and that the line is described by some number. We can interpret this number as the **distance between points in space** (distance between two galaxies, for example).
+
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_8.png) 
 
 Here we have a grid with a 1 light-year separation between points. Note that technically, our model should have an infinite grid of points, but of course, I cannot draw an infinite number of points here.
 
@@ -219,6 +227,8 @@ If we talk about space, it is convenient to talk about very small (infinitesimal
 $$ds^2=dx^2+dy^2+dz^2$$
 
 You can think of dx as something like “a small difference in the x-coordinate”. This is what we call a “line element” – it tells us about the distance between two close-by points.
+
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_10.png)
 
 If we were to write a new line element,
 
@@ -273,17 +283,23 @@ We’ll discuss various solutions to the Friedmann equations in more detail late
 
 Back to the Friedmann equations – there are four pieces of the puzzle left, ρ(t), p(t), κ and Λ.
 
+[![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_12.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
 ### The Cosmological Constant
 
 The odd triangle-looking thing appearing in the Friedmann equations, Λ, is the **cosmological constant** – referred to by Einstein himself as his “biggest blunder”, this mysterious term is a way of **including dark energy into our model**!
 
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_14.jpg)
+
 The cosmological constant essentially acts like a form of energy with ***negative pressure* in the universe and drives its expansion.** We’ll see how all of this comes about later in the article.
 
 ### The Curvature Term
 
 The constant κ in the Friedmann equations is called the “scalar curvature” and this encapsulates the basic **geometric shape of the universe**.
+
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_16.jpg)
 
 There are three basic types of geometry we can have: **Euclidean**, **hyperbolic**, and **elliptical**.
 
@@ -299,6 +315,8 @@ The other two members of the geometry family are a bit more exotic.
 
 For example, the interior angles of a triangle in hyperbolic geometry add up to less than 180 degrees whereas they add up to more than 180 degrees in elliptical geometry!
 
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_18.jpg)
+
 When talking about the universe, **we often refer to a universe with elliptical geometry as closed, a universe with hyperbolic geometry as open and a universe with Euclidean geometry as flat**.
 
 Now, it’s important to keep in mind that these geometries describe the universe *on very large scales only*.
@@ -310,6 +328,8 @@ For example, when we describe the universe as flat, this is only true at cosmolo
 Finally, we have the quantities ρ(t) and p(t) showing up in the Friedmann equations.
 
 Both of these come from the perfect fluid assumption mentioned earlier – **p(t) is the pressure of the matter content of the universe** and **ρ(t) (ρ is the Greek letter “rho”) is the energy density of the universe**.
+
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_20.jpg)
 
 In general, these will both vary with time, which is why they are functions of time here.
 
@@ -380,6 +400,8 @@ Here, R is the Ricci scalar and T is the trace of the energy-momentum tensor (su
 Using this equation, combined with the first Friedmann equation, **we can derive the second Friedmann equation**.
 
 So, here’s a little summary of where both of the Friedmann equations actually come from in the first place:
+
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_22.jpg)
 
 ### The Hubble Constant
 
@@ -623,6 +645,8 @@ In other words, **an equation of state relates the density and pressure of any g
 
 The simplest general equation of state is a ***linear* relationship**:
 
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_24.jpg)
+
 This w here is a parameter that encapsulates information about **different types of matter**. Also, c is the speed of light once again.
 
 This is what we use to distinguish between different forms of matter and radiation. It is also what allows us to obtain different solutions to the Friedmann equations, as we will see later.
@@ -847,6 +871,8 @@ Before we look at what the Friedmann equations actually predict about our own un
 
 The most important equations we’ve discovered so far can be summarized as the following:
 
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_26.jpg)
+
 ### How To Solve The Friedmann Equations (Step-By-Step)
 
 The Friedmann equations, at their heart, are **differential equations** we can use to solve for the scale factor a(t) – which then describes the expansion or time evolution of any particular universe on a large scale.
@@ -918,6 +944,8 @@ Considering only the contribution of “stuff” (so ignoring how the curvature 
 Now, where do these “eras of the universe” come from?
 
 Well, we can quite easily see this from the **first Friedmann equation expressed in terms of the dimensionless density parameters** (this is why this form of the Friedmann equation turns out to be extremely convenient):
+
+![](../assets/images/the-friedmann-equations-explained-a-complete-guide/img_28.jpg)
 
 ### Age of The Universe
 

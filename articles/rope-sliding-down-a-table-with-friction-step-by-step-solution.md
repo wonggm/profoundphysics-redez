@@ -65,6 +65,8 @@ We can describe the motion of this rope by simply specifying the **length of the
 
 Also, since we’re dividing the rope into two parts, we need to specify the mass of each of the parts separately. What makes this interesting is the fact that when the rope slides, **the individual masses of each of the two parts will change with time** (although the total mass of the rope does not!).
 
+![](../assets/images/rope-sliding-down-a-table-with-friction-step-by-step-solution/img_2.jpg)
+
 The masses of the two parts of the rope are functions of time since they are changing with time as the rope slides down the table. The total mass of the rope is m and the total length is little l. We’re assuming the rope to be at rest to begin with (i.e. it has zero initial velocity).
 
 Now, we also have to go over a little bit of how we’ll solve this problem. Essentially, we just have to specify the **total kinetic and potential energies** of the rope and construct **the Lagrangian**, which is of the form:
@@ -274,6 +276,8 @@ $$\left(s^2-\frac{g}{l}\left(1+\mu\right)\right)X\left(s\right)=sx_0-\frac{\mu g
 
 To make our calculations a bit nicer looking, we will call this one term (which is just a bunch of constants) c:
 
+![](../assets/images/rope-sliding-down-a-table-with-friction-step-by-step-solution/img_4.jpg)
+
 We’ll also want to isolate this X(s) function, which will ultimately give us the solution (you’ll see why soon!). So, let’s divide both sides by (s2-c) to get:
 
 $$X\left(s\right)=\frac{sx_0}{s^2-c}-\frac{\mu g}{s\left(s^2-c\right)}$$
@@ -334,7 +338,11 @@ Here’s a useful video explaining the convolution theorem very well if you wish
 
 Now, without getting into proofs or details about the convolution theorem too much, one way to mathematically state it is:
 
+![](../assets/images/rope-sliding-down-a-table-with-friction-step-by-step-solution/img_7.jpg)
+
 In our problem, these would be:
+
+![](../assets/images/rope-sliding-down-a-table-with-friction-step-by-step-solution/img_9.jpg)
 
 Notice that the function f here is simply a constant, so plugging in t-τ doesn’t actually do anything.
 
@@ -352,7 +360,11 @@ $$\frac{\mu g}{\sqrt{c}}\bigg/_{\!\!\!\!\!0}^t\frac{1}{\sqrt{c}}\cosh\left(\sqrt
 
 Now we have everything we need to construct the solution. Recall what we originally had:
 
+![](../assets/images/rope-sliding-down-a-table-with-friction-step-by-step-solution/img_11.jpg)
+
 And that’s it. We’re done now! Here we have the solution to our equation of motion. All we have to do now is substitute back the constant c and write this in little nicer form:
+
+![](../assets/images/rope-sliding-down-a-table-with-friction-step-by-step-solution/img_13.jpg)
 
 **Solution to the equation of motion:**  
 $$x\left(t\right)=\left(x_0-\frac{\mu}{1+\mu}l\right)\cosh\left(\sqrt{\frac{g}{l}\left(1+\mu\right)}t\right)+\frac{\mu}{1+\mu}l$$

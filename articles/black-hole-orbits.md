@@ -71,11 +71,13 @@ Conic sections are basically a geometric class of curves that include **circles,
 
 Anyway, these types of orbits (which trace out curves that are conic sections) are called **Kepler orbits**. To put it simply, **Kepler orbits are orbits of objects under a gravitational force that obeys Newton’s inverse square law** (F∼1/r2).
 
- 
+![](../assets/images/black-hole-orbits/img_2.jpg) 
 
 The circular and elliptical orbits are both *bound orbits*, which means that the orbiting object returns to its starting point after a full period. The parabolic and hyperbolic orbits, on the other hand, are *unbound orbits*, meaning that the trajectory of the object only gets deflected before escaping from the gravitational pull of the central mass.
 
 All Kepler orbits are described by an equation known as the **orbit equation**, which gives the radius r (distance to the central mass) as a function of the angular position of the particle in orbit (φ):
+
+![r\left(\varphi\right)=\frac{p}{1+e\cos\varphi}](../assets/images/black-hole-orbits/img_4.svg)
 
 Here, p is a length parameter called the semi-latus rectum (essentially just a constant with dimensions of length) and e is the eccentricity (a dimensionless constant, which in a sense, describes how much a conic section differs from being a circle which would have e=0).
 
@@ -93,6 +95,8 @@ First of all, the inverse square law of gravity becomes inaccurate for **strong 
 
 In general relativity, there isn’t really a clear notion of a “force law for gravity”, however, in principle, it is possible to derive an equation that resembles Newton’s gravitational force law. This has the following (schematic) form:
 
+![F\sim\frac{1}{r^2}+\frac{1}{r^3c^2}](../assets/images/black-hole-orbits/img_6.svg)
+
 In contrast, the Newtonian law of gravity would only have this first term, which gives the usual inverse square law. This second term is an inverse cubic correction induced by general relativity. Notice, however, that due to this factor of c2 (the speed of light, which is a rather large numerical constant) in the denominator, this inverse cubic term only comes into play at small distances (when 1/r3 is large).
 
 At large radii, this 1/r3c2 -correction term is quite small, but it is still enough to account for some of the interesting orbital phenomena in general relativity such as the *precession of elliptical orbits* (which we’ll talk about later).
@@ -106,7 +110,7 @@ In general relativity, however, the orbital velocity of an object is limited by 
 |  | Kepler orbits | Relativistic orbits |
 | --- | --- | --- |
 | Types of orbits | Conic sections (circles, ellipses, parabolas or hyperbolas) | Conic sections + some additional types of orbits (precessing ellipses, zoom-whirl orbits and spiral fall orbits, for example) |
-| Mathematical formula | The orbit equation: | No general formula describing all of the orbit types |
+| Mathematical formula | The orbit equation: r\left(\varphi\right)=\frac{p}{1+e\cos\varphi} | No general formula describing all of the orbit types |
 | Limitations on possible orbits | Orbit has to be a conic section | Orbital velocity is limited to the speed of light + circular orbits are limited to a radius of r > 1.5 rs |
 | Orbit stability | Bound orbits are generally stable | Bound orbits are unstable within a certain region (r < 3 rs) + orbits can intrinsically “decay” due to gravitational radiation |
 
@@ -130,11 +134,13 @@ This helps us understand how we can use the effective potential in general relat
 
 Now, the **effective potential function in Newtonian gravity** is given by:
 
+![V_{eff}\left(r\right)=-\frac{GMm}{r}+\frac{L^2}{2mr^2}](../assets/images/black-hole-orbits/img_10.svg)
+
 The first term is just the Newtonian gravitational potential, while the second term can be thought of as the potential energy arising from the centrifugal force due to the orbiting body possessing a non-zero angular momentum. The parameters here are; M=the central mass (such as the mass of a black hole), m=mass of the orbiting body (small compared to M) and L=angular momentum of the orbiting body. The variable r is the radial distance from the center.
 
 We can plot this as a function of r, which gives us a graph that looks as follows:
 
- 
+![](../assets/images/black-hole-orbits/img_12.jpg) 
 
 Note; in reality, part of the potential graph should go under the r-axis, meaning that Veff should also have negative values. For our qualitative analysis, I’ve simply shifted the potential graph above the r-axis to avoid any extra clutter, but this will not make any difference for us.
 
@@ -144,15 +150,15 @@ So, if this particle starts of at some particular “height” (corresponding to
 
 Depending on the total energy of the particle (how much kinetic and potential energy it has), it will roll down this hill, corresponding to a certain type of orbit.
 
- 
+![](../assets/images/black-hole-orbits/img_14.jpg) 
 
 Unbound orbits (which can either be parabolic or hyperbolic) occur if the particle has too much energy (or velocity). In these cases, it may get deflected by the gravity of the central mass and then fly off, but it won’t stay in a bound orbit.
 
- 
+![](../assets/images/black-hole-orbits/img_16.jpg) 
 
 Elliptic orbits can occur if the particle has a “moderate” energy, meaning it doesn’t have too much kinetic energy (its velocity is not too large). In these cases, the particle will enter a bound orbit, which has a maximum and minimum distance (which defines an ellipse.)
 
- 
+![](../assets/images/black-hole-orbits/img_18.jpg) 
 
 Circular orbits can occur at exactly one value of the energy, which corresponds to the minimum of the effective potential. In this case, the particle will simply orbit at a constant radius (which is the defining feature of a circle). In contrast, we will discover that in a black hole orbit, there are two possible radii for a circular orbit.
 
@@ -164,11 +170,13 @@ There are a few additional noteworthy details about this Newtonian effective pot
 
 Now, in **general relativity**, the effective potential function has the following form (as a technical detail, this is the effective potential for the **Schwarzschild metric**, which describes the spacetime around a spherical object like a black hole):
 
+![V_{eff}\left(r\right)=-\frac{GMm}{r}+\frac{L^2}{2mr^2}-\frac{GML^2}{mc^2r^3}](../assets/images/black-hole-orbits/img_20.svg)
+
 Notice the similarity of this to the Newtonian effective potential; the only difference is this 1/r3 -correction term, which is negligible far away (at large r) and when gravity is not too strong (M is small).
 
 Graphing this as a function of r, it looks as follows:
 
- 
+![](../assets/images/black-hole-orbits/img_22.jpg) 
 
 Notice that this potential has a maximum, which actually corresponds to an *unstable* circular orbit as we’ll see later. Notice also that far away at large r, the graph looks more or less similar to the Newtonian potential (although it is still, even at large r, slightly different from the Newtonian potential, which explains for example, the phenomenon of perihelion precession).
 
@@ -210,7 +218,7 @@ However, a circular orbit can also occur at the *maximum* of the effective poten
 
 So, in fact, around a black hole, there exists **two possible circular orbits** (characterized by a constant radius from the center as you might expect for a circle); **one at the minimum of the effective potential and one at the maximum**.
 
- 
+![](../assets/images/black-hole-orbits/img_24.jpg) 
 
 There are, however, differences between these two circular orbits:
 
@@ -224,6 +232,9 @@ For any given angular momentum of the orbiting particle, these two circular orbi
 The smallest possible radii at which these two types of circular orbits can occur are called the **innermost stable circular orbit (ISCO)**, which is the a stable orbit and the **innermost bound circular orbit (IBCO)**, which is the unstable (though still a bound) orbit.
 
 Mathematically, the IBCO and ISCO are given by (rs here is the Schwarzschild radius or event horizon of the black hole, given by rs=2GM/c2):
+
+![r_{ISCO}=3r_s=\frac{6GM}{c^2}](../assets/images/black-hole-orbits/img_26.svg)
+![r_{IBCO}=\frac{3}{2}r_s=\frac{3GM}{c^2}](../assets/images/black-hole-orbits/img_28.svg)
 
 There are a few noteworthy points about the above values:
 
@@ -239,9 +250,11 @@ Sidenote; I have a full article on orbits of light around a black hole. In this 
 
 Here’s a schematic picture of these different regions that circular orbits can or cannot exist in:
 
- 
+![](../assets/images/black-hole-orbits/img_30.jpg) 
 
 Another important detail is that there exists a **minimum angular momentum** for a particle to have an orbit in the first place. The value of this is given by:
+
+![L_{\min}=\sqrt{3}r_smc=\frac{\sqrt{12}GMm}{c}](../assets/images/black-hole-orbits/img_32.svg)
 
 Any particle with angular momentum less than this critical value will inevitably spiral into the black hole.
 
@@ -263,7 +276,7 @@ The useful thing about these circular orbit ranges (ISCO and IBCO) is that they 
 
 **In general relativity, on the other hand, elliptical orbits do not exist**. *Perfectly* elliptical orbits, at least. This is because elliptical orbits in general relativity exhibit a behavior known as **perihelion precession**.
 
- 
+![](../assets/images/black-hole-orbits/img_34.jpg) 
 
 Now, orbits that are very close to perfect ellipses are still possible. This is seen, for example, in the solar system where the gravity of the Sun of somewhat weak for most of the planets.
 
@@ -287,14 +300,14 @@ The same is true for the relativistic potential graph, except for the fact that 
 
 This may not seem too important, but it’s exactly this difference in shape that explains the precession of elliptical orbits.
 
- 
+![](../assets/images/black-hole-orbits/img_36.jpg) 
 
 This can also be explained in a more mathematical way; it’s possible to derive an “orbit equation” for general relativity, though this is just an approximation that is only valid when gravity is not too strong (generally outside the ISCO).
 
 |  |  |
 | --- | --- |
-| Orbit equation for Kepler orbits: | Orbit equation for relativistic orbits (valid only for weak to moderate gravity): |
-| For bound orbits, this describes perfect elliptical orbits | For bound orbits, this describes elliptical orbits that *precess* during each orbital cycle. The precession angle is given by: |
+| Orbit equation for Kepler orbits: r\left(\varphi\right)=\frac{p}{1+e\cos\varphi} | Orbit equation for relativistic orbits (valid only for weak to moderate gravity): r\left(\varphi\right)=\frac{p}{1+e\cos\left(\varphi-\frac{3GM}{c^2p}\varphi\right)} |
+| For bound orbits, this describes perfect elliptical orbits | For bound orbits, this describes elliptical orbits that *precess* during each orbital cycle. The precession angle is given by: \delta\varphi=\frac{6\pi GM}{c^2p} |
 | Elliptical orbits are, in principle, possible at any radius | (Precessing) elliptical orbits are possible outside the ISCO |
 
 Now, even though this orbital precession is only really noticeable when gravity is somewhat strong, it’s still possible to see this phenomenon in weak gravitational fields.
@@ -319,7 +332,7 @@ These zoom-whirl orbits are complicated in the sense that they don’t really ha
 
 But first of all, why are these called zoom-whirl orbits? Essentially, this name comes from the fact that these orbits can have both “small loops” (**whirls**) and “large loops” (**zooms**) around the black hole.
 
- 
+![](../assets/images/black-hole-orbits/img_44.jpg) 
 
 The interesting thing about these orbits is that they can, in principle, have any number of whirls (small loops) and zooms (the “leaves” or larger loops).
 
@@ -337,13 +350,13 @@ Okay, what do these numbers mean exactly? Here’s a little summary of how this 
 
 Let’s look at an example of exactly how this works. Down below we have a (3,1,1) -orbit. This means that the orbit has a z-value of 3, a w-value of 1 and a v-value of 1.
 
- 
+![](../assets/images/black-hole-orbits/img_46.jpg) 
 
 Note; the value of v doesn’t directly impact the shape of the orbit, only the order in which the particle does these “loops”. By convention, the starting position (vertex) is always labeled by v = 0 and the other vertices are counted clockwise (however, if the black hole is rotating, the vertex sequence will depend on whether the orbit is prograde or retrograde). The v-value of the *orbit itself* depends specifically on the first vertex the particle moves to; in a v = 1 orbit, the particle will cycle to the v = 1 vertex after the v = 0 loop, but in a v = 2 orbit, the particle would instead cycle to the v = 2 loop first.
 
 It’s also worth noting that not all orbits are perfectly periodic as the one shown above. In fact, **these zoom-whirl orbits can also precess**, similarly to the elliptical orbits discussed earlier.
 
- 
+![](../assets/images/black-hole-orbits/img_48.jpg) 
 
 Interestingly, these more complicated orbits that are *aperiodic* (the particle doesn’t return to exactly the same point after each orbital cycle) can be approximated as precessions of the exactly periodic counterpart orbits (in this case, the (3,1,1) -orbit), thus allowing us to describe ALL black hole orbits using this “periodic table” classification system. This is discussed in detail in the paper linked above.
 
@@ -355,7 +368,7 @@ There is one more important and insightful detail about these zoom-whirl orbits 
 
 To understand this, let’s note that these zoom-whirl orbits occur only at relatively small radii (generally at r < rISCO). Now, recall again the **effective potential in general relativity**:
 
- 
+![](../assets/images/black-hole-orbits/img_50.jpg) 
 
 The effective potential has this **large peak at the maximum of the potential** (which occurs at rIBCO, the smallest radius a freely orbiting particle can be at, otherwise it will fall into the black hole).
 
@@ -369,7 +382,7 @@ You can think of the particle “wanting” to remain at a stationary point of t
 
 Since the particle **remains slightly longer near this peak** and it also has a **larger orbital velocity near the peak**, it can actually “loop” multiple times around the black hole (these are the “whirls”) before going further out again and doing a “loop” at larger radius (this is the “zoom” part of the orbit).
 
- 
+![](../assets/images/black-hole-orbits/img_52.jpg) 
 
 Now, if the energy of the particle is not high enough, it may not reach near the peak of the potential (in other words, it cannot get very close to the black hole).
 
@@ -401,7 +414,7 @@ First of all, what happens in the case of an orbiting particle having **too much
 
 These orbits are called parabolic since they have a shape similar to a parabola (these may not always be exactly parabolic curves, but a commonly used general term for these unbound orbits that escape the black hole’s gravity is “parabolic orbit”).
 
- 
+![](../assets/images/black-hole-orbits/img_54.jpg) 
 
 The parabolic orbits are **unbound orbits**, which simply means that the particle won’t stay in orbit around the black hole, but it will instead just come in somewhere in the vicinity of the black hole, get deflected in some way and then fly off.
 
@@ -409,7 +422,7 @@ An example of this is with a beam of light, which can actually get deflected (�
 
 Note, however, that around a black hole, it’s also possible for a particle to **loop around the black hole, even a few times and then fly off**. This does not happen in Newtonian gravity.
 
- 
+![](../assets/images/black-hole-orbits/img_56.jpg) 
 
 Another type of orbit, which is actually completely unique to general relativity, is the **spiral fall trajectory**.
 
@@ -423,7 +436,7 @@ For example, a particle could collide with other particles, losing some angular 
 
 Again, it’s also possible for a particle to do **multiple cycles around the black hole before spiraling in**. This happens if the angular momentum is very close to Lmin, but just slightly less.
 
- 
+![](../assets/images/black-hole-orbits/img_58.jpg) 
 
 Now, the most interesting thing about these spiral fall trajectories is that **they are not possible in Newtonian gravity**.
 
@@ -433,7 +446,7 @@ But, in a strong gravitational field (where general relativity is required), a p
 
 This can, once again, be explained by analyzing the effective potential. In Newtonian gravity, the effective potential **keeps increasing with no limits as the radius decreases**.
 
- 
+![](../assets/images/black-hole-orbits/img_60.jpg) 
 
 This means that at r=0, the potential goes to infinity, requiring **infinite energy** to actually reach this point. This, as you may expect, is not physically possible for any orbiting particle and therefore, nothing will reach the center point at r=0.
 
@@ -445,7 +458,7 @@ This means that, actually, after a certain point (the IBCO), an orbit closer to 
 
 Again, with the effective potential setup, we think of particles always naturally “rolling” to a lower value of the potential if possible, which explains (visually) **why a particle will inevitably fall into the black hole after the IBCO**:
 
- 
+![](../assets/images/black-hole-orbits/img_62.jpg) 
 
 Therefore, any particle that “crosses” the peak of the potential (in other words, crosses the IBCO) will keep falling towards smaller radius (unless using rockets or some other external force), eventually reaching the event horizon to never return.
 
@@ -453,7 +466,7 @@ With small angular momentum of the orbiting particle, the maximum peak in the ef
 
 If the angular momentum hits *exactly* the minimum value, the peak disappears completely; **any particle with less than the minimum value of angular momentum will keep falling towards smaller radius and fall into the black hole**.
 
- 
+![](../assets/images/black-hole-orbits/img_64.jpg) 
 
 Here, I’ve plotted the effective potential for some example values of the angular momentum. Hopefully from this it’s clear why for L<Lmin, a particle will fall arbitrarily far down the effective potential as there is no “peak” to prevent it from getting to smaller r.
 
@@ -483,7 +496,7 @@ So, even though the electric field itself of the black hole does not necessarily
 
 This can be seen from the fact that there is some additional terms in the effective potential due to the electric charge of the black hole:
 
- 
+![](../assets/images/black-hole-orbits/img_66.jpg) 
 
 Here, M is the mass of the black hole and Q is its charge, L is the angular momentum of the orbiting particle and ε is a parameter that is 1 for massive particles and 0 for massless particles (light or photons). I’ve also cleaned up some of these terms by setting the constants c=G=1 and ignoring the mass of the orbiting particle (which plays no role in the shape of the orbits or the potential, since we’re considering the black hole to be stationary and not effected by the gravity of the orbiting particle).
 
@@ -499,7 +512,7 @@ A smaller centrifugal force, on the other hand, requires a smaller angular momen
 
 Now, in terms of the types of orbits a particle could have around a charged black hole, surprisingly, these are actually **very similar to the uncharged case**. We can see this by plotting the effective potential graph again (note that the graph only looks like this for very specific values of M, L and Q):
 
- 
+![](../assets/images/black-hole-orbits/img_68.jpg) 
 
 The ESCO is a third (theoretically) possible stable circular orbit, unique to charged black holes. However, for realistic black holes, the rESCO-radius is located inside the event horizon, which makes it not really physically interesting. Only in the extremal case (hence the name *extremal* stable circular orbit), the ESCO will be located exactly at the horizon where a particle could, in principle, have an orbit at.
 
@@ -537,7 +550,7 @@ The aspect that makes these Kerr black holes so complicated is that they (and th
 
 So far in all of our discussion about black hole orbits, there has been an implicit symmetry that I haven’t explained in detail; **spherical symmetry**. This means that the spacetime around the black hole “looks the same” from every direction.
 
- 
+![](../assets/images/black-hole-orbits/img_70.jpg) 
 
 Note that the Kerr black hole has this oblate kind of shape, resulting from its axisymmetry.
 
@@ -545,7 +558,7 @@ Spherical symmetry also has an important consequence in terms of orbits, which i
 
 In other words, all orbits can be pictured nicely by simple 2-dimensional orbits and the specific orbital plane does not matter; due to spherical symmetry, **all orbital planes are equivalent**.
 
- 
+![](../assets/images/black-hole-orbits/img_72.jpg) 
 
 These are depictions of orbits around a black hole that does not spin. If the black hole spins, this scenario of rotational symmetry is no longer true (as we’ll talk about in this section).
 
@@ -561,11 +574,11 @@ There is, however, a special case of orbits that are much simpler to analyze; **
 
 However, a more intuitive picture for our case is that equatorial orbits are simple orbits that “rotate” in the same direction (or in the exactly opposite direction) as the black hole’s spin. The point is that these orbits lie in a single plane, which makes them qualitatively quite similar to the orbits we’ve talked about prevously.
 
- 
+![](../assets/images/black-hole-orbits/img_74.jpg) 
 
 Since the orbiting happens exclusively in the xy-plane (the equatorial plane), we could as well picture the same situation in two dimensions (you can imagine looking at the situation from exactly above and it would look like this):
 
- 
+![](../assets/images/black-hole-orbits/img_76.jpg) 
 
 Note that this picture depicts a circular orbit, but we could very well have precessing elliptical orbits or zoom-whirl orbits that lie in the equatorial plane.
 
@@ -584,7 +597,7 @@ Since we’re still talking about equatorial orbits, there are two possible ways
 - **The particle can also orbit in exactly the opposite direction to the black hole’s spin**. These are called **retrograde orbits**.
 - In a retrograde orbit, the effect of frame dragging is in the opposite direction to the particle’s orbital motion, resulting in a “force” that **slows down** the particle in its orbit.
 
- 
+![](../assets/images/black-hole-orbits/img_78.jpg) 
 
 Now, the most significant effect of frame dragging in terms of orbits is that the ISCO and IBCO are located at different radii depending on whether the orbit is prograde or retrograde. Around a non-rotating black hole, this does not matter since the whole situation is symmetric from all directions.
 
@@ -601,6 +614,8 @@ Here, G and c are constants (gravitational constant and speed of light) and M is
 
 Other types of possible orbits **in the equatorial plane** are very much similar to the case of a non-rotating black hole (the possible orbit types are precessing ellipses, zoom-whirl orbits etc.). This is because the effective potential (again, only in the equatorial plane) is similar to the Schwarzschild case (an inverse cubic polynomial of r):
 
+![V_{eff}\left(r\right)\sim-\frac{1}{r}+\frac{1}{r^2}-\frac{1}{r^3}](../assets/images/black-hole-orbits/img_80.svg)
+
 For massless particles (light), the first term does not exist as is the case for a non-rotating black hole also.
 
 The only thing that changes is that the ranges of possible orbits depend on whether the orbit is pro- or retrograde. **Prograde orbits can exist closer to the black hole, while retrograde orbits are much further away**.
@@ -609,7 +624,7 @@ Well, actually there does exist a new kind of orbit that does not exist in the S
 
 In these orbits, the particle is first orbiting in one direction, but slows down due to frame dragging and at some point, turns around in the opposite direction. However, these orbits are **only possible for retrograde motion**.
 
- 
+![](../assets/images/black-hole-orbits/img_82.jpg) 
 
 If the particle gets close enough to the black hole (in a retrograde orbit), the effect of frame dragging may get strong enough to reverse its orbital direction. After turning around, the orbiting particle (it’s a spaceship in the picture but in physics, it’s typical to just call everything a particle) spirals into the black hole if its velocity is not enough to maintain an orbit.
 
@@ -621,13 +636,15 @@ In a **non-equatorial orbit**, the direction of the frame dragging effect (which
 
 This practically has the effect of ***rotating the orbital plane*** (see the picture below), causing the direction of the particle’s motion to change in some pretty strange-looking ways.
 
- 
+![](../assets/images/black-hole-orbits/img_84.jpg) 
 
 We now have have a situation where the particle’s orbital motion is completely 3-dimensional; its orbital motion is basically 2-dimensional in a plane, **but the orbital plane itself is rotating in another direction**. The particle has fully 3D orbital dynamics!
 
 Now, the theme of this article has been to analyze orbital motion by using the effective potential. The problem with this approach in the Kerr spacetime is that the **effective potential actually depends on two coordinates, r and θ** (i.e. the radial distance as well as the angle of the orbital plane).
 
 The effective potential also has a fairly ugly looking and complicated form:
+
+![V_{eff}\left(r{,}\theta\right)\sim\frac{1-r+r^2}{r^2+\cos^2\theta}+\frac{r-r^2+r^3}{\left(r^2+\cos^2\theta\right)^2}-\frac{\left(r^2-r^3+r^4\right)\sin^2\theta}{\left(r^2+\cos^2\theta\right)\left(\left(r^2-r+\cos^2\theta\right)\left(1+r^2\right)^2+\left(\left(1+r^2\right)\left(r-r^2\right)+r^3-\left(1-r+r^2\right)\cos^2\theta\right)\sin^2\theta\right)}-\frac{1}{2}\frac{\frac{r^2-r^3+r^4}{r^2+\cos^2\theta}-\frac{r^3-r^4+r^5}{\left(r^2+\cos^2\theta\right)^2}-\left(1-r+r^2\right)\left(\frac{r^4+r^2}{\sin^2\theta}+\left(1+r^2\right)\cot^2\theta+r\right)\left(r\sin^2\theta+r^2-r+\cos^2\theta\right)^2}{\left(\left(r^2-r+\cos^2\theta\right)\left(1+r^2\right)^2+\left(1+r^2\right)\left(r-r^2\right)\sin^2\theta+r^3\sin^2\theta-\left(1-r+r^2\right)\cos^2\theta\sin^2\theta\right)^2}](../assets/images/black-hole-orbits/img_86.svg)
 
 Note; this is only a schematic form of Veff (meaning that I’ve set all constants and parameters equal to 1) to give you a rough idea of how complicated the r- and θ-dependence would be.
 

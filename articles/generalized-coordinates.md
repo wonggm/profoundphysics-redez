@@ -84,6 +84,8 @@ When using **Newton’s laws**, whenever we want to *constrain* a system to beha
 
 For example, when a pendulum is only allowed to swing back and forth with the length of its rod being constant, we have to add in a constraint force that keeps the pendulum at a constant length from the origin; this constraint force is the **tension**.
 
+![](../assets/images/generalized-coordinates/img_2.jpg)
+
 However, when using **generalized coordinates**, we do not have to add in these constraints by hand; we can, in most cases, choose our generalized coordinates in such a way that they *already include* the constraints.
 
 If we wanted to, we could add in these constraint forces also in Lagrangian mechanics with the use of **Lagrange multipliers**, but I want to stress that by using generalized coordinates appropriately, we essentially **eliminate the need for any constraint forces**.
@@ -92,9 +94,13 @@ Also, the other nice thing about generalized coordinates is that they allow us t
 
 In particular, if we choose some generalized coordinate and the Lagrangian turns out NOT to depend on this particular coordinate, then we immediately know that the **corresponding generalized momentum must be conserved**.
 
+![](../assets/images/generalized-coordinates/img_4.jpg) 
+
 In case you’re interested, I have a free downloadable PDF that covers the Kepler problem in full detail using Lagrangian mechanics (and many other examples as well). You’ll find it [here](https://profoundphysics.com/lagrangian-mechanics-examples-applications-free-pdf/).
 
 A more detailed explanation of exactly how the **Lagrangian and Newtonian formulations of classical mechanics** differ from one another can be found in my article **[Lagrangian vs Newtonian Mechanics: The Key Differences](https://profoundphysics.com/lagrangian-vs-newtonian-mechanics-the-key-differences/)**.
+
+[![](../assets/images/generalized-coordinates/img_6.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 
@@ -165,6 +171,8 @@ The simple pendulum essentially consists of a mass at the end of a rigid rod tha
 
 We can place the pendulum in an x,y -coordinate system such that the rod is attached to the origin. I’ll also denote the angle relative to the vertical (y-axis) as θ.
 
+![](../assets/images/generalized-coordinates/img_8.jpg)
+
 What we want to do is to find the pendulum bob’s position at each point in time and then construct the Lagrangian. To do this, we could use the x,y -coordinates here, but these may not be the best choice.
 
 Let me explain why. First of all, we have once constraint, which is that the length of the rod or the distance from the origin has to be a constant L.
@@ -176,6 +184,8 @@ The natural choice due to rotational symmetry here is going to be the **angle θ
 This is indeed a valid choice of a generalized coordinates as **it is consistent with our constraint**; this θ-coordinate can only change perpendicularly to our constraint (distance from the origin), so it cannot violate this constraint.
 
 So, we will take the angle θ as the generalized coordinate of this pendulum. Now, the easiest way to continue here is to write down the x,y -coordinates in terms of θ. We can get these by some simple trigonometry:
+
+![](../assets/images/generalized-coordinates/img_10.jpg) 
 
 Note that the y-coordinate is negative here since it’s measure downwards from the origin.
 
@@ -211,9 +221,13 @@ Let’s do another example, this time something a bit more complicated; a pendul
 
 We’ll again call the length of the rod L, the mass m and gravity downwards will be a constant g. We can begin by placing the pendulum in a Cartesian x,y,z -coordinate system:
 
+![](../assets/images/generalized-coordinates/img_12.jpg)
+
 We could use the x,y,z -coordinates of the mass m as our generalized coordinates, but we can again be smarter here; we only need 3\*1-1=2 generalized coordinates (we’re in 3 dimensions with one object and one constraint, the distance from the origin has to be a constant L again).
 
 Also, the situation here clearly has some **spherical symmetry** due to the motion of the pendulum being constrained to a sphere. Therefore, the natural choice of coordinates is going to be **two angles, θ and ϕ** (these are called spherical coordinates, with the r-coordinate fixed as r=L):
+
+![](../assets/images/generalized-coordinates/img_14.jpg)
 
 Since we know that at all times, the distance from the origin must be L, we can locate the pendulum bob just by knowing these two angles, θ and ϕ, at any point in time. These will therefore be our **generalized coordinates**.
 
@@ -241,6 +255,8 @@ Essentially, the two-body problem consists of two objects (masses m1, m2) in thr
 
 We can begin by describing the positions of both the bodies by some position vectors (i.e. both of the bodies’ x,y,z -coordinates):
 
+![](../assets/images/generalized-coordinates/img_16.jpg)
+
 Now, at first it’s not very obvious what constraints we may have here, so it would seem that we need 6 generalized coordinates (3 for both masses) to fully describe this system.
 
 In principle, you could pick the x,y,z -coordinates of both the masses as your generalized coordinates.
@@ -248,6 +264,8 @@ In principle, you could pick the x,y,z -coordinates of both the masses as your g
 However, a better choice is most likely going to be the **position of the center of mass of the system** as well as the **relative distance between the two bodies** (since we have a many-body system, a relative distance is going to be a good choice of coordinates most of the time).
 
 These can be described by two vectors, r and R, which both have 3 components (so we still have the necessary 6 degrees of freedom):
+
+![](../assets/images/generalized-coordinates/img_18.jpg) 
 
 If you think about it, choosing these as the generalized coordinates is actually quite a natural choice due to the fact the potential only depends on the distance between the two bodies (the magnitude of this r-vector).
 
@@ -258,6 +276,8 @@ From this fact, we get **three constraints** (each of the component of the cente
 Also, since this problem has spherical symmetry, a good choice of generalized coordinates is going to be **spherical coordinates**.
 
 We can use these if we, for example, choose our coordinates such that one of the masses sits at the origin. The other mass can then be located by a radius r and two angles, θ and ϕ:
+
+![](../assets/images/generalized-coordinates/img_20.jpg)
 
 Here we always know that the other mass is located at the origin, so if we know the distance and the two angles (r,θ,ϕ) relative to the mass at the origin, we then know the position of the other mass as well.
 

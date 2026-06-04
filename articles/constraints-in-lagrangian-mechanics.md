@@ -55,6 +55,8 @@ However, the clever thing about Lagrangian mechanics is that we can choose any c
 
 We can therefore often choose our coordinates in a way that they implicitly contain all the constraints already and there is no need to introduce any constraint forces anymore; **the constraints are already encoded in our choice of generalized coordinates**.
 
+![](../assets/images/constraints-in-lagrangian-mechanics/img_2.jpg)
+
 You can read more about generalized coordinates and how to choose and use them in practice [from this article](https://profoundphysics.com/generalized-coordinates/) that also shows you some examples of this.
 
 Below I’ve also added an example of how using these constraint forces works in Newtonian mechanics. This will help illustrate better how generalized coordinates can then be used to avoid the use of constraint forces altogether.
@@ -74,6 +76,8 @@ Now, here’s the important thing; **the tension and the radial component of gra
 This is why we have to add in this tension force in the first place; to constrain the pendulum to move in such a way that the length L is fixed and in practice, we do this by “balancing” out the forces such that this constraint is obeyed.
 
 Now, we can find the radial and tangential forces by placing the pendulum in an xy-coordinate system and specifying the angle θ, which can be used to split the force of gravity into its radial and tangential components:
+
+![](../assets/images/constraints-in-lagrangian-mechanics/img_4.jpg)
 
 The net forces in the radial and tangential directions are then:
 
@@ -127,6 +131,8 @@ This can always be done for any equation by just moving every term to one side. 
 
 Some examples of these constraint equations might be a **particle constrained to move on a sphere**, in which case it must satisfy the relation (R is the radius of the sphere):
 
+![](../assets/images/constraints-in-lagrangian-mechanics/img_6.jpg)
+
 Now, what do you actually do with these constraint equations?
 
 Well, simply put, these are equations you can use to **simplify your choice of generalized coordinates** for the system. If you use the constraint equations cleverly, you may be able to **choose your generalized coordinates in such a way that they *implicitly* contain all the constraints**.
@@ -146,6 +152,8 @@ What we’ll discover is that we get the right equations of motion without needi
 To get started, let’s again place the pendulum in an xy-coordinate system with the angle θ (a function of time) being the angle between the pendulum rod and the y-axis. The mass is again m and the length of the rod is L.
 
 Now, instead of adding in a bunch of forces, let’s just express the x- and y- coordinates of the pendulum using polar coordinates, r and θ (the radial distance from the center and the angle to the vertical):
+
+![](../assets/images/constraints-in-lagrangian-mechanics/img_8.jpg)
 
 Now, let’s write down our constraint equation. We know that at all times, the length of the rod should be a constant L, which means that the radial distance r must be equal to this. Our **constraint equation** can then be expressed as:
 
@@ -237,6 +245,8 @@ Let’s place the unicycle in an x,y,z -coordinate system, so as it moves, its p
 
 Now, the special thing about a unicycle is that it can also have an “orientation”, meaning that at any point, the unicycle can be pointed in a different direction. We’ll label this orientation by an angle θ:
 
+![](../assets/images/constraints-in-lagrangian-mechanics/img_10.png) 
+
 The vector v here describes the velocity of the unicycle.
 
 If the unicycle is not allowed to “jump” up and down, we have z=0, which reduces the degrees of freedom to just three; the position coordinates x and y as well as the orientation θ (these are our generalized coordinates, which change with time, i.e. they are all functions of time).
@@ -276,6 +286,8 @@ Note that I’ve set the integration constants to zero here.
 So, we do get a relation between the coordinates here, namely that y=xtan(θ0), so actually, our constraint here turns into a holonomic constraint and the system would therefore only need one generalized coordinate, the coordinate x (since by knowing x, we automatically know y also).
 
 For the rest of the article, we’ll only be discussing **holonomic constraints** as these are the most common types of constraints and also the most useful ones, generally speaking.
+
+[![](../assets/images/constraints-in-lagrangian-mechanics/img_12.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 
@@ -321,6 +333,8 @@ Simply put, the **Euler-Lagrange equation with constraints** has the following f
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{q}_i}-\frac{\partial L}{\partial q_i}=\sum_j^{ }\lambda_j\frac{\partial f_j}{\partial q_i}$$
 
 Let’s look at what each of these things here mean:
+
+![](../assets/images/constraints-in-lagrangian-mechanics/img_14.jpg)
 
 Intuitively, the right-hand side here represents the **constraint forces** (a sum over all them), so these Lagrange multipliers will give you information about how the constraint forces behave.
 
@@ -460,15 +474,21 @@ The way to geometrically understand this is that both of the functions, g(x,y) a
 
 Now, let’s say we have a particular value k of the function g(x,y). In other words, g(x,y)=k is some curve on the graph of g(x,y), called a contour line. But, our constraint f(x,y)=0 is also a contour line, namely the curve where the value of f(x,y) is zero, i.e. the curve along which the constraint is satisfied.
 
+![](../assets/images/constraints-in-lagrangian-mechanics/img_16.png)
+
 In order for k to be a maximum of g(x,y) such that the constraint f(x,y)=0 is also satisfied, we must have two things; first, the contour lines g(x,y)=k and f(x,y)=0 must meet in order for g(x,y)=k to satisfy the constraint.
 
 Secondly, for k to specifically be a maximum of g(x,y), the contour lines g(x,y)=k and f(x,y)=0 must be tangent to one another (i.e. they must go in the same direction at that point).
+
+![](../assets/images/constraints-in-lagrangian-mechanics/img_18.png)
 
 In case you’re familiar with stuff about vector calculus, you’ll know that the gradient of a scalar function always points perpendicular to these contour lines (for more on vector calculus, I recommend checking out my **[Vector Calculus For Physics: A Complete Self-Study Course](https://profoundphysicscourses.com/advanced-math/)**).
 
 Now, because at this maximum point, the contour lines are tangent to one another (they are going in the same direction at this point), therefore also the gradient vectors at this must point in the same direction.
 
 In other words, the gradients at this point are proportional to one another (when we say that two vectors are “proportional” to one another, it just means that they point in the same direction):
+
+![](../assets/images/constraints-in-lagrangian-mechanics/img_20.png)
 
 An equivalent way of stating this would be that we can express these gradient vectors as multiples of one another by adding in a proportionality constant (we’ll call it λ):
 
@@ -503,6 +523,8 @@ $$\frac{d}{dt}\frac{\partial L}{\partial\dot{q}_i}-\frac{\partial L}{\partial q_
 This is roughly speaking, analogous to the fact that we minimize an “ordinary” multivariable function by setting its gradient (∇g, which is a bunch of partial derivatives just like the Euler-Lagrange equation) equal to zero.
 
 Now, analogously to when a multivariable function is minimized *under constraints*, the right-hand side of the “minimum condition” (∇g=0) is no longer zero but now contains these Lagrange multipliers (λ∇f), the same happens when minimizing the action under constraints; we add in Lagrange multipliers and the “gradient” (partial derivatives) of the constraint function:
+
+![](../assets/images/constraints-in-lagrangian-mechanics/img_22.png) 
 
 Also, if there are multiple constraints, you’d just sum over all of them on the right-hand side.
 
@@ -618,6 +640,8 @@ $$r\left(\theta\right)=a\theta$$
 
 This a here is some proportionality constant with units of lengths. The trajectory of the particle then looks more or less as follows:
 
+![](../assets/images/constraints-in-lagrangian-mechanics/img_24.jpg)
+
 You’ll find the full detailed solution to this down below.
 
 Equations of motion & constraint forces for the particle on a spiral
@@ -687,6 +711,8 @@ $$Q_{\theta}=\lambda\frac{\partial f}{\partial\theta}=\frac{2\theta+\theta^3}{1+
 The following example is basically a **particle that begins sliding (initially from rest) down a half-sphere**. At some point, it will **slide off the sphere** and we want to know exactly when the particle leaves the sphere.
 
 In particular, we can describe the particle’s position by an angle θ (relative to the vertical). We therefore want to find the specific angle θ0 at which the particle falls off the sphere:
+
+![](../assets/images/constraints-in-lagrangian-mechanics/img_26.jpg)
 
 The way to solve this problem using Lagrangian mechanics is to find the constraint force (which corresponds to the **normal force** of the surface) and then look at when that normal force goes to zero, which will give you the angle at which the particle loses contact with the sphere.
 

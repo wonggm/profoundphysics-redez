@@ -31,15 +31,21 @@ Fundamentally, however, they all contain the metric tensor gµν so it is indeed
 
 **This is what the fully expanded Einstein field equations look like when written out in terms of the metric:**
 
+![The Einstein field equations fully written out and expanded in terms of the metric.](../assets/images/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded/img_1.jpg)![The Einstein field equations fully written out and expanded in terms of the metric.](../assets/images/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded/img_2.jpg)
+
 Even this does not really describe how complicated these equations actually are.
 
 Here I’ve used the so-called **Einstein summation convention**, which means that every index you can see in a term that is repeated both in the upstairs and downstairs position, is actually a summation index.
 
 If you want to **explicitly write out the summations**, this is what it would look like:
 
+![](../assets/images/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded/img_4.jpg)
+
 It’s kind of a mess, isn’t it? If you were to write out all of these sums (which would not even fit on this whole page probably), the result would be even messier.
 
 To give you some idea, here is the first term completely written out:
+
+![](../assets/images/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded/img_6.jpg)
 
 Yes, this really is *only the first term*. Good luck then writing out the summations for every single term in the field equations, let alone solving that equation for any component of the metric.
 

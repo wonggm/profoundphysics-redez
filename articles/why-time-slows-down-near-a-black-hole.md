@@ -47,6 +47,8 @@ In general relativity, we model everything through a concept called **spacetime*
 
 The effects of gravity are then modeled by the curvature of this spacetime manifold. If you wish to understand the underlying ideas behind this, I recommend reading **[this introduction to general relativity](https://profoundphysics.com/general-relativity-for-dummies/)**.
 
+![](../assets/images/why-time-slows-down-near-a-black-hole/img_2.jpg) 
+
 This is a sketch of a curved spacetime manifold, which has a time dimension and a spacial dimension. Note that in reality, spacetime is 4-dimensional with one time dimension and three spacial dimensions, but this cannot really be pictured in any sensible way.
 
 Anyway, if we wish to actually describe a point (these are called *events*) on a **curved spacetime manifold**, we need coordinates (one time coordinate and three space coordinates) or a **coordinate system**.
@@ -54,6 +56,8 @@ Anyway, if we wish to actually describe a point (these are called *events*) on a
 In a coordinate system, there are always **basis vectors**, which are used to generally describe any vector and its components in that system.
 
 However, if the spacetime and thus, the coordinate system is curved (such as in a gravitational field in general relativity), these basis vectors are going to vary from point to point, which means their **length and direction aren’t constant** anymore.
+
+![](../assets/images/why-time-slows-down-near-a-black-hole/img_4.jpg) 
 
 Here, we have again a 2-dimensional spacetime with et denoting the basis vector in the time direction and ex the basis vector in the x-direction.
 
@@ -76,6 +80,8 @@ We’ll discuss this (and most importantly how this can help us understand time 
 ### The Geometric Explanation Behind Gravitational Time Dilation
 
 For our discussion regarding black holes, the curved spacetime geometry near a spherical black hole is such that the **basis vectors in the time direction get shorter as one moves closer to the black hole** (more on this down below).
+
+![](../assets/images/why-time-slows-down-near-a-black-hole/img_6.jpg)
 
 You can sort of picture this geometrically as the time dimension getting “squeezed” as one moves radially towards the black hole. This then results in the effect we call gravitational time dilation.
 
@@ -191,6 +197,8 @@ Now, to understand what actually happens to time dilation at the black hole’s 
 
 *Proper time*, on the other hand, is the time **measured by the observer itself that is near the black hole**. It’s worth noting that proper time is an **invariant quantity**, so in a sense, it is a more “objective” measure of the actual time that passes.
 
+![](../assets/images/why-time-slows-down-near-a-black-hole/img_8.jpg) 
+
 In a sense, proper time is a more meaningful measure of time as it is always the time measured by an observer themselves. However, for time dilation, what really matters is the *difference* in the proper time and coordinate time measurements. Also, don’t ask me why these observers happen to be fruits.
 
 That being said, what really matters is the difference in the time measurements between the two observers, which results in the phenomenon of **gravitational time dilation**.
@@ -225,6 +233,8 @@ So, an observer far away (essentially not influenced by gravity at all) would ob
 
 Intuitively, you could think of this resulting from the gravity of the black hole “pulling” the outgoing light rays towards the center, thus “slowing them down”, but really this is due to the light being **redshifted** as it climbs out of the black hole’s gravitational well.
 
+![](../assets/images/why-time-slows-down-near-a-black-hole/img_10.jpg)
+
 Now, while the far away observer would see any light rays or any other physical signals being slowed down due to gravity, thus resulting in the **passing of time being seemingly slower**, the observer near the black hole would not see such an effect.
 
 This is because, locally, the speed of light is always c (a constant), so the time dilation effect is only due to the **coordinate differences** between the two observers.
@@ -240,6 +250,8 @@ Neither one of them is more correct because this would require one observers fra
 So, it’s simply not possible to say how much time has “universally” passed, we can only say how much time passes in one particular frame and then compare those differences.
 
 However, an objective fact is that there is a *difference in the passing of time* between the two observers. So, in fact, the two observers WILL see each other physically *age at a different pace*. This is discussed more later in the article.
+
+[![](../assets/images/why-time-slows-down-near-a-black-hole/img_12.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
@@ -343,6 +355,8 @@ Here are a few noteworthy details about these time dilation factors:
 - Physically, this means that the time dilation as seen by a far away observer will be different depending on the **relative angle** between the far away observer and the observer near the black hole.
 - This is due to a phenomenon called **frame dragging**, which can be thought of as the rotating black hole “dragging” the spacetime around it as it rotates (a nice analogue of this is like water “circling” around a drain in a pool).
 - Also, due to this frame-dragging effect, all observers are naturally “dragged” to rotate with the black hole; thus, for an observer to remain stationary, it has to oppose the rotation of the black hole such that it remains still. This is only possible outside a certain distance called the **stationary limit surface**.
+
+![](../assets/images/why-time-slows-down-near-a-black-hole/img_14.jpg) 
 
 Here we’ve taken the Earth (the observer far away from the black hole) to be sitting still in the xy-plane, which lies at the value of θ=π/2.
 

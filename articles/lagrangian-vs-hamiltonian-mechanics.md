@@ -50,6 +50,8 @@ The key idea behind both of the formulations is that we can predict and describe
 
 If we know the kinetic and potential energies of an object at all points in time, we can fully predict where the object will move next. In other words, we know the entire trajectory of the object. Take for example, the trajectory of a projectile (such as a ball thrown in the air):
 
+![](../assets/images/lagrangian-vs-hamiltonian-mechanics/img_2.jpg)
+
 This is the basis for both the Lagrangian and the Hamiltonian formulation – in both formulations, we describe how a system evolves in time by the energies of the system.
 
 However, the way in which this is done in practice will be quite different in the two formulations.
@@ -161,6 +163,8 @@ The key point with all of this is that the distinction between using momentum as
 
 Even though this seems like a very minor difference in the context of classical mechanics, it really does make a significant difference in other areas of physics.
 
+[![](../assets/images/lagrangian-vs-hamiltonian-mechanics/img_4.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
+
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 
 ## The Euler-Lagrange Equation vs Hamilton’s Equations
@@ -244,6 +248,8 @@ Now, we add each of these **particles’ position coordinates in the configurati
 
 But in this case, we only have **one dimension**, the horizontal direction, as well as **two particles**, so **two axes** is enough. **The configuration of the system then consists of both of the particles’ positions together**. This is how our configuration space looks like in this example:
 
+![](../assets/images/lagrangian-vs-hamiltonian-mechanics/img_7.jpg)
+
 Now, imagine the particles start moving along the line of length L. As they move from one of the boundaries to the other (from one side to the other), **we can track both of the particles’ position on the configuration space** and then get a representation for **all of the possible configurations** this system can have:
 
 This yellow square in the video then represents all the possible **configurations**, meaning **all the possible ways you can have the two particles positioned on this line L**.
@@ -257,6 +263,8 @@ Phase space is simply a space in which, in addition to mapping an **object’s p
 So, instead of a point representing only the position, in phase space a point represents **the position as well as momentum**. This defines the full “classical state” of the system.
 
 Let me explain this through a simple example. Let’s now only consider the particle A from our earlier example. In this case, we only need **one axis to represent position and one for momentum**. This is what the **phase space of our system** looks like:
+
+![](../assets/images/lagrangian-vs-hamiltonian-mechanics/img_10.jpg)
 
 To make this example more interesting, let’s make the particle **accelerate up to the halfway point** and **decelerate the rest of the way** (by a constant force) as it moves along the line. Acceleration and deceleration of course mean that the momentum changes.
 
@@ -289,6 +297,8 @@ Constraints are used whenever we want to describe a system that can only behave 
 In Lagrangian mechanics, we can interpret these constraints essentially as **constraining the configuration space of the system**. This means that the actual physical configuration of the system forms some kind of *sub-space* in the full, unconstrained configuration space.
 
 Anyway, the main point with all of this is that because Lagrangian mechanics and Hamiltonian mechanics are formulated in different spaces, both the formulations naturally allow for different ways of interpreting the dynamics of classical systems. In the end, both still give the same physical predictions.
+
+[![](../assets/images/lagrangian-vs-hamiltonian-mechanics/img_13.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 

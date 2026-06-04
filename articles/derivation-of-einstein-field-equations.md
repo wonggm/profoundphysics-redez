@@ -188,6 +188,8 @@ This is exactly the object we were looking for! We can then conclude that based 
 
 $$R^{\mu\nu}-\frac{1}{2}g^{\mu\nu}R\propto T^{\mu\nu}$$
 
+[![](../assets/images/derivation-of-einstein-field-equations/img_2.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
 ### Step 3: Take The Newtonian Limit of The Field Equations
@@ -629,6 +631,8 @@ $$\Rightarrow\ \ \frac{\delta R}{\delta g^{\mu\nu}}-\frac{1}{2}Rg_{\mu\nu}+\Lamb
 
 This is starting to look a lot like the Einstein field equations. We just need to calculate the variation in this Ricci scalar and after that, we’re pretty much done!
 
+[![](../assets/images/derivation-of-einstein-field-equations/img_4.jpg)](https://profoundphysicscourses.com/advanced-math/)
+
 ### Step 5: Calculate The Variation of The Ricci Scalar
 
 The **variation of the Ricci scalar** turns out to give us just the **Ricci tensor**:
@@ -769,7 +773,11 @@ A noteworthy result of the second derivation we found was the **local conservati
 
 For the first method, here’s a brief outline of the steps we took:
 
+![Full derivation of the Einstein field equations.](../assets/images/derivation-of-einstein-field-equations/img_6.jpg)
+
 And for the second method using the action principle, here’s an outline of what we did there:
+
+![Full derivation of the Einstein field equations (alternative method).](../assets/images/derivation-of-einstein-field-equations/img_8.jpg)
 
 For last, I’d like to give you some suggestions and resource recommendations on where to next.
 

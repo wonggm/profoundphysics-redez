@@ -105,6 +105,8 @@ All in all, the point is that time is usually not thought to be dependent on any
 
 Thus, time is viewed as being an independent variable and also why it’s usually treated as the independent variable in almost all physical contexts, logically so.
 
+[![](../assets/images/is-time-always-the-independent-variable/img_2.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
 ---

@@ -117,7 +117,6 @@ def html_to_markdown(html: str) -> str:
         heading_style="atx",  # Use # for headings
         bullets="-",  # Use - for list items
         code_language="",  # No default language for code blocks
-        strip=["img"],  # Strip images for now (can be added later)
     )
 
     # Clean up excessive blank lines
@@ -143,14 +142,34 @@ def html_to_markdown(html: str) -> str:
     return markdown.strip()
 
 
+def download_image(url: str, save_path: Path) -> bool:
+    """Download an image from URL and save to local path."""
+    try:
+        import requests
+        response = requests.get(url, timeout=30, stream=True)
+        response.raise_for_status()
+        with open(save_path, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+        return True
+    except Exception as e:
+        print(f"    ⚠ Failed to download image {url}: {e}")
+        return False
+
+
 def scrape_article(url: str, slug: str) -> dict:
     """
     Scrape a single article and return a dict with:
     - title: str
     - content_html: str (cleaned HTML with LaTeX restored)
     - content_md: str (markdown version)
+    - images: list of (original_url, local_path) tuples
     """
     print(f"  Scraping {slug}...")
+
+    images = []
+    image_dir = ROOT / "assets" / "images" / slug
+    image_dir.mkdir(parents=True, exist_ok=True)
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -158,13 +177,54 @@ def scrape_article(url: str, slug: str) -> dict:
 
         try:
             # Load the page
-            page.goto(url, wait_until="networkidle", timeout=60000)
+            page.goto(url, wait_until="domcontentloaded", timeout=60000)
 
-            # Wait for page to settle (some articles have no math, so don't wait for .katex)
+            # Wait for page to settle
             page.wait_for_timeout(3000)
 
             # Get the full page HTML
             html = page.content()
+
+            # Extract images from the article
+            soup = BeautifulSoup(html, 'html.parser')
+            article = soup.find('article') or soup.find('main')
+            if article:
+                content = article.find(class_='entry-content') or article
+                img_tags = content.find_all('img')
+                for i, img in enumerate(img_tags):
+                    src = img.get('src')
+                    # Skip data: URIs (lazy-loading placeholders)
+                    if not src or src.startswith('data:'):
+                        # Remove the img tag entirely
+                        img.decompose()
+                        continue
+
+                    # Make URL absolute
+                    if src.startswith('//'):
+                        src = 'https:' + src
+                    elif src.startswith('/'):
+                        from urllib.parse import urlparse
+                        parsed = urlparse(url)
+                        src = f"{parsed.scheme}://{parsed.netloc}{src}"
+
+                    # Download image
+                    ext = Path(src).suffix or '.jpg'
+                    if '?' in ext:
+                        ext = ext.split('?')[0]
+                    local_filename = f"img_{i+1}{ext}"
+                    local_path = image_dir / local_filename
+
+                    if download_image(src, local_path):
+                        images.append((src, f"../assets/images/{slug}/{local_filename}"))
+                        # Replace src in HTML with local path
+                        img['src'] = f"../assets/images/{slug}/{local_filename}"
+                        print(f"    ✓ Downloaded image {i+1}: {local_filename}")
+                    else:
+                        # Remove failed images from HTML
+                        img.decompose()
+
+            # Get the updated HTML
+            html = str(soup)
 
         except Exception as e:
             print(f"    ✗ Error loading {url}: {e}")
@@ -194,6 +254,7 @@ def scrape_article(url: str, slug: str) -> dict:
         "title": title,
         "content_html": article_html,
         "content_md": content_md,
+        "images": images,
     }
 
 

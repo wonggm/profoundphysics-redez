@@ -48,6 +48,8 @@ These inertial reference frames have the wonderful property that Newton’s firs
 
 Now, a **reference frame** is simply just a description of an observer’s state of motion – it describes how the observer would measure time and space. We typically describe this by assigning a **coordinate system** (with both spatial and time axes) to the observer.
 
+![](../assets/images/are-maxwell-equations-relativistic/img_2.jpg) 
+
 Here we have two different inertial reference frames. One for a stationary observer that measures time and space as t and x and another observer moving with velocity v relative to the first one. This observer would measure time and space differently than the stationary observer, as t’ and x’ instead.
 
 The important thing for us is **how the reference frames of different observers are compared**. We essentially compare reference frames by doing a **transformation** from one frame to another.
@@ -56,11 +58,15 @@ The important thing for us is **how the reference frames of different observers 
 
 To visualize a **translation**, imagine two people stood on a long ruler in the same place. If one person moves along the ruler, they have undergone a translation.
 
+![](../assets/images/are-maxwell-equations-relativistic/img_4.jpg) 
+
 Here we see an object that undergoes a translation. This simply has the effect of shifting the spatial coordinates of the object by some constant amount with time remaining the same.
 
 Visualizing a **rotation** isn’t much harder. Imagine two people on a merry-go-round (or carousel) who are stood at the edge and looking at the center.
 
 These two observers are related by a rotation about the center – the distance from the center doesn’t change, just the angle between them!
+
+![](../assets/images/are-maxwell-equations-relativistic/img_6.jpg) 
 
 Here we see an object that undergoes a rotation of its reference frame. This effectively has the effect of rotating the spatial axes of the object (the time axis should remain the same) and most importantly, the time and spatial axes of the object’s frame remain *orthogonal* (the time and spatial coordinates do not mix together).
 
@@ -75,6 +81,8 @@ You can boost in any direction, however, generally, a Lorentz transformation wil
 If one observer is at rest, then a boosted observer’s frame of reference is moving in the x-direction with relative velocity v.
 
 What is special about the Lorentz boost is that it **mixes the time and space coordinates** of the two observers – meaning that Lorentz transformations actually act on *spacetime* itself!
+
+![](../assets/images/are-maxwell-equations-relativistic/img_8.jpg)
 
 In fact, this property of the Lorentz boosts is the reason behind all the weird phenomena of special relativity (time dilation, length contraction and so on).
 
@@ -93,6 +101,8 @@ The special thing about Lorentz transformations is that **they preserve the spee
 Now, the important thing for us is that it turns out **Maxwell’s equations also preserve their form under Lorentz transformations**. We describe this by saying that Maxwell’s equations are *Lorentz covariant*.
 
 This means that according to special relativity, Maxwell’s equations remain the same for all observers and thus, they are **fully relativistic**.
+
+![](../assets/images/are-maxwell-equations-relativistic/img_10.jpg)
 
 This is the *fundamental* reason why we say that Maxwell’s equations are relativistic or compatible with special relativity – they remain the same for all relativistic observers!
 
@@ -119,6 +129,8 @@ It’s important to understand this, because this is one of the main reasons why
 In Galilean relativity, **the transformations between reference frames** consist of **translations**, **rotations**, and **boosts**. The translations and rotations are very much the same as in Einstein’s special relativity, however the boosts look different.
 
 The main difference is that a Galilean boost does NOT change the time coordinates of an observer in any way – **time is a universal quantity in Galilean relativity**.
+
+![](../assets/images/are-maxwell-equations-relativistic/img_12.jpg) 
 
 The key difference between a Galilean boost (as shown here) and a Lorentz boost is that the time coordinates remain unchanged in a Galilean transformation, which is not true for a Lorentz transformation.
 
