@@ -33,7 +33,7 @@ Now, let’s take the orange moving down in a weird curved path that will be lon
 
 The surprising answer is actually no, the work that gravity does is still W=mgh, which means that **the work done only depends on the total displacement in the direction of gravity (the height in this case), not the actual path itself**.
 
-![](assets/images/does-gravity-do-work/img_2.jpg)
+![](assets/images/does-gravity-do-work/img_2.webp)
 
 If you didn’t know this before, the idea of path independence may seem a little weird, but quite amazingly, it is an inherent property of how gravity works.
 
@@ -51,7 +51,7 @@ Let me explain. Gravitational potential energy is actually defined in terms of t
 
 Now, since the potential energy is defined as the work done *against* gravity, the work done and the change in potential energy will always have opposite signs. This actually gives us the definition for the **work done by gravity** (and also for any other conservative forces):
 
-![](assets/images/does-gravity-do-work/img_5.jpg)
+![](assets/images/does-gravity-do-work/img_5.webp)
 
 I’ll explain this equation more later in the article.
 
@@ -104,11 +104,11 @@ $$W=\int_C^{ }\vec{F}\cdot\vec{dr}$$
 
 Now, what does this formula actually mean? Think of it this way; there is an object travelling along some given path C, along which the force may vary (which is why we have to use integration here).
 
-![](assets/images/does-gravity-do-work/img_7.png)
+![](assets/images/does-gravity-do-work/img_7.webp)
 
 The instantaneous work done by the force **at a single point** on the path *is defined* as the dot product between the force F and an infinitesimal displacement dr (this is a definition, it isn’t derived from anywhere!).
 
-![](assets/images/does-gravity-do-work/img_9.png)
+![](assets/images/does-gravity-do-work/img_9.webp)
 
 Then the total work done along the whole path C can be obtained by summing up (i.e. integrating) the instantaneous work done at each point, which is just the line integral given earlier.
 
@@ -142,7 +142,7 @@ It is known that gravity is what causes an object to fall, which means that the 
 
 The proof for this is extremely simple. Here’s a picture of the situation:
 
-![](assets/images/does-gravity-do-work/img_11.jpg)
+![](assets/images/does-gravity-do-work/img_11.webp)
 
 The total displacement (Δr) is simply the height h and the force will be the gravitational force F=mg. We also know that the angle θ is zero, which means that cos(0°)=1.
 
@@ -161,7 +161,7 @@ But how exactly is that possible? Shouldn’t the work also depend on the angle 
 
 Here’s a picture of the situation:
 
-![](assets/images/does-gravity-do-work/img_13.jpg)
+![](assets/images/does-gravity-do-work/img_13.webp)
 
 What you’ll find after a little bit of math is that the work done by gravity will actually be the same as in the case of a simple freely falling object, W=mgh.
 
@@ -182,7 +182,7 @@ We can actually manipulate the above equation a little bit and see that it simpl
 
 From the inclined plane triangle, we can see that the angle between Δr (distance the object rolls down) and h (the total change in height of the object) is clearly θ (see picture from above) and from that, we can find the expression for cos(θ):
 
-![](assets/images/does-gravity-do-work/img_15.png)
+![](assets/images/does-gravity-do-work/img_15.webp)
 
 From this, simply multiply by Δr and we have:
 
@@ -202,13 +202,13 @@ A pendulum is a system where a mass (a pendulum “bob”) is swinging back and 
 
 Here is essentially what is happening; a pendulum starts swinging from some height h and we wish to calculate what the work done by gravity on this pendulum would be (everything we need is in the picture below).
 
-![](assets/images/does-gravity-do-work/img_17.jpg)
+![](assets/images/does-gravity-do-work/img_17.webp)
 
 Work Done By Gravity On a Pendulum: Mathematical Proof (click to see more)
 
 The first thing we’ll do is notice that there is actually a relationship between the angles α and θ, which can be seen from the picture down below:
 
-![](assets/images/does-gravity-do-work/img_19.png)
+![](assets/images/does-gravity-do-work/img_19.webp)
 
 From this, we can get:
 
@@ -216,7 +216,7 @@ $$\theta+\alpha=90°\ \ \Rightarrow\ \ \ \theta=90°-\alpha$$
 
 We can also find the displacement of the pendulum bob, which is simply the **arc length** as given by the picture below. For later purposes, we’ll want to use an *infinitesimal* displacement dr instead of the Δr we used earlier.
 
-![](assets/images/does-gravity-do-work/img_21.png)
+![](assets/images/does-gravity-do-work/img_21.webp)
 
 Since the pendulum is swinging and is generally a little bit more of a complicated system than the previous examples, the easiest method to find the work done by gravity is to simply start from the **definition of work** (see earlier if you don’t remember this):
 
@@ -238,7 +238,7 @@ $$W=mgL\int_{\alpha}^0\sin\alpha d\alpha=mgL\left(\cos\alpha-1\right)$$
 
 We’re almost done now. We can still manipulate this equation a little bit by using the following fact from the picture:
 
-![](assets/images/does-gravity-do-work/img_23.png)
+![](assets/images/does-gravity-do-work/img_23.webp)
 
 Inserting this, we get:
 
@@ -290,7 +290,7 @@ In a circular orbit, the gravitational force is always pointing to the center of
 
 Therefore, the angle between the force and the displacement vectors is always 90° and **the work done by gravity on the satellite orbiting in a circular orbit is zero**.
 
-![](assets/images/does-gravity-do-work/img_25.jpg)
+![](assets/images/does-gravity-do-work/img_25.webp)
 
 Note that the vector r is the displacement vector pointing in the direction of motion, not the radius or something.
 
@@ -300,7 +300,7 @@ Really what this means, though, is that the work done by gravity on the satellit
 
 **The total work done in a full orbit still remains zero**, which ultimately has to do with the *conservation of angular momentum* in stable orbits, whether those be elliptical of circular.
 
-![](assets/images/does-gravity-do-work/img_27.jpg)
+![](assets/images/does-gravity-do-work/img_27.webp)
 
 Note that the elongation of this ellipse is a little exaggerated; in reality, most orbits are only slightly elliptical.
 

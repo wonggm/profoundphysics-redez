@@ -978,9 +978,11 @@ katex, .katex { font-size: 1.1em; }
 }
 .article-page__meta span { white-space: nowrap; }
 .article-page__body {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 19px;
+  line-height: 1.75;
   color: var(--color-body-strong);
+  max-width: 65ch;
+  text-wrap: pretty;
 }
 .article-page__body p { margin-block: 0 1.2em; }
 .article-page__body img {
@@ -990,7 +992,38 @@ katex, .katex { font-size: 1.1em; }
   margin: 1.5em auto;
   display: block;
   border: 1px solid var(--color-hairline);
+  transition: transform var(--t-fast) var(--ease-out), box-shadow var(--t-fast) var(--ease-out);
 }
+.article-page__body img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(20, 20, 19, 0.08);
+}
+
+/* Drop cap on first paragraph of the article body.
+   Skipped if the first element is not a plain text paragraph
+   (e.g., a heading, list, figure, or math block). */
+.article-page__body > p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 4em;
+  font-weight: 400;
+  color: var(--color-primary);
+  float: left;
+  line-height: 0.85;
+  margin: 0.05em 0.1em 0 -0.05em;
+  padding-top: 0.05em;
+}
+/* Skip drop cap for paragraphs that start with special content */
+.article-page__body > p:first-of-type:has(> img)::first-letter,
+.article-page__body > p:first-of-type:has(> katex)::first-letter,
+.article-page__body > p:first-of-type:has(> .katex)::first-letter {
+  font-size: inherit;
+  color: inherit;
+  float: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 .article-page__body h2 {
   font-family: var(--font-display);
   font-size: 32px;
@@ -999,21 +1032,172 @@ katex, .katex { font-size: 1.1em; }
   letter-spacing: -0.5px;
   color: var(--color-ink);
   margin-top: 2.4em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.8em;
+  position: relative;
+  padding-bottom: 0.5em;
 }
+/* h2 ornament: a short coral accent line beneath */
+.article-page__body h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 48px;
+  height: 2px;
+  background: var(--color-primary);
+}
+
+.article-page__body h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: var(--color-ink);
+  margin-top: 2em;
+  margin-bottom: 0.4em;
+  position: relative;
+  padding-left: 16px;
+}
+.article-page__body h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  bottom: 0.15em;
+  width: 2px;
+  background: var(--color-primary);
+}
+
+.article-page__body h4 {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-top: 1.6em;
+  margin-bottom: 0.4em;
+}
+
 .article-page__body blockquote {
   border-left: 3px solid var(--color-primary);
-  margin: 1.5em 0;
-  padding: 0.4em 0 0.4em 1.2em;
+  margin: 2em 0;
+  padding: 0.6em 0 0.6em 1.4em;
   font-style: italic;
+  font-family: var(--font-display);
+  font-size: 1.1em;
+  line-height: 1.6;
   color: var(--color-body);
+  position: relative;
 }
+.article-page__body blockquote::before {
+  content: 'φ';
+  position: absolute;
+  left: -0.3em;
+  top: -0.3em;
+  font-size: 2.5em;
+  color: var(--color-primary);
+  opacity: 0.3;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
 .article-page__body code {
   font-family: var(--font-mono);
-  font-size: 0.92em;
+  font-size: 0.88em;
   background: var(--color-surface-soft);
   padding: 1px 6px;
   border-radius: var(--r-xs);
+  border: 1px solid var(--color-hairline-soft);
+}
+
+.article-page__body strong {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.article-page__body em {
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+/* Lists */
+.article-page__body ul, .article-page__body ol {
+  margin: 0 0 1.2em 0;
+  padding-left: 1.5em;
+}
+.article-page__body ul { list-style: none; }
+.article-page__body ul li {
+  position: relative;
+  margin-bottom: 0.5em;
+  padding-left: 0.3em;
+}
+.article-page__body ul li::before {
+  content: '·';
+  position: absolute;
+  left: -1em;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.article-page__body ol {
+  list-style: decimal;
+  padding-left: 1.8em;
+}
+.article-page__body ol li {
+  margin-bottom: 0.5em;
+}
+.article-page__body ol li::marker {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Horizontal rule ornament */
+.article-page__body hr {
+  border: 0;
+  height: 1px;
+  background: var(--color-hairline);
+  margin: 3em auto;
+  width: 60%;
+  position: relative;
+}
+.article-page__body hr::after {
+  content: 'φ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-canvas);
+  color: var(--color-muted);
+  padding: 0 0.8em;
+  font-family: var(--font-display);
+  font-size: 1.1em;
+}
+
+/* Links inside body */
+.article-page__body a {
+  color: var(--color-primary);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size var(--t-fast) var(--ease-out);
+}
+.article-page__body a:hover, .article-page__body a:focus-visible {
+  background-size: 100% 1px;
+}
+
+/* Figure wrapper (if markdown produces <p><img></p>, the wrapper is
+   handled by browsers inline; this targets <figure> directly) */
+.article-page__body figure {
+  margin: 2em 0;
+}
+.article-page__body figcaption {
+  font-size: 0.85em;
+  font-style: italic;
+  color: var(--color-muted);
+  text-align: center;
+  margin-top: 0.6em;
+  font-family: var(--font-display);
 }
 .article-page__cta {
   margin-top: var(--s-xl);

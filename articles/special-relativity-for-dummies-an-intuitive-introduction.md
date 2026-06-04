@@ -56,7 +56,7 @@ First of all, what even is a reference frame (or an inertial one)? Well, simply 
 
 Okay, to be fair, that might not explain the idea completely, but as an example, here’s what a reference frame might look like:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_2.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_2.webp)
 
 This coordinate system is taken to be the reference frame of observer A as it is at rest (vertical line). We could switch to the reference frame of observer B by rotating and stretching the coordinates in a way that B becomes a vertical line (notice that then the line A would not be at rest anymore; thus, B would observe A to be moving).
 
@@ -84,7 +84,7 @@ It’s also worth noting that in this article about special relativity, whenever
 
 **The second postulate of special relativity states that the speed of light in a vacuum has to be the same in all (inertial) reference frames**. This is an observational fact, which is also backed up by Maxwell’s theory of electromagnetism.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_4.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_4.webp)
 
 The speed of light is defined in terms of the properties of free space, which can be derived from Maxwell’s wave equations.
 
@@ -128,7 +128,7 @@ Also, the distance or a spacial interval between two points always remains the s
 
 Now, it turns out that in relativity, **neither of these statements is true**. This seems extremely unintuitive at first, but it is merely a result of the fact that the speed of light has to be the same in all frames.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_6.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_6.webp)
 
 In Newtonian physics (Euclidean geometry), the spacial distance between two points is invariant and is given by the Pythagorean theorem.
 
@@ -170,7 +170,7 @@ The Pythagorean theorem can, in fact, be generalized with a *metric tensor* in a
 
 This even works for any curved spaces, but that’s another story which you can read more about in my [general relativity article](https://profoundphysics.com/general-relativity-for-dummies/).
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_8.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_8.webp)
 
 A generalized version of the Pythagorean theorem, which gives the square of an interval dS on any surface by using a metric tensor gmn. Note that the uppercase a and b are NOT exponents, they’re just indices.
 
@@ -182,7 +182,7 @@ A metric tensor (without having to get into tensors too much) is simply an objec
 
 So, different kinds of coordinate systems may have differently defined metric tensors. For example, the metric tensor for a coordinate system in regular Cartesian coordinates (x,y,z) is as simple as this:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_10.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_10.webp)
 
 Metric tensors are often represented as matrices such as this. Here both m and n run from 1 to 3, forming a 3×3 matrix. In general, the metric could have any number of dimensions, but in this case it has 3.
 
@@ -216,7 +216,7 @@ The Metric Tensor of Special Relativity & The Spacetime Interval (click to see m
 
 The metric tensor in special relativity has a very special form and a special name; it is typically called the **Minkowski metric** (instead of gμν, it is denoted by ημν) and instead of having 1’s in it, it is defined as:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_12.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_12.webp)
 
 The Minkowski metric can also be defined as having the diagonal elements (-1, 1, 1, 1), which is completely equivalent to the above one.
 
@@ -264,7 +264,7 @@ Einstein’s summation convention is commonly used in relativity (especially gen
 
 Now, I used the explicit summation sign earlier as it would make everything more clear, but in relativity (both special and general), the summation convention is extremely common and I’d really recommend getting used to it.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_14.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_14.webp)
 
 ### Proper Time Intervals
 
@@ -314,7 +314,7 @@ Then, expanding this sum (I’ll leave it to you, it’s exactly the same proces
 
 $$d\tau=\frac{1}{c}\sqrt{c^2\left(dt\right)^2-\left(dx\right)^2-\left(dy\right)^2-\left(dz\right)^2}$$
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_16.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_16.webp)
 
 ## Lorentz Transformations and Lorentz Invariance
 
@@ -326,7 +326,7 @@ There is, however, a little catch. In special relativity (according to the **sec
 
 This means that **the speed of light should always remain constant when transforming between reference frames**. In ordinary Newtonian physics (i.e. Galilean transformations), this is NOT the case.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_18.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_18.webp)
 
 In ordinary Galilean transformations, all observers will describe time to be the same regardless of their motion and might observe the speed of light differently.
 
@@ -346,7 +346,7 @@ Okay, the first thing we’re going to do is to consider a scenario where an obs
 
 This scenario can be represented in a coordinate system (observer A’s rest frame) like this (light rays are typically drawn at 45 degree angles, meaning that they have slopes of 1):
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_21.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_21.webp)
 
 The motion of observer’s A and B can be described by equations for the lines (a line going through the origin has the form y=kx) in A’s rest frame according to the picture. Observer B has his own rest frame (described by coordinates x0B and xB), in which B himself is at rest (i.e. a vertical line).
 
@@ -382,13 +382,13 @@ Now the problem with this is that for this, we also need to calculate the shift 
 
 We can luckily use a little trick which is to **reflect the blue line about the yellow line** (light ray). This gives us a simple way to get Δx0. This is basically what it looks like in the picture:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_23.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_23.webp)
 
 Angle between the blue line and the light ray remains the same when reflecting it about the light ray. Reflections of functions about the line y=x (light beam in this case) are more generally called *inverse functions*.
 
 Now, reflecting a line in this symmetrical kind of way is actually the same thing as just **swapping the coordinate axes** like this (note that when swapping the axes, we also have to reflect the red line):
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_25.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_25.webp)
 
 This indeed gives us what we need to get Δx0. First we just have to solve for x0 from the equation for the reflected blue line (and inserting k=c/v):
 
@@ -484,7 +484,7 @@ $$x'=\gamma\left(x-vt\right)\\t'=\gamma\left(t-\frac{v}{c^2}x\right)$$
 
 These two equations are the usual forms of the Lorentz transformations. But what do they actually mean and how do you even use them? That’s what we’ll consider next.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_27.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_27.webp)
 
 ### Practical Example: Time Dilation Due to Lorentz Transformations
 
@@ -498,7 +498,7 @@ We’re going to describe James’s frame by x and Mary’s frame by x’, so es
 
 Plotted in a t,x -graph, this is what it looks like (for the purpose of this example, we’re using the t-axis instead of the x0-axis):
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_29.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_29.webp)
 
 So, how do we find this point in the x’ frame? That’s easy, we just use the Lorentz transformations and transform from the x frame to the x’ frame.
 
@@ -650,7 +650,7 @@ $$d\tau=\frac{dS}{c}=\frac{\frac{1}{\gamma}cdt}{c}=\frac{1}{\gamma}dt$$
 
 This formula will prove to be useful later such as when interchanging between ordinary time derivatives and proper time derivatives, but we’ll get to it.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_31.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_31.webp)
 
 Also, note that the expression for proper time can also be rearranged to give a new meaning to the Lorentz factor, namely:
 
@@ -682,7 +682,7 @@ Just like the position in ordinary space (with 3 spacial components) is describe
 
 This means that a 4-position vector has components of t, x, y and z. Well, almost at least. The time component is actually defined as ct to have the same units as the spacial components.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_33.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_33.webp)
 
 Components of the 4-position vector. The index μ goes from 0 to 3 and it describes the components from the top to the bottom.
 
@@ -734,7 +734,7 @@ $$A_{\mu}A^{\mu}=\left(A^0\right)^2-\left(A^1\right)^2-\left(A^2\right)^2-\left(
 
 Now, if all of this index stuff was somewhat abstract to you, that’s fine. It takes some time to get used to. But, we will use these ideas later, so if there is one thing to remember from this 4-vector section it is this rule:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_35.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_35.webp)
 
 ### The Four-Gradient Operator
 
@@ -744,7 +744,7 @@ $$\frac{\partial}{\partial x^{\mu}}$$
 
 The components of this thing are as follows (notice that it is really a combination of time derivatives and spacial derivatives):
 
-![This image has an empty alt attribute; its file name is image-57.jpg](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_37.jpg)
+![This image has an empty alt attribute; its file name is image-57.jpg](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_37.webp)
 
 The 4-gradient has a lower index, because it means the derivative w.r.t 4-position, which has an upper index, but it is under the fraction bar, thus making the index a lower one. Well, it’s not a very mathematical way to think of it, but it works.
 
@@ -764,7 +764,7 @@ $$\vec{\nabla}=\frac{\partial}{\partial x}+\frac{\partial}{\partial y}+\frac{\pa
 
 We can then actually combine each of these into one quantity called **4-gradient**, which has the components (denoted by ∂µ):
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_39.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_39.webp)
 
 For last, simply remember that **the 4-gradient is defined as a partial derivative with respect to 4-position**, which shows up quite a bit in relativity (the 4-gradient notation just makes it simply more compact):
 
@@ -772,7 +772,7 @@ $$\partial_{\mu}=\frac{\partial}{\partial x^{\mu}}$$
 
 Also, this can be turned into a **contravariant derivative** (with an upper index) by simply **changing the sign of the spacial components** (this has to do with the minus-signs in the Minkowski metric that is used when changing indices):
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_41.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_41.webp)
 
 This contravariant form simply means the derivative with respect to the *covariant* (lower index) 4-position:
 
@@ -814,7 +814,7 @@ So in fact, **4-velocity can actually be expressed as a regular time derivative,
 
 Next, let’s consider the components of this 4-velocity. For this, we need to remind ourselves of the components of dxμ:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_43.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_43.webp)
 
 The first component of the 4-velocity is μ=0, which is:
 
@@ -832,7 +832,7 @@ Now, it is typically useful to combine these **spacial components of the 4-veloc
 
 We then have the components for uμ:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_45.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_45.webp)
 
 Now I want to look at one more thing for the 4-velocity. Remember earlier that we deduced that the 4-position could be expressed as an invariant like this (which was just the spacetime interval):
 
@@ -935,7 +935,7 @@ $$\mathscr{L}=-mc^2\frac{1}{\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}}\\\mathscr{L}=-mc
 
 In the next section, we’ll use this Lagrangian to obtain some pretty useful stuff such as the formulas for **relativistic energy**.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_47.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_47.webp)
 
 ### Relativistic Energy (Total + Kinetic)
 
@@ -1041,7 +1041,7 @@ Okay, let’s look at the above series in more detail.
 
 The first term is clearly some form of energy related to the mass of an object (also called **rest energy**). The other terms are energies related to the velocity, so they must be some sort of **kinetic energy** terms:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_49.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_49.webp)
 
 First of all, this equation tells us that an object has energy even if it is at rest and this energy is in the form of mass. So, **mass is actually just another form of energy**, which is a very important result of special relativity.
 
@@ -1063,9 +1063,9 @@ $$E_k=\gamma mc^2-mc^2\\E_k=mc^2\left(\gamma-1\right)$$
 
 And that is the **relativistic formula for kinetic energy**. Next, we’ll look at the relativistic version of momentum and also how it relates to energy (it’ll also give us another way to derive E=mc2).
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_51.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_51.webp)
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_53.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_53.webp)
 
 There is actually a way to derive the relativistic total energy formula (and relativistic momentum too) from something called **Noether’s theorem**, which you can read more about [here](https://profoundphysics.com/noethers-theorem-a-complete-guide/). The advantage of this approach is that it also proves the relativistic conservation laws for these automatically.
 
@@ -1111,7 +1111,7 @@ $$p^0=\frac{E}{c}$$
 
 So, all in all, we have the components of 4-momentum:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_55.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_55.webp)
 
 The next thing we want to do is to look at what happens if we construct **an invariant out of the 4-momentum**. Let’s start by using the invariant equation for the 4-velocity:
 
@@ -1151,7 +1151,7 @@ $$E=\sqrt{m^2c^4}\\E=mc^2$$
 
 So, **the world-famous equation E=mc2 can actually be derived by multiplying together the contravariant and covariant versions of the 4-momentum**. How cool is that!
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_57.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_57.webp)
 
 ### Four-Forces + The Relativistic Work-Energy Theorem
 
@@ -1189,7 +1189,7 @@ Now, what is dE/dt (i.e. change of energy with respect to time) actually? It is 
 
 We then have all of the **components of the 4-force**:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_59.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_59.webp)
 
 The next thing I want to consider is what happens if we **construct an invariant out of the 4-force**. To do this, let’s multiply together the **contravariant and covariant 4-forces** and write out the sum, which gives:
 
@@ -1233,7 +1233,7 @@ $$dW^{\mu}=cF^{\mu}d\tau$$
 
 It’s components are:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_61.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_61.webp)
 
 We can then write the equation from earlier with these 4-impulse vectors:
 
@@ -1263,7 +1263,7 @@ From this we can see that if the momentum doesn’t change this reduces to just 
 
 Equivalently, if only the momentum changes, this becomes simply dI=dp (by combining all of the components into single terms), which is just the ordinary **impulse-momentum theorem**.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_63.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_63.webp)
 
 ### Practical Example: Relativistic Lorentz Force Law
 
@@ -1297,7 +1297,7 @@ $$\vec{E}=-\nabla\varphi-\frac{\partial\vec{A}}{\partial t}=-\frac{\partial\varp
 
 **The magnetic field, on the other hand, is defined as the curl of the magnetic vector potential (A)**:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_65.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_65.webp)
 
 Okay, the reason I wanted to discuss these is that we’ll need these definitions soon and it is worthwhile to explicitly state them.
 
@@ -1305,7 +1305,7 @@ Now, let’s get back to relativity. In special relativity, quantities are commo
 
 **The electric potential and the magnetic vector potential can be combined into a single 4-vector quantity called the electromagnetic 4-potential**. It is denoted by Aµ and it has the components:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_67.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_67.webp)
 
 Here, φ stands for the electric potential, c for the speed of light and the A’s for the components of the magnetic vector potential.
 
@@ -1331,7 +1331,7 @@ $$F^{\mu\nu}=\partial^{\mu}A^{\nu}-\partial^{\nu}A^{\mu}$$
 
 I’ll just quickly remind you of the components of the *4-potential* as well as the *4-gradient* (we’re interested in the contravariant form of the 4-gradient, which had negative space components):
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_69.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_69.webp)
 
 Okay then, let’s actually take a look at the components of the electromagnetic field tensor. First, we’ll set µ=0 and run over ν=1,2,3. This is what you’ll get for the first one (µ=0 and ν=1):
 
@@ -1371,7 +1371,7 @@ The same story goes for the other cases where both µ and ν are spacial indices
 
 All of these components of the EM tensor can in fact be collected into a 4×4 matrix. All in all, we then have **the electromagnetic field tensor** in its full relativistic glory:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_71.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_71.webp)
 
 Now, let’s get back to the Lorentz force law now that we have the basic idea of the EM tensor. The relativistic Lorentz force equation was:
 
@@ -1381,7 +1381,7 @@ The 4-velocity uν here is a covariant 4-vector. Earlier we discussed only the c
 
 So, uν is defined as:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_73.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_73.webp)
 
 Okay then, let’s first consider the spacial components of the Lorentz force (µ=1,2,3). Remember that ν is simply a **summation index** in the Lorentz force equation (based on the Einstein summation convention).
 
@@ -1391,7 +1391,7 @@ $$F^1=qu_0F^{10}+qu_1F^{11}+qu_2F^{12}+qu_3F^{13}$$
 
 Let’s now insert all of the components for the 4-force, the 4-velocity and the EM tensor:
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_75.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_75.webp)
 
 $$\gamma F_x=q\gamma c\frac{E_x}{c}+0+q\left(-\gamma v_y\right)\left(-B_z\right)+q\left(-\gamma v_z\right)B_y$$
 
@@ -1449,7 +1449,7 @@ And this is indeed the standard equation for the work done by an electric field.
 
 Anyway, the fascinating thing about this is that once again, the relativistic formulation and 4-vectors give us a neat way to combine things, both the work equation and the different components of the Lorentz force, into one simple equation, **the relativistic Lorentz force law**.
 
-![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_77.jpg)
+![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_77.webp)
 
 ---
 

@@ -33,7 +33,7 @@ First of all, what is a tensor anyway? **A tensor is simply a “collection of o
 
 A nice intuitive way to understand this is by looking at how a vector behaves under coordinate changes (a vector is, in fact, a tensor of “rank 1”):
 
-![](assets/images/the-ricci-tensor/img_2.jpg)
+![](assets/images/the-ricci-tensor/img_2.webp)
 
 Mathematically, the transformation law of the components of a tensor is as follows:
 
@@ -75,7 +75,7 @@ A nice way to visualize what the Ricci tensor describes is by taking some “vol
 
 The Ricci tensor would then, in some sense, tell you **how much the volume of this volume element changes**.
 
-![](assets/images/the-ricci-tensor/img_4.jpg) 
+![](assets/images/the-ricci-tensor/img_4.webp) 
 
 I’m aware that this picture is a little bit “sketchy”, so don’t take it too literally. It should simply give you the basic idea of what the Ricci tensor does.
 
@@ -159,7 +159,7 @@ These geodesics will also, at all times, enclose some kind of volume in spacetim
 
 Geometrically, **the Ricci tensor then describes how much this spacetime volume changes as you move along these geodesics**. This is actually what we already talked about earlier.
 
-![](assets/images/the-ricci-tensor/img_6.jpg) 
+![](assets/images/the-ricci-tensor/img_6.webp) 
 
 Here we have a two-dimensional spacetime (since I can’t really draw a four-dimensional spacetime, but the basic idea is still the same) with two geodesics that enclose a volume between them (practically it’s an area since we’re in two dimensions, but you can imagine it as a volume).
 
@@ -187,7 +187,7 @@ Now that we’ve talked about what the Ricci tensor represents, it’s time to d
 
 Essentially, **the Ricci tensor is defined in terms of mathematical objects called Christoffel symbols in the following way**:
 
-![](assets/images/the-ricci-tensor/img_8.jpg)
+![](assets/images/the-ricci-tensor/img_8.webp)
 
 These Christoffel symbols are defined in terms of the metric tensor of a given space and its derivatives:
 
@@ -205,7 +205,7 @@ The much more practical approach is to first calculate the Christoffel symbols t
 
 We’ll talk about this and how to calculate the Ricci tensor (as well as some examples) later in the article.
 
-[![](assets/images/the-ricci-tensor/img_10.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+[![](assets/images/the-ricci-tensor/img_10.webp)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
@@ -233,7 +233,7 @@ We then parallel transport it around a loop in two different ways (see the pictu
 
 Now, if we imagine this loop as being very very small (infinitesimally small, to be exact), then parallel transporting the vector will really correspond to **taking the covariant derivative with respect to that coordinate** (covariant derivative instead of a partial derivative, because we’re looking to build a *tensor quantity*).
 
-![](assets/images/the-ricci-tensor/img_12.png)
+![](assets/images/the-ricci-tensor/img_12.webp)
 
 Here, this object Rρµσν denotes the difference in this vector after parallel transporting it two different ways (note that it should be zero if the space is flat). It’s a four-index tensor for reasons you’ll see shortly.
 

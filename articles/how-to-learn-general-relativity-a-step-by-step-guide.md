@@ -163,7 +163,7 @@ In addition, you can also read my **[introductory article on special relativity]
 
 At this point, if you’ve gone through Susskind’s book on special relativity (which is quite a quick read despite it being around 400 pages long), you should have built **a decent understanding of special relativity**.
 
-![](assets/images/how-to-learn-general-relativity-a-step-by-step-guide/img_2.jpg)
+![](assets/images/how-to-learn-general-relativity-a-step-by-step-guide/img_2.webp)
 
 Table of contents in Susskind’s Theoretical Minimum -book on special relativity.
 
@@ -219,7 +219,7 @@ Alternatively, you can also read **[my introduction to general relativity](https
 
 If you took the time to go through all the above resources, **you’ve likely built up the necessary intuition and the basics for general relativity** to really begin taking your knowledge to the next level.
 
-![](assets/images/how-to-learn-general-relativity-a-step-by-step-guide/img_4.jpg)
+![](assets/images/how-to-learn-general-relativity-a-step-by-step-guide/img_4.webp)
 
 Some of the topics included in Lillian Lieber’s book. Note that there is a lot more things as the table of contents continues to the next page.
 
@@ -249,7 +249,7 @@ The language used in Zee’s book is also much more **relaxed** and it even cont
 
 Zee also talks about how you should use this book for self-study in the preface and he gives some tips as to which chapters are important and which ones not so much.
 
-![](assets/images/how-to-learn-general-relativity-a-step-by-step-guide/img_6.jpg) 
+![](assets/images/how-to-learn-general-relativity-a-step-by-step-guide/img_6.webp) 
 
 My copy of Einstein Gravity in a Nutshell by A. Zee.
 

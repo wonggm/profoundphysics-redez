@@ -65,7 +65,7 @@ Well, it still would not have more than one component, so does it really make se
 
 This, however, still does not change the fact that time is a scalar. If we think about time as a one-dimensional vector, that means that the magnitude of this vector is the same as its only component.
 
-![](assets/images/is-time-a-vector/img_2.jpg)
+![](assets/images/is-time-a-vector/img_2.webp)
 
 **The magnitude of a vector, however, we know is a scalar** (from the definition of dot products and other things). Therefore, the magnitude of a “time vector” being its only component, would mean that **time has to be a scalar**.
 
@@ -91,7 +91,7 @@ This thing called spacetime, you can think of as being the “surface” in whic
 
 But what does this have to do with time being or not being a vector? Well, the key idea is that all spacetime points are labeled by **spacetime coordinates**, which means one time coordinate and three spacial coordinates. Therefore, **time is fundamentally just a coordinate**.
 
-![](assets/images/is-time-a-vector/img_4.jpg) 
+![](assets/images/is-time-a-vector/img_4.webp) 
 
 Here we have a “spacetime manifold” (it’s only two-dimensional in this case, so I could draw it as a simple coordinate system. Here, spacetime is also curved, so it’s actually described by general relativity). The key point is that we have both space and time directions (axes) and coordinates.
 
@@ -109,7 +109,7 @@ If this seems hard to wrap your head around, I get it. However, this is how time
 
 Now, for everyday life, time can definitely be thought of as just a scalar, since the relativistic effects are really not observable in any way. But, just know that this is not the correct viewpoint that contemporary physics theories have about time.
 
-[![](assets/images/is-time-a-vector/img_6.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+[![](assets/images/is-time-a-vector/img_6.webp)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
@@ -157,7 +157,7 @@ This formula is basically the Pythagorean theorem in four dimension, except the 
 
 The whole idea is that **by using geometric algebra, the four-dimensional spacetime four-vector can be replaced by a three-dimensional spacetime multivector** (call it X and the basis vectors is denoted by the e’s):
 
-![](assets/images/is-time-a-vector/img_8.jpg)
+![](assets/images/is-time-a-vector/img_8.webp)
 
 Here, the spacial position is given by a usual 3-dimensional vector, but time is given by a 3-dimensional bivector. The x1, x2 and x3 represent whatever space coordinates you wish to use (could be x,y and z).
 

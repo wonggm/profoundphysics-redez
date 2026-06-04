@@ -37,7 +37,7 @@ Now, this article won’t be your typical pop-science content you’ll often fin
 
 The original – classical – picture of an atom was of a ball-like electron **orbiting** the nucleus much like how the moon orbits the Earth.
 
-![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_2.jpg)
+![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_2.webp)
 
 Even if this orbiting-model were correct, the electron should still not just “fall” into the nucleus – it should keep orbiting, just like the Earth keeps orbiting the Sun and doesn’t just fall into it randomly.
 
@@ -142,7 +142,7 @@ $$t=\frac{4\pi^2\varepsilon_0^2m^2c^3R_0^3}{e^4}$$
 
 This means that **after enough time, the electron does indeed fall into the nucleus**! Well, at least according to the rules of classical mechanics and classical electrodynamics, it does.
 
-![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_4.jpg)
+![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_4.webp)
 
 But empirically, we know that atoms are relatively stable and are not all falling apart with their electrons falling into the nucleus. So what is really happening?
 
@@ -192,11 +192,11 @@ Now, we’re not going to go through solving the Schrödinger equation for the h
 
 When solving the full equation, the wave function separates into an **angular part** and a **radial part** when using **spherical coordinates (r,θ,φ)** – these are essentially two angles and a radial distance we use to describe the position of the electron around the nucleus.
 
-![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_6.jpg)
+![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_6.webp)
 
 In this case, the wave function, related to the probability of finding the electron at some point (r,θ,φ), takes the following form:
 
-![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_8.jpg) 
+![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_8.webp) 
 
 This solution to the wave function, ψℓnm, actually describes multiple wave functions, one for each value of ℓ, n and m. These are called quantum numbers and for electrons with different quantum numbers, we get different wave functions. We’ll look at these quantum numbers more very soon.
 
@@ -322,7 +322,7 @@ In **quantum field theories**, such as the electroweak theory, we often represen
 
 We can represent the electron capture interaction and the role of this W+ boson pictorially via a Feynman diagram:
 
-![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_10.jpg)
+![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_10.webp)
 
 How do we read this? Feynman diagrams are read from the bottom to the top, with time increasing as shown on the left.
 

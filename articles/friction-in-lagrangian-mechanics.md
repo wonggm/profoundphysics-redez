@@ -29,13 +29,13 @@ Generally, there are **two methods** to include friction in Lagrangian mechanics
 
 - **A modified Lagrangian** (with an exponential time-dependent “damping term” that essentially takes into account changes in the Lagrangian due to energy being lost from friction):
 
-![](assets/images/friction-in-lagrangian-mechanics/img_2.jpg)
+![](assets/images/friction-in-lagrangian-mechanics/img_2.webp)
 
 This Lagrangian will only work for linear velocity-dependent friction (while the dissipation function works for all powers of velocity-dependence).
 
 - **The general dissipation function** (the special case of this where n=1 is known as *Rayleigh’s dissipation function*):
 
-![](assets/images/friction-in-lagrangian-mechanics/img_4.jpg)
+![](assets/images/friction-in-lagrangian-mechanics/img_4.webp)
 
 Now, this article is obviously going to include a lot about Lagrangian mechanics so if you’re not very familiar with the formulation yet, I’d recommend reading my **[introduction to Lagrangian mechanics](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)**.
 
@@ -102,7 +102,7 @@ $$c=\frac{6\pi\mu R}{m}$$
 
 Now, this modified Lagrangian only works for linear drag, so you can’t include things like **quadratic drag** or **friction due to normal force**. If you wish to include these, you’ll have to use a **dissipation function**.
 
-[![](assets/images/friction-in-lagrangian-mechanics/img_6.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
+[![](assets/images/friction-in-lagrangian-mechanics/img_6.webp)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 
@@ -171,7 +171,7 @@ $$D=-\frac{1}{n+1}F\cdot v\ \ \ \Rightarrow\ \ \ D=-\frac{1}{n+1}P$$
 
 The next question is; what do you actually do with this dissipation function? Essentially, the dissipation function is added to the Euler-Lagrange equations as a *generalized force*:
 
-![](assets/images/friction-in-lagrangian-mechanics/img_8.jpg)
+![](assets/images/friction-in-lagrangian-mechanics/img_8.webp)
 
 Now, what specifically is this generalized force? First of all, we know that **[conservative forces](https://profoundphysics.com/conservative-and-non-conservative-forces-what-are-the-differences/) are defined as negative *positional gradients* of a potential energy**.
 
@@ -200,7 +200,7 @@ Generally, the process for using the dissipation function in Lagrangian mechanic
 3. **Write down the dissipation function for the given system**. If the system has multiple object, the dissipation function will have a sum over the velocities and friction coefficients of each object.
 4. **Calculate the Euler-Lagrange equations with the dissipation function included**. Note that you will have one equation for each generalized coordinate.
 
-![](assets/images/friction-in-lagrangian-mechanics/img_10.jpg)
+![](assets/images/friction-in-lagrangian-mechanics/img_10.webp)
 
 Down below I have a step-by-step example of pretty much all the cases you might want to use this method for.
 
@@ -302,7 +302,7 @@ $$F=\frac{1}{2}\rho C_DAv^2$$
 
 We will again take a single object moving in the **x-direction**. The velocity-dependence should, in this case, be quadratic, so we’ll define n=2. The dissipation function then becomes:
 
-![](assets/images/friction-in-lagrangian-mechanics/img_12.jpg)
+![](assets/images/friction-in-lagrangian-mechanics/img_12.webp)
 
 **Dissipation function for the drag equation (quadratic friction):**  
 $$D=\frac{1}{6}\rho C_DA\dot{x}^3$$
@@ -325,7 +325,7 @@ $$\frac{d}{dt}\left(m\dot{x}\right)=0-3\cdot\frac{1}{6}\rho C_DA\dot{x}^2\ \ \ \
 
 This is, of course, just the **drag equation** (in the x-direction) that we were expecting to get.
 
-[![](assets/images/friction-in-lagrangian-mechanics/img_14.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
+[![](assets/images/friction-in-lagrangian-mechanics/img_14.webp)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 
@@ -341,7 +341,7 @@ The way we’ll do this is by **choosing our generalized coordinate to be the an
 
 This is exactly the essence of using generalized coordinates; we can choose to describe the system by whatever coordinates we wish. All we need to do is convert from the x,y -coordinate system to the generalized coordinate system.
 
-![This image has an empty alt attribute; its file name is image-28.jpg](assets/images/friction-in-lagrangian-mechanics/img_16.jpg)
+![This image has an empty alt attribute; its file name is image-28.jpg](assets/images/friction-in-lagrangian-mechanics/img_16.webp)
 
 Note that we’re taking the y-axis to go downwards (simply to avoid using a minus sign). The position of the pendulum bob is described by the distance from the origin r (length of the pendulum rod, which is just a constant) and the angle θ.
 

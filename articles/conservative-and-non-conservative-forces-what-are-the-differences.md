@@ -53,13 +53,13 @@ The potential energy U here is generally a **function of position** (which in 3D
 
 So, to actually calculate this gradient of the potential, we take partial derivatives of it with respect to each position coordinate and then form a vector (the force) as follows:
 
-![](assets/images/conservative-and-non-conservative-forces-what-are-the-differences/img_2.jpg)
+![](assets/images/conservative-and-non-conservative-forces-what-are-the-differences/img_2.webp)
 
 Geometrically, the gradient of any scalar function represents the **direction in which the scalar function is changing the fastest**.
 
 If we visualize the scalar function (potential energy) as a “hill” with the height describing its value, then the gradient of the potential would be a vector that points in the “steepest” direction along the hill:
 
-![](assets/images/conservative-and-non-conservative-forces-what-are-the-differences/img_4.jpg) 
+![](assets/images/conservative-and-non-conservative-forces-what-are-the-differences/img_4.webp) 
 
 Here, we have a potential that’s a function of x and y only so that it can be visualized as a “hill”.
 
@@ -159,7 +159,7 @@ Along the straight path, the orange falls down a distance h (height), so the wor
 
 Well, the answer is actually no. The orange still falls down a height h even though it moves in some complicated curved path, so the work done is still going to be W=mgh.
 
-![This image has an empty alt attribute; its file name is image-9-1024x764.jpg](assets/images/conservative-and-non-conservative-forces-what-are-the-differences/img_6.jpg)
+![This image has an empty alt attribute; its file name is image-9-1024x764.jpg](assets/images/conservative-and-non-conservative-forces-what-are-the-differences/img_6.webp)
 
 Now, this illustrates the concept of path independence; since gravity is a conservative force, in both cases the orange falls from the same starting point to the same point on the ground and **the work done only depends on what these start and end points are**.
 
@@ -225,7 +225,7 @@ Well, it actually does! The statement that the work done is zero around a closed
 
 This can be done easily by imagining that we divide the closed path into two parts, such that the parts are connected together:
 
-![](assets/images/conservative-and-non-conservative-forces-what-are-the-differences/img_8.png) 
+![](assets/images/conservative-and-non-conservative-forces-what-are-the-differences/img_8.webp) 
 
 The path C1 here is the path an object moves from A to B and C2 is the path the object moves back from B to A. Thus, the paths C1 and C2 together form a closed path.
 

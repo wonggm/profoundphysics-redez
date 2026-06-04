@@ -29,7 +29,7 @@ The first really important reason that Lagrangian mechanics so useful is the fac
 
 Now, that might sound like a boat load, but to put it simply, this just means that an object will always move in such a way that the action has a stationary value.
 
-![This image has an empty alt attribute; its file name is image.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_1.jpg)![This image has an empty alt attribute; its file name is image.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_2.jpg)
+![This image has an empty alt attribute; its file name is image.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_1.webp)![This image has an empty alt attribute; its file name is image.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_2.webp)
 
 Mathematically, the principle of stationary action states that the *variance* (denoted by this δ-symbol) in the action has to be zero.
 
@@ -43,7 +43,7 @@ At each point on its path, an object may obviously have a different kinetic and 
 
 The kinetic and potential energies are indeed enough to describe the whole trajectory, since by knowing them at every point, we can completely determine how the trajectory would look like.
 
-![](assets/images/how-is-lagrangian-mechanics-useful/img_4.jpg)
+![](assets/images/how-is-lagrangian-mechanics-useful/img_4.webp)
 
 Now, **the action is defined by summing up the values of the Lagrangian at each and every point** (i.e. integrated over time since energy is a continuous variable in classical mechanics):
 
@@ -63,7 +63,7 @@ The q’s in the equation represent what are called **generalized coordinates**,
 
 The key point here, however, is that the principle of stationary action gives us a useful explanation of why objects take certain kinds of trajectories over others and it also gives us the mathematical tools necessary to describe motion in a straightforward manner.
 
-![](assets/images/how-is-lagrangian-mechanics-useful/img_6.jpg)
+![](assets/images/how-is-lagrangian-mechanics-useful/img_6.webp)
 
 Credit for this meme is found [here](https://blog.onlythefun.com/memes/).
 
@@ -77,7 +77,7 @@ Now, how do you actually do this? First of all, the central thing here is the **
 
 Really the Euler-Lagrange equation is just a reformulation of Newton’s second law. It’s practically F=dp/dt in disguise, just for **more general notions of momentum and force**:
 
-![](assets/images/how-is-lagrangian-mechanics-useful/img_8.jpg)
+![](assets/images/how-is-lagrangian-mechanics-useful/img_8.webp)
 
 Now, to get the equations of motion, you just find whatever Lagrangian the system has and then plug it into the Euler-Lagrange equations and it will spit out the full equations of motion.
 
@@ -86,7 +86,7 @@ Essentially, the process for solving almost all problems in Lagrangian mechanics
 1. **Find a set of convenient coordinates (= *generalized coordinates*, expressed by q’s) for the specific problem.** These might be the usual Cartesian coordinates (x, y, z), but it is also possible to use coordinate systems such as spherical coordinates (r, θ, φ).
 2. **Define the Lagrangian through the generalized coordinates**. The Lagrangian will generally be the sum of the kinetic and potential energies of every object of the system:
 
-![](assets/images/how-is-lagrangian-mechanics-useful/img_10.jpg)
+![](assets/images/how-is-lagrangian-mechanics-useful/img_10.webp)
 
 It is usually easier to first define the Lagrangian in Cartesian coordinates and then transform to whatever generalized coordinates you’re using!
 
@@ -124,11 +124,11 @@ Now, the problem with these constraint forces is that they are specific to a pro
 
 Luckily, in Lagrangian mechanics, there is and this is done by using something called **Lagrangian multipliers**. The way these are used is by specifying a **constraint function**, which constrains the coordinates (and time) of the given problem in some way:
 
-![This image has an empty alt attribute; its file name is image-11.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_12.jpg)
+![This image has an empty alt attribute; its file name is image-11.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_12.webp)
 
 The constraint can then be included in the Lagrangian for the system in the following way:
 
-![](assets/images/how-is-lagrangian-mechanics-useful/img_14.jpg)
+![](assets/images/how-is-lagrangian-mechanics-useful/img_14.webp)
 
 Notice that we are technically adding zero to the Lagrangian and thus we’re not changing the value of the Lagrangian at all. This gives us a clever way to incorporate constraints straight into the Lagrangian.
 
@@ -136,7 +136,7 @@ The Lagrange multiplier here is basically what gives us the information about th
 
 Here’s a quick example. For a pendulum (in 2-dimensional Cartesian coordinates), the constraint relation would be the equation of a circle:
 
-![](assets/images/how-is-lagrangian-mechanics-useful/img_16.jpg)
+![](assets/images/how-is-lagrangian-mechanics-useful/img_16.webp)
 
 The Lagrangian would then be (with the constraint included):
 
@@ -188,7 +188,7 @@ Polar coordinates are particularly useful in describing circular motion. Since t
 
 A pendulum is a great example of this. The relation between the x,y -coordinates and the r,θ -coordinates are as follows:
 
-![](assets/images/how-is-lagrangian-mechanics-useful/img_18.jpg)
+![](assets/images/how-is-lagrangian-mechanics-useful/img_18.webp)
 
 Note that we’re taking the y-axis to go downwards (simply to avoid using a minus sign).
 
@@ -251,11 +251,11 @@ The main thing to note is that even though fields also obey the principle of sta
 
 Here’s a few Lagrangians, so you can see what I mean (note that these Lagrangians are denoter by a curly L since they are actually *Lagrangian densities*):
 
-![](assets/images/how-is-lagrangian-mechanics-useful/img_20.jpg)
+![](assets/images/how-is-lagrangian-mechanics-useful/img_20.webp)
 
 Lagrangian for general relativity (leads to the famous Einstein field equations). I explain this more in my [introductory article on general relativity](https://profoundphysics.com/general-relativity-for-dummies/).
 
-![](assets/images/how-is-lagrangian-mechanics-useful/img_22.jpg)
+![](assets/images/how-is-lagrangian-mechanics-useful/img_22.webp)
 
 Lagrangian for relativistic electromagnetism (leads to the Maxwell equations.)
 
@@ -275,7 +275,7 @@ An interesting example of this kind of process can be seen in the derivation of 
 
 The process for that would go something like this (if you want to see the whole process, I show it in [this article](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/)):
 
-![This image has an empty alt attribute; its file name is image-7.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_24.jpg)
+![This image has an empty alt attribute; its file name is image-7.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_24.webp)
 
 This derivation actually uses something called Hamiltonian mechanics (you can read my [introductory article on Hamiltonian mechanics](https://profoundphysics.com/hamiltonian-mechanics-for-dummies/), if you wish), which is actually based on Lagrangian mechanics, but it works a little differently.
 
