@@ -255,6 +255,15 @@
     }
     state.articles = (data.articles || []).slice();
 
+    // Read initial category from URL hash (e.g., #archive&cat=relativity)
+    const hashMatch = window.location.hash.match(/cat=([^&]+)/);
+    if (hashMatch) {
+      const cat = decodeURIComponent(hashMatch[1]);
+      if (CATEGORIES.find(c => c.id === cat)) {
+        state.category = cat;
+      }
+    }
+
     // Wire search input
     if (dom.searchInput) {
       dom.searchInput.addEventListener('input', (e) => {

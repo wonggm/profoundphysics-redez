@@ -156,6 +156,30 @@
       }
     });
 
+    // Add IDs to headings for TOC linking
+    const headingSlugs = new Map();
+    html = html.replace(/<h([23])>(.*?)<\/h\1>/g, (match, level, text) => {
+      // Strip HTML tags from heading text for slug
+      const cleanText = text.replace(/<[^>]+>/g, '');
+      let slug = cleanText.toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .trim()
+        .replace(/\s+/g, '-')
+        .slice(0, 60);
+      // Ensure unique slugs
+      let count = headingSlugs.get(slug) || 0;
+      headingSlugs.set(slug, count + 1);
+      if (count > 0) slug = `${slug}-${count}`;
+      return `<h${level} id="${slug}">${text}</h${level}>`;
+    });
+
+    // Store headings for TOC generation
+    renderArticle.headings = [];
+    html.replace(/<h([23]) id="([^"]+)">(.*?)<\/h\1>/g, (match, level, id, text) => {
+      const cleanText = text.replace(/<[^>]+>/g, '');
+      renderArticle.headings.push({ level: parseInt(level), id, text: cleanText });
+    });
+
     const content = document.getElementById('article-content');
     if (content) {
       content.innerHTML = `
@@ -179,7 +203,100 @@
 
       // Render math
       runKaTeX(content);
+
+      // Build and wire the right-side table of contents
+      buildTOC(renderArticle.headings);
     }
+  }
+
+  // Build the right-side table of contents from article headings
+  function buildTOC(headings) {
+    const tocContainer = document.getElementById('toc-list');
+    if (!tocContainer || !headings || headings.length === 0) {
+      // Hide the TOC panel if no headings
+      const tocPanel = document.getElementById('toc-panel');
+      if (tocPanel) tocPanel.style.display = 'none';
+      return;
+    }
+
+    tocContainer.innerHTML = headings.map(h => `
+      <li class="toc-item toc-item--level-${h.level}">
+        <a href="#${escapeAttr(h.id)}" class="toc-link" data-target="${escapeAttr(h.id)}">${escapeHTML(h.text)}</a>
+      </li>
+    `).join('');
+
+    // Set up IntersectionObserver to highlight active heading
+    initTocObserver(headings);
+
+    // Smooth scroll on click
+    tocContainer.querySelectorAll('.toc-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.getElementById(link.dataset.target);
+        if (target) {
+          const top = window.scrollY + target.getBoundingClientRect().top - 100;
+          window.scrollTo({ top, behavior: 'smooth' });
+          history.replaceState(null, '', `#${link.dataset.target}`);
+        }
+      });
+    });
+  }
+
+  // IntersectionObserver to track which heading is currently in view
+  function initTocObserver(headings) {
+    const links = document.querySelectorAll('.toc-link');
+    if (links.length === 0) return;
+
+    let activeId = null;
+    const visibleHeadings = new Map();
+
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          visibleHeadings.set(entry.target.id, entry.intersectionRatio);
+        } else {
+          visibleHeadings.delete(entry.target.id);
+        }
+      }
+
+      // Pick the heading closest to the top of the viewport
+      let bestId = null;
+      let bestTop = -Infinity;
+      for (const [id] of visibleHeadings) {
+        const el = document.getElementById(id);
+        if (el) {
+          const top = el.getBoundingClientRect().top;
+          if (top < 100 && top > bestTop) {
+            bestTop = top;
+            bestId = id;
+          }
+        }
+      }
+
+      if (!bestId && visibleHeadings.size > 0) {
+        // Fallback: pick the first visible heading
+        bestId = visibleHeadings.keys().next().value;
+      }
+
+      if (bestId && bestId !== activeId) {
+        activeId = bestId;
+        links.forEach(link => {
+          if (link.dataset.target === bestId) {
+            link.classList.add('toc-link--active');
+          } else {
+            link.classList.remove('toc-link--active');
+          }
+        });
+      }
+    }, {
+      rootMargin: '-100px 0px -60% 0px',
+      threshold: [0, 0.5, 1],
+    });
+
+    headings.forEach(h => {
+      const el = document.getElementById(h.id);
+      if (el) observer.observe(el);
+    });
   }
 
   // Theme toggle
@@ -242,6 +359,17 @@
     }
 
     renderArticle(markdown, allArticles);
+
+    // Wire left panel category links (they navigate to index.html#archive
+    // with a query param that the index page can read to pre-select category)
+    document.querySelectorAll('.left-panel__link[data-cat]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const cat = a.dataset.cat;
+        // Navigate to index with the category pre-selected
+        window.location.href = `./index.html#archive&cat=${encodeURIComponent(cat)}`;
+      });
+    });
   }
 
   if (document.readyState === 'loading') {

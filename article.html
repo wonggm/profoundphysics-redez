@@ -69,18 +69,59 @@
   </header>
 
   <main id="main">
-    <article class="article-page" id="article-page">
-      <div class="container container--narrow" id="article-body">
-        <nav class="article-page__nav" aria-label="Breadcrumb">
-          <a href="./index.html#archive">← All articles</a>
-          <span id="article-nav-next"></span>
-        </nav>
-        <div id="article-content">
-          <!-- Populated by article.js -->
-          <p style="color: var(--color-muted); font-style: italic; padding: 48px 0;">Loading article…</p>
+    <div class="article-layout">
+      <!-- Left panel: global navigation by category -->
+      <aside class="left-panel" id="left-panel" aria-label="Site navigation">
+        <div class="left-panel__inner">
+          <a class="wordmark wordmark--small" href="./index.html" aria-label="Profound Physics — home">
+            <svg class="wordmark__mark" viewBox="0 0 32 32" aria-hidden="true">
+              <g fill="currentColor">
+                <path d="M16 2 L18 14 L16 16 L14 14 Z"/>
+                <path d="M30 16 L18 18 L16 16 L18 14 Z"/>
+                <path d="M16 30 L14 18 L16 16 L18 18 Z"/>
+                <path d="M2 16 L14 14 L16 16 L14 18 Z"/>
+              </g>
+            </svg>
+            <span>Profound Physics</span>
+          </a>
+          <p class="left-panel__title">Articles</p>
+          <nav class="left-panel__nav" aria-label="Article categories">
+            <ul class="left-panel__list">
+              <li><a href="./index.html#archive" class="left-panel__link left-panel__link--all">All articles</a></li>
+              <li><a href="./index.html#archive" data-cat="relativity" class="left-panel__link">Relativity</a></li>
+              <li><a href="./index.html#archive" data-cat="mathematics" class="left-panel__link">Mathematics</a></li>
+              <li><a href="./index.html#archive" data-cat="general-physics" class="left-panel__link">General Physics</a></li>
+              <li><a href="./index.html#archive" data-cat="lagrangian-hamiltonian" class="left-panel__link">Lagrangian–Hamiltonian</a></li>
+              <li><a href="./index.html#archive" data-cat="quantum-mechanics" class="left-panel__link">Quantum Mechanics</a></li>
+            </ul>
+          </nav>
         </div>
-      </div>
-    </article>
+      </aside>
+
+      <!-- Center: article content -->
+      <article class="article-page" id="article-page">
+        <div class="article-body" id="article-body">
+          <nav class="article-page__nav" aria-label="Breadcrumb">
+            <a href="./index.html#archive">← All articles</a>
+            <span id="article-nav-next"></span>
+          </nav>
+          <div id="article-content">
+            <!-- Populated by article.js -->
+            <p style="color: var(--color-muted); font-style: italic; padding: 48px 0;">Loading article…</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Right panel: table of contents -->
+      <aside class="right-panel" id="toc-panel" aria-label="Table of contents">
+        <div class="right-panel__inner">
+          <p class="right-panel__title">On this page</p>
+          <ul class="toc-list" id="toc-list" role="list">
+            <!-- Populated by article.js from article headings -->
+          </ul>
+        </div>
+      </aside>
+    </div>
   </main>
 
   <footer class="footer" role="contentinfo">
@@ -123,7 +164,7 @@
   </footer>
 
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js" crossorigin="anonymous"></script>
   <script defer src="./article.js"></script>
 </body>
