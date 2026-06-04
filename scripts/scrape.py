@@ -1,89 +1,245 @@
 #!/usr/bin/env python3
 """
-Scraper for profoundphysics.com articles.
+Scraper for profoundphysics.com articles using Playwright.
 
-Generates per-article markdown stubs in articles/<slug>.md. The current version
-generates STUB pages (Option B in the plan): each file is a YAML frontmatter +
-title + excerpt + a coral CTA back to the canonical URL on profoundphysics.com.
-
-A future Option A implementation that captures full article bodies would need
-to handle the live site's raw-LaTeX-without-delimiters convention, which is
-non-trivial. For now we keep it minimal and link to the canonical source.
+Renders each article in a headless Chromium browser, extracts the article body,
+replaces rendered KaTeX math with the original LaTeX (wrapped in $...$ or $$...$$),
+converts to markdown, and saves to articles/<slug>.md.
 
 Usage:
-    python3 scripts/scrape.py
-    python3 scripts/scrape.py --only <slug>
+    python3 scripts/scrape.py              # Scrape all 50 articles
+    python3 scripts/scrape.py --only <slug>  # Scrape one article
+    python3 scripts/scrape.py --list       # List all article slugs
 """
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
+import time
 from pathlib import Path
+
+from bs4 import BeautifulSoup, NavigableString, Tag
+from markdownify import markdownify as md
+from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 ARTICLES_JSON = ROOT / "articles.json"
 ARTICLES_DIR = ROOT / "articles"
 
-STUB_TEMPLATE = """---
-title: {title}
-category: {category}
-date: {date}
-original_url: {original_url}
-excerpt: {excerpt}
-canonical: true
+
+def load_articles() -> list[dict]:
+    """Load articles.json and return the list of article dicts."""
+    if not ARTICLES_JSON.exists():
+        print(f"error: {ARTICLES_JSON} not found", file=sys.stderr)
+        sys.exit(1)
+    data = json.loads(ARTICLES_JSON.read_text(encoding="utf-8"))
+    return data["articles"]
+
+
+def extract_latex_from_katex(article_html: str) -> str:
+    """
+    Replace all rendered KaTeX spans with the original LaTeX.
+
+    - Display math (parent is .katex-display) → $$...$$
+    - Inline math → $...$
+
+    Returns the cleaned HTML string.
+    """
+    soup = BeautifulSoup(article_html, "html.parser")
+
+    # Find all .katex spans
+    katex_spans = soup.find_all("span", class_="katex")
+
+    for span in katex_spans:
+        # Extract LaTeX from <annotation> child
+        annotation = span.find("annotation")
+        if not annotation or not annotation.string:
+            continue
+
+        latex = annotation.string.strip()
+
+        # Determine if display or inline math
+        parent = span.parent
+        is_display = parent and "katex-display" in parent.get("class", [])
+
+        if is_display:
+            replacement = f"\n\n$${latex}$$\n\n"
+            # Replace the entire .katex-display parent
+            parent.replace_with(NavigableString(replacement))
+        else:
+            replacement = f"${latex}$"
+            span.replace_with(NavigableString(replacement))
+
+    return str(soup)
+
+
+def clean_article_html(html: str) -> str:
+    """
+    Extract the article body from the full page HTML.
+    Removes navigation, sidebar, footer, ads, etc.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+
+    # Find the article element
+    article = soup.find("article")
+    if not article:
+        # Fallback: try main or entry-content
+        article = soup.find("main") or soup.find(class_="entry-content")
+
+    if not article:
+        return ""
+
+    # Remove unwanted elements
+    for tag in article.find_all(["nav", "footer", "aside", "script", "style"]):
+        tag.decompose()
+
+    # Remove common non-content classes
+    for class_name in ["sidebar", "related-posts", "comments", "author-bio", "share-buttons"]:
+        for el in article.find_all(class_=re.compile(class_name, re.I)):
+            el.decompose()
+
+    # Extract the main content area (usually .entry-content)
+    content = article.find(class_="entry-content")
+    if content:
+        return str(content)
+
+    # Fallback: return the entire article
+    return str(article)
+
+
+def html_to_markdown(html: str) -> str:
+    """Convert HTML to markdown, preserving headings, lists, code blocks, etc."""
+    # Use markdownify with appropriate options
+    markdown = md(
+        html,
+        heading_style="atx",  # Use # for headings
+        bullets="-",  # Use - for list items
+        code_language="",  # No default language for code blocks
+        strip=["img"],  # Strip images for now (can be added later)
+    )
+
+    # Clean up excessive blank lines
+    markdown = re.sub(r"\n{3,}", "\n\n", markdown)
+
+    # Unescape underscores inside math blocks (markdownify escapes them, but KaTeX needs raw _)
+    # Display math: $$...$$
+    def unescape_math_display(match):
+        content = match.group(1)
+        content = content.replace(r"\_", "_")
+        return f"$${content}$$"
+
+    markdown = re.sub(r"\$\$(.*?)\$\$", unescape_math_display, markdown, flags=re.DOTALL)
+
+    # Inline math: $...$
+    def unescape_math_inline(match):
+        content = match.group(1)
+        content = content.replace(r"\_", "_")
+        return f"${content}$"
+
+    markdown = re.sub(r"\$(.*?)\$", unescape_math_inline, markdown)
+
+    return markdown.strip()
+
+
+def scrape_article(url: str, slug: str) -> dict:
+    """
+    Scrape a single article and return a dict with:
+    - title: str
+    - content_html: str (cleaned HTML with LaTeX restored)
+    - content_md: str (markdown version)
+    """
+    print(f"  Scraping {slug}...")
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+
+        try:
+            # Load the page
+            page.goto(url, wait_until="networkidle", timeout=60000)
+
+            # Wait for page to settle (some articles have no math, so don't wait for .katex)
+            page.wait_for_timeout(3000)
+
+            # Get the full page HTML
+            html = page.content()
+
+        except Exception as e:
+            print(f"    ✗ Error loading {url}: {e}")
+            browser.close()
+            return None
+        finally:
+            browser.close()
+
+    # Extract the article body
+    article_html = clean_article_html(html)
+    if not article_html:
+        print(f"    ✗ No article content found")
+        return None
+
+    # Replace KaTeX with LaTeX
+    article_html = extract_latex_from_katex(article_html)
+
+    # Extract title
+    soup = BeautifulSoup(html, "html.parser")
+    title_el = soup.find("h1", class_="entry-title") or soup.find("h1")
+    title = title_el.get_text(strip=True) if title_el else slug.replace("-", " ").title()
+
+    # Convert to markdown
+    content_md = html_to_markdown(article_html)
+
+    return {
+        "title": title,
+        "content_html": article_html,
+        "content_md": content_md,
+    }
+
+
+def generate_article_md(article_data: dict, meta: dict) -> str:
+    """Generate the markdown file content with YAML frontmatter."""
+    frontmatter = f"""---
+title: {meta['title']}
+category: {meta['category']}
+date: {meta['date']}
+original_url: {meta['original_url']}
+excerpt: {meta['excerpt']}
+canonical: false
 ---
 
-# {title}
-
-> {excerpt}
-
-This article is part of the **Profound Physics** archive. The full piece lives at
-[profoundphysics.com]({original_url}) — click through to read it on the original
-site, where the math typesets correctly and the figures are preserved.
-
-## Why this stub exists
-
-This redesigned archive is a curated reading hub, not a content mirror. Hosting
-every article locally would mean re-typesetting several thousand lines of math
-into a format our static-site pipeline can render. Until that pipeline exists,
-per-article pages here serve as a *card catalogue entry* — a stable, archived
-landing page for each piece that points back to the canonical source.
-
-**Last updated:** {date} · **Category:** {category}
-
----
-
-*← [Back to the full archive]({index_url})*
 """
 
+    body = f"""# {article_data['title']}
 
-def build_stub(article: dict, index_filename: str = "../index.html") -> str:
-    return STUB_TEMPLATE.format(
-        title=article["title"],
-        category=article["category"],
-        date=article["date"],
-        original_url=article["original_url"],
-        excerpt=article["excerpt"],
-        index_url=index_filename,
-    )
+> {meta['excerpt']}
+
+*Originally published at [profoundphysics.com]({meta['original_url']}).*
+
+---
+
+{article_data['content_md']}
+
+---
+
+*← [Back to the full archive](../index.html)*
+"""
+
+    return frontmatter + body
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--only",
-        metavar="SLUG",
-        help="Only generate the stub for a single article slug (for testing).",
-    )
+    parser.add_argument("--only", metavar="SLUG", help="Only scrape one article")
+    parser.add_argument("--list", action="store_true", help="List all article slugs")
     args = parser.parse_args()
 
-    if not ARTICLES_JSON.exists():
-        print(f"error: {ARTICLES_JSON} not found", file=sys.stderr)
-        return 1
+    articles = load_articles()
 
-    data = json.loads(ARTICLES_JSON.read_text(encoding="utf-8"))
-    articles = data["articles"]
+    if args.list:
+        for a in articles:
+            print(f"{a['slug']:60}  {a['category']:30}  {a['date']}")
+        return 0
 
     if args.only:
         articles = [a for a in articles if a["slug"] == args.only]
@@ -93,14 +249,41 @@ def main() -> int:
 
     ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
 
-    generated = 0
-    for article in articles:
-        out = ARTICLES_DIR / f"{article['slug']}.md"
-        out.write_text(build_stub(article), encoding="utf-8")
-        generated += 1
+    print(f"Scraping {len(articles)} article(s)...\n")
 
-    print(f"Wrote {generated} stub article page(s) to {ARTICLES_DIR}")
-    return 0
+    success = 0
+    failed = 0
+
+    for i, article in enumerate(articles, 1):
+        slug = article["slug"]
+        url = article["original_url"]
+
+        print(f"[{i}/{len(articles)}] {slug}")
+
+        result = scrape_article(url, slug)
+        if not result:
+            failed += 1
+            continue
+
+        # Generate the markdown file
+        md_content = generate_article_md(result, article)
+
+        # Write to file
+        out_path = ARTICLES_DIR / f"{slug}.md"
+        out_path.write_text(md_content, encoding="utf-8")
+
+        print(f"    ✓ Wrote {out_path.name} ({len(md_content)} chars)")
+        success += 1
+
+        # Brief pause to avoid hammering the server
+        if i < len(articles):
+            time.sleep(1)
+
+    print(f"\n{'='*60}")
+    print(f"Done. Success: {success}, Failed: {failed}")
+    print(f"{'='*60}")
+
+    return 0 if failed == 0 else 1
 
 
 if __name__ == "__main__":

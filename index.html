@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,6 +35,16 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="./styles.css">
+
+  <!-- Inline theme init to prevent FOUC -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -61,32 +71,38 @@
           </svg>
           <span>Search</span>
         </button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- 1. Hero band -->
+    <!-- 1. Hero band (concise: headline + search CTA only) -->
     <section class="hero-band" aria-labelledby="hero-h1">
       <div class="container">
-        <div class="hero-grid">
+        <div class="hero-grid hero-grid--compact">
           <div class="hero">
-            <span class="hero-eyebrow">The Articles Archive</span>
             <h1 class="hero-h1 reveal" id="hero-h1">For Those Wanting To Learn Physics Profoundly</h1>
-            <p class="hero-lead reveal">
-              Fifty pieces on the deep ideas — from Noether's theorem to the Einstein field
-              equations, from Lagrangian mechanics to why electrons don't fall into the
-              nucleus. Written for the reader who would rather understand than skim.
-            </p>
             <div class="hero-actions reveal">
-              <a class="button-primary" href="#archive">Browse all 50</a>
-              <a class="text-link" href="https://profoundphysics.com/about/" target="_blank" rel="noopener">About the author →</a>
+              <a class="button-primary" href="#archive">Browse all 50 articles</a>
             </div>
           </div>
-          <aside class="hero-teaser reveal" aria-label="Most recent article" id="hero-teaser">
-            <!-- Populated by app.js with the most recent article -->
-          </aside>
         </div>
       </div>
     </section>
@@ -111,40 +127,12 @@
       </div>
     </section>
 
-    <!-- 3. Featured grid -->
-    <section class="featured-band reveal" aria-labelledby="featured-heading">
-      <div class="container">
-        <p class="section-eyebrow">Featured</p>
-        <h2 class="section-heading" id="featured-heading">Four reads to start with</h2>
-        <div class="featured-grid" id="featured-grid">
-          <!-- Populated by app.js: 1 callout-card-coral + 3 feature-card -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. Archive by category -->
+    <!-- 3. Archive by category -->
     <section class="archive-band reveal" id="archive" aria-labelledby="archive-heading">
       <div class="container">
-        <p class="section-eyebrow">The full archive</p>
         <h2 class="section-heading" id="archive-heading">All 50 articles, by topic</h2>
-        <div class="archive-intro">
-          <p>Browse by category, or search the titles above. Every article links to the
-          canonical version on <a href="https://profoundphysics.com/" target="_blank" rel="noopener">profoundphysics.com</a>,
-          where the math typesets as the author intended.</p>
-        </div>
         <div id="archive-groups">
           <!-- Populated by app.js: 5 <details> groups, one per category -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. CTA band -->
-    <section class="reveal" aria-label="Call to action">
-      <div class="container">
-        <div class="cta-band-dark">
-          <h2 class="cta-band-dark__heading">Read physics the way it deserves to be read.</h2>
-          <p class="cta-band-dark__lead">Pick a topic, follow the thread, let the math breathe. Fifty articles — one for every season of curiosity.</p>
-          <a class="text-link" href="#archive">Begin reading →</a>
         </div>
       </div>
     </section>
@@ -174,7 +162,6 @@
             <li><a href="#archive">All articles</a></li>
             <li><a href="#archive" data-cat="relativity">Relativity</a></li>
             <li><a href="#archive" data-cat="quantum-mechanics">Quantum Mechanics</a></li>
-            <li><a href="https://profoundphysics.com/about/" target="_blank" rel="noopener">About</a></li>
           </ul>
         </div>
         <div class="footer__col">
@@ -186,20 +173,12 @@
           </ul>
         </div>
         <div class="footer__col">
-          <p class="footer__col-title">Elsewhere</p>
-          <ul>
-            <li><a href="https://profoundphysics.com/" target="_blank" rel="noopener">profoundphysics.com</a></li>
-            <li><a href="https://profoundphysics.com/courses.profoundphysics.com" target="_blank" rel="noopener">Self-study courses</a></li>
-            <li><a href="https://profoundphysics.com/articles/" target="_blank" rel="noopener">Original archive</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
           <p class="footer__col-title">Colophon</p>
           <ul>
             <li>Set in Cormorant Garamond &amp; Inter</li>
             <li>Math by <a href="https://katex.org/" target="_blank" rel="noopener">KaTeX</a></li>
-            <li>Design: <a href="https://github.com/" target="_blank" rel="noopener">Claude-design</a></li>
-            <li><a href="https://github.com/" target="_blank" rel="noopener">Source on GitHub</a></li>
+            <li>Design: Claude-design</li>
+            <li><a href="https://github.com/wonggm/profoundphysics-redez" target="_blank" rel="noopener">Source on GitHub</a></li>
           </ul>
         </div>
       </div>
@@ -211,7 +190,7 @@
   </footer>
 
   <noscript>
-    <div style="padding: 12px 16px; background: #f5f0e8; color: #141413; text-align: center; font-size: 14px; border-bottom: 1px solid #e6dfd8;">
+    <div style="padding: 12px 16px; background: var(--color-surface-soft); color: var(--color-ink); text-align: center; font-size: 14px; border-bottom: 1px solid var(--color-hairline);">
       JavaScript is disabled — math in this archive renders as plain TeX, and search/filter are unavailable. The site is fully readable as a static page.
     </div>
   </noscript>

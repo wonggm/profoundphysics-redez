@@ -1,8 +1,8 @@
 /* ============================================================
    Profound Physics — App script
-   Loads articles.json, renders the featured grid + archive,
-   wires the search input and category filter pills, and
-   triggers KaTeX's auto-render once content is on the page.
+   Loads articles.json, renders the archive,
+   wires the search input and category filter pills,
+   triggers KaTeX's auto-render, and handles the theme toggle.
    ============================================================ */
 
 (() => {
@@ -38,10 +38,9 @@
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 
-  const escapeAttr = escapeHTML; // identical contract
+  const escapeAttr = escapeHTML;
 
   const formatDate = (iso) => {
-    // YYYY-MM-DD → "Sep 1, 2024"
     if (!iso || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso || '';
     const [y, m, d] = iso.split('-').map(Number);
     const date = new Date(Date.UTC(y, m - 1, d));
@@ -49,27 +48,6 @@
   };
 
   const sortByDateDesc = (a, b) => (b.date || '').localeCompare(a.date || '');
-
-  // ---------- Render: hero teaser (single recent article in active category) ----------
-  function renderHeroTeaser() {
-    if (!dom.heroTeaser) return;
-    const inCategory = state.category === 'all'
-      ? state.articles
-      : state.articles.filter(a => a.category === state.category);
-    const recent = inCategory.slice().sort(sortByDateDesc)[0];
-    if (!recent) {
-      dom.heroTeaser.innerHTML = '';
-      return;
-    }
-    dom.heroTeaser.innerHTML = `
-      <span class="badge-coral">Recent</span>
-      <h3 class="hero-teaser__title">
-        <a href="${escapeAttr(recent.original_url)}" target="_blank" rel="noopener">${escapeHTML(recent.title)}</a>
-      </h3>
-      <p class="hero-teaser__excerpt">${escapeHTML(recent.excerpt)}</p>
-      <p class="hero-teaser__meta">${escapeHTML(formatDate(recent.date))} · ${escapeHTML(categoryLabel(recent.category))}</p>
-    `;
-  }
 
   // ---------- Render: category pills ----------
   function renderPills() {
@@ -115,37 +93,6 @@
     });
   }
 
-  // ---------- Render: featured grid (4 cards, 1 in coral) ----------
-  function renderFeatured() {
-    if (!dom.featuredGrid) return;
-    const featured = state.articles
-      .filter(a => a.featured)
-      .sort((a, b) => {
-        // cornerstone first, then cream-1/2/3 in declared order
-        const order = { 'cornerstone': 0, 'cream-1': 1, 'cream-2': 2, 'cream-3': 3 };
-        return (order[a.featured_role] ?? 99) - (order[b.featured_role] ?? 99);
-      });
-
-    dom.featuredGrid.innerHTML = featured.map((a, i) => {
-      const isCoral = a.featured_role === 'cornerstone';
-      const tag = isCoral ? 'div' : 'div';
-      const cls = isCoral ? 'callout-card-coral' : 'feature-card';
-      return `
-        <${tag} class="${cls}">
-          <span class="feature-card__category">${escapeHTML(categoryLabel(a.category))}</span>
-          <h3 class="feature-card__title">
-            <a href="${escapeAttr(a.original_url)}" target="_blank" rel="noopener">${escapeHTML(a.title)}</a>
-          </h3>
-          <p class="feature-card__excerpt">${escapeHTML(a.excerpt)}</p>
-          <p class="feature-card__meta">
-            <span>${escapeHTML(formatDate(a.date))}</span>
-            <span>Read →</span>
-          </p>
-        </${tag}>
-      `;
-    }).join('');
-  }
-
   // ---------- Render: archive groups ----------
   function renderArchive() {
     if (!dom.archiveGroups) return;
@@ -155,9 +102,7 @@
 
     // Filter articles per current state
     const matches = state.articles.filter(a => {
-      // category gate
       if (activeCategory !== 'all' && a.category !== activeCategory) return false;
-      // query gate: every token must be a substring of title or excerpt
       if (tokens.length === 0) return true;
       const haystack = (a.title + ' ' + a.excerpt).toLowerCase();
       return tokens.every(t => haystack.includes(t));
@@ -168,14 +113,10 @@
     for (const a of matches) {
       (grouped[a.category] = grouped[a.category] || []).push(a);
     }
-    // Within each group: sort by date desc
     for (const cat of Object.keys(grouped)) {
       grouped[cat].sort(sortByDateDesc);
     }
 
-    // Build markup. Always show all 5 categories (even if empty) so the user
-    // sees the structure of the archive; collapse empty groups but keep their
-    // header visible with a "0 articles" count.
     const visibleCats = CATEGORIES.filter(c => c.id !== 'all');
     const groupsMarkup = visibleCats.map(cat => {
       const list = grouped[cat.id] || [];
@@ -186,7 +127,7 @@
               <li class="article-list-item">
                 <div class="article-list-item__main">
                   <h4 class="article-list-item__title">
-                    <a href="${escapeAttr(a.original_url)}" target="_blank" rel="noopener">${escapeHTML(a.title)}</a>
+                    <a href="./article.html?slug=${escapeAttr(a.slug)}">${escapeHTML(a.title)}</a>
                   </h4>
                   <p class="article-list-item__excerpt">${escapeHTML(a.excerpt)}</p>
                 </div>
@@ -212,7 +153,6 @@
 
     dom.archiveGroups.innerHTML = groupsMarkup;
 
-    // Update results count for screen readers + visual
     const totalLabel = matches.length === 0
       ? 'No articles match your search.'
       : `Showing ${matches.length} of ${state.articles.length} articles.`;
@@ -231,14 +171,13 @@
     renderArchive();
     runKaTeX(dom.archiveGroups);
   }
+
   function setCategory(id) {
     if (!CATEGORIES.find(c => c.id === id)) return;
     state.category = id;
     renderPills();
-    renderHeroTeaser();
     renderArchive();
     runKaTeX(dom.archiveGroups);
-    runKaTeX(dom.heroTeaser);
   }
 
   // ---------- KaTeX ----------
@@ -257,9 +196,36 @@
         ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
       });
     } catch (e) {
-      // KaTeX errors are non-fatal
       console.warn('KaTeX render error:', e);
     }
+  }
+
+  // ---------- Theme toggle ----------
+  function initThemeToggle() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let currentTheme = saved || (prefersDark ? 'dark' : 'light');
+
+    function setTheme(theme) {
+      currentTheme = theme;
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+
+    toggle.addEventListener('click', () => {
+      const next = currentTheme === 'light' ? 'dark' : 'light';
+      setTheme(next);
+    });
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        setTheme(e.matches ? 'dark' : 'light');
+      }
+    });
   }
 
   // ---------- Init ----------
@@ -268,10 +234,11 @@
     dom.searchInput     = document.getElementById('search-input');
     dom.pills           = document.getElementById('category-pills');
     dom.resultsCount    = document.getElementById('results-count');
-    dom.featuredGrid    = document.getElementById('featured-grid');
     dom.archiveGroups   = document.getElementById('archive-groups');
-    dom.heroTeaser      = document.getElementById('hero-teaser');
     dom.navSearchBtn    = document.getElementById('nav-search-btn');
+
+    // Init theme toggle
+    initThemeToggle();
 
     // Fetch articles
     let data;
@@ -306,23 +273,19 @@
     if (dom.navSearchBtn && dom.searchInput) {
       dom.navSearchBtn.addEventListener('click', () => {
         const inputRect = dom.searchInput.getBoundingClientRect();
-        // Offset for the sticky nav
         const top = window.scrollY + inputRect.top - 80;
         window.scrollTo({ top, behavior: 'smooth' });
-        // Defer focus so the smooth scroll doesn't fight the focus
         setTimeout(() => dom.searchInput.focus({ preventScroll: true }), 320);
       });
     }
 
-    // Wire footer topic links (any [data-cat] anchor inside the footer jumps
-    // to the archive and pre-selects the category)
+    // Wire footer topic links
     document.querySelectorAll('a[data-cat]').forEach(a => {
       a.addEventListener('click', (e) => {
         e.preventDefault();
         const cat = a.dataset.cat;
         if (cat) {
           setCategory(cat);
-          // Scroll to archive section
           const target = document.getElementById('archive');
           if (target) {
             const top = window.scrollY + target.getBoundingClientRect().top - 80;
@@ -334,14 +297,10 @@
 
     // Initial render
     renderPills();
-    renderFeatured();
-    renderHeroTeaser();
     renderArchive();
 
-    // Run KaTeX on all dynamic containers
-    runKaTeX(dom.featuredGrid);
+    // Run KaTeX on archive
     runKaTeX(dom.archiveGroups);
-    runKaTeX(dom.heroTeaser);
   }
 
   // Boot

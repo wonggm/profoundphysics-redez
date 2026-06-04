@@ -1,0 +1,302 @@
+{
+  "/home/m/Documents/profoundphysics/article.js": {
+    "mtime": 1780562290.2526617,
+    "ast_hash": "faa7d2adf59138cb11307b02cf52e01c",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/app.js": {
+    "mtime": 1780562210.3526719,
+    "ast_hash": "e9566976695c420e91ebed082d9901a8",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles.json": {
+    "mtime": 1780561854.2047176,
+    "ast_hash": "1ae8bcc9ddd2fedae6f852bc26c29e4b",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/scripts/scrape.py": {
+    "mtime": 1780561932.740707,
+    "ast_hash": "e5ff87cadf26644c3953b89f1f5c70e5",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/README.md": {
+    "mtime": 1780562322.920657,
+    "ast_hash": "c2d37a13f03f714d0369725f7c9bae96",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/article.html": {
+    "mtime": 1780562261.7566655,
+    "ast_hash": "b78eed0ae00c38e23a264bdad04b30f9",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/index.html": {
+    "mtime": 1780562139.5046792,
+    "ast_hash": "d9cceed311c0c26e27fa3558a7279e61",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/can-acid-dissolve-glass.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "13bee58be07017143da062f2e8c5187f",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/how-to-learn-general-relativity-a-step-by-step-guide.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "d03f5f87e8b633f6fb8275ccd392ef00",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/why-do-hot-things-glow.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "0037c63cb08fb879e0795971a0561ce8",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/dot-product-in-physics-what-is-the-physical-meaning-of-it.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "95f2a15645055deea71187a8d2cec709",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/gravity-underground.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "9f29638a1d09741413b473dfbf060651",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/metric-tensor-a-complete-guide-with-examples.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "0335a7d97c056aa4776e1888643684ff",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/why-do-photons-have-no-mass-simple-proof.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "360cb3ac8dad4eaee9f29c2ba5cf4651",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/lagrangian-vs-hamiltonian-mechanics.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "69c3a0274db2957fb61bc4390b42d0fd",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/can-light-orbit-a-black-hole-the-physics-explained.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "9a779c569265867b1419538407b678a0",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/why-is-there-a-half-in-the-kinetic-energy-formula.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "57dd0f334448b0ce98b5df499a42860f",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/noethers-theorem-a-complete-guide.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "8f0338a8ce14f9cc5ed0f1c66bb1b87f",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/why-do-windows-reflect-at-night-the-physics-explained.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "88d8852feea1376a1efd72c12817c4e9",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/hamiltonian-mechanics-for-dummies.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "885ed422879ca1bfecf1e1d3c978d895",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/did-the-big-bang-happen-everywhere-at-once.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "48b6dd87430133566f55740d3f53fe32",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/are-maxwell-equations-relativistic.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "6c5ef85c903ade51337ff65a3d25f01f",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/why-do-moving-charges-create-a-magnetic-field.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "2ba608999200d1ee8387107e6b78585e",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/gradient-in-different-coordinates.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "149bfce92bbf54db814ced5dbfdbd031",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/black-hole-orbits.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "d5b1a27b7dfb60317f10f79cba685ec5",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/does-flour-dissolve-in-water-and-why-the-science-explained.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "4237cf50457a5909b6b58a07e6bae474",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/why-is-momentum-conserved-but-kinetic-energy-is-not.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "316e17201f6b2e5679a525867a2b90a3",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/derivation-of-einstein-field-equations.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "afdb8637b556655d8e96dd867a41d684",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/generalized-coordinates.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "23ee0ff5bcb3b0c0fe753bc31d6d751b",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/legendre-transformations-for-dummies-intuition-and-examples.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "680627e608b6e742f295ea2bee650c7b",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/how-are-photons-affected-by-gravity-if-they-have-no-mass.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "74257f004565ada11dd95dc5816db4d8",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "30cc79968aff23baf58161321afbb425",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "78dc1bb638079948e444582e4c55e84c",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/if-photons-have-no-mass-how-can-they-have-momentum.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "4057e825e7ccb0dd85960064342968a0",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/lagrangian-vs-newtonian-mechanics-the-key-differences.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "46a8b47e5b4d25e3d43f1c6aaf343acf",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/constraints-in-lagrangian-mechanics.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "0b0c0b6f8acc342d607c8b177128b285",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/the-ricci-tensor.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "4db89d6e065db2bf4fc29cd7b9ca6089",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/general-relativity-for-dummies.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "9d3f588bfcf0290519207944bd81e464",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/is-classical-mechanics-still-relevant.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "290ac410e17023db594b7de9c520c566",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/is-time-a-vector.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "12652e3e92de193ba6106720b637030c",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/momentum-vs-kinetic-energy-the-key-differences.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "089313d9a3b34fc504de974d47c528b3",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/lagrangian-mechanics-for-beginners.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "3ad4f8316152f54a98d56d5bc07f2e7a",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/friction-in-lagrangian-mechanics.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "5362626951dd2d732ca93e8ce35fcd32",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/special-relativity-for-dummies-an-intuitive-introduction.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "96083af66de5d3d31ab9c0fd0619af3b",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/is-time-always-the-independent-variable.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "2979cb2ba14fe0dd9946f8b1d57bc830",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/how-to-learn-vector-calculus.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "02be6584c6bc4a7a1c153bd84c4e0334",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/why-do-electrons-not-fall-into-the-nucleus.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "9480c61727a44b17becf031a423352ab",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/calculus-of-variations-for-beginners.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "b4cd5225b69f49f89559a8dfebcf6c75",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/physics-study-tips.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "1315fb79b72a24ed6883b813703b0ad9",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/conservative-and-non-conservative-forces-what-are-the-differences.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "344d44ab0043205ee88d1ed84143faa1",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/the-friedmann-equations-explained-a-complete-guide.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "7d003783b4dffa204866137ea21df1de",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/why-time-slows-down-near-a-black-hole.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "19fe609d0f90c5f68e876ed0ca3ece56",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/does-gravity-do-work.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "8ac80ae8c9740864b1e9af79616ef497",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/rope-sliding-down-a-table-with-friction-step-by-step-solution.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "93a4c9f57d6934483d94b131622b50ef",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/is-it-possible-to-melt-or-burn-diamonds.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "34c5d31d5ba05f41d5bc560699337dd7",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/christoffel-symbols-a-complete-guide-with-examples.md": {
+    "mtime": 1780561938.5167065,
+    "ast_hash": "681b35ae2c4746e8cb9a0b143c792e31",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/articles/how-is-lagrangian-mechanics-useful.md": {
+    "mtime": 1780561938.5207064,
+    "ast_hash": "f386486d042ec1a3708a6f577c51ee11",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/assets/README.md": {
+    "mtime": 1780561977.180702,
+    "ast_hash": "2dd258669b34dab3d27371f00e43d465",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/assets/favicon.svg": {
+    "mtime": 1780561969.0607028,
+    "ast_hash": "2b0abb6be4ada769965d80844fff66bf",
+    "semantic_hash": ""
+  },
+  "/home/m/Documents/profoundphysics/assets/spike-mark.svg": {
+    "mtime": 1780561966.604703,
+    "ast_hash": "6e70bc9f239b0d517f53c847a0d15d2c",
+    "semantic_hash": ""
+  }
+}

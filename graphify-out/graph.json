@@ -1,0 +1,3493 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "article.js",
+      "file_type": "code",
+      "source_file": "article.js",
+      "source_location": "L1",
+      "id": "article_js",
+      "community": 2,
+      "norm_label": "article.js"
+    },
+    {
+      "label": "escapeHTML()",
+      "file_type": "code",
+      "source_file": "article.js",
+      "source_location": "L14",
+      "id": "profoundphysics_article_escapehtml",
+      "community": 2,
+      "norm_label": "escapehtml()"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "article.js",
+      "source_location": "L23",
+      "id": "profoundphysics_article_formatdate",
+      "community": 2,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "categoryLabel()",
+      "file_type": "code",
+      "source_file": "article.js",
+      "source_location": "L30",
+      "id": "profoundphysics_article_categorylabel",
+      "community": 2,
+      "norm_label": "categorylabel()"
+    },
+    {
+      "label": "getSlug()",
+      "file_type": "code",
+      "source_file": "article.js",
+      "source_location": "L41",
+      "id": "profoundphysics_article_getslug",
+      "community": 2,
+      "norm_label": "getslug()"
+    },
+    {
+      "label": "runKaTeX()",
+      "file_type": "code",
+      "source_file": "article.js",
+      "source_location": "L46",
+      "id": "profoundphysics_article_runkatex",
+      "community": 2,
+      "norm_label": "runkatex()"
+    },
+    {
+      "label": "renderNotFound()",
+      "file_type": "code",
+      "source_file": "article.js",
+      "source_location": "L65",
+      "id": "profoundphysics_article_rendernotfound",
+      "community": 2,
+      "norm_label": "rendernotfound()"
+    },
+    {
+      "label": "renderArticle()",
+      "file_type": "code",
+      "source_file": "article.js",
+      "source_location": "L79",
+      "id": "profoundphysics_article_renderarticle",
+      "community": 2,
+      "norm_label": "renderarticle()"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "article.js",
+      "source_location": "L127",
+      "id": "profoundphysics_article_init",
+      "community": 2,
+      "norm_label": "init()"
+    },
+    {
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L1",
+      "id": "app_js",
+      "community": 0,
+      "norm_label": "app.js"
+    },
+    {
+      "label": "CATEGORIES",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L12",
+      "id": "profoundphysics_app_categories",
+      "community": 0,
+      "norm_label": "categories"
+    },
+    {
+      "label": "state",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L24",
+      "id": "profoundphysics_app_state",
+      "community": 0,
+      "norm_label": "state"
+    },
+    {
+      "label": "dom",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L31",
+      "id": "profoundphysics_app_dom",
+      "community": 0,
+      "norm_label": "dom"
+    },
+    {
+      "label": "escapeHTML()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L34",
+      "id": "profoundphysics_app_escapehtml",
+      "community": 0,
+      "norm_label": "escapehtml()"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L43",
+      "id": "profoundphysics_app_formatdate",
+      "community": 0,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "sortByDateDesc()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L51",
+      "id": "profoundphysics_app_sortbydatedesc",
+      "community": 0,
+      "norm_label": "sortbydatedesc()"
+    },
+    {
+      "label": "renderHeroTeaser()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L54",
+      "id": "profoundphysics_app_renderheroteaser",
+      "community": 0,
+      "norm_label": "renderheroteaser()"
+    },
+    {
+      "label": "renderPills()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L75",
+      "id": "profoundphysics_app_renderpills",
+      "community": 0,
+      "norm_label": "renderpills()"
+    },
+    {
+      "label": "renderFeatured()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L119",
+      "id": "profoundphysics_app_renderfeatured",
+      "community": 0,
+      "norm_label": "renderfeatured()"
+    },
+    {
+      "label": "renderArchive()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L150",
+      "id": "profoundphysics_app_renderarchive",
+      "community": 0,
+      "norm_label": "renderarchive()"
+    },
+    {
+      "label": "categoryLabel()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L223",
+      "id": "profoundphysics_app_categorylabel",
+      "community": 0,
+      "norm_label": "categorylabel()"
+    },
+    {
+      "label": "setQuery()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L229",
+      "id": "profoundphysics_app_setquery",
+      "community": 0,
+      "norm_label": "setquery()"
+    },
+    {
+      "label": "setCategory()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L234",
+      "id": "profoundphysics_app_setcategory",
+      "community": 0,
+      "norm_label": "setcategory()"
+    },
+    {
+      "label": "runKaTeX()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L245",
+      "id": "profoundphysics_app_runkatex",
+      "community": 0,
+      "norm_label": "runkatex()"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "app.js",
+      "source_location": "L266",
+      "id": "profoundphysics_app_init",
+      "community": 0,
+      "norm_label": "init()"
+    },
+    {
+      "label": "articles.json",
+      "file_type": "code",
+      "source_file": "articles.json",
+      "source_location": "L1",
+      "id": "articles_json",
+      "community": 3,
+      "norm_label": "articles.json"
+    },
+    {
+      "label": "meta",
+      "file_type": "code",
+      "source_file": "articles.json",
+      "source_location": "L2",
+      "id": "profoundphysics_articles_meta",
+      "community": 3,
+      "norm_label": "meta"
+    },
+    {
+      "label": "source",
+      "file_type": "code",
+      "source_file": "articles.json",
+      "source_location": "L3",
+      "id": "profoundphysics_articles_meta_source",
+      "community": 3,
+      "norm_label": "source"
+    },
+    {
+      "label": "category_taxonomy",
+      "file_type": "code",
+      "source_file": "articles.json",
+      "source_location": "L4",
+      "id": "profoundphysics_articles_meta_category_taxonomy",
+      "community": 3,
+      "norm_label": "category_taxonomy"
+    },
+    {
+      "label": "articles",
+      "file_type": "code",
+      "source_file": "articles.json",
+      "source_location": "L12",
+      "id": "profoundphysics_articles_articles",
+      "community": 3,
+      "norm_label": "articles"
+    },
+    {
+      "label": "scrape.py",
+      "file_type": "code",
+      "source_file": "scripts/scrape.py",
+      "source_location": "L1",
+      "id": "scripts_scrape_py",
+      "community": 55,
+      "norm_label": "scrape.py"
+    },
+    {
+      "label": "build_stub()",
+      "file_type": "code",
+      "source_file": "scripts/scrape.py",
+      "source_location": "L61",
+      "id": "scripts_scrape_build_stub",
+      "community": 55,
+      "norm_label": "build_stub()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/scrape.py",
+      "source_location": "L72",
+      "id": "scripts_scrape_main",
+      "community": 55,
+      "norm_label": "main()"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 1,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Profound Physics \u2014 Articles Archive",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "profoundphysics_readme_profound_physics_articles_archive",
+      "community": 1,
+      "norm_label": "profound physics \u2014 articles archive"
+    },
+    {
+      "label": "Design",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "id": "profoundphysics_readme_design",
+      "community": 1,
+      "norm_label": "design"
+    },
+    {
+      "label": "Structure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "id": "profoundphysics_readme_structure",
+      "community": 1,
+      "norm_label": "structure"
+    },
+    {
+      "label": "code:block1 (.)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "id": "profoundphysics_readme_codeblock_1",
+      "community": 1,
+      "norm_label": "code:block1 (.)"
+    },
+    {
+      "label": "Run locally",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "id": "profoundphysics_readme_run_locally",
+      "community": 1,
+      "norm_label": "run locally"
+    },
+    {
+      "label": "code:bash (python3 -m http.server 8000)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L39",
+      "id": "profoundphysics_readme_codeblock_2",
+      "community": 1,
+      "norm_label": "code:bash (python3 -m http.server 8000)"
+    },
+    {
+      "label": "Deploy to GitHub Pages",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "id": "profoundphysics_readme_deploy_to_github_pages",
+      "community": 1,
+      "norm_label": "deploy to github pages"
+    },
+    {
+      "label": "code:bash (git init)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "id": "profoundphysics_readme_codeblock_3",
+      "community": 1,
+      "norm_label": "code:bash (git init)"
+    },
+    {
+      "label": "Adding or updating articles",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L60",
+      "id": "profoundphysics_readme_adding_or_updating_articles",
+      "community": 1,
+      "norm_label": "adding or updating articles"
+    },
+    {
+      "label": "code:bash (python3 scripts/scrape.py                # all 50)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L66",
+      "id": "profoundphysics_readme_codeblock_4",
+      "community": 1,
+      "norm_label": "code:bash (python3 scripts/scrape.py                # all 50)"
+    },
+    {
+      "label": "Math rendering",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L71",
+      "id": "profoundphysics_readme_math_rendering",
+      "community": 1,
+      "norm_label": "math rendering"
+    },
+    {
+      "label": "Source attribution",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L79",
+      "id": "profoundphysics_readme_source_attribution",
+      "community": 1,
+      "norm_label": "source attribution"
+    },
+    {
+      "label": "can-acid-dissolve-glass.md",
+      "file_type": "document",
+      "source_file": "articles/can-acid-dissolve-glass.md",
+      "source_location": "L1",
+      "id": "articles_can_acid_dissolve_glass_md",
+      "community": 8,
+      "norm_label": "can-acid-dissolve-glass.md"
+    },
+    {
+      "label": "Can Acid Dissolve Glass?",
+      "file_type": "document",
+      "source_file": "articles/can-acid-dissolve-glass.md",
+      "source_location": "L10",
+      "id": "articles_can_acid_dissolve_glass_can_acid_dissolve_glass",
+      "community": 8,
+      "norm_label": "can acid dissolve glass?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/can-acid-dissolve-glass.md",
+      "source_location": "L18",
+      "id": "articles_can_acid_dissolve_glass_why_this_stub_exists",
+      "community": 8,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "how-to-learn-general-relativity-a-step-by-step-guide.md",
+      "file_type": "document",
+      "source_file": "articles/how-to-learn-general-relativity-a-step-by-step-guide.md",
+      "source_location": "L1",
+      "id": "articles_how_to_learn_general_relativity_a_step_by_step_guide_md",
+      "community": 27,
+      "norm_label": "how-to-learn-general-relativity-a-step-by-step-guide.md"
+    },
+    {
+      "label": "How to Learn General Relativity: A Step-by-Step Guide",
+      "file_type": "document",
+      "source_file": "articles/how-to-learn-general-relativity-a-step-by-step-guide.md",
+      "source_location": "L10",
+      "id": "articles_how_to_learn_general_relativity_a_step_by_step_guide_how_to_learn_general_relativity_a_step_by_step_guide",
+      "community": 27,
+      "norm_label": "how to learn general relativity: a step-by-step guide"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/how-to-learn-general-relativity-a-step-by-step-guide.md",
+      "source_location": "L18",
+      "id": "articles_how_to_learn_general_relativity_a_step_by_step_guide_why_this_stub_exists",
+      "community": 27,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "why-do-hot-things-glow.md",
+      "file_type": "document",
+      "source_file": "articles/why-do-hot-things-glow.md",
+      "source_location": "L1",
+      "id": "articles_why_do_hot_things_glow_md",
+      "community": 48,
+      "norm_label": "why-do-hot-things-glow.md"
+    },
+    {
+      "label": "Why Do Hot Things Glow?",
+      "file_type": "document",
+      "source_file": "articles/why-do-hot-things-glow.md",
+      "source_location": "L10",
+      "id": "articles_why_do_hot_things_glow_why_do_hot_things_glow",
+      "community": 48,
+      "norm_label": "why do hot things glow?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/why-do-hot-things-glow.md",
+      "source_location": "L18",
+      "id": "articles_why_do_hot_things_glow_why_this_stub_exists",
+      "community": 48,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "dot-product-in-physics-what-is-the-physical-meaning-of-it.md",
+      "file_type": "document",
+      "source_file": "articles/dot-product-in-physics-what-is-the-physical-meaning-of-it.md",
+      "source_location": "L1",
+      "id": "articles_dot_product_in_physics_what_is_the_physical_meaning_of_it_md",
+      "community": 17,
+      "norm_label": "dot-product-in-physics-what-is-the-physical-meaning-of-it.md"
+    },
+    {
+      "label": "Dot Product in Physics: What Is the Physical Meaning?",
+      "file_type": "document",
+      "source_file": "articles/dot-product-in-physics-what-is-the-physical-meaning-of-it.md",
+      "source_location": "L10",
+      "id": "articles_dot_product_in_physics_what_is_the_physical_meaning_of_it_dot_product_in_physics_what_is_the_physical_meaning",
+      "community": 17,
+      "norm_label": "dot product in physics: what is the physical meaning?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/dot-product-in-physics-what-is-the-physical-meaning-of-it.md",
+      "source_location": "L18",
+      "id": "articles_dot_product_in_physics_what_is_the_physical_meaning_of_it_why_this_stub_exists",
+      "community": 17,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "gravity-underground.md",
+      "file_type": "document",
+      "source_file": "articles/gravity-underground.md",
+      "source_location": "L1",
+      "id": "articles_gravity_underground_md",
+      "community": 23,
+      "norm_label": "gravity-underground.md"
+    },
+    {
+      "label": "Gravity Underground",
+      "file_type": "document",
+      "source_file": "articles/gravity-underground.md",
+      "source_location": "L10",
+      "id": "articles_gravity_underground_gravity_underground",
+      "community": 23,
+      "norm_label": "gravity underground"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/gravity-underground.md",
+      "source_location": "L18",
+      "id": "articles_gravity_underground_why_this_stub_exists",
+      "community": 23,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "metric-tensor-a-complete-guide-with-examples.md",
+      "file_type": "document",
+      "source_file": "articles/metric-tensor-a-complete-guide-with-examples.md",
+      "source_location": "L1",
+      "id": "articles_metric_tensor_a_complete_guide_with_examples_md",
+      "community": 38,
+      "norm_label": "metric-tensor-a-complete-guide-with-examples.md"
+    },
+    {
+      "label": "The Metric Tensor: A Complete Guide With Examples",
+      "file_type": "document",
+      "source_file": "articles/metric-tensor-a-complete-guide-with-examples.md",
+      "source_location": "L10",
+      "id": "articles_metric_tensor_a_complete_guide_with_examples_the_metric_tensor_a_complete_guide_with_examples",
+      "community": 38,
+      "norm_label": "the metric tensor: a complete guide with examples"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/metric-tensor-a-complete-guide-with-examples.md",
+      "source_location": "L18",
+      "id": "articles_metric_tensor_a_complete_guide_with_examples_why_this_stub_exists",
+      "community": 38,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "why-do-photons-have-no-mass-simple-proof.md",
+      "file_type": "document",
+      "source_file": "articles/why-do-photons-have-no-mass-simple-proof.md",
+      "source_location": "L1",
+      "id": "articles_why_do_photons_have_no_mass_simple_proof_md",
+      "community": 50,
+      "norm_label": "why-do-photons-have-no-mass-simple-proof.md"
+    },
+    {
+      "label": "Why Do Photons Have No Mass: A Simple Proof",
+      "file_type": "document",
+      "source_file": "articles/why-do-photons-have-no-mass-simple-proof.md",
+      "source_location": "L10",
+      "id": "articles_why_do_photons_have_no_mass_simple_proof_why_do_photons_have_no_mass_a_simple_proof",
+      "community": 50,
+      "norm_label": "why do photons have no mass: a simple proof"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/why-do-photons-have-no-mass-simple-proof.md",
+      "source_location": "L18",
+      "id": "articles_why_do_photons_have_no_mass_simple_proof_why_this_stub_exists",
+      "community": 50,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "lagrangian-vs-hamiltonian-mechanics.md",
+      "file_type": "document",
+      "source_file": "articles/lagrangian-vs-hamiltonian-mechanics.md",
+      "source_location": "L1",
+      "id": "articles_lagrangian_vs_hamiltonian_mechanics_md",
+      "community": 35,
+      "norm_label": "lagrangian-vs-hamiltonian-mechanics.md"
+    },
+    {
+      "label": "Lagrangian vs Hamiltonian Mechanics",
+      "file_type": "document",
+      "source_file": "articles/lagrangian-vs-hamiltonian-mechanics.md",
+      "source_location": "L10",
+      "id": "articles_lagrangian_vs_hamiltonian_mechanics_lagrangian_vs_hamiltonian_mechanics",
+      "community": 35,
+      "norm_label": "lagrangian vs hamiltonian mechanics"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/lagrangian-vs-hamiltonian-mechanics.md",
+      "source_location": "L18",
+      "id": "articles_lagrangian_vs_hamiltonian_mechanics_why_this_stub_exists",
+      "community": 35,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "can-light-orbit-a-black-hole-the-physics-explained.md",
+      "file_type": "document",
+      "source_file": "articles/can-light-orbit-a-black-hole-the-physics-explained.md",
+      "source_location": "L1",
+      "id": "articles_can_light_orbit_a_black_hole_the_physics_explained_md",
+      "community": 9,
+      "norm_label": "can-light-orbit-a-black-hole-the-physics-explained.md"
+    },
+    {
+      "label": "How Light Orbits Around a Black Hole",
+      "file_type": "document",
+      "source_file": "articles/can-light-orbit-a-black-hole-the-physics-explained.md",
+      "source_location": "L10",
+      "id": "articles_can_light_orbit_a_black_hole_the_physics_explained_how_light_orbits_around_a_black_hole",
+      "community": 9,
+      "norm_label": "how light orbits around a black hole"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/can-light-orbit-a-black-hole-the-physics-explained.md",
+      "source_location": "L18",
+      "id": "articles_can_light_orbit_a_black_hole_the_physics_explained_why_this_stub_exists",
+      "community": 9,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "why-is-there-a-half-in-the-kinetic-energy-formula.md",
+      "file_type": "document",
+      "source_file": "articles/why-is-there-a-half-in-the-kinetic-energy-formula.md",
+      "source_location": "L1",
+      "id": "articles_why_is_there_a_half_in_the_kinetic_energy_formula_md",
+      "community": 53,
+      "norm_label": "why-is-there-a-half-in-the-kinetic-energy-formula.md"
+    },
+    {
+      "label": "Why Is There a Half in the Kinetic Energy Formula?",
+      "file_type": "document",
+      "source_file": "articles/why-is-there-a-half-in-the-kinetic-energy-formula.md",
+      "source_location": "L10",
+      "id": "articles_why_is_there_a_half_in_the_kinetic_energy_formula_why_is_there_a_half_in_the_kinetic_energy_formula",
+      "community": 53,
+      "norm_label": "why is there a half in the kinetic energy formula?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/why-is-there-a-half-in-the-kinetic-energy-formula.md",
+      "source_location": "L18",
+      "id": "articles_why_is_there_a_half_in_the_kinetic_energy_formula_why_this_stub_exists",
+      "community": 53,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "noethers-theorem-a-complete-guide.md",
+      "file_type": "document",
+      "source_file": "articles/noethers-theorem-a-complete-guide.md",
+      "source_location": "L1",
+      "id": "articles_noethers_theorem_a_complete_guide_md",
+      "community": 40,
+      "norm_label": "noethers-theorem-a-complete-guide.md"
+    },
+    {
+      "label": "Noether's Theorem: A Complete Guide",
+      "file_type": "document",
+      "source_file": "articles/noethers-theorem-a-complete-guide.md",
+      "source_location": "L10",
+      "id": "articles_noethers_theorem_a_complete_guide_noether_s_theorem_a_complete_guide",
+      "community": 40,
+      "norm_label": "noether's theorem: a complete guide"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/noethers-theorem-a-complete-guide.md",
+      "source_location": "L18",
+      "id": "articles_noethers_theorem_a_complete_guide_why_this_stub_exists",
+      "community": 40,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "why-do-windows-reflect-at-night-the-physics-explained.md",
+      "file_type": "document",
+      "source_file": "articles/why-do-windows-reflect-at-night-the-physics-explained.md",
+      "source_location": "L1",
+      "id": "articles_why_do_windows_reflect_at_night_the_physics_explained_md",
+      "community": 51,
+      "norm_label": "why-do-windows-reflect-at-night-the-physics-explained.md"
+    },
+    {
+      "label": "Why Do Windows Reflect at Night?",
+      "file_type": "document",
+      "source_file": "articles/why-do-windows-reflect-at-night-the-physics-explained.md",
+      "source_location": "L10",
+      "id": "articles_why_do_windows_reflect_at_night_the_physics_explained_why_do_windows_reflect_at_night",
+      "community": 51,
+      "norm_label": "why do windows reflect at night?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/why-do-windows-reflect-at-night-the-physics-explained.md",
+      "source_location": "L18",
+      "id": "articles_why_do_windows_reflect_at_night_the_physics_explained_why_this_stub_exists",
+      "community": 51,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "hamiltonian-mechanics-for-dummies.md",
+      "file_type": "document",
+      "source_file": "articles/hamiltonian-mechanics-for-dummies.md",
+      "source_location": "L1",
+      "id": "articles_hamiltonian_mechanics_for_dummies_md",
+      "community": 24,
+      "norm_label": "hamiltonian-mechanics-for-dummies.md"
+    },
+    {
+      "label": "Hamiltonian Mechanics for Dummies",
+      "file_type": "document",
+      "source_file": "articles/hamiltonian-mechanics-for-dummies.md",
+      "source_location": "L10",
+      "id": "articles_hamiltonian_mechanics_for_dummies_hamiltonian_mechanics_for_dummies",
+      "community": 24,
+      "norm_label": "hamiltonian mechanics for dummies"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/hamiltonian-mechanics-for-dummies.md",
+      "source_location": "L18",
+      "id": "articles_hamiltonian_mechanics_for_dummies_why_this_stub_exists",
+      "community": 24,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "did-the-big-bang-happen-everywhere-at-once.md",
+      "file_type": "document",
+      "source_file": "articles/did-the-big-bang-happen-everywhere-at-once.md",
+      "source_location": "L1",
+      "id": "articles_did_the_big_bang_happen_everywhere_at_once_md",
+      "community": 14,
+      "norm_label": "did-the-big-bang-happen-everywhere-at-once.md"
+    },
+    {
+      "label": "Did the Big Bang Happen Everywhere At Once?",
+      "file_type": "document",
+      "source_file": "articles/did-the-big-bang-happen-everywhere-at-once.md",
+      "source_location": "L10",
+      "id": "articles_did_the_big_bang_happen_everywhere_at_once_did_the_big_bang_happen_everywhere_at_once",
+      "community": 14,
+      "norm_label": "did the big bang happen everywhere at once?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/did-the-big-bang-happen-everywhere-at-once.md",
+      "source_location": "L18",
+      "id": "articles_did_the_big_bang_happen_everywhere_at_once_why_this_stub_exists",
+      "community": 14,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "are-maxwell-equations-relativistic.md",
+      "file_type": "document",
+      "source_file": "articles/are-maxwell-equations-relativistic.md",
+      "source_location": "L1",
+      "id": "articles_are_maxwell_equations_relativistic_md",
+      "community": 5,
+      "norm_label": "are-maxwell-equations-relativistic.md"
+    },
+    {
+      "label": "Are Maxwell's Equations Relativistic?",
+      "file_type": "document",
+      "source_file": "articles/are-maxwell-equations-relativistic.md",
+      "source_location": "L10",
+      "id": "articles_are_maxwell_equations_relativistic_are_maxwell_s_equations_relativistic",
+      "community": 5,
+      "norm_label": "are maxwell's equations relativistic?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/are-maxwell-equations-relativistic.md",
+      "source_location": "L18",
+      "id": "articles_are_maxwell_equations_relativistic_why_this_stub_exists",
+      "community": 5,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "why-do-moving-charges-create-a-magnetic-field.md",
+      "file_type": "document",
+      "source_file": "articles/why-do-moving-charges-create-a-magnetic-field.md",
+      "source_location": "L1",
+      "id": "articles_why_do_moving_charges_create_a_magnetic_field_md",
+      "community": 49,
+      "norm_label": "why-do-moving-charges-create-a-magnetic-field.md"
+    },
+    {
+      "label": "Why Do Moving Charged Particles Create a Magnetic Field?",
+      "file_type": "document",
+      "source_file": "articles/why-do-moving-charges-create-a-magnetic-field.md",
+      "source_location": "L10",
+      "id": "articles_why_do_moving_charges_create_a_magnetic_field_why_do_moving_charged_particles_create_a_magnetic_field",
+      "community": 49,
+      "norm_label": "why do moving charged particles create a magnetic field?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/why-do-moving-charges-create-a-magnetic-field.md",
+      "source_location": "L18",
+      "id": "articles_why_do_moving_charges_create_a_magnetic_field_why_this_stub_exists",
+      "community": 49,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "gradient-in-different-coordinates.md",
+      "file_type": "document",
+      "source_file": "articles/gradient-in-different-coordinates.md",
+      "source_location": "L1",
+      "id": "articles_gradient_in_different_coordinates_md",
+      "community": 22,
+      "norm_label": "gradient-in-different-coordinates.md"
+    },
+    {
+      "label": "The Gradient in Different Coordinates",
+      "file_type": "document",
+      "source_file": "articles/gradient-in-different-coordinates.md",
+      "source_location": "L10",
+      "id": "articles_gradient_in_different_coordinates_the_gradient_in_different_coordinates",
+      "community": 22,
+      "norm_label": "the gradient in different coordinates"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/gradient-in-different-coordinates.md",
+      "source_location": "L18",
+      "id": "articles_gradient_in_different_coordinates_why_this_stub_exists",
+      "community": 22,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "black-hole-orbits.md",
+      "file_type": "document",
+      "source_file": "articles/black-hole-orbits.md",
+      "source_location": "L1",
+      "id": "articles_black_hole_orbits_md",
+      "community": 6,
+      "norm_label": "black-hole-orbits.md"
+    },
+    {
+      "label": "Black Hole Orbits",
+      "file_type": "document",
+      "source_file": "articles/black-hole-orbits.md",
+      "source_location": "L10",
+      "id": "articles_black_hole_orbits_black_hole_orbits",
+      "community": 6,
+      "norm_label": "black hole orbits"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/black-hole-orbits.md",
+      "source_location": "L18",
+      "id": "articles_black_hole_orbits_why_this_stub_exists",
+      "community": 6,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "does-flour-dissolve-in-water-and-why-the-science-explained.md",
+      "file_type": "document",
+      "source_file": "articles/does-flour-dissolve-in-water-and-why-the-science-explained.md",
+      "source_location": "L1",
+      "id": "articles_does_flour_dissolve_in_water_and_why_the_science_explained_md",
+      "community": 15,
+      "norm_label": "does-flour-dissolve-in-water-and-why-the-science-explained.md"
+    },
+    {
+      "label": "Does Flour Dissolve in Water?",
+      "file_type": "document",
+      "source_file": "articles/does-flour-dissolve-in-water-and-why-the-science-explained.md",
+      "source_location": "L10",
+      "id": "articles_does_flour_dissolve_in_water_and_why_the_science_explained_does_flour_dissolve_in_water",
+      "community": 15,
+      "norm_label": "does flour dissolve in water?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/does-flour-dissolve-in-water-and-why-the-science-explained.md",
+      "source_location": "L18",
+      "id": "articles_does_flour_dissolve_in_water_and_why_the_science_explained_why_this_stub_exists",
+      "community": 15,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "why-is-momentum-conserved-but-kinetic-energy-is-not.md",
+      "file_type": "document",
+      "source_file": "articles/why-is-momentum-conserved-but-kinetic-energy-is-not.md",
+      "source_location": "L1",
+      "id": "articles_why_is_momentum_conserved_but_kinetic_energy_is_not_md",
+      "community": 52,
+      "norm_label": "why-is-momentum-conserved-but-kinetic-energy-is-not.md"
+    },
+    {
+      "label": "Why Is Momentum Conserved but Kinetic Energy Is Not?",
+      "file_type": "document",
+      "source_file": "articles/why-is-momentum-conserved-but-kinetic-energy-is-not.md",
+      "source_location": "L10",
+      "id": "articles_why_is_momentum_conserved_but_kinetic_energy_is_not_why_is_momentum_conserved_but_kinetic_energy_is_not",
+      "community": 52,
+      "norm_label": "why is momentum conserved but kinetic energy is not?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/why-is-momentum-conserved-but-kinetic-energy-is-not.md",
+      "source_location": "L18",
+      "id": "articles_why_is_momentum_conserved_but_kinetic_energy_is_not_why_this_stub_exists",
+      "community": 52,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "derivation-of-einstein-field-equations.md",
+      "file_type": "document",
+      "source_file": "articles/derivation-of-einstein-field-equations.md",
+      "source_location": "L1",
+      "id": "articles_derivation_of_einstein_field_equations_md",
+      "community": 13,
+      "norm_label": "derivation-of-einstein-field-equations.md"
+    },
+    {
+      "label": "Derivation of the Einstein Field Equations",
+      "file_type": "document",
+      "source_file": "articles/derivation-of-einstein-field-equations.md",
+      "source_location": "L10",
+      "id": "articles_derivation_of_einstein_field_equations_derivation_of_the_einstein_field_equations",
+      "community": 13,
+      "norm_label": "derivation of the einstein field equations"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/derivation-of-einstein-field-equations.md",
+      "source_location": "L18",
+      "id": "articles_derivation_of_einstein_field_equations_why_this_stub_exists",
+      "community": 13,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "generalized-coordinates.md",
+      "file_type": "document",
+      "source_file": "articles/generalized-coordinates.md",
+      "source_location": "L1",
+      "id": "articles_generalized_coordinates_md",
+      "community": 21,
+      "norm_label": "generalized-coordinates.md"
+    },
+    {
+      "label": "Generalized Coordinates",
+      "file_type": "document",
+      "source_file": "articles/generalized-coordinates.md",
+      "source_location": "L10",
+      "id": "articles_generalized_coordinates_generalized_coordinates",
+      "community": 21,
+      "norm_label": "generalized coordinates"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/generalized-coordinates.md",
+      "source_location": "L18",
+      "id": "articles_generalized_coordinates_why_this_stub_exists",
+      "community": 21,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "legendre-transformations-for-dummies-intuition-and-examples.md",
+      "file_type": "document",
+      "source_file": "articles/legendre-transformations-for-dummies-intuition-and-examples.md",
+      "source_location": "L1",
+      "id": "articles_legendre_transformations_for_dummies_intuition_and_examples_md",
+      "community": 37,
+      "norm_label": "legendre-transformations-for-dummies-intuition-and-examples.md"
+    },
+    {
+      "label": "Legendre Transformations for Dummies",
+      "file_type": "document",
+      "source_file": "articles/legendre-transformations-for-dummies-intuition-and-examples.md",
+      "source_location": "L10",
+      "id": "articles_legendre_transformations_for_dummies_intuition_and_examples_legendre_transformations_for_dummies",
+      "community": 37,
+      "norm_label": "legendre transformations for dummies"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/legendre-transformations-for-dummies-intuition-and-examples.md",
+      "source_location": "L18",
+      "id": "articles_legendre_transformations_for_dummies_intuition_and_examples_why_this_stub_exists",
+      "community": 37,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "how-are-photons-affected-by-gravity-if-they-have-no-mass.md",
+      "file_type": "document",
+      "source_file": "articles/how-are-photons-affected-by-gravity-if-they-have-no-mass.md",
+      "source_location": "L1",
+      "id": "articles_how_are_photons_affected_by_gravity_if_they_have_no_mass_md",
+      "community": 25,
+      "norm_label": "how-are-photons-affected-by-gravity-if-they-have-no-mass.md"
+    },
+    {
+      "label": "How Are Photons Affected by Gravity If They Have No Mass?",
+      "file_type": "document",
+      "source_file": "articles/how-are-photons-affected-by-gravity-if-they-have-no-mass.md",
+      "source_location": "L10",
+      "id": "articles_how_are_photons_affected_by_gravity_if_they_have_no_mass_how_are_photons_affected_by_gravity_if_they_have_no_mass",
+      "community": 25,
+      "norm_label": "how are photons affected by gravity if they have no mass?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/how-are-photons-affected-by-gravity-if-they-have-no-mass.md",
+      "source_location": "L18",
+      "id": "articles_how_are_photons_affected_by_gravity_if_they_have_no_mass_why_this_stub_exists",
+      "community": 25,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "einstein-field-equations-fully-written-out-what-do-they-look-like-expanded.md",
+      "file_type": "document",
+      "source_file": "articles/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded.md",
+      "source_location": "L1",
+      "id": "articles_einstein_field_equations_fully_written_out_what_do_they_look_like_expanded_md",
+      "community": 18,
+      "norm_label": "einstein-field-equations-fully-written-out-what-do-they-look-like-expanded.md"
+    },
+    {
+      "label": "Einstein Field Equations Fully Written Out",
+      "file_type": "document",
+      "source_file": "articles/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded.md",
+      "source_location": "L10",
+      "id": "articles_einstein_field_equations_fully_written_out_what_do_they_look_like_expanded_einstein_field_equations_fully_written_out",
+      "community": 18,
+      "norm_label": "einstein field equations fully written out"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded.md",
+      "source_location": "L18",
+      "id": "articles_einstein_field_equations_fully_written_out_what_do_they_look_like_expanded_why_this_stub_exists",
+      "community": 18,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference.md",
+      "file_type": "document",
+      "source_file": "articles/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference.md",
+      "source_location": "L1",
+      "id": "articles_time_dependent_vs_time_independent_schrodinger_equation_what_is_the_difference_md",
+      "community": 46,
+      "norm_label": "time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference.md"
+    },
+    {
+      "label": "Time-Dependent vs Time-Independent Schr\u00f6dinger Equation",
+      "file_type": "document",
+      "source_file": "articles/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference.md",
+      "source_location": "L10",
+      "id": "articles_time_dependent_vs_time_independent_schrodinger_equation_what_is_the_difference_time_dependent_vs_time_independent_schr\u00f6dinger_equation",
+      "community": 46,
+      "norm_label": "time-dependent vs time-independent schrodinger equation"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference.md",
+      "source_location": "L18",
+      "id": "articles_time_dependent_vs_time_independent_schrodinger_equation_what_is_the_difference_why_this_stub_exists",
+      "community": 46,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "if-photons-have-no-mass-how-can-they-have-momentum.md",
+      "file_type": "document",
+      "source_file": "articles/if-photons-have-no-mass-how-can-they-have-momentum.md",
+      "source_location": "L1",
+      "id": "articles_if_photons_have_no_mass_how_can_they_have_momentum_md",
+      "community": 29,
+      "norm_label": "if-photons-have-no-mass-how-can-they-have-momentum.md"
+    },
+    {
+      "label": "If Photons Have No Mass, How Can They Have Momentum?",
+      "file_type": "document",
+      "source_file": "articles/if-photons-have-no-mass-how-can-they-have-momentum.md",
+      "source_location": "L10",
+      "id": "articles_if_photons_have_no_mass_how_can_they_have_momentum_if_photons_have_no_mass_how_can_they_have_momentum",
+      "community": 29,
+      "norm_label": "if photons have no mass, how can they have momentum?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/if-photons-have-no-mass-how-can-they-have-momentum.md",
+      "source_location": "L18",
+      "id": "articles_if_photons_have_no_mass_how_can_they_have_momentum_why_this_stub_exists",
+      "community": 29,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "lagrangian-vs-newtonian-mechanics-the-key-differences.md",
+      "file_type": "document",
+      "source_file": "articles/lagrangian-vs-newtonian-mechanics-the-key-differences.md",
+      "source_location": "L1",
+      "id": "articles_lagrangian_vs_newtonian_mechanics_the_key_differences_md",
+      "community": 36,
+      "norm_label": "lagrangian-vs-newtonian-mechanics-the-key-differences.md"
+    },
+    {
+      "label": "Lagrangian vs Newtonian Mechanics: The Key Differences",
+      "file_type": "document",
+      "source_file": "articles/lagrangian-vs-newtonian-mechanics-the-key-differences.md",
+      "source_location": "L10",
+      "id": "articles_lagrangian_vs_newtonian_mechanics_the_key_differences_lagrangian_vs_newtonian_mechanics_the_key_differences",
+      "community": 36,
+      "norm_label": "lagrangian vs newtonian mechanics: the key differences"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/lagrangian-vs-newtonian-mechanics-the-key-differences.md",
+      "source_location": "L18",
+      "id": "articles_lagrangian_vs_newtonian_mechanics_the_key_differences_why_this_stub_exists",
+      "community": 36,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "constraints-in-lagrangian-mechanics.md",
+      "file_type": "document",
+      "source_file": "articles/constraints-in-lagrangian-mechanics.md",
+      "source_location": "L1",
+      "id": "articles_constraints_in_lagrangian_mechanics_md",
+      "community": 12,
+      "norm_label": "constraints-in-lagrangian-mechanics.md"
+    },
+    {
+      "label": "Constraints in Lagrangian Mechanics",
+      "file_type": "document",
+      "source_file": "articles/constraints-in-lagrangian-mechanics.md",
+      "source_location": "L10",
+      "id": "articles_constraints_in_lagrangian_mechanics_constraints_in_lagrangian_mechanics",
+      "community": 12,
+      "norm_label": "constraints in lagrangian mechanics"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/constraints-in-lagrangian-mechanics.md",
+      "source_location": "L18",
+      "id": "articles_constraints_in_lagrangian_mechanics_why_this_stub_exists",
+      "community": 12,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "the-ricci-tensor.md",
+      "file_type": "document",
+      "source_file": "articles/the-ricci-tensor.md",
+      "source_location": "L1",
+      "id": "articles_the_ricci_tensor_md",
+      "community": 45,
+      "norm_label": "the-ricci-tensor.md"
+    },
+    {
+      "label": "The Ricci Tensor: What It Is and How to Calculate It",
+      "file_type": "document",
+      "source_file": "articles/the-ricci-tensor.md",
+      "source_location": "L10",
+      "id": "articles_the_ricci_tensor_the_ricci_tensor_what_it_is_and_how_to_calculate_it",
+      "community": 45,
+      "norm_label": "the ricci tensor: what it is and how to calculate it"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/the-ricci-tensor.md",
+      "source_location": "L18",
+      "id": "articles_the_ricci_tensor_why_this_stub_exists",
+      "community": 45,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "general-relativity-for-dummies.md",
+      "file_type": "document",
+      "source_file": "articles/general-relativity-for-dummies.md",
+      "source_location": "L1",
+      "id": "articles_general_relativity_for_dummies_md",
+      "community": 20,
+      "norm_label": "general-relativity-for-dummies.md"
+    },
+    {
+      "label": "General Relativity for Dummies: An Intuitive Introduction",
+      "file_type": "document",
+      "source_file": "articles/general-relativity-for-dummies.md",
+      "source_location": "L10",
+      "id": "articles_general_relativity_for_dummies_general_relativity_for_dummies_an_intuitive_introduction",
+      "community": 20,
+      "norm_label": "general relativity for dummies: an intuitive introduction"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/general-relativity-for-dummies.md",
+      "source_location": "L18",
+      "id": "articles_general_relativity_for_dummies_why_this_stub_exists",
+      "community": 20,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "is-classical-mechanics-still-relevant.md",
+      "file_type": "document",
+      "source_file": "articles/is-classical-mechanics-still-relevant.md",
+      "source_location": "L1",
+      "id": "articles_is_classical_mechanics_still_relevant_md",
+      "community": 30,
+      "norm_label": "is-classical-mechanics-still-relevant.md"
+    },
+    {
+      "label": "Is Classical Mechanics Still Relevant?",
+      "file_type": "document",
+      "source_file": "articles/is-classical-mechanics-still-relevant.md",
+      "source_location": "L10",
+      "id": "articles_is_classical_mechanics_still_relevant_is_classical_mechanics_still_relevant",
+      "community": 30,
+      "norm_label": "is classical mechanics still relevant?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/is-classical-mechanics-still-relevant.md",
+      "source_location": "L18",
+      "id": "articles_is_classical_mechanics_still_relevant_why_this_stub_exists",
+      "community": 30,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "is-time-a-vector.md",
+      "file_type": "document",
+      "source_file": "articles/is-time-a-vector.md",
+      "source_location": "L1",
+      "id": "articles_is_time_a_vector_md",
+      "community": 32,
+      "norm_label": "is-time-a-vector.md"
+    },
+    {
+      "label": "Is Time a Vector?",
+      "file_type": "document",
+      "source_file": "articles/is-time-a-vector.md",
+      "source_location": "L10",
+      "id": "articles_is_time_a_vector_is_time_a_vector",
+      "community": 32,
+      "norm_label": "is time a vector?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/is-time-a-vector.md",
+      "source_location": "L18",
+      "id": "articles_is_time_a_vector_why_this_stub_exists",
+      "community": 32,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "momentum-vs-kinetic-energy-the-key-differences.md",
+      "file_type": "document",
+      "source_file": "articles/momentum-vs-kinetic-energy-the-key-differences.md",
+      "source_location": "L1",
+      "id": "articles_momentum_vs_kinetic_energy_the_key_differences_md",
+      "community": 39,
+      "norm_label": "momentum-vs-kinetic-energy-the-key-differences.md"
+    },
+    {
+      "label": "Momentum vs Kinetic Energy: The Key Differences",
+      "file_type": "document",
+      "source_file": "articles/momentum-vs-kinetic-energy-the-key-differences.md",
+      "source_location": "L10",
+      "id": "articles_momentum_vs_kinetic_energy_the_key_differences_momentum_vs_kinetic_energy_the_key_differences",
+      "community": 39,
+      "norm_label": "momentum vs kinetic energy: the key differences"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/momentum-vs-kinetic-energy-the-key-differences.md",
+      "source_location": "L18",
+      "id": "articles_momentum_vs_kinetic_energy_the_key_differences_why_this_stub_exists",
+      "community": 39,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "lagrangian-mechanics-for-beginners.md",
+      "file_type": "document",
+      "source_file": "articles/lagrangian-mechanics-for-beginners.md",
+      "source_location": "L1",
+      "id": "articles_lagrangian_mechanics_for_beginners_md",
+      "community": 34,
+      "norm_label": "lagrangian-mechanics-for-beginners.md"
+    },
+    {
+      "label": "Lagrangian Mechanics for Beginners",
+      "file_type": "document",
+      "source_file": "articles/lagrangian-mechanics-for-beginners.md",
+      "source_location": "L10",
+      "id": "articles_lagrangian_mechanics_for_beginners_lagrangian_mechanics_for_beginners",
+      "community": 34,
+      "norm_label": "lagrangian mechanics for beginners"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/lagrangian-mechanics-for-beginners.md",
+      "source_location": "L18",
+      "id": "articles_lagrangian_mechanics_for_beginners_why_this_stub_exists",
+      "community": 34,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "friction-in-lagrangian-mechanics.md",
+      "file_type": "document",
+      "source_file": "articles/friction-in-lagrangian-mechanics.md",
+      "source_location": "L1",
+      "id": "articles_friction_in_lagrangian_mechanics_md",
+      "community": 19,
+      "norm_label": "friction-in-lagrangian-mechanics.md"
+    },
+    {
+      "label": "Friction in Lagrangian Mechanics",
+      "file_type": "document",
+      "source_file": "articles/friction-in-lagrangian-mechanics.md",
+      "source_location": "L10",
+      "id": "articles_friction_in_lagrangian_mechanics_friction_in_lagrangian_mechanics",
+      "community": 19,
+      "norm_label": "friction in lagrangian mechanics"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/friction-in-lagrangian-mechanics.md",
+      "source_location": "L18",
+      "id": "articles_friction_in_lagrangian_mechanics_why_this_stub_exists",
+      "community": 19,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "special-relativity-for-dummies-an-intuitive-introduction.md",
+      "file_type": "document",
+      "source_file": "articles/special-relativity-for-dummies-an-intuitive-introduction.md",
+      "source_location": "L1",
+      "id": "articles_special_relativity_for_dummies_an_intuitive_introduction_md",
+      "community": 43,
+      "norm_label": "special-relativity-for-dummies-an-intuitive-introduction.md"
+    },
+    {
+      "label": "Special Relativity for Dummies: An Intuitive Introduction",
+      "file_type": "document",
+      "source_file": "articles/special-relativity-for-dummies-an-intuitive-introduction.md",
+      "source_location": "L10",
+      "id": "articles_special_relativity_for_dummies_an_intuitive_introduction_special_relativity_for_dummies_an_intuitive_introduction",
+      "community": 43,
+      "norm_label": "special relativity for dummies: an intuitive introduction"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/special-relativity-for-dummies-an-intuitive-introduction.md",
+      "source_location": "L18",
+      "id": "articles_special_relativity_for_dummies_an_intuitive_introduction_why_this_stub_exists",
+      "community": 43,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "is-time-always-the-independent-variable.md",
+      "file_type": "document",
+      "source_file": "articles/is-time-always-the-independent-variable.md",
+      "source_location": "L1",
+      "id": "articles_is_time_always_the_independent_variable_md",
+      "community": 33,
+      "norm_label": "is-time-always-the-independent-variable.md"
+    },
+    {
+      "label": "Is Time Always the Independent Variable?",
+      "file_type": "document",
+      "source_file": "articles/is-time-always-the-independent-variable.md",
+      "source_location": "L10",
+      "id": "articles_is_time_always_the_independent_variable_is_time_always_the_independent_variable",
+      "community": 33,
+      "norm_label": "is time always the independent variable?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/is-time-always-the-independent-variable.md",
+      "source_location": "L18",
+      "id": "articles_is_time_always_the_independent_variable_why_this_stub_exists",
+      "community": 33,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "how-to-learn-vector-calculus.md",
+      "file_type": "document",
+      "source_file": "articles/how-to-learn-vector-calculus.md",
+      "source_location": "L1",
+      "id": "articles_how_to_learn_vector_calculus_md",
+      "community": 28,
+      "norm_label": "how-to-learn-vector-calculus.md"
+    },
+    {
+      "label": "How to Learn Vector Calculus",
+      "file_type": "document",
+      "source_file": "articles/how-to-learn-vector-calculus.md",
+      "source_location": "L10",
+      "id": "articles_how_to_learn_vector_calculus_how_to_learn_vector_calculus",
+      "community": 28,
+      "norm_label": "how to learn vector calculus"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/how-to-learn-vector-calculus.md",
+      "source_location": "L18",
+      "id": "articles_how_to_learn_vector_calculus_why_this_stub_exists",
+      "community": 28,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "why-do-electrons-not-fall-into-the-nucleus.md",
+      "file_type": "document",
+      "source_file": "articles/why-do-electrons-not-fall-into-the-nucleus.md",
+      "source_location": "L1",
+      "id": "articles_why_do_electrons_not_fall_into_the_nucleus_md",
+      "community": 47,
+      "norm_label": "why-do-electrons-not-fall-into-the-nucleus.md"
+    },
+    {
+      "label": "Why Don't Electrons Fall Into the Nucleus?",
+      "file_type": "document",
+      "source_file": "articles/why-do-electrons-not-fall-into-the-nucleus.md",
+      "source_location": "L10",
+      "id": "articles_why_do_electrons_not_fall_into_the_nucleus_why_don_t_electrons_fall_into_the_nucleus",
+      "community": 47,
+      "norm_label": "why don't electrons fall into the nucleus?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/why-do-electrons-not-fall-into-the-nucleus.md",
+      "source_location": "L18",
+      "id": "articles_why_do_electrons_not_fall_into_the_nucleus_why_this_stub_exists",
+      "community": 47,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "calculus-of-variations-for-beginners.md",
+      "file_type": "document",
+      "source_file": "articles/calculus-of-variations-for-beginners.md",
+      "source_location": "L1",
+      "id": "articles_calculus_of_variations_for_beginners_md",
+      "community": 7,
+      "norm_label": "calculus-of-variations-for-beginners.md"
+    },
+    {
+      "label": "Calculus of Variations: A Complete Introduction",
+      "file_type": "document",
+      "source_file": "articles/calculus-of-variations-for-beginners.md",
+      "source_location": "L10",
+      "id": "articles_calculus_of_variations_for_beginners_calculus_of_variations_a_complete_introduction",
+      "community": 7,
+      "norm_label": "calculus of variations: a complete introduction"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/calculus-of-variations-for-beginners.md",
+      "source_location": "L18",
+      "id": "articles_calculus_of_variations_for_beginners_why_this_stub_exists",
+      "community": 7,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "physics-study-tips.md",
+      "file_type": "document",
+      "source_file": "articles/physics-study-tips.md",
+      "source_location": "L1",
+      "id": "articles_physics_study_tips_md",
+      "community": 41,
+      "norm_label": "physics-study-tips.md"
+    },
+    {
+      "label": "Physics Study Tips",
+      "file_type": "document",
+      "source_file": "articles/physics-study-tips.md",
+      "source_location": "L10",
+      "id": "articles_physics_study_tips_physics_study_tips",
+      "community": 41,
+      "norm_label": "physics study tips"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/physics-study-tips.md",
+      "source_location": "L18",
+      "id": "articles_physics_study_tips_why_this_stub_exists",
+      "community": 41,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "conservative-and-non-conservative-forces-what-are-the-differences.md",
+      "file_type": "document",
+      "source_file": "articles/conservative-and-non-conservative-forces-what-are-the-differences.md",
+      "source_location": "L1",
+      "id": "articles_conservative_and_non_conservative_forces_what_are_the_differences_md",
+      "community": 11,
+      "norm_label": "conservative-and-non-conservative-forces-what-are-the-differences.md"
+    },
+    {
+      "label": "Conservative and Non-Conservative Forces: What Are the Differences?",
+      "file_type": "document",
+      "source_file": "articles/conservative-and-non-conservative-forces-what-are-the-differences.md",
+      "source_location": "L10",
+      "id": "articles_conservative_and_non_conservative_forces_what_are_the_differences_conservative_and_non_conservative_forces_what_are_the_differences",
+      "community": 11,
+      "norm_label": "conservative and non-conservative forces: what are the differences?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/conservative-and-non-conservative-forces-what-are-the-differences.md",
+      "source_location": "L18",
+      "id": "articles_conservative_and_non_conservative_forces_what_are_the_differences_why_this_stub_exists",
+      "community": 11,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "the-friedmann-equations-explained-a-complete-guide.md",
+      "file_type": "document",
+      "source_file": "articles/the-friedmann-equations-explained-a-complete-guide.md",
+      "source_location": "L1",
+      "id": "articles_the_friedmann_equations_explained_a_complete_guide_md",
+      "community": 44,
+      "norm_label": "the-friedmann-equations-explained-a-complete-guide.md"
+    },
+    {
+      "label": "The Friedmann Equations Explained: A Complete Guide",
+      "file_type": "document",
+      "source_file": "articles/the-friedmann-equations-explained-a-complete-guide.md",
+      "source_location": "L10",
+      "id": "articles_the_friedmann_equations_explained_a_complete_guide_the_friedmann_equations_explained_a_complete_guide",
+      "community": 44,
+      "norm_label": "the friedmann equations explained: a complete guide"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/the-friedmann-equations-explained-a-complete-guide.md",
+      "source_location": "L18",
+      "id": "articles_the_friedmann_equations_explained_a_complete_guide_why_this_stub_exists",
+      "community": 44,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "why-time-slows-down-near-a-black-hole.md",
+      "file_type": "document",
+      "source_file": "articles/why-time-slows-down-near-a-black-hole.md",
+      "source_location": "L1",
+      "id": "articles_why_time_slows_down_near_a_black_hole_md",
+      "community": 54,
+      "norm_label": "why-time-slows-down-near-a-black-hole.md"
+    },
+    {
+      "label": "Why Time Slows Down Near a Black Hole",
+      "file_type": "document",
+      "source_file": "articles/why-time-slows-down-near-a-black-hole.md",
+      "source_location": "L10",
+      "id": "articles_why_time_slows_down_near_a_black_hole_why_time_slows_down_near_a_black_hole",
+      "community": 54,
+      "norm_label": "why time slows down near a black hole"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/why-time-slows-down-near-a-black-hole.md",
+      "source_location": "L18",
+      "id": "articles_why_time_slows_down_near_a_black_hole_why_this_stub_exists",
+      "community": 54,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "does-gravity-do-work.md",
+      "file_type": "document",
+      "source_file": "articles/does-gravity-do-work.md",
+      "source_location": "L1",
+      "id": "articles_does_gravity_do_work_md",
+      "community": 16,
+      "norm_label": "does-gravity-do-work.md"
+    },
+    {
+      "label": "Does Gravity Do Work?",
+      "file_type": "document",
+      "source_file": "articles/does-gravity-do-work.md",
+      "source_location": "L10",
+      "id": "articles_does_gravity_do_work_does_gravity_do_work",
+      "community": 16,
+      "norm_label": "does gravity do work?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/does-gravity-do-work.md",
+      "source_location": "L18",
+      "id": "articles_does_gravity_do_work_why_this_stub_exists",
+      "community": 16,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "rope-sliding-down-a-table-with-friction-step-by-step-solution.md",
+      "file_type": "document",
+      "source_file": "articles/rope-sliding-down-a-table-with-friction-step-by-step-solution.md",
+      "source_location": "L1",
+      "id": "articles_rope_sliding_down_a_table_with_friction_step_by_step_solution_md",
+      "community": 42,
+      "norm_label": "rope-sliding-down-a-table-with-friction-step-by-step-solution.md"
+    },
+    {
+      "label": "Rope Sliding Off a Table With Friction: Step-by-Step",
+      "file_type": "document",
+      "source_file": "articles/rope-sliding-down-a-table-with-friction-step-by-step-solution.md",
+      "source_location": "L10",
+      "id": "articles_rope_sliding_down_a_table_with_friction_step_by_step_solution_rope_sliding_off_a_table_with_friction_step_by_step",
+      "community": 42,
+      "norm_label": "rope sliding off a table with friction: step-by-step"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/rope-sliding-down-a-table-with-friction-step-by-step-solution.md",
+      "source_location": "L18",
+      "id": "articles_rope_sliding_down_a_table_with_friction_step_by_step_solution_why_this_stub_exists",
+      "community": 42,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "is-it-possible-to-melt-or-burn-diamonds.md",
+      "file_type": "document",
+      "source_file": "articles/is-it-possible-to-melt-or-burn-diamonds.md",
+      "source_location": "L1",
+      "id": "articles_is_it_possible_to_melt_or_burn_diamonds_md",
+      "community": 31,
+      "norm_label": "is-it-possible-to-melt-or-burn-diamonds.md"
+    },
+    {
+      "label": "Is It Possible to Melt or Burn Diamonds?",
+      "file_type": "document",
+      "source_file": "articles/is-it-possible-to-melt-or-burn-diamonds.md",
+      "source_location": "L10",
+      "id": "articles_is_it_possible_to_melt_or_burn_diamonds_is_it_possible_to_melt_or_burn_diamonds",
+      "community": 31,
+      "norm_label": "is it possible to melt or burn diamonds?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/is-it-possible-to-melt-or-burn-diamonds.md",
+      "source_location": "L18",
+      "id": "articles_is_it_possible_to_melt_or_burn_diamonds_why_this_stub_exists",
+      "community": 31,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "christoffel-symbols-a-complete-guide-with-examples.md",
+      "file_type": "document",
+      "source_file": "articles/christoffel-symbols-a-complete-guide-with-examples.md",
+      "source_location": "L1",
+      "id": "articles_christoffel_symbols_a_complete_guide_with_examples_md",
+      "community": 10,
+      "norm_label": "christoffel-symbols-a-complete-guide-with-examples.md"
+    },
+    {
+      "label": "Christoffel Symbols",
+      "file_type": "document",
+      "source_file": "articles/christoffel-symbols-a-complete-guide-with-examples.md",
+      "source_location": "L10",
+      "id": "articles_christoffel_symbols_a_complete_guide_with_examples_christoffel_symbols",
+      "community": 10,
+      "norm_label": "christoffel symbols"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/christoffel-symbols-a-complete-guide-with-examples.md",
+      "source_location": "L18",
+      "id": "articles_christoffel_symbols_a_complete_guide_with_examples_why_this_stub_exists",
+      "community": 10,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "how-is-lagrangian-mechanics-useful.md",
+      "file_type": "document",
+      "source_file": "articles/how-is-lagrangian-mechanics-useful.md",
+      "source_location": "L1",
+      "id": "articles_how_is_lagrangian_mechanics_useful_md",
+      "community": 26,
+      "norm_label": "how-is-lagrangian-mechanics-useful.md"
+    },
+    {
+      "label": "How Is Lagrangian Mechanics Useful?",
+      "file_type": "document",
+      "source_file": "articles/how-is-lagrangian-mechanics-useful.md",
+      "source_location": "L10",
+      "id": "articles_how_is_lagrangian_mechanics_useful_how_is_lagrangian_mechanics_useful",
+      "community": 26,
+      "norm_label": "how is lagrangian mechanics useful?"
+    },
+    {
+      "label": "Why this stub exists",
+      "file_type": "document",
+      "source_file": "articles/how-is-lagrangian-mechanics-useful.md",
+      "source_location": "L18",
+      "id": "articles_how_is_lagrangian_mechanics_useful_why_this_stub_exists",
+      "community": 26,
+      "norm_label": "why this stub exists"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "assets/README.md",
+      "source_location": "L1",
+      "id": "assets_readme_md",
+      "community": 4,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Profound Physics \u2014 Brand Assets",
+      "file_type": "document",
+      "source_file": "assets/README.md",
+      "source_location": "L1",
+      "id": "assets_readme_profound_physics_brand_assets",
+      "community": 4,
+      "norm_label": "profound physics \u2014 brand assets"
+    },
+    {
+      "label": "Files",
+      "file_type": "document",
+      "source_file": "assets/README.md",
+      "source_location": "L5",
+      "id": "assets_readme_files",
+      "community": 4,
+      "norm_label": "files"
+    },
+    {
+      "label": "Design rationale",
+      "file_type": "document",
+      "source_file": "assets/README.md",
+      "source_location": "L11",
+      "id": "assets_readme_design_rationale",
+      "community": 4,
+      "norm_label": "design rationale"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "article_js",
+      "target": "profoundphysics_article_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "article_js",
+      "target": "profoundphysics_article_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "article_js",
+      "target": "profoundphysics_article_categorylabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "article_js",
+      "target": "profoundphysics_article_getslug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "article_js",
+      "target": "profoundphysics_article_runkatex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "article_js",
+      "target": "profoundphysics_article_rendernotfound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "article_js",
+      "target": "profoundphysics_article_renderarticle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "article_js",
+      "target": "profoundphysics_article_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "profoundphysics_article_renderarticle",
+      "target": "profoundphysics_article_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "profoundphysics_article_renderarticle",
+      "target": "profoundphysics_article_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "profoundphysics_article_renderarticle",
+      "target": "profoundphysics_article_categorylabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "profoundphysics_article_init",
+      "target": "profoundphysics_article_getslug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "profoundphysics_article_renderarticle",
+      "target": "profoundphysics_article_runkatex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "profoundphysics_article_init",
+      "target": "profoundphysics_article_rendernotfound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "article.js",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "profoundphysics_article_init",
+      "target": "profoundphysics_article_renderarticle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_categories",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_state",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_sortbydatedesc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_renderheroteaser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_renderpills",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_renderfeatured",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_renderarchive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_categorylabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L229",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_setquery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_setcategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_runkatex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "app_js",
+      "target": "profoundphysics_app_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "profoundphysics_app_renderheroteaser",
+      "target": "profoundphysics_app_escapehtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "profoundphysics_app_renderheroteaser",
+      "target": "profoundphysics_app_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "profoundphysics_app_renderheroteaser",
+      "target": "profoundphysics_app_categorylabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "profoundphysics_app_setcategory",
+      "target": "profoundphysics_app_renderheroteaser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L338",
+      "weight": 1.0,
+      "source": "profoundphysics_app_init",
+      "target": "profoundphysics_app_renderheroteaser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L237",
+      "weight": 1.0,
+      "source": "profoundphysics_app_setcategory",
+      "target": "profoundphysics_app_renderpills",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L336",
+      "weight": 1.0,
+      "source": "profoundphysics_app_init",
+      "target": "profoundphysics_app_renderpills",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L337",
+      "weight": 1.0,
+      "source": "profoundphysics_app_init",
+      "target": "profoundphysics_app_renderfeatured",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "profoundphysics_app_setquery",
+      "target": "profoundphysics_app_renderarchive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "profoundphysics_app_setcategory",
+      "target": "profoundphysics_app_renderarchive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L339",
+      "weight": 1.0,
+      "source": "profoundphysics_app_init",
+      "target": "profoundphysics_app_renderarchive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "profoundphysics_app_setquery",
+      "target": "profoundphysics_app_runkatex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L240",
+      "weight": 1.0,
+      "source": "profoundphysics_app_setcategory",
+      "target": "profoundphysics_app_runkatex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app.js",
+      "source_location": "L342",
+      "weight": 1.0,
+      "source": "profoundphysics_app_init",
+      "target": "profoundphysics_app_runkatex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "articles_json",
+      "target": "profoundphysics_articles_meta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "articles_json",
+      "target": "profoundphysics_articles_articles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "profoundphysics_articles_meta",
+      "target": "profoundphysics_articles_meta_source",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "profoundphysics_articles_meta",
+      "target": "profoundphysics_articles_meta_category_taxonomy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/scrape.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "scripts_scrape_py",
+      "target": "scripts_scrape_build_stub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/scrape.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "scripts_scrape_py",
+      "target": "scripts_scrape_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/scrape.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "scripts_scrape_main",
+      "target": "scripts_scrape_build_stub",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "profoundphysics_readme_profound_physics_articles_archive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_profound_physics_articles_archive",
+      "target": "profoundphysics_readme_design",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_profound_physics_articles_archive",
+      "target": "profoundphysics_readme_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_profound_physics_articles_archive",
+      "target": "profoundphysics_readme_run_locally",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_profound_physics_articles_archive",
+      "target": "profoundphysics_readme_deploy_to_github_pages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_profound_physics_articles_archive",
+      "target": "profoundphysics_readme_adding_or_updating_articles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_profound_physics_articles_archive",
+      "target": "profoundphysics_readme_math_rendering",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_profound_physics_articles_archive",
+      "target": "profoundphysics_readme_source_attribution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_structure",
+      "target": "profoundphysics_readme_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_run_locally",
+      "target": "profoundphysics_readme_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_deploy_to_github_pages",
+      "target": "profoundphysics_readme_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "profoundphysics_readme_adding_or_updating_articles",
+      "target": "profoundphysics_readme_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/can-acid-dissolve-glass.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_can_acid_dissolve_glass_md",
+      "target": "articles_can_acid_dissolve_glass_can_acid_dissolve_glass",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/can-acid-dissolve-glass.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_can_acid_dissolve_glass_can_acid_dissolve_glass",
+      "target": "articles_can_acid_dissolve_glass_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/how-to-learn-general-relativity-a-step-by-step-guide.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_how_to_learn_general_relativity_a_step_by_step_guide_md",
+      "target": "articles_how_to_learn_general_relativity_a_step_by_step_guide_how_to_learn_general_relativity_a_step_by_step_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/how-to-learn-general-relativity-a-step-by-step-guide.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_how_to_learn_general_relativity_a_step_by_step_guide_how_to_learn_general_relativity_a_step_by_step_guide",
+      "target": "articles_how_to_learn_general_relativity_a_step_by_step_guide_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-hot-things-glow.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_why_do_hot_things_glow_md",
+      "target": "articles_why_do_hot_things_glow_why_do_hot_things_glow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-hot-things-glow.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_why_do_hot_things_glow_why_do_hot_things_glow",
+      "target": "articles_why_do_hot_things_glow_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/dot-product-in-physics-what-is-the-physical-meaning-of-it.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_dot_product_in_physics_what_is_the_physical_meaning_of_it_md",
+      "target": "articles_dot_product_in_physics_what_is_the_physical_meaning_of_it_dot_product_in_physics_what_is_the_physical_meaning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/dot-product-in-physics-what-is-the-physical-meaning-of-it.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_dot_product_in_physics_what_is_the_physical_meaning_of_it_dot_product_in_physics_what_is_the_physical_meaning",
+      "target": "articles_dot_product_in_physics_what_is_the_physical_meaning_of_it_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/gravity-underground.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_gravity_underground_md",
+      "target": "articles_gravity_underground_gravity_underground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/gravity-underground.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_gravity_underground_gravity_underground",
+      "target": "articles_gravity_underground_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/metric-tensor-a-complete-guide-with-examples.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_metric_tensor_a_complete_guide_with_examples_md",
+      "target": "articles_metric_tensor_a_complete_guide_with_examples_the_metric_tensor_a_complete_guide_with_examples",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/metric-tensor-a-complete-guide-with-examples.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_metric_tensor_a_complete_guide_with_examples_the_metric_tensor_a_complete_guide_with_examples",
+      "target": "articles_metric_tensor_a_complete_guide_with_examples_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-photons-have-no-mass-simple-proof.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_why_do_photons_have_no_mass_simple_proof_md",
+      "target": "articles_why_do_photons_have_no_mass_simple_proof_why_do_photons_have_no_mass_a_simple_proof",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-photons-have-no-mass-simple-proof.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_why_do_photons_have_no_mass_simple_proof_why_do_photons_have_no_mass_a_simple_proof",
+      "target": "articles_why_do_photons_have_no_mass_simple_proof_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/lagrangian-vs-hamiltonian-mechanics.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_lagrangian_vs_hamiltonian_mechanics_md",
+      "target": "articles_lagrangian_vs_hamiltonian_mechanics_lagrangian_vs_hamiltonian_mechanics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/lagrangian-vs-hamiltonian-mechanics.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_lagrangian_vs_hamiltonian_mechanics_lagrangian_vs_hamiltonian_mechanics",
+      "target": "articles_lagrangian_vs_hamiltonian_mechanics_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/can-light-orbit-a-black-hole-the-physics-explained.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_can_light_orbit_a_black_hole_the_physics_explained_md",
+      "target": "articles_can_light_orbit_a_black_hole_the_physics_explained_how_light_orbits_around_a_black_hole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/can-light-orbit-a-black-hole-the-physics-explained.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_can_light_orbit_a_black_hole_the_physics_explained_how_light_orbits_around_a_black_hole",
+      "target": "articles_can_light_orbit_a_black_hole_the_physics_explained_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-is-there-a-half-in-the-kinetic-energy-formula.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_why_is_there_a_half_in_the_kinetic_energy_formula_md",
+      "target": "articles_why_is_there_a_half_in_the_kinetic_energy_formula_why_is_there_a_half_in_the_kinetic_energy_formula",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-is-there-a-half-in-the-kinetic-energy-formula.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_why_is_there_a_half_in_the_kinetic_energy_formula_why_is_there_a_half_in_the_kinetic_energy_formula",
+      "target": "articles_why_is_there_a_half_in_the_kinetic_energy_formula_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/noethers-theorem-a-complete-guide.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_noethers_theorem_a_complete_guide_md",
+      "target": "articles_noethers_theorem_a_complete_guide_noether_s_theorem_a_complete_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/noethers-theorem-a-complete-guide.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_noethers_theorem_a_complete_guide_noether_s_theorem_a_complete_guide",
+      "target": "articles_noethers_theorem_a_complete_guide_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-windows-reflect-at-night-the-physics-explained.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_why_do_windows_reflect_at_night_the_physics_explained_md",
+      "target": "articles_why_do_windows_reflect_at_night_the_physics_explained_why_do_windows_reflect_at_night",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-windows-reflect-at-night-the-physics-explained.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_why_do_windows_reflect_at_night_the_physics_explained_why_do_windows_reflect_at_night",
+      "target": "articles_why_do_windows_reflect_at_night_the_physics_explained_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/hamiltonian-mechanics-for-dummies.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_hamiltonian_mechanics_for_dummies_md",
+      "target": "articles_hamiltonian_mechanics_for_dummies_hamiltonian_mechanics_for_dummies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/hamiltonian-mechanics-for-dummies.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_hamiltonian_mechanics_for_dummies_hamiltonian_mechanics_for_dummies",
+      "target": "articles_hamiltonian_mechanics_for_dummies_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/did-the-big-bang-happen-everywhere-at-once.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_did_the_big_bang_happen_everywhere_at_once_md",
+      "target": "articles_did_the_big_bang_happen_everywhere_at_once_did_the_big_bang_happen_everywhere_at_once",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/did-the-big-bang-happen-everywhere-at-once.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_did_the_big_bang_happen_everywhere_at_once_did_the_big_bang_happen_everywhere_at_once",
+      "target": "articles_did_the_big_bang_happen_everywhere_at_once_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/are-maxwell-equations-relativistic.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_are_maxwell_equations_relativistic_md",
+      "target": "articles_are_maxwell_equations_relativistic_are_maxwell_s_equations_relativistic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/are-maxwell-equations-relativistic.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_are_maxwell_equations_relativistic_are_maxwell_s_equations_relativistic",
+      "target": "articles_are_maxwell_equations_relativistic_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-moving-charges-create-a-magnetic-field.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_why_do_moving_charges_create_a_magnetic_field_md",
+      "target": "articles_why_do_moving_charges_create_a_magnetic_field_why_do_moving_charged_particles_create_a_magnetic_field",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-moving-charges-create-a-magnetic-field.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_why_do_moving_charges_create_a_magnetic_field_why_do_moving_charged_particles_create_a_magnetic_field",
+      "target": "articles_why_do_moving_charges_create_a_magnetic_field_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/gradient-in-different-coordinates.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_gradient_in_different_coordinates_md",
+      "target": "articles_gradient_in_different_coordinates_the_gradient_in_different_coordinates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/gradient-in-different-coordinates.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_gradient_in_different_coordinates_the_gradient_in_different_coordinates",
+      "target": "articles_gradient_in_different_coordinates_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/black-hole-orbits.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_black_hole_orbits_md",
+      "target": "articles_black_hole_orbits_black_hole_orbits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/black-hole-orbits.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_black_hole_orbits_black_hole_orbits",
+      "target": "articles_black_hole_orbits_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/does-flour-dissolve-in-water-and-why-the-science-explained.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_does_flour_dissolve_in_water_and_why_the_science_explained_md",
+      "target": "articles_does_flour_dissolve_in_water_and_why_the_science_explained_does_flour_dissolve_in_water",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/does-flour-dissolve-in-water-and-why-the-science-explained.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_does_flour_dissolve_in_water_and_why_the_science_explained_does_flour_dissolve_in_water",
+      "target": "articles_does_flour_dissolve_in_water_and_why_the_science_explained_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-is-momentum-conserved-but-kinetic-energy-is-not.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_why_is_momentum_conserved_but_kinetic_energy_is_not_md",
+      "target": "articles_why_is_momentum_conserved_but_kinetic_energy_is_not_why_is_momentum_conserved_but_kinetic_energy_is_not",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-is-momentum-conserved-but-kinetic-energy-is-not.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_why_is_momentum_conserved_but_kinetic_energy_is_not_why_is_momentum_conserved_but_kinetic_energy_is_not",
+      "target": "articles_why_is_momentum_conserved_but_kinetic_energy_is_not_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/derivation-of-einstein-field-equations.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_derivation_of_einstein_field_equations_md",
+      "target": "articles_derivation_of_einstein_field_equations_derivation_of_the_einstein_field_equations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/derivation-of-einstein-field-equations.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_derivation_of_einstein_field_equations_derivation_of_the_einstein_field_equations",
+      "target": "articles_derivation_of_einstein_field_equations_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/generalized-coordinates.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_generalized_coordinates_md",
+      "target": "articles_generalized_coordinates_generalized_coordinates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/generalized-coordinates.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_generalized_coordinates_generalized_coordinates",
+      "target": "articles_generalized_coordinates_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/legendre-transformations-for-dummies-intuition-and-examples.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_legendre_transformations_for_dummies_intuition_and_examples_md",
+      "target": "articles_legendre_transformations_for_dummies_intuition_and_examples_legendre_transformations_for_dummies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/legendre-transformations-for-dummies-intuition-and-examples.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_legendre_transformations_for_dummies_intuition_and_examples_legendre_transformations_for_dummies",
+      "target": "articles_legendre_transformations_for_dummies_intuition_and_examples_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/how-are-photons-affected-by-gravity-if-they-have-no-mass.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_how_are_photons_affected_by_gravity_if_they_have_no_mass_md",
+      "target": "articles_how_are_photons_affected_by_gravity_if_they_have_no_mass_how_are_photons_affected_by_gravity_if_they_have_no_mass",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/how-are-photons-affected-by-gravity-if-they-have-no-mass.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_how_are_photons_affected_by_gravity_if_they_have_no_mass_how_are_photons_affected_by_gravity_if_they_have_no_mass",
+      "target": "articles_how_are_photons_affected_by_gravity_if_they_have_no_mass_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_einstein_field_equations_fully_written_out_what_do_they_look_like_expanded_md",
+      "target": "articles_einstein_field_equations_fully_written_out_what_do_they_look_like_expanded_einstein_field_equations_fully_written_out",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_einstein_field_equations_fully_written_out_what_do_they_look_like_expanded_einstein_field_equations_fully_written_out",
+      "target": "articles_einstein_field_equations_fully_written_out_what_do_they_look_like_expanded_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_time_dependent_vs_time_independent_schrodinger_equation_what_is_the_difference_md",
+      "target": "articles_time_dependent_vs_time_independent_schrodinger_equation_what_is_the_difference_time_dependent_vs_time_independent_schr\u00f6dinger_equation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_time_dependent_vs_time_independent_schrodinger_equation_what_is_the_difference_time_dependent_vs_time_independent_schr\u00f6dinger_equation",
+      "target": "articles_time_dependent_vs_time_independent_schrodinger_equation_what_is_the_difference_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/if-photons-have-no-mass-how-can-they-have-momentum.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_if_photons_have_no_mass_how_can_they_have_momentum_md",
+      "target": "articles_if_photons_have_no_mass_how_can_they_have_momentum_if_photons_have_no_mass_how_can_they_have_momentum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/if-photons-have-no-mass-how-can-they-have-momentum.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_if_photons_have_no_mass_how_can_they_have_momentum_if_photons_have_no_mass_how_can_they_have_momentum",
+      "target": "articles_if_photons_have_no_mass_how_can_they_have_momentum_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/lagrangian-vs-newtonian-mechanics-the-key-differences.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_lagrangian_vs_newtonian_mechanics_the_key_differences_md",
+      "target": "articles_lagrangian_vs_newtonian_mechanics_the_key_differences_lagrangian_vs_newtonian_mechanics_the_key_differences",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/lagrangian-vs-newtonian-mechanics-the-key-differences.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_lagrangian_vs_newtonian_mechanics_the_key_differences_lagrangian_vs_newtonian_mechanics_the_key_differences",
+      "target": "articles_lagrangian_vs_newtonian_mechanics_the_key_differences_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/constraints-in-lagrangian-mechanics.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_constraints_in_lagrangian_mechanics_md",
+      "target": "articles_constraints_in_lagrangian_mechanics_constraints_in_lagrangian_mechanics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/constraints-in-lagrangian-mechanics.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_constraints_in_lagrangian_mechanics_constraints_in_lagrangian_mechanics",
+      "target": "articles_constraints_in_lagrangian_mechanics_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/the-ricci-tensor.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_the_ricci_tensor_md",
+      "target": "articles_the_ricci_tensor_the_ricci_tensor_what_it_is_and_how_to_calculate_it",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/the-ricci-tensor.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_the_ricci_tensor_the_ricci_tensor_what_it_is_and_how_to_calculate_it",
+      "target": "articles_the_ricci_tensor_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/general-relativity-for-dummies.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_general_relativity_for_dummies_md",
+      "target": "articles_general_relativity_for_dummies_general_relativity_for_dummies_an_intuitive_introduction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/general-relativity-for-dummies.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_general_relativity_for_dummies_general_relativity_for_dummies_an_intuitive_introduction",
+      "target": "articles_general_relativity_for_dummies_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/is-classical-mechanics-still-relevant.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_is_classical_mechanics_still_relevant_md",
+      "target": "articles_is_classical_mechanics_still_relevant_is_classical_mechanics_still_relevant",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/is-classical-mechanics-still-relevant.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_is_classical_mechanics_still_relevant_is_classical_mechanics_still_relevant",
+      "target": "articles_is_classical_mechanics_still_relevant_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/is-time-a-vector.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_is_time_a_vector_md",
+      "target": "articles_is_time_a_vector_is_time_a_vector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/is-time-a-vector.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_is_time_a_vector_is_time_a_vector",
+      "target": "articles_is_time_a_vector_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/momentum-vs-kinetic-energy-the-key-differences.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_momentum_vs_kinetic_energy_the_key_differences_md",
+      "target": "articles_momentum_vs_kinetic_energy_the_key_differences_momentum_vs_kinetic_energy_the_key_differences",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/momentum-vs-kinetic-energy-the-key-differences.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_momentum_vs_kinetic_energy_the_key_differences_momentum_vs_kinetic_energy_the_key_differences",
+      "target": "articles_momentum_vs_kinetic_energy_the_key_differences_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/lagrangian-mechanics-for-beginners.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_lagrangian_mechanics_for_beginners_md",
+      "target": "articles_lagrangian_mechanics_for_beginners_lagrangian_mechanics_for_beginners",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/lagrangian-mechanics-for-beginners.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_lagrangian_mechanics_for_beginners_lagrangian_mechanics_for_beginners",
+      "target": "articles_lagrangian_mechanics_for_beginners_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/friction-in-lagrangian-mechanics.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_friction_in_lagrangian_mechanics_md",
+      "target": "articles_friction_in_lagrangian_mechanics_friction_in_lagrangian_mechanics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/friction-in-lagrangian-mechanics.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_friction_in_lagrangian_mechanics_friction_in_lagrangian_mechanics",
+      "target": "articles_friction_in_lagrangian_mechanics_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/special-relativity-for-dummies-an-intuitive-introduction.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_special_relativity_for_dummies_an_intuitive_introduction_md",
+      "target": "articles_special_relativity_for_dummies_an_intuitive_introduction_special_relativity_for_dummies_an_intuitive_introduction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/special-relativity-for-dummies-an-intuitive-introduction.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_special_relativity_for_dummies_an_intuitive_introduction_special_relativity_for_dummies_an_intuitive_introduction",
+      "target": "articles_special_relativity_for_dummies_an_intuitive_introduction_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/is-time-always-the-independent-variable.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_is_time_always_the_independent_variable_md",
+      "target": "articles_is_time_always_the_independent_variable_is_time_always_the_independent_variable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/is-time-always-the-independent-variable.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_is_time_always_the_independent_variable_is_time_always_the_independent_variable",
+      "target": "articles_is_time_always_the_independent_variable_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/how-to-learn-vector-calculus.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_how_to_learn_vector_calculus_md",
+      "target": "articles_how_to_learn_vector_calculus_how_to_learn_vector_calculus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/how-to-learn-vector-calculus.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_how_to_learn_vector_calculus_how_to_learn_vector_calculus",
+      "target": "articles_how_to_learn_vector_calculus_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-electrons-not-fall-into-the-nucleus.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_why_do_electrons_not_fall_into_the_nucleus_md",
+      "target": "articles_why_do_electrons_not_fall_into_the_nucleus_why_don_t_electrons_fall_into_the_nucleus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-do-electrons-not-fall-into-the-nucleus.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_why_do_electrons_not_fall_into_the_nucleus_why_don_t_electrons_fall_into_the_nucleus",
+      "target": "articles_why_do_electrons_not_fall_into_the_nucleus_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/calculus-of-variations-for-beginners.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_calculus_of_variations_for_beginners_md",
+      "target": "articles_calculus_of_variations_for_beginners_calculus_of_variations_a_complete_introduction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/calculus-of-variations-for-beginners.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_calculus_of_variations_for_beginners_calculus_of_variations_a_complete_introduction",
+      "target": "articles_calculus_of_variations_for_beginners_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/physics-study-tips.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_physics_study_tips_md",
+      "target": "articles_physics_study_tips_physics_study_tips",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/physics-study-tips.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_physics_study_tips_physics_study_tips",
+      "target": "articles_physics_study_tips_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/conservative-and-non-conservative-forces-what-are-the-differences.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_conservative_and_non_conservative_forces_what_are_the_differences_md",
+      "target": "articles_conservative_and_non_conservative_forces_what_are_the_differences_conservative_and_non_conservative_forces_what_are_the_differences",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/conservative-and-non-conservative-forces-what-are-the-differences.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_conservative_and_non_conservative_forces_what_are_the_differences_conservative_and_non_conservative_forces_what_are_the_differences",
+      "target": "articles_conservative_and_non_conservative_forces_what_are_the_differences_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/the-friedmann-equations-explained-a-complete-guide.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_the_friedmann_equations_explained_a_complete_guide_md",
+      "target": "articles_the_friedmann_equations_explained_a_complete_guide_the_friedmann_equations_explained_a_complete_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/the-friedmann-equations-explained-a-complete-guide.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_the_friedmann_equations_explained_a_complete_guide_the_friedmann_equations_explained_a_complete_guide",
+      "target": "articles_the_friedmann_equations_explained_a_complete_guide_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-time-slows-down-near-a-black-hole.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_why_time_slows_down_near_a_black_hole_md",
+      "target": "articles_why_time_slows_down_near_a_black_hole_why_time_slows_down_near_a_black_hole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/why-time-slows-down-near-a-black-hole.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_why_time_slows_down_near_a_black_hole_why_time_slows_down_near_a_black_hole",
+      "target": "articles_why_time_slows_down_near_a_black_hole_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/does-gravity-do-work.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_does_gravity_do_work_md",
+      "target": "articles_does_gravity_do_work_does_gravity_do_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/does-gravity-do-work.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_does_gravity_do_work_does_gravity_do_work",
+      "target": "articles_does_gravity_do_work_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/rope-sliding-down-a-table-with-friction-step-by-step-solution.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_rope_sliding_down_a_table_with_friction_step_by_step_solution_md",
+      "target": "articles_rope_sliding_down_a_table_with_friction_step_by_step_solution_rope_sliding_off_a_table_with_friction_step_by_step",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/rope-sliding-down-a-table-with-friction-step-by-step-solution.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_rope_sliding_down_a_table_with_friction_step_by_step_solution_rope_sliding_off_a_table_with_friction_step_by_step",
+      "target": "articles_rope_sliding_down_a_table_with_friction_step_by_step_solution_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/is-it-possible-to-melt-or-burn-diamonds.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_is_it_possible_to_melt_or_burn_diamonds_md",
+      "target": "articles_is_it_possible_to_melt_or_burn_diamonds_is_it_possible_to_melt_or_burn_diamonds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/is-it-possible-to-melt-or-burn-diamonds.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_is_it_possible_to_melt_or_burn_diamonds_is_it_possible_to_melt_or_burn_diamonds",
+      "target": "articles_is_it_possible_to_melt_or_burn_diamonds_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/christoffel-symbols-a-complete-guide-with-examples.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_christoffel_symbols_a_complete_guide_with_examples_md",
+      "target": "articles_christoffel_symbols_a_complete_guide_with_examples_christoffel_symbols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/christoffel-symbols-a-complete-guide-with-examples.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_christoffel_symbols_a_complete_guide_with_examples_christoffel_symbols",
+      "target": "articles_christoffel_symbols_a_complete_guide_with_examples_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/how-is-lagrangian-mechanics-useful.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "articles_how_is_lagrangian_mechanics_useful_md",
+      "target": "articles_how_is_lagrangian_mechanics_useful_how_is_lagrangian_mechanics_useful",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "articles/how-is-lagrangian-mechanics-useful.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "articles_how_is_lagrangian_mechanics_useful_how_is_lagrangian_mechanics_useful",
+      "target": "articles_how_is_lagrangian_mechanics_useful_why_this_stub_exists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "assets_readme_md",
+      "target": "assets_readme_profound_physics_brand_assets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "assets_readme_profound_physics_brand_assets",
+      "target": "assets_readme_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/README.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "assets_readme_profound_physics_brand_assets",
+      "target": "assets_readme_design_rationale",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "f4a1489edd1b1bbfc3f10be917b4c5aae5df16ac"
+}

@@ -1,15 +1,15 @@
 /* ============================================================
    Profound Physics — Per-article page renderer
-   Reads ?slug=<slug> from the URL, looks up the article in
-   articles.json, and renders a long-form reading page.
-   The canonical body lives on profoundphysics.com — this page
-   serves as a stable deep link with a coral CTA to the original.
+   Reads ?slug=<slug> from the URL, fetches the markdown file
+   from articles/<slug>.md, parses YAML frontmatter, converts
+   markdown to HTML, and renders with KaTeX math.
    ============================================================ */
 
 (() => {
   'use strict';
 
   const ARTICLES_URL = './articles.json';
+  const ARTICLES_DIR = './articles';
 
   const escapeHTML = (s) => String(s)
     .replace(/&/g, '&amp;')
@@ -62,6 +62,24 @@
     }
   }
 
+  function parseFrontmatter(markdown) {
+    const match = markdown.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+    if (!match) return { meta: {}, body: markdown };
+
+    const meta = {};
+    const lines = match[1].split('\n');
+    for (const line of lines) {
+      const colonIdx = line.indexOf(':');
+      if (colonIdx > 0) {
+        const key = line.slice(0, colonIdx).trim();
+        const value = line.slice(colonIdx + 1).trim();
+        meta[key] = value;
+      }
+    }
+
+    return { meta, body: match[2] };
+  }
+
   function renderNotFound() {
     document.title = 'Not found — Profound Physics';
     const el = document.getElementById('article-content');
@@ -76,12 +94,27 @@
     }
   }
 
-  function renderArticle(article, all) {
-    document.title = `${article.title} — Profound Physics`;
+  function renderArticle(markdown, allArticles) {
+    const { meta, body } = parseFrontmatter(markdown);
+
+    // Use frontmatter metadata, fallback to articles.json
+    const slug = getSlug();
+    const articleMeta = allArticles.find(a => a.slug === slug) || {};
+
+    const title = meta.title || articleMeta.title || 'Untitled';
+    const category = meta.category || articleMeta.category || '';
+    const date = meta.date || articleMeta.date || '';
+    const originalUrl = meta.original_url || articleMeta.original_url || '#';
+    const excerpt = meta.excerpt || articleMeta.excerpt || '';
+
+    // Update page title
+    document.title = `${title} — Profound Physics`;
 
     // Find next/prev by date within the same category
-    const sameCat = all.filter(a => a.category === article.category).sort((a, b) => a.date.localeCompare(b.date));
-    const idx = sameCat.findIndex(a => a.slug === article.slug);
+    const sameCat = allArticles
+      .filter(a => a.category === category)
+      .sort((a, b) => a.date.localeCompare(b.date));
+    const idx = sameCat.findIndex(a => a.slug === slug);
     const next = idx >= 0 && idx < sameCat.length - 1 ? sameCat[idx + 1] : null;
     const prev = idx > 0 ? sameCat[idx - 1] : null;
 
@@ -92,57 +125,95 @@
         : '';
     }
 
+    // Convert markdown to HTML
+    const html = window.marked.parse(body);
+
     const content = document.getElementById('article-content');
     if (content) {
       content.innerHTML = `
-        <p class="article-page__eyebrow">${escapeHTML(categoryLabel(article.category))}</p>
-        <h1 class="article-page__title">${escapeHTML(article.title)}</h1>
+        <p class="article-page__eyebrow">${escapeHTML(categoryLabel(category))}</p>
+        <h1 class="article-page__title">${escapeHTML(title)}</h1>
         <div class="article-page__meta">
-          <span>Published ${escapeHTML(formatDate(article.date))}</span>
+          <span>Published ${escapeHTML(formatDate(date))}</span>
           <span>·</span>
-          <span>Originally on <a href="${escapeAttr(article.original_url)}" target="_blank" rel="noopener">profoundphysics.com</a></span>
+          <span>Originally on <a href="${escapeAttr(originalUrl)}" target="_blank" rel="noopener">profoundphysics.com</a></span>
         </div>
         <div class="article-page__body">
-          <p>${escapeHTML(article.excerpt)}</p>
-          <p>This is a redesigned reading entry for the article. The full piece — with figures, embedded math, and worked examples — lives at
-          <a href="${escapeAttr(article.original_url)}" target="_blank" rel="noopener">profoundphysics.com</a>.
-          Click through to read it on the original site.</p>
-
-          <blockquote>The archive preserves the article as a card-catalogue entry: a stable, citable URL, an excerpt, and a deep link to the canonical source. The math typesets on the original site; here, only the excerpt's inline TeX renders.</blockquote>
-
-          ${prev ? `<p><em>Previous in ${escapeHTML(categoryLabel(article.category))}: <a href="./article.html?slug=${escapeAttr(prev.slug)}">${escapeHTML(prev.title)}</a></em></p>` : ''}
-          ${next ? `<p><em>Next in ${escapeHTML(categoryLabel(article.category))}: <a href="./article.html?slug=${escapeAttr(next.slug)}">${escapeHTML(next.title)}</a></em></p>` : ''}
+          ${html}
         </div>
 
         <div class="article-page__cta">
-          <h2 class="article-page__cta-heading">Read the full piece</h2>
-          <p>The article body, with all math, figures, and worked examples, lives at the original site.</p>
-          <a class="button-primary" href="${escapeAttr(article.original_url)}" target="_blank" rel="noopener">Open on profoundphysics.com →</a>
+          <h2 class="article-page__cta-heading">Read the original</h2>
+          <p>This article was originally published on profoundphysics.com, where you can find additional resources and comments.</p>
+          <a class="button-primary" href="${escapeAttr(originalUrl)}" target="_blank" rel="noopener">Open original →</a>
         </div>
       `;
+
+      // Render math
       runKaTeX(content);
     }
   }
 
+  // Theme toggle
+  function initThemeToggle() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let currentTheme = saved || (prefersDark ? 'dark' : 'light');
+
+    function setTheme(theme) {
+      currentTheme = theme;
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+    }
+
+    toggle.addEventListener('click', () => {
+      const next = currentTheme === 'light' ? 'dark' : 'light';
+      setTheme(next);
+    });
+
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        setTheme(e.matches ? 'dark' : 'light');
+      }
+    });
+  }
+
   async function init() {
+    initThemeToggle();
+
     const slug = getSlug();
     if (!slug) { renderNotFound(); return; }
 
-    let data;
+    // Load articles.json for metadata
+    let allArticles = [];
     try {
       const res = await fetch(ARTICLES_URL, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      data = await res.json();
+      if (res.ok) {
+        const data = await res.json();
+        allArticles = data.articles || [];
+      }
     } catch (e) {
-      console.error('Failed to load articles.json:', e);
+      console.warn('Could not load articles.json:', e);
+    }
+
+    // Load the markdown file
+    let markdown;
+    try {
+      const res = await fetch(`${ARTICLES_DIR}/${slug}.md`, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      markdown = await res.text();
+    } catch (e) {
+      console.error('Failed to load article:', e);
       renderNotFound();
       return;
     }
 
-    const all = data.articles || [];
-    const article = all.find(a => a.slug === slug);
-    if (!article) { renderNotFound(); return; }
-    renderArticle(article, all);
+    renderArticle(markdown, allArticles);
   }
 
   if (document.readyState === 'loading') {
