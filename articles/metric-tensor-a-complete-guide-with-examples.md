@@ -33,7 +33,7 @@ Perhaps the most important job of the metric – in practice – is to **convert
 
 Therefore, we need the metric whenever we want to analyze the geometry of a given coordinate system or space. In particular, if we want to define a notion of distance, the metric tensor is the fundamental tool for doing so.
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_2.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_2.jpg)
 
 Apart from defining distances even in curved spaces, the metric tensor has plenty of other applications as well:
 
@@ -69,7 +69,7 @@ Here, gij are the components of the metric tensor and these e’s are the basis 
 
 It’s quite common to collect these components into a **matrix**, with the index i running over the rows and j running over the columns:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_4.jpg) 
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_4.jpg) 
 
 In general, the number of components the metric has depends on the number of basis vectors in our coordinate system – for 3D coordinate systems, the metric has a total of 3×3=9 components (though not all of them are independent).
 
@@ -81,7 +81,7 @@ The dot product between the basis vectors then determines the **relative directi
 
 Take, for example, the simple 3D Cartesian coordinate system, which consists of coordinate axes x, y and z. We know that, at every point, the basis vectors are orthogonal to one another and always have unit length. The metric components are therefore simply:  
   
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_6.png)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_6.png)
 
 Let’s look at the metric components in a bit more detail:
 
@@ -90,7 +90,7 @@ Let’s look at the metric components in a bit more detail:
 
 So, say we have some arbitrary coordinate system with coordinate axes x1 and x2 and basis vectors in the corresponding directions. The metric (at each point) would then describe the lengths of both basis vectors and the alignment of the basis vectors:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_8.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_8.jpg)
 
 Now, because the metric tensor defines the dot product between basis vectors, it also defines the **dot product between any other pair of vectors**. This comes from the fact that we can always write two vectors in a basis as linear combinations of the vector components and the basis vectors:
 
@@ -110,7 +110,7 @@ An important question that might arise here is, how do we define the metric comp
   
 Then, we define a basis for that tangent space (which is again different at every point) and construct the metric for the given basis, at that point. So, the metric components are defined pretty much the same way on a curved manifold – the only difference is that they are now defined *locally*, on the tangent space of each point on the manifold.  
   
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_10.png)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_10.png)
 
 As an illustrative example of what the metric tensor components actually tell us, let’s look at the **polar coordinate system**. This consists of a radial coordinate r and an angular coordinate θ, with basis vectors in the corresponding directions.
 
@@ -124,7 +124,7 @@ First of all, the **off-diagonal elements** being zero here tells us that the po
 
 The more interesting part is the metric component g22=gθθ=r2, which tells us that the length squared of the θ-basis vector is r2. Therefore, the angular basis vector actually gets longer with radial distance to the origin:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_12.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_12.jpg)
 
 ### Scale Factors
 
@@ -134,7 +134,7 @@ One of the important features of the metric tensor is for describing **lengths**
 
 We usually label the **scale factors** as hi, where the index i denotes which of the diagonal components of the metric we are referring to:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_14.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_14.jpg)
 
 Because of the metric describing dot products between basis vectors, the diagonal elements naturally correspond to the dot product of a given basis vector with itself – which is just its length:
 
@@ -156,7 +156,7 @@ The metric describes lengths of basis vectors and also any other vectors due to 
 
 The key idea behind this is the so-called **line element**, which we usually denote as ds2 (or ds). The line element describes an *infinitesimal length* along any curve in any coordinate system:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_16.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_16.jpg)
 
 The line element can be calculated from the components of the metric tensor as:
 
@@ -168,7 +168,7 @@ The idea here is that these dx’s are **displacements in arbitrary coordinates*
 
 However, what the metric components do is they **convert these arbitrary coordinate displacements to actual lengths**, described by the line element. This is the idea behind the statement “the metric converts coordinates to lengths”.
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_18.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_18.jpg)
 
 In practice, the line element can be used to calculate the **arc length** of a curve in any coordinate system simply by integrating it along the curve.
 
@@ -193,7 +193,7 @@ In a geometric sense, this line element formula is telling us how to translate d
   
 This makes perfect sense if you think about it a bit – a given angular displacement (in the θ-coordinate) corresponds to a longer piece of length the further we are from the origin of the polar coordinate system:  
   
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_20.png)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_20.png)
 
 ### Determinant of The Metric
 
@@ -209,7 +209,7 @@ Now, when we say the determinant of the metric describes how volumes scale with 
 
 So, we have a set of basis vectors at each point with some volume in-between them. The metric determinant then describes **how this volume scales** as we move from point to point:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_22.jpg) 
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_22.jpg) 
 
 Since we are depicting this coordinate system in 2D, the metric determinant describes an area instead of volume. In 3D, the same idea would apply analogously for 3D volumes.
 
@@ -227,7 +227,7 @@ $$g_{ij}=\det\begin{pmatrix}1&0\\0&r^2\end{pmatrix}$$
   
 Now, the square root of this ($\sqrt{g}=r$) describes how a **piece of area** formed by the basis vectors scales with the coordinates. This is quite simple to understand – since the θ-basis vector gets longer proportional to r and the r-basis vector remains the same length, any area they span will also increase linearly with r:  
   
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_24.png)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_24.png)
 
 Something worth mentioning here is that, if you’re familiar with multivariable calculus, the interpretation of the metric determinant might seem pretty familiar to the **Jacobian**. Indeed, the metric determinant is related to the Jacobian as follows:
 
@@ -247,7 +247,7 @@ The d3x here is just notation for the product of coordinate displacements (in 3D
 
 The role of the metric determinant here is then to essentially **convert coordinate displacements to actual volumes or areas**, just like the components of metric convert coordinate displacements to distances:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_26.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_26.jpg)
 
 ## Physical Meaning of The Metric Tensor
 
@@ -259,7 +259,7 @@ If you’re not familiar with general relativity, I would recommend reading my i
 
 The key idea though is that **general relativity describes gravity as an effect arising purely from spacetime being curved**. We therefore generally describe spacetime itself as a (four-dimensional) curved manifold.
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_28.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_28.jpg)
 
 As we already discussed earlier, the metric tensor is the fundamental tool to describe the **geometry of a manifold**. Therefore, it automatically plays an important role in describing spacetime curvature just because of its geometric meaning.
 
@@ -289,7 +289,7 @@ Another way to understand this is by comparing the **Einstein field equations of
 
 The Einstein field equations describe the dynamics of the metric for any given spacetime, while Poisson’s equation describes the dynamics of the gravitational potential in a Newtonian setting:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_30.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_30.jpg)
 
 In the *Einstein field equations*, we basically have “second derivatives of the metric proportional to matter stuff”. On the other hand, with *Poisson’s equation*, we have “second derivatives of the gravitational potential proportional to matter stuff”.
 
@@ -302,7 +302,7 @@ Fundamentally, all the geometry behind the metric tensor carries over to general
 - **Diagonal elements of a spacetime metric describe lengths of basis vectors in each spacetime direction**. An interesting implication of this is that if the component g00 is NOT constant, the “scale” of measurements of time are changing from point to point – we interpret this physically as time dilation.
 - **Off-diagonal elements of a spacetime metric represent the overlaps of each spacetime basis vector**. These are usually zero, but for some more complicated metrics – like the Kerr metric describing rotating black holes – these being non-zero lead to interesting effects like frame dragging.
 
-[![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_32.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+[![](assets/images/metric-tensor-a-complete-guide-with-examples/img_32.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
@@ -322,7 +322,7 @@ $$g\left(\vec{v}{,}\vec{u}\right)=\text{number}$$
 
 When discussing the metric as this abstract multilinear map, we denote it as just g without any indices. In fact, strictly speaking, the gij (with indices) from earlier are only referring to the components of the metric in a given coordinate system.
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_34.jpg) 
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_34.jpg) 
 
 A multilinear map that takes two vectors to a number is also referred to as a **rank (0,2) tensor**. In fact, the *rank* of a tensor is defined by how many vectors (or covectors) it can take as its input.
 
@@ -352,7 +352,7 @@ Covectors are quite similar to vectors, however, they live in the so-called **du
 
 Covectors also behave like vectors in many ways. For example, they can be added together, multiplied by numbers and so on. For our purposes, however, the most important thing is that covectors can be divided into components in a given basis or coordinate system, just like vectors:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_36.png) 
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_36.png) 
 
 We are using again the Einstein summation convention, meaning that the index i is to be summed over here.
 
@@ -402,7 +402,7 @@ However, if we have a metric that defines a dot product, it turns out that we ca
 
 This is done by taking the dot product of a vector with a given basis vector. If you think about it, this should give back the component of the vector along the basis vector. But, actually, not quite – it gives the component of the corresponding **covector** along that basis vector:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_38.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_38.jpg)
 
 What is really happening here is that the metric defines the dot product between basis vectors and because of this, we are able to **take a given vector and calculate the components of the corresponding covector.**
 
@@ -433,7 +433,7 @@ This is because a matrix can, in principle, be any kind of “array of stuff”,
 
 Now, what do we mean by this “very specific way”? Well, if we have set of **tensor components** in one coordinate system, say Tij as an example, then after a **coordinate transformation**, the new components must be obtained as:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_40.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_40.jpg)
 
 In practice, we usually analyze whether something is a tensor or not by looking at **how it transforms under coordinate transformations** – if it satisfies the above rule, it is (probably) a valid tensor. If it does NOT, we know with *100 % certainty* that it is NOT a valid tensor.
 
@@ -496,7 +496,7 @@ Now, the metric itself (which has components gij) naturally has **lower indices*
 
 The key point here is that whether a metric is diagonal or not, depends directly on the coordinate system and the basis we construct for it. If we have a coordinate system with basis vectors that are NOT orthogonal, the metric will have **non-zero off-diagonal components**:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_43.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_43.jpg)
 
 Now, most of the metrics you’ll encounter in physics and elsewhere are going to be **diagonal**, simply because orthogonal coordinate systems are typically much more useful and convenient to work with.
 
@@ -512,7 +512,7 @@ The simplest way to understand why the metric is symmetric is to look at its def
 
 Mathematically, we know the **dot product is a symmetric operation**, which must make the metric symmetric as well. But why is this true, geometrically speaking? Well, the easiest way to see why this makes sense is to consider two orthogonal basis vectors, meaning the metric component g12 is zero:
 
-![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_45.jpg)
+![](assets/images/metric-tensor-a-complete-guide-with-examples/img_45.jpg)
 
 The metric component g12 here measures the **alignment of the basis vector e1 with respect to e2**. Now, consider measuring the alignment in the opposite way – the alignment of e2 with respect to e1, described by the metric component g21.
 
@@ -543,7 +543,7 @@ Above, I mentioned “at surface value” – this is because there are actually
 - **Some authors take the metric – all of its components – to have units of length**. This requires making the coordinates dimensionless.
 - The general rule, however, is that the line element (ds2) calculated from the metric, and correspondingly, all terms in it have units of length regardless of which of these conventions is being used.
 
-[![](../assets/images/metric-tensor-a-complete-guide-with-examples/img_47.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+[![](assets/images/metric-tensor-a-complete-guide-with-examples/img_47.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 

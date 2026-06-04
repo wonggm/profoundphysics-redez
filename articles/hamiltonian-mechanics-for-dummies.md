@@ -83,7 +83,7 @@ Indeed, knowing the kinetic energy and potential energy at each point in time al
 
 Consider, for example, the trajectory of a ball or some other object thrown in the air:
 
-![](../assets/images/hamiltonian-mechanics-for-dummies/img_2.jpg)
+![](assets/images/hamiltonian-mechanics-for-dummies/img_2.jpg)
 
 In Lagrangian mechanics, we use the **Lagrangian of a system** to essentially encode the kinetic and potential energies at each point in time. More precisely, the Lagrangian is the difference of the two, L=T-V.
 
@@ -196,7 +196,7 @@ Mathematically, the Legendre transformation does the following; it takes a funct
 
 The actual formula for the Legendre transformation is given by:
 
-![](../assets/images/hamiltonian-mechanics-for-dummies/img_4.jpg) 
+![](assets/images/hamiltonian-mechanics-for-dummies/img_4.jpg) 
 
 If you actually just start plugging in a function f(x) into this formula, you’ll get another function of x as a result, which sort of defeats the purpose of the Legendre transform; to obtain a function of a new variable. This is exactly the same “issue” we will encounter in Hamiltonian mechanics and I’ll show you how to work with that later.
 
@@ -530,7 +530,7 @@ $$\ddot{\theta}=-\frac{g}{l}\sin\theta$$
 
 This is now a second order differential equation we could solve for θ(t) and in fact, this is exactly the equation of motion the Euler-Lagrange equation would have given us from the Lagrangian directly.
 
-[![](../assets/images/hamiltonian-mechanics-for-dummies/img_7.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
+[![](assets/images/hamiltonian-mechanics-for-dummies/img_7.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 
@@ -555,7 +555,7 @@ Phase space describes the state of a system by specifying all the **generalized 
 
 So, each point in the phase space describes the **state of the system** at a specific point in time, as each point will have a certain value of position and momentum, and these two quantities are enough to completely describe a classical system.
 
-![](../assets/images/hamiltonian-mechanics-for-dummies/img_9.jpg) 
+![](assets/images/hamiltonian-mechanics-for-dummies/img_9.jpg) 
 
 This is a 2D visualization of phase space. In general, you would have one axis for each generalized coordinate and momenta (so, for a particle moving in 3D, you’d have 3 generalized coordinates and 3 different momenta, making it a 6D phase space).
 
@@ -567,7 +567,7 @@ As time passes, this initial state of the system will then trace out some kind o
 
 This curve represents the **solutions to Hamilton’s equations of motion** (the coordinates and momenta as functions of time).
 
-![](../assets/images/hamiltonian-mechanics-for-dummies/img_11.jpg) 
+![](assets/images/hamiltonian-mechanics-for-dummies/img_11.jpg) 
 
 Mathematically, this curve through phase space is a parametric curve with time as its curve parameter. In case you’re not familiar with this, I cover parametric curves in detail in my [vector calculus course](https://profoundphysics.com/vectorcalc/).
 
@@ -642,7 +642,7 @@ $$\vec{H}=\frac{\partial H}{\partial p}\hat{x}-\frac{\partial H}{\partial x}\hat
 
 This is essentially a vector field in phase space that is a function of the variables x and p. If we plot this vector field, it looks as follows:
 
-![](../assets/images/hamiltonian-mechanics-for-dummies/img_13.jpg) 
+![](assets/images/hamiltonian-mechanics-for-dummies/img_13.jpg) 
 
 This is a phase space plot of the Hamiltonian vector field for the harmonic oscillator. On the horizontal axis, we have the position x and on the vertical axis, the momentum p.
 
@@ -654,7 +654,7 @@ $$\vec{H}=\frac{p_{\theta}}{ml^2}\hat{\theta}-mgl\sin\theta\hat{p}_{\theta}$$
 
 Plotting this vector field, we have:
 
-![](../assets/images/hamiltonian-mechanics-for-dummies/img_15.jpg) 
+![](assets/images/hamiltonian-mechanics-for-dummies/img_15.jpg) 
 
 This is a phase space plot with the coordinate θ on the horizontal axis and the momentum pθ on the vertical axis.
 
@@ -670,7 +670,7 @@ A phase space diagram of a system then represents the *specific* flow curve corr
 
 For example, in the above harmonic oscillator example, the phase space diagrams look like *ellipses*:
 
-![](../assets/images/hamiltonian-mechanics-for-dummies/img_17.jpg)
+![](assets/images/hamiltonian-mechanics-for-dummies/img_17.jpg)
 
 In other words, the **Hamiltonian vector field and the Hamiltonian flow curves** along the vector field represent **all possible solutions to Hamilton’s equations** (describing the time evolution of the system).
 
@@ -774,7 +774,7 @@ Each particle will then trace out its own trajectory (determined by Hamilton’s
 
 Together, all of these “particles” can be thought of as forming a **fluid that flows through phase space**.
 
-![](../assets/images/hamiltonian-mechanics-for-dummies/img_20.jpg)
+![](assets/images/hamiltonian-mechanics-for-dummies/img_20.jpg)
 
 Again, I want to stress that this isn’t some *physical* fluid (even though it does act like one), only an abstract type of fluid that allows us to intuitively picture what is going on.
 
@@ -786,7 +786,7 @@ When we say a fluid is incompressible, it simply means that **any given volume o
 
 This volume in phase space physically just means a “group” of a bunch of states of a system (as each point in the volume describes some state with a specific value for q and p).
 
-![](../assets/images/hamiltonian-mechanics-for-dummies/img_22.jpg) 
+![](assets/images/hamiltonian-mechanics-for-dummies/img_22.jpg) 
 
 Here we’re picturing the “phase space volume” as basically a 2D area, but in reality, it’s going to be a higher-dimensional volume in a 2N-dimensional phase space.
 

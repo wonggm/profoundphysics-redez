@@ -58,7 +58,7 @@ In simple terms, **every possible path an object can take through space and time
 
 **The real path an object or a system takes is then the path in which this action is minimized or more accurately, stationary** (hence the name principle of *stationary* action).
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_2.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_2.jpg)
 
 Compared to Newtonian mechanics, the underlying principles behind Lagrangian mechanics are much more fundamental and profound than those of Newtonian mechanics.
 
@@ -111,7 +111,7 @@ The process for finding equations of motion in Lagrangian mechanics goes more or
 1. **Find a set of convenient coordinates (= *generalized coordinates*, expressed by q’s) for the specific problem.** It is usually easier to express these generalized coordinates first in terms of ordinary Cartesian coordinates (x, y, z).
 2. **Define the Lagrangian through the generalized coordinates**. The Lagrangian will generally be the sum of the kinetic and potential energies of every object of the system:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_4.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_4.jpg)
 
 3. **Plug the Lagrangian into the Euler-Lagrange equations**. You’ll have one Euler-Lagrange equation for each generalized coordinate (The q with a dot above means the time derivative of q, i.e. velocity):
 
@@ -137,7 +137,7 @@ The i here stands for spacial directions (for example, setting i=x would give th
 
 4. **Simplify and solve the differential equations**. At this point, you should have one second order differential equation for each spacial direction.
 
-[![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_6.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
+[![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_6.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 
@@ -163,17 +163,17 @@ Typically, **Lagrangian mechanics has a clear advantage in using energies** sinc
 
 It also makes a lot of sense intuitively why energy is a useful concept in Lagrangian mechanics, since it is so intimately connected with motion. In fact, energy by itself is enough to completely determine how an object moves through space and time.
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_8.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_8.jpg)
 
 Also in the Lagrangian approach, there is simply one Lagrangian for the whole system, while in Newtonian mechanics, you have multiple different component forms of Newton’s second law.
 
 For example, if you’ve been given the **total velocity** of some object, it is usually simpler to use the Lagrangian approach since you just have to write down the **kinetic energy in terms of the total velocity**:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_10.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_10.jpg)
 
 In the Newtonian formulation, you would generally have to break down the velocity into different components (such as the x and y -components) and find the **different components of acceleration and forces** from those:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_12.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_12.jpg)
 
 Also, the idea of forces doesn’t carry over well to more modern and advanced fields of physics, but the notion of energy certainly does. This is one of the reasons why Lagrangian mechanics is much more important outside of classical mechanics.
 
@@ -185,7 +185,7 @@ One of the key differences between Lagrangian and Newtonian mechanics, particula
 
 In Newtonian mechanics, constraints to systems are introduced in the form of **constraint forces**. For example, the normal force acting on an object sitting at rest on the ground is a constraint force.
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_14.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_14.jpg)
 
 Why? Because the fact that the object is sitting at rest *constrains the dynamics of the system* by allowing the gravitational force downwards to only take on certain values. Namely, values where the normal force is equal to the gravitational force (otherwise the object wouldn’t be at rest).
 
@@ -225,7 +225,7 @@ The simple pendulum essentially consists of a mass at the end of a rigid rod tha
 
 We can place the pendulum in an x,y -coordinate system such that the rod is attached to the origin. I’ll also denote the angle relative to the vertical (y-axis) as θ.
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_16.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_16.jpg)
 
 What we want to do is to find the pendulum bob’s position at each point in time and then construct the Lagrangian. To do this, we could use the x,y -coordinates here, but these may not be the best choice.
 
@@ -241,7 +241,7 @@ I discuss all about how generalized coordinates can be best chosen in [this arti
 
 So, **we will take the angle θ as the generalized coordinate of this pendulum**. Now, the easiest way to continue here is to write down the x,y -coordinates in terms of θ. We can get these by some simple trigonometry:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_18.jpg) 
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_18.jpg) 
 
 Note that the y-coordinate is negative here since it’s measure downwards from the origin.
 
@@ -307,7 +307,7 @@ Example: Conservation of Angular Momentum by Noether's Theorem (click to see mor
 
 Consider the Earth revolving around the Sun according to this picture:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_20.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_20.jpg)
 
 Here we are defining the generalized coordinates for this system to be r and θ, i.e. we’re using polar coordinates.
 
@@ -319,7 +319,7 @@ The dots above these quantities mean their time derivatives.
 
 Now consider rotating the system by some angle Δθ in the following way:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_22.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_22.jpg)
 
 The angle specifying Earth’s position now becomes:
 
@@ -341,7 +341,7 @@ $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}=\frac{\partial L}{\partial
 
 Here, the Lagrangian does not depend explicitly on θ, so the right-hand side becomes 0 and we get:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_24.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_24.jpg)
 
 Now, by definition, the time derivative of something being zero means that it is conserved (i.e. a constant). So, we’ve just derived the **conservation of angular momentum**.
 
@@ -409,7 +409,7 @@ $$-\frac{dU}{dx}\frac{dx}{dt}=\frac{dT}{dt}$$
 
 Here, the dx’s cancel and moving everything to one side, we get:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_26.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_26.jpg)
 
 This of course is nothing but **energy conservation**! So, we can indeed prove the conservation of energy by using Newton’s second law, but here we’ve naively assumed that the kinetic energy and momentum have the usual forms:
 
@@ -425,7 +425,7 @@ In Lagrangian mechanics, on the other hand, energy conservation can be derived f
 
 Another way to state it is to use one of **Hamilton’s equations of motion**, which relates the rate of change in energy to the Lagrangian in the following way:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_28.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_28.jpg)
 
 This particular equation comes from a formulation of mechanics called Hamiltonian mechanics. If you’re interested in learning about that, consider reading [this introductory article](https://profoundphysics.com/hamiltonian-mechanics-for-dummies/). I also have [this article](https://profoundphysics.com/lagrangian-vs-hamiltonian-mechanics/) comparing the Hamiltonian and the Lagrangian formulations.
 
@@ -443,7 +443,7 @@ Energy Conservation Using Lagrangian Mechanics (click to see more)
 
 Let’s in fact see just how powerful this rule can be. Consider a double pendulum consisting of two masses (m and M) connected by rods (with lengths r and R) swinging in a gravitational field:
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_30.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_30.jpg)
 
 The Lagrangian for this double pendulum can be derived to be:
 
@@ -501,7 +501,7 @@ I explain everything about the dissipation function in [this article](https://pr
 
 The bottom line though, is that **friction is almost always easier to deal with in Newtonian mechanics**, which is one of its clear advantages.
 
-[![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_32.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
+[![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_32.png)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
 If you want to get a MUCH deeper understanding of Lagrangian mechanics, I’d recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will teach you everything you need to know about Lagrangian mechanics – and more.
 
@@ -531,13 +531,13 @@ If you’re interested to know more about this, I recommend checking out [my com
 
 For example, the **Einstein field equations** of general relativity can be derived by using the principle of stationary action and a specific action integral. I explain this briefly in my **[introduction to general relativity](https://profoundphysics.com/general-relativity-for-dummies/)**.
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_34.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_34.jpg)
 
 Lagrangians are also widely used in **quantum field theory**, which is arguably one of the most accurate theories of reality so far. Well, in QFT, you actually use something called the *path integral formulation*, which reduces to the principle of least action in the classical limit.
 
 Even the famous equation, **E=mc2**, actually follows from a specific Lagrangian (which actually has a little bit of a different form than just T-U): (if you’re interested, I show this in my [special relativity article](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/)):
 
-![](../assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_36.jpg)
+![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_36.jpg)
 
 If you’re interested, I show this exact process in my introductory [special relativity article](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/).
 

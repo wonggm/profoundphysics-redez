@@ -51,7 +51,7 @@ The important thing about this is that the Legendre transformation of a function
 
 Now, the actual **formula for calculating the Legendre transformation of a function** is given by:
 
-![This image has an empty alt attribute; its file name is image-11.jpg](../assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_2.jpg)
+![This image has an empty alt attribute; its file name is image-11.jpg](assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_2.jpg)
 
 If you actually just start plugging in some function f(x) into this formula, you’ll get another function of x as a result, which sort of defeats the purpose of the Legendre transform; to obtain a function of a new variable. I’ll show you how to fix this “issue” soon (this also has some very interesting consequences in Hamiltonian mechanics, which I’ll talk about later).
 
@@ -61,19 +61,19 @@ Derivation and Geometry of the Legendre Transformation
 
 To derive the formula for the Legendre transformation, we need to essentially find the value of the y-interception point of the tangent line at each point on the graph of the original function.
 
-![](../assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_4.png)
+![](assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_4.png)
 
 We’re specifically interested in finding the value of this y-interception point b here. Now, the slope of this tangent line is just going to be the derivative of this function, slope=df/dx.
 
 We can also do a little geometry here. The value of b here is just the difference of the value of the function as well as this “height” h in the following picture:
 
-![](../assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_6.png)
+![](assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_6.png)
 
 Now, what is the value of this “h”? Well, it’s just the change in the y-coordinate, Δy, of this tangent line between x=0 and the x-value of this point we’re interested in.
 
 The Δy, on the other hand, is just the slope of the tangent line multiplied by the change in the x-coordinate, Δx, which is nothing but the x-coordinate of this point here.
 
-![](../assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_8.png)
+![](assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_8.png)
 
 So, this y-interception point, b, is then given by:
 

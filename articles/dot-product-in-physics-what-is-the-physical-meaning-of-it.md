@@ -29,11 +29,11 @@ If you’re interested in learning physics more deeply, you may enjoy my **[Adva
 
 In an intuitive sense, **the dot product is a measure of how much two vectors are aligned**. So, if we have two vectors, u and v, the dot product between these two would give the *length of the vector v along the vector u*, or if you will, **the projection of v along u**.
 
-![](../assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_2.jpg)
+![](assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_2.jpg)
 
 If we know the angle between the two vectors (θ in the above picture), the dot product can be calculated by the following formula:
 
-![](../assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_4.jpg)
+![](assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_4.jpg)
 
 An interesting way to interpret this cos(θ) -factor is that it describes a kind of “percentage of alignment” between the two vectors; if cos(θ)=1, the vectors are fully aligned (since θ=0°) and if cos(θ)=0 (meaning θ=90°), the vectors don’t align at all. Moreover, something like cos(θ)=0.97 (θ≈15°) would correspond to the vectors being “almost aligned”.
 
@@ -51,7 +51,7 @@ The best way to explain the physics of this is through an example. Namely, **the
 
 This quantity gives the **work done by the force**, which is essentially the *change in energy* caused by this force. More precisely, the work done along some path is actually given by a line integral of this dot product, which I explain in [this article](https://profoundphysics.com/does-gravity-do-work/).
 
-![](../assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_6.jpg)
+![](assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_6.jpg)
 
 Here, dr is the displacement vector, which describes the change in position in some direction and F is the force vector. The dot product of these gives the *instantaneous* work (i.e. the work done in some very small segment of this path).
 
@@ -91,7 +91,7 @@ In general relativity, **gravity and the motion of objects under the influence o
 
 Everything we’re interested in in general relativity, essentially takes place in **curved spacetime**. You could therefore think of the mathematics of general relativity as simply ordinary math but done in a “curved geometry”.
 
-![](../assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_9.jpg) 
+![](assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_9.jpg) 
 
 In a simple sense, you can think of curved spacetime as a coordinate system with some arbitrary curved time and space axes. Note, however, that this picture shouldn’t be taken too literally; firstly, spacetime is 4-dimensional (not 2D) with a time dimension and three spacial dimension and secondly, this picture is, in reality, just a “flat” space with curved coordinate axes, not a literal curved geometric space.
 
@@ -103,7 +103,7 @@ Now, the difficulty of this comes from the fact that if we’re dealing with som
 
 Really, the problem comes from the fact that in a curved spacetime, **the basis vectors** (which are used to express components of vectors) **are not constant and may vary from place to place**.
 
-![](../assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_11.jpg) 
+![](assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_11.jpg) 
 
 Basis vectors are typically denoted by these e’s with the index labeling which coordinate the basis vector is associated with.
 
@@ -119,7 +119,7 @@ Note that these metric components (the g’s here) are actually components of a 
 
 More generally, the dot product can be written as:
 
-![](../assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_13.jpg)
+![](assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_13.jpg)
 
 Instead of the usual dot product formula, we now have a double sum, which CAN actually have cross-terms involving products of the vector components such as v1u2. This is indeed possible if the basis vectors are not constant, but not in the typical Cartesian (x,y,z) coordinate system.
 

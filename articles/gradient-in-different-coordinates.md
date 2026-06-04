@@ -41,7 +41,7 @@ $$\nabla f=\sum_i^{ }\frac{1}{h_i}\frac{\partial f}{\partial x^i}\hat{e}_i$$
 
 This may look complicated, but using it is actually really simple. First, however, we can try to understand the meaning of each of these pieces here:
 
-![](../assets/images/gradient-in-different-coordinates/img_2.jpg)
+![](assets/images/gradient-in-different-coordinates/img_2.jpg)
 
 Here, each of the coordinates are labeled by a “shorthand” notation, xi, where the index i runs over as many values as there are coordinates. For example, in Cartesian coordinates, these xi‘s would be simply:
 
@@ -88,7 +88,7 @@ We’re used to having *unit* basis vectors (with length 1) in Cartesian coordin
 
 The scale factors tell you **how the lengths of the basis vectors *scale*** when switching from, for example, Cartesian coordinates to some other coordinate system.
 
-![](../assets/images/gradient-in-different-coordinates/img_4.jpg)
+![](assets/images/gradient-in-different-coordinates/img_4.jpg)
 
 Before moving on to examples, I’ve included a **full derivation of the gradient formula** in other coordinate systems.
 
@@ -220,7 +220,7 @@ The gradient of a scalar function is essentially a vector that represents **how 
 
 Now, in polar coordinates, the θ-basis vector originally has a **length of r** (not the unit vector in the above formula), meaning that its length changes as you go further away from the origin.
 
-![](../assets/images/gradient-in-different-coordinates/img_6.jpg)
+![](assets/images/gradient-in-different-coordinates/img_6.jpg)
 
 However, the gradient is used to only describe how the function f changes with respect to the **coordinates** (r and θ) and NOT account for how the basis vectors change.
 

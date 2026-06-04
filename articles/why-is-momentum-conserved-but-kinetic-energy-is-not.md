@@ -52,7 +52,7 @@ Consider two objects. They both will have their own momenta. According to **Newt
 
 If the two objects collide, then they will exert equal and opposite forces on each other. This means that whatever momentum (by exerting the force) is lost by one object will be gained by the other and vice-versa.
 
-![](../assets/images/why-is-momentum-conserved-but-kinetic-energy-is-not/img_2.jpg)
+![](assets/images/why-is-momentum-conserved-but-kinetic-energy-is-not/img_2.jpg)
 
 What does this tell us? If the amount of momentum gained by one object is equal to that lost by another, then the **total momentum before and after the interaction was the same**.
 
@@ -236,7 +236,7 @@ This conversion of kinetic energy into potential energy happens because **the fo
 
 The total energy E (which is a constant) determines how high the ball can go. We can see this in the following:
 
-![](../assets/images/why-is-momentum-conserved-but-kinetic-energy-is-not/img_5.gif)
+![](assets/images/why-is-momentum-conserved-but-kinetic-energy-is-not/img_5.gif)
 
 Along the x-axis is the velocity of the ball and the y-axis represents the height of the ball. At the centre, at v=0, this shows the maximum height of the ball – we just discussed that the ball stops (v=0) at the very top of its path, when gravitational potential energy is at its maximum.
 

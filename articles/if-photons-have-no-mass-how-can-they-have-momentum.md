@@ -69,7 +69,7 @@ The first thing we’ll need are the concepts of a **spacetime interval** anda *
 
 The spacetime interval (denoted by dS) connects both space and time in the following way (analogous to the Pythagorean theorem):
 
-![](../assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_2.jpg)
+![](assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_2.jpg)
 
 Okay, then we need the definition for a proper time interval. **Proper time is defined as the time measured from an observer’s own frame of reference** (rest frame).
 
@@ -83,7 +83,7 @@ If you’re confused by these definitions, don’t worry, because these are only
 
 Anyway, from these quantities, it is possible to derive a formula for momentum that works for photons as well. This is known as **Einstein’s energy-momentum relation**:
 
-![This image has an empty alt attribute; its file name is image-10.jpg](../assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_4.jpg)
+![This image has an empty alt attribute; its file name is image-10.jpg](assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_4.jpg)
 
 Derivation of Einstein's Energy-Momentum Relation (click to see more)
 
@@ -161,7 +161,7 @@ $$c^2\left(\frac{dt}{d\tau}\right)^2-\left(\frac{dx}{d\tau}\right)^2-\left(\frac
 
 These are, in fact, nothing but **the squares of the four-velocities**! So, we can insert all of the things we derived so far like this:
 
-![](../assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_6.jpg)
+![](assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_6.jpg)
 
 Or combining all of the momenta into one term, pi:
 
@@ -183,7 +183,7 @@ $$\gamma^2c^2=\frac{E^2}{m^2c^2}$$
 
 Inserting this into the equation we had:
 
-![](../assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_8.jpg)
+![](assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_8.jpg)
 
 Now it’s only a matter of solving for the momentum:
 
@@ -197,7 +197,7 @@ From the above formula we can indeed see what happens in the case of a photon, w
 
 $$\lim_{m\rightarrow0}p=\sqrt{\frac{E^2}{c^2}-0^2\cdot c^2}=\sqrt{\frac{E^2}{c^2}}=\frac{E}{c}$$
 
-![](../assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_10.jpg)
+![](assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_10.jpg)
 
 This tells us that the momentum of a photon is proportional to its energy, which is exactly what we would expect based on experimental results.
 
@@ -241,7 +241,7 @@ This result is also known as the **de Broglie relation**, which connects the mom
 
 So, the bottom line is that a photon indeed still has momentum even though it has no mass. The momentum of a photon can be expressed in a variety of forms.
 
-![](../assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_12.jpg)
+![](assets/images/if-photons-have-no-mass-how-can-they-have-momentum/img_12.jpg)
 
 ---
 

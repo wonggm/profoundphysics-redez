@@ -29,7 +29,7 @@ When most people think of a window (or glass), they think of something that’s 
 
 Generally, any time there is a transition of light moving from one material to another (in this case, from air to glass), there will be both reflection and refraction happening (refraction is the phenomenon where light travels through the material but its direction, wavelength and speed will change).
 
-![](../assets/images/why-do-windows-reflect-at-night-the-physics-explained/img_2.jpg)
+![](assets/images/why-do-windows-reflect-at-night-the-physics-explained/img_2.jpg)
 
 Fundamentally, this occurs because no material acts as “perfectly transparent” (well, apart from possibly dark matter, but nobody knows yet). At least such a material has not been discovered so far.
 
@@ -45,7 +45,7 @@ Let me explain this in a bit more detail. First of all, you may notice that duri
 
 This is simply because of the overwhelming amount of sunlight that comes from the outside, which makes it very hard to see the small amount of reflected light that comes from the inside.
 
-![](../assets/images/why-do-windows-reflect-at-night-the-physics-explained/img_4.jpg)
+![](assets/images/why-do-windows-reflect-at-night-the-physics-explained/img_4.jpg)
 
 Based on this, you could probably imagine what happens at night when it’s dark outside. Now there would be little to no sunlight from the outside (also assuming there isn’t much moonlight or other outside lights on).
 

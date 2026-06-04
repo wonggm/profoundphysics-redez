@@ -47,7 +47,7 @@ Now, the weird thing is that this expansion of the universe is not something exp
 
 This is because our current models of the universe predict that what is expanding is the actual **scale of the universe** itself, NOT that all stuff would just be moving away from some central point.
 
-![](../assets/images/did-the-big-bang-happen-everywhere-at-once/img_2.jpg)
+![](assets/images/did-the-big-bang-happen-everywhere-at-once/img_2.jpg)
 
 What this means in our context is that we cannot think of the Big Bang as “happening at a point” – the Big Bang did not happen at any particular place, it happened **everywhere at the same time**!
 
@@ -93,7 +93,7 @@ These dots simply represent “points” within space (not spacetime). Effective
 
 Now choose a pair of dots and think of a line joining them and that the line is described by some number. We can interpret this number as the **distance between points in space** (distance between two galaxies, for example).
 
-![](../assets/images/did-the-big-bang-happen-everywhere-at-once/img_4.jpg) 
+![](assets/images/did-the-big-bang-happen-everywhere-at-once/img_4.jpg) 
 
 Here we have a grid with a 1 light-year separation between points. Note that technically, our model should have an infinite grid of points, but of course, I cannot draw an infinite number of points here.
 
@@ -112,7 +112,7 @@ If instead of looking forward in time where everything is moving away from every
 
 If we try and wind the clock back close to time t = 0, everything is getting closer and closer together. This means that the universe got denser and denser – the grid of points in your mind are getting closer and closer together but the grid is still infinite – weird but stay with me!
 
-![](../assets/images/did-the-big-bang-happen-everywhere-at-once/img_6.jpg)
+![](assets/images/did-the-big-bang-happen-everywhere-at-once/img_6.jpg)
 
 Once we reach “the beginning” (t = 0), the distance between each point shrinks down to zero (but the grid is still infinite). This is the **Big Bang singularity** you may have heard about!
 
@@ -175,7 +175,7 @@ $$ds^2=dx^2+dy^2+dz^2$$
 
 You can think of dx as something like “a small difference in the x-coordinate”. This is what we call a “line element” – it tells us about the distance between two close-by points.
 
-![](../assets/images/did-the-big-bang-happen-everywhere-at-once/img_8.png)
+![](assets/images/did-the-big-bang-happen-everywhere-at-once/img_8.png)
 
 If we were to write a new line element,
 

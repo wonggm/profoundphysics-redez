@@ -43,7 +43,7 @@ In differential geometry, the basic idea we’re usually interested in is **geom
 
 Now, each smooth manifold we study in differential geometry has an **affine connection** associated with it. An affine connection is a somewhat abstract geometric object, which basically **connects tangent spaces on the manifold**.
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_2.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_2.jpg)
 
 This, on the other hand, allows us to define a **notion of differentiation of functions *on the manifold***.
 
@@ -69,7 +69,7 @@ A nice intuitive way to think about these connection coefficients is to think of
 
 This can be seen from the definition of the Levi-Civita connection (i.e. the covariant derivative):
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_4.jpg) 
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_4.jpg) 
 
 Note; the indices here don’t really make sense as expressed like this. This is because the covariant derivative is an *operator* that needs to act on something.
 
@@ -131,7 +131,7 @@ Now, let’s dissect what the Christoffel symbols really mean geometrically.
 
 In an arbitrary curved space or coordinate system, the basis vectors may change from point to point. Locally (at every point), **the Christoffel symbols tell you how the basis vectors are changing** (this is what the derivative represents):
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_6.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_6.jpg)
 
 From this definition, it’s also easy to see why the Christoffel symbols are coordinate-dependent (they depend on which coordinate system you happen to be using). This means that they are actually not tensors, which we’ll talk about later.
 
@@ -141,7 +141,7 @@ Let’s say we have some **curved coordinate system with the coordinate axes x1 
 
 Now imagine you move **along the x1-axis and see how the basis vector e2 changes** (along this x1-axis). A small change in a vector along a coordinate axis is simply the (partial) derivative with respect to that particular coordinate.
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_8.png)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_8.png)
 
 To avoid clutter, I’ve dropped the vector signs above these basis vectors.
 
@@ -151,7 +151,7 @@ This is done by **taking the dot product of this red vector with the different b
 
 This is, in a rough sense, what the **components of the Christoffel symbols represent** (don’t pay attention to the index placement; the point is to just give some geometric intuition):
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_10.png)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_10.png)
 
 Note; I discuss the dot product and its physical meaning in [this article](https://profoundphysics.com/dot-product-in-physics-what-is-the-physical-meaning-of-it/). In there, I also explain how the dot product can be interpreted in curved spacetime by using a metric tensor.
 
@@ -179,7 +179,7 @@ Now, the key point here is that **the Christoffel symbols represent how the basi
 
 Also, since Christoffel symbols are quite common in general relativity, they have a lot to do with **gravity**. This is what we’ll explore soon, but first, we need to discuss another way of representing the Christoffel symbols mathematically.
 
-[![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_12.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+[![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_12.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 
@@ -195,7 +195,7 @@ The metric is typically denoted by a two-index tensor gµν (in this article, I�
 
 Now, **the Christoffel symbols in terms of the metric** is defined in the following way:
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_14.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_14.jpg)
 
 Note; the components of the inverse metric can be obtained directly as inverses of the original metric if the metric is *diagonal*.
 
@@ -305,9 +305,9 @@ Here, I’ve written out the gradient vector and the e’s denote the basis vect
 
 Let’s now compare this to the definition of the Christoffel symbol in terms of the metric. The key idea here is to note that **the metric itself represents the gravitational potential in general relativity**.
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_16.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_16.jpg)
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_18.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_18.jpg)
 
 To learn more about the idea of the metric representing **gravitational potentials**, you can read [this article](https://profoundphysics.com/metric-tensor-a-complete-guide-with-examples/).
 
@@ -315,7 +315,7 @@ The link between the Christoffel symbols and the Newtonian gravitational field i
 
 This can be seen nicely by looking at the geodesic equation (for the radial coordinate) in the weak-field limit and comparing that to the equation for a Newtonian gravitational field.
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_20.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_20.jpg)
 
 I discuss where this comes from later in the article, where you’ll also find a bunch more examples of different Christoffel symbols.
 
@@ -385,7 +385,7 @@ A nice visual way to see how these Christoffel symbols can be interpreted is by 
 
 In a polar coordinate system, there are *two coordinate-axes*, r and θ (r being the “radial” axis and θ the “angular” axis) and every point can be labeled by an r-coordinate and a θ-coordinate. Both directions also have their corresponding basis vectors, which are always orthogonal but change direction from point to point.
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_22.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_22.jpg)
 
 Now consider the following two Christoffel symbols in these coordinates (the calculation of these can be found later in the article):
 
@@ -397,7 +397,7 @@ To interpret the meaning of these, let’s look at a small change in the θ-coor
 
 The Christoffel symbols essentially describe **how much of this change occurs in both the r- and the θ-directions** (i.e. they are the *components* of this derivative of a basis vector).
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_24.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_24.jpg)
 
 Here, the red vector component Γrrθ is drawn as a “small arrow” even though it should be exactly zero – this is just for illustration purposes and to avoid making the picture cluttered.
 
@@ -439,7 +439,7 @@ When applying these types of coordinate transformations on tensor, the rule is s
 
 In particular, a **tensor with one upper and two lower indices** would transform according to the following rule:
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_26.jpg) 
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_26.jpg) 
 
 It’s worth noting that a tensor itself is an object that is invariant under coordinate transformations. However, it’s components may change (I discuss this and its usefulness more in my [general relativity article](https://profoundphysics.com/general-relativity-for-dummies/)), which is what this transformation rule tells you; this rule allows you to calculate how the components of this tensor change as you go from the xµ-coordinates to the x̄µ-coordinates.
 
@@ -447,7 +447,7 @@ The above transformation property is actually often taken to be the ***definitio
 
 Now, if you work out the **transformation rule for the Christoffel symbols** (this can be done by applying the transformation rule above to the metric tensor and writing the transformed Christoffel symbols in terms of these transformed metrics), you’ll discover something a little more complicated:
 
-![Christoffel symbols transformation law](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_28.jpg)
+![Christoffel symbols transformation law](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_28.jpg)
 
 If the Christoffel symbols were indeed tensors, the first term would be all there is.
 
@@ -471,13 +471,13 @@ To understand what the **torsion-free requirement** means, we need to understand
 
 To put it simply, if a manifold has torsion, it would mean that a frame would experience a “twisting” effect as it is moved along some geodesic on this manifold.
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_30.jpg) 
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_30.jpg) 
 
 You can kind of imagine this effect as inducing a torque force (hence the name *torsion*) on this frame, which causes it to spin about its direction of motion along the geodesic. Note that I’ve drawn the geodesic as just a straight line here, but the same concept applies for any kind of geodesic curve.
 
 Intuitively, you can picture the same effect by throwing an american football up in the air. American footballs are notorious for spinning in a funny way around their *spin axis* as they fly through the air.
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_32.jpg) 
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_32.jpg) 
 
 In reality, torsion is a much more abstract concept than what is presented here, partly because it is measured *infinitesimally*, but also because the mathematics describing torsion is highly abstract and hard to give a precise geometric picture of. So, you should really take the geometric picture given here about torsion as just an intuitive way to see what is going on.
 
@@ -503,11 +503,11 @@ Some physical theories, such as the **Einstein-Cartan theory**, however, DO cons
 
 When doing calculations with the Christoffel symbols, one particularly useful identity you’ll often come across is the formula for the **contracted Christoffel symbols**:
 
-![contracted christoffel symbol](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_34.jpg)
+![contracted christoffel symbol](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_34.jpg)
 
 Now, what do each of these terms here mean? Let’s dissect this formula a little bit:
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_36.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_36.jpg)
 
 The **mathematical proof** of where this identity comes from can be found down below. It uses a little bit of tensor calculus as well as linear algebra.
 
@@ -624,7 +624,7 @@ $$\Gamma_{\mu\nu}^{\lambda}=g^{\lambda\alpha}\Gamma_{\alpha\mu\nu}$$
 
 If you write out these Christoffel symbols in terms of the metric, they both have very similar looking formulas, which only differ by a factor of an inverse metric:
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_38.jpg)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_38.jpg)
 
 ## How To Calculate Christoffel Symbols (Step-By-Step Methods)
 
@@ -893,13 +893,13 @@ Here comes the most important part. Now we take our Euler-Lagrange equations and
 
 So, first let’s take the Euler-Lagrange equation for the coordinate r (i.e. x1) and the corresponding geodesic equation (the one for r or x1) and compare these two:
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_40.png) 
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_40.png) 
 
 Another way to get these Christoffel symbols (rather than just by looking at the two equations) would be to simply set both the Euler-Lagrange and the geodesic equation *equal* to one another (since they are really the same equation in disguise), move every term to one side, do some factoring and then conclude what the coefficients must be in order for the whole thing to be zero.
 
 We can do the same thing to the equations for θ:
 
-![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_42.png)
+![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_42.png)
 
 And just like that, we’ve determined all of our Christoffel symbols from just a few equations! The beauty of this is that we basically get all the Christoffel symbols for a given coordinate at one go, so we immediately know which Christoffel symbols are zero and which non-zero.
 
@@ -935,7 +935,7 @@ In some sense, this makes the method we used earlier almost trivial. We’re jus
 
 It sounds funny when put this way, but the beauty of this method is that it is *guaranteed* to work (and work MUCH more efficiently), since it’s so trivial in a way.
 
-[![](../assets/images/christoffel-symbols-a-complete-guide-with-examples/img_44.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
+[![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_44.jpg)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
 My **Mathematics of General Relativity** -course will teach you all the math you need for a deep understanding of general relativity. You’ll find more information [here](https://courses.profoundphysics.com/p/mathematics-of-general-relativity).
 

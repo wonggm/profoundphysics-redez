@@ -101,7 +101,7 @@ Now, in the case of quantum electrodynamics, it is a **gauge theory with the sym
 
 The quanta of this gauge field, which is the “exchange” particle of electromagnetic forces, is called the **photon**.
 
-![](../assets/images/why-do-photons-have-no-mass-simple-proof/img_2.jpg) 
+![](assets/images/why-do-photons-have-no-mass-simple-proof/img_2.jpg) 
 
 The outline in blue is essentially gauge theories in a nutshell (at least quantum gauge field theories, which are the basis of the Standard Model of particle physics). The one in orange is how this process goes in quantum electrodynamics and gives rise to the photon as a gauge boson.
 
@@ -135,7 +135,7 @@ It turns out that if the photon had a mass, it would change the way electric fie
 
 Namely, the equation for an electric field produced by a charge Q (essentially Coulomb’s law) would have some extra terms in it:
 
-![](../assets/images/why-do-photons-have-no-mass-simple-proof/img_4.jpg)
+![](assets/images/why-do-photons-have-no-mass-simple-proof/img_4.jpg)
 
 Notice that if the mass of a photon is zero, this reduces back to the ordinary and correct electric field equation, which indicates that a photon should have no mass.
 

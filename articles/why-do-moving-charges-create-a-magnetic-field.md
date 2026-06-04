@@ -55,7 +55,7 @@ If this formula doesn’t look familiar to you, don’t worry; the mathematical 
 
 The point here is that this magnetic field (due to the cross product) is always **perpendicular to both the direction in which the charge is moving as well as to the direction of the electric field**:
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_2.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_2.jpg)
 
 The formula given above also indicates that **a magnetic field is only produced if the charge is moving**. But, you could ask whether it’s possible for a *stationary* charge to also produce a magnetic field.
 
@@ -92,7 +92,7 @@ When we compare measurements or physical phenomena between different observers t
 
 This is simply because differently moving observers always describe measurements from their own **reference frame**, which you can think of as a coordinate system (with space and time axes) attached to that observer.
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_4.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_4.jpg)
 
 In **ordinary Newtonian physics**, the coordinates measured in one reference frame are related to the coordinates in another reference frame moving with a relative velocity to the first one by so-called **Galilean transformations** (in one dimension):
 
@@ -104,7 +104,7 @@ All these say is that an observer moving with velocity v will measure any x-coor
 
 Visually, doing a Galilean transformation corresponds to just “sliding” the time axis such that the values stay the same:
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_6.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_6.jpg)
 
 In special relativity, however, things are vastly different. Instead of Galilean transformations, we have **Lorentz transformations**, which look quite a bit more complicated:
 
@@ -114,7 +114,7 @@ $$t'=\gamma\left(t-\frac{v}{c^2}x\right){,}\ \ \gamma=\frac{1}{\sqrt{1-\frac{v^2
 
 These can be visualized as some kind of stretch-rotations, in which the space and time axes mix together in a more complicated manner:
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_8.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_8.jpg)
 
 Now, **Lorentz transformations are ACTUALLY physically correct if special relativity is accounted for** and Galilean transformations are only approximately correct for slow velocities.
 
@@ -144,13 +144,13 @@ Physically, this means that if we have two observers, one that is stationary and
 
 Let’s look at a little example to illustrate this. Say we have a stationary charged particle that produces an electric field only in the y-direction (and no magnetic field):
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_10.jpg) 
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_10.jpg) 
 
 This y-hat here is a unit vector in the y-direction.
 
 If we then perform a Lorentz transformation in the x-direction (we look at the situation from the frame of someone moving along the x-axis), it turns out that a part of the original y-component of the electric field now appears as a magnetic field in the z-direction.
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_12.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_12.jpg)
 
 The exact formula for this “new” magnetic field is given by (you’ll find a derivation of this later when we discuss the electromagnetic field tensor):
 
@@ -192,7 +192,7 @@ The key here is to realize that for an observer viewing the charged particle fro
 
 Therefore, a magnetic field will only appear if there is a relative velocity between a charged particle and someone looking at the charge. In other words, **a magnetic field is only produced when a charged particle is moving**.
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_14.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_14.jpg)
 
 ## Is The Magnetic Field By a Moving Charge Caused By Relativity?
 
@@ -228,13 +228,13 @@ Imagine the full electromagnetic field as kind of like an ocean; if we place a s
 
 You can kind of think of these as an electric field produced by the “stationary” charge:
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_16.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_16.jpg)
 
 However, if the charge now starts **moving in some direction**, these “waves” tend to spread perpendicularly to its direction of motion (if you’ve ever seen a ship moving in the ocean, it creates this V-shaped wave pattern around it).
 
 You could think of these as analogous to a **magnetic field produced by a moving charge**; they are only produced when the object is moving and they tend to occur perpendicularly to the direction of motion.
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_18.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_18.jpg)
 
 Now, of course, this “water wave” -analogy is by no means exactly what happens with electric and magnetic fields.
 
@@ -262,7 +262,7 @@ Now, what is the electromagnetic field tensor really? Well, to answer this, we n
 
 First of all, if we view a vector from a different reference frame, **its components will generally be different, but the actual vector itself (its length and direction) won’t**.
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_20.jpg) 
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_20.jpg) 
 
 Note: these vectors with a “time-component” (vt) and a “space-component” (vx) are called four-vectors, which can be thought of as *vectors in spacetime*. I discuss four-vectors in more detail in my introduction to special relativity found [here](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/).
 
@@ -334,13 +334,13 @@ For this example, we want to now perform a **Lorentz transformation in the x-dir
 
 Physically, what this means is that we’re now looking at the situation from another observer’s perspective that is moving in the x-direction (with constant velocity).
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_22.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_22.jpg)
 
 From the moving observer’s perspective, however, it turns out that there is now **also a magnetic field in the z-direction, in addition to the electric field in the y-direction** (which has a different value in the moving frame).
 
 The key here is to realize that when viewed from the perspective of the other (moving) observer, **the charge configuration now looks like it is moving in the opposite direction**, while the observer appears stationary (when viewed from its own perspective, which is what the Lorentz transformation does).
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_24.jpg)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_24.jpg)
 
 This “new” magnetic field as seen from the moving observer’s perspective (which is what the ‘-symbol represents here), mathematically, has the form:
 
@@ -448,7 +448,7 @@ $$\vec{E}'=\begin{pmatrix}0\\\gamma E_y\\0\end{pmatrix}\ {,}\ \ \vec{B}'=\begin{
 
 To better illustrate this whole situation, here’s a picture of what is going on:
 
-![](../assets/images/why-do-moving-charges-create-a-magnetic-field/img_26.png)
+![](assets/images/why-do-moving-charges-create-a-magnetic-field/img_26.png)
 
 Anyway, if we insert all the vector components into the force, we get the following:
 

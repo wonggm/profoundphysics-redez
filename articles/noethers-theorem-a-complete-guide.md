@@ -165,7 +165,7 @@ We’ll put this into a more precise definition soon but first, let’s take a l
 
 Perhaps the simplest example of a symmetry would be the rotation of a sphere. A rotation is a transformation of the sphere that leaves it completely unchanged – therefore, it is a symmetry of the sphere (we call this spherical symmetry).
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_2.jpg) 
+![](assets/images/noethers-theorem-a-complete-guide/img_2.jpg) 
 
 Note that the coordinate grid I’ve drawn here should not be thought of as a part of the sphere itself. It’s just to make the illustration “look” nicer.
 
@@ -175,7 +175,7 @@ A more physically relevant example would be a spatial translation of a free part
 
 This is a symmetry of the single-particle system, since moving the particle in space by a constant amount does not actually change the physics of the particle in any way – since it’s a free particle, its motion will be exactly the same at all points in space and it makes no difference whether we look at the particle at x=0 or at x=100.
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_4.jpg)
+![](assets/images/noethers-theorem-a-complete-guide/img_4.jpg)
 
 However, the crucial part here is that this is a free particle.
 
@@ -245,7 +245,7 @@ $$L=\frac{1}{2}m\dot{x}^2$$
 
 The transformation we’ll consider is a spatial translation where we essentially move the particle in space by some small (constant) amount δx:
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_6.png)
+![](assets/images/noethers-theorem-a-complete-guide/img_6.png)
 
 This transformation moves the particle from some arbitrary location x to a new location x+δx. It’s important to note that this shift δx is taken to be constant everywhere and also infinitesimal (we’ll talk more about why that is in the next section).
 
@@ -292,7 +292,7 @@ Now, let’s unpack it. Noether’s theorem simply says that whenever we find a 
 
 The quantity Q here being conserved means that dQ/dt=0 (we’ll prove this soon). As far as the expression for the conserved quantity Q, here is what each of the terms mean:
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_8.jpg)
+![](assets/images/noethers-theorem-a-complete-guide/img_8.jpg)
 
 So, the procedure in which Noether’s theorem results in conserved quantities is pretty simple:
 
@@ -422,7 +422,7 @@ Let’s now consider a transformation to the coordinates of both particles (with
 
 $$x_1\ \rightarrow\ x_1+\delta x\\x_2\ \rightarrow\ x_2+\delta x$$
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_10.png)
+![](assets/images/noethers-theorem-a-complete-guide/img_10.png)
 
 This means that the changes in the first particle’s coordinates are δx1=δx2=δx and the changes in the velocities are zero (δẋ1=0 and δẋ2=0).
 
@@ -432,7 +432,7 @@ $$\delta L=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\delta q_i+\frac{\part
 
 The conserved quantity we find is then, according to Noether’s theorem:
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_12.png)
+![](assets/images/noethers-theorem-a-complete-guide/img_12.png)
 
 This is just the total linear momentum in the system – the sum of the momenta of both particles. This shows that a spatial translation indeed results in the conservation of linear momentum.
 
@@ -448,7 +448,7 @@ $$r\ \rightarrow\ r\\\theta\ \rightarrow\ \theta+\delta\theta$$
 
 This rotates the position of the particle by an infinitesimal angle δθ, but leaves its radial distance unchanged:
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_14.png)
+![](assets/images/noethers-theorem-a-complete-guide/img_14.png)
 
 Since the Lagrangian doesn’t depend on the coordinate θ, we immediately know that this transformation is a symmetry. We could also verify that by calculating the change in the Lagrangian as (here, δr=0 and so are the changes in the time derivatives of r and θ):
 
@@ -456,7 +456,7 @@ $$\delta L=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\delta q_i+\frac{\part
 
 The conserved quantity from Noether’s theorem is then:
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_16.png)
+![](assets/images/noethers-theorem-a-complete-guide/img_16.png)
 
 This conserved quantity is the angular momentum of the particle, expressed in polar coordinates. In particular, it’s the z-component of the angular momentum (which is also the only non-zero angular momentum component of the particle).
 
@@ -476,7 +476,7 @@ We’ll essentially answer the question of “how does a system change if we shi
 
 When doing a time translation to, say a moving point particle, we would certainly expect its motion to change – if its coordinates are functions of time and we it move forward in time, the values of the coordinates will be different.
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_18.jpg)
+![](assets/images/noethers-theorem-a-complete-guide/img_18.jpg)
 
 We can characterize a time translation mathematically by shifting the value of time t to t+δt. When doing this, the coordinates and their time derivatives in a general system change from qi(t) and q̇i(t) to qi(t+δt) and q̇i(t+δt).
 
@@ -520,7 +520,7 @@ So, we find the variation in the Lagrangian to be δL=d(Lδt)/dt, given that the
 
 Then, according to Noether’s theorem, we find a conserved quantity of the form:
 
-![](../assets/images/noethers-theorem-a-complete-guide/img_20.jpg)
+![](assets/images/noethers-theorem-a-complete-guide/img_20.jpg)
 
 What is this quantity? Well, if you’re familiar with Hamiltonian mechanics, you might recognize the thing inside the parentheses as the general expression for the **Hamiltonian** – a function representing the energy in a system.
 
