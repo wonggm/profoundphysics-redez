@@ -27,10 +27,6 @@ We’ll also look at **how different types of black holes affect these orbits** 
 
 In case you’d want an **ad-free PDF version of this article** (an my other general relativity articles), you’ll find it [here](https://courses.profoundphysics.com/p/general-relativity-bundle), available as part of my full General Relativity Bundle.
 
-Table of Contents
-
-Toggle
-
 ## How General Relativity Explains Orbits
 
 The first thing we’ll cover is how exactly **general relativity** explains orbits of objects under the influence of gravity.

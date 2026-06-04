@@ -25,10 +25,6 @@ We’ll also discuss some more general notions of dot products, which are useful
 
 If you’re interested in learning physics more deeply, you may enjoy my **[Advanced Math For Physics: A Complete Self-Study Course](https://courses.profoundphysics.com/p/advanced-math-for-physics-a-complete-self-study-course)** – it’s the perfect place to get started learning more advanced physics and math, as it begins from the very fundamentals.
 
-Table of Contents
-
-Toggle
-
 ## Significance of The Dot Product In Physics: Intuitive Explanation + Examples
 
 In an intuitive sense, **the dot product is a measure of how much two vectors are aligned**. So, if we have two vectors, u and v, the dot product between these two would give the *length of the vector v along the vector u*, or if you will, **the projection of v along u**.

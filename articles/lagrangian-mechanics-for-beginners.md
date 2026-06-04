@@ -33,10 +33,6 @@ These will both be explained in great detail in this article.
 
 **Quick tip**: In case you’d be interested in understanding Lagrangian mechanics and specifically its applications to modern physics, I highly recommend checking out the book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book will take you from learning the **fundamentals** all the way to having an **advanced, deep understanding of Lagrangian mechanics** – and most importantly, being able to **apply what you learn** in areas like mechanics, electrodynamics, relativity and quantum field theory.
 
-Table of Contents
-
-Toggle
-
 ## The Intuition Behind Lagrangian Mechanics
 
 To get started, let’s try to develop some intuition and reasoning behind what we’re going to be looking at in detail in this article.

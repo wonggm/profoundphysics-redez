@@ -37,10 +37,6 @@ Also, all of the things about Lagrangian mechanics that we’ll talk about are e
 
 The information given in that article is not absolutely necessary to understand this one, but I’d recommend reading it if you’re not familiar with the Lagrangian formulation.
 
-Table of Contents
-
-Toggle
-
 ## The Underlying Principles Behind Lagrangian and Newtonian Mechanics
 
 Probably the biggest and also most obvious difference between the two formulations is the underlying principles from which the equations of motion are derived.

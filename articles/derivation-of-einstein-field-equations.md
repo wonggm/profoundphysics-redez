@@ -25,10 +25,6 @@ Before we get started, I’d highly recommend you read my [introductory article 
 
 In case you’re interested, you can also get this article in **downloadable PDF form** [here](https://profoundphysics.gumroad.com/l/einstein-field-equations).
 
-Table of Contents
-
-Toggle
-
 ## Derivation From The Bianchi Identity
 
 The first way we’re going to derive the Einstein field equations is by postulating that there is a **relation between curvature and matter** (the energy-momentum tensor).

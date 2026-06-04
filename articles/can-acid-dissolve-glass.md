@@ -21,10 +21,6 @@ Acids, especially the stronger ones, can dissolve lots of different substances a
 
 However, when it comes to most other acids, glass is almost completely unaffected by them. Only a handful of acids actually meet the chemical requirements for glass to be dissolved.
 
-Table of Contents
-
-Toggle
-
 ## Which Acids Can Dissolve Glass?
 
 Only certain kinds of acids are actually able to dissolve glass, but what types of acids specifically?

@@ -33,10 +33,6 @@ In this article, we’ll only look at **gradients of scalar functions**, but it�
 
 **Quick tip**: If you want to learn more about the gradient and other topics in **vector calculus**, I think you’ll really enjoy my course **[Advanced Math For Physics](https://courses.profoundphysics.com/p/advanced-math-for-physics-a-complete-self-study-course)** (link to the course page), which aims to give you all of the fundamental tools of vector calculus – and much more. The course is specifically focused on **applications in physics**, so everything you learn is aimed to be highly practical.
 
-Table of Contents
-
-Toggle
-
 ## How To Find The Gradient In Any Coordinate System (Simple Step-By-Step Method)
 
 The **general formula for the gradient of a scalar function in any *orthogonal* coordinate system** (meaning that each of the coordinate directions are independent of one another) is:

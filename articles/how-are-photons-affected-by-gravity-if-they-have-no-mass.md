@@ -23,10 +23,6 @@ In this article, we’ll look at how Newton didn’t quite get it right with gra
 
 If you’re wondering ***why* exactly photons do not have mass** in the first place, I have a full article covering that [here](https://profoundphysics.com/why-do-photons-have-no-mass-simple-proof/). I also cover why photons still have momentum, even though they have zero mass in [this article](https://profoundphysics.com/if-photons-have-no-mass-how-can-they-have-momentum/).
 
-Table of Contents
-
-Toggle
-
 ## Does Newtonian Gravity Affect Photons?
 
 The first and longest standing theory of gravity was Newton’s theory. This comes nicely within the framework of **Newton’s laws**,

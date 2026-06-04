@@ -31,10 +31,6 @@ However, before we get into special relativity and all that, let’s go over exa
 
 Since this article is going to discuss some topics from special relativity, you may also find my article **[Special Relativity For Dummies](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/)** useful as it covers a lot of the stuff discussed here.
 
-Table of Contents
-
-Toggle
-
 ## Does a Moving Charge Produce Both an Electric and a Magnetic Field?
 
 It’s often said that if a particle is charged, it produces an electric field and a moving charge produces a magnetic field. So, does a moving charged particle then produce both of these fields?

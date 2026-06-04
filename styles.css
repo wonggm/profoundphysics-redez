@@ -862,6 +862,11 @@ katex, .katex { font-size: 1.1em; }
   color: var(--color-ink);
   background: none;
 }
+.left-panel__link--active {
+  color: var(--color-primary);
+  border-left-color: var(--color-primary);
+  font-weight: 500;
+}
 .left-panel__link--all {
   font-weight: 500;
   color: var(--color-ink);
@@ -982,8 +987,9 @@ katex, .katex { font-size: 1.1em; }
   max-width: 100%;
   height: auto;
   border-radius: var(--r-lg);
-  margin: 1.5em 0;
+  margin: 1.5em auto;
   display: block;
+  border: 1px solid var(--color-hairline);
 }
 .article-page__body h2 {
   font-family: var(--font-display);

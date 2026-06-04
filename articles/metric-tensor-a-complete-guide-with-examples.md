@@ -23,10 +23,6 @@ In this article, we will be going over everything you need to know about the met
 
 We will also look at plenty of practical examples along the way. This allows you to see how the metric tensor is actually used – perhaps you’ll be able to do calculations with it yourself after this article!
 
-Table of Contents
-
-Toggle
-
 ## Why Do We Need The Metric Tensor?
 
 Let’s begin by discussing why we even care about the metric tensor in the first place.

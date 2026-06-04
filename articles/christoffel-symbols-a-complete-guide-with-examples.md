@@ -31,10 +31,6 @@ In case you’d want an **ad-free PDF version of this article** (an my other gen
   
 This course aims to give you all the **mathematical tools** you need to understand general relativity – including Christoffel symbols, the topic of this article. Inside the course, you’ll learn topics like tensor calculus in an **intuitive**, **beginner-friendly** and **highly practical** way that can be directly applied to understand general relativity.
 
-Table of Contents
-
-Toggle
-
 ## Connection Coefficients: What Are They Intuitively?
 
 Christoffel symbols are mathematically classified as **connection coefficients for the Levi-Civita connection**. But what exactly are these connection coefficients?

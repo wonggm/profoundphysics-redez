@@ -35,10 +35,6 @@ For example, I have an introductory article called **[General Relativity For Dum
 
 Anyway, let’s get started on special relativity.
 
-Table of Contents
-
-Toggle
-
 ## Intuition and Key Concepts Behind Special Relativity
 
 To get started, we need to take a look at what the logic and principles behind special relativity actually is.

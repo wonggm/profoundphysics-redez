@@ -38,10 +38,6 @@ For that, I’d recommend reading my **[introductory article on special relativi
 
 I also recommend checking out my full **[Mathematics of General Relativity -course](https://courses.profoundphysics.com/p/mathematics-of-general-relativity)** if you’re interested in a dedicated learning experience to take your knowledge of general relativity to a deep level.
 
-Table of Contents
-
-Toggle
-
 ## Why Is General Relativity Important?
 
 Before we get started on what general relativity actually is, there is an important aspect to be discussed: why should you even care about this topic?

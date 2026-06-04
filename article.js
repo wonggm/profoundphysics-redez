@@ -206,6 +206,23 @@
 
       // Build and wire the right-side table of contents
       buildTOC(renderArticle.headings);
+
+      // Highlight the current category in the left panel
+      highlightLeftPanelCategory(category);
+    }
+  }
+
+  // Highlight the matching category link in the left panel
+  function highlightLeftPanelCategory(category) {
+    // Remove existing active state
+    document.querySelectorAll('.left-panel__link').forEach(link => {
+      link.classList.remove('left-panel__link--active');
+    });
+
+    // Find and highlight the matching category link
+    const target = document.querySelector(`.left-panel__link[data-cat="${category}"]`);
+    if (target) {
+      target.classList.add('left-panel__link--active');
     }
   }
 

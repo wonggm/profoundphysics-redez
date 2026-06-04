@@ -21,10 +21,6 @@ Photons, which are essentially light particles or more accurately, the quanta of
 
 Now, to fully understand this, we have to go a little bit deeper into the theory behind photons. Later, I’ll also explain some ways the mass of a photon could actually be measured and why experimental evidence also seems to agree with the theoretical predictions.
 
-Table of Contents
-
-Toggle
-
 ## Intuitively, Why Can’t Photons Have Mass?
 
 First of all, let’s think about what mass actually means. In a modern sense, **mass is defined as the energy a particle has at rest** (i.e. *rest energy*). This is actually a fundamental prediction of Einstein’s special relativity, described by the **energy-momentum relation**:

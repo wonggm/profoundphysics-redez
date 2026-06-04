@@ -25,10 +25,6 @@ The two main perspectives are the classical or **Newtonian perception of time**,
 
 At the end, I will also explain a very interesting theory in which time is actually a vector, but not in the usual sense; it is a **bivector**.
 
-Table of Contents
-
-Toggle
-
 ## Why Is Time Usually Considered a Scalar?
 
 The classical Newtonian picture of time is probably closest to the intuitive idea that we have about time as opposed to something like the theory of relativity.

@@ -33,10 +33,6 @@ Note that you can get this article and my other general relativity articles in *
 
 With all this being said, let’s begin with an **intuitive overview** of the Friedmann equations and Friedmann cosmology. We will then dive deeper into the details later.
 
-Table of Contents
-
-Toggle
-
 ## Introduction to Friedmann Cosmology
 
 Now that the James Webb Space Telescope (JWST) is up and running, I want you to imagine that for a day you have control over the telescope. You might be curious to find the first Messier object, the Crab Nebula – the remains of the explosive death of a star, a supernova witnessed on Earth around a thousand years ago.

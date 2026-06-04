@@ -23,10 +23,6 @@ Now, what does all of the above stuff actually mean? In this article I’ll be g
 
 In case you’d want an **ad-free PDF version of this article** (an my other general relativity articles), you’ll find it [here](https://courses.profoundphysics.com/p/general-relativity-bundle), available as part of my full General Relativity Bundle.
 
-Table of Contents
-
-Toggle
-
 ## What Are Tensors, Intuitively?
 
 Essentially, tensors are mathematical objects that are used in many areas of physics (in general relativity, for example, because they have some very useful **transformation properties**) and also in many areas of mathematics (for example, differential geometry).

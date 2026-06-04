@@ -31,10 +31,6 @@ If the content of this article seems interesting, you may also enjoy my **[artic
 
 In case you’re interested, you can also get this article (and my other general relativity articles) in **downloadable PDF form** [here](https://courses.profoundphysics.com/p/general-relativity-bundle).
 
-Table of Contents
-
-Toggle
-
 ## How Light Moves Around a Black Hole (According To General Relativity)
 
 **Around a black hole, light moves along null geodesics. These are trajectories through spacetime that have a total length of exactly zero. Around a black hole and along these null geodesics, light can trace out parabolic trajectories, circular orbits or trajectories that end up spiraling into the black hole.**

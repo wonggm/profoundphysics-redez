@@ -29,10 +29,6 @@ Hamiltonian mechanics does have a little bit to do with **Lagrangian mechanics**
 
 **Quick tip**: To build a deep understanding of Lagrangian mechanics (which you will need to really understand Hamiltonian mechanics), I’d also highly recommend checking out my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page). The book is aimed to be a beginner-friendly and easy-to-understand read, but it will teach you **everything you need to know about Lagrangian mechanics and its applications** – regardless of your previous knowledge – with a focus on intuitive understanding and step-by-step examples.
 
-Table of Contents
-
-Toggle
-
 ## Why Do We Need Hamiltonian Mechanics?
 
 Before we get started on the actual details of the **Hamiltonian formulation**, I think it’s important to make explicitly clear why exactly you would want to learn and even consider Hamiltonian mechanics.

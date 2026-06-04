@@ -25,10 +25,6 @@ We’ll also discuss some reasons why calculus of variations is important as wel
 
 As it turns out, calculus of variations is one of the most important areas of math used in **physics**, yet not many people know much about it. In this article, you’ll learn both why it’s useful as well as what it’s actually about.
 
-Table of Contents
-
-Toggle
-
 ## Why Do We Need Calculus of Variations?
 
 First, we’ll go over why calculus of variations is important. This will also work as motivation for you to hopefully want to learn more about it.

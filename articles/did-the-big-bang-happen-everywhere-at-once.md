@@ -25,10 +25,6 @@ In this article, we’ll discuss the **Big Bang model of the universe**, some as
 
 Finally, we’ll touch on the validity of the Big Bang theory and what might come next!
 
-Table of Contents
-
-Toggle
-
 ## Did The Big Bang Happen At a Single Point?
 
 How most people usually think of the Big Bang is as some sort of explosion starting at a **single point**. However, did the Big Bang really happen at a single point?

@@ -27,10 +27,6 @@ We’ll also look at some concrete examples of *how much* time actually slows do
 
 In case you’d want an **ad-free PDF version of this article** (an my other general relativity articles), you’ll find it [here](https://courses.profoundphysics.com/p/general-relativity-bundle), available as part of my full General Relativity Bundle.
 
-Table of Contents
-
-Toggle
-
 ## Gravitational Time Dilation Explained
 
 If you’ve ever heard of **general relativity** or black holes before, you’ve probably also heard about the phenomenon called **gravitational time dilation**.

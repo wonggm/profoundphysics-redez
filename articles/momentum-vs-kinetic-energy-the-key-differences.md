@@ -54,10 +54,6 @@ I recommend you to keep reading as we’ll discuss all of these and what they me
   
 The course is ideal **for beginners** (for both self-studying and students) **who want to study physics at a deeper level, but don’t know *exactly* where to start**. You will learn everything you need to know about vectors, differential and integral calculus as well as many more advanced topics used in physics (like variational calculus and tensors) that not many university courses will only cover at graduate level at best – and you could learn it now! The course focuses on **clear and intuitive explanations**, LOTS of **practical examples** as well as **practice problems** you can do yourself.
 
-Table of Contents
-
-Toggle
-
 ## Why Is Momentum a Vector While Kinetic Energy Is a Scalar?
 
 **Kinetic energy is considered a scalar as it describes the total energy associated with motion, meaning that kinetic energy does not have any particular direction in space. Meanwhile, momentum describes motion in a specific direction, meaning that it has a different value in each spacial direction.**

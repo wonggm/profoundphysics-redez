@@ -27,10 +27,6 @@ If you’re new to special relativity, I’d recommend reading [this introductio
 
 You may also like my **[Advanced Math For Physics](https://courses.profoundphysics.com/p/advanced-math-for-physics-a-complete-self-study-course)** -course, if advanced electrodynamics and the math behind it is something you’re interesting in learning more deeply.
 
-Table of Contents
-
-Toggle
-
 ## Why Maxwell’s Equations Are Relativistic
 
 I want to first present an intuitive explanation for why Maxwell’s equations are relativistic before we look at this mathematically. To understand this, however, we need to first discuss **Lorentz transformations**.

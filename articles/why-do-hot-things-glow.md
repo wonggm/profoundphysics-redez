@@ -25,10 +25,6 @@ Most importantly, we’ll be looking at the concept of **black body radiation**,
 
 We’ll discover why objects have different colors at different temperatures and find out about the **Draper point** – the temperature above which *all* solid objects begin to visibly glow!
 
-Table of Contents
-
-Toggle
-
 ## How Atoms Emit Light According To Quantum Mechanics
 
 Everything is made out of fundamental particles – quarks, electrons, photons, neutrinos etc. These are all governed by the rules of **quantum mechanics**. That which we consider to be “stuff” is when these fundamental particles interact and stay together: **atoms**.

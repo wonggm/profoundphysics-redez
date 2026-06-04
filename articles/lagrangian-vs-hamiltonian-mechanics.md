@@ -38,10 +38,6 @@ Before we get started, in case you need a refresher on Lagrangian mechanics, you
 
 There are also some things that work differently in Lagrangian and Hamiltonian mechanics that are not discussed in this article. An example of this is **Noether’s theorem** – if you want to learn more about how it works in both of these formulations, check out [this article](https://profoundphysics.com/noethers-theorem-a-complete-guide/).
 
-Table of Contents
-
-Toggle
-
 ## The Lagrangian vs The Hamiltonian
 
 First of all, let’s discuss the most obvious difference between Lagrangian and Hamiltonian mechanics – the fundamental quantities used in the two formulations.

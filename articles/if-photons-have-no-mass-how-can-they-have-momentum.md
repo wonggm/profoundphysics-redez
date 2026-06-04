@@ -23,10 +23,6 @@ Now, it is not necessarily satisfying enough to just state the answer, so we’r
 
 Also, if you’re wondering **why exactly a photon has no mass** in the first place, I’ve got an entire [article](https://profoundphysics.com/why-do-photons-have-no-mass-simple-proof/) on that.
 
-Table of Contents
-
-Toggle
-
 ## How Do We Know That Photons Are Massless?
 
 First of all, how can we even know that photons are actually massless?

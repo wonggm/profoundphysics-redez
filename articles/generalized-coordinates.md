@@ -31,10 +31,6 @@ It’s worth noting that generalized coordinates are most commonly used in Lagra
 
 If you really want to go deep into understanding Lagrangian mechanics, you can also check out my **full book** on the topic – more information can be found [here](https://profoundphysicscourses.com/lagrangian-mechanics-book/).
 
-Table of Contents
-
-Toggle
-
 ## What Are Generalized Coordinates, Intuitively?
 
 To put it simply, **a set of generalized coordinates is just a set of any parameters that happen to completely describe the *configuration* of a system**.

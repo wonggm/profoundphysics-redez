@@ -31,10 +31,6 @@ Also, this guide will have a focus on learning **general relativity** specifical
 
 Of course, to learn general relativity, you should also know a bit about special relativity, so it will be covered too.
 
-Table of Contents
-
-Toggle
-
 ## What Are The Prerequisites For General Relativity?
 
 First of all, it’s important to know what you’re in for when beginning to study general relativity (and special as well, but it’s much much easier).

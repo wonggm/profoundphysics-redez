@@ -29,10 +29,6 @@ Now, these steps and tips are aimed at people who perhaps **don’t have a techn
 
 So, if you’re just getting started on vector calculus, the steps and tips given in this article should really benefit you as long as you follow them, of course!
 
-Table of Contents
-
-Toggle
-
 ## Prerequisites For Learning Vector Calculus
 
 Basically, **vector calculus is the study of applying basic calculus concepts** (such as derivatives and integrals) **to vectors**.

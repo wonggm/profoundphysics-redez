@@ -21,10 +21,6 @@ Gravity is a force that pulls objects down and it is commonly known to be approx
 
 In this article, we’ll take a look at how gravity can be modeled underground as well as how it actually changes as you go deeper. At the end, we’ll also talk about how going underground would practically affect the weight you feel (kind of similar to the idea that you’d feel lighter on the surface of the Moon).
 
-Table of Contents
-
-Toggle
-
 ## How Does Gravity Change With Depth? (Mathematical Models Included)
 
 If you know a little bit about physics, at a glance you may think that the force of gravity would actually get larger as you go deeper underground (closer to the center of Earth). You may think this way if you just look at Newton’s law of gravity (which describes the gravitational force F an object of mass m would experience):

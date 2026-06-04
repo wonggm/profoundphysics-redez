@@ -29,10 +29,6 @@ Also, this new quantum mechanical arena allows for more phenomena, such as an el
 
 Now, this article won’t be your typical pop-science content you’ll often find regarding this question. Instead, we’ll actually look at what our current understanding of physics and quantum mechanics *really* predicts and how this comes about from our mathematical models.
 
-Table of Contents
-
-Toggle
-
 ## Why Electrons Should Fall Into The Nucleus (According To Classical Mechanics)
 
 **Classical mechanics** is what we used to describe physics previously, before quantum mechanics was developed. Everything in classical mechanics is governed by **Newton’s laws** (like F=ma).

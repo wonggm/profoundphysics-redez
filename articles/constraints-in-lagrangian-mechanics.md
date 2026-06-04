@@ -39,10 +39,6 @@ Before we get started, I’d highly recommend you check out my article **[Lagran
   
 You may also find [this article](https://profoundphysics.com/generalized-coordinates/) helpful that is on the topic of **generalized coordinates**, **how to choose them** and **apply them in practice**. A lot of tools described in this article are going to be adding to the ideas discussed there.
 
-Table of Contents
-
-Toggle
-
 ## What Are Constraints and Constraint Forces?
 
 **Constraint forces are physical forces that make all objects in a given system obey the constraints specified for that system. For example, the normal force acting on a box sliding down a ramp is a constraint force that constrains the box to remain on the ramp and not fall through it.**

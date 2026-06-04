@@ -31,10 +31,6 @@ Here is a little comparison table of the two forces:
 
 In the following sections each of these differences will be explained in much more detail. We’ll also discuss an easy method to practically determine whether any force is conservative or not.
 
-Table of Contents
-
-Toggle
-
 ## Conservative Forces and Potential Energy
 
 One of the key differences between conservative and non-conservative forces is that **a conservative force can always be associated with a potential energy, while a non-conservative force cannot**.
