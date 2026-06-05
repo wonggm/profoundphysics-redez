@@ -56,6 +56,10 @@
         throwOnError: false,
         errorColor: '#cc785c',
         ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        // Unify text in math (\text, \mathrm, \textrm) with the body font
+        // so inline math doesn't look like a different typeface from the prose.
+        // Spectral is our body sans; KaTeX's default text mode uses KaTeX_SansSerif.
+        // We override with a CSS rule on .katex .mord.text, .mathit, etc.
       });
     } catch (e) {
       console.warn('KaTeX render error:', e);
