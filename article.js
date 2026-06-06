@@ -320,33 +320,83 @@
     });
   }
 
-  // Theme toggle
+  // Theme toggle (3 states: light, dark, system)
   function initThemeToggle() {
     const toggle = document.getElementById('theme-toggle');
-    if (!toggle) return;
+    const menu = document.getElementById('theme-menu');
+    if (!toggle || !menu) return;
 
     const html = document.documentElement;
-    const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    let currentTheme = saved || (prefersDark ? 'dark' : 'light');
+    const mql = window.matchMedia('(prefers-color-scheme: dark)');
 
-    function setTheme(theme) {
-      currentTheme = theme;
-      html.setAttribute('data-theme', theme);
-      localStorage.setItem('theme', theme);
+    const VALID = new Set(['light', 'dark', 'system']);
+    const stored = localStorage.getItem('theme');
+    let preference = VALID.has(stored) ? stored : 'system';
+
+    function effectiveTheme(pref) {
+      return pref === 'system' ? (mql.matches ? 'dark' : 'light') : pref;
     }
 
-    toggle.addEventListener('click', () => {
-      const next = currentTheme === 'light' ? 'dark' : 'light';
-      setTheme(next);
+    function applyTheme() {
+      html.setAttribute('data-theme', effectiveTheme(preference));
+      html.setAttribute('data-theme-pref', preference);
+    }
+
+    function setPreference(pref) {
+      preference = pref;
+      localStorage.setItem('theme', pref);
+      applyTheme();
+      updateMenuActiveState();
+    }
+
+    function updateMenuActiveState() {
+      menu.querySelectorAll('[data-theme-option]').forEach(btn => {
+        btn.setAttribute('aria-checked', btn.dataset.themeOption === preference ? 'true' : 'false');
+      });
+      const iconWrap = toggle.querySelector('.theme-toggle__icon-wrap');
+      if (iconWrap) iconWrap.setAttribute('data-mode', preference);
+    }
+
+    function openMenu() {
+      menu.classList.add('theme-menu--open');
+      toggle.setAttribute('aria-expanded', 'true');
+      updateMenuActiveState();
+    }
+    function closeMenu() {
+      menu.classList.remove('theme-menu--open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (menu.classList.contains('theme-menu--open')) closeMenu();
+      else openMenu();
     });
 
-    // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (!localStorage.getItem('theme')) {
-        setTheme(e.matches ? 'dark' : 'light');
+    menu.querySelectorAll('[data-theme-option]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setPreference(btn.dataset.themeOption);
+        closeMenu();
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) closeMenu();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('theme-menu--open')) {
+        closeMenu();
+        toggle.focus();
       }
     });
+
+    mql.addEventListener('change', () => {
+      if (preference === 'system') applyTheme();
+    });
+
+    applyTheme();
+    updateMenuActiveState();
   }
 
   async function init() {

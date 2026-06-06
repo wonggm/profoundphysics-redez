@@ -200,32 +200,106 @@
     }
   }
 
-  // ---------- Theme toggle ----------
+  // ---------- Theme toggle (3 states: light, dark, system) ----------
   function initThemeToggle() {
     const toggle = document.getElementById('theme-toggle');
-    if (!toggle) return;
+    const menu = document.getElementById('theme-menu');
+    if (!toggle || !menu) return;
 
     const html = document.documentElement;
-    const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    let currentTheme = saved || (prefersDark ? 'dark' : 'light');
+    const mql = window.matchMedia('(prefers-color-scheme: dark)');
 
-    function setTheme(theme) {
-      currentTheme = theme;
-      html.setAttribute('data-theme', theme);
-      localStorage.setItem('theme', theme);
+    // Resolve the stored preference. Valid values: 'light' | 'dark' | 'system'
+    // (anything else, including null, is treated as 'system')
+    const VALID = new Set(['light', 'dark', 'system']);
+    const stored = localStorage.getItem('theme');
+    let preference = VALID.has(stored) ? stored : 'system';
+
+    // The *effective* theme is what the page actually renders.
+    // When preference is 'system', the effective theme follows the OS.
+    function effectiveTheme(pref) {
+      return pref === 'system' ? (mql.matches ? 'dark' : 'light') : pref;
     }
 
-    toggle.addEventListener('click', () => {
-      const next = currentTheme === 'light' ? 'dark' : 'light';
-      setTheme(next);
+    function applyTheme() {
+      const eff = effectiveTheme(preference);
+      html.setAttribute('data-theme', eff);
+      // Reflect the *preference* (not effective) in the data-pref attribute
+      // so CSS can show the right toggle icon for the chosen mode.
+      html.setAttribute('data-theme-pref', preference);
+    }
+
+    function setPreference(pref) {
+      preference = pref;
+      localStorage.setItem('theme', pref);
+      applyTheme();
+      updateMenuActiveState();
+    }
+
+    function updateMenuActiveState() {
+      menu.querySelectorAll('[data-theme-option]').forEach(btn => {
+        const opt = btn.dataset.themeOption;
+        btn.setAttribute('aria-checked', opt === preference ? 'true' : 'false');
+      });
+      // Update the toggle button's icon by toggling visibility classes
+      const iconWrap = toggle.querySelector('.theme-toggle__icon-wrap');
+      if (iconWrap) {
+        iconWrap.setAttribute('data-mode', preference);
+      }
+    }
+
+    function openMenu() {
+      menu.classList.add('theme-menu--open');
+      toggle.setAttribute('aria-expanded', 'true');
+      updateMenuActiveState();
+    }
+    function closeMenu() {
+      menu.classList.remove('theme-menu--open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+    function toggleMenu() {
+      if (menu.classList.contains('theme-menu--open')) closeMenu();
+      else openMenu();
+    }
+
+    // Toggle button: open/close the dropdown
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
     });
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (!localStorage.getItem('theme')) {
-        setTheme(e.matches ? 'dark' : 'light');
+    // Option buttons: set preference and close
+    menu.querySelectorAll('[data-theme-option]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setPreference(btn.dataset.themeOption);
+        closeMenu();
+      });
+    });
+
+    // Click outside closes
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        closeMenu();
       }
     });
+
+    // Escape closes
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('theme-menu--open')) {
+        closeMenu();
+        toggle.focus();
+      }
+    });
+
+    // Live-update when preference is 'system' and the OS theme changes
+    mql.addEventListener('change', () => {
+      if (preference === 'system') applyTheme();
+    });
+
+    // Initial apply
+    applyTheme();
+    updateMenuActiveState();
   }
 
   // ---------- Init ----------
