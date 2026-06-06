@@ -31,11 +31,11 @@ In an intuitive sense, **the dot product is a measure of how much two vectors ar
 
 ![](assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_2.webp)
 
-If we know the angle between the two vectors (θ in the above picture), the dot product can be calculated by the following formula:
+If we know the angle between the two vectors ($θ$ in the above picture), the dot product can be calculated by the following formula:
 
 ![](assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_4.webp)
 
-An interesting way to interpret this cos(θ) -factor is that it describes a kind of “percentage of alignment” between the two vectors; if cos(θ)=1, the vectors are fully aligned (since θ=0°) and if cos(θ)=0 (meaning θ=90°), the vectors don’t align at all. Moreover, something like cos(θ)=0.97 (θ≈15°) would correspond to the vectors being “almost aligned”.
+An interesting way to interpret this cos($θ$) -factor is that it describes a kind of “percentage of alignment” between the two vectors; if cos($θ$)=1, the vectors are fully aligned (since $θ$=0°) and if cos($θ$)=0 (meaning $θ$=90°), the vectors don’t align at all. Moreover, something like cos($θ$)=0.97 ($θ$$≈$15°) would correspond to the vectors being “almost aligned”.
 
 The dot product can also be calculated in terms of the components of these vectors by using the following formula:
 
@@ -53,7 +53,7 @@ This quantity gives the **work done by the force**, which is essentially the *ch
 
 ![](assets/images/dot-product-in-physics-what-is-the-physical-meaning-of-it/img_6.webp)
 
-Here, dr is the displacement vector, which describes the change in position in some direction and F is the force vector. The dot product of these gives the *instantaneous* work (i.e. the work done in some very small segment of this path).
+Here, dr is the displacement vector, which describes the change in position in some direction and $F$ is the force vector. The dot product of these gives the *instantaneous* work (i.e. the work done in some very small segment of this path).
 
 Hopefully this is enough motivation to establish why dot products are indeed useful in physics. There are thousands of different applications for the dot product ranging from **basic mechanics to electromagnetism** and even to **graphic design and animations**.
 

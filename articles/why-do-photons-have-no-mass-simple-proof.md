@@ -61,7 +61,7 @@ $$E=\frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}$$
 
 If you are not familiar where this comes from or are interested in it, I’d recommend reading my [special relativity article](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/).
 
-From this, you simply solve for the mass and see what happens in the case of a photon (i.e. **when the velocity v is the speed of light c**):
+From this, you simply solve for the mass and see what happens in the case of a photon (i.e. **when the velocity $v$ is the speed of light c**):
 
 $$m=\frac{E}{c^2}\sqrt{1-\frac{v^2}{c^2}}$$
 
@@ -141,17 +141,17 @@ Notice that if the mass of a photon is zero, this reduces back to the ordinary a
 
 These electric fields can, of course, be observed and by measuring these so-called “damping factors” produced by the photon’s mass, it is possible to deduce an upper limit for the mass of a photon.
 
-These experiments have provided an **upper limit ranging from 10-42 to 8×10-51 kg** for the photon’s mass, depending on the type of experiment done (according to a [publication from the Huazhong University of Science and Technology](https://www.researchgate.net/publication/228689980_Experimental_tests_of_Coulomb's_Law_and_the_photon_rest_mass)).
+These experiments have provided an **upper limit ranging from 10-42 to 8$×$10-51 kg** for the photon’s mass, depending on the type of experiment done (according to a [publication from the Huazhong University of Science and Technology](https://www.researchgate.net/publication/228689980_Experimental_tests_of_Coulomb's_Law_and_the_photon_rest_mass)).
 
 There are even methods for measuring the mass of a photon that involve measurements of **planetary magnetic fields**.
 
-One of these experiments, by using data from the Pioneer 10 spacecraft flying by Jupiter, measured an **upper limit of 7×10-52 kg on the photon mass** (source: [review by the C.N. Yang Institute for Theoretical Physics and the Los Alamos National Laboratory](https://arxiv.org/pdf/0809.1003.pdf)).
+One of these experiments, by using data from the Pioneer 10 spacecraft flying by Jupiter, measured an **upper limit of 7$×$10-52 kg on the photon mass** (source: [review by the C.N. Yang Institute for Theoretical Physics and the Los Alamos National Laboratory](https://arxiv.org/pdf/0809.1003.pdf)).
 
 An even better result was obtained from experiments involving measurements of solar winds (a solar wind is basically plasma coming from the sun, which carries a magnetic field with itself).
 
 It turns out that if the photon had a mass, this plasma would behave differently, namely, there would be current produced and the plasma would get accelerated.
 
-Now, by observing the solar wind plasma and the maximum possible acceleration it could have (which is either very tiny or zero), it is possible to calculate an **upper limit of 2×10-54 kg** for a photon’s mass (according to the same source as for the other value above).
+Now, by observing the solar wind plasma and the maximum possible acceleration it could have (which is either very tiny or zero), it is possible to calculate an **upper limit of 2$×$10-54 kg** for a photon’s mass (according to the same source as for the other value above).
 
 ---
 

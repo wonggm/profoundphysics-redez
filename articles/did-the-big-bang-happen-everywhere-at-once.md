@@ -142,7 +142,7 @@ The Einstein field equations mathematically formalize this revolutionary idea as
 
 $$G_{\mu\nu}=8\pi GT_{\mu\nu}$$
 
-On the left hand side, everything to do with the **geometry and curvature of spacetime** is encoded in the symbol Gµν (called the Einstein tensor) and everything to do with **matter and energy** is wrapped up in Tµν (called the stress-energy tensor) and together they interact and interplay to produce gravity.
+On the left hand side, everything to do with the **geometry and curvature of spacetime** is encoded in the symbol G$μ$$ν$ (called the Einstein tensor) and everything to do with **matter and energy** is wrapped up in T$μ$$ν$ (called the stress-energy tensor) and together they interact and interplay to produce gravity.
 
 Now, the Big Bang model is one of these solutions to Einstein field equations – we generally get different solutions with different starting assumptions.
 
@@ -163,11 +163,11 @@ Line elements are essentially generalizations of **Pythagoras’ theorem** that 
 
 $$a^2+b^2=c^2$$
 
-These relate the three sides of a triangle, where c is the length of the hypotenuse – however, this formula does more than that.
+These relate the three sides of a triangle, where $c$ is the length of the hypotenuse – however, this formula does more than that.
 
 If we imagine a as the difference in the x-coordinates of two points and b as the difference in the y-coordinates of these points, then this is secretly telling us that the **shortest distance** between those two points is the straight line, the hypotenuse c, connecting them.
 
-We can generalize this to points in 3D where we would have a2+b2+c2=d2. Now the shortest distance between the two points is d and c is the difference in the z-coordinates of the two points.
+We can generalize this to points in 3D where we would have a2+b2+c2=d2. Now the shortest distance between the two points is d and $c$ is the difference in the z-coordinates of the two points.
 
 If we talk about space, it is convenient to talk about very small (infinitesimal) distances and we would write:
 

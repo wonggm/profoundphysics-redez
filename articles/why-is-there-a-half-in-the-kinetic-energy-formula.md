@@ -9,7 +9,7 @@ canonical: false
 
 # Why Is There a Half In The Kinetic Energy Formula?
 
-> The ½mv² falls out of integrating momentum over distance — the work–energy theorem in disguise.
+> The ½mv$²$ falls out of integrating momentum over distance — the work–energy theorem in disguise.
 
 *Originally published at [profoundphysics.com](https://profoundphysics.com/why-is-there-a-half-in-the-kinetic-energy-formula/).*
 
@@ -57,7 +57,7 @@ $$\left(1-\frac{v^2}{c^2}\right)^{-\frac{1}{2}}\approx1-\frac{v^2}{c^2}\cdot\lef
 
 Let’s do a little example to illustrate the point that this approximation works very well for low (classical) velocities.
 
-If we have an object going at, for example, 1% of the speed of light (0.01c, which is still about 3 million meters per second!), the Lorentz factor would give the value (the speed of light being about 3·108 m/s):
+If we have an object going at, for example, 1% of the speed of light (0.01c, which is still about 3 million meters per second!), the Lorentz factor would give the value (the speed of light being about 3$·$108 m/s):
 
 $$\frac{1}{\sqrt{1-\frac{\left(0.01\cdot3\cdot10^8\right)^2}{\left(3\cdot10^8\right)^2}}}\approx1.000050004$$
 

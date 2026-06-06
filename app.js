@@ -95,8 +95,6 @@
   // ---------- State ----------
   const state = {
     articles: [],
-    query: '',
-    category: 'all',
   };
 
   // ---------- DOM lookups ----------
@@ -121,67 +119,13 @@
 
   const sortByDateDesc = (a, b) => (b.date || '').localeCompare(a.date || '');
 
-  // ---------- Render: category pills ----------
-  function renderPills() {
-    if (!dom.pills) return;
-    dom.pills.innerHTML = CATEGORIES.map(c => `
-      <button
-        type="button"
-        role="tab"
-        class="category-tab"
-        data-category="${escapeAttr(c.id)}"
-        aria-pressed="${state.category === c.id ? 'true' : 'false'}"
-        aria-label="Filter: ${escapeAttr(c.label)}"
-        tabindex="${state.category === c.id ? '0' : '-1'}">
-        ${escapeHTML(c.label)}
-      </button>
-    `).join('');
-
-    const buttons = Array.from(dom.pills.querySelectorAll('.category-tab'));
-    buttons.forEach((btn, i) => {
-      btn.addEventListener('click', () => setCategory(btn.dataset.category));
-      btn.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-          e.preventDefault();
-          const next = buttons[(i + 1) % buttons.length];
-          next.focus();
-          setCategory(next.dataset.category);
-        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-          e.preventDefault();
-          const prev = buttons[(i - 1 + buttons.length) % buttons.length];
-          prev.focus();
-          setCategory(prev.dataset.category);
-        } else if (e.key === 'Home') {
-          e.preventDefault();
-          buttons[0].focus();
-          setCategory(buttons[0].dataset.category);
-        } else if (e.key === 'End') {
-          e.preventDefault();
-          buttons[buttons.length - 1].focus();
-          setCategory(buttons[buttons.length - 1].dataset.category);
-        }
-      });
-    });
-  }
-
   // ---------- Render: topic cards ----------
   function renderTopicCards() {
     if (!dom.topicCards) return;
-    const q = state.query.toLowerCase().trim();
-    const tokens = q.length ? q.split(/\s+/) : [];
-    const activeCategory = state.category;
 
-    // Filter articles
-    const matches = state.articles.filter(a => {
-      if (activeCategory !== 'all' && a.category !== activeCategory) return false;
-      if (tokens.length === 0) return true;
-      const haystack = (a.title + ' ' + a.excerpt).toLowerCase();
-      return tokens.every(t => haystack.includes(t));
-    });
-
-    // Group by category
+    // Group all articles by category
     const grouped = {};
-    for (const a of matches) {
+    for (const a of state.articles) {
       (grouped[a.category] = grouped[a.category] || []).push(a);
     }
 
@@ -189,11 +133,10 @@
     const cardsMarkup = visibleCats.map((cat, i) => {
       const list = grouped[cat.id] || [];
       const count = list.length;
-      const isActive = count > 0;
       return `
         <button
           type="button"
-          class="topic-card${isActive ? '' : ' topic-card--empty'}"
+          class="topic-card${count > 0 ? '' : ' topic-card--empty'}"
           data-topic="${escapeAttr(cat.id)}"
           aria-label="${escapeAttr(cat.label)} — ${count} articles"
           style="--card-delay: ${1200 + i * 80}ms">
@@ -218,12 +161,6 @@
     dom.topicCards.querySelectorAll('.topic-card:not(.topic-card--empty)').forEach(card => {
       card.addEventListener('click', () => openModal(card.dataset.topic));
     });
-
-    // Update results count
-    const totalLabel = matches.length === 0
-      ? 'No articles match your search.'
-      : `Showing ${matches.length} of ${state.articles.length} articles.`;
-    if (dom.resultsCount) dom.resultsCount.textContent = totalLabel;
   }
 
   // ---------- Modal ----------
@@ -297,19 +234,6 @@
         closeModal();
       }
     });
-  }
-
-  // ---------- State setters ----------
-  function setQuery(q) {
-    state.query = q;
-    renderTopicCards();
-  }
-
-  function setCategory(id) {
-    if (!CATEGORIES.find(c => c.id === id)) return;
-    state.category = id;
-    renderPills();
-    renderTopicCards();
   }
 
   // ---------- KaTeX ----------
@@ -434,29 +358,33 @@
     let width, height, centerX, centerY;
     let particles = [];
     let animId;
+    let noiseCanvas = null;
 
     const EQUATIONS = [
-      '∇·E = ρ/ε₀',
-      '∇×B = μ₀J + μ₀ε₀∂E/∂t',
-      'iℏ ∂ψ/∂t = Ĥψ',
-      'Gμν = 8πG Tμν',
-      'ds² = −c²dt² + dx²',
-      'ℒ = T − V',
-      'E = mc²',
-      '∂ℒ/∂q − d/dt(∂ℒ/∂q̇) = 0',
-      'H = Σ pᵢq̇ᵢ − L',
-      'ΔxΔp ≥ ℏ/2',
-      'S = k_B ln Ω',
-      '∮ E·dl = −dΦ_B/dt',
-      'Rμν − ½gμν R = 8πG Tμν',
-      'ψ = Ae^{i(kx−ωt)}',
-      'F = ma',
-      'p = ℏk',
-      'E² = (pc)² + (mc²)²',
-      '∇²φ = −ρ/ε₀',
-      'δS = 0',
-      '⟨x|p⟩ = e^{ipx/ℏ}',
+      '∇·E = ρ/ε₀', '∇×B = μ₀J + μ₀ε₀∂E/∂t', 'iℏ ∂ψ/∂t = Ĥψ',
+      'Gμν = 8πG Tμν', 'ds² = −c²dt² + dx²', 'ℒ = T − V',
+      'E = mc²', '∂ℒ/∂q − d/dt(∂ℒ/∂q̇) = 0', 'H = Σ pᵢq̇ᵢ − L',
+      'ΔxΔp ≥ ℏ/2', 'S = k_B ln Ω', '∮ E·dl = −dΦ_B/dt',
+      'Rμν − ½gμν R = 8πG Tμν', 'ψ = Ae^{i(kx−ωt)}', 'F = ma',
+      'p = ℏk', 'E² = (pc)² + (mc²)²', '∇²φ = −ρ/ε₀',
+      'δS = 0', '⟨x|p⟩ = e^{ipx/ℏ}', '∂²u/∂t² = c²∇²u',
+      'F = −∇V', 'dS ≥ δQ/T', 'λ = h/p',
     ];
+
+    // Pre-render noise texture for chalk grain
+    function createNoiseTexture() {
+      const nc = document.createElement('canvas');
+      nc.width = 256; nc.height = 256;
+      const nctx = nc.getContext('2d');
+      const id = nctx.createImageData(256, 256);
+      for (let i = 0; i < id.data.length; i += 4) {
+        const v = Math.random() * 255;
+        id.data[i] = v; id.data[i+1] = v; id.data[i+2] = v;
+        id.data[i+3] = 25;
+      }
+      nctx.putImageData(id, 0, 0);
+      return nc;
+    }
 
     function resize() {
       const rect = canvas.parentElement.getBoundingClientRect();
@@ -473,76 +401,131 @@
     }
 
     function createParticle() {
-      // Start near center with slight random offset
-      const angle = Math.random() * Math.PI * 2;
-      const speed = 0.15 + Math.random() * 0.35;
-      const startDist = Math.random() * 40;
+      // 3D explosion: particles emerge from center (z=0, far) toward viewer (z=1)
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+      const speed = 0.003 + Math.random() * 0.005;
 
       return {
-        x: centerX + Math.cos(angle) * startDist,
-        y: centerY + Math.sin(angle) * startDist,
-        vx: Math.cos(angle) * speed,
-        vy: Math.sin(angle) * speed,
-        rotation: (Math.random() - 0.5) * 0.3,
-        rotationSpeed: (Math.random() - 0.5) * 0.002,
+        x3d: 0, y3d: 0, z: 0,
+        dx3d: Math.sin(phi) * Math.cos(theta),
+        dy3d: Math.sin(phi) * Math.sin(theta),
+        dz: speed,
+        rotation: (Math.random() - 0.5) * 0.4,
+        rotationSpeed: (Math.random() - 0.5) * 0.001,
         text: EQUATIONS[Math.floor(Math.random() * EQUATIONS.length)],
-        fontSize: 11 + Math.random() * 6,
-        opacity: 0,
-        maxOpacity: 0.04 + Math.random() * 0.08,
+        baseFontSize: 12 + Math.random() * 8,
+        chalkSeed: Math.random() * 1000,
         life: 0,
-        maxLife: 400 + Math.random() * 600,
       };
     }
 
     function initParticles() {
       particles = [];
-      // Stagger initial particles across their lifecycle
-      const count = Math.min(30, Math.floor(width * height / 25000));
+      const count = Math.min(35, Math.floor(width * height / 20000));
       for (let i = 0; i < count; i++) {
         const p = createParticle();
-        p.life = Math.random() * p.maxLife;
+        p.z = Math.random(); // Stagger initial depths
+        const spread = Math.max(width, height) * 0.6;
+        p.x3d = p.dx3d * p.z * spread;
+        p.y3d = p.dy3d * p.z * spread;
         particles.push(p);
       }
+    }
+
+    // 3D → 2D perspective projection
+    function project(p) {
+      const perspective = 600;
+      const scale = perspective / (perspective + (1 - p.z) * 800);
+      return {
+        x: centerX + p.x3d * scale,
+        y: centerY + p.y3d * scale,
+        scale,
+      };
+    }
+
+    // Chalk-style text rendering: layered strokes with roughness
+    function drawChalkText(text, x, y, fontSize, opacity, rotation, seed) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate(rotation);
+      ctx.font = `${fontSize}px "AnthropicSerif", "Cormorant Garamond", Georgia, serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const r = isDark ? 250 : 20, g = isDark ? 249 : 20, b = isDark ? 245 : 19;
+
+      // Layer 1: Soft chalk dust glow
+      ctx.fillStyle = `rgba(${r},${g},${b},${opacity * 0.25})`;
+      ctx.shadowColor = `rgba(${r},${g},${b},${opacity * 0.15})`;
+      ctx.shadowBlur = fontSize * 0.4;
+      ctx.fillText(text, 0, 0);
+
+      // Layer 2: Rough chalk strokes (offset copies for texture)
+      ctx.shadowBlur = 0;
+      ctx.fillStyle = `rgba(${r},${g},${b},${opacity * 0.6})`;
+      const rough = Math.max(1, fontSize * 0.025);
+      for (let j = 0; j < 3; j++) {
+        const ox = Math.sin(seed + j * 1.7) * rough;
+        const oy = Math.cos(seed + j * 2.3) * rough;
+        ctx.fillText(text, ox, oy);
+      }
+
+      // Layer 3: Crisp core
+      ctx.fillStyle = `rgba(${r},${g},${b},${opacity})`;
+      ctx.fillText(text, 0, 0);
+
+      ctx.restore();
     }
 
     function draw() {
       ctx.clearRect(0, 0, width, height);
 
-      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-      const textColor = isDark ? 'rgba(250, 249, 245,' : 'rgba(20, 20, 19,';
+      // Sort by depth: far particles drawn first
+      particles.sort((a, b) => a.z - b.z);
 
-      for (let i = particles.length - 1; i >= 0; i--) {
+      for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
         p.life++;
-        p.x += p.vx;
-        p.y += p.vy;
+
+        // Expand outward in 3D
+        const spread = Math.max(width, height) * 0.8;
+        p.x3d = p.dx3d * p.z * spread;
+        p.y3d = p.dy3d * p.z * spread;
+        p.z += p.dz;
         p.rotation += p.rotationSpeed;
 
-        // Fade in/out based on life
-        const lifeRatio = p.life / p.maxLife;
-        if (lifeRatio < 0.15) {
-          p.opacity = (lifeRatio / 0.15) * p.maxOpacity;
-        } else if (lifeRatio > 0.8) {
-          p.opacity = ((1 - lifeRatio) / 0.2) * p.maxOpacity;
-        } else {
-          p.opacity = p.maxOpacity;
-        }
+        const proj = project(p);
 
-        // Respawn if dead or out of bounds
-        if (p.life >= p.maxLife || p.x < -100 || p.x > width + 100 || p.y < -100 || p.y > height + 100) {
+        // Respawn when past viewer or off-screen
+        if (p.z > 1.2 || proj.x < -200 || proj.x > width + 200 || proj.y < -200 || proj.y > height + 200) {
           particles[i] = createParticle();
           continue;
         }
 
-        // Draw
+        // Opacity: fade in from distance, fade out near viewer
+        let opacity;
+        if (p.z < 0.15) opacity = (p.z / 0.15) * 0.12;
+        else if (p.z > 0.85) opacity = ((1.2 - p.z) / 0.35) * 0.12;
+        else opacity = 0.12;
+
+        const fontSize = p.baseFontSize * proj.scale;
+        if (fontSize < 3 || opacity < 0.005) continue;
+
+        drawChalkText(p.text, proj.x, proj.y, fontSize, opacity, p.rotation, p.chalkSeed);
+      }
+
+      // Chalkboard grain overlay
+      if (noiseCanvas) {
         ctx.save();
-        ctx.translate(p.x, p.y);
-        ctx.rotate(p.rotation);
-        ctx.font = `${p.fontSize}px "AnthropicSerif", "Cormorant Garamond", Georgia, serif`;
-        ctx.fillStyle = `${textColor}${p.opacity})`;
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(p.text, 0, 0);
+        ctx.globalAlpha = 0.02;
+        ctx.globalCompositeOperation = 'overlay';
+        for (let nx = 0; nx < width; nx += 256) {
+          for (let ny = 0; ny < height; ny += 256) {
+            ctx.drawImage(noiseCanvas, nx, ny);
+          }
+        }
         ctx.restore();
       }
 
@@ -550,6 +533,7 @@
     }
 
     // Init
+    noiseCanvas = createNoiseTexture();
     resize();
     initParticles();
     draw();
@@ -585,11 +569,7 @@
   // ---------- Init ----------
   async function init() {
     // Cache DOM
-    dom.searchInput     = document.getElementById('search-input');
-    dom.pills           = document.getElementById('category-pills');
-    dom.resultsCount    = document.getElementById('results-count');
     dom.topicCards      = document.getElementById('topic-cards');
-    dom.navSearchBtn    = document.getElementById('nav-search-btn');
 
     // Init theme toggle
     initThemeToggle();
@@ -612,57 +592,19 @@
     }
     state.articles = (data.articles || []).slice();
 
-    // Read initial category from URL hash
-    const hashMatch = window.location.hash.match(/cat=([^&]+)/);
-    if (hashMatch) {
-      const cat = decodeURIComponent(hashMatch[1]);
-      if (CATEGORIES.find(c => c.id === cat)) {
-        state.category = cat;
-      }
-    }
-
-    // Wire search input
-    if (dom.searchInput) {
-      dom.searchInput.addEventListener('input', (e) => {
-        setQuery(e.target.value);
-      });
-      dom.searchInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          dom.searchInput.value = '';
-          setQuery('');
-          dom.searchInput.blur();
-        }
-      });
-    }
-
-    // Wire "Search" affordance in the top nav
-    if (dom.navSearchBtn && dom.searchInput) {
-      dom.navSearchBtn.addEventListener('click', () => {
-        const inputRect = dom.searchInput.getBoundingClientRect();
-        const top = window.scrollY + inputRect.top - 80;
-        window.scrollTo({ top, behavior: 'smooth' });
-        setTimeout(() => dom.searchInput.focus({ preventScroll: true }), 320);
-      });
-    }
-
-    // Wire footer topic links
+    // Wire footer topic links → scroll to archive
     document.querySelectorAll('a[data-cat]').forEach(a => {
       a.addEventListener('click', (e) => {
         e.preventDefault();
-        const cat = a.dataset.cat;
-        if (cat) {
-          setCategory(cat);
-          const target = document.getElementById('archive');
-          if (target) {
-            const top = window.scrollY + target.getBoundingClientRect().top - 80;
-            window.scrollTo({ top, behavior: 'smooth' });
-          }
+        const target = document.getElementById('archive');
+        if (target) {
+          const top = window.scrollY + target.getBoundingClientRect().top - 80;
+          window.scrollTo({ top, behavior: 'smooth' });
         }
       });
     });
 
     // Initial render
-    renderPills();
     renderTopicCards();
 
     // Start hero canvas animation

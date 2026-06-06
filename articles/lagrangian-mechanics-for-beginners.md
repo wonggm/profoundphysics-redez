@@ -9,7 +9,7 @@ canonical: false
 
 # Lagrangian Mechanics For Dummies: An Intuitive Introduction
 
-> The reformulation of mechanics that doesn't need forces — only energies and constraints. The Lagrangian ℒ = T − V is the whole game.
+> The reformulation of mechanics that doesn't need forces — only energies and constraints. The Lagrangian $ℒ$ = T − $V$ is the whole game.
 
 *Originally published at [profoundphysics.com](https://profoundphysics.com/lagrangian-mechanics-for-beginners/).*
 
@@ -185,7 +185,7 @@ Now, the same idea of stationary points applies to the action as well, but with 
 
 This is because the action is actually a **functional**, not just a function. If you want to know more about functionals and more generally, calculus of variations – which is the area of math Lagrangian mechanics is based on – you can check out [this article](https://profoundphysics.com/calculus-of-variations-for-beginners/).
 
-The basic idea is that **a stationary point in the action is defined as the functional differential equal to zero** (denoted as δA=0). This basically just means that a slight variation (differential) in the action should be zero.
+The basic idea is that **a stationary point in the action is defined as the functional differential equal to zero** (denoted as $δ$A=0). This basically just means that a slight variation (differential) in the action should be zero.
 
 The **principle of stationary action** mathematically:  
   
@@ -241,13 +241,13 @@ This derivation is based on the concepts of variational calculus, which I have a
 
 Anyway, we need to first of all think about what the Lagrangian and the action are actually functions of.
 
-Since the Lagrangian is T-V and the kinetic energy T is a function of velocity and potential energy V is a function of position, **the Lagrangian is then a function of velocity and position**:
+Since the Lagrangian is T-V and the kinetic energy T is a function of velocity and potential energy $V$ is a function of position, **the Lagrangian is then a function of velocity and position**:
 
 $$L=L\left(x{,}\ \dot{x}\right)\ \ \ \ \ \ {,}\ \dot{x}=\frac{dx}{dt}$$
 
 I’m going to sometimes denote the time derivative of something by putting a dot above it. This is a standard convention.
 
-Let’s now look at what we get from the principle of stationary action, i.e. the **functional differential of the action** (which should be equal to zero). We can also move the δ-symbol inside the integral:
+Let’s now look at what we get from the principle of stationary action, i.e. the **functional differential of the action** (which should be equal to zero). We can also move the $δ$-symbol inside the integral:
 
 $$\int_{t_1}^{t_2}\delta L\left(x{,}\ \dot{x}\right)dt=0$$
 
@@ -281,7 +281,7 @@ Now we can split the integral into two parts (since it’s just a sum):
 
 $$\int_{t_1}^{t_2}\frac{d}{dt}\left(\frac{\partial L}{\partial\dot{x}}\delta x\right)dt+\int_{t_1}^{t_2}\left(\frac{\partial L}{\partial x}\delta x-\delta x\frac{d}{dt}\frac{\partial L}{\partial\dot{x}}\right)dt$$
 
-In the first term, we’re taking the integral of a derivative so the dt’s basically “cancel” and it just becomes a substitution. We can also bring the δx outside the parentheses in the second term:
+In the first term, we’re taking the integral of a derivative so the dt’s basically “cancel” and it just becomes a substitution. We can also bring the $δ$x outside the parentheses in the second term:
 
 $$=\bigg/_{t_1}^{t_2}\left(\frac{\partial L}{\partial\dot{x}}\delta x\right)+\int{t_1}^{t_2}\delta x\left(\frac{\partial L}{\partial x}-\frac{d}{dt}\frac{\partial L}{\partial\dot{x}}\right)dt$$
 
@@ -291,7 +291,7 @@ What this means is that **the variance in the start and end points should equal 
 
 $$\delta x\left(t_1\right)=0\ \ {,}\ \ \delta x\left(t_2\right)=0$$
 
-If we now look at the first term in our formula, the first term will go to zero (since it has the terms δx(t1) and δx(t2) after we make the substitution):
+If we now look at the first term in our formula, the first term will go to zero (since it has the terms $δ$x(t1) and $δ$x(t2) after we make the substitution):
 
 $$\bigg/_{t_1}^{t_2}\left(\frac{\partial L}{\partial\dot{x}}\delta x\right)=0$$
 
@@ -409,7 +409,7 @@ Lagrangian mechanics is particularly useful for more complex systems, because al
 
 The general step-by-step process for finding the equations of motion of a system goes more or less like this:
 
-1. **Find a set of convenient coordinates (= *generalized coordinates*) for the specific problem.** These might be the usual Cartesian coordinates (x, y, z), but it is also possible to use coordinate systems such as spherical coordinates (r, θ, φ).
+1. **Find a set of convenient coordinates (= *generalized coordinates*) for the specific problem.** These might be the usual Cartesian coordinates (x, y, z), but it is also possible to use coordinate systems such as spherical coordinates (r, $θ$, $φ$).
 2. **Define the Lagrangian through the generalized coordinates**. For multiple objects in a system, the Lagrangian will be the sum of the difference between the kinetic and potential energies of each object:
 
 $$L=\frac{1}{2}\sum_i^{ }m_iv_i^2-\sum_i^{ }V_i$$
@@ -520,15 +520,15 @@ Our goal here with Lagrangian mechanics is to **obtain the equations of motion f
 
 There are many ways to do that – one would be by describing how the x- and y-coordinates of the bob change with time, but this is not necessarily the simplest way. The simplest way would be to use an angle, since that is enough to describe the position of the bob at all times.
 
-Here’s the setup – we begin by placing the pendulum in an x,y -coordinate system such that the rod is attached to the origin. I’ll also denote the angle relative to the vertical (y-axis) as θ.
+Here’s the setup – we begin by placing the pendulum in an x,y -coordinate system such that the rod is attached to the origin. I’ll also denote the angle relative to the vertical (y-axis) as $θ$.
 
 ![](assets/images/lagrangian-mechanics-for-beginners/img_24.webp)
 
-What we want to do is describe **how the angle θ changes with time** – so, it’s a function θ(t) here – by **constructing a Lagrangian** for this system and applying the **Euler-Lagrange equations**, just like we did previously in the case of a projectile. You’ll find out exactly how to do this below.
+What we want to do is describe **how the angle $θ$ changes with time** – so, it’s a function $θ$(t) here – by **constructing a Lagrangian** for this system and applying the **Euler-Lagrange equations**, just like we did previously in the case of a projectile. You’ll find out exactly how to do this below.
 
 Full solution of the simple pendulum
 
-The easiest way to begin is to first express the x- and y-coordinates of the pendulum bob in terms of the angle θ, as this will allow us to construct the Lagrangian very easily. The relations are shown below:
+The easiest way to begin is to first express the x- and y-coordinates of the pendulum bob in terms of the angle $θ$, as this will allow us to construct the Lagrangian very easily. The relations are shown below:
 
 ![](assets/images/lagrangian-mechanics-for-beginners/img_26.webp) 
 
@@ -538,19 +538,19 @@ Constructing the kinetic and potential energies – and the Lagrangian from thos
 
 $$T=\frac{1}{2}m\left(\dot{x}^2+\dot{y}^2\right)$$
 
-All we do is take the time derivatives of the expressions above for x and y and plug them into here. So, let’s do that (note that we have to use the chain rule here since θ=θ(t) depends on time):
+All we do is take the time derivatives of the expressions above for x and y and plug them into here. So, let’s do that (note that we have to use the chain rule here since $θ$=$θ$(t) depends on time):
 
 $$\dot{x}=\frac{d}{dt}\left(L\sin\theta\right)=L\dot{\theta}\cos\theta$$
 
 $$\dot{y}=\frac{d}{dt}\left(-L\cos\theta\right)=L\dot{\theta}\sin\theta$$
 
-These are the coordinate velocities in terms of the generalized coordinate θ. Plugging these into the kinetic energy formula, we have:
+These are the coordinate velocities in terms of the generalized coordinate $θ$. Plugging these into the kinetic energy formula, we have:
 
 $$T=\frac{1}{2}m\left(\left(L\dot{\theta}\cos\theta\right)^2+\left(L\dot{\theta}\sin\theta\right)^2\right)=\frac{1}{2}mL^2\dot{\theta}^2\left(\cos^2\theta+\sin^2\theta\right)=\frac{1}{2}mL^2\dot{\theta}^2$$
 
-Here, we’ve used the fact that cos2θ+sin2θ=1. This is the kinetic energy of the pendulum bob, expressed in terms of our generalized coordinate θ.
+Here, we’ve used the fact that cos2$θ$+sin2$θ$=1. This is the kinetic energy of the pendulum bob, expressed in terms of our generalized coordinate $θ$.
 
-Now, the potential energy of the bob is simply the usual gravitational potential energy V=mgh. The height h here is just the y-coordinate of the bob, which is given by y=-Lcosθ. So, the potential energy is:
+Now, the potential energy of the bob is simply the usual gravitational potential energy V=mgh. The height h here is just the y-coordinate of the bob, which is given by y=-Lcos$θ$. So, the potential energy is:
 
 $$V=-mgL\cos\theta$$
 
@@ -558,7 +558,7 @@ We then have all the pieces we need to construct the Lagrangian for the pendulum
 
 $$L=T-V=\frac{1}{2}mL^2\dot{\theta}^2+mgL\cos\theta$$
 
-This is the Lagrangian for this system in terms of our generalized coordinate θ. Since we have only one coordinate here, we also have just one Euler-Lagrange equation – an equation for the coordinate θ, of course:
+This is the Lagrangian for this system in terms of our generalized coordinate $θ$. Since we have only one coordinate here, we also have just one Euler-Lagrange equation – an equation for the coordinate $θ$, of course:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}-\frac{\partial L}{\partial\theta}=0$$
 
@@ -572,11 +572,11 @@ $$\Rightarrow\ \ mL^2\ddot{\theta}+mgL\sin\theta=0$$
 
 Here, the time derivative just adds another dot to $\dot{\theta}$.
 
-Moving the sinθ-term to the right and dividing by mL2, we get the final equation of motion:
+Moving the sin$θ$-term to the right and dividing by mL2, we get the final equation of motion:
 
 $$\ddot{\theta}=-\frac{g}{L}\sin\theta$$
 
-This differential equation completely describes the motion of the pendulum over time. The goal, of course, would be to solve it to find θ(t) – but the problem is that it is not actually possible to solve this differential equation fully analytically.
+This differential equation completely describes the motion of the pendulum over time. The goal, of course, would be to solve it to find $θ$(t) – but the problem is that it is not actually possible to solve this differential equation fully analytically.
 
 However, this really isn’t a big deal. In fact, most equations of motions are not going to be solvable anyway. The point is to be able to find them, after which we could perform approximations to them, obtain solutions numerically or simulate the system using the equations of motion.
 
@@ -586,7 +586,7 @@ The goal of Lagrangian mechanics is to find these equations of motion as efficie
 
 The moving inclined plane consists of a block of mass m that’s placed on an inclined ramp of mass of mass M. There is a gravitational acceleration of magnitude g downwards.
 
-The plane is tilted by an angle α with respect to the ground, such that the block begins sliding down the ramp. The total length of the ramp is L. In addition, the ramp itself is allowed to move in the horizontal direction.
+The plane is tilted by an angle $α$ with respect to the ground, such that the block begins sliding down the ramp. The total length of the ramp is L. In addition, the ramp itself is allowed to move in the horizontal direction.
 
 Our goal is to find out how both the block and the ramp begin moving as time passes – in other words, **find the equations of motion for the full system**.
 
@@ -602,7 +602,7 @@ Let’s begin by first finding the Cartesian coordinates of both the block and t
 
 **For the ramp**, its Cartesian coordinates are simply just x, which is a function of time and also one of our generalized coordinates and y=0 at all times.
 
-**For the block**, we can express its y-coordinate in terms of s as (L-s)sinα. Its x-coordinate, on the other hand, is the x-coordinate of the ramp (just x) *plus* the horizontal distance of the of the block to the left edge of the ramp, which we can express as scosα:
+**For the block**, we can express its y-coordinate in terms of s as (L-s)sin$α$. Its x-coordinate, on the other hand, is the x-coordinate of the ramp (just x) *plus* the horizontal distance of the of the block to the left edge of the ramp, which we can express as scos$α$:
 
 ![](assets/images/lagrangian-mechanics-for-beginners/img_30.webp)
 
@@ -624,7 +624,7 @@ $$T_r=\frac{1}{2}M\left(\dot{x}_r^2+\dot{y}_r^2\right)=\frac{1}{2}M\dot{x}^2$$
 
 $$T_b=\frac{1}{2}m\left(\dot{x}_b^2+\dot{y}_b^2\right)=\frac{1}{2}m\left(\left(\dot{x}+\dot{s}\cos\alpha\right)^2+\left(-\dot{s}\sin\alpha\right)^2\right)\\=\frac{1}{2}m\left(\dot{x}^2+2\dot{x}\dot{s}\cos\alpha+\dot{s}^2\cos^2\alpha+\dot{s}^2\sin^2\alpha\right)\\=\frac{1}{2}m\left(\dot{x}^2+2\dot{x}\dot{s}\cos\alpha+\dot{s}^2\right)$$
 
-The potential energy of the ramp is zero at all time. The potential energy of the block, on the other hand, is V=mgh. Here, h is the height of the block from the ground, so just yb. We can then express the potential energy as V=mgyb=mg(L-s)sinα.
+The potential energy of the ramp is zero at all time. The potential energy of the block, on the other hand, is V=mgh. Here, $h$ is the height of the block from the ground, so just yb. We can then express the potential energy as V=mgyb=mg(L-s)sin$α$.
 
 The total Lagrangian of the system is then the sum of all of these kinetic and potential energies:
 
@@ -658,7 +658,7 @@ $$\ddot{s}=g\sin\alpha-\left(-\frac{m}{M+m}\ddot{s}\cos\alpha\right)\cos\alpha$$
 
 $$\Rightarrow\ \ \ddot{s}=\frac{M+m}{M+m\left(1-\cos^2\alpha\right)}g\sin\alpha$$
 
-We can still write 1-cos2α=sin2α here to get:
+We can still write 1-cos2$α$=sin2$α$ here to get:
 
 $$\ddot{s}=\frac{\left(M+m\right)g\sin\alpha}{M+m\sin^2\alpha}$$
 
@@ -670,7 +670,7 @@ We then have our final set of equations of motion, which describe the motion of 
 
 $$\begin{cases}\ddot{x}=-\frac{mg\sin\alpha\cos\alpha}{M+m\sin^2\alpha}\\ \ddot{s}=\frac{\left(M+m\right)g\sin\alpha}{M+m\sin^2\alpha}\end{cases}$$
 
-An important thing to note about both of these is that the right-hand sides are just constants, since m, M, g and α are all constant parameters. Therefore, solving these equations of motion is very simple – we just integrate both sides twice (we’ll also take the initial conditions to all be zero here):
+An important thing to note about both of these is that the right-hand sides are just constants, since m, M, g and $α$ are all constant parameters. Therefore, solving these equations of motion is very simple – we just integrate both sides twice (we’ll also take the initial conditions to all be zero here):
 
 $$\begin{cases}x\left(t\right)=-\frac{1}{2}\frac{mg\sin\alpha\cos\alpha}{M+m\sin^2\alpha}t^2\\s\left(t\right)=\frac{1}{2}\frac{\left(M+m\right)g\sin\alpha}{M+m\sin^2\alpha}t^2\end{cases}$$
 
@@ -696,15 +696,15 @@ But what exactly are these generalized coordinates? These are (as the name may s
 
 See, in Lagrangian mechanics, we are not limited to any particular set of coordinates such as the typical x,y,z -coordinate system.
 
-Instead, you could have, for example, some angle θ as your coordinate in a problem involving rotational motion.
+Instead, you could have, for example, some angle $θ$ as your coordinate in a problem involving rotational motion.
 
 The beautiful thing about Lagrangian mechanics is that the problem solving methods (discussed earlier) work *exactly* the same, **no matter what coordinates you wish to use**.
 
 These generalized coordinates have some very useful advantages to the regular Cartesian coordinates (of course you can still use Cartesian coordinates, if you wish):
 
-- **Generalized coordinates allow us to implicitly contain ALL information about how a system behaves** (for example, choosing polar coordinates (r and θ) for a pendulum would already include the fact that the pendulum moves in a circle; using only Cartesian coordinates, you’d have to impose certain *constraints* on the system).
+- **Generalized coordinates allow us to implicitly contain ALL information about how a system behaves** (for example, choosing polar coordinates (r and $θ$) for a pendulum would already include the fact that the pendulum moves in a circle; using only Cartesian coordinates, you’d have to impose certain *constraints* on the system).
 - **The right choice of generalized coordinates can make a calculation extremely simple**.
-- **Generalized coordinates can reduce the number of variables/equations needed to solve a specific problem** (as an example, choosing only an angle θ for a pendulum would be enough to find the equations of motion, while in Cartesian coordinates, you’d need both the x and y -coordinates).
+- **Generalized coordinates can reduce the number of variables/equations needed to solve a specific problem** (as an example, choosing only an angle $θ$ for a pendulum would be enough to find the equations of motion, while in Cartesian coordinates, you’d need both the x and y -coordinates).
 - **Generalized coordinates allow different quantities to be expressed easily in a more general form** (generalized velocity, generalized momentum, generalized forces etc.).
 
 I actually have a **full article discussing generalized coordinates in detail and how to use them** (as well as examples of this), which you’ll find [here.](https://profoundphysics.com/generalized-coordinates/) I highly recommend checking it out, as generalized coordinates are one of the most important parts of Lagrangian mechanics.
@@ -749,7 +749,7 @@ Now, consider the Lagrangian for a particle in **polar coordinates**:
 
 $$L=\frac{1}{2}m\left(\dot{r}^2+r^2\dot{\theta}^2\right)$$
 
-Here, we have the generalized coordinates r and θ, so we’ll have a generalized momentum for each of them:
+Here, we have the generalized coordinates r and $θ$, so we’ll have a generalized momentum for each of them:
 
 $$p_r=\frac{\partial L}{\partial\dot{r}}=\frac{\partial}{\partial\dot{r}}\left(\frac{1}{2}m\left(\dot{r}^2+r^2\dot{\theta}^2\right)\right)=m\dot{r}$$
 
@@ -757,7 +757,7 @@ $$p_{\theta}=\frac{\partial L}{\partial\dot{\theta}}=\frac{\partial}{\partial\do
 
 The first one (pr) is simply the ordinary momentum again (p=mv), since r is the position of the particle.
 
-The second term (pθ) is more interesting; it is the **angular momentum**. Indeed, if you’re using polar coordinates, the generalized momentum associated with the coordinate θ will be the angular momentum.
+The second term (p$θ$) is more interesting; it is the **angular momentum**. Indeed, if you’re using polar coordinates, the generalized momentum associated with the coordinate $θ$ will be the angular momentum.
 
 Here, you might see how this generalized momentum is actually quite useful; it allows us to define the momentum in an extremely general way. If you’re not convinced yet, let’s do one more example, one that’s actually outside of classical mechanics.
 
@@ -854,9 +854,9 @@ First, instead of there being a simple Lagrangian for fields, there is something
 
 $$\mathscr{L}=\mathscr{L}\left(\phi{,}\ \partial_{\mu}\phi\right)$$
 
-This ∂µ is called the 4-gradient (i.e. the relativistic equivalent to a regular gradient), which is simply a derivative w.r.t both space and time (since the field depends on both space and time).
+This $∂$$μ$ is called the 4-gradient (i.e. the relativistic equivalent to a regular gradient), which is simply a derivative w.r.t both space and time (since the field depends on both space and time).
 
-The action for a field is then this Lagrangian density integrated, not over time, but over *spacetime* (this we denote as d4x). This action should also be stationary (i.e. δA=0):
+The action for a field is then this Lagrangian density integrated, not over time, but over *spacetime* (this we denote as d4x). This action should also be stationary (i.e. $δ$A=0):
 
 $$\delta A=\delta\int_{ }^{ }\mathscr{L}\left(\phi{,}\ \partial_{\mu}\phi\right)d^4x=0$$
 
@@ -872,7 +872,7 @@ $$\mathscr{L}=-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}+i\bar{\psi}\gamma^{\mu}D_{\mu}\ps
 
 This is actually a really condensed version of the full Standard Model Lagrangian, which in its full form, looks quite nasty.
 
-The point, however, is that this Lagrangian encodes the dynamics of a bunch of fields in the Standard Model (ψ and ϕ, the Dirac spinor field and the Higgs field, to name a couple) and can then be used to obtain the full dynamics of each field.
+The point, however, is that this Lagrangian encodes the dynamics of a bunch of fields in the Standard Model ($ψ$ and ϕ, the Dirac spinor field and the Higgs field, to name a couple) and can then be used to obtain the full dynamics of each field.
 
 Another important modern physics -related application of Lagrangians comes from general relativity, where the *Einstein field equations* can be derived from something called the **Einstein-Hilbert action**. I actually present the full derivation in [this article](https://profoundphysics.com/derivation-of-einstein-field-equations/).
 

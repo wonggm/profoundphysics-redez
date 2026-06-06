@@ -9,7 +9,7 @@ canonical: false
 
 # Gradient In Different Coordinates (Intuition & Step-By-Step Examples)
 
-> Why ∇f looks different in Cartesian, polar, and spherical — and what stays invariant.
+> Why $∇$f looks different in Cartesian, polar, and spherical — and what stays invariant.
 
 *Originally published at [profoundphysics.com](https://profoundphysics.com/gradient-in-different-coordinates/).*
 
@@ -64,7 +64,7 @@ The first thing we need to note is that pretty much every coordinate system we m
 
 For commonly used coordinates, like polar, spherical and so on, the metric is well-known (you’ll find some examples later in the article).
 
-In 3 dimensions, the metric can be represented as a 3×3-matrix (in 2D, we would have a 2×2-matrix as we’ll see in the case of polar coordinates). For **orthogonal coordinate systems**, the metric is also *diagonal*:
+In 3 dimensions, the metric can be represented as a 3$×$3-matrix (in 2D, we would have a 2$×$2-matrix as we’ll see in the case of polar coordinates). For **orthogonal coordinate systems**, the metric is also *diagonal*:
 
 $$g_{ij}=\begin{pmatrix}g_{11}&0&0\\0&g_{22}&0\\0&0&g_{33}\end{pmatrix}$$
 
@@ -124,7 +124,7 @@ If you now write this sum out (over both i and j) and pick the corresponding met
 
 Now, the reason we want to express the gradient like this is because in this form, we can now easily do a coordinate transformation to obtain the gradient in ANY coordinate system.
 
-Coordinate transformations can be done by using the Jacobian matrix (Λ). In case you’re not familiar with this, I’d recommend checking out my [Advanced Math For Physics -course](https://profoundphysicscourses.com/advanced-math/).
+Coordinate transformations can be done by using the Jacobian matrix ($Λ$). In case you’re not familiar with this, I’d recommend checking out my [Advanced Math For Physics -course](https://profoundphysicscourses.com/advanced-math/).
 
 Anyway, a coordinate transformation is basically done by multiplying a vector, tensor or covector with either the Jacobian or the inverse Jacobian matrix and summing over appropriate indices.
 
@@ -146,7 +146,7 @@ I’m going to clean this expression up a little:
 
 $$\nabla f=\sum_{ij}^{ }\sum_{mk}^{ }\Lambda_m^{\overline{i}}\Lambda_{\overline{i}}^m\Lambda_k^{\overline{j}}\Lambda_{\overline{j}}^kg^{mk}\frac{\partial f}{\partial x^m}\vec{e}_k$$
 
-Now, here we essentially have the “products” (or more precisely, index contractions) of the inverse Jacobian and the Jacobian matrices (the Λ’s). The product (contraction) of a matrix with its inverse is just 1:
+Now, here we essentially have the “products” (or more precisely, index contractions) of the inverse Jacobian and the Jacobian matrices (the $Λ$’s). The product (contraction) of a matrix with its inverse is just 1:
 
 $$\sum_{im}^{ }\Lambda_m^{\overline{i}}\Lambda_{\overline{i}}^m=1{,}\ \sum_{kj}^{ }\Lambda_k^{\overline{j}}\Lambda_{\overline{j}}^k=1$$
 
@@ -158,7 +158,7 @@ We’re almost there. The real magic happens if we now make the assumption of an
 
 $$g^{mk}=\begin{pmatrix}g^{11}&0&0\\0&g^{22}&0\\0&0&g^{33}\end{pmatrix}=g^{kk}\delta^{mk}$$
 
-This δmk (which is a matrix with 1’s on the diagonal and 0’s everywhere else) essentially guarantees that the metric is diagonal as all the off-diagonal components will automatically be zero.
+This $δ$mk (which is a matrix with 1’s on the diagonal and 0’s everywhere else) essentially guarantees that the metric is diagonal as all the off-diagonal components will automatically be zero.
 
 Now, these gkk-components are related to the scale factors by:
 
@@ -170,7 +170,7 @@ Our gradient formula can now be expressed as:
 
 $$\nabla f=\sum_{mk}^{ }g^{kk}\delta^{mk}\frac{\partial f}{\partial x^m}\vec{e}_k=\sum_{mk}^{ }\frac{1}{h_k^2}\delta^{mk}\frac{\partial f}{\partial x^m}\vec{e}_k$$
 
-Due to this “identity matrix”, δmk, all terms in this sum where m≠k will automatically be zero since all the values of δmk for m≠k (the off-diagonal components) are zero. Therefore, the non-zero terms in this sum all have m=k (in which case δmk=1), so this becomes:
+Due to this “identity matrix”, $δ$mk, all terms in this sum where m$≠$k will automatically be zero since all the values of $δ$mk for m$≠$k (the off-diagonal components) are zero. Therefore, the non-zero terms in this sum all have m=k (in which case $δ$mk=1), so this becomes:
 
 $$\nabla f=\sum_{mk}^{ }\frac{1}{h_k^2}\delta^{mk}\frac{\partial f}{\partial x^m}\vec{e}_k=\sum_k^{ }\frac{1}{h_k^2}\frac{\partial f}{\partial x^k}\vec{e}_k$$
 
@@ -218,13 +218,13 @@ Before we look at more examples, let’s try to understand what the gradient in 
 
 The gradient of a scalar function is essentially a vector that represents **how much the function changes in each coordinate direction**.
 
-Now, in polar coordinates, the θ-basis vector originally has a **length of r** (not the unit vector in the above formula), meaning that its length changes as you go further away from the origin.
+Now, in polar coordinates, the $θ$-basis vector originally has a **length of r** (not the unit vector in the above formula), meaning that its length changes as you go further away from the origin.
 
 ![](assets/images/gradient-in-different-coordinates/img_6.webp)
 
-However, the gradient is used to only describe how the function f changes with respect to the **coordinates** (r and θ) and NOT account for how the basis vectors change.
+However, the gradient is used to only describe how the function f changes with respect to the **coordinates** (r and $θ$) and NOT account for how the basis vectors change.
 
-That’s why we divide by this factor of r in the gradient formula; to get rid of the scaling of the θ-basis vector as this does not have anything to do with how the function itself changes (which is what we care about when calculating a gradient).
+That’s why we divide by this factor of r in the gradient formula; to get rid of the scaling of the $θ$-basis vector as this does not have anything to do with how the function itself changes (which is what we care about when calculating a gradient).
 
 This then allows us to express the gradient (change in the function f) “correctly” in terms of **unit basis vectors**.
 
@@ -258,7 +258,7 @@ Inserting all of the spherical coordinate stuff into this, we get the **gradient
 
 $$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{1}{r\sin\theta}\frac{\partial f}{\partial\phi}\hat{\phi}$$
 
-Intuitively, these factors of 1/r and 1/rsinθ here again take care of the fact that the θ- and φ-basis vectors have non-unit lengths:
+Intuitively, these factors of 1/r and 1/rsin$θ$ here again take care of the fact that the $θ$- and $φ$-basis vectors have non-unit lengths:
 
 $$\left|\vec{e}_{\theta}\right|=r\\\left|\vec{e}_{\phi}\right|=r\sin\theta$$
 
@@ -290,7 +290,7 @@ Inserting all of the cylindrical coordinate stuff into this, we get the **gradie
 
 $$\nabla f=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}+\frac{\partial f}{\partial z}\hat{z}$$
 
-Once again, the θ-basis vector here has a non-unit length:
+Once again, the $θ$-basis vector here has a non-unit length:
 
 $$\left|\vec{e}_{\theta}\right|=r$$
 

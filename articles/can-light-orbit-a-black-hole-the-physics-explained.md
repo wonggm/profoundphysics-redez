@@ -65,7 +65,7 @@ The term *null geodesic* comes from the fact that the “spacetime length” of 
 
 $$ds^2=g_{\mu\nu}dx^{\mu}dx^{\nu}=0$$
 
-Here, gµν is the metric tensor, which describes the geometry of any given spacetime. These dx’s are spacetime coordinate displacements (so, essentially they give the distances in any given coordinate direction; for example, if we were to define one of our coordinates as y, then dy would give the displacement in the y-direction). The dxµ and dxν are just convenient ways to label all of the coordinates we have in a given spacetime as the equation above contains an “implicit” summation over both the µ and ν indices.
+Here, g$μ$$ν$ is the metric tensor, which describes the geometry of any given spacetime. These dx’s are spacetime coordinate displacements (so, essentially they give the distances in any given coordinate direction; for example, if we were to define one of our coordinates as y, then dy would give the displacement in the y-direction). The dx$μ$ and dx$ν$ are just convenient ways to label all of the coordinates we have in a given spacetime as the equation above contains an “implicit” summation over both the $μ$ and $ν$ indices.
 
 This equation for the metric line element may be unfamiliar to some of you, but it is one of the most commonly used equations used in general relativity (I explain this in more detail in [this article](https://profoundphysics.com/general-relativity-for-dummies/), as well as how it is actually used in practice).
 
@@ -77,15 +77,15 @@ For this article, since we’re interested in the spacetime around a black hole,
 
 $$g_{\mu\nu}=\begin{pmatrix}-\left(1-\frac{r_s}{r}\right)&0&0&0\\0&\left(1-\frac{r_s}{r}\right)^{-1}&0&0\\0&0&r^2&0\\0&0&0&r^2\sin^2\theta\end{pmatrix}$$
 
-These are the components of the Schwarzschild metric, represented as a matrix. The indices µ and ν both run from 0 to 3 (for example, g00 corresponds to the component -(1-rs/r) and so on). The parameter rs is the Schwarzschild radius of the black hole, while r and θ are spacetime coordinates describing the radial distance from the center of the black hole (r) and the angle of the orbital plane (θ).
+These are the components of the Schwarzschild metric, represented as a matrix. The indices $μ$ and $ν$ both run from 0 to 3 (for example, g00 corresponds to the component -(1-rs/r) and so on). The parameter rs is the Schwarzschild radius of the black hole, while r and $θ$ are spacetime coordinates describing the radial distance from the center of the black hole (r) and the angle of the orbital plane ($θ$).
 
-The line element written in full detail with this metric is as follows (note that our spacetime coordinates are t, r, θ and φ and the coordinate displacements are denoted as dt, dr, dθ and dφ):
+The line element written in full detail with this metric is as follows (note that our spacetime coordinates are t, r, $θ$ and $φ$ and the coordinate displacements are denoted as dt, dr, d$θ$ and d$φ$):
 
 $$ds^2=-\left(1-\frac{r_s}{r}\right)dt^2+\frac{dr^2}{1-\frac{r_s}{r}}+r^2d\theta^2+r^2\sin^2\theta d\varphi^2$$
 
 Note; for the rest of this article, I’ll be using the so-called “natural units”, in which c=1. This, however, does not change any of the results we get.
 
-Around a non-rotating black hole, the spacetime has spherical symmetry; this simply means that everything “looks the same” from all directions. We can therefore choose the plane of orbit as anything we wish, so we will set it to θ=π/2, so that sinθ=1 and dθ=0.
+Around a non-rotating black hole, the spacetime has spherical symmetry; this simply means that everything “looks the same” from all directions. We can therefore choose the plane of orbit as anything we wish, so we will set it to $θ$=$π$/2, so that sin$θ$=1 and d$θ$=0.
 
 Moreover, since we’re interested in **null geodesics** (which are defined by ds2=0), we get the following equation:
 
@@ -109,13 +109,13 @@ Our starting point will be the equation we derived earlier that describes the nu
 
 $$-\left(1-\frac{r_s}{r}\right)dt^2+\frac{dr^2}{1-\frac{r_s}{r}}+r^2d\varphi^2=0$$
 
-We’ll now divide both sides by an *affine parameter* dλ2, which basically defines the rate of change of these spacetime coordinates along the trajectory of the light ray, giving us:
+We’ll now divide both sides by an *affine parameter* d$λ$2, which basically defines the rate of change of these spacetime coordinates along the trajectory of the light ray, giving us:
 
 $$-\left(1-\frac{r_s}{r}\right)\left(\frac{dt}{d\lambda}\right)^2+\frac{1}{1-\frac{r_s}{r}}\left(\frac{dr}{d\lambda}\right)^2+r^2\left(\frac{d\varphi}{d\lambda}\right)^2=0$$
 
 You can think of the affine parameter as playing the same role as time does in ordinary mechanics; it defines the rates of change of things like position, which then gives us the velocity). In relativity, we use an affine parameter instead of time since time itself is one of our spacetime coordinates (the most commonly used affine parameter is called *proper time*, however, this is not defined for particles moving at the speed of light, so we cannot use it here).
 
-These dt/dλ, dr/dλ and dφ/dλ are essentially the *spacetime velocities* or rates of change of our spacetime coordinates. We’ll denote these by putting a dot above the coordinate in question, so the equation then becomes:
+These dt/d$λ$, dr/d$λ$ and d$φ$/d$λ$ are essentially the *spacetime velocities* or rates of change of our spacetime coordinates. We’ll denote these by putting a dot above the coordinate in question, so the equation then becomes:
 
 $$-\left(1-\frac{r_s}{r}\right)\dot{t}^2+\frac{1}{1-\frac{r_s}{r}}\dot{r}^2+r^2\dot \varphi^2=0$$
 
@@ -129,9 +129,9 @@ $$L=-\frac{1}{2}\left(1-\frac{r_s}{r}\right)\dot{t}^2+\frac{1}{2}\frac{1}{1-\fra
 
 Notice the similarity between this and the line element formula. Essentially, the “trick” is that to find the Lagrangian, you have to just replace the coordinate displacements in the line element with these coordinate velocities (things with the dots above them) as well as divide everything by 2.
 
-Now, using this Lagrangian we can notice two things; the Lagrangian only depends on the coordinate r, but not the coordinates t and φ (the Lagrangian DOES depend on t-dot and φ-dot, but NOT on t and φ themselves).
+Now, using this Lagrangian we can notice two things; the Lagrangian only depends on the coordinate r, but not the coordinates t and $φ$ (the Lagrangian DOES depend on t-dot and $φ$-dot, but NOT on t and $φ$ themselves).
 
-If you’re familiar with Lagrangian mechanics, specifically Noether’s theorem (which I cover more in [this article](https://profoundphysics.com/is-lagrangian-mechanics-useful-9-key-reasons-why-it-absolutely-is/)), this means that there exists **conserved quantities** associated with both of these coordinates (t and φ).
+If you’re familiar with Lagrangian mechanics, specifically Noether’s theorem (which I cover more in [this article](https://profoundphysics.com/is-lagrangian-mechanics-useful-9-key-reasons-why-it-absolutely-is/)), this means that there exists **conserved quantities** associated with both of these coordinates (t and $φ$).
 
 We can derive these quantities by writing out the Euler-Lagrange equations for both of these coordinates:
 
@@ -139,13 +139,13 @@ $$\frac{d}{d\lambda}\frac{\partial L}{\partial\dot{t}}=\frac{\partial L}{\partia
 
 $$\frac{d}{d\lambda}\frac{\partial L}{\partial\dot{\varphi}}=\frac{\partial L}{\partial\varphi}$$
 
-From these equations, we get by inserting the Lagrangian (notice that the right-hand side on both of these is automatically zero as the Lagrangian does not depend on t or φ at all, and therefore ∂L/∂t=0 and ∂L/∂φ=0):
+From these equations, we get by inserting the Lagrangian (notice that the right-hand side on both of these is automatically zero as the Lagrangian does not depend on t or $φ$ at all, and therefore $∂$L/$∂$t=0 and $∂$L/$∂$$φ$=0):
 
 $$\frac{d}{d\lambda}\left(\left(1-\frac{r_s}{r}\right)\dot{t}\right)=0$$
 
 $$\frac{d}{d\lambda}\left(r^2\dot{\varphi}\right)=0$$
 
-Now let’s think about what it means for the derivative (with respect to the affine parameter λ in this case) of something to be zero as we have here; it means that the quantity has to be a **constant**.
+Now let’s think about what it means for the derivative (with respect to the affine parameter $λ$ in this case) of something to be zero as we have here; it means that the quantity has to be a **constant**.
 
 So, we then get two constants of motion from the above equations (the first one is the energy E and the second is the angular momentum L; these both arise from Noether’s theorem), which allows us to express the coordinate velocities in terms of these constants:
 
@@ -157,7 +157,7 @@ Now remember the equation for the null geodesics we had earlier:
 
 $$-\left(1-\frac{r_s}{r}\right)\dot{t}^2+\frac{1}{1-\frac{r_s}{r}}\dot{r}^2+r^2\dot \varphi^2=0$$
 
-We can insert the expressions for t-dot and φ-dot into this and get:
+We can insert the expressions for t-dot and $φ$-dot into this and get:
 
 $$-\frac{E^2}{\left(1-\frac{r_s}{r}\right)}+\frac{1}{1-\frac{r_s}{r}}\dot{r}^2+\frac{L^2}{r^2}=0$$
 
@@ -203,7 +203,7 @@ In this case, we have something called a **parabolic orbit** (as it kind of look
 
 ![](assets/images/can-light-orbit-a-black-hole-the-physics-explained/img_10.webp)
 
-This type of bending of a light ray around a massive body (it doesn’t necessarily have to be a black hole) can actually be used as experimental evidence for general relativity by measuring the *deflection angle* and comparing it to the result predicted by the mathematics of general relativity (δφ=2rs/b, where b is the *impact parameter* of the photon).
+This type of bending of a light ray around a massive body (it doesn’t necessarily have to be a black hole) can actually be used as experimental evidence for general relativity by measuring the *deflection angle* and comparing it to the result predicted by the mathematics of general relativity ($δ$$φ$=2rs/b, where b is the *impact parameter* of the photon).
 
 In the second case, the energy of the photon is just right so that it is able to “climb up” to this peak and stay there:
 
@@ -297,7 +297,7 @@ The Schwarzschild radius depends on the mass of the black hole (M) and can be ca
 
 $$r_s=\frac{2GM}{c^2}$$
 
-Here, c is the speed of light and G is the gravitational constant (both constants of nature). In Newtonian gravity, the *escape velocity* of a massive body (the velocity needed to escape the gravitational pull of the massive body) is vesc=√(2GM/r), so the Schwarzschild radius has the nice interpretation of being the radius at which the escape velocity becomes greater than the speed of light (by setting vesc=c and solving for r), which of course defines the event horizon of a black hole.
+Here, $c$ is the speed of light and G is the gravitational constant (both constants of nature). In Newtonian gravity, the *escape velocity* of a massive body (the velocity needed to escape the gravitational pull of the massive body) is vesc=√(2GM/r), so the Schwarzschild radius has the nice interpretation of being the radius at which the escape velocity becomes greater than the speed of light (by setting vesc=c and solving for r), which of course defines the event horizon of a black hole.
 
 ### Is The Photon Sphere Stable?
 

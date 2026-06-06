@@ -23,11 +23,11 @@ $$G_{\mu\nu}+\Lambda g_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}$$
 
 For more information on what this equation means physically, you can read my [introduction to general relativity](https://profoundphysics.com/general-relativity-for-dummies/).
 
-In reality, this one equation really includes 16 different equations, one for each combination of µ and ν, which can both be either 0,1,2 or 3 (in reality, there is actually only 10 independent equations due to some symmetry properties).
+In reality, this one equation really includes 16 different equations, one for each combination of $μ$ and $ν$, which can both be either 0,1,2 or 3 (in reality, there is actually only 10 independent equations due to some symmetry properties).
 
 Moreover, these quantities seen in the usual form of the field equation are actually much more complicated.
 
-Fundamentally, however, they all contain the metric tensor gµν so it is indeed possible to expand the above equation in terms of the metric only (and its derivatives).
+Fundamentally, however, they all contain the metric tensor g$μ$$ν$ so it is indeed possible to expand the above equation in terms of the metric only (and its derivatives).
 
 **This is what the fully expanded Einstein field equations look like when written out in terms of the metric:**
 

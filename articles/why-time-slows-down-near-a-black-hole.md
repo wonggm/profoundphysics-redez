@@ -157,7 +157,7 @@ The length of this four-vector is simply the total spacetime interval or line el
 
 $$ds^2=g_{\mu\nu}dx^{\mu}dx^{\nu}$$
 
-This formula is basically the curved spacetime equivalent of the Pythagorean theorem. For more on this, I recommend reading [my general relativity article](https://profoundphysics.com/general-relativity-for-dummies/). This metric tensor, gµν, is required here since the basis vectors are not constant.
+This formula is basically the curved spacetime equivalent of the Pythagorean theorem. For more on this, I recommend reading [my general relativity article](https://profoundphysics.com/general-relativity-for-dummies/). This metric tensor, g$μ$$ν$, is required here since the basis vectors are not constant.
 
 Since the only non-zero component of the displacement four-vector is the time component, we get:
 
@@ -199,7 +199,7 @@ In a sense, proper time is a more meaningful measure of time as it is always the
 
 That being said, what really matters is the difference in the time measurements between the two observers, which results in the phenomenon of **gravitational time dilation**.
 
-Mathematically, it’s possible to derive an equation for both the **coordinate time (t) and proper time (τ) as a function of the distance (r) from the black hole’s center** (note that these are only valid for *stationary* observers, because otherwise we’d have to account for other time dilation effects also):
+Mathematically, it’s possible to derive an equation for both the **coordinate time (t) and proper time ($τ$) as a function of the distance (r) from the black hole’s center** (note that these are only valid for *stationary* observers, because otherwise we’d have to account for other time dilation effects also):
 
 $$t\left(r\right)=\frac{r_s}{c}\ln\left(\frac{\sqrt{r}-\sqrt{r_s}}{\sqrt{r}+\sqrt{r_s}}\right)+\frac{2}{3}\sqrt{\frac{r^3}{r_sc^2}}+\frac{2}{c}\sqrt{r_sr}$$
 
@@ -278,7 +278,7 @@ So, we can calculate the coordinate time that would pass for a given amount of p
 
 $$\Delta t=\frac{\Delta\tau}{\sqrt{1-\frac{r_s}{r}}}$$
 
-As a reminder; proper time (τ) is the time that passes for the observer who is near the black hole, while coordinate time (t) is the time a far away observer would see pass for this observer near the black hole.
+As a reminder; proper time ($τ$) is the time that passes for the observer who is near the black hole, while coordinate time (t) is the time a far away observer would see pass for this observer near the black hole.
 
 It’s interesting to look at some actual numerical values for the time dilation and how they depend on the distance from the black hole.
 
@@ -298,7 +298,7 @@ Below I’ve collected a table of different values of the time dilation for diff
 | 1.0005 rs | 44.7 days |
 | 1.00005 rs | 141 days |
 
-Here we’re comparing the time passed in 24 hours near the black hole to how much time passes on Earth in this same period (so we’re taking Δτ=24 h, which is the time passed near the black hole and Δt is the time passed on Earth that we get from our formula above).
+Here we’re comparing the time passed in 24 hours near the black hole to how much time passes on Earth in this same period (so we’re taking $Δ$$τ$=24 h, which is the time passed near the black hole and $Δ$t is the time passed on Earth that we get from our formula above).
 
 The interesting thing about the above values is that the time dilation increases quite slowly, but as you get closer and closer to the black hole, the effects become much more significant and over time the effect sort of “compunds” on itself.
 
@@ -312,7 +312,7 @@ Now, how would we calculate the time dilation in these more general cases? The *
 
 $$\gamma=\frac{1}{\sqrt{-g_{\mu\nu}\frac{dx^{\mu}}{dt}\frac{dx^{\nu}}{dt}\frac{1}{c^2}}}$$
 
-If you’re not familiar with the mathematics of general relativity, this may look quite complicated. Implicitly, this formula contains a summation over both the µ and ν indices, which run from 0 to 3. These time derivatives of the coordinates describe the coordinate velocities.
+If you’re not familiar with the mathematics of general relativity, this may look quite complicated. Implicitly, this formula contains a summation over both the $μ$ and $ν$ indices, which run from 0 to 3. These time derivatives of the coordinates describe the coordinate velocities.
 
 This formula indeed gives the **time dilation in any spacetime for any observer**, moving or not. We can, however, simplify this a lot by only looking at observers that are stationary near the black hole (relative to the far away observer).
 
@@ -340,27 +340,27 @@ The time dilation factors obtained from these g00-metric components are then as 
 
 $$\gamma_R=\frac{1}{\sqrt{1-\frac{r_s}{r}+\frac{r_Q^2}{r^2}}}\\\gamma_R=\frac{1}{\sqrt{1-\frac{r_s}{r}+\frac{r_Q^2}{r^2}}}\\\gamma_K=\frac{1}{\sqrt{1-\frac{r_sr}{r^2+a^2\cos^2\theta}}}$$
 
-Note that if we choose θ=π/2, this actually reduces to the Schwarzschild time dilation factor, meaning that in the θ=π/2-plane, the time dilation would appear as if the black hole was not rotating at all.
+Note that if we choose $θ$=$π$/2, this actually reduces to the Schwarzschild time dilation factor, meaning that in the $θ$=$π$/2-plane, the time dilation would appear as if the black hole was not rotating at all.
 
 $$\gamma_{KN}=\frac{1}{\sqrt{1-\frac{r_sr-r_Q^2}{r^2+a^2\cos^2\theta}}}$$
 
 Here are a few noteworthy details about these time dilation factors:
 
 - All of these **reduce to the Schwarzschild time dilation factor** if we take Q=0 and a=0.
-- The time dilation factors for the **rotating black holes** depend on the **θ-coordinate**, which we’ll take as the angle relative to the z-axis (which is also the spin-axis of the black hole).
+- The time dilation factors for the **rotating black holes** depend on the **$θ$-coordinate**, which we’ll take as the angle relative to the z-axis (which is also the spin-axis of the black hole).
 - Physically, this means that the time dilation as seen by a far away observer will be different depending on the **relative angle** between the far away observer and the observer near the black hole.
 - This is due to a phenomenon called **frame dragging**, which can be thought of as the rotating black hole “dragging” the spacetime around it as it rotates (a nice analogue of this is like water “circling” around a drain in a pool).
 - Also, due to this frame-dragging effect, all observers are naturally “dragged” to rotate with the black hole; thus, for an observer to remain stationary, it has to oppose the rotation of the black hole such that it remains still. This is only possible outside a certain distance called the **stationary limit surface**.
 
 ![](assets/images/why-time-slows-down-near-a-black-hole/img_14.webp) 
 
-Here we’ve taken the Earth (the observer far away from the black hole) to be sitting still in the xy-plane, which lies at the value of θ=π/2.
+Here we’ve taken the Earth (the observer far away from the black hole) to be sitting still in the xy-plane, which lies at the value of $θ$=$π$/2.
 
 I explain the effect of frame dragging in more detail in [this article](https://profoundphysics.com/black-hole-orbits/). In there, I also go over how frame dragging actually results in some extremely interesting and complicated **3D orbital mechanics** around a black hole.
 
 To get an idea of how these time dilation factors for the different types of black holes actually differ from the simple Schwarzschild black hole, I’ve made a little **interactive tool** for you to play around with (which you’ll find down below).
 
-This tool allows you to see the graphs of all the time dilation factors (plotted as functions of the r-coordinate) for different values of the black hole’s mass M and the angle θ. This allows you to visualize how these values actually affect the time dilation.
+This tool allows you to see the graphs of all the time dilation factors (plotted as functions of the r-coordinate) for different values of the black hole’s mass M and the angle $θ$. This allows you to visualize how these values actually affect the time dilation.
 
 To turn on the animations in the graphs below, press either one of the sliding scales, then the top right corner with 3 bars, then the little gear icon (which reads “Object Properties”) and tick the “Animation On” -box.
 

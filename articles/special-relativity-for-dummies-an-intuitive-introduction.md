@@ -184,7 +184,7 @@ So, different kinds of coordinate systems may have differently defined metric te
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_10.webp)
 
-Metric tensors are often represented as matrices such as this. Here both m and n run from 1 to 3, forming a 3×3 matrix. In general, the metric could have any number of dimensions, but in this case it has 3.
+Metric tensors are often represented as matrices such as this. Here both m and n run from 1 to 3, forming a 3$×$3 matrix. In general, the metric could have any number of dimensions, but in this case it has 3.
 
 We can easily check that this particular metric indeed gives back the good old Pythagorean theorem. All you do is simply sum together every possible combination of m and n like this:
 
@@ -204,7 +204,7 @@ $$dx^1=dx\\dx^2=dy\\dx^3=dz$$
 
 Now, let’s get back to spacetime intervals again. We’re going to use this generalization of the Pythagorean theorem, but with a different form of the metric tensor.
 
-Firstly, we have to note that in spacetime, the indices of the metric tensor run **from 0 to 3** instead of 1 to 3. These indices are usually denoted by μ and ν instead of m and n.
+Firstly, we have to note that in spacetime, the indices of the metric tensor run **from 0 to 3** instead of 1 to 3. These indices are usually denoted by $μ$ and $ν$ instead of m and n.
 
 The reason for the indices 0-3 is that **the 0-index is actually defined as the time component while indices 1-3 are the regular spacial coordinates** (x,y,z).
 
@@ -214,7 +214,7 @@ $$\left(dS\right)^2=c^2\left(dt^2\right)-\left(dx^2\right)-\left(dy\right)^2-\le
 
 The Metric Tensor of Special Relativity & The Spacetime Interval (click to see more)
 
-The metric tensor in special relativity has a very special form and a special name; it is typically called the **Minkowski metric** (instead of gμν, it is denoted by ημν) and instead of having 1’s in it, it is defined as:
+The metric tensor in special relativity has a very special form and a special name; it is typically called the **Minkowski metric** (instead of g$μ MATH0 μ$$ν$) and instead of having 1’s in it, it is defined as:
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_12.webp)
 
@@ -222,7 +222,7 @@ The Minkowski metric can also be defined as having the diagonal elements (-1, 1,
 
 It is possible to show that this particular metric indeed produces an **invariant spacetime interval**, which we’ll do when we get to the Lorentz transformations.
 
-Now, the interval in spacetime is given by the generalized Pythagorean theorem like this (where both μ and ν run from 0 to 3):
+Now, the interval in spacetime is given by the generalized Pythagorean theorem like this (where both $μ$ and $ν$ run from 0 to 3):
 
 $$\left(dS\right)^2=\sum_{\mu\nu}^{ }\eta_{\mu\nu}dx^{\mu}dx^{\nu}$$
 
@@ -256,7 +256,7 @@ The Einstein Summation Convention (click to see more)
 
 The Einstein summation convention, in its simplicity, basically just means that **whenever there is an object with a lower index multiplied by another object with the same index upstairs, the indices are automatically summed over**.
 
-In the formula for a spacetime interval, you can see this being the case. By the summation convention, we could leave out this summation sign and the fact that there are these repeated upper-lower indices, tells you that it actually means a **sum over μ and ν**:
+In the formula for a spacetime interval, you can see this being the case. By the summation convention, we could leave out this summation sign and the fact that there are these repeated upper-lower indices, tells you that it actually means a **sum over $μ$ and $ν$**:
 
 $$\left(dS\right)^2=\sum_{\mu\nu}^{ }\eta_{\mu\nu}dx^{\mu}dx^{\nu}=\eta_{\mu\nu}dx^{\mu}dx^{\nu}$$
 
@@ -280,13 +280,13 @@ This is actually not too difficult to do. We know that **time can be expressed a
 
 Well, we do know what those could be. A distance interval that is invariant is simply the **spacetime interval** and a velocity that is invariant is the **speed of light**! Could we use those?
 
-Dividing the invariant spacetime interval and the invariant speed of light (their squares actually), we get a time interval that must also be invariant (denoted by dτ):
+Dividing the invariant spacetime interval and the invariant speed of light (their squares actually), we get a time interval that must also be invariant (denoted by d$τ$):
 
 $$\frac{\left(dS\right)^2}{c^2}=\left(d\tau\right)^2$$
 
 This guess indeed turns out to be correct (there are, however, more mathematical ways to show it, but this approach was more simple and intuitive in my opinion).
 
-**The quantity dτ is called the proper time interval and it essentially plays the role of what ordinary time is used for in Newtonian mechanics**.
+**The quantity d$τ$ is called the proper time interval and it essentially plays the role of what ordinary time is used for in Newtonian mechanics**.
 
 Now, you may be wondering if there’s any physical meaning for this ‘invariant time’ and indeed there is.
 
@@ -302,7 +302,7 @@ Okay then, we can now obtain a more accurate, mathematical definition for this p
 
 $$\left(d\tau\right)^2=\frac{\left(dS^2\right)}{c^2}$$
 
-Now, inserting the definition for a spacetime interval (we’re now using the summation convention as explained in the last section, so these repeated upper and lower indices μ and ν really mean a sum over them):
+Now, inserting the definition for a spacetime interval (we’re now using the summation convention as explained in the last section, so these repeated upper and lower indices $μ$ and $ν$ really mean a sum over them):
 
 $$\left(d\tau\right)^2=\frac{1}{c^2}\eta_{\mu\nu}dx^{\mu}dx^{\nu}$$
 
@@ -368,19 +368,19 @@ Or solved for the x-coordinate of the blue line:
 
 $$x=\frac{v}{c}x^0$$
 
-We can now find Δx, which is simply **the difference of the x-coordinates between the blue line and the red line** (red line having the x-coordinate x=0):
+We can now find $Δ$x, which is simply **the difference of the x-coordinates between the blue line and the red line** (red line having the x-coordinate x=0):
 
 $$\Delta x=\frac{v}{c}x^0-0=\frac{v}{c}x^0$$
 
-Then, when we transform frames from A to B (i.e. shift the coordinates so that the blue line is set vertically), the x-coordinate that B would describe A to have (xB) is simply the difference of the x-coordinate of A (x) and the shift between the two lines (Δx):
+Then, when we transform frames from A to B (i.e. shift the coordinates so that the blue line is set vertically), the x-coordinate that B would describe A to have (xB) is simply the difference of the x-coordinate of A (x) and the shift between the two lines ($Δ$x):
 
 $$x_B=x-\Delta x=x-\frac{v}{c}x^0$$
 
 Keep this equation in mind as we’ll need it soon. Before we do, however, we have to also find the x0-coordinate that B would describe A to have.
 
-Now the problem with this is that for this, we also need to calculate the shift or **difference between the x0-coordinates of these two lines** (Δx0). This, however, can not be deduced directly from the picture above.
+Now the problem with this is that for this, we also need to calculate the shift or **difference between the x0-coordinates of these two lines** ($Δ$x0). This, however, can not be deduced directly from the picture above.
 
-We can luckily use a little trick which is to **reflect the blue line about the yellow line** (light ray). This gives us a simple way to get Δx0. This is basically what it looks like in the picture:
+We can luckily use a little trick which is to **reflect the blue line about the yellow line** (light ray). This gives us a simple way to get $Δ$x0. This is basically what it looks like in the picture:
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_23.webp)
 
@@ -390,11 +390,11 @@ Now, reflecting a line in this symmetrical kind of way is actually the same thin
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_25.webp)
 
-This indeed gives us what we need to get Δx0. First we just have to solve for x0 from the equation for the reflected blue line (and inserting k=c/v):
+This indeed gives us what we need to get $Δ$x0. First we just have to solve for x0 from the equation for the reflected blue line (and inserting k=c/v):
 
 $$x=kx^0\\x^0=\frac{1}{k}x=\frac{v}{c}x$$
 
-Then Δx0 is simply the **difference between the x0-coordinates of the reflected blue line and the reflected red line** (reflected red line having the x0-coordinate x0=0):
+Then $Δ$x0 is simply the **difference between the x0-coordinates of the reflected blue line and the reflected red line** (reflected red line having the x0-coordinate x0=0):
 
 $$\Delta x^0=\frac{v}{c}x-0=\frac{v}{c}x$$
 
@@ -406,9 +406,9 @@ The mathematical formulas describing the transformations for both of the coordin
 
 $$x_B=x-\frac{v}{c}x^0\\x_B^0=x^0-\frac{v}{c}x$$
 
-But this is not actually quite correct yet. We don’t know if these equations are actually true for every transformation. Thus, more generally we multiply the equations by a **scaling factor** γ.
+But this is not actually quite correct yet. We don’t know if these equations are actually true for every transformation. Thus, more generally we multiply the equations by a **scaling factor** $γ$.
 
-Now, **the scaling factor will generally depend on the relative velocity between the two frames we’re transforming between**. So, the scaling factor is a function of velocity, meaning that; γ=γ(v).
+Now, **the scaling factor will generally depend on the relative velocity between the two frames we’re transforming between**. So, the scaling factor is a function of velocity, meaning that; $γ$=$γ$(v).
 
 In fact, this scaling factor turns out to be necessary for the equations to work and it also has to be **the same for both of these transformation equations**.
 
@@ -418,7 +418,7 @@ Anyway, the **Lorentz transformation** equations then have the form:
 
 $$x_B=\gamma\left(v\right)\left(x-\frac{v}{c}x^0\right)\\x_B^0=\gamma\left(v\right)\left(x^0-\frac{v}{c}x\right)$$
 
-Now, what is γ(v) and how do we find it? I’ll just tell you that it is actually a very common thing often seen in relativity and it’s called the **Lorentz factor**. Next, we will derive what it actually is.
+Now, what is $γ$(v) and how do we find it? I’ll just tell you that it is actually a very common thing often seen in relativity and it’s called the **Lorentz factor**. Next, we will derive what it actually is.
 
 ### The Lorentz Factor
 
@@ -434,11 +434,11 @@ So, in order to interchange between these frames, we only have to **change the s
 
 $$x'=\gamma\left(x-\frac{v}{c}x^0\right)\ \Leftrightarrow\ x=\gamma\left(x'+\frac{v}{c}\left(x^0\right)'\right)$$
 
-Now we essentially have two equations that form a system of equations, which we can solve for γ:
+Now we essentially have two equations that form a system of equations, which we can solve for $γ$:
 
 $$\begin{cases}x'=\gamma\left(x-\frac{v}{c}x^0\right)&\\x=\gamma\left(x'+\frac{v}{c}\left(x^0\right)'\right)&\end{cases}$$
 
-What you’ll get is that the **Lorentz factor** γ is defined as:
+What you’ll get is that the **Lorentz factor** $γ$ is defined as:
 
 $$\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$$
 
@@ -464,7 +464,7 @@ We can clearly see that the x0-terms cancel out and we’re left with:
 
 $$x=\gamma^2x-\frac{v^2}{c^2}x$$
 
-Then, solving for γ:
+Then, solving for $γ$:
 
 $$\frac{x}{x-\frac{v^2}{c^2}x}=\gamma^2\ \ \ \ \Rightarrow\ \ \ \ \ \gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$$
 
@@ -506,11 +506,11 @@ Since we’re only interested in the t-coordinate, we only need the transformati
 
 $$t'=\gamma\left(t-\frac{v}{c^2}x\right)\\\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$$
 
-Let’s first calculate the value for γ. Since Mary was travelling at 90 % of the speed of light (c), we can plug in v=0.9c:
+Let’s first calculate the value for $γ$. Since Mary was travelling at 90 % of the speed of light (c), we can plug in v=0.9c:
 
 $$\gamma=\frac{1}{\sqrt{1-\frac{\left(0.9c\right)^2}{c^2}}}=\frac{1}{\sqrt{1-\frac{0.81c^2}{c^2}}}=\frac{1}{\sqrt{1-0.81}}\approx2.3$$
 
-Now, plugging in all the values in the t’ equation (t=2, x=3, v=0.9c, γ=2.3 and c=3×108), we get:
+Now, plugging in all the values in the t’ equation (t=2, x=3, v=0.9c, $γ$=2.3 and c=3$×$108), we get:
 
 $$t'=\gamma\left(t-\frac{v}{c^2}x\right)=2.3\cdot\left(2-\frac{0.9c}{c^2}\cdot3\right)=2.3\cdot\left(2-\frac{0.9}{3\cdot10^8}\cdot3\right)\approx4.6$$
 
@@ -572,7 +572,7 @@ Here the terms with 2’s in them cancel out and we’re left with:
 
 $$\left(S'\right)^2=c^2\gamma^2t^2+\gamma^2\frac{v^2}{c^2}x^2-\gamma^2x^2-\gamma^2v^2t^2$$
 
-From this, we can see that the first and last terms both have γ2t2 and the two other terms both have γ2x2. So, we can express this as:
+From this, we can see that the first and last terms both have $γ$2t2 and the two other terms both have $γ$2x2. So, we can express this as:
 
 $$\left(S'\right)^2=\gamma^2t^2\left(c^2-v^2\right)-\gamma^2x^2\left(1-\frac{v^2}{c^2}\right)$$
 
@@ -580,7 +580,7 @@ From the first term, we can actually pull out a c2 like this:
 
 $$\left(S'\right)^2=c^2\gamma^2t^2\left(1-\frac{v^2}{c^2}\right)-\gamma^2x^2\left(1-\frac{v^2}{c^2}\right)$$
 
-Now, let’s actually insert the definition for γ:
+Now, let’s actually insert the definition for $γ$:
 
 $$\left(S'\right)^2=c^2t^2\left(\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\right)^2\left(1-\frac{v^2}{c^2}\right)-x^2\left(\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}\right)^2\left(1-\frac{v^2}{c^2}\right)$$
 
@@ -594,7 +594,7 @@ This is exactly what we had before even transforming. So, from this we conclude 
 
 The definition for something to be invariant is essentially that **it remains the same after a Lorentz transformation**. The spacetime interval is clearly an invariant quantity based on the proof above.
 
-Now, if you remember the **connection between proper time and spacetime intervals** (τ2=S2/c2), we could simply divide both sides by c2 (since c is invariant also), which gives:
+Now, if you remember the **connection between proper time and spacetime intervals** ($τ$2=S2/c2), we could simply divide both sides by c2 (since c is invariant also), which gives:
 
 $$\frac{S^2}{c^2}=\frac{\left(S'\right)^2}{c^2}\\\tau^2=\left(\tau'\right)^2$$
 
@@ -606,7 +606,7 @@ Later when we get to **four-vectors**, I’ll show you a simple way to construct
 
 ### Spacetime and Proper Time Intervals Revisited
 
-Now, with the definition of the Lorentz factor (γ) we derived earlier, we can actually find new expressions for **the proper time interval and the spacetime interval** (which will actually turn out to be useful later on).
+Now, with the definition of the Lorentz factor ($γ$) we derived earlier, we can actually find new expressions for **the proper time interval and the spacetime interval** (which will actually turn out to be useful later on).
 
 We can quite easily derive a more compact looking expression for the spacetime interval *in terms of the Lorentz factor*:
 
@@ -656,11 +656,11 @@ Also, note that the expression for proper time can also be rearranged to give a 
 
 $$\gamma=\frac{dt}{d\tau}$$
 
-This tells us that, actually, the Lorenz factor is simply a measure that compares the relative time to the proper time. For everyday low velocities (when γ ≈ 1), this tells us that the relative time and proper time are approximately the same:
+This tells us that, actually, the Lorenz factor is simply a measure that compares the relative time to the proper time. For everyday low velocities (when $γ$ $≈$ 1), this tells us that the relative time and proper time are approximately the same:
 
 $$\frac{dt}{d\tau}\approx1\\dt\approx d\tau$$
 
-For velocities close to the speed of light, however, γ will become much larger than 1.
+For velocities close to the speed of light, however, $γ$ will become much larger than 1.
 
 This means that **the relative time becomes much larger than the proper time** and thus, the time an outside observer would measure (relative time) for someone travelling close to the speed of light would appear to be passing slower (i.e. **time dilation**).
 
@@ -684,11 +684,11 @@ This means that a 4-position vector has components of t, x, y and z. Well, almos
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_33.webp)
 
-Components of the 4-position vector. The index μ goes from 0 to 3 and it describes the components from the top to the bottom.
+Components of the 4-position vector. The index $μ$ goes from 0 to 3 and it describes the components from the top to the bottom.
 
 Does this look somewhat familiar? It is exactly what we had earlier when discussing the spacetime intervals! Well, not quite. The spacetime interval is actually built out of these 4-position vectors. Let me explain.
 
-At the very beginning, we defined an interval in spacetime to be (using the Einstein summation convention, which means that upper-lower index pairs are actually summation indices, so μ and ν are summed over here):
+At the very beginning, we defined an interval in spacetime to be (using the Einstein summation convention, which means that upper-lower index pairs are actually summation indices, so $μ$ and $ν$ are summed over here):
 
 $$\left(dS\right)^2=\eta_{\mu\nu}dx^{\mu}dx^{\nu}$$
 
@@ -700,7 +700,7 @@ $$\eta_{\mu\nu}dx^{\mu}dx^{\nu}=invariant$$
 
 In general, quantities like this will always be invariant in special relativity. So, **an invariant can be constructed by multiplying a 4-vector by itself and by the Minkowski metric and summing over all the indices**.
 
-This is a very general rule in special relativity, which we’ll come to use more later, but essentially any 4-vector (Aμ) can be made into an invariant in the same way:
+This is a very general rule in special relativity, which we’ll come to use more later, but essentially any 4-vector (A$μ$) can be made into an invariant in the same way:
 
 $$\eta_{\mu\nu}A^{\mu}A^{\nu}=invariant$$
 
@@ -716,11 +716,11 @@ $$A_{\mu}A^{\mu}$$
 
 Four-vectors with upper indices are generally called **contravariant four-vectors** and ones with lower indices are called **covariant four-vectors**.
 
-Notice that this really means a sum over all of the values of μ. Now, what does it actually mean for the same 4-vector to have a lower index?
+Notice that this really means a sum over all of the values of $μ$. Now, what does it actually mean for the same 4-vector to have a lower index?
 
 This is actually quite simple and I’ll just state the general rule; **to take an upper index to a lower index, simply multiply by the Minkowski metric**.
 
-So, **we can change a 4-vector with an upper index (Aν) into one with a lower index (Aμ) by the Minkowski metric** (note that the index changes, because ν turns into a summation index when we multiply by the metric as it has a lower ν; *a general rule is that if an index is NOT summed over, then the same index has to appear on both sides of the equation*):
+So, **we can change a 4-vector with an upper index (A$ν$) into one with a lower index (A$μ$) by the Minkowski metric** (note that the index changes, because $ν$ turns into a summation index when we multiply by the metric as it has a lower $ν$; *a general rule is that if an index is NOT summed over, then the same index has to appear on both sides of the equation*):
 
 $$A_{\mu}=\eta_{\mu\nu}A^{\nu}$$
 
@@ -750,11 +750,11 @@ The 4-gradient has a lower index, because it means the derivative w.r.t 4-positi
 
 Components of the 4-Gradient (click to see more)
 
-Now, let’s actually look at what the different values for µ give for this operator. First, µ=0 gives (remember the **components of the 4-position**):
+Now, let’s actually look at what the different values for $μ$ give for this operator. First, $μ$=0 gives (remember the **components of the 4-position**):
 
 $$\frac{\partial}{\partial x^0}=\frac{\partial}{\partial ct}=\frac{1}{c}\frac{\partial}{\partial t}$$
 
-So, µ=0 is actually a time derivative. Next, let’s consider the spacial components (µ=1,2,3):
+So, $μ$=0 is actually a time derivative. Next, let’s consider the spacial components ($μ$=1,2,3):
 
 $$\begin{aligned}\frac{\partial}{\partial x^1}&=\frac{\partial}{\partial x}\\\frac{\partial}{\partial x^2}&=\frac{\partial}{\partial y}\\\frac{\partial}{\partial x^3}&=\frac{\partial}{\partial z}\end{aligned}$$
 
@@ -762,7 +762,7 @@ Now, if we put these spacial derivatives together, what do they give? It would m
 
 $$\vec{\nabla}=\frac{\partial}{\partial x}+\frac{\partial}{\partial y}+\frac{\partial}{\partial z}$$
 
-We can then actually combine each of these into one quantity called **4-gradient**, which has the components (denoted by ∂µ):
+We can then actually combine each of these into one quantity called **4-gradient**, which has the components (denoted by $∂$$μ$):
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_39.webp)
 
@@ -792,7 +792,7 @@ Okay then, we’re now ready to get into the real meat of special relativity.
 
 ### Four-Velocity
 
-The first 4-vector quantity we’re going to talk about (after 4-position) is **4-velocity**. 4-velocity is typically denoted by uμ and it is essentially the relativistic version of ordinary velocity (v).
+The first 4-vector quantity we’re going to talk about (after 4-position) is **4-velocity**. 4-velocity is typically denoted by u$μ$ and it is essentially the relativistic version of ordinary velocity (v).
 
 Now, ordinary Newtonian velocity is defined as the derivative of position with respect to time:
 
@@ -812,15 +812,15 @@ $$u^{\mu}=\frac{dx^{\mu}}{d\tau}=\frac{dx^{\mu}}{\frac{1}{\gamma}dt}=\gamma\frac
 
 So in fact, **4-velocity can actually be expressed as a regular time derivative,** but we have to also multiply by the **Lorentz factor**.
 
-Next, let’s consider the components of this 4-velocity. For this, we need to remind ourselves of the components of dxμ:
+Next, let’s consider the components of this 4-velocity. For this, we need to remind ourselves of the components of dx$μ$:
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_43.webp)
 
-The first component of the 4-velocity is μ=0, which is:
+The first component of the 4-velocity is $μ$=0, which is:
 
 $$u^0=\gamma\frac{dx^0}{dt}=\gamma\frac{cdt}{dt}=\gamma c$$
 
-The other components (μ=1,2,3) are:
+The other components ($μ$=1,2,3) are:
 
 $$u^1=\gamma\frac{dx^1}{dt}=\gamma\frac{dx}{dt}=\gamma v_x$$
 
@@ -828,9 +828,9 @@ Notice that dx/dt is simply the x-component of the ordinary velocity v. Same goe
 
 $$u^2=\gamma\frac{dx^2}{dt}=\gamma\frac{dy}{dt}=\gamma v_y\\u^3=\gamma\frac{dx^3}{dt}=\gamma\frac{dz}{dt}=\gamma v_z$$
 
-Now, it is typically useful to combine these **spacial components of the 4-velocity** into one term, which is simply γv.
+Now, it is typically useful to combine these **spacial components of the 4-velocity** into one term, which is simply $γ$v.
 
-We then have the components for uμ:
+We then have the components for u$μ$:
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_45.webp)
 
@@ -838,7 +838,7 @@ Now I want to look at one more thing for the 4-velocity. Remember earlier that w
 
 $$dx_{\mu}dx^{\mu}=\left(dS\right)^2$$
 
-We could ask if there is a similar *invariant* form for the 4-velocity? The answer is that there indeed is! Let’s simply divide both sides by (dτ)2:
+We could ask if there is a similar *invariant* form for the 4-velocity? The answer is that there indeed is! Let’s simply divide both sides by (d$τ$)2:
 
 $$\frac{dx_{\mu}dx^{\mu}}{\left(d\tau\right)^2}=\frac{\left(dS\right)^2}{\left(d\tau\right)^2}$$
 
@@ -848,7 +848,7 @@ $$\frac{dx_{\mu}}{d\tau}\frac{dx^{\mu}}{d\tau}=\frac{\left(dS\right)^2}{\left(d\
 
 What’s this left-hand side? It is nothing but the **contravariant and covariant forms of the 4-velocity** (derivative of 4-position w.r.t proper time).
 
-The right-hand side is also familiar. It is simply c2 (from the relation (dτ)2 = (dS)2/c2). So, this becomes:
+The right-hand side is also familiar. It is simply c2 (from the relation (d$τ$)2 = (dS)2/c2). So, this becomes:
 
 $$u_{\mu}u^{\mu}=c^2$$
 
@@ -892,7 +892,7 @@ Now, **the action is defined as an integral over the trajectory**, i.e. basicall
 
 $$A=a\int_{ }^{ }dS$$
 
-The action is defined as an integral over a general trajectory (here denoted by dS, but it doesn’t necessarily have to stand for a spacetime interval). The small a stands for any constant.
+The action is defined as an integral over a general trajectory (here denoted by dS, but it doesn’t necessarily have to stand for a spacetime interval). The small $a$ stands for any constant.
 
 Now, to get useful equations of motion from the action, it should be written in the form:
 
@@ -911,7 +911,7 @@ Now, let’s try to find an expression for the action that would satisfy all of 
 
 The answer should be fairly straightforward. The trajectory is of course a **spacetime interval** as it is certainly Lorentz invariant.
 
-So, the action then takes the form (expressing the spacetime interval in terms of γ, which we derived earlier):
+So, the action then takes the form (expressing the spacetime interval in terms of $γ$, which we derived earlier):
 
 $$A=a\int_{ }^{ }dS=a\int_{ }^{ }\frac{1}{\gamma}cdt$$
 
@@ -949,7 +949,7 @@ Now, the most general form for the Hamiltonian function is (as explained in my H
 
 $$H=\sum_i^{ }\frac{\partial \mathscr{L}}{\partial\dot{q}_i}\dot{q}_i-\mathscr{L}$$
 
-The q’s with a dot here mean the time derivative of q (and q is the generalized position coordinate), i.e. *generalized velocity*. The summation over i means that we’re summing over each spacial dimension. The L is of course the Lagrangian that we defined earlier.
+The q’s with a dot here mean the time derivative of q (and $q$ is the generalized position coordinate), i.e. *generalized velocity*. The summation over i means that we’re summing over each spacial dimension. The L is of course the Lagrangian that we defined earlier.
 
 For our purposes here, we can define the generalized velocity as simply v and just look at the Hamiltonian in this form:
 
@@ -977,11 +977,11 @@ $$E=\frac{mv^2}{\sqrt{1-\frac{v^2}{c^2}}}+mc^2\sqrt{1-\frac{v^2}{c^2}}$$
 
 $$E=\gamma mv^2+\frac{1}{\gamma}mc^2$$
 
-This can actually be simplified even more. We can multiply and divide the second term by γ:
+This can actually be simplified even more. We can multiply and divide the second term by $γ$:
 
 $$E=\gamma mv^2+\frac{1}{\gamma^2}\gamma mc^2$$
 
-We can then insert 1/γ2 and see that some stuff cancels out:
+We can then insert 1/$γ$2 and see that some stuff cancels out:
 
 $$E=\gamma mv^2+\left(1-\frac{v^2}{c^2}\right)\gamma mc^2\\E=\gamma mv^2+\gamma mc^2-\frac{v^2}{c^2}\gamma mc^2\\E=\gamma mv^2+\gamma mc^2-\gamma mv^2\\E=\gamma mc^2$$
 
@@ -1001,7 +1001,7 @@ $$E=mc^2+\frac{1}{2}mv^2+\frac{3}{8}m\frac{v^4}{c^2}+\frac{5}{16}m\frac{v^6}{c^4
 
 Taylor Expansion For The Relativistic Energy (click to see more)
 
-First of all, were going to define a variable **β=v/c** (to make things a little simpler), and so the Lorentz factor is then a function of β and takes the form:
+First of all, were going to define a variable **$β$=v/c** (to make things a little simpler), and so the Lorentz factor is then a function of $β$ and takes the form:
 
 $$\gamma\left(\beta\right)=\left(1-\beta^2\right)^{-\frac{1}{2}}$$
 
@@ -1009,7 +1009,7 @@ Then, the Taylor series formula for this is:
 
 $$\gamma\left(\beta\right)=\sum_{n=0}^{\infty}\frac{d^n\gamma\left(\beta\right)}{d\beta^n}\left(\beta=0\right)\frac{\beta^n}{n!}$$
 
-Let’s start by calculating the derivatives of γ at β=0. For example, the first derivative evaluated at β=0 gives:
+Let’s start by calculating the derivatives of $γ$ at $β$=0. For example, the first derivative evaluated at $β$=0 gives:
 
 $$\frac{d\gamma\left(\beta\right)}{d\beta}\left(\beta=0\right)=-\frac{1}{2}\left(1-\beta^2\right)^{-\frac{3}{2}}\cdot\left(-2\beta\right)=\beta\left(1-\beta^2\right)^{-\frac{3}{2}}=0\cdot\left(1-0\right)^{-\frac{3}{2}}=0$$
 
@@ -1019,7 +1019,7 @@ $$\frac{d\gamma\left(\beta\right)}{d\beta}\left(\beta=0\right)=0\\\frac{d^2\gamm
 
 When taking these derivatives, there is a clear pattern here. The derivatives with **uneven order** (n=1,3,5…) are always 0, so we don’t have to worry about those terms.
 
-Also, since the series starts at n=0, the 0th derivative is essentially just the function itself (γ) evaluated at the point β=0:
+Also, since the series starts at n=0, the 0th derivative is essentially just the function itself ($γ$) evaluated at the point $β$=0:
 
 $$\gamma\left(\beta=0\right)=\left(1-0^2\right)^{-\frac{1}{2}}=1$$
 
@@ -1029,7 +1029,7 @@ $$\gamma\left(\beta\right)=\sum_{n=0}^{\infty}\frac{d^n\gamma\left(\beta\right)}
 
 $$\gamma\left(\beta\right)=1+\frac{1}{2}\beta^2+\frac{3}{8}\beta^4+\frac{5}{16}\beta^6+...$$
 
-Or putting back β=v/c:
+Or putting back $β$=v/c:
 
 $$\gamma\left(\beta\right)=1+\frac{1}{2}\frac{v^2}{c^2}+\frac{3}{8}\frac{v^4}{c^4}+\frac{5}{16}\frac{v^6}{c^6}+...$$
 
@@ -1057,7 +1057,7 @@ Now, from the above formula, we can actually find a nice equation for the **rela
 
 $$E-mc^2=\frac{1}{2}mv^2+\frac{3}{8}m\frac{v^4}{c^2}+\frac{5}{16}m\frac{v^6}{c^4}+...$$
 
-Now the right-hand side is simply just the kinetic energy. We can also plug back in E=γmc2, and we then have:
+Now the right-hand side is simply just the kinetic energy. We can also plug back in E=$γ$mc2, and we then have:
 
 $$E_k=\gamma mc^2-mc^2\\E_k=mc^2\left(\gamma-1\right)$$
 
@@ -1077,11 +1077,11 @@ Now, 4-momentum has huge importance in special relativity, as it actually gives 
 
 First of all, in Newtonian mechanics, momentum is simply defined as mass multiplied by velocity, p=mv.
 
-In special relativity, this is almost the case too, except that **4-momentum (pμ) is defined as mass multiplied by 4-velocity**, namely:
+In special relativity, this is almost the case too, except that **4-momentum (p$μ$) is defined as mass multiplied by 4-velocity**, namely:
 
 $$p^{\mu}=mu^{\mu}$$
 
-Now, from this, we can look at what the components of the 4-momentum are. First of all, let’s consider the **spacial components** (μ=1,2,3):
+Now, from this, we can look at what the components of the 4-momentum are. First of all, let’s consider the **spacial components** ($μ$=1,2,3):
 
 $$p^1=mu^1\\p^2=mu^2\\p^3=mu^3$$
 
@@ -1097,15 +1097,15 @@ Typically, we combine the spacial components into just one term p (which is simp
 
 $$p=\gamma mv$$
 
-Okay, now that we’ve got the spacial parts, let’s consider the **0-component of pμ** using the fact that u0=γc:
+Okay, now that we’ve got the spacial parts, let’s consider the **0-component of p$μ$** using the fact that u0=$γ$c:
 
 $$p^0=mu^0=\gamma mc$$
 
-But what is γmc? It looks a lot like the relativistic energy, which we derived in the last section:
+But what is $γ$mc? It looks a lot like the relativistic energy, which we derived in the last section:
 
 $$E=\gamma mc^2$$
 
-In fact, γmc is simply the energy divided by the speed of light. So, the 0-component of the 4-momentum is actually:
+In fact, $γ$mc is simply the energy divided by the speed of light. So, the 0-component of the 4-momentum is actually:
 
 $$p^0=\frac{E}{c}$$
 
@@ -1161,11 +1161,11 @@ First of all, let’s think about how forces are defined in Newtonian physics. A
 
 $$F=\frac{dp}{dt}=ma$$
 
-Now, you might already guess what the **4-force (Fµ)** could be defined as. It is simply **the proper time derivative of 4-momentum** (or mass multiplied by 4-acceleration, but we’ll use the former definition):
+Now, you might already guess what the **4-force (F$μ$)** could be defined as. It is simply **the proper time derivative of 4-momentum** (or mass multiplied by 4-acceleration, but we’ll use the former definition):
 
 $$F^{\mu}=\frac{dp^{\mu}}{d\tau}$$
 
-By this definition, we can easily find the components of the 4-force. First, let’s look at the **spacial components** (µ=1,2,3). The associated 4-momentum components are (from the 4-momentum section):
+By this definition, we can easily find the components of the 4-force. First, let’s look at the **spacial components** ($μ$=1,2,3). The associated 4-momentum components are (from the 4-momentum section):
 
 $$p^1=\gamma mv_x=p_x\\p^2=\gamma mv_y=p_y\\p^3=\gamma mv_z=p_z$$
 
@@ -1199,7 +1199,7 @@ Inserting the components, we get (and also combining F1, F2 and F3 into one term
 
 $$F_{\mu}F^{\mu}=\left(\frac{1}{c}\frac{dE}{d\tau}\right)^2-\left(\frac{dp}{d\tau}\right)^2\\F_{\mu}F^{\mu}=\frac{1}{c^2}\frac{\left(dE\right)^2}{\left(d\tau\right)^2}-\frac{\left(dp\right)^2}{\left(d\tau\right)^2}$$
 
-Now let’s multiply both sides by (dτ)2 and by c2:
+Now let’s multiply both sides by (d$τ$)2 and by c2:
 
 $$F_{\mu}F^{\mu}c^2\left(d\tau\right)^2=\left(dE\right)^2-c^2\left(dp\right)^2$$
 
@@ -1207,7 +1207,7 @@ Or the left-hand side written like this:
 
 $$cF_{\mu}d\tau cF^{\mu}d\tau=\left(dE\right)^2-c^2\left(dp\right)^2$$
 
-Let’s now look more closely at this cFµdτ -term, in particular what the different values for µ will give. First, if we set µ=0, this gives (inserting the F0-component):
+Let’s now look more closely at this cF$μ$d$τ$ -term, in particular what the different values for $μ$ will give. First, if we set $μ$=0, this gives (inserting the F0-component):
 
 $$cF^0d\tau=c\left(\frac{1}{c}\frac{dE}{d\tau}\right)d\tau=dE$$
 
@@ -1215,7 +1215,7 @@ Now, what is dE? The d here stands for a tiny change, so dE means some small cha
 
 $$cF^0d\tau=dW$$
 
-Now, let’s set µ=1:
+Now, let’s set $μ$=1:
 
 $$cF^1d\tau=c\left(\frac{dp_x}{d\tau}\right)d\tau=cdp_x$$
 
@@ -1227,7 +1227,7 @@ The same goes for the y and z-directions too, which give cdIy and cdIz.
 
 Now here comes the interesting part. We can actually combine these quantities into a new 4-vector called the **impulse-work 4-vector** or **4-impulse** (there doesn’t seem to be a widely accepted term for this quantity, but I’ll call it 4-impulse since it sounds quite cool and also descriptive!)
 
-This 4-impulse (denoted by dWµ) thing is simply defined as:
+This 4-impulse (denoted by dW$μ$) thing is simply defined as:
 
 $$dW^{\mu}=cF^{\mu}d\tau$$
 
@@ -1243,7 +1243,7 @@ Now, let’s look at this right-hand side of the equation. We clearly have somet
 
 $$\left(dE\right)^2-c^2\left(dp\right)^2=c^2\left(\frac{dE}{c}\right)^2-c^2\left(dp\right)^2$$
 
-That’s quite interesting. It’s something with E/c as well as the momentum p. It is simply the **4-momentum**! Well, almost. It is a **small change in the 4-momentum (dpµ)** multiplied by c.
+That’s quite interesting. It’s something with E/c as well as the momentum p. It is simply the **4-momentum**! Well, almost. It is a **small change in the 4-momentum (dp$μ$)** multiplied by c.
 
 And more accurately, this right hand-side is **the invariant form of the small changes in 4-momentum** (contravariant and covariant multiplied together):
 
@@ -1273,7 +1273,7 @@ Here, I would like to show how the ordinary Newtonian laws of physics could be f
 
 We’re going to discuss briefly a relativistic force law that is equivalent to the ordinary **Lorentz force law**, which is a force that is produced by **electric and magnetic fields**.
 
-Classically, the Lorentz force is given by the equation (where q is the charge of the particle affected by the force, v is its velocity, E and B are the electric and magnetic fields):
+Classically, the Lorentz force is given by the equation (where $q$ is the charge of the particle affected by the force, v is its velocity, E and B are the electric and magnetic fields):
 
 $$F=qE+qv\times B$$
 
@@ -1291,7 +1291,7 @@ The reason for this is that **electric and magnetic fields are defined in terms 
 
 Therefore, the values of the scalar and vector potential are not by themselves important, only the changes in them.
 
-Mathematically, **the electric field is defined in terms of a scalar potential called electric potential (φ) and a vector potential called magnetic vector potential (A)**:
+Mathematically, **the electric field is defined in terms of a scalar potential called electric potential ($φ$) and a vector potential called magnetic vector potential (A)**:
 
 $$\vec{E}=-\nabla\varphi-\frac{\partial\vec{A}}{\partial t}=-\frac{\partial\varphi}{\partial x}-\frac{\partial\varphi}{\partial y}-\frac{\partial\varphi}{\partial z}-\frac{\partial\vec{A}}{\partial t}$$
 
@@ -1303,11 +1303,11 @@ Okay, the reason I wanted to discuss these is that we’ll need these definition
 
 Now, let’s get back to relativity. In special relativity, quantities are commonly combined into 4-vector quantities and in fact, the same goes for the electric and magnetic potentials as well.
 
-**The electric potential and the magnetic vector potential can be combined into a single 4-vector quantity called the electromagnetic 4-potential**. It is denoted by Aµ and it has the components:
+**The electric potential and the magnetic vector potential can be combined into a single 4-vector quantity called the electromagnetic 4-potential**. It is denoted by A$μ$ and it has the components:
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_67.webp)
 
-Here, φ stands for the electric potential, c for the speed of light and the A’s for the components of the magnetic vector potential.
+Here, $φ$ stands for the electric potential, c for the speed of light and the A’s for the components of the magnetic vector potential.
 
 Now, I won’t actually derive the following equation here right now as it would probably require a whole article by itself. Instead, I’ll tell you what the relativistic Lorentz force law is and we’ll go over what it actually means.
 
@@ -1317,13 +1317,13 @@ $$F^{\mu}=qu_{\nu}F^{\mu\nu}$$
 
 It looks quite simple, doesn’t it, but what are all these things here?
 
-Well, first of all, **Fµ is of course the 4-force** as you’d probably expect. **The q here is simply the electric charge** (a constant) of the object we’re considering and **uν is the 4-velocity** (its covariant form, we’ll come to this shortly).
+Well, first of all, **F$μ$ is of course the 4-force** as you’d probably expect. **The q here is simply the electric charge** (a constant) of the object we’re considering and **u$ν$ is the 4-velocity** (its covariant form, we’ll come to this shortly).
 
-Now, Fµν here is something called the **electromagnetic field tensor** (not to be confused with 4-force, which is denoted by F with only one index).
+Now, F$μ$$ν$ here is something called the **electromagnetic field tensor** (not to be confused with 4-force, which is denoted by F with only one index).
 
 This field tensor is basically a collection of objects, which are all of the components of the electric and magnetic fields. So, **the electromagnetic field tensor is an object that describes every component of both the electric and magnetic fields** (i.e. the electromagnetic field).
 
-Both of the indices µ and ν go from 0 to 3, just like we’re used to in relativity. So, this tensor really has *16 different components* (although 4 of them are actually zero, but we’ll come to it soon).
+Both of the indices $μ$ and $ν$ go from 0 to 3, just like we’re used to in relativity. So, this tensor really has *16 different components* (although 4 of them are actually zero, but we’ll come to it soon).
 
 Now, this tensor is really **a function of the 4-gradient of the electromagnetic 4-potential**. This is how it is mathematically defined:
 
@@ -1333,7 +1333,7 @@ I’ll just quickly remind you of the components of the *4-potential* as well as
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_69.webp)
 
-Okay then, let’s actually take a look at the components of the electromagnetic field tensor. First, we’ll set µ=0 and run over ν=1,2,3. This is what you’ll get for the first one (µ=0 and ν=1):
+Okay then, let’s actually take a look at the components of the electromagnetic field tensor. First, we’ll set $μ$=0 and run over $ν$=1,2,3. This is what you’ll get for the first one ($μ$=0 and $ν$=1):
 
 $$F^{01}=\partial^0A^1-\partial^1A^0=\frac{1}{c}\frac{\partial}{\partial t}A_x-\left(-\frac{\partial}{\partial x}\frac{\varphi}{c}\right)=\frac{1}{c}\frac{\partial A_x}{\partial t}+\frac{1}{c}\frac{\partial\varphi}{\partial x}$$
 
@@ -1347,17 +1347,17 @@ Then this component of the EM field tensor becomes the **negative x-component of
 
 $$F^{01}=-\frac{E_x}{c}$$
 
-The same also goes for the two other values of ν (ν=2 and ν=3), we just get the y- and z-components of the electric field:
+The same also goes for the two other values of $ν$ ($ν$=2 and $ν$=3), we just get the y- and z-components of the electric field:
 
 $$F^{02}=\frac{1}{c}\frac{\partial A_y}{\partial t}+\frac{1}{c}\frac{\partial\varphi}{\partial y}=-\frac{E_y}{c}\\F^{03}=\frac{1}{c}\frac{\partial A_z}{\partial t}+\frac{1}{c}\frac{\partial\varphi}{\partial z}=-\frac{E_z}{c}$$
 
-Now, if you interchange the order of µ and ν (i.e. set ν=0 and let µ go from 1 to 3), you’ll get the same thing but with an *opposite sign*:
+Now, if you interchange the order of $μ$ and $ν$ (i.e. set $ν$=0 and let $μ$ go from 1 to 3), you’ll get the same thing but with an *opposite sign*:
 
 $$F^{10}=-\frac{1}{c}\frac{\partial\varphi}{\partial x}-\frac{1}{c}\frac{\partial A_x}{\partial t}=\frac{E_x}{c}\\F^{20}=-\frac{1}{c}\frac{\partial\varphi}{\partial y}-\frac{1}{c}\frac{\partial A_y}{\partial t}=\frac{E_y}{c}\\F^{30}=-\frac{1}{c}\frac{\partial\varphi}{\partial z}-\frac{1}{c}\frac{\partial A_z}{\partial t}=\frac{E_z}{c}$$
 
-It’s also worth noting that each of the components of the EM tensor where µ=ν are simply zero, which is easy to see from its definition.
+It’s also worth noting that each of the components of the EM tensor where $μ$=$ν$ are simply zero, which is easy to see from its definition.
 
-Next, let’s look at what happens if we have both of the indices as **spacial indices** (i.e. µ=1,2,3 and ν=1,2,3). First, for µ=1 and ν=2, we have:
+Next, let’s look at what happens if we have both of the indices as **spacial indices** (i.e. $μ$=1,2,3 and $ν$=1,2,3). First, for $μ$=1 and $ν$=2, we have:
 
 $$F^{12}=-\frac{\partial A_y}{\partial x}-\left(-\frac{\partial A_x}{\partial y}\right)=-\left(\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right)$$
 
@@ -1367,9 +1367,9 @@ So, this component of the EM tensor is simply the negative z-component of the ma
 
 $$F^{12}=-B_z$$
 
-The same story goes for the other cases where both µ and ν are spacial indices (1,2,3). You get **components of the magnetic field, but with different signs**. If you wish, you can calculate the rest of the components by yourself.
+The same story goes for the other cases where both $μ$ and $ν$ are spacial indices (1,2,3). You get **components of the magnetic field, but with different signs**. If you wish, you can calculate the rest of the components by yourself.
 
-All of these components of the EM tensor can in fact be collected into a 4×4 matrix. All in all, we then have **the electromagnetic field tensor** in its full relativistic glory:
+All of these components of the EM tensor can in fact be collected into a 4$×$4 matrix. All in all, we then have **the electromagnetic field tensor** in its full relativistic glory:
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_71.webp)
 
@@ -1377,15 +1377,15 @@ Now, let’s get back to the Lorentz force law now that we have the basic idea o
 
 $$F^{\mu}=qu_{\nu}F^{\mu\nu}$$
 
-The 4-velocity uν here is a covariant 4-vector. Earlier we discussed only the contravariant version of the 4-velocity, but to change into a covariant, you use the Minkowski metric, which in effect simply just changes the sign of the spacial components.
+The 4-velocity u$ν$ here is a covariant 4-vector. Earlier we discussed only the contravariant version of the 4-velocity, but to change into a covariant, you use the Minkowski metric, which in effect simply just changes the sign of the spacial components.
 
-So, uν is defined as:
+So, u$ν$ is defined as:
 
 ![](assets/images/special-relativity-for-dummies-an-intuitive-introduction/img_73.webp)
 
-Okay then, let’s first consider the spacial components of the Lorentz force (µ=1,2,3). Remember that ν is simply a **summation index** in the Lorentz force equation (based on the Einstein summation convention).
+Okay then, let’s first consider the spacial components of the Lorentz force ($μ$=1,2,3). Remember that $ν$ is simply a **summation index** in the Lorentz force equation (based on the Einstein summation convention).
 
-So, let’s first set µ=1 and sum over all the values of ν:
+So, let’s first set $μ$=1 and sum over all the values of $ν$:
 
 $$F^1=qu_0F^{10}+qu_1F^{11}+qu_2F^{12}+qu_3F^{13}$$
 
@@ -1395,17 +1395,17 @@ Let’s now insert all of the components for the 4-force, the 4-velocity and the
 
 $$\gamma F_x=q\gamma c\frac{E_x}{c}+0+q\left(-\gamma v_y\right)\left(-B_z\right)+q\left(-\gamma v_z\right)B_y$$
 
-We can simplify this and divide both sides by γ:
+We can simplify this and divide both sides by $γ$:
 
 $$F_x=qE_x+qv_yB_z-qv_zB_y$$
 
 If you’ve ever seen the components of the Lorentz force, this is indeed the correct **x-component** for the force that a particle with charge q would experience in an electromagnetic field.
 
-For the other spacial values of µ (µ=1,2), you simply get the y- and z-components of the force. I’m not going to go over those in detail, since it’s exactly the same process as above, but this is what you’ll get:
+For the other spacial values of $μ$ ($μ$=1,2), you simply get the y- and z-components of the force. I’m not going to go over those in detail, since it’s exactly the same process as above, but this is what you’ll get:
 
 $$F_y=qE_y-qv_xB_z+qv_zB_x\\F_z=qE_z+qv_xB_y-qv_yB_x$$
 
-Now, the more surprising result will be the 0-component of this force (when we set µ=0). Let’s write out this sum:
+Now, the more surprising result will be the 0-component of this force (when we set $μ$=0). Let’s write out this sum:
 
 $$F^0=qu_0F^{00}+qu_1F^{01}+qu_2F^{02}+qu_3F^{03}$$
 
@@ -1417,7 +1417,7 @@ From here, it’s only a matter of inserting all of the components. Doing that, 
 
 $$\frac{1}{c}\gamma\frac{dE}{dt}=0+q\gamma v_x\frac{E_x}{c}+q\gamma v_y\frac{E_y}{c}+q\gamma v_z\frac{E_z}{c}$$
 
-We can simplify this by multiplying by c and dividing by γ:
+We can simplify this by multiplying by c and dividing by $γ$:
 
 $$\frac{dE}{dt}=qv_xE_x+qv_yE_y+qv_zE_z$$
 

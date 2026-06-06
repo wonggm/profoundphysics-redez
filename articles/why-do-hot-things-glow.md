@@ -55,9 +55,9 @@ The energy of a photon can be described by the following formula:
 
 $$E=h\nu$$
 
-E here stands for the energy, h is Planck’s constant and ν is the frequency of the light (photon).
+E here stands for the energy, h is Planck’s constant and $ν$ is the frequency of the light (photon).
 
-We can relate the frequency of the light emitted to its wavelength λ by:
+We can relate the frequency of the light emitted to its wavelength $λ$ by:
 
 $$\lambda=\frac{c}{\nu}$$
 
@@ -139,17 +139,17 @@ Black body radiation is characterized by **Planck’s law**:
 
 $$B\left(\lambda{,}T\right)=\frac{2hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{\lambda k_BT}}-1}$$
 
-We can recognize h from before, Planck’s constant, c is the speed of light, and kB is the Boltzmann constant. The Boltzmann constant is most commonly seen in the study of thermodynamics but a perhaps more familiar place that it can be found is in the ideal gas law, PV=kBNT.
+We can recognize h from before, Planck’s constant, $c$ is the speed of light, and kB is the Boltzmann constant. The Boltzmann constant is most commonly seen in the study of thermodynamics but a perhaps more familiar place that it can be found is in the ideal gas law, PV=kBNT.
 
-Planck’s law describes the **spectral radiance** B(λ,T) as a function of both the temperature of the black body (T) and the wavelength of emitted electromagnetic radiation (λ).
+Planck’s law describes the **spectral radiance** B($λ$,T) as a function of both the temperature of the black body (T) and the wavelength of emitted electromagnetic radiation ($λ$).
 
 The spectral radiance is a quantity with the peculiar units of power per unit area per unit solid angle per unit wavelength.
 
 Intuitively, it represents the **energy flux** (how much is passing through a unit surface) **along a line of radiation in a certain direction**.
 
-Now, while the spectral radiance is a two-variable function, we can treat it as a function of *only* the wavelength λ by choosing a fixed temperature T for the body.
+Now, while the spectral radiance is a two-variable function, we can treat it as a function of *only* the wavelength $λ$ by choosing a fixed temperature T for the body.
 
-We can then represent the spectral radiance curves, B(λ), by plotting them as functions of the wavelength for bodies of different temperatures:
+We can then represent the spectral radiance curves, B($λ$), by plotting them as functions of the wavelength for bodies of different temperatures:
 
 ![](assets/images/why-do-hot-things-glow/img_4.webp)
 
@@ -181,17 +181,17 @@ Now, the peak wavelength for any given black body can be written down as a very 
 
 $$\lambda_{peak}=\frac{\alpha}{T}$$
 
-The α here is a constant of proportionality with a value around 2.898×10-3 m\*K. This inverse proportionality law is called **Wien’s displacement law**.
+The $α$ here is a constant of proportionality with a value around 2.898$×$10-3 m\*K. This inverse proportionality law is called **Wien’s displacement law**.
 
 Where Does Wien's Displacement Law Come From?
 
 I’ll note first that each of the black body curves, with each curve determined by the temperature T, has only one maximum height (and no minimum).
 
-Generally, we can find maxima (and minima) by differentiating any function and setting its derivative equal to zero. We can do the same for our spectral radiance function B(λ) from earlier (by again, treating the temperature T as a fixed value):
+Generally, we can find maxima (and minima) by differentiating any function and setting its derivative equal to zero. We can do the same for our spectral radiance function B($λ$) from earlier (by again, treating the temperature T as a fixed value):
 
 $$B\left(\lambda\right)=\frac{2hc^2}{\lambda^5}\frac{1}{e^{hc/\lambda k_BT}-1}$$
 
-The next step is to take a derivative of this with respect to the wavelength λ:
+The next step is to take a derivative of this with respect to the wavelength $λ$:
 
 $$\frac{dB\left(\lambda\right)}{d\lambda}=2hc^2\left(-\frac{5}{\lambda^6}\frac{1}{e^{hc/\lambda k_BT}-1}-\frac{1}{\lambda^5}\frac{\left(-hc\right)}{\lambda^2k_BT}\frac{e^{hc/\lambda k_BT}}{\left(e^{hc/\lambda k_BT}-1\right)^2}\right)$$
 
@@ -199,11 +199,11 @@ $$\frac{dB\left(\lambda\right)}{d\lambda}=\ \frac{2hc^2}{\lambda^7\left(e^{hc/\l
 
 This looks messy but it’s just an awkward application of the chain and product rules multiple times and then factoring things out to make life easier! Then we set this all to zero.
 
-The prefactor in front of the parentheses here cannot equal zero so we just need to set what is inside the bracket equal to zero. We then get the following equation (note that the λ we get by solving this equation is going to be the peak wavelength λpeak):
+The prefactor in front of the parentheses here cannot equal zero so we just need to set what is inside the bracket equal to zero. We then get the following equation (note that the $λ$ we get by solving this equation is going to be the peak wavelength $λ$peak):
 
 $$\frac{hc}{k_BT}\cdot e^{\frac{hc}{\lambda_{peak}k_BT}}-5\lambda_{peak}\left(e^{\frac{hc}{\lambda_{peak}k_BT}}-1\right)=0$$
 
-To simplify things, we’ll use a substitution so we can see the clear structure of the equation. First, divide by λpeak and then let y=hc/λpeakkBT, so that we are then trying to solve the equation:
+To simplify things, we’ll use a substitution so we can see the clear structure of the equation. First, divide by $λ$peak and then let y=hc/$λ$peakkBT, so that we are then trying to solve the equation:
 
 $$ye^y-5\left(e^y-1\right)=0$$
 
@@ -215,7 +215,7 @@ So, if you were to act on this function with the Lambert W function, you’d get
 
 $$W\left(y\right)=W\left(xe^x\right)\ \ \Rightarrow\ \ x=W\left(y\right)$$
 
-The Lambert W is, however, technically, not a function since it is multivalued and it has multiple “branches”. If our x is a real variable, then we can represent W(x) with two different curves, called the W0 branch and the W-1 branch.
+The Lambert W is, however, technically, not a function since it is multivalued and it has multiple “branches”. If our $x$ is a real variable, then we can represent W(x) with two different curves, called the W0 branch and the W-1 branch.
 
 We can then graph these together to get an idea of what the “function” W(x) would look like:
 
@@ -239,11 +239,11 @@ $$x=W_0\left(-5e^{-5}\right)$$
 
 The value of W0 at this point, -5e-5, is approximately -0.03489.
 
-Substituting back y=x+5 and also y=hc/λpeakkBT (which was our original definition for y) gives us the final solution for the peak wavelength:
+Substituting back y=x+5 and also y=hc/$λ$peakkBT (which was our original definition for y) gives us the final solution for the peak wavelength:
 
 $$\frac{hc}{\lambda_{peak}k_BT}=W_0\left(-5e^{-5}\right)+5\ \ \Rightarrow\ \ \lambda_{peak}=\frac{hc}{k_B\left(5+W_0\left(-5e^{-5}\right)\right)}\frac{1}{T}$$
 
-The coefficient here in front of 1/T is just a number with a value of ≈2.898×10-3 m\*K. If we call this constant α, we then get Wien’s displacement law λpeak=α/T.
+The coefficient here in front of 1/T is just a number with a value of $≈$2.898$×$10-3 m\*K. If we call this constant $α$, we then get Wien’s displacement law $λ$peak=$α$/T.
 
 From Wien’s displacement law, we can see that **as the temperature of a body increases, the peak wavelength of the radiation it emits, decreases**.
 

@@ -223,7 +223,7 @@ Example: Pendulum Using Generalized Coordinates (click to see more)
 
 The simple pendulum essentially consists of a mass at the end of a rigid rod that swings in a plane under the influence of gravity. The length of the rod is L, the mass of the “pendulum bob” is m and the gravitational acceleration downwards is g (a constant).
 
-We can place the pendulum in an x,y -coordinate system such that the rod is attached to the origin. I’ll also denote the angle relative to the vertical (y-axis) as θ.
+We can place the pendulum in an x,y -coordinate system such that the rod is attached to the origin. I’ll also denote the angle relative to the vertical (y-axis) as $θ$.
 
 ![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_16.webp)
 
@@ -233,19 +233,19 @@ Let me explain why. First of all, we have once constraint, which is that the len
 
 Therefore, we only have 2\*1-1=1 (we’re in two dimensions with one object and one constraint) degrees of freedom here and thus, **we only need one generalized coordinate**.
 
-The natural choice due to rotational symmetry here is going to be the **angle θ** (which changes with time as the pendulum swings back and forth).
+The natural choice due to rotational symmetry here is going to be the **angle $θ$** (which changes with time as the pendulum swings back and forth).
 
-This is indeed a valid choice of a generalized coordinates as **it is consistent with our constraint**; this θ-coordinate can only change perpendicularly to our constraint (distance from the origin), so it cannot violate this constraint.
+This is indeed a valid choice of a generalized coordinates as **it is consistent with our constraint**; this $θ$-coordinate can only change perpendicularly to our constraint (distance from the origin), so it cannot violate this constraint.
 
 I discuss all about how generalized coordinates can be best chosen in [this article](https://profoundphysics.com/generalized-coordinates/).
 
-So, **we will take the angle θ as the generalized coordinate of this pendulum**. Now, the easiest way to continue here is to write down the x,y -coordinates in terms of θ. We can get these by some simple trigonometry:
+So, **we will take the angle $θ$ as the generalized coordinate of this pendulum**. Now, the easiest way to continue here is to write down the x,y -coordinates in terms of $θ$. We can get these by some simple trigonometry:
 
 ![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_18.webp) 
 
 Note that the y-coordinate is negative here since it’s measure downwards from the origin.
 
-The next step is to construct the **kinetic energy**. For this, we need the velocities and again, the easiest way to get these is just by differentiating the x,y -coordinates (using the chain rule since θ here is a function of time):
+The next step is to construct the **kinetic energy**. For this, we need the velocities and again, the easiest way to get these is just by differentiating the x,y -coordinates (using the chain rule since $θ$ here is a function of time):
 
 $$\dot{x}=L\dot{\theta}\cos\theta$$
 
@@ -255,7 +255,7 @@ The kinetic energy is then simply:
 
 $$T=\frac{1}{2}m\left(\dot{x}^2+\dot{y}^2\right)=\frac{1}{2}m\left(L^2\dot{\theta}^2\cos^2\theta+L^2\dot{\theta}^2\sin^2\theta\right)=\frac{1}{2}mL^2\dot{\theta}^2$$
 
-Here I’ve used cos2θ+sin2θ=1.
+Here I’ve used cos2$θ$+sin2$θ$=1.
 
 Notice how simple obtaining the kinetic energy is if you first write down the Cartesian coordinates in terms of your generalized coordinates. All we need after that is to take the time derivatives and them sum the squares of the Cartesian velocities.
 
@@ -267,7 +267,7 @@ The Lagrangian is then:
 
 $$L=T-V=\frac{1}{2}mL^2\dot{\theta}^2+mgL\cos\theta$$
 
-We now have the Lagrangian of this simple pendulum system in terms of the generalized coordinate θ! The Euler-Lagrange equation is then (we only have one for the generalized coordinate θ!):
+We now have the Lagrangian of this simple pendulum system in terms of the generalized coordinate $θ$! The Euler-Lagrange equation is then (we only have one for the generalized coordinate $θ$!):
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}=\frac{\partial L}{\partial\theta}$$
 
@@ -309,7 +309,7 @@ Consider the Earth revolving around the Sun according to this picture:
 
 ![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_20.webp)
 
-Here we are defining the generalized coordinates for this system to be r and θ, i.e. we’re using polar coordinates.
+Here we are defining the generalized coordinates for this system to be r and $θ$, i.e. we’re using polar coordinates.
 
 From the parameters given in the picture, we can derive the Lagrangian to be (for the full derivation, you can see [here](https://profoundphysics.com/wp-content/uploads/2020/07/Hamiltonian-Mechanics-Example-Problems-Solutions.pdf)):
 
@@ -317,7 +317,7 @@ $$L=\frac{1}{2}m\left(\dot{r}^2+r^2\dot{\theta}^2\right)+\frac{GMm}{r}$$
 
 The dots above these quantities mean their time derivatives.
 
-Now consider rotating the system by some angle Δθ in the following way:
+Now consider rotating the system by some angle $Δ$$θ$ in the following way:
 
 ![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_22.webp)
 
@@ -325,21 +325,21 @@ The angle specifying Earth’s position now becomes:
 
 $$\theta\ \Rightarrow\ \theta+\Delta\theta$$
 
-So, what happens to the Lagrangian in this case? Well, let’s see. The Lagrangian only involves θ in this time derivative, so the Lagrangian now becomes:
+So, what happens to the Lagrangian in this case? Well, let’s see. The Lagrangian only involves $θ$ in this time derivative, so the Lagrangian now becomes:
 
 $$L=\frac{1}{2}m\left(\dot{r}^2+r^2\left(\dot{\theta}+\frac{d\Delta\theta}{dt}\right)^2\right)+\frac{GMm}{r}$$
 
-By definition though, Δθ is just a constant (it is simply a number, which we rotated the system with) and the derivative of a constant is zero, so we just end up with:
+By definition though, $Δ$$θ$ is just a constant (it is simply a number, which we rotated the system with) and the derivative of a constant is zero, so we just end up with:
 
 $$L=\frac{1}{2}m\left(\dot{r}^2+r^2\dot{\theta}^2\right)+\frac{GMm}{r}$$
 
-This is exactly what we started with! So, the Lagrangian remained completely unchanged under this rotation, which means that the **system has a rotational symmetry** (symmetry associated with the generalized coordinate θ).
+This is exactly what we started with! So, the Lagrangian remained completely unchanged under this rotation, which means that the **system has a rotational symmetry** (symmetry associated with the generalized coordinate $θ$).
 
-By Noether’s theorem, there must then be a **conserved quantity**, which we can find by simply applying the Euler-Lagrange equations on this Lagrangian (for the coordinate θ):
+By Noether’s theorem, there must then be a **conserved quantity**, which we can find by simply applying the Euler-Lagrange equations on this Lagrangian (for the coordinate $θ$):
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}=\frac{\partial L}{\partial\theta}$$
 
-Here, the Lagrangian does not depend explicitly on θ, so the right-hand side becomes 0 and we get:
+Here, the Lagrangian does not depend explicitly on $θ$, so the right-hand side becomes 0 and we get:
 
 ![](assets/images/lagrangian-vs-newtonian-mechanics-the-key-differences/img_24.webp)
 
@@ -347,15 +347,15 @@ Now, by definition, the time derivative of something being zero means that it is
 
 Now, the example above only showed how angular momentum is conserved.
 
-More generally, **Noether’s theorem states that if there is a symmetry associated with a change in any generalized coordinate of the form q ⇒ q + Δq** (i.e. the Lagrangian remains unchanged)**, then there must exist a conserved quantity Q**, meaning:
+More generally, **Noether’s theorem states that if there is a symmetry associated with a change in any generalized coordinate of the form q ⇒ q + $Δ$q** (i.e. the Lagrangian remains unchanged)**, then there must exist a conserved quantity Q**, meaning:
 
 $$\frac{d}{dt}Q=0$$
 
 The big three conservation laws coming from Noether’s theorem (although there are more as well) are:
 
-- Position-translation symmetry (x ⇒ x + Δx) → **momentum** conservation
-- Time-translation symmetry (t ⇒ t + Δt) → **energy** conservation
-- Rotational symmetry (θ ⇒ θ + Δθ) → **angular momentum** conservation
+- Position-translation symmetry (x ⇒ x + $Δ$x) → **momentum** conservation
+- Time-translation symmetry (t ⇒ t + $Δ$t) → **energy** conservation
+- Rotational symmetry ($θ$ ⇒ $θ$ + $Δ$$θ$) → **angular momentum** conservation
 
 Now, it is certainly possible to prove these conservation laws by using Newton’s laws (only in limited cases though!), but there isn’t really a structured plan to do this.
 

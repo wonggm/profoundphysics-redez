@@ -69,9 +69,9 @@ We can also do a little geometry here. The value of b here is just the differenc
 
 ![](assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_6.webp)
 
-Now, what is the value of this “h”? Well, it’s just the change in the y-coordinate, Δy, of this tangent line between x=0 and the x-value of this point we’re interested in.
+Now, what is the value of this “h”? Well, it’s just the change in the y-coordinate, $Δ$y, of this tangent line between x=0 and the x-value of this point we’re interested in.
 
-The Δy, on the other hand, is just the slope of the tangent line multiplied by the change in the x-coordinate, Δx, which is nothing but the x-coordinate of this point here.
+The $Δ$y, on the other hand, is just the slope of the tangent line multiplied by the change in the x-coordinate, $Δ$x, which is nothing but the x-coordinate of this point here.
 
 ![](assets/images/legendre-transformations-for-dummies-intuition-and-examples/img_8.webp)
 
@@ -187,7 +187,7 @@ In certain thermodynamic systems, we may have for example, a gas with its entrop
 
 $$U=U\left(S{,}V\right)$$
 
-We can perform a Legendre transformation to this by switching variables from the volume V to a new variable ∂U/∂V, while keeping the entropy fixed. In other words:
+We can perform a Legendre transformation to this by switching variables from the volume V to a new variable $∂$U/$∂$V, while keeping the entropy fixed. In other words:
 
 $$U\left(S{,}\ V\right)\ \ \Rightarrow\ \ U^{\ast}\left(S{,}\ \frac{\partial U}{\partial V}\right)$$
 
@@ -197,7 +197,7 @@ $$U^{\ast}\left(S{,}\ \frac{\partial U}{\partial V}\right)=\frac{\partial U}{\pa
 
 Notice that this is pretty much exactly the same as the single-variable Legendre transformation; product of the “new” and “old” variables minus the “old” function.
 
-Now, if you’re familiar with thermodynamics, this partial derivative ∂U/∂V is defined as the negative of pressure P (if entropy stays fixed). So, we would then have:
+Now, if you’re familiar with thermodynamics, this partial derivative $∂$U/$∂$V is defined as the negative of pressure P (if entropy stays fixed). So, we would then have:
 
 $$U^{\ast}\left(S{,}\ P\right)=-PV-U$$
 
@@ -205,7 +205,7 @@ By definition, this is the negative of the enthalpy H as a function of entropy a
 
 $$U^{\ast}\left(S{,}\ P\right)=-H\left(S{,}\ P\right)=PV+U$$
 
-If you were to actually calculate this, you’d have to first find P=-∂U/∂V and use that to find V(S,P) as well as U(S,P) and then plug those into H=PV+U. This is exactly the same logic as we used in the single-variable case with the whole “finding x(p) from p=df/dx” -business.
+If you were to actually calculate this, you’d have to first find P=-$∂$U/$∂$V and use that to find V(S,P) as well as U(S,P) and then plug those into H=PV+U. This is exactly the same logic as we used in the single-variable case with the whole “finding x(p) from p=df/dx” -business.
 
 It’s also worth noting that there also several other thermodynamic potential functions (such as the Gibbs and Helmholtz free energies G(T,P) and F(T,V)) that can be obtained as Legendre transformations of the internal energy as well, just for different variables.
 

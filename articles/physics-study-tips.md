@@ -93,11 +93,11 @@ $$\frac{1}{2}m\Delta v^2=\int_{x_1}^{x_2}Fdx$$
 
 On the left-hand side, we have the change in kinetic energy 1/2mv2. On the right, we have the definition of work as the integral of force over distance (this is the “calculus definition” of work). The work-energy principle simply states that the change in kinetic energy is equal to the work done by the force acting on the system.
 
-We know that Δv2 is just v2-v02 (the change in the square of the velocity, where v is the final velocity and v0 is the initial velocity) and that our force is just F=ma (just a constant since a is constant). Inserting these and integrating, we get:
+We know that $Δ$v2 is just v2-v02 (the change in the square of the velocity, where $v$ is the final velocity and v0 is the initial velocity) and that our force is just F=ma (just a constant since a is constant). Inserting these and integrating, we get:
 
 $$\frac{1}{2}m\Delta v^2=\int_{x_1}^{x_2}Fdx\ \ \Rightarrow\ \ \frac{1}{2}m\left(v^2-v_0^2\right)=ma\left(x_2-x_1\right)$$
 
-We know that x2-x1=Δx, so inserting this and solving for v2, we get:
+We know that x2-x1=$Δ$x, so inserting this and solving for v2, we get:
 
 $$\frac{1}{2}m\left(v^2-v_0^2\right)=ma\left(x_2-x_1\right)\ \ \Rightarrow\ \ v^2=v_0^2+2a\Delta x$$
 

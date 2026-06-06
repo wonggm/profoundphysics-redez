@@ -27,7 +27,7 @@ If you know a little bit about physics, at a glance you may think that the force
 
 $$F=\frac{GMm}{r^2}$$
 
-Here M is the mass of the Earth, G is the gravitational constant and r is the distance from Earth’s center.
+Here $M$ is the mass of the Earth, G is the gravitational constant and r is the distance from Earth’s center.
 
 For this case, it will be more useful to only look at the gravitational acceleration g and not the force itself (because the force depends on your mass too, which we don’t really care about right now). That we can get by the simple fact that F=ma (or F=mg, since the gravitational acceleration is denoted by g):
 
@@ -51,7 +51,7 @@ $$g\left(r\right)=\frac{4}{3}\pi G\rho r$$
 
 $$g\left(r\right)=\begin{cases}\sum_{n=0}^i\alpha_nr^n&{,}\ 0\le r<r_{\max}\\\sum_{n=0}^j\beta_nr^n&{,}\ r_{\max}\le r\le R\end{cases}$$
 
-Here, the α’s and β’s are some suitable coefficients that fit the data given by the PREM model (you’ll find these coefficients later in the article).
+Here, the $α$’s and $β$’s are some suitable coefficients that fit the data given by the PREM model (you’ll find these coefficients later in the article).
 
 The notable thing here for now is that both of these models describe the gravitational acceleration at a given (underground) distance r from the center of Earth (or if you wish to express it in terms of the depth underground d, just insert r=R-d).
 
@@ -63,7 +63,7 @@ The first formula we’ll look at is the following (the derivation of this can b
 
 $$g\left(r\right)=\frac{4}{3}\pi G\rho r$$
 
-The values in the formula are the following; **r is the distance from the center of Earth** (this works only for r<R), **G is the gravitational constant** (G=6.674×10-11 m3/(kg·s2)) and **ρ is the average density of Earth** (ρ=5510 kg/m3).
+The values in the formula are the following; **r is the distance from the center of Earth** (this works only for r<R), **G is the gravitational constant** (G=6.674$×$10-11 m3/(kg$·$s2)) and **$ρ$ is the average density of Earth** ($ρ$=5510 kg/m3).
 
 Derivation Using Gauss's Law For Gravity (click to see more)
 
@@ -81,7 +81,7 @@ Intuitively, the gravitational flux through a closed surface is simply the amoun
 
 (picture with caption: “Since we want to find the gravitational field *inside* the Earth at some radius r (less than Earth’s radius R), the mass inside this surface will be smaller than the total mass of the Earth).”)
 
-Now, the calculation will actually be even simpler. We know that the surface of a sphere is given by A=4πr2 and at a given radius, the gravitational acceleration g should be constant, so really this whole surface integral thing will be simply gA=4πr2g (forgetting about the vector signs also). We then get from Gauss’s law:
+Now, the calculation will actually be even simpler. We know that the surface of a sphere is given by A=4$π$r2 and at a given radius, the gravitational acceleration g should be constant, so really this whole surface integral thing will be simply gA=4$π$r2g (forgetting about the vector signs also). We then get from Gauss’s law:
 
 $$4\pi r^2g=-4\pi GM_{inside}\ \ \Rightarrow\ \ g=-\frac{GM_{inside}}{r^2}$$
 
@@ -91,7 +91,7 @@ Now, this is quite not what we want yet. The problem is that the mass inside is 
 
 $$M_{inside}=\rho V$$
 
-The volume enclosing this given mass is then just the volume of a sphere of the specific radius r, which is V=4⁄3πr3. We then have (also forget about the minus-sign, since we know that the gravitational acceleration is always radially inward):
+The volume enclosing this given mass is then just the volume of a sphere of the specific radius r, which is V=4⁄3$π$r3. We then have (also forget about the minus-sign, since we know that the gravitational acceleration is always radially inward):
 
 $$g=\frac{GM_{inside}}{r^2}=\frac{G\rho V}{r^2}=\frac{G\rho\cdot\frac{4}{3}\pi r^3}{r^2}=\frac{4}{3}\pi G\rho r$$
 
@@ -146,15 +146,15 @@ The coefficients are given in the table below:
 
 | Coefficient | Numerical value |
 | --- | --- |
-| α0 | -1.942×10-2 |
-| α1 | 3.853×10-3 |
-| α2 | −2.22×10-7 |
-| β0 | 16.82 |
-| β1 | 3.114×10-3 |
-| β2 | -4.059×10-6 |
-| β3 | 1.149×10-9 |
-| β4 | -1.278×10-13 |
-| β5 | 4.894×10-18 |
+| $α$0 | -1.942×10-2 |
+| $α$1 | 3.853×10-3 |
+| $α$2 | −2.22×10-7 |
+| $β$0 | 16.82 |
+| $β$1 | 3.114×10-3 |
+| $β$2 | -4.059×10-6 |
+| $β$3 | 1.149×10-9 |
+| $β$4 | -1.278×10-13 |
+| $β$5 | 4.894×10-18 |
 
 For simplicity, I’ve left the units out (since each coefficient has different units); this can be done by simply defining that the value of r should be measured in km so that the output g will have the correct numerical value.
 
@@ -261,7 +261,7 @@ The mass shown at some distance r from the center of Earth (or equivalently, at 
 
 $$m\left(r\right)=m\frac{g\left(r\right)}{g}$$
 
-Here, m is the mass measured on the surface (i.e. the “normal” value for the mass), g(r) is the gravitational acceleration at the distance r from Earth’s center and g is the gravitational acceleration at the surface (g = 9.81 m/s2).
+Here, $m$ is the mass measured on the surface (i.e. the “normal” value for the mass), g(r) is the gravitational acceleration at the distance r from Earth’s center and g is the gravitational acceleration at the surface (g = 9.81 m/s2).
 
 Now, this of course, does not mean that your mass would actually be different. The discrepancy here comes from the fact that **weight scales measure mass by measuring the gravitational force**, not directly mass itself.
 

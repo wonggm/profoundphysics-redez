@@ -73,7 +73,7 @@ The spacetime interval (denoted by dS) connects both space and time in the follo
 
 Okay, then we need the definition for a proper time interval. **Proper time is defined as the time measured from an observer’s own frame of reference** (rest frame).
 
-A proper time interval (dτ) is always invariant, while time measured from any outside observer’s frame may not be.
+A proper time interval (d$τ$) is always invariant, while time measured from any outside observer’s frame may not be.
 
 A proper time interval is connected to the spacetime interval by a factor of the speed of light squared:
 
@@ -87,7 +87,7 @@ Anyway, from these quantities, it is possible to derive a formula for momentum t
 
 Derivation of Einstein's Energy-Momentum Relation (click to see more)
 
-Okay, the first thing we can do is to manipulate the equation (just divide both sides by (dτ)2):
+Okay, the first thing we can do is to manipulate the equation (just divide both sides by (d$τ$)2):
 
 $$\left(dS\right)^2=c^2\left(d\tau\right)^2$$
 
@@ -99,9 +99,9 @@ $$c^2\frac{\left(dt\right)^2}{\left(d\tau\right)^2}-\frac{\left(dx\right)^2}{\le
 
 $$c^2\left(\frac{dt}{d\tau}\right)^2-\left(\frac{dx}{d\tau}\right)^2-\left(\frac{dy}{d\tau}\right)^2-\left(\frac{dz}{d\tau}\right)^2=c^2$$
 
-If you know about special relativity already, you might see something here. If not, let’s take a look at what these things with dτ mean. In fact, they are just **derivatives with respect to proper time**.
+If you know about special relativity already, you might see something here. If not, let’s take a look at what these things with d$τ$ mean. In fact, they are just **derivatives with respect to proper time**.
 
-Let’s first see what dt/dτ actually is. We can solve for dτ from its definition:
+Let’s first see what dt/d$τ$ actually is. We can solve for d$τ$ from its definition:
 
 $$c^2\left(d\tau\right)^2=c^2\left(dt\right)^2-\left(dx\right)^2-\left(dy\right)^2-\left(dz\right)^2$$
 
@@ -119,23 +119,23 @@ Now, what is this sum of the squares of these time derivatives? They are simply 
 
 $$d\tau=dt\sqrt{1-\frac{v^2}{c^2}}$$
 
-Then, dt/dτ is simply:
+Then, dt/d$τ$ is simply:
 
 $$\frac{dt}{d\tau}=\frac{dt}{dt\sqrt{1-\frac{v^2}{c^2}}}=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$$
 
-This square root thing we obtained is actually a very common quantity in relativity and it is called the **Lorentz factor** (usually denoted by γ). So, we end up with:
+This square root thing we obtained is actually a very common quantity in relativity and it is called the **Lorentz factor** (usually denoted by $γ$). So, we end up with:
 
 $$\frac{dt}{d\tau}=\gamma$$
 
-Next, let’s look at the derivatives of the spacial components with respect to dτ. Here we’ll need another important concept of relativity, which is **four-velocity**. This is explained in more detail in my [introductory article](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/#FourVelocity) to SR.
+Next, let’s look at the derivatives of the spacial components with respect to d$τ$. Here we’ll need another important concept of relativity, which is **four-velocity**. This is explained in more detail in my [introductory article](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/#FourVelocity) to SR.
 
-The idea of four-velocity is not really anything difficult. It is simply a velocity with four spacetime components (t,x,y,z) as opposed to the normal three space components (x,y,z). Four-velocity is typically denoted by uμ.
+The idea of four-velocity is not really anything difficult. It is simply a velocity with four spacetime components (t,x,y,z) as opposed to the normal three space components (x,y,z). Four-velocity is typically denoted by u$μ$.
 
 The normal three velocity is defined as the derivative of the spacial components with respect to time.
 
 Similarly, **four-velocity is defined as the derivative of the spacetime components with respect to proper time**. So, four-velocity is simply the relativistic analogue of the regular velocity.
 
-There is also a similar idea, which is the four-momentum (denoted by pμ). It is almost p=mv, except that it is actually **mass multiplied by the four-velocity**:
+There is also a similar idea, which is the four-momentum (denoted by p$μ$). It is almost p=mv, except that it is actually **mass multiplied by the four-velocity**:
 
 $$p^{\mu}=mu^{\mu}$$
 
@@ -175,7 +175,7 @@ Now, let’s square that on both sides:
 
 $$E^2=\left(\gamma mc^2\right)^2=\gamma^2m^2c^4$$
 
-Then we can just manipulate this to get an expression for the thing in our formula, γ2c2:
+Then we can just manipulate this to get an expression for the thing in our formula, $γ$2c2:
 
 $$E^2=\gamma^2m^2c^4$$
 
@@ -201,13 +201,13 @@ $$\lim_{m\rightarrow0}p=\sqrt{\frac{E^2}{c^2}-0^2\cdot c^2}=\sqrt{\frac{E^2}{c^2
 
 This tells us that the momentum of a photon is proportional to its energy, which is exactly what we would expect based on experimental results.
 
-Now, the question is; how do we actually calculate the energy of a photon if the energy is defined as E=γmc2 but the mass goes to zero? Well, that requires taking a look at the **quantum mechanical model of a photon**.
+Now, the question is; how do we actually calculate the energy of a photon if the energy is defined as E=$γ$mc2 but the mass goes to zero? Well, that requires taking a look at the **quantum mechanical model of a photon**.
 
 ## Momentum Of A Photon According To Quantum Mechanics
 
 If we really wish to consider the energies and momenta of particles, such as photons, we do have to take into account quantum mechanics as well. A photon is, after all, an elementary particle.
 
-The first thing to do is to actually forget the above definition for energy, E=γmc2 and rather consider a more fundamental, quantum mechanical equation for the energy.
+The first thing to do is to actually forget the above definition for energy, E=$γ$mc2 and rather consider a more fundamental, quantum mechanical equation for the energy.
 
 At the turn of the 20th century, Max Planck deduced, partly by accident that the energy of electromagnetic radiation (light) was actually not continuous such as it is typically thought of, but rather comes in **discrete energy packets that have energy proportional to the frequency of the electromagnetic radiation**.
 
@@ -219,9 +219,9 @@ Together, the work of both Planck and Einstein can be expressed in one simple ma
 
 $$E=hf$$
 
-Here, f is the frequency and h is a proportionality constant that became known as the **Planck constant**. Determined by observations, the Planck constant has a value of around 6.63×10−34 J⋅s.
+Here, $f$ is the frequency and $h$ is a proportionality constant that became known as the **Planck constant**. Determined by observations, the Planck constant has a value of around 6.63$×$10−34 J⋅s.
 
-Now, since light is still an electromagnetic wave, it obeys basic wave mechanics and so its speed (c), frequency (f) and wavelength (λ) are connected by the equation:
+Now, since light is still an electromagnetic wave, it obeys basic wave mechanics and so its speed (c), frequency (f) and wavelength ($λ$) are connected by the equation:
 
 $$c=\lambda f$$
 

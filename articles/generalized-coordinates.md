@@ -125,8 +125,8 @@ Actually, pretty much any set of coordinates that **satisfy the constraints of t
 Now, there are still patterns and certain “rules-of-thumb” that you can use when finding generalized coordinates:
 
 1. It’s often worthwhile to look at **symmetries in a given problem** as this allows you to quickly figure out which generalized coordinates may be suitable.
-   - For **spherically symmetric problems** in 3D, **spherical coordinates** (radial distance r and two angles, θ and ϕ) are often the best choice, such as in the case of a potential that only depends on the radial distance.
-   - Equivalently, for **rotational symmetry in 2D**, **polar coordinates** (r and θ) are often suitable.
+   - For **spherically symmetric problems** in 3D, **spherical coordinates** (radial distance r and two angles, $θ$ and ϕ) are often the best choice, such as in the case of a potential that only depends on the radial distance.
+   - Equivalently, for **rotational symmetry in 2D**, **polar coordinates** (r and $θ$) are often suitable.
    - For **axisymmetric problems** (there is symmetry about one particular axis), **cylindrical coordinates** will often be the easiest to use.
 2. For **systems with multiple objects**, using ***relative* distances between the objects** as generalized coordinates will often work well. An example of this is the two-body problem (explained later).
 3. Some **helpful questions** you may want to think about when choosing generalized coordinates are:
@@ -135,7 +135,7 @@ Now, there are still patterns and certain “rules-of-thumb” that you can use 
 
 Often, the best place to begin is simply going to be to figure out **how many generalized coordinates you’ll need** for the given problem in the first place. Luckily, this is quite simple.
 
-The **number of degrees of freedom** in any given system can be calculated by the formula **DN-c**, where D is the number of spacial dimensions (1, 2 or 3), N is the number of objects in the system and c is the number of constraints.
+The **number of degrees of freedom** in any given system can be calculated by the formula **DN-c**, where D is the number of spacial dimensions (1, 2 or 3), N is the number of objects in the system and $c$ is the number of constraints.
 
 **The *minimum* number of independent generalized coordinates you’ll need is then the same as the number of degrees of freedom in the system**.
 
@@ -165,7 +165,7 @@ For all of these example, you should keep in mind all of the tips and help quest
 
 The simple pendulum essentially consists of a mass at the end of a rigid rod that swings in a plane under the influence of gravity. The length of the rod is L, the mass of the “pendulum bob” is m and the gravitational acceleration downwards is g (a constant).
 
-We can place the pendulum in an x,y -coordinate system such that the rod is attached to the origin. I’ll also denote the angle relative to the vertical (y-axis) as θ.
+We can place the pendulum in an x,y -coordinate system such that the rod is attached to the origin. I’ll also denote the angle relative to the vertical (y-axis) as $θ$.
 
 ![](assets/images/generalized-coordinates/img_8.webp)
 
@@ -175,17 +175,17 @@ Let me explain why. First of all, we have once constraint, which is that the len
 
 Therefore, we only have 2\*1-1=1 (we’re in two dimensions with one object and one constraint) degrees of freedom here and thus, **we only need one generalized coordinate**.
 
-The natural choice due to rotational symmetry here is going to be the **angle θ** (which changes with time as the pendulum swings back and forth).
+The natural choice due to rotational symmetry here is going to be the **angle $θ$** (which changes with time as the pendulum swings back and forth).
 
-This is indeed a valid choice of a generalized coordinates as **it is consistent with our constraint**; this θ-coordinate can only change perpendicularly to our constraint (distance from the origin), so it cannot violate this constraint.
+This is indeed a valid choice of a generalized coordinates as **it is consistent with our constraint**; this $θ$-coordinate can only change perpendicularly to our constraint (distance from the origin), so it cannot violate this constraint.
 
-So, we will take the angle θ as the generalized coordinate of this pendulum. Now, the easiest way to continue here is to write down the x,y -coordinates in terms of θ. We can get these by some simple trigonometry:
+So, we will take the angle $θ$ as the generalized coordinate of this pendulum. Now, the easiest way to continue here is to write down the x,y -coordinates in terms of $θ$. We can get these by some simple trigonometry:
 
 ![](assets/images/generalized-coordinates/img_10.webp) 
 
 Note that the y-coordinate is negative here since it’s measure downwards from the origin.
 
-The next step is to construct the **kinetic energy**. For this, we need the velocities and again, the easiest way to get these is just by differentiating the x,y -coordinates (using the chain rule since θ here is a function of time):
+The next step is to construct the **kinetic energy**. For this, we need the velocities and again, the easiest way to get these is just by differentiating the x,y -coordinates (using the chain rule since $θ$ here is a function of time):
 
 $$\dot{x}=L\dot{\theta}\cos\theta$$
 
@@ -195,7 +195,7 @@ The kinetic energy is then simply:
 
 $$T=\frac{1}{2}m\left(\dot{x}^2+\dot{y}^2\right)=\frac{1}{2}m\left(L^2\dot{\theta}^2\cos^2\theta+L^2\dot{\theta}^2\sin^2\theta\right)=\frac{1}{2}mL^2\dot{\theta}^2$$
 
-Here I’ve used cos2θ+sin2θ=1.
+Here I’ve used cos2$θ$+sin2$θ$=1.
 
 Notice how simple obtaining the kinetic energy is if you first write down the Cartesian coordinates in terms of your generalized coordinates. All we need after that is to take the time derivatives and them sum the squares of the Cartesian velocities.
 
@@ -207,7 +207,7 @@ The Lagrangian is then:
 
 $$L=T-V=\frac{1}{2}mL^2\dot{\theta}^2+mgL\cos\theta$$
 
-We now have the Lagrangian of this simple pendulum system in terms of the generalized coordinate θ! You could then use this to calculate the equations of motion from the Euler-Lagrange equation and analyze the motion of the pendulum.
+We now have the Lagrangian of this simple pendulum system in terms of the generalized coordinate $θ$! You could then use this to calculate the equations of motion from the Euler-Lagrange equation and analyze the motion of the pendulum.
 
 In case you’re interested in how to do that and what it results in physically, I have a **free PDF that covers a bunch of Lagrangian mechanics examples**, including the simple pendulum. You’ll find the document [here](https://profoundphysics.com/lagrangian-mechanics-examples-applications-free-pdf/).
 
@@ -221,11 +221,11 @@ We’ll again call the length of the rod L, the mass m and gravity downwards wil
 
 We could use the x,y,z -coordinates of the mass m as our generalized coordinates, but we can again be smarter here; we only need 3\*1-1=2 generalized coordinates (we’re in 3 dimensions with one object and one constraint, the distance from the origin has to be a constant L again).
 
-Also, the situation here clearly has some **spherical symmetry** due to the motion of the pendulum being constrained to a sphere. Therefore, the natural choice of coordinates is going to be **two angles, θ and ϕ** (these are called spherical coordinates, with the r-coordinate fixed as r=L):
+Also, the situation here clearly has some **spherical symmetry** due to the motion of the pendulum being constrained to a sphere. Therefore, the natural choice of coordinates is going to be **two angles, $θ$ and ϕ** (these are called spherical coordinates, with the r-coordinate fixed as r=L):
 
 ![](assets/images/generalized-coordinates/img_14.webp)
 
-Since we know that at all times, the distance from the origin must be L, we can locate the pendulum bob just by knowing these two angles, θ and ϕ, at any point in time. These will therefore be our **generalized coordinates**.
+Since we know that at all times, the distance from the origin must be L, we can locate the pendulum bob just by knowing these two angles, $θ$ and ϕ, at any point in time. These will therefore be our **generalized coordinates**.
 
 It’s again quite simple to figure out the relationship between these generalized coordinates and the Cartesian x,y,z -coordinates. What you’ll end up with are the relations (the derivation of these is also covered in my [free Lagrangian mechanics examples PDF](https://profoundphysics.com/lagrangian-mechanics-examples-applications-free-pdf/)):
 
@@ -241,7 +241,7 @@ $$L=\frac{1}{2}mL^2\left(\dot{\theta}^2+\dot{\phi}^2\sin^2\theta\right)+mgL\cos\
 
 This indeed looks quite similar to the simple pendulum Lagrangian, but the spherical pendulum is a much more interesting system.
 
-For example, there is a certain value of the angle θ where the pendulum will oscillate in a circular motion in the x,y -plane. This, as well as the full derivation of the Lagrangian and the equations of motion for the spherical pendulum are all in my **free Lagrangian mechanics PDF** found [here](https://profoundphysics.com/lagrangian-mechanics-examples-applications-free-pdf/).
+For example, there is a certain value of the angle $θ$ where the pendulum will oscillate in a circular motion in the x,y -plane. This, as well as the full derivation of the Lagrangian and the equations of motion for the spherical pendulum are all in my **free Lagrangian mechanics PDF** found [here](https://profoundphysics.com/lagrangian-mechanics-examples-applications-free-pdf/).
 
 ### The Two-Body Problem
 
@@ -271,11 +271,11 @@ From this fact, we get **three constraints** (each of the component of the cente
 
 Also, since this problem has spherical symmetry, a good choice of generalized coordinates is going to be **spherical coordinates**.
 
-We can use these if we, for example, choose our coordinates such that one of the masses sits at the origin. The other mass can then be located by a radius r and two angles, θ and ϕ:
+We can use these if we, for example, choose our coordinates such that one of the masses sits at the origin. The other mass can then be located by a radius r and two angles, $θ$ and ϕ:
 
 ![](assets/images/generalized-coordinates/img_20.webp)
 
-Here we always know that the other mass is located at the origin, so if we know the distance and the two angles (r,θ,ϕ) relative to the mass at the origin, we then know the position of the other mass as well.
+Here we always know that the other mass is located at the origin, so if we know the distance and the two angles (r,$θ$,ϕ) relative to the mass at the origin, we then know the position of the other mass as well.
 
 Therefore, these 3 coordinates are enough to specify the system and thus, we’ll choose these as our **generalized coordinates**. The relations between the x,y,z -coordinates of the mass m1 and these spherical coordinates are:
 

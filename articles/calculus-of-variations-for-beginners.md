@@ -9,7 +9,7 @@ canonical: false
 
 # Calculus of Variations For Dummies: An Intuitive Introduction
 
-> Another area of mathematics particularly important for physics — finding the function that extremizes a functional. The path integral ℒ dt is the gateway to Lagrangian mechanics.
+> Another area of mathematics particularly important for physics — finding the function that extremizes a functional. The path integral $ℒ$ dt is the gateway to Lagrangian mechanics.
 
 *Originally published at [profoundphysics.com](https://profoundphysics.com/calculus-of-variations-for-beginners/).*
 
@@ -76,7 +76,7 @@ So, we’re essentially looking at how a “function of a function” (called fu
 
 ![](assets/images/calculus-of-variations-for-beginners/img_2.webp) 
 
-This δ-symbol here is typically used to denote the *variation* in a function or functional. We’ll discuss what this means soon.
+This $δ$-symbol here is typically used to denote the *variation* in a function or functional. We’ll discuss what this means soon.
 
 With all of this being said, it’s now time to actually get to the details concerning calculus of variations!
 
@@ -161,13 +161,13 @@ Similarly, in calculus of variations, the most important mathematical concept (a
 
 A functional derivative is analogous to an ordinary derivative, however, a functional derivative considers the **change in a functional with respect to a function** (in contrast to the change in a function with respect to a variable in ordinary calculus).
 
-We denote the functional derivative of a functional F(y) with respect to a function y(x) with the symbol δ as follows (compared to df(x)/dx for an ordinary derivative):
+We denote the functional derivative of a functional F(y) with respect to a function y(x) with the symbol $δ$ as follows (compared to df(x)/dx for an ordinary derivative):
 
 $$\frac{\delta F\left(y\right)}{\delta y}$$
 
 Essentially, this has the same meaning as the ordinary derivative of a function – it describes the **rate of change of the functional F(y) when we change its input function y(x) by a little bit**.
 
-This “change in the input function y(x)” is denoted by this δy here (it’s very common to denote small changes by the symbol δ).
+This “change in the input function y(x)” is denoted by this $δ$y here (it’s very common to denote small changes by the symbol $δ$).
 
 ### The Variation of a Functional
 
@@ -179,17 +179,17 @@ Intuitively, the total differential describes the total change in a function whe
 
 Similarly, there is an important concept in calculus of variations called the **variation of a functional**. This is basically the analogue of the total differential of an ordinary multivariable function, so in a sense, it described the “total change in a functional”.
 
-**We usually denote the variation of a functional F(y) as δF(y)**.
+**We usually denote the variation of a functional F(y) as $δ$F(y)**.
 
 The variation of a functional is important when considering, for example, the *Euler-Lagrange equation* (which we will discuss soon).
 
 Now, how do we represent the variation of a functional?
 
-Well, your first guess might be that it has a similar form to the differential of an ordinary multivariable function (a sum over the partial derivatives of the functional multiplied by the change δy):
+Well, your first guess might be that it has a similar form to the differential of an ordinary multivariable function (a sum over the partial derivatives of the functional multiplied by the change $δ$y):
 
 $$\delta F=\sum_{ }^{ }\frac{\partial F}{\partial y}\delta y$$
 
-There is just a couple things wrong with this definition. First, the partial derivative here should be replaced by the *functional derivative* δF/δy – we’re talking about functionals and not ordinary functions here, after all.
+There is just a couple things wrong with this definition. First, the partial derivative here should be replaced by the *functional derivative* $δ$F/$δ$y – we’re talking about functionals and not ordinary functions here, after all.
 
 Moreover, this sum here should represent a sum over all the “input variables” of the functional F(y). However, there is a *continuous range* of values for these “input variables” y(x), one value y(x) for each x, since these “input variables” y(x) here are themselves continuous functions.
 
@@ -201,7 +201,7 @@ The differential or **variation of a functional** F(y) is therefore written as:
 
 $$\delta F=\int_a^b\frac{\delta F}{\delta y}\delta ydx$$
 
-In practice, when finding functional derivatives, we often define δF on the left-hand side in terms of a **limit** (just like in ordinary calculus), calculate the limit and then identify δF/δy.
+In practice, when finding functional derivatives, we often define $δ$F on the left-hand side in terms of a **limit** (just like in ordinary calculus), calculate the limit and then identify $δ$F/$δ$y.
 
 For example, it’s possible to derive a general result that **the functional derivative of any functional written as a definite integral** is given by:
 
@@ -259,7 +259,7 @@ Now, the story is not too different in calculus of variations. In calculus of va
 
 The only difference, however, is that the stationary “points” of a functional are not really points, but *entire functions* – functions that make stationary (minimize or maximize) a given functional.
 
-Just like the stationary points of ordinary single-variable functions are found from the condition that df(x)/dx=0, stationary “points” of functionals (i.e. functions y(x)) are found by **setting the functional derivative equation to zero** (or equivalently, the variation δF), δF/δFy=0.
+Just like the stationary points of ordinary single-variable functions are found from the condition that df(x)/dx=0, stationary “points” of functionals (i.e. functions y(x)) are found by **setting the functional derivative equation to zero** (or equivalently, the variation $δ$F), $δ$F/$δ$Fy=0.
 
 Earlier, we found that in general, the functional derivative of any functional written as a definite integral is given by the following expression:
 
@@ -344,7 +344,7 @@ Here, we’ve used the chain rule in to get to the third equality.
 
 $$\frac{\partial f}{\partial y}=\frac{\partial}{\partial y}\left(\sqrt{1+y'^2}\right)=0$$
 
-ere, the function f does not depend on y itself (explicitly), only on y’, so the partial derivative is just zero. This also highlights an important point to keep in mind when doing calculus of variations problems – we always treat y and y’ as independent of each other explicitly (meaning ∂y’/∂y=0 and ∂y/∂y’=0), but they both still depend on the variable x.
+ere, the function f does not depend on y itself (explicitly), only on y’, so the partial derivative is just zero. This also highlights an important point to keep in mind when doing calculus of variations problems – we always treat y and y’ as independent of each other explicitly (meaning $∂$y’/$∂$y=0 and $∂$y/$∂$y’=0), but they both still depend on the variable x.
 
 Plugging these into the Euler-Lagrange equation, we find:
 
@@ -390,7 +390,7 @@ $$F\left(y\right)=\int_{x_1}^{x_2}f\left(y{,}\ y'\right)dx$$
 
 Of course, y and y’ still do depend on x, so the integrand function f still depends on x, but only *implicitly* through the x-dependence of y and y’.
 
-**Mathematically, the statement that f does not explicitly depend on x means that ∂f/∂x = 0**.
+**Mathematically, the statement that f does not explicitly depend on x means that $∂$f/$∂$x = 0**.
 
 Now, whenever this is true, we can prove that the Euler-Lagrange equation reduces to the following form:
 
@@ -398,9 +398,9 @@ $$\frac{\partial f}{\partial y'}y'-f=C$$
 
 C here is an arbitrary constant, which can be found from the initial/boundary conditions of any given problem.
 
-This is called the **Beltrami identity**. It’s a special case of the Euler-Lagrange equation and it applies whenever we have ∂f/∂x = 0.
+This is called the **Beltrami identity**. It’s a special case of the Euler-Lagrange equation and it applies whenever we have $∂$f/$∂$x = 0.
 
-Now, why is the Beltrami identity useful? Well, in many cases where it’s applicable, it’s **much simpler** to use than the full Euler-Lagrange equation itself – the Beltrami identity only requires us to take a single derivative, ∂f/∂y’, and nothing else.
+Now, why is the Beltrami identity useful? Well, in many cases where it’s applicable, it’s **much simpler** to use than the full Euler-Lagrange equation itself – the Beltrami identity only requires us to take a single derivative, $∂$f/$∂$y’, and nothing else.
 
 So, the Beltrami identity is a useful special case of the Euler-Lagrange equation, which can be used in certain situations to simplify things.
 
@@ -448,7 +448,7 @@ This is called the **geodesic equation**:
 
 $$\frac{d^2x^i}{d\lambda^2}+\Gamma_{mn}^i\frac{dx^m}{d\lambda}\frac{dx^n}{d\lambda}=0$$
 
-These Γimn-objects here are called **Christoffel symbols**. I discuss their geometric meaning (and physical meaning in general relativity) more in my [Complete Guide To Christoffel Symbols](https://profoundphysics.com/christoffel-symbols-a-complete-guide-with-examples/).
+These $\Gamma^{i}_{mn}$-objects here are called **Christoffel symbols**. I discuss their geometric meaning (and physical meaning in general relativity) more in my [Complete Guide To Christoffel Symbols](https://profoundphysics.com/christoffel-symbols-a-complete-guide-with-examples/).
 
 While the above equation might look somewhat complicated, it’s incredibly useful – the geodesic equation is a general “formula” for calculating geodesics in any space with a metric.
 

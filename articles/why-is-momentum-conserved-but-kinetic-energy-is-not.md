@@ -224,7 +224,7 @@ The equation governing this is simply “total energy = kinetic energy + gravita
 
 $$E=\frac{1}{2}mv^2+mgh$$
 
-Here v is the velocity of the ball, g is a constant with a value around 9.81 m/s2 that tells us how strong gravity is on Earth, h is the height of the ball, m is the mass of the ball and E is the total energy.
+Here $v$ is the velocity of the ball, g is a constant with a value around 9.81 m/s2 that tells us how strong gravity is on Earth, $h$ is the height of the ball, $m$ is the mass of the ball and $E$ is the total energy.
 
 **The velocity of the ball changes over time**. As I said before, it has an initial value, it slowly decreases until it hits zero, and then increases again as the ball falls back down.
 

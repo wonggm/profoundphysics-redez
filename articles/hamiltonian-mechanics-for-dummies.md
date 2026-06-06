@@ -350,13 +350,13 @@ This is the Hamiltonian of a particle in one dimension. This may look familiar t
 
 Let’s do another example; the **simple pendulum**. In this example, the pendulum bob will have mass m and the length of the pendulum rod is l.
 
-We can choose our generalized coordinate (only one is needed) to be the angle relative to the vertical axis, call this θ (which is a function of time). The Lagrangian for the pendulum is going to be:
+We can choose our generalized coordinate (only one is needed) to be the angle relative to the vertical axis, call this $θ$ (which is a function of time). The Lagrangian for the pendulum is going to be:
 
 $$L=\frac{1}{2}ml^2\dot{\theta}^2+mgl\cos\theta$$
 
 A good explanation of where this comes from can be found from the video below:
 
-Anyway, let’s now calculate the generalized momenta. For this pendulum, we only have one momenta since there is only one generalized coordinate and this will, of course, be the momentum associated with the θ-coordinate:
+Anyway, let’s now calculate the generalized momenta. For this pendulum, we only have one momenta since there is only one generalized coordinate and this will, of course, be the momentum associated with the $θ$-coordinate:
 
 $$p_{\theta}=\frac{\partial L}{\partial\dot{\theta}}=ml^2\dot{\theta}$$
 
@@ -404,9 +404,9 @@ Since the Hamiltonian is taken to represent the energy of a system, we can deter
 
 Derivation of Hamilton's Equations
 
-Now, mathematically, the way to see how the Hamiltonian “changes”, we look at a small “variation” in the Hamiltonian, denoted by δH (this is the same mathematical procedure we do with the principle of least action).
+Now, mathematically, the way to see how the Hamiltonian “changes”, we look at a small “variation” in the Hamiltonian, denoted by $δ$H (this is the same mathematical procedure we do with the principle of least action).
 
-This δH is basically just the “variational” version of a total derivative, at least it works in the same way; we take the partial derivatives of the Hamiltonian with respect to its variables (qi and pi) and then multiply by the change in these variables:
+This $δ$H is basically just the “variational” version of a total derivative, at least it works in the same way; we take the partial derivatives of the Hamiltonian with respect to its variables (qi and pi) and then multiply by the change in these variables:
 
 $$\delta H=\frac{\partial H}{\partial q_i}\delta q_i+\frac{\partial H}{\partial p_i}\delta p_i$$
 
@@ -428,7 +428,7 @@ On the second term, the Lagrangian is a function of the generalized position and
 
 $$\delta L=\frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial\dot{q}_i}\delta\dot{q}_i$$
 
-Inserting both of these into the formula for δH above, we get:
+Inserting both of these into the formula for $δ$H above, we get:
 
 $$\delta H=\delta\left(p_i\dot{q}_i\right)-\delta L=\dot{q}_i\delta p_i+p_i\delta\dot{q}_i-\frac{\partial L}{\partial q_i}\delta q_i-\frac{\partial L}{\partial\dot{q}_i}\delta\dot{q}_i$$
 
@@ -442,7 +442,7 @@ So, the derivative of the Lagrangian w.r.t position is just the time derivative 
 
 $$\frac{\partial L}{\partial q_i}=\dot{p}_i\ {,}\ \ \frac{\partial L}{\partial\dot{q}_i}=p_i$$
 
-We can now insert these into our expression for δH to get:
+We can now insert these into our expression for $δ$H to get:
 
 $$\delta H=\dot{q}_i\delta p_i+p_i\delta\dot{q}_i-\frac{\partial L}{\partial q_i}\delta q_i-\frac{\partial L}{\partial\dot{q}_i}\delta\dot{q}_i\\=\dot{q}_i\delta p_i+p_i\delta\dot{q}_i-\dot p_i\delta q_i-p_i\delta\dot{q}_i$$
 
@@ -454,7 +454,7 @@ Now, recall the formula for the variation of the Hamiltonian we had earlier:
 
 $$\delta H=\frac{\partial H}{\partial q_i}\delta q_i+\frac{\partial H}{\partial p_i}\delta p_i$$
 
-By definition, these are both δH, so they must be equal. We will also move everything to one side and factor out the δqi and δpi:
+By definition, these are both $δ$H, so they must be equal. We will also move everything to one side and factor out the $δ$qi and $δ$pi:
 
 $$\dot{q}_i\delta p_i-\dot{p}_i\delta q_i=\frac{\partial H}{\partial q_i}\delta q_i+\frac{\partial H}{\partial p_i}\delta p_i\\\Rightarrow\ \ \left(\frac{\partial H}{\partial q_i}+\dot{p}_i\right)\delta q_i+\left(\frac{\partial H}{\partial p_i}-\dot{q}_i\right)\delta p_i=0$$
 
@@ -472,7 +472,7 @@ Plugging this into Hamilton’s equations, we get (by defining the generalized c
 
 $$\dot{p}_i=-\frac{\partial H}{\partial q_i}\ \ \Rightarrow\ \ \dot{p}=-\frac{\partial V\left(x\right)}{\partial x}\\\dot{q}_i=\frac{\partial H}{\partial p_i}\ \ \Rightarrow\ \ \dot{x}=\frac{p}{m}$$
 
-The first one here is simply **Newton’s second law**, F=ma (for a conservative force F=-∂V/∂x and ma=dp/dt) and the second one is just the **velocity**, expressed in terms of momentum.
+The first one here is simply **Newton’s second law**, F=ma (for a conservative force F=-$∂$V/$∂$x and ma=dp/dt) and the second one is just the **velocity**, expressed in terms of momentum.
 
 So, Hamilton’s equations are indeed consistent with Newton’s laws.
 
@@ -488,9 +488,9 @@ For this example, consider again the Hamiltonian for a simple pendulum we derive
 
 $$H=\frac{p_{\theta}^2}{2ml^2}-mgl\cos\theta$$
 
-Let’s look at what Hamilton’s equations give us for this Hamiltonian. With this Hamiltonian, we have one generalized coordinate (θ) and one generalized momentum (pθ).
+Let’s look at what Hamilton’s equations give us for this Hamiltonian. With this Hamiltonian, we have one generalized coordinate ($θ$) and one generalized momentum (p$θ$).
 
-We’ll begin with the equation for velocity (time derivative of the generalized coordinate θ):
+We’ll begin with the equation for velocity (time derivative of the generalized coordinate $θ$):
 
 $$\dot{q_i}=\frac{\partial H}{\partial p_i}\ \ \Rightarrow\ \ \dot{\theta}=\frac{\partial H}{\partial p_{\theta}}$$
 
@@ -498,7 +498,7 @@ Inserting the Hamiltonian, we get:
 
 $$\dot{\theta}=\frac{\partial H}{\partial p_{\theta}}=\frac{p_{\theta}}{ml^2}$$
 
-From the second Hamilton’s equation, we get the time derivative of the momentum pθ:
+From the second Hamilton’s equation, we get the time derivative of the momentum p$θ$:
 
 $$\dot p_i=-\frac{\partial H}{\partial q_i}\ \ \Rightarrow\ \ \dot{p}_{\theta}=-\frac{\partial H}{\partial\theta}$$
 
@@ -512,7 +512,7 @@ $$\dot{p}_{\theta}=-mgl\sin\theta\\\dot{\theta}=\frac{p_{\theta}}{ml^2}$$
 
 Sometimes it’s useful to keep them in this form (particularly for numerical solutions or for visualizing the so-called Hamiltonian flow curves we will look at soon), but we could also turn these into a single second order differential equation (which is what the Euler-Lagrange equation would give us).
 
-To do this, let’s solve the second equation for pθ:
+To do this, let’s solve the second equation for p$θ$:
 
 $$\dot{\theta}=\frac{p_{\theta}}{ml^2}\ \ \Rightarrow\ \ p_{\theta}=ml^2\dot{\theta}$$
 
@@ -528,7 +528,7 @@ Canceling out some stuff, we get:
 
 $$\ddot{\theta}=-\frac{g}{l}\sin\theta$$
 
-This is now a second order differential equation we could solve for θ(t) and in fact, this is exactly the equation of motion the Euler-Lagrange equation would have given us from the Lagrangian directly.
+This is now a second order differential equation we could solve for $θ$(t) and in fact, this is exactly the equation of motion the Euler-Lagrange equation would have given us from the Lagrangian directly.
 
 [![](assets/images/hamiltonian-mechanics-for-dummies/img_7.webp)](https://profoundphysicscourses.com/lagrangian-mechanics-book/) 
 
@@ -656,9 +656,9 @@ Plotting this vector field, we have:
 
 ![](assets/images/hamiltonian-mechanics-for-dummies/img_15.webp) 
 
-This is a phase space plot with the coordinate θ on the horizontal axis and the momentum pθ on the vertical axis.
+This is a phase space plot with the coordinate $θ$ on the horizontal axis and the momentum p$θ$ on the vertical axis.
 
-Interestingly, for small momenta pθ and small angle θ, the pendulum behaves *exactly* like a harmonic oscillator (the elliptical shape), but for large momenta and angle, the motion is drastically different.
+Interestingly, for small momenta p$θ$ and small angle $θ$, the pendulum behaves *exactly* like a harmonic oscillator (the elliptical shape), but for large momenta and angle, the motion is drastically different.
 
 ### What Are Phase Space Diagrams?
 
@@ -726,11 +726,11 @@ We can also write this in the form:
 
 $$\frac{a}{b}=\sqrt{mk}=\sqrt{m^2\frac{k}{m}}=m\sqrt{\frac{k}{m}}=m\omega$$
 
-This square root thing here is the definition of the angular frequency (ω) of a harmonic oscillator.
+This square root thing here is the definition of the angular frequency ($ω$) of a harmonic oscillator.
 
 So, this essentially tells us that the shape of the phase space diagram for the harmonic oscillator is closely related to the angular frequency.
 
-Another, perhaps even more interesting thing can be found by looking at the area of the ellipse (which is given by the formula A=πab):
+Another, perhaps even more interesting thing can be found by looking at the area of the ellipse (which is given by the formula A=$π$ab):
 
 $$A=\pi ab=\pi\sqrt{2mH}\sqrt{\frac{2H}{k}}=\pi\sqrt{\frac{4H^2m}{k}}=2\pi H\sqrt{\frac{m}{k}}$$
 

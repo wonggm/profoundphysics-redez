@@ -243,15 +243,15 @@ Let’s consider the simplest possible case first; a free particle in one dimens
 
 $$L=\frac{1}{2}m\dot{x}^2$$
 
-The transformation we’ll consider is a spatial translation where we essentially move the particle in space by some small (constant) amount δx:
+The transformation we’ll consider is a spatial translation where we essentially move the particle in space by some small (constant) amount $δ$x:
 
 ![](assets/images/noethers-theorem-a-complete-guide/img_6.webp)
 
-This transformation moves the particle from some arbitrary location x to a new location x+δx. It’s important to note that this shift δx is taken to be constant everywhere and also infinitesimal (we’ll talk more about why that is in the next section).
+This transformation moves the particle from some arbitrary location x to a new location x+$δ$x. It’s important to note that this shift $δ$x is taken to be constant everywhere and also infinitesimal (we’ll talk more about why that is in the next section).
 
-The velocity of the particle is originally dx/dt (x with a dot above it in the above Lagrangian) and after this translation, its new velocity is d(x+δx)/dt=dx/dt since δx is a constant, so d(δx)/dt=0.
+The velocity of the particle is originally dx/dt (x with a dot above it in the above Lagrangian) and after this translation, its new velocity is d(x+$δ$x)/dt=dx/dt since $δ$$x$ is a constant, so d($δ$x)/dt=0.
 
-We then have the variation in the particle’s coordinate as just δx and the variation in its velocity as d(δx)/dt=δ(dx/dt)=0. We now use these to calculate how the Lagrangian changes in this transformation. This is given by the multivariable chain rule as:
+We then have the variation in the particle’s coordinate as just $δ$x and the variation in its velocity as d($δ$x)/dt=$δ$(dx/dt)=0. We now use these to calculate how the Lagrangian changes in this transformation. This is given by the multivariable chain rule as:
 
 $$\delta L=\frac{\partial L}{\partial x}\delta x+\frac{\partial L}{\partial\dot{x}}\delta\dot{x}$$
 
@@ -261,9 +261,9 @@ $$\delta L=\frac{\partial}{\partial x}\left(\frac{1}{2}m\dot{x}^2\right)\delta x
 
 What does this tell us? Well, it says that the Lagrangian does not change in this transformation – a spatial translation.
 
-This means that a spatial translation is indeed a symmetry of this free particle system (remember our condition for a symmetry – δL=dF/dt – so, in this case, we’d have F=constant or F=0). As we’ll see soon, this turns out to correspond to the linear momentum of the particle being conserved, according to Noether’s theorem.
+This means that a spatial translation is indeed a symmetry of this free particle system (remember our condition for a symmetry – $δ$L=dF/dt – so, in this case, we’d have F=constant or F=0). As we’ll see soon, this turns out to correspond to the linear momentum of the particle being conserved, according to Noether’s theorem.
 
-On the other hand, we could consider the same transformation (with δx and δ(dx/dt)=0) but instead for a Lagrangian of a particle under some position-dependent potential V(x):
+On the other hand, we could consider the same transformation (with $δ$x and $δ$(dx/dt)=0) but instead for a Lagrangian of a particle under some position-dependent potential V(x):
 
 $$L=\frac{1}{2}m\dot{x}^2-V\left(x\right)$$
 
@@ -271,11 +271,11 @@ The change in the Lagrangian in this transformation would now be:
 
 $$\delta L=\frac{\partial L}{\partial x}\delta x+\frac{\partial L}{\partial\dot{x}}\delta\dot{x}=-\frac{\partial V\left(x\right)}{\partial x}\delta x$$
 
-Since we cannot write this in the form δL=dF/dt, this is not a symmetry of the system anymore. So, the effect of a position-dependent potential – in other words, a force – is that spatial translations are not symmetries anymore. As we’ll see soon, this also means that the linear momentum in the system is not conserved, at least not in the general case.
+Since we cannot write this in the form $δ$L=dF/dt, this is not a symmetry of the system anymore. So, the effect of a position-dependent potential – in other words, a force – is that spatial translations are not symmetries anymore. As we’ll see soon, this also means that the linear momentum in the system is not conserved, at least not in the general case.
 
 Now, we’ll look at more examples soon, but for now, the point was to just show you how our above mathematical definition for a symmetry works in practice.
 
-This also shows you quite nicely the general procedure in which we look at symmetries in Lagrangian mechanics; we specify a transformation, then calculate how the Lagrangian changes using the chain rule and determine whether we have a symmetry or not based on whether we can write the change as δL=dF/dt – our mathematical condition for a symmetry.
+This also shows you quite nicely the general procedure in which we look at symmetries in Lagrangian mechanics; we specify a transformation, then calculate how the Lagrangian changes using the chain rule and determine whether we have a symmetry or not based on whether we can write the change as $δ$L=dF/dt – our mathematical condition for a symmetry.
 
 ## Noether’s Theorem Mathematically
 
@@ -283,7 +283,7 @@ As mentioned earlier, Noether’s theorem states that for every symmetry in a ph
 
 With our above definition of a symmetry, we can now put this into precise mathematical terms. Here it is:
 
-For every symmetry in a physical system, meaning a transformation that changes the Lagrangian of the system only by δL=dF/dt, there will be an associated conserved quantity of the form:  
+For every symmetry in a physical system, meaning a transformation that changes the Lagrangian of the system only by $δ$L=dF/dt, there will be an associated conserved quantity of the form:  
 $$Q=\sum_i^{ }p_i\delta q_i-F$$
 
 This is **Noether’s theorem in Lagrangian mechanics** in a nutshell. It essentially includes everything you need to know about it.
@@ -296,9 +296,9 @@ The quantity Q here being conserved means that dQ/dt=0 (we’ll prove this soon)
 
 So, the procedure in which Noether’s theorem results in conserved quantities is pretty simple:
 
-1. We do a transformation and specify how each coordinate changes in this transformation. These are the δqi‘s.
+1. We do a transformation and specify how each coordinate changes in this transformation. These are the $δ$qi‘s.
 2. Based on these, we calculate how the Lagrangian changes in this transformation simply using the chain rule of calculus.
-3. If the Lagrangian changes by δL=dF/dt, the transformation is a symmetry of the system.
+3. If the Lagrangian changes by $δ$L=dF/dt, the transformation is a symmetry of the system.
 4. If step #3 is true, we are guaranteed to get a conserved quantity Q of the form shown above from Noether’s theorem.
 
 That’s it. This is how Noether’s theorem works in the Lagrangian formulation.
@@ -323,7 +323,7 @@ First, let’s just recall our mathematical condition for a symmetry – a trans
 
 $$\delta L=\frac{dF}{dt}$$
 
-We can calculate the left-hand side, δL, generally using the chain rule as:
+We can calculate the left-hand side, $δ$L, generally using the chain rule as:
 
 $$\delta L=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial\dot{q}_i}\delta\dot{q}_i\right)$$
 
@@ -337,7 +337,7 @@ Secondly, the time derivative of the generalized momentum is given by the Euler-
 
 $$\dot{p}_i=\frac{\partial L}{\partial q_i}$$
 
-These are exactly what we have in our expression for δL above. So using these, we get:
+These are exactly what we have in our expression for $δ$L above. So using these, we get:
 
 $$\delta L=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial\dot{q}_i}\delta\dot{q}_i\right)=\sum_i^{ }\left(\dot{p}_i\delta q_i+p_i\delta\dot{q}_i\right)$$
 
@@ -345,7 +345,7 @@ If you now look at this for a while, you might notice that we can write the thin
 
 $$\delta L=\sum_i^{ }\frac{d}{dt}\left(p_i\delta q_i\right)=\frac{d}{dt}\left(\sum_i^{ }p_i\delta q_i\right)$$
 
-This is now the left-hand side of our symmetry condition, δL=dF/dt. Plugging this in and rearranging some terms, we find:
+This is now the left-hand side of our symmetry condition, $δ$L=dF/dt. Plugging this in and rearranging some terms, we find:
 
 $$\delta L=\frac{dF}{dt}\\\Rightarrow\ \ \frac{d}{dt}\left(\sum_i^{ }p_i\delta q_i\right)=\frac{dF}{dt}\\\Rightarrow\ \ \frac{d}{dt}\left(\sum_i^{ }p_i\delta q_i-F\right)=0$$
 
@@ -362,17 +362,17 @@ In this section, we’ll dive into a bunch of **examples of using Noether’s th
 The framework we will use for identifying conservation laws from Noether’s theorem goes more or less as follows:
 
 1. **Specify a Lagrangian and some transformation you want to analyze for a given system**.
-2. **Identify how each generalized coordinate and its time derivative changes due to this transformation**. This means finding the infinitesimal variations δqi and δq̇i for each coordinate.
+2. **Identify how each generalized coordinate and its time derivative changes due to this transformation**. This means finding the infinitesimal variations $δ$qi and $δ$q̇i for each coordinate.
 3. **Using these variations, calculate how the Lagrangian changes as a result of this transformation**. This can be done using the general formula from calculus of variations (essentially just the chain rule):
 
 $$\delta L=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial\dot{q}_i}\delta\dot{q}_i\right)$$
 
-4. **If the expression for δL you obtain can be written as a total time derivative of some function** (so δL=dF/dt), **then the transformation is a symmetry of the system**! Note that this condition also includes δL=0 if F=0 or F=constant.
+4. **If the expression for $δ$L you obtain can be written as a total time derivative of some function** (so $δ$L=dF/dt), **then the transformation is a symmetry of the system**! Note that this condition also includes $δ$L=0 if F=0 or F=constant.
 5. **If step #5 is true, Noether’s theorem gives you a conserved quantity of the form**:
 
 $$Q=\sum_i^{ }p_i\delta q_i-F$$
 
-Here, pi=∂L/∂q̇i.
+Here, pi=$∂$L/$∂$q̇i.
 
 ### Conservation of Linear & Angular Momentum
 
@@ -384,15 +384,15 @@ Now, according to Noether’s theorem, the conservation of both linear and angul
 
 The nice thing in Lagrangian mechanics is that both of these are encoded in the notion of generalized coordinates – a generalized coordinate can be both a spatial coordinate and an angle, so we can analyze both at the same time, simply by analyzing an arbitrary generalized coordinate qi.
 
-A translation in this generalized coordinate qi simply means that we shift the coordinate by an infinitesimal amount δqi (note; this shift should be taken as a constant). So, this transformation is given by qi → qi+δqi.
+A translation in this generalized coordinate qi simply means that we shift the coordinate by an infinitesimal amount $δ$qi (note; this shift should be taken as a constant). So, this transformation is given by qi → qi+$δ$qi.
 
-Since the translation δqi is a constant (the same shift everywhere), the change in the time derivative of this coordinate will be dqi/dt → d(qi+δqi)/dt=dqi/dt+d(δqi)/dt=dqi/dt, in other words, the time derivative of the coordinate does not change in this transformation.
+Since the translation $δ$qi is a constant (the same shift everywhere), the change in the time derivative of this coordinate will be dqi/dt → d(qi+$δ$qi)/dt=dqi/dt+d($δ$qi)/dt=dqi/dt, in other words, the time derivative of the coordinate does not change in this transformation.
 
-We can then characterize the transformation by the changes in our coordinates and its time derivative as δqi and δq̇i. The variation in the Lagrangian is then given by the chain rule from earlier as:
+We can then characterize the transformation by the changes in our coordinates and its time derivative as $δ$qi and $δ$q̇i. The variation in the Lagrangian is then given by the chain rule from earlier as:
 
 $$\delta L=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial\dot{q}_i}\delta\dot{q}_i\right)=\sum_i^{ }\frac{\partial L}{\partial q_i}\delta q_i$$
 
-Here comes the important part – if this transformation is to be a symmetry, we must have δL=0. The only way for this to be true is if the Lagrangian is independent of the particular coordinate qi we are doing the transformation to (because this would give ∂L/∂qi=0 and therefore δL=0).
+Here comes the important part – if this transformation is to be a symmetry, we must have $δ$L=0. The only way for this to be true is if the Lagrangian is independent of the particular coordinate qi we are doing the transformation to (because this would give $∂$L/$∂$qi=0 and therefore $δ$L=0).
 
 What this tells us is that if the Lagrangian is independent of a given coordinate, then translations of this coordinate are symmetries of the system. We call these **cyclic coordinates**, but more on those soon.
 
@@ -400,7 +400,7 @@ Then, according to Noether’s theorem, we will find a conserved quantity of the
 
 $$Q=\sum_i^{ }p_i\delta q_i-F=\sum_i^{ }p_i\delta q_i$$
 
-Note that since the δqi‘s here are constant, they essentially play no role in this conservation law – the conserved quantity here is really just the pi‘s, since δqi‘s are constant anyway.
+Note that since the $δ$qi‘s here are constant, they essentially play no role in this conservation law – the conserved quantity here is really just the pi‘s, since $δ$qi‘s are constant anyway.
 
 But what is this quantity? Well, it’s essentially the total generalized momentum in the system!
 
@@ -418,13 +418,13 @@ As an example, let’s consider a system of two free particles of masses m1 and 
 
 $$L=\frac{1}{2}m_1\dot{x}_1^2+\frac{1}{2}m_2\dot{x}_2^2$$
 
-Let’s now consider a transformation to the coordinates of both particles (with both particles being translated the same amount δx), so:
+Let’s now consider a transformation to the coordinates of both particles (with both particles being translated the same amount $δ$x), so:
 
 $$x_1\ \rightarrow\ x_1+\delta x\\x_2\ \rightarrow\ x_2+\delta x$$
 
 ![](assets/images/noethers-theorem-a-complete-guide/img_10.webp)
 
-This means that the changes in the first particle’s coordinates are δx1=δx2=δx and the changes in the velocities are zero (δẋ1=0 and δẋ2=0).
+This means that the changes in the first particle’s coordinates are $δ$x1=$δ$x2=$δ$x and the changes in the velocities are zero ($δ$ẋ1=0 and $δ$ẋ2=0).
 
 This transformation is a symmetry of the system, which we can immediately see because the Lagrangian does not depend on either of the coordinates x1 and x2 explicitly. This means that a transformation to these coordinates is trivially a symmetry. We could also verify this by calculating the change in the Lagrangian as:
 
@@ -446,11 +446,11 @@ Let’s then consider a rotation of the particle’s position about the origin. 
 
 $$r\ \rightarrow\ r\\\theta\ \rightarrow\ \theta+\delta\theta$$
 
-This rotates the position of the particle by an infinitesimal angle δθ, but leaves its radial distance unchanged:
+This rotates the position of the particle by an infinitesimal angle $δ$$θ$, but leaves its radial distance unchanged:
 
 ![](assets/images/noethers-theorem-a-complete-guide/img_14.webp)
 
-Since the Lagrangian doesn’t depend on the coordinate θ, we immediately know that this transformation is a symmetry. We could also verify that by calculating the change in the Lagrangian as (here, δr=0 and so are the changes in the time derivatives of r and θ):
+Since the Lagrangian doesn’t depend on the coordinate $θ$, we immediately know that this transformation is a symmetry. We could also verify that by calculating the change in the Lagrangian as (here, $δ$r=0 and so are the changes in the time derivatives of r and $θ$):
 
 $$\delta L=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial\dot{q}_i}\delta\dot{q}_i\right)=\frac{\partial L}{\partial r}\delta r+\frac{\partial L}{\partial\theta}\delta\theta+\frac{\partial L}{\partial\dot{r}}\delta\dot{r}+\frac{\partial L}{\partial\dot{\theta}}\delta\dot{\theta}=0$$
 
@@ -478,9 +478,9 @@ When doing a time translation to, say a moving point particle, we would certainl
 
 ![](assets/images/noethers-theorem-a-complete-guide/img_18.webp)
 
-We can characterize a time translation mathematically by shifting the value of time t to t+δt. When doing this, the coordinates and their time derivatives in a general system change from qi(t) and q̇i(t) to qi(t+δt) and q̇i(t+δt).
+We can characterize a time translation mathematically by shifting the value of time t to t+$δ$t. When doing this, the coordinates and their time derivatives in a general system change from qi(t) and q̇i(t) to qi(t+$δ$t) and q̇i(t+$δ$t).
 
-Now, remember that δt here represents an infinitesimal change. For any really really small value of, say a variable b, we can approximate any function f(x+b) as:
+Now, remember that $δ$t here represents an infinitesimal change. For any really really small value of, say a variable b, we can approximate any function f(x+b) as:
 
 $$f\left(x+b\right)\approx f\left(x\right)+\frac{df\left(x\right)}{dx}b$$
 
@@ -488,13 +488,13 @@ Applied to our coordinates and their time derivatives, we get:
 
 $$q_i\left(t+\delta t\right)\approx q_i\left(t\right)+\frac{dq_i\left(t\right)}{dt}\delta t=q_i\left(t\right)+\dot{q}_i\left(t\right)\delta t\\\dot{q}_i\left(t+\delta t\right)\approx\dot{q}_i\left(t\right)+\frac{d\dot{q}_i\left(t\right)}{dt}\delta t=\dot{q}_i\left(t\right)+\ddot{q}_i \left(t\right)\delta t$$
 
-So, we have the variations in the coordinates of the system and their time derivatives as δqi=q̇iδt and δq̇i=q̈iδt. With these, we can calculate how the Lagrangian changes (see below).
+So, we have the variations in the coordinates of the system and their time derivatives as $δ$qi=q̇i$δ$t and $δ$q̇i=q̈i$δ$t. With these, we can calculate how the Lagrangian changes (see below).
 
 It turns out that we can do this completely generally – we don’t even have to specify a particular Lagrangian, so the result we get is completely general and applies for **all systems** (even ones outside of classical mechanics).
 
 Calculating the variation in the Lagrangian
 
-Using our variations δqi=q̇iδt and δq̇i=q̈iδt, we can now calculate the variation in the Lagrangian from the chain rule (note that we’re not specifying any particular Lagrangian – just some general Lagrangian L(qi,q̇i,t)):
+Using our variations $δ$qi=q̇i$δ$t and $δ$q̇i=q̈i$δ$t, we can now calculate the variation in the Lagrangian from the chain rule (note that we’re not specifying any particular Lagrangian – just some general Lagrangian L(qi,q̇i,t)):
 
 $$\delta L=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\delta q_i+\frac{\partial L}{\partial\dot{q}_i}\delta\dot{q}_i\right)=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\dot{q}_i\delta t+\frac{\partial L}{\partial\dot{q}_i}\ddot{q}_i\delta t\right)$$
 
@@ -502,21 +502,21 @@ If you now look at this for a bit, you might notice that the thing inside the pa
 
 $$\frac{dL}{dt}=\sum_i^{ }\left(\frac{\partial L}{\partial q_i}\dot{q}_i+\frac{\partial L}{\partial\dot{q}_i}\ddot{q}_i\right)+\frac{\partial L}{\partial t}$$
 
-Using this, we can write the expression for δL as:
+Using this, we can write the expression for $δ$L as:
 
 $$\delta L=\left(\frac{dL}{dt}-\frac{\partial L}{\partial t}\right)\delta t$$
 
-Now, recall our condition for a symmetry: δL=dF/dt. In this case, there is no way for us to write the above expression as a total time derivative due to the partial derivative term here (∂L/∂t) – unless ∂L/∂t=0!
+Now, recall our condition for a symmetry: $δ$L=dF/dt. In this case, there is no way for us to write the above expression as a total time derivative due to the partial derivative term here ($∂$L/$∂$t) – unless $∂$L/$∂$t=0!
 
-We can therefore see that if the Lagrangian of any system is independent of time explicitly – meaning that ∂L/∂t=0 – then time translations are a symmetry of that system.
+We can therefore see that if the Lagrangian of any system is independent of time explicitly – meaning that $∂$L/$∂$t=0 – then time translations are a symmetry of that system.
 
 Let’s make this assumption now. Doing so, we find that the variation in the Lagrangian is given by:
 
 $$\delta L=\left(\frac{dL}{dt}-\frac{\partial L}{\partial t}\right)\delta t=\frac{d\left(L\delta t\right)}{dt}$$
 
-This satisfies our condition for a symmetry – the change in the Lagrangian is at most a total time derivative, in this case of the function F=Lδt. Again, I want to stress the fact that this is only true when the Lagrangian does not explicitly depend on time – if it does, a time translation is not a symmetry.
+This satisfies our condition for a symmetry – the change in the Lagrangian is at most a total time derivative, in this case of the function F=L$δ$t. Again, I want to stress the fact that this is only true when the Lagrangian does not explicitly depend on time – if it does, a time translation is not a symmetry.
 
-So, we find the variation in the Lagrangian to be δL=d(Lδt)/dt, given that the Lagrangian does not explicitly depend on time. If this is satisfied, time translations are indeed a symmetry of our system.
+So, we find the variation in the Lagrangian to be $δ$L=d(L$δ$t)/dt, given that the Lagrangian does not explicitly depend on time. If this is satisfied, time translations are indeed a symmetry of our system.
 
 Then, according to Noether’s theorem, we find a conserved quantity of the form:
 
@@ -556,7 +556,7 @@ For example, consider the following Lagrangian that describes a free particle of
 
 $$L=\frac{1}{2}m\dot{x}^2$$
 
-Here, the coordinate x is a cyclic coordinate since it does not appear explicitly in this Lagrangian (it only appears through ẋ=dx/dt, but not by itself). Mathematically, this means that ∂L/∂x=0, which is pretty much the definition of a cyclic coordinate.
+Here, the coordinate $x$ is a cyclic coordinate since it does not appear explicitly in this Lagrangian (it only appears through ẋ=dx/dt, but not by itself). Mathematically, this means that $∂$L/$∂$x=0, which is pretty much the definition of a cyclic coordinate.
 
 The important thing about cyclic coordinates for us is that **the existence of a cyclic coordinate always corresponds to a symmetry as well**.
 
@@ -568,17 +568,17 @@ $$Q=\sum_i^{ }p_i\delta q_i-F=\sum_i^{ }p_i\delta q_i$$
 
 Here, the qi‘s are now specifically the cyclic coordinates – for all cyclic coordinates in a system, we get one conserved generalized momentum component.
 
-In our above example Lagrangian, the conserved generalized momentum would be (associated with a transformation δx to the cyclic coordinate x):
+In our above example Lagrangian, the conserved generalized momentum would be (associated with a transformation $δ$x to the cyclic coordinate x):
 
 $$Q=p_x\delta x=\frac{\partial L}{\partial\dot{x}}\delta x=m\dot{x}\delta x$$
 
-This is the momentum of the particle in the x-direction (also its total momentum). Note again that since δx is taken as a constant, it doesn’t play any role in this conserved quantity – the “real” conserved quantity here is px=mẋ.
+This is the momentum of the particle in the x-direction (also its total momentum). Note again that since $δ$x is taken as a constant, it doesn’t play any role in this conserved quantity – the “real” conserved quantity here is px=mẋ.
 
 Another example would be a Lagrangian for a particle of mass m, now in two dimensions (expressed in polar coordinates) and under a central potential V(r):
 
 $$L=\frac{1}{2}m\left(\dot{r}^2+r^2\dot{\theta}^2\right)-V\left(r\right)$$
 
-We can see that the coordinate θ is a cyclic coordinate here, meaning that the Lagrangian has a symmetry under transformations δθ. We are therefore guaranteed a conserved quantity from Noether’s theorem, namely the generalized momentum pθ:
+We can see that the coordinate $θ$ is a cyclic coordinate here, meaning that the Lagrangian has a symmetry under transformations $δ$$θ$. We are therefore guaranteed a conserved quantity from Noether’s theorem, namely the generalized momentum p$θ$:
 
 $$Q=p_{\theta}\delta\theta=\frac{\partial L}{\partial\dot{\theta}}\delta\theta=mr^2\dot{\theta}\delta\theta$$
 
@@ -606,7 +606,7 @@ The central concept in Hamiltonian mechanics is the **Hamiltonian** – a functi
 
 $$H=\sum_i^{ }p_i\dot{q}_i-L$$
 
-Here, L is the Lagrangian of the system, pi is the generalized momenta pi=∂L/∂q̇i and q̇i the time derivatives of the generalized coordinates, which should be expressed as a function of the momenta, so q̇i=q̇i(pi).
+Here, L is the Lagrangian of the system, pi is the generalized momenta pi=$∂$L/$∂$q̇i and q̇i the time derivatives of the generalized coordinates, which should be expressed as a function of the momenta, so q̇i=q̇i(pi).
 
 The important thing about the Hamiltonian is that **it is always a function of the coordinates and momenta (qi and pi) and not of the velocities (q̇i)**.
 
@@ -627,7 +627,7 @@ $$\left\{A{,}B\right\}=\sum_i^{ }\left(\frac{\partial A}{\partial q_i}\frac{\par
 
 But why do we care about these Poisson brackets?
 
-Well, one particularly useful thing about them is that if we define the second function here as the Hamiltonian (so B=H), then the Poisson bracket {A,H} describes the **time evolution** of A in phase space due to Hamilton’s equations q̇i=∂H/∂pi and ṗi=-∂H/∂qi:
+Well, one particularly useful thing about them is that if we define the second function here as the Hamiltonian (so B=H), then the Poisson bracket {A,H} describes the **time evolution** of A in phase space due to Hamilton’s equations q̇i=$∂$H/$∂$pi and ṗi=-$∂$H/$∂$qi:
 
 $$\left\{A{,}H\right\}=\sum_i^{ }\left(\frac{\partial A}{\partial q_i}\frac{\partial H}{\partial p_i}-\frac{\partial A}{\partial p_i}\frac{\partial H}{\partial q_i}\right)\\=\sum_i^{ }\left(\frac{\partial A}{\partial q_i}\dot{q}_i+\frac{\partial A}{\partial p_i}\dot{p}_i\right)\\=\frac{dA}{dt}$$
 
@@ -647,11 +647,11 @@ $$\delta q_i=\frac{\partial Q}{\partial p_i}\delta\gamma$$
 
 $$\delta p_i=-\frac{\partial Q}{\partial q_i}\delta\gamma$$
 
-Previously, in Lagrangian mechanics, we defined transformations by specifying δqi and δq̇i – in Hamiltonian mechanics, we specify δqi and δpi instead, and the most general form to express these in are given above (for canonical transformations).
+Previously, in Lagrangian mechanics, we defined transformations by specifying $δ$qi and $δ$q̇i – in Hamiltonian mechanics, we specify $δ$qi and $δ$pi instead, and the most general form to express these in are given above (for canonical transformations).
 
 The function Q=Q(qi,pi) above is called a ***generator* of the transformation**, since its existence defines what the transformation is. There is also a reason why I’ve labeled it as Q, the same letter as the conserved quantity we found in Lagrangian mechanics (we’ll see why soon!).
 
-Also, the δγ here is the infinitesimal parameter associated with the transformation (it could be, for example, δx or δθ like we had previously, depending on what the transformation is – δγ is just a more general way of writing it).
+Also, the $δ MATH0 θ$ like we had previously, depending on what the transformation is – $δ$$γ$ is just a more general way of writing it).
 
 These concepts are essentially what we need to know to understand Noether’s theorem in Hamiltonian mechanics.
 
@@ -661,7 +661,7 @@ The first thing we need for Noether’s theorem is to define the concept of **sy
 
 In Hamiltonian mechanics, we define a symmetry of a system as a canonical transformation that leaves the Hamiltonian of the system unchanged. Mathematically, this means that a symmetry is defined by the condition $\delta H=0$.
 
-In contrast, we defined a symmetry in Lagrangian mechanics by δL=dF/dt and this is allowed simply because the Lagrangian by itself is not physical, the action is.
+In contrast, we defined a symmetry in Lagrangian mechanics by $δ$L=dF/dt and this is allowed simply because the Lagrangian by itself is not physical, the action is.
 
 However, the Hamiltonian is a physical quantity and therefore, it makes sense to consider symmetries as something that leave the Hamiltonian unchanged – by definition, a symmetry should leave all the physics unchanged.
 
@@ -669,13 +669,13 @@ Now, we can actually make this a lot simpler. Let’s first calculate the variat
 
 $$\delta H=\sum_i^{ }\left(\frac{\partial H}{\partial q_i}\delta q_i+\frac{\partial H}{\partial p_i}\delta p_i\right)$$
 
-We now make use of the fact that we’re considering **canonical transformations**, specifically, so we can insert the definitions δqi=(∂Q/∂pi)δγ and δpi=-(∂Q/∂qi)δγ:
+We now make use of the fact that we’re considering **canonical transformations**, specifically, so we can insert the definitions $δ$qi=($∂$Q/$∂$pi)$δ MATH0 γ$:
 
 $$\delta H=\sum_i^{ }\left(\frac{\partial H}{\partial q_i}\frac{\partial Q}{\partial p_i}\delta\gamma+\frac{\partial H}{\partial p_i}\left(-\frac{\partial Q}{\partial q_i}\delta\gamma\right)\right)=\sum_i^{ }\left(\frac{\partial H}{\partial q_i}\frac{\partial Q}{\partial p_i}-\frac{\partial H}{\partial p_i}\frac{\partial Q}{\partial q_i}\right)\delta\gamma$$
 
-Can you see what the expression here inside the parentheses is? It’s the **Poisson bracket**, {H,Q}, so we find δH={H,Q}δγ.
+Can you see what the expression here inside the parentheses is? It’s the **Poisson bracket**, {H,Q}, so we find $δ$H={H,Q}$δ$$γ$.
 
-Now, if this transformation is to be a symmetry, we should have δH=0. This therefore *defines* our **fundamental mathematical condition for a symmetry** as:
+Now, if this transformation is to be a symmetry, we should have $δ$H=0. This therefore *defines* our **fundamental mathematical condition for a symmetry** as:
 
 $$\left\{H{,}Q\right\}=0$$
 
@@ -733,9 +733,9 @@ Now, a spatial translation in phase space essentially has the same form as the o
 
 $$\delta q=\delta x\\\delta p=0$$
 
-What’s the generator of this transformation? Well, by our defining equations for a canonical transformation, δqi=(∂Q/∂pi)δγ and δpi=-(∂Q/∂qi)δγ, we see directly that we must have Q=p and δγ=δx.
+What’s the generator of this transformation? Well, by our defining equations for a canonical transformation, $δ$qi=($∂$Q/$∂$pi)$δ MATH0 γ$, we see directly that we must have Q=p and $δ$$γ$=$δ$x.
 
-So, the generator of this spatial translation is the momentum of the particle! Let’s now calculate the Poisson bracket {H,Q} to check whether the transformation generated by Q=p is a symmetry:
+So, the generator of this spatial translation is the momentum of the particle! Let’s now calculate the Poisson bracket {H,Q} to check whether the transformation generated by Q=$p$ is a symmetry:
 
 $$\left\{H{,}Q\right\}=\sum_i^{ }\left(\frac{\partial H}{\partial q_i}\frac{\partial Q}{\partial p_i}-\frac{\partial H}{\partial p_i}\frac{\partial Q}{\partial q_i}\right)\\=\frac{\partial H}{\partial x}\frac{\partial p}{\partial p}-\frac{\partial H}{\partial p}\frac{\partial p}{\partial x}=0$$
 
@@ -745,7 +745,7 @@ Let’s do angular momentum and rotations next. Consider the following Hamiltoni
 
 $$H=\frac{p_x^2+p_y^2}{2m}+V\left(x^2+y^2\right)$$
 
-This describes a particle of mass m in two dimensions, under a potential that only depends on the radial distance to the origin, x2+y2. Now, we’ll do a little guess here – we will guess that our generator Q is the z-component of angular momentum (which naturally should be conserved in rotations):
+This describes a particle of mass m in two dimensions, under a potential that only depends on the radial distance to the origin, x2+y2. Now, we’ll do a little guess here – we will guess that our generator $Q$ is the z-component of angular momentum (which naturally should be conserved in rotations):
 
 $$Q=L_z=xp_y-yp_x$$
 
@@ -759,7 +759,7 @@ $$\delta p_x=\delta p_1=-\frac{\partial Q}{\partial q_1}\delta\gamma=-\frac{\par
 
 $$\delta p_y=\delta p_2=-\frac{\partial Q}{\partial q_2}\delta\gamma=-\frac{\partial L_z}{\partial y}\delta\gamma=p_x\delta\gamma$$
 
-If you’ve seen these expressions before, you may recognize them as describing infinitesimal rotations in the xy-plane by an angle δγ – so, angular momentum is indeed the generator of rotations.
+If you’ve seen these expressions before, you may recognize them as describing infinitesimal rotations in the xy-plane by an angle $δ$$γ$ – so, angular momentum is indeed the generator of rotations.
 
 Let’s now check whether this is a symmetry by calculating the Poisson bracket {H,Q}:
 
@@ -777,17 +777,17 @@ For last, let’s look at time translations and energy conservation. We’ll do 
 
 $$\delta q_i=\dot{q}_i\delta t\\\delta\dot{q}_i=\ddot{q}_i\delta t$$
 
-We can write this in terms of our phase space variables by inserting one of Hamilton’s equations, q̇i=∂H/∂pi into the first one and replacing the variables in the second equation by ṗi:
+We can write this in terms of our phase space variables by inserting one of Hamilton’s equations, q̇i=$∂$H/$∂$pi into the first one and replacing the variables in the second equation by ṗi:
 
 $$\delta q_i=\frac{\partial H}{\partial p_i}\delta t\\\delta p_i=\dot{p}_i\delta t$$
 
-Moreover, we can insert the other Hamilton’s equation ṗi=-∂H/∂qi into the second one to get:
+Moreover, we can insert the other Hamilton’s equation ṗi=-$∂$H/$∂$qi into the second one to get:
 
 $$\delta q_i=\frac{\partial H}{\partial p_i}\delta t$$
 
 $$\delta p_i=-\frac{\partial H}{\partial q_i}\delta t$$
 
-These now have exactly the form of canonical transformations (defined by δqi=(∂Q/∂pi)δγ and δpi=-(∂Q/∂qi)δγ), with δγ=δt and the generator Q=H. So, we see that the Hamiltonian is the generator of time translations.
+These now have exactly the form of canonical transformations (defined by $δ$qi=($∂$Q/$∂$pi)$δ MATH0 γ$), with $δ$$γ$=$δ$t and the generator Q=H. So, we see that the Hamiltonian is the generator of time translations.
 
 But is this a symmetry? Well, it’s quite clear that it is, since by our definition of a symmetry, anything that has a zero Poisson bracket with the Hamiltonian is a symmetry generator.
 
@@ -845,9 +845,9 @@ In field theory, the key idea is to replace the generalized coordinates qi(t) fr
 
 So, the role that time has in ordinary Lagrangian mechanics as an *independent variable* is played by both space and time in field theory.
 
-The time derivatives of the coordinates, q̇i(t), are then replaced by both **time and space derivatives of the field**, which we denote together as ∂µϕ (with the index µ=0 corresponding to ∂0ϕ=∂ϕ/∂t and the three spatial indices µ=1,2,3 similarly corresponding to the spatial derivatives, ∂1ϕ=∂ϕ/∂x and so on).
+The time derivatives of the coordinates, q̇i(t), are then replaced by both **time and space derivatives of the field**, which we denote together as $∂$$μ$ϕ (with the index $μ$=0 corresponding to $∂$0ϕ=$∂$ϕ/$∂$t and the three spatial indices $μ$=1,2,3 similarly corresponding to the spatial derivatives, $∂$1ϕ=$∂$ϕ/$∂$x and so on).
 
-In field theory, the Lagrangian will also be different. In fact, we call it a **Lagrangian density**, ℒ, instead of an ordinary Lagrangian L.
+In field theory, the Lagrangian will also be different. In fact, we call it a **Lagrangian density**, $ℒ$, instead of an ordinary Lagrangian L.
 
 The key to realize with the Lagrangian is that the energy of a field comes from it changing both in time and through space, so the Lagrangian density for a field depends on both time and space derivatives of the field:
 
@@ -861,7 +861,7 @@ The field will also have an **equation of motion**, which is obtained by applyin
 
 $$\partial_{\mu}\frac{\partial \mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}=\frac{\partial \mathscr{L}}{\partial\phi}$$
 
-Here, we have an implicit sum over the index µ (from 0 to 3) on the left-hand side, since it appears as a repeated index in the same term. This is called the Einstein sum convention.
+Here, we have an implicit sum over the index $μ$ (from 0 to 3) on the left-hand side, since it appears as a repeated index in the same term. This is called the Einstein sum convention.
 
 These are pretty much all the preliminaries we need. Everything mentioned here is very general and will apply to any kind of field we want to consider (even quantum fields).
 
@@ -869,19 +869,19 @@ These are pretty much all the preliminaries we need. Everything mentioned here i
 
 We’ll now look at how we define a **symmetry in field theory**. In fact, it’s very similar to ordinary Lagrangian mechanics.
 
-In field theory, instead of demanding the variation of the Lagrangian be a total time derivative in a symmetry transformation, we demand that the variation be a “four-divergence” of some arbitrary function kµ, so:
+In field theory, instead of demanding the variation of the Lagrangian be a total time derivative in a symmetry transformation, we demand that the variation be a “four-divergence” of some arbitrary function $k^{$$μ$$}$, so:
 
 $$\delta\mathscr{L}=\partial_{\mu}k^{\mu}$$
 
-Here, we again have an implicit sum over the index ν, so the right-hand side really reads ∂µkµ=∂0k0+∂1k1+∂2k2+∂3k3.
+Here, we again have an implicit sum over the index $ν$, so the right-hand side really reads $∂$$μ$$k^{$$μ$$}$=$∂$0k0+$∂$1k1+$∂$2k2+$∂$3k3.
 
 That’s pretty much it. **This is how we define a symmetry in field theory** – any transformation on the field ϕ that changes its Lagrangian as shown above is a symmetry.
 
-We can now derive the field theory version of Noether’s theorem from this by calculating the variation on the left-hand side due to varying the field ϕ as δϕ. The result is (see below for the full derivation):
+We can now derive the field theory version of Noether’s theorem from this by calculating the variation on the left-hand side due to varying the field ϕ as $δ$ϕ. The result is (see below for the full derivation):
 
 $$j^{\mu}=\frac{\partial \mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\delta\phi-k^{\mu}$$
 
-This is a vector quantity (the components being labeled by the index µ) called a **conserved current** with four components, one for each value of the index µ.
+This is a vector quantity (the components being labeled by the index $μ$) called a **conserved current** with four components, one for each value of the index $μ$.
 
 This being conserved means that it satisfied a **continuity equation** of the form:
 
@@ -911,11 +911,11 @@ Notice that the thing inside the first parentheses here is just the Euler-Lagran
 
 $$\delta \mathscr{L}=\partial_{\mu}\left(\frac{\partial \mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\delta\phi\right)$$
 
-Assuming now that the transformation characterized by δϕ is a symmetry, we’ll have:
+Assuming now that the transformation characterized by $δ$ϕ is a symmetry, we’ll have:
 
 $$\delta \mathscr{L}=\partial_{\mu}k^{\mu}\\\Rightarrow\ \ \partial_{\mu}\left(\frac{\partial \mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\delta\phi\right)=\partial_{\mu}k^{\mu}\\\Rightarrow\ \ \partial_{\mu}\left(\frac{\partial \mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\delta\phi-k^{\mu}\right)=0$$
 
-This says that the “spacetime divergence” of some quantity is zero – it’s essentially the field theory equivalent of dQ/dt=0, which is exactly a conservation law! So, we find a conservation law (which is in the form of a continuity equation), ∂µjµ, where the quantity jµ – called the “conserved current” – is given by:
+This says that the “spacetime divergence” of some quantity is zero – it’s essentially the field theory equivalent of dQ/dt=0, which is exactly a conservation law! So, we find a conservation law (which is in the form of a continuity equation), $∂$$μ$j$μ$, where the quantity j$μ$ – called the “conserved current” – is given by:
 
 $$j^{\mu}=\frac{\partial \mathscr{L}}{\partial\left(\partial_{\mu}\phi\right)}\delta\phi-k^{\mu}$$
 

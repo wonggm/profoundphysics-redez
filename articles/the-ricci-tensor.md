@@ -55,7 +55,7 @@ These tensor components can be nicely represented as a “table” as follows (m
 
 $$T_{\mu\nu}=\begin{pmatrix}T_{00}&T_{01}&T_{02}&T_{03}\\T_{10}&T_{11}&T_{12}&T_{13}\\T_{20}&T_{21}&T_{22}&T_{23}\\T_{30}&T_{31}&T_{32}&T_{33}\end{pmatrix}$$
 
-These T’s here are the components of this tensor Tµν. For example, T01 is the component where µ=0 and ν=1.
+These T’s here are the components of this tensor T$μ$$ν$. For example, T01 is the component where $μ$=0 and $ν$=1.
 
 Now, enough about the general properties of tensors. What we’re really interested in is the **Ricci tensor**. The Ricci tensor is a tensor (as you may have guessed by now) with two indices, denoted as Rij (if you’re talking about general relativity, these indices would be Greek letters).
 
@@ -227,15 +227,15 @@ Another way to put it is that a vector will remain unchanged when *parallel tran
 
 If you move a vector around a loop while keeping it parallel to itself at all times (this is called parallel transport), the vector will inevitably still change direction if the space itself has some intrinsic curvature and everything has to move along the curvature of this space.
 
-The way we can get a mathematical expression for this is by imagining we have some vector Aλ in some spacetime which may or may not be curved.
+The way we can get a mathematical expression for this is by imagining we have some vector A$λ$ in some spacetime which may or may not be curved.
 
-We then parallel transport it around a loop in two different ways (see the picture below): **first, we parallel transport it along the coordinate xν (path 1) and then along the other coordinate xµ (path 2)**. Then we do the same thing but in **the opposite order** (so first along xµ, path 3, and then along xν, path 4) and compare the difference in the vector.
+We then parallel transport it around a loop in two different ways (see the picture below): **first, we parallel transport it along the coordinate $x^{$$ν$$}$ (path 1) and then along the other coordinate $x^{$$μ$$}$ (path 2)**. Then we do the same thing but in **the opposite order** (so first along $x^{$$μ$$}$, path 3, and then along $x^{$$ν$$}$, path 4) and compare the difference in the vector.
 
 Now, if we imagine this loop as being very very small (infinitesimally small, to be exact), then parallel transporting the vector will really correspond to **taking the covariant derivative with respect to that coordinate** (covariant derivative instead of a partial derivative, because we’re looking to build a *tensor quantity*).
 
 ![](assets/images/the-ricci-tensor/img_12.webp)
 
-Here, this object Rρµσν denotes the difference in this vector after parallel transporting it two different ways (note that it should be zero if the space is flat). It’s a four-index tensor for reasons you’ll see shortly.
+Here, this object R$ρ MATH0 σ$$ν$ denotes the difference in this vector after parallel transporting it two different ways (note that it should be zero if the space is flat). It’s a four-index tensor for reasons you’ll see shortly.
 
 When we do this, we may or may not end up having the vector orient in the same direction by doing it both ways. In fact, **if the vector ends up pointing in a different direction when doing it along paths 1 and 2 than by along paths 3 and 4, then the space must indeed be curved** (since the vector will change its direction differently depending on how it’s moved around in the space).
 
@@ -251,7 +251,7 @@ Now, we know that **if the space IS flat, then the order of which path you paral
 
 $$\nabla_{\nu}\nabla_{\mu}-\nabla_{\mu}\nabla_{\nu}=0$$
 
-I’ve now left out the vector Aλ since it obviously can’t be zero, so we don’t need it anymore in the above expression.
+I’ve now left out the vector A$λ$ since it obviously can’t be zero, so we don’t need it anymore in the above expression.
 
 **If the space is NOT flat, then the order of which paths you take will matter** and this difference won’t be zero:
 
@@ -261,9 +261,9 @@ In other words, we now have a *quantity that is zero if the space is flat and no
 
 $$\nabla_{\mu}=\partial_{\mu}+\Gamma_{\mu\nu}^{\lambda}$$
 
-This expression may look a little weird since it has different indices on the left- and right-hand sides. This is because the expression doesn’t really make sense by itself since it’s actually an operator, which should always act on something (for example, the covariant derivative acting on a vector would read ∇µAλ=∂µAλ+ΓλµνAν, which has perfectly valid indices).
+This expression may look a little weird since it has different indices on the left- and right-hand sides. This is because the expression doesn’t really make sense by itself since it’s actually an operator, which should always act on something (for example, the covariant derivative acting on a vector would read $∇$$μ$A$λ$=$∂$$μ$A$λ$+$Γ MATH0 μ$$ν$A$ν$, which has perfectly valid indices).
 
-What you’ll end up with is a four-index tensor object, denoted by Rρµσν:
+What you’ll end up with is a four-index tensor object, denoted by R$ρ MATH0 σ$$ν$:
 
 $$R_{\mu\sigma\nu}^{\rho}=\partial_{\sigma}\Gamma_{\mu\nu}^{\rho}-\partial_{\nu}\Gamma_{\mu\sigma}^{\rho}+\Gamma_{\sigma\lambda}^{\rho}\Gamma_{\mu\nu}^{\lambda}-\Gamma_{\nu\lambda}^{\rho}\Gamma_{\mu\sigma}^{\lambda}$$
 
@@ -273,7 +273,7 @@ The Ricci tensor is mathematically defined as the *contraction* of this Riemann 
 
 $$R_{\rho\mu\sigma\nu}=g_{\rho\alpha}R_{\mu\sigma\nu}^{\alpha}$$
 
-Here, the α is a summation index.
+Here, the $α$ is a summation index.
 
 To get the Ricci tensor, we then multiply it by the inverse metric and sum over the first and third indices (meaning we multiply it by the inverse metric, which has upstairs indices that are the same as the first and third on the Riemann tensor; what we’re left with is a two-index object and this is called index contraction):
 
@@ -313,11 +313,11 @@ The two above facts are actually enough to prove that the Ricci tensor is indeed
 
 Proof of The Symmetry of The Ricci Tensor
 
-To prove that the Ricci tensor is symmetric only really requires us to prove that **each of its terms are symmetric** (what I mean by symmetry here, just to make it explicitly clear, is that the Ricci tensor remains the same if we interchange its indices, in this case, µ and ν):
+To prove that the Ricci tensor is symmetric only really requires us to prove that **each of its terms are symmetric** (what I mean by symmetry here, just to make it explicitly clear, is that the Ricci tensor remains the same if we interchange its indices, in this case, $μ$ and $ν$):
 
 $$R_{\mu\nu}=\partial_{\rho}\Gamma_{\mu\nu}^{\rho}-\partial_{\nu}\Gamma_{\mu\rho}^{\rho}+\Gamma_{\rho\lambda}^{\rho}\Gamma_{\mu\nu}^{\lambda}-\Gamma_{\nu\lambda}^{\rho}\Gamma_{\mu\rho}^{\lambda}$$
 
-**The first term and third terms are clearly symmetric**. This is because the Christoffel symbols are symmetric under the interchange of µ and ν.
+**The first term and third terms are clearly symmetric**. This is because the Christoffel symbols are symmetric under the interchange of $μ$ and $ν$.
 
 Now, the symmetry of the second and fourth term is not necessarily obvious. The second term is easy to prove by using the fact that a Christoffel symbol with the upstairs and one downstairs index equal has the simple form:
 
@@ -329,21 +329,21 @@ Therefore, the second term is:
 
 $$\partial_{\nu}\Gamma_{\mu\rho}^{\rho}=\frac{1}{2}\partial_{\mu}\partial_{\nu}\ln\left|g\right|$$
 
-This is clearly symmetric under exchanging µ and ν, since the order of partial differentiation doesn’t matter (meaning that ∂µ= ∂ν).
+This is clearly symmetric under exchanging $μ$ and $ν$, since the order of partial differentiation doesn’t matter (meaning that $∂ MATH0 ν$).
 
 The symmetry of the last term we can prove by using the definition of the Christoffel symbols in terms of the metric and then writing out this C-symbol product:
 
 $$\Gamma_{\nu\lambda}^{\rho}\Gamma_{\mu\rho}^{\lambda}=\frac{1}{2}g^{\rho\alpha}\left(\partial_{\lambda}g_{\alpha\nu}+\partial_{\nu}g_{\alpha\lambda}-\partial_{\alpha}g_{\nu\lambda}\right)\cdot\frac{1}{2}g^{\lambda\beta}\left(\partial_{\rho}g_{\beta\mu}+\partial_{\mu}g_{\beta\rho}-\partial_{\beta}g_{\mu\rho}\right)$$
 
-This can actually be simplified greatly. In the first parentheses, since α and λ are both summation indices, we might as well just swap them in the third term inside the first parentheses.
+This can actually be simplified greatly. In the first parentheses, since $α$ and $λ$ are both summation indices, we might as well just swap them in the third term inside the first parentheses.
 
-Now, since the metric is symmetric, we can then additionally swap, in the same term, the placement of ν, which means that the first and third term are actually equal now and thus, cancel out (since they have opposite sign). Only the second term inside the first parentheses then survives.
+Now, since the metric is symmetric, we can then additionally swap, in the same term, the placement of $ν$, which means that the first and third term are actually equal now and thus, cancel out (since they have opposite sign). Only the second term inside the first parentheses then survives.
 
 The same thing can be repeated for the second parentheses and here also, only the second term survives. We’re then left with:
 
 $$\Gamma_{\nu\lambda}^{\rho}\Gamma_{\mu\rho}^{\lambda}=\frac{1}{2}g^{\rho\alpha}\left(\partial_{\nu}g_{\alpha\lambda}\right)\cdot\frac{1}{2}g^{\lambda\beta}\left(\partial_{\mu}g_{\beta\rho}\right)=\frac{1}{4}g^{\rho\alpha}g^{\lambda\beta}\partial_{\nu}g_{\alpha\lambda}\partial_{\mu}g_{\beta\rho}$$
 
-Here, since each of the indices on these metric tensors is a summation index, the only “free” indices are these µ and ν on the partial derivatives. Moreover, we see that interchanging the indices µ and ν only has the effect of swapping the partial derivatives and again, the order of partial differentiation doesn’t matter. Therefore, **this term is indeed symmetric as well**.
+Here, since each of the indices on these metric tensors is a summation index, the only “free” indices are these $μ$ and $ν$ on the partial derivatives. Moreover, we see that interchanging the indices $μ$ and $ν$ only has the effect of swapping the partial derivatives and again, the order of partial differentiation doesn’t matter. Therefore, **this term is indeed symmetric as well**.
 
 We’ve now shown that each of these terms in the Ricci tensor is indeed symmetric and therefore, the Ricci tensor itself is also symmetric in its indices.
 
@@ -392,23 +392,23 @@ Moreover, a tensor being equal to zero means that each of its components has to 
 
 $$R_{\mu\nu}=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix}$$
 
-Now, a key point here is that the Ricci tensor being zero technically does not imply that the space has to be completely flat. It only has to be what is called **Ricci-flat** (which is defined as Rµν=0).
+Now, a key point here is that the Ricci tensor being zero technically does not imply that the space has to be completely flat. It only has to be what is called **Ricci-flat** (which is defined as R$μ$$ν$=0).
 
-It is true that a flat space does also have Rµν=0, however, it is not a sufficient condition. If the Riemann tensor, on the other hand, is zero, then the space is definitely flat.
+It is true that a flat space does also have R$μ$$ν$=0, however, it is not a sufficient condition. If the Riemann tensor, on the other hand, is zero, then the space is definitely flat.
 
 ### Ricci Tensor of a Sphere
 
 This example is the Ricci tensor on the surface of a 3-dimensional sphere.
 
-Now, since the surface itself is basically a 2-dimensional space, the metric and the Ricci tensor are therefore both 2×2-matrices (this is enough to specify the space on the surface). The surface is sometimes called a 2-sphere, which really just means the surface of a 3D sphere.
+Now, since the surface itself is basically a 2-dimensional space, the metric and the Ricci tensor are therefore both 2$×$2-matrices (this is enough to specify the space on the surface). The surface is sometimes called a 2-sphere, which really just means the surface of a 3D sphere.
 
-Now, the surface of this sphere is defined by the fact that the distance (radius r) from the center is a constant. The two coordinates needed to specify a point on the surface are two angles, θ and φ.
+Now, the surface of this sphere is defined by the fact that the distance (radius r) from the center is a constant. The two coordinates needed to specify a point on the surface are two angles, $θ$ and $φ$.
 
 The line element on this sphere (the 2-sphere) has the form:
 
 $$ds^2=r^2d\theta^2+r^2\sin^2\theta d\phi^2$$
 
-The metric can then be written as a 2×2-matrix:
+The metric can then be written as a 2$×$2-matrix:
 
 $$g_{ij}=\begin{pmatrix}r^2&0\\0&r^2\sin^2\theta\end{pmatrix}$$
 
@@ -422,7 +422,7 @@ The Ricci tensor then takes on a very simple explicit form:
 
 $$R_{ij}=\frac{g_{ij}}{r^2}$$
 
-Since the metric has two components, the Ricci tensor does as well. We can collect these components into a nice 2×2-matrix (just calculate the components from the above form by plugging in the metric):
+Since the metric has two components, the Ricci tensor does as well. We can collect these components into a nice 2$×$2-matrix (just calculate the components from the above form by plugging in the metric):
 
 $$R_{ij}=\begin{pmatrix}1&0\\0&\sin^2\theta\end{pmatrix}$$
 
@@ -434,9 +434,9 @@ Now, since it is a vacuum solution, the energy-momentum tensor on the right-hand
 
 $$R_{\mu\nu}=0$$
 
-So, a particularly nice condition for a vacuum is that Rµν=0. This, of course, doesn’t mean that the spacetime is flat (since the Riemann tensor isn’t zero in this case), so there is definitely gravity present in the Schwarzschild spacetime.
+So, a particularly nice condition for a vacuum is that R$μ$$ν$=0. This, of course, doesn’t mean that the spacetime is flat (since the Riemann tensor isn’t zero in this case), so there is definitely gravity present in the Schwarzschild spacetime.
 
-Another example of a vacuum Ricci tensor (Rµν=0) is the **Ricci tensor for the Kerr metric**. This describes the spacetime and gravity outside a **rotating spherically symmetric mass** (instead of the Schwarzschild solution, which only describes a stationary mass).
+Another example of a vacuum Ricci tensor (R$μ$$ν$=0) is the **Ricci tensor for the Kerr metric**. This describes the spacetime and gravity outside a **rotating spherically symmetric mass** (instead of the Schwarzschild solution, which only describes a stationary mass).
 
 ### Ricci Tensor For The Robertson-Walker (FRW) Metric
 
@@ -450,7 +450,7 @@ The line element for this metric is:
 
 $$ds^2=-dt^2+\frac{a^2\left(t\right)}{1-kr^2}dr^2+a^2\left(t\right)r^2d\theta^2+a^2\left(t\right)r^2\sin^2\theta d\phi^2$$
 
-Here, k is a curvature parameter that can take on the values -1, 0 or 1, depending on the geometry of the spacetime (to describe a flat universe, k=0, for example). The a(t)-parameter is called the scale factor and it is a function of time that holds information about the expansion of the universe (or whatever space this metric happens to be describing).
+Here, $k$ is a curvature parameter that can take on the values -1, 0 or 1, depending on the geometry of the spacetime (to describe a flat universe, k=0, for example). The a(t)-parameter is called the scale factor and it is a function of time that holds information about the expansion of the universe (or whatever space this metric happens to be describing).
 
 This metric has the matrix form:
 
@@ -460,7 +460,7 @@ For this metric, there are 19 Christoffel symbols in total (which are not all in
 
 $$\Gamma_{\mu\nu}^0=\begin{pmatrix}0&0&0&0\\0&\frac{a\dot{a}}{c\left(1-kr^2\right)}&0&0\\0&0&\frac{1}{c}a\dot{a}r^2&0\\0&0&0&\frac{1}{c}a\dot{a}r^2\sin^2\theta\end{pmatrix}$$
 
-Here, $dot{a}$ denotes $da/dt$ (a being a function of time) and c is the speed of light.
+Here, $dot{a}$ denotes $da/dt$ (a being a function of time) and $c$ is the speed of light.
 
 $$\Gamma_{\mu\nu}^1=\begin{pmatrix}0&\frac{\dot{a}}{ca}&0&0\\\frac{\dot{a}}{ca}&\frac{kr}{1-kr^2}&0&0\\0&0&-r\left(1-kr^2\right)&0\\0&0&0&-r\sin^2\theta\left(1-kr^2\right)\end{pmatrix}\\\Gamma_{\mu\nu}^2=\begin{pmatrix}0&0&\frac{\dot{a}}{ca}&0\\0&0&\frac{1}{r}&0\\\frac{\dot{a}}{ca}&\frac{1}{r}&0&0\\0&0&0&-\sin\theta\cos\theta\end{pmatrix}\\\Gamma_{\mu\nu}^3=\begin{pmatrix}0&0&0&\frac{\dot{a}}{ca}\\0&0&0&\frac{1}{r}\\0&0&0&\cot\theta\\\frac{\dot{a}}{ca}&\frac{1}{r}&\cot\theta&0\end{pmatrix}$$
 
@@ -474,7 +474,7 @@ The space components are given by:
 
 $$R_{ij}=\left(a\ddot a+2\dot a^2+2kc^2\right)\frac{g_{ij}}{a^2}$$
 
-We can collect all of these into a 4×4-matrix:
+We can collect all of these into a 4$×$4-matrix:
 
 $$R_{\mu\nu}=\begin{pmatrix}-\frac{3}{c^2}\frac{\ddot a}{a}&0&0&0\\0&\frac{a\ddot a+2\dot a^2+kc^2}{1-kr^2}&0&0\\0&0&\left(a\ddot a+2\dot a^2+kc^2\right)r^2&0\\0&0&0&\left(a\ddot a+2\dot a^2+kc^2\right)r^2\sin^2\theta\end{pmatrix}$$
 
@@ -490,7 +490,7 @@ The two parameters here are given by:
 
 $$r_Q^2=\frac{Q^2G}{4\pi\varepsilon_0c^4}\ \ \ \&\ \ \ \ r_s=\frac{2GM}{c^2}$$
 
-Here, Q and M are the charge and mass of the black hole, c is the speed of light, G is the gravitational constant and ε0 is the electric constant (also called vacuum permittivity).
+Here, Q and M are the charge and mass of the black hole, $c$ is the speed of light, G is the gravitational constant and $\varepsilon_0$ is the electric constant (also called vacuum permittivity).
 
 Since the black hole is charged, there is an electric field around it and therefore, the energy-momentum tensor is not zero. This means that the right-hand side of the Einstein field equations is not zero and so, the Ricci tensor is not zero either.
 
@@ -498,7 +498,7 @@ In fact, it can be shown that the Ricci scalar for this metric is zero, so the E
 
 $$R_{\mu\nu}=8\pi GT_{\mu\nu}$$
 
-From this, it’s possible to directly calculate the Ricci tensor without even needing any of the Christoffel symbols. The energy-momentum tensor (for an electromagnetic field) is given in terms of the EM field tensor Fµν:
+From this, it’s possible to directly calculate the Ricci tensor without even needing any of the Christoffel symbols. The energy-momentum tensor (for an electromagnetic field) is given in terms of the EM field tensor F$μ$$ν$:
 
 $$T_{\mu\nu}=\frac{1}{\mu_0}\left(F_{\mu\beta}F_{\nu\alpha}g^{\alpha\beta}-\frac{1}{4}g_{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}\right)$$
 
@@ -520,7 +520,7 @@ Explicitly, you could write them as:
 
 $$R_{00}=-\frac{r_Q^2}{r^4}g_{00}\ {,}\ R_{11}=-\frac{r_Q^2}{r^4}g_{11}\ {,}\ R_{22}=\frac{r_Q^2}{r^4}g_{22}\ {,}\ R_{33}=\frac{r_Q^2}{r^4}g_{33}$$
 
-Anyway, plugging in the metric into these and simplifying a bit, we can express the Ricci tensor as a 4×4-matrix, as usual:
+Anyway, plugging in the metric into these and simplifying a bit, we can express the Ricci tensor as a 4$×$4-matrix, as usual:
 
 $$R_{\mu\nu}=\begin{pmatrix}\frac{r_Q^2}{r^4}-\frac{r_Q^2r_s}{r^5}+\frac{r_Q^4}{r^6}&0&0&0\\0&\frac{r_Q^2}{r^3r_s-r^4-r^2r_Q^2}&0&0\\0&0&\frac{r_Q^2}{r^2}&0\\0&0&0&\frac{r_Q^2}{r^2}\sin^2\theta\end{pmatrix}$$
 
