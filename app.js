@@ -380,7 +380,25 @@
       'F = −∇V', 'dS ≥ δQ/T', 'λ = h/p',
     ];
 
-    const FONT = '"Caveat", cursive';
+    const FONT = '"Kalam", cursive';
+
+    // Pre-rendered noise texture for pencil grain
+    let noisePattern = null;
+    function createNoisePattern() {
+      const size = 128;
+      const nc = document.createElement('canvas');
+      nc.width = size; nc.height = size;
+      const nctx = nc.getContext('2d');
+      const id = nctx.createImageData(size, size);
+      for (let i = 0; i < id.data.length; i += 4) {
+        const v = Math.random() * 255;
+        id.data[i] = v; id.data[i+1] = v; id.data[i+2] = v;
+        // Sparse noise — most pixels transparent, some opaque
+        id.data[i+3] = Math.random() < 0.3 ? Math.floor(Math.random() * 80 + 40) : 0;
+      }
+      nctx.putImageData(id, 0, 0);
+      return nc;
+    }
 
     function resize() {
       const rect = canvas.parentElement.getBoundingClientRect();
@@ -396,18 +414,13 @@
       centerY = height / 2;
     }
 
-    function createParticle(index, total) {
-      // Golden-angle spiral for even distribution
-      const goldenAngle = Math.PI * (3 - Math.sqrt(5));
-      const angle = index * goldenAngle;
-      const maxR = Math.min(width, height) * 0.48;
-      const r = Math.sqrt((index + 1) / total) * maxR;
-
-      const targetX = centerX + Math.cos(angle) * r;
-      const targetY = centerY + Math.sin(angle) * r;
-
-      // Stagger: outer particles start later
-      const delay = Math.floor((index / total) * 40 + Math.random() * 20);
+    function createParticle(targetX, targetY, index, total) {
+      // Stagger: particles further from center start slightly later
+      const distFromCenter = Math.sqrt(
+        Math.pow(targetX - centerX, 2) + Math.pow(targetY - centerY, 2)
+      );
+      const maxDist = Math.sqrt(centerX * centerX + centerY * centerY);
+      const delay = Math.floor((distFromCenter / maxDist) * 30 + Math.random() * 15);
 
       return {
         x: centerX,
@@ -420,43 +433,97 @@
         started: false,
         progress: 0,
         text: EQUATIONS[index % EQUATIONS.length],
-        fontSize: 20 + Math.random() * 14, // 20-34px
-        rotation: (Math.random() - 0.5) * 0.2,
+        fontSize: 18 + Math.random() * 16, // 18-34px
+        rotation: (Math.random() - 0.5) * 0.25,
         opacity: 0,
-        maxOpacity: 0.07 + Math.random() * 0.08,
+        maxOpacity: 0.08 + Math.random() * 0.1,
+        // Per-particle random seed for pencil texture variation
+        grainSeed: Math.random() * 1000,
       };
     }
 
     function initParticles() {
       particles = [];
       animDone = false;
-      const count = Math.min(26, Math.max(14, Math.floor(width * height / 35000)));
-      for (let i = 0; i < count; i++) {
-        particles.push(createParticle(i, count));
+
+      // Grid-based distribution with jitter to fill the full canvas
+      const padding = 40; // Keep some margin from edges
+      const usableW = width - padding * 2;
+      const usableH = height - padding * 2;
+
+      // Determine grid dimensions based on canvas size
+      const cellSize = 160; // Target spacing between particles
+      const cols = Math.max(2, Math.ceil(usableW / cellSize));
+      const rows = Math.max(2, Math.ceil(usableH / cellSize));
+      const total = cols * rows;
+
+      let idx = 0;
+      for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+          // Base grid position
+          const baseX = padding + (col + 0.5) * (usableW / cols);
+          const baseY = padding + (row + 0.5) * (usableH / rows);
+          // Add jitter (up to 40% of cell size)
+          const jitterX = (Math.random() - 0.5) * (usableW / cols) * 0.4;
+          const jitterY = (Math.random() - 0.5) * (usableH / rows) * 0.4;
+
+          particles.push(createParticle(
+            baseX + jitterX,
+            baseY + jitterY,
+            idx,
+            total
+          ));
+          idx++;
+        }
       }
     }
 
-    function drawPencilText(text, x, y, fontSize, opacity, rotation) {
+    function drawPencilText(text, x, y, fontSize, opacity, rotation, grainSeed) {
       ctx.save();
       ctx.translate(x, y);
       ctx.rotate(rotation);
-      ctx.font = `500 ${fontSize}px ${FONT}`;
+      ctx.font = `300 ${fontSize}px ${FONT}`;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
 
       const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-      const r = isDark ? 240 : 40, g = isDark ? 238 : 40, b = isDark ? 230 : 35;
+      const r = isDark ? 220 : 50, g = isDark ? 218 : 50, b = isDark ? 210 : 45;
 
-      // Layer 1: Soft pencil shadow
-      ctx.fillStyle = `rgba(${r},${g},${b},${opacity * 0.35})`;
-      ctx.shadowColor = `rgba(${r},${g},${b},${opacity * 0.15})`;
-      ctx.shadowBlur = fontSize * 0.12;
-      ctx.fillText(text, 0.5, 0.5);
+      // Pencil texture: multiple light strokes with slight offsets
+      // This simulates the back-and-forth motion of a pencil
+      const strokes = 4;
+      for (let s = 0; s < strokes; s++) {
+        const ox = Math.sin(grainSeed + s * 2.1) * 0.8;
+        const oy = Math.cos(grainSeed + s * 3.7) * 0.8;
+        const strokeOpacity = opacity * (0.3 + Math.sin(grainSeed + s) * 0.1);
+        ctx.fillStyle = `rgba(${r},${g},${b},${strokeOpacity})`;
+        ctx.fillText(text, ox, oy);
+      }
 
-      // Layer 2: Main stroke
-      ctx.shadowBlur = 0;
-      ctx.fillStyle = `rgba(${r},${g},${b},${opacity * 0.85})`;
+      // Core stroke (slightly darker, centered)
+      ctx.fillStyle = `rgba(${r},${g},${b},${opacity * 0.7})`;
       ctx.fillText(text, 0, 0);
+
+      // Apply noise grain overlay for graphite texture
+      if (noisePattern) {
+        // Measure text bounds for clipping
+        const metrics = ctx.measureText(text);
+        const tw = metrics.width;
+        const th = fontSize * 1.2;
+
+        ctx.save();
+        // Create a clip region around the text
+        ctx.globalAlpha = opacity * 0.25;
+        ctx.globalCompositeOperation = 'source-atop';
+        // Draw noise offset by grainSeed for variation
+        const noiseOffset = grainSeed % 128;
+        for (let nx = -tw/2 - 128; nx < tw/2 + 128; nx += 128) {
+          for (let ny = -th/2 - 128; ny < th/2 + 128; ny += 128) {
+            ctx.drawImage(noisePattern, nx + noiseOffset, ny + noiseOffset * 0.7);
+          }
+        }
+        ctx.restore();
+      }
 
       ctx.restore();
     }
@@ -522,7 +589,7 @@
 
         if (p.opacity < 0.003) continue;
 
-        drawPencilText(p.text, finalX, finalY, p.fontSize, p.opacity, p.rotation);
+        drawPencilText(p.text, finalX, finalY, p.fontSize, p.opacity, p.rotation, p.grainSeed);
       }
 
       if (allSettled && !animDone) {
@@ -569,6 +636,7 @@
     });
 
     // Init
+    noisePattern = createNoisePattern();
     resize();
     initParticles();
     animId = requestAnimationFrame(draw);
