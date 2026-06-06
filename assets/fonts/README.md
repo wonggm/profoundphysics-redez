@@ -1,33 +1,33 @@
 # Fonts
 
-## StyreneB (self-hosted)
+## Anthropic fonts (self-hosted)
 
-The site uses **StyreneB** (Anthropic's primary sans-serif) as the body font, per the Claude design spec.
+The site uses **AnthropicSans**, **AnthropicSerif**, and **AnthropicMono** — Anthropic's open-source fonts released in 2025. These are the current official fonts that replaced the older "StyreneB" / "Tiempos Headline" / "JetBrains Mono" names from the original design spec.
 
-### Setup
+### Font files
 
-To enable StyreneB, drop the following files into this directory:
+All five files are **variable woff2 fonts** with a `wght` axis spanning 300-800:
 
-- `StyreneB-Regular.woff2` (weight 400)
-- `StyreneB-Medium.woff2`  (weight 500)
-- `StyreneB-Semibold.woff2` (weight 600)
+| File | Family | Style | Weight axis |
+|---|---|---|---|
+| `AnthropicSans-Romans.woff2` | Anthropic Sans | Normal | 300–800 |
+| `AnthropicSans-Italics.woff2` | Anthropic Sans | Italic | 300–800 |
+| `AnthropicSerif-Romans.woff2` | Anthropic Serif | Normal | 300–800 |
+| `AnthropicSerif-Italics.woff2` | Anthropic Serif | Italic | 300–800 |
+| `AnthropicMono.woff2` | Anthropic Mono | Normal | 300–800 |
 
-The site is already configured to load them via `assets/fonts/styreneb.css` — the font is requested with `font-display: swap` so the page won't be blocked if the files are missing.
+### Source
 
-### If files are missing
+Mirror at `github.com/matthieuhuguet/anthropic-fonts` — a public copy of the open-source fonts that Anthropic ships. Verified via fontTools: all files are valid WOFF2 (Web Open Font Format v2, TrueType).
 
-The CSS font stack falls back gracefully:
+### License
+
+Open-source under the [Anthropic Fonts License](https://www.anthropic.com/brand) — free for personal, educational, and commercial use. Attribution appreciated but not required.
+
+### Fallback chain
+
+If the font files are missing, the site falls back to system fonts and Google Fonts. The fallback chain in `--font-body` is:
 
 ```css
---font-body: "StyreneB", "Spectral", "Inter", -apple-system, ...;
+--font-body: "AnthropicSans", "StyreneB", "Spectral", "Inter", -apple-system, ...;
 ```
-
-If the .woff2 files aren't present, the browser will use **Spectral** (the next font in the stack, currently loaded from Google Fonts). The site will look slightly different but will still be readable.
-
-### Obtaining StyreneB
-
-For **personal/educational use**, the font can be obtained from:
-- Anthropic's brand resources page (requires sign-in)
-- Community-shared copies on various font-sharing sites — verify the license for your use case
-
-For **commercial use**, StyreneB must be licensed through Commercial Type (anthropic's font vendor).

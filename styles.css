@@ -79,9 +79,9 @@
 /* Shared variables (apply to both themes) */
 :root {
   /* Type families */
-  --font-display: "Cormorant Garamond", "Tiempos Headline", "EB Garamond", Garamond, "Times New Roman", serif;
-  --font-body: "StyreneB", "Spectral", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: "AnthropicSerif", "Cormorant Garamond", "Tiempos Headline", "EB Garamond", Garamond, "Times New Roman", serif;
+  --font-body: "AnthropicSans", "StyreneB", "Spectral", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "AnthropicMono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* Radii */
   --r-xs: 4px;

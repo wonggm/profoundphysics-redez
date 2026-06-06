@@ -1,0 +1,54 @@
+/*
+ * Anthropic fonts (AnthropicSans, AnthropicSerif, AnthropicMono)
+ * — open-sourced by Anthropic in 2025.
+ * These are the current official fonts that replace the older
+ * StyreneB / Tiempos Headline names referenced in older design docs.
+ *
+ * Each file is a variable woff2 with a 'wght' axis (300-800 for
+ * Sans/Serif, single weight for Mono). One file per family + style.
+ *
+ * Source: github.com/matthieuhuguet/anthropic-fonts (a public mirror
+ * of Anthropic's official font files)
+ *
+ * For personal/educational use under the open-source release.
+ */
+
+@font-face {
+  font-family: 'AnthropicSans';
+  src: url('./anthropic/AnthropicSans-Romans.woff2') format('woff2');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AnthropicSans';
+  src: url('./anthropic/AnthropicSans-Italics.woff2') format('woff2');
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AnthropicSerif';
+  src: url('./anthropic/AnthropicSerif-Romans.woff2') format('woff2');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AnthropicSerif';
+  src: url('./anthropic/AnthropicSerif-Italics.woff2') format('woff2');
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AnthropicMono';
+  src: url('./anthropic/AnthropicMono.woff2') format('woff2');
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
