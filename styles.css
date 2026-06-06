@@ -879,19 +879,19 @@ katex, .katex { font-size: 1.1em; }
   text-align: center;
 }
 
-/* Unify text-mode in math with the body font (Spectral Sans) so
-   \text{}, \mathrm{}, \textrm{} etc. match the surrounding prose. */
-.katex .mord.text,
-.katex .mord.mathit,
-.katex .mord.mathrm,
-.katex .mord.textrm,
-.katex .mord.textnormal,
-.katex .mord.textsc,
-.katex .mathnormal,
-.katex .mathsf,
-.katex .mathbf,
-.katex text {
-  font-family: var(--font-body) !important;
+/* Math font unification: force ALL math content to use KaTeX's serif font
+   stack, eliminating any sans-serif (Spectral Sans, KaTeX_SansSerif) leaks.
+   The previous version was too broad — it overrode .mathnormal which is the
+   class for math identifiers (single letters like x, v, T) and made every
+   letter in every equation render as sans-serif, breaking visual consistency.
+   Now we keep KaTeX's default serif rendering for math content. */
+.katex, .katex * {
+  font-family: "KaTeX_Main", "KaTeX_Math", "KaTeX_AMS", Georgia, "Times New Roman", serif !important;
+}
+/* But keep code/TT (monospace) in monospace */
+.katex .mord.mathtt,
+.katex .mord.texttt {
+  font-family: "KaTeX_Typewriter", "JetBrains Mono", ui-monospace, monospace !important;
 }
 
 /* Slightly tighter inline math so it sits well in the prose line */
@@ -899,24 +899,38 @@ katex, .katex { font-size: 1.1em; }
   font-size: 1.05em;
 }
 
-/* Multi-line display math needs breathing room between lines */
-.katex-display .katex .base,
-.katex-display .katex .strut {
-  line-height: 1.4;
+/* Display math: consistent line spacing and breathing room */
+.katex-display {
+  margin: 2em 0;
+  padding: 0.5em 0;
+  line-height: 1.8; /* consistent line height for multi-line equations */
+}
+.katex-display .katex {
+  line-height: 1.8;
+  display: inline-block;
+}
+/* Force consistent vertical spacing between lines in multi-line display math.
+   KaTeX uses <span class="strut"> with explicit height, but we also want
+   line-height to be the same regardless of the line content. */
+.katex-display .base,
+.katex-display .mord + .mord,
+.katex-display .newline + .mord {
+  margin: 0;
 }
 
-/* When two display equations sit next to each other, reduce the gap between
-   them so the whole group reads as one derivation block. */
+/* Consecutive display equations: pull them closer so derivation groups
+   read as one unit, but keep bottom margin for the next paragraph. */
 .katex-display + .katex-display,
 .katex-display + p:has(> .katex-display),
 p:has(> .katex-display) + p:has(> .katex-display) {
-  margin-top: -1.5em;
+  margin-top: -1em;
 }
-
-/* Ensure consecutive equations still have a small breathing gap */
 .katex-display + .katex-display {
+  margin-bottom: 2em;
+}
+.katex-display + p:has(> .katex-display),
+p:has(> .katex-display) + p:has(> .katex-display) {
   margin-top: -1.5em;
-  margin-bottom: 2.5em;
 }
 
 /* ---------- Per-article long-form reading styles ---------- */
@@ -1104,10 +1118,10 @@ p:has(> .katex-display) + p:has(> .katex-display) {
 }
 .article-page__meta span { white-space: nowrap; }
 .article-page__body {
-  font-size: 19px;
-  line-height: 1.75;
+  font-size: 21px;
+  line-height: 1.7;
   color: var(--color-body-strong);
-  max-width: 65ch;
+  max-width: 68ch;
   text-wrap: pretty;
 }
 .article-page__body p { margin-block: 0 1.2em; }
