@@ -24,6 +24,11 @@
   <!-- Anthropic fonts (self-hosted, variable woff2) -->
   <link rel="stylesheet" href="./assets/fonts/anthropic.css">
 
+  <!-- Handwriting font for hero animation -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- KaTeX (math rendering) -->
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
@@ -62,6 +67,20 @@
       </a>
       <nav class="top-nav__right" aria-label="Primary">
         <a class="nav-link" href="#archive">Articles</a>
+        <div class="nav-search-wrap">
+          <svg class="nav-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="20" y1="20" x2="16.5" y2="16.5"/>
+          </svg>
+          <input
+            type="search"
+            class="nav-search-input"
+            id="nav-search-input"
+            placeholder="Search articles…"
+            aria-label="Search articles"
+            autocomplete="off"
+            spellcheck="false">
+        </div>
         <div class="theme-toggle-wrap">
           <button
             class="theme-toggle"
