@@ -138,6 +138,8 @@
 
     <!-- 1. Hero band (concise: headline + search CTA only) -->
     <section class="hero-band" aria-labelledby="hero-h1">
+      <!-- Animated equation background canvas -->
+      <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
       <div class="container">
         <div class="hero-grid hero-grid--compact">
           <div class="hero">
@@ -170,15 +172,37 @@
       </div>
     </section>
 
-    <!-- 3. Archive by category -->
+    <!-- 3. Archive as topic cards -->
     <section class="archive-band reveal" id="archive" aria-labelledby="archive-heading">
       <div class="container">
         <h2 class="section-heading" id="archive-heading">All 50 articles, by topic</h2>
-        <div id="archive-groups">
-          <!-- Populated by app.js: 5 <details> groups, one per category -->
+        <div class="topic-cards" id="topic-cards">
+          <!-- Populated by app.js: 5 topic cards with SVG logos -->
         </div>
       </div>
     </section>
+
+    <!-- Modal overlay for topic article lists -->
+    <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal__close" id="modal-close" aria-label="Close">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+        <div class="modal__header">
+          <div class="modal__icon" id="modal-icon"></div>
+          <div>
+            <h3 class="modal__title" id="modal-title"></h3>
+            <p class="modal__subtitle" id="modal-subtitle"></p>
+          </div>
+        </div>
+        <ul class="modal__list" id="modal-list" role="list">
+          <!-- Populated by app.js -->
+        </ul>
+      </div>
+    </div>
 
   </main>
 
