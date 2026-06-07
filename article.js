@@ -43,54 +43,30 @@
     return params.get('slug');
   }
 
-  // Unicode → LaTeX substitution map for math symbols in prose text.
-  // Only symbols that appear in physics prose without explicit KaTeX delimiters.
-  const UNICODE_MATH_SUB = [
-    // Greek letters
-    ['α', '\\alpha'], ['β', '\\beta'], ['γ', '\\gamma'], ['δ', '\\delta'],
-    ['ε', '\\varepsilon'], ['ζ', '\\zeta'], ['η', '\\eta'], ['θ', '\\theta'],
-    ['ι', '\\iota'], ['κ', '\\kappa'], ['λ', '\\lambda'], ['μ', '\\mu'],
-    ['ν', '\\nu'], ['ξ', '\\xi'], ['π', '\\pi'],
-    ['ρ', '\\rho'], ['σ', '\\sigma'], ['τ', '\\tau'],
-    ['υ', '\\upsilon'], ['φ', '\\varphi'], ['χ', '\\chi'], ['ψ', '\\psi'], ['ω', '\\omega'],
-    ['Δ', '\\Delta'], ['Θ', '\\Theta'], ['Λ', '\\Lambda'],
-    ['Π', '\\Pi'], ['Σ', '\\Sigma'], ['Φ', '\\Phi'], ['Ω', '\\Omega'],
-    ['ℏ', '\\hbar'], ['∂', '\\partial'], ['∇', '\\nabla'],
-    ['∝', '\\propto'], ['∈', '\\in'], ['∉', '\\notin'],
-    ['≤', '\\leq'], ['≥', '\\geq'], ['≠', '\\neq'], ['≈', '\\approx'],
-    ['∞', '\\infty'],
-    // Subscripts / superscripts
-    ['₀', '_{0'], ['₁', '_{1'], ['₂', '_{2'], ['₃', '_{3}'],
-    ['₄', '_{4}'], ['₅', '_{5}'], ['₆', '_{6}'], ['₇', '_{7}'], ['₈', '_{8}'], ['₉', '_{9}'],
-    ['⁰', '^{0}'], ['¹', '^{1}'], ['²', '^{2}'], ['³', '^{3}'],
-    ['⁴', '^{4}'], ['⁵', '^{5}'], ['⁶', '^{6}'], ['⁷', '^{7}'], ['⁸', '^{8}'], ['⁹', '^{9}'],
-    ['⁺', '^{+}'], ['⁻', '^{-}'],
-    // Other symbols
-    ['·', '\\cdot '],
-  ];
-
-  // µ (U+00B5 MICRO SIGN) → \mu (Greek mu) — not a Greek letter, but commonly used for micro
-  // Already covered by U+03BC μ if present, but add explicit µ → \mu
-  const MICRO_SIGN_SUB = ['µ', '\\mu'];
-
   /**
-   * Walk all text nodes in `el` and replace Unicode math symbols with LaTeX equivalents.
-   * Skips text inside tag attributes, HTML entities, code blocks, and KaTeX output (<span class="katex").
+   * Walk all text nodes in `el` and wrap spans containing Unicode math symbols
+   * in `$...$` delimiters so KaTeX renders them.
+   * Skips code blocks, preformatted text, existing KaTeX output, and script tags.
+   *
+   * KaTeX supports Unicode math characters directly (π, ε₀, ℏ, etc.) so we don't
+   * need to convert them to LaTeX commands — just wrapping in $...$ is sufficient.
    */
-  function unicodeMathToLatex(el) {
+  function wrapUnicodeMath(el) {
+    // Matches a Unicode math character anywhere in the text
+    const hasMath = /[α-ωΑ-Ωεµℏ∂∇·×±≤≥≠≈∝∑∏∫ℒΩ²³⁰¹⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉⁻⁺∞ħℓ∈∉←→⇒⇔∧∨⊕⊗∫∮∝∞]/;
+
     const walker = document.createTreeWalker(
       el, NodeFilter.SHOW_TEXT,
       {
         acceptNode(node) {
-          const parent = node.parentElement;
-          if (!parent) return NodeFilter.FILTER_REJECT;
-          const tag = parent.tagName;
-          const cls = parent.className || '';
-          const role = parent.getAttribute('role') || '';
+          if (!node.parentElement) return NodeFilter.FILTER_REJECT;
+          const p = node.parentElement;
+          const tag = p.tagName;
+          const cls = p.className || '';
           if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'TEXTAREA' ||
               tag === 'CODE' || tag === 'PRE' || tag === 'KBD' || tag === 'SAMP' ||
               cls.includes('katex') || cls.includes('katex-display') ||
-              role === 'math' || parent.closest('[class*="katex"]')) {
+              p.closest('[class*="katex"]')) {
             return NodeFilter.FILTER_REJECT;
           }
           return NodeFilter.FILTER_ACCEPT;
@@ -100,22 +76,29 @@
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);
     for (const node of nodes) {
-      let text = node.textContent;
-      // Apply substitutions
-      for (const [uni, latex] of UNICODE_MATH_SUB) {
-        text = text.split(uni).join(latex);
-      }
-      text = text.split('µ').join('\\mu');
-      if (text !== node.textContent) {
-        node.textContent = text;
-      }
+      const text = node.textContent;
+      if (!hasMath.test(text)) continue;
+
+      // Split into tokens (words or punctuation groups), wrap math-containing tokens
+      const tokens = text.split(/(\s+)/);
+      const result = tokens.map(token => {
+        if (token.trim().length === 0) return token;
+        if (hasMath.test(token)) {
+          // Check it's not already inside $...$
+          if (token.startsWith('$') && token.endsWith('$')) return token;
+          return '$' + token + '$';
+        }
+        return token;
+      });
+      const newText = result.join('');
+      if (newText !== text) node.textContent = newText;
     }
   }
 
   function runKaTeX(el) {
     if (!el || typeof window.renderMathInElement !== 'function') return;
     // Convert Unicode math symbols to LaTeX before KaTeX processes the content
-    unicodeMathToLatex(el);
+    wrapUnicodeMath(el);
     try {
       window.renderMathInElement(el, {
         delimiters: [
