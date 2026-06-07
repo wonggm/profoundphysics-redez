@@ -133,11 +133,11 @@
     const mathBlocks = [];
     let protectedBody = body;
 
-    // Protect display math $$...$$
-    protectedBody = protectedBody.replace(/\$\$([\s\S]*?)\$\$/g, (match, math) => {
+    // Protect display math $$...$$ (only on its own line)
+    protectedBody = protectedBody.replace(/(?:^|\n)\s*\$\$\n?([\s\S]*?)\n?\$\$\s*(?:\n|$)/g, (match, math) => {
       const idx = mathBlocks.length;
       mathBlocks.push({ type: 'display', content: math });
-      return `@@MATH_BLOCK_${idx}@@`;
+      return `\n@@MATH_BLOCK_${idx}@@\n`;
     });
 
     // Protect inline math $...$
