@@ -43,8 +43,79 @@
     return params.get('slug');
   }
 
+  // Unicode → LaTeX substitution map for math symbols in prose text.
+  // Only symbols that appear in physics prose without explicit KaTeX delimiters.
+  const UNICODE_MATH_SUB = [
+    // Greek letters
+    ['α', '\\alpha'], ['β', '\\beta'], ['γ', '\\gamma'], ['δ', '\\delta'],
+    ['ε', '\\varepsilon'], ['ζ', '\\zeta'], ['η', '\\eta'], ['θ', '\\theta'],
+    ['ι', '\\iota'], ['κ', '\\kappa'], ['λ', '\\lambda'], ['μ', '\\mu'],
+    ['ν', '\\nu'], ['ξ', '\\xi'], ['π', '\\pi'],
+    ['ρ', '\\rho'], ['σ', '\\sigma'], ['τ', '\\tau'],
+    ['υ', '\\upsilon'], ['φ', '\\varphi'], ['χ', '\\chi'], ['ψ', '\\psi'], ['ω', '\\omega'],
+    ['Δ', '\\Delta'], ['Θ', '\\Theta'], ['Λ', '\\Lambda'],
+    ['Π', '\\Pi'], ['Σ', '\\Sigma'], ['Φ', '\\Phi'], ['Ω', '\\Omega'],
+    ['ℏ', '\\hbar'], ['∂', '\\partial'], ['∇', '\\nabla'],
+    ['∝', '\\propto'], ['∈', '\\in'], ['∉', '\\notin'],
+    ['≤', '\\leq'], ['≥', '\\geq'], ['≠', '\\neq'], ['≈', '\\approx'],
+    ['∞', '\\infty'],
+    // Subscripts / superscripts
+    ['₀', '_{0'], ['₁', '_{1'], ['₂', '_{2'], ['₃', '_{3}'],
+    ['₄', '_{4}'], ['₅', '_{5}'], ['₆', '_{6}'], ['₇', '_{7}'], ['₈', '_{8}'], ['₉', '_{9}'],
+    ['⁰', '^{0}'], ['¹', '^{1}'], ['²', '^{2}'], ['³', '^{3}'],
+    ['⁴', '^{4}'], ['⁵', '^{5}'], ['⁶', '^{6}'], ['⁷', '^{7}'], ['⁸', '^{8}'], ['⁹', '^{9}'],
+    ['⁺', '^{+}'], ['⁻', '^{-}'],
+    // Other symbols
+    ['·', '\\cdot '],
+  ];
+
+  // µ (U+00B5 MICRO SIGN) → \mu (Greek mu) — not a Greek letter, but commonly used for micro
+  // Already covered by U+03BC μ if present, but add explicit µ → \mu
+  const MICRO_SIGN_SUB = ['µ', '\\mu'];
+
+  /**
+   * Walk all text nodes in `el` and replace Unicode math symbols with LaTeX equivalents.
+   * Skips text inside tag attributes, HTML entities, code blocks, and KaTeX output (<span class="katex").
+   */
+  function unicodeMathToLatex(el) {
+    const walker = document.createTreeWalker(
+      el, NodeFilter.SHOW_TEXT,
+      {
+        acceptNode(node) {
+          const parent = node.parentElement;
+          if (!parent) return NodeFilter.FILTER_REJECT;
+          const tag = parent.tagName;
+          const cls = parent.className || '';
+          const role = parent.getAttribute('role') || '';
+          if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'TEXTAREA' ||
+              tag === 'CODE' || tag === 'PRE' || tag === 'KBD' || tag === 'SAMP' ||
+              cls.includes('katex') || cls.includes('katex-display') ||
+              role === 'math' || parent.closest('[class*="katex"]')) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        },
+      }
+    );
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    for (const node of nodes) {
+      let text = node.textContent;
+      // Apply substitutions
+      for (const [uni, latex] of UNICODE_MATH_SUB) {
+        text = text.split(uni).join(latex);
+      }
+      text = text.split('µ').join('\\mu');
+      if (text !== node.textContent) {
+        node.textContent = text;
+      }
+    }
+  }
+
   function runKaTeX(el) {
     if (!el || typeof window.renderMathInElement !== 'function') return;
+    // Convert Unicode math symbols to LaTeX before KaTeX processes the content
+    unicodeMathToLatex(el);
     try {
       window.renderMathInElement(el, {
         delimiters: [
@@ -56,10 +127,6 @@
         throwOnError: false,
         errorColor: '#cc785c',
         ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        // Unify text in math (\text, \mathrm, \textrm) with the body font
-        // so inline math doesn't look like a different typeface from the prose.
-        // Spectral is our body sans; KaTeX's default text mode uses KaTeX_SansSerif.
-        // We override with a CSS rule on .katex .mord.text, .mathit, etc.
       });
     } catch (e) {
       console.warn('KaTeX render error:', e);
