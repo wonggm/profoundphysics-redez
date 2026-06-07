@@ -90,7 +90,7 @@ Down below I’ve collected the key concepts of general relativity, but for now,
 
 ![](assets/images/general-relativity-for-dummies/img_2.webp)
 
-This ds2 is called “the line element of the metric g$μ$$ν$” and in general relativity, we typically represent a given spacetime by its line element, which has this form. At this point, I would highly recommend you read my [full guide on the metric tensor.](https://profoundphysics.com/metric-tensor-a-complete-guide-with-examples/)
+This ds2 is called “the line element of the metric gµν” and in general relativity, we typically represent a given spacetime by its line element, which has this form. At this point, I would highly recommend you read my [full guide on the metric tensor.](https://profoundphysics.com/metric-tensor-a-complete-guide-with-examples/)
 
 - An important principle underlying general relativity is the **equivalence principle**, according to which gravity and acceleration are completely equivalent, except for one thing; **tidal forces**. Tidal forces are something that can only appear due to gravity and they turn out to be the key thing in **defining gravity in general relativity**.
 
@@ -245,7 +245,7 @@ These components can be nicely represented as a “table” as follows (more acc
 
 $$T_{\mu\nu}=\begin{pmatrix}T_{00}&T_{01}&T_{02}&T_{03}\\T_{10}&T_{11}&T_{12}&T_{13}\\T_{20}&T_{21}&T_{22}&T_{23}\\T_{30}&T_{31}&T_{32}&T_{33}\end{pmatrix}$$
 
-These T’s here are the components of this tensor T$μ$$ν$. For example, T01 is the component where $μ$=0 and $ν$=1.
+These T’s here are the components of this tensor Tµν. For example, T01 is the component where µ=0 and ν=1.
 
 For the context of general relativity and physics, here are some important facts about tensors:
 
@@ -305,7 +305,7 @@ Probably the most important use of the metric tensor in the context of general r
 A line element can be simply thought of as a generalized Pythagorean theorem; it gives the square of a distance interval ds2.
 
 ```
-Line element of the metric g$μ$$ν$:  
+Line element of the metric gµν:  
   
 
 $$ds^2=g_{\mu\nu}dx^{\mu}dx^{\nu}$$
@@ -339,7 +339,7 @@ We could write this in a more compact way (where both i and j are summed over fr
 
 $$ds^2=\delta_{ij}dx^idx^j$$
 
-Now, what does this expression really mean? This symbol $δ$ij is the Kronecker delta, which is defined as 0 if i$≠$j and 1 if i=j. Or equivalently, we could write it as a matrix like this:
+Now, what does this expression really mean? This symbol δij is the Kronecker delta, which is defined as 0 if i≠j and 1 if i=j. Or equivalently, we could write it as a matrix like this:
 
 $$\delta_{ij}=\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}$$
 
@@ -349,7 +349,7 @@ $$ds^2=\delta_{ij}dx^idx^j=\delta_{11}dx^1dx^1+\delta_{12}dx^1dx^2+\delta_{13}dx
 
 Note that these numbers are NOT exponents, they are simply indices that are placed in the upstairs position.
 
-If we define these dx’s (our coordinates) as the usual Cartesian coordinates (dx1=x, dx2=y, dx3=z) and then insert all the components of the Kronecker delta (meaning $δ$ij=0 if i$≠$j and $δ$ij=1 if i=j), we recover the usual Pythagorean theorem:
+If we define these dx’s (our coordinates) as the usual Cartesian coordinates (dx1=x, dx2=y, dx3=z) and then insert all the components of the Kronecker delta (meaning δij=0 if i≠j and δij=1 if i=j), we recover the usual Pythagorean theorem:
 
 $$ds^2=\delta_{ij}dx^idx^j=dx^2+dy^2+dz^2$$
 
@@ -387,7 +387,7 @@ $$\vec{V}=V^x\overline{\text{i}}+V^y\overline{\text{j}}$$
 
 A great explanation of basis vectors can be found from this video:
 
-Generally, any coordinate system, even a curved one, has a set of basis vectors, which we denote by e’s. In a four-dimensional spacetime, **the basis vectors are denoted by e’s with Greek indices**, such as e$μ$ (where $μ$ corresponds to the spacetime directions 0,1,2 or 3 and e$μ$ is then the basis vector in that direction).
+Generally, any coordinate system, even a curved one, has a set of basis vectors, which we denote by e’s. In a four-dimensional spacetime, **the basis vectors are denoted by e’s with Greek indices**, such as eµ (where µ corresponds to the spacetime directions 0,1,2 or 3 and eµ is then the basis vector in that direction).
 
 So, all coordinate systems are built from basis vectors and in general relativity, these basis may or may not be constant, depending on whether a spacetime happens to be curved or not.
 
@@ -413,13 +413,13 @@ The metric tensor then simply gives a measure of **how the basis vectors are ali
 
 ![](assets/images/general-relativity-for-dummies/img_13.webp)
 
-The metric tensor (in 4-dimensional spacetime) can be represented as a 4$×$4 (symmetric) matrix as shown down below.
+The metric tensor (in 4-dimensional spacetime) can be represented as a 4×4 (symmetric) matrix as shown down below.
 
 Typically in general relativity, **the metric is written in terms of its line element**, ds2, by writing out the sum (see the formula from earlier). We’ll see how this works in practice later on.
 
 $$g_{\mu\nu}=\begin{pmatrix}g_{00}&g_{01}&g_{02}&g_{03}\\g_{10}&g_{11}&g_{12}&g_{13}\\g_{20}&g_{21}&g_{22}&g_{23}\\g_{30}&g_{31}&g_{32}&g_{33}\end{pmatrix}$$
 
-Components of the metric represented as a matrix (basically just a 4$×$4 “table”). Note that the metric is generally *symmetric*, meaning g01=g10, g21=g12 etc.
+Components of the metric represented as a matrix (basically just a 4×4 “table”). Note that the metric is generally *symmetric*, meaning g01=g10, g21=g12 etc.
 
 Practical Example: Metric Tensor and Line Element in Spherical Coordinates
 
@@ -427,7 +427,7 @@ For this example, we want to find out what the metric and its line element looks
 
 This, we will do in 3-dimensional space as purely a mathematical example, so there is no time coordinate, only the 3 spacial coordinates.
 
-The way this is done is by using spherical coordinates (r,$θ$,$φ$), which are related to the usual x,y,z coordinates like this:
+The way this is done is by using spherical coordinates (r,θ,φ), which are related to the usual x,y,z coordinates like this:
 
 $$x=r\cos\varphi\sin\theta\\y=r\sin\varphi\sin\theta\\z=r\cos\theta$$
 
@@ -435,7 +435,7 @@ $$x=r\cos\varphi\sin\theta\\y=r\sin\varphi\sin\theta\\z=r\cos\theta$$
 
 Image source: [Andeggs, Public domain, via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:3D_Spherical.svg).
 
-The metric in spherical coordinates written in its matrix form is as follows (in this example, it is a 3$×$3 matrix since we are only looking at the spacial components):
+The metric in spherical coordinates written in its matrix form is as follows (in this example, it is a 3×3 matrix since we are only looking at the spacial components):
 
 $$g_{mn}=\begin{pmatrix}1&0&0\\0&r^2&0\\0&0&r^2\sin^2\theta\end{pmatrix}$$
 
@@ -534,17 +534,17 @@ Now, we know that all the off-diagonal elements of the metric are zero, so the o
 
 $$\Gamma_{mn}^1=\frac{1}{2}g^{11}\left(\partial_mg_{1n}+\partial_ng_{1m}-\partial_1g_{mn}\right)\\\Gamma_{mn}^2=\frac{1}{2}g^{22}\left(\partial_mg_{2n}+\partial_ng_{2m}-\partial_2g_{mn}\right)\\\Gamma_{mn}^3=\frac{1}{2}g^{33}\left(\partial_mg_{3n}+\partial_ng_{3m}-\partial_3g_{mn}\right)$$
 
-Before we can calculate the Christoffel symbols, we’ll need to take note of the fact that we’re now working in spherical coordinates (r,$θ$,$φ$), so the partial derivative operator will also be with respect to these coordinates:
+Before we can calculate the Christoffel symbols, we’ll need to take note of the fact that we’re now working in spherical coordinates (r,θ,φ), so the partial derivative operator will also be with respect to these coordinates:
 
 $$\partial_m=\begin{pmatrix}\partial_r\\\partial_{\theta}\\\partial_{\varphi}\end{pmatrix}$$
 
-With the index notation, $∂$1 will correspond to $∂$r, $∂$2=$∂ MATH0 φ$.
+With the index notation, ∂1 will correspond to ∂r, ∂2=∂θ and ∂3=∂φ.
 
 Also, the metric with upstairs indices is called the inverse metric and its components are simply the inverses of the downstairs metric:
 
 $$g^{mn}=\frac{1}{g_{mn}}=\begin{pmatrix}1&0&0\\0&\frac{1}{r^2}&0\\0&0&\frac{1}{r^2\sin^2\theta}\end{pmatrix}$$
 
-For this example, there are a also few properties we can take advantage of: ALL metric components that are not of the form gmm or gmm (both the indices being the same) will be zero. Secondly, all the Christoffel symbols of the form $Γ$11 (both the lower indices are 1) will be zero since the metric component g11 is a constant and thus, its derivatives are all zero.
+For this example, there are a also few properties we can take advantage of: ALL metric components that are not of the form gmm or gmm (both the indices being the same) will be zero. Secondly, all the Christoffel symbols of the form Γ11 (both the lower indices are 1) will be zero since the metric component g11 is a constant and thus, its derivatives are all zero.
 
 With these in mind, we can now calculate the Christoffel symbols. Let’s start with the ones having k=1:
 
@@ -554,17 +554,17 @@ What you’ll find by plugging in some values for m and n (remember they can bot
 
 $$\Gamma_{22}^1=\frac{1}{2}g^{11}\left(\partial_2g_{12}+\partial_2g_{12}-\partial_1g_{22}\right)=-\frac{1}{2}g^{11}\partial_1g_{22}\\\Gamma_{33}^1=\frac{1}{2}g^{11}\left(\partial_3g_{13}+\partial_3g_{13}-\partial_1g_{33}\right)=-\frac{1}{2}g^{11}\partial_1g_{33}$$
 
-Then, plugging in the components for the metrics and the derivatives, we get (the values are g11=1, $∂$1=$∂$r, g22=r2 and g33=r2sin2$θ$):
+Then, plugging in the components for the metrics and the derivatives, we get (the values are g11=1, ∂1=∂r, g22=r2 and g33=r2sin2θ):
 
 $$\Gamma_{33}^1=\frac{1}{2}g^{11}\left(\partial_3g_{13}+\partial_3g_{13}-\partial_1g_{33}\right)=-\frac{1}{2}g^{11}\partial_1g_{33}\\\Gamma_{33}^1=-\frac{1}{2}g^{11}\partial_1g_{33}=-\frac{1}{2}\cdot1\cdot\partial_rr^2\sin^2\theta=-r\sin^2\theta$$
 
-All the other components of the Christoffel symbol $Γ$1mn are zero. We can collect these into a nice matrix representation:
+All the other components of the Christoffel symbol Γ1mn are zero. We can collect these into a nice matrix representation:
 
 $$\Gamma_{mn}^1=\begin{pmatrix}0&0&0\\0&-r&0\\0&0&-r\sin^2\theta\end{pmatrix}$$
 
 Hopefully that was clear enough. I’d highly recommend going through with trying to calculate all of these yourself, it’s a fantastic exercise in using this somewhat abstract tensor notation.
 
-Anyway, let’s now do the Christoffel symbols $Γ$2mn. What you’ll find here is that there are three components that are non-zero, which are:
+Anyway, let’s now do the Christoffel symbols Γ2mn. What you’ll find here is that there are three components that are non-zero, which are:
 
 $$\Gamma_{12}^2=\frac{1}{2}g^{22}\left(\partial_1g_{22}+\partial_2g_{21}-\partial_2g_{12}\right)=\frac{1}{2}g^{22}\partial_1g_{22}=\frac{1}{2}\cdot\frac{1}{r^2}\cdot\partial_rr^2=\frac{1}{r}$$
 
@@ -574,7 +574,7 @@ These we can also collect into a matrix (all the other ones except the ones abov
 
 $$\Gamma_{mn}^2=\begin{pmatrix}0&\frac{1}{r}&0\\\frac{1}{r}&0&0\\0&0&-\sin\theta\cos\theta\end{pmatrix}$$
 
-The last ones are the Christoffel symbols $Γ$3mn, which there are four of (all the other ones are zero):
+The last ones are the Christoffel symbols Γ3mn, which there are four of (all the other ones are zero):
 
 $$\Gamma_{13}^3=\frac{1}{2}g^{33}\left(\partial_1g_{33}+\partial_3g_{31}-\partial_3g_{13}\right)=\frac{1}{2}g^{33}\partial_1g_{33}=\frac{1}{2}\cdot\frac{1}{r^2\sin^2\theta}\cdot\partial_rr^2\sin^2\theta=\frac{1}{r}\\\Gamma_{23}^3=\frac{1}{2}g^{33}\left(\partial_2g_{33}+\partial_3g_{32}-\partial_3g_{23}\right)=\frac{1}{2}g^{33}\partial_2g_{33}=\frac{1}{2}\cdot\frac{1}{r^2\sin^2\theta}\cdot\partial_{\theta}r^2\sin^2\theta=\frac{\cos\theta}{\sin\theta}=\cot\theta\\\Gamma_{31}^3=\frac{1}{2}g^{33}\left(\partial_3g_{31}+\partial_1g_{33}-\partial_3g_{31}\right)=\frac{1}{2}g^{33}\partial_1g_{33}=\frac{1}{2}\cdot\frac{1}{r^2\sin^2\theta}\cdot\partial_rr^2\sin^2\theta=\frac{1}{r}\\\Gamma_{32}^3=\frac{1}{2}g^{33}\left(\partial_3g_{32}+\partial_2g_{33}-\partial_3g_{32}\right)=\frac{1}{2}g^{33}\partial_2g_{33}=\frac{1}{2}\cdot\frac{1}{r^2\sin^2\theta}\cdot\partial_{\theta}r^2\sin^2\theta=\frac{\cos\theta}{\sin\theta}=\cot\theta$$
 
@@ -699,7 +699,7 @@ In a curved coordinate system, apart from the components of the vector changing 
 To account for this, we use the so-called **covariant derivative, which is the generalization of an ordinary derivative that works in ANY coordinate system** (given that the coordinates are continuous).
 
 ```
-Covariant derivative of a vector A$λ$:  
+Covariant derivative of a vector Aλ:  
   
 
 $$\nabla_{\mu}A^{\lambda}=\partial_{\mu}A^{\lambda}+\Gamma_{\mu\nu}^{\lambda}A^{\nu}$$
@@ -723,9 +723,9 @@ In general, any vector can be expressed like this in any coordinate system:
 
 $$\vec{A}=A^{\lambda}\vec{e}_{\lambda}$$
 
-Here, the index $λ$ is being summed over (from 0 to 3 in spacetime, but this works for any number of dimensions) and the e’s represent the basis vectors.
+Here, the index λ is being summed over (from 0 to 3 in spacetime, but this works for any number of dimensions) and the e’s represent the basis vectors.
 
-Let’s now take the derivative of this with respect to some coordinate $x^{$$μ$$}$ (here the basis vectors may change, so we have to use the product rule):
+Let’s now take the derivative of this with respect to some coordinate xµ (here the basis vectors may change, so we have to use the product rule):
 
 $$\frac{\partial\vec{A}}{\partial x^{\mu}}=\frac{\partial}{\partial x^{\mu}}\left(A^{\lambda}\vec{e}_{\lambda}\right)=\vec{e}_{\lambda}\frac{\partial A^{\lambda}}{\partial x^{\mu}}+A^{\lambda}\frac{\partial\vec{e}_{\lambda}}{\partial x^{\mu}}$$
 
@@ -733,7 +733,7 @@ Let’s now think about the definition of the Christoffel symbols again in terms
 
 $$\Gamma_{\mu\nu}^{\lambda}=\frac{\partial\vec{e}_{\mu}}{\partial x^{\nu}}\cdot\vec{e}^{\lambda}$$
 
-Let’s multiply both sides by the basis vector e$λ$. You can think of the basis vectors e$λ$ and e$λ$ “cancelling” from the right-hand side since they are sort of like inverses of one another (in a very non-rigorous way). We then have:
+Let’s multiply both sides by the basis vector eλ. You can think of the basis vectors eλ and eλ “cancelling” from the right-hand side since they are sort of like inverses of one another (in a very non-rigorous way). We then have:
 
 $$\Gamma_{\mu\nu}^{\lambda}\vec{e}_{\lambda}=\frac{\partial\vec{e}_{\mu}}{\partial x^{\nu}}$$
 
@@ -745,7 +745,7 @@ Then, inserting this into the derivative expression, we get:
 
 $$\frac{\partial\vec{A}}{\partial x^{\mu}}=\vec{e}_{\lambda}\frac{\partial A^{\lambda}}{\partial x^{\mu}}+A^{\lambda}\frac{\partial\vec{e}_{\lambda}}{\partial x^{\mu}}\ \ \ \ \parallel\frac{\partial\vec{e}_{\lambda}}{\partial x^{\mu}}=\Gamma_{\lambda\mu}^{\nu}\vec{e}_{\nu}\\\Rightarrow\ \ \frac{\partial\vec{A}}{\partial x^{\mu}}=\vec{e}_{\lambda}\frac{\partial A^{\lambda}}{\partial x^{\mu}}+A^{\lambda}\Gamma_{\lambda\mu}^{\nu}\vec{e}_{\nu}$$
 
-Since both the indices $ν$ and $λ$ are being summed over, we’re free to change them to whatever we want (these are called “dummy” indices and you can label them as whatever you wish since they get summed over anyway). We will interchange the $ν$ and $λ$ -indices in the second term, which allows us to pull out the e$λ$‘s:
+Since both the indices ν and λ are being summed over, we’re free to change them to whatever we want (these are called “dummy” indices and you can label them as whatever you wish since they get summed over anyway). We will interchange the ν and λ -indices in the second term, which allows us to pull out the eλ‘s:
 
 $$\frac{\partial\vec{A}}{\partial x^{\mu}}=\vec{e}_{\lambda}\frac{\partial A^{\lambda}}{\partial x^{\mu}}+A^{\lambda}\Gamma_{\lambda\mu}^{\nu}\vec{e}_{\nu}\ \ \left(\nu\leftrightarrow\lambda\right)\Rightarrow\ \ \frac{\partial\vec{A}}{\partial x^{\mu}}=\vec{e}_{\lambda}\frac{\partial A^{\lambda}}{\partial x^{\mu}}+A^{\nu}\Gamma_{\nu\mu}^{\lambda}\vec{e}_{\lambda}$$
 
@@ -783,7 +783,7 @@ Anyway, getting back to general relativity, we now wish to find a more general n
 
 $$v^x\frac{\partial f}{\partial x}+v^y\frac{\partial f}{\partial y}+v^z\frac{\partial f}{\partial z}\ \ \Rightarrow\ \ v^0\nabla_0f+v^1\nabla_1f+v^2\nabla_2f+v^3\nabla_3f$$
 
-We can express this more compactly by using the Einstein summation rule ($α$ is being summed over):
+We can express this more compactly by using the Einstein summation rule (α is being summed over):
 
 $$v^0\nabla_0f+v^1\nabla_1f+v^2\nabla_2f+v^3\nabla_3f=v^{\alpha}\nabla_{\alpha}f$$
 
@@ -805,11 +805,11 @@ Now, we know the definition for the covariant derivative, so we can write this o
 
 $$u^{\alpha}\nabla_{\alpha}u^{\mu}=u^{\alpha}\left(\partial_{\alpha}u^{\mu}+\Gamma_{\alpha\beta}^{\mu}u^{\beta}\right)=u^{\alpha}\partial_{\alpha}u^{\mu}+u^{\alpha}\Gamma_{\alpha\beta}^{\mu}u^{\beta}=0$$
 
-Let’s now look at the first term here, which is u$α MATH0 α$u$μ$. Let’s write out the u$α$ -term (this is simply the 4-velocity, i.e. derivative of the spacetime coordinates with respect to proper time. You can read my [introduction to special relativity](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/) if you’re not familiar with this):
+Let’s now look at the first term here, which is uα∂αuµ. Let’s write out the uα -term (this is simply the 4-velocity, i.e. derivative of the spacetime coordinates with respect to proper time. You can read my [introduction to special relativity](https://profoundphysics.com/special-relativity-for-dummies-an-intuitive-introduction/) if you’re not familiar with this):
 
 $$u^{\alpha}\partial_{\alpha}u^{\mu}=\frac{dx^{\alpha}}{d\tau}\frac{\partial u^{\mu}}{\partial x^{\alpha}}$$
 
-This thing on the right-hand side is nothing but the derivative of the 4-velocity with respect to proper time. This is easier to see if we first take the derivative of the 4-velocity with respect to proper time by using the chain rule (we first differentiate the 4-velocity w.r.t the coordinates x$α$ and then differentiate the coordinates w.r.t proper time; this is just basic chain rule from elementary calculus):
+This thing on the right-hand side is nothing but the derivative of the 4-velocity with respect to proper time. This is easier to see if we first take the derivative of the 4-velocity with respect to proper time by using the chain rule (we first differentiate the 4-velocity w.r.t the coordinates xα and then differentiate the coordinates w.r.t proper time; this is just basic chain rule from elementary calculus):
 
 $$\frac{du^{\mu}}{d\tau}=\frac{dx^{\alpha}}{d\tau}\frac{\partial u^{\mu}}{\partial x^{\alpha}}$$
 
@@ -919,9 +919,9 @@ Another way to put it is that a vector will remain unchanged when *parallel tran
 
 If you move a vector around a loop while keeping it parallel to itself at all times (this is called parallel transport), the vector will inevitably still change direction, because the space itself has some intrinsic curvature and everything has to move along the curvature of this space.
 
-The way we can get a mathematical expression for this is by imagining we have some vector A$λ$ in some spacetime which may or may not be curved.
+The way we can get a mathematical expression for this is by imagining we have some vector Aλ in some spacetime which may or may not be curved.
 
-We then parallel transport it around a loop in two different ways (see the picture below): **first, we parallel transport it along the coordinate $x^{$$ν$$}$ (path 1) and then along the other coordinate $x^{$$μ$$}$ (path 2)**. Then we do the same thing but in **opposite order** (so first along $x^{$$μ$$}$, path 3 and then along $x^{$$ν$$}$, path 4).
+We then parallel transport it around a loop in two different ways (see the picture below): **first, we parallel transport it along the coordinate xν (path 1) and then along the other coordinate xµ (path 2)**. Then we do the same thing but in **opposite order** (so first along xµ, path 3 and then along xν, path 4).
 
 Now, if we imagine this loop as being very very small (infinitesimally small, to be exact), then parallel transporting the vector will really correspond to **taking the covariant derivative with respect to that coordinate**.
 
@@ -941,7 +941,7 @@ Now, we know that **if the space IS flat, then the order of which path you paral
 
 $$\nabla_{\nu}\nabla_{\mu}-\nabla_{\mu}\nabla_{\nu}=0$$
 
-I’ve now left out the vector A$λ$ since it obviously can’t be zero, so we don’t need it anymore in the above expression.
+I’ve now left out the vector Aλ since it obviously can’t be zero, so we don’t need it anymore in the above expression.
 
 **If the space is NOT flat, then the order of which paths you take will matter** and this difference won’t be zero:
 
@@ -1017,7 +1017,7 @@ This then suggests that **gravity should really be caused by all types of energy
 
 Not only that, but it turns out that gravity is also caused by **energy fluxes** as well as **momentum fluxes**.
 
-These are all describes by one mathematical object called the **energy-momentum tensor T$μ$$ν$**.
+These are all describes by one mathematical object called the **energy-momentum tensor Tµν**.
 
 The energy-momentum tensor tells us how **four-momentum flows through spacetime**.
 
@@ -1025,7 +1025,7 @@ Four-momentum in special relativity is a vector that combines both energy and mo
 
 ![](assets/images/general-relativity-for-dummies/img_49.webp)
 
-The continuity equation for the energy-momentum tensor, $∇$$ν$T$μ$$ν$=0 is the statement of energy and momentum conservation laws in general relativity.
+The continuity equation for the energy-momentum tensor, ∇νTµν=0 is the statement of energy and momentum conservation laws in general relativity.
 
 The different components of the energy-momentum tensor therefore describe **how energy and momentum “flow through time”** (= energy and momentum density).
 
@@ -1069,7 +1069,7 @@ This we can denote by just a single number p and so we have the pressure compone
 
 $$T_{11}=T_{22}=T_{33}=p$$
 
-**A perfect fluid also has the same density everywhere**, so the energy density, T00, we can simply denote as $ρ$. The energy-momentum tensor is therefore in its matrix form:
+**A perfect fluid also has the same density everywhere**, so the energy density, T00, we can simply denote as ρ. The energy-momentum tensor is therefore in its matrix form:
 
 $$T_{\mu\nu}=\begin{pmatrix}\rho&0&0&0\\0&p&0&0\\0&0&p&0\\0&0&0&p\end{pmatrix}$$
 
@@ -1121,7 +1121,7 @@ Four-velocity is typically denoted by the letter u.
 
 Now, any vector can be expressed as the sum of its components with the basis vectors (you may be familiar with this in typical Cartesian coordinates already).
 
-So, we can say that the **four-velocity is simply u$μ$e$μ$** (summing over $μ$ from 0 to 3).
+So, we can say that the **four-velocity is simply uµeµ** (summing over µ from 0 to 3).
 
 Here comes the important part; if spacetime is curved (which we’re interested in right now), **the basis vectors may not be constant**.
 
@@ -1197,7 +1197,7 @@ $$A=mc\int_{ }^{ }\sqrt{g_{\mu\nu}\frac{dx^{\mu}}{d\tau}\frac{dx^{\nu}}{d\tau}}d
 
 Now, here comes the key point; **if we wish for this to represent the shortest distance between two points, this integral should be *minimized***. This means that we should apply **the principle of least action** (which you can read more about in [this Lagrangian mechanics -article](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)).
 
-The principle of least action means that the “real” path of the particle, which has this action integral, is the one in which this action is minimized. Mathematically, this means that we *vary* (this we denote by a $δ$-symbol) this integral and **set this variation to zero**:
+The principle of least action means that the “real” path of the particle, which has this action integral, is the one in which this action is minimized. Mathematically, this means that we *vary* (this we denote by a δ-symbol) this integral and **set this variation to zero**:
 
 $$\delta A=mc\int_{ }^{ }\delta\sqrt{g_{\mu\nu}\frac{dx^{\mu}}{d\tau}\frac{dx^{\nu}}{d\tau}}d\tau=0$$
 
@@ -1232,40 +1232,40 @@ You’ll find an example of how the geodesic equation is practically used down b
 
 Practical Example: Geodesics on a Sphere (click to see more)
 
-For this example, we will consider a **particle that is allowed to move on the surface of a sphere**. This can be best done using spherical coordinates, r, $θ$ and $φ$. In picture, these coordinates are as follows (also, note that we’re only looking at the spacial motion so we’re not considering the time component):
+For this example, we will consider a **particle that is allowed to move on the surface of a sphere**. This can be best done using spherical coordinates, r, θ and φ. In picture, these coordinates are as follows (also, note that we’re only looking at the spacial motion so we’re not considering the time component):
 
 ![](assets/images/general-relativity-for-dummies/img_61.webp)
 
 However, a sphere is characterized by a constant radius, so the particle’s r-coordinate is actually the same at all times and thus, can be treated as *not a coordinate*. Let’s call this constant radius R.
 
-We therefore only have **two coordinates, x1=$θ$ and x2=$φ$**.
+We therefore only have **two coordinates, x1=θ and x2=φ**.
 
-**The components of the velocity will just be the time derivatives of these coordinates**, i.e. v1=d$θ$/dt and v2=d$φ$/dt (note that we’re not looking at relativistic spacetime motion right now, so we can use the **ordinary time t** and not proper time).
+**The components of the velocity will just be the time derivatives of these coordinates**, i.e. v1=dθ/dt and v2=dφ/dt (note that we’re not looking at relativistic spacetime motion right now, so we can use the **ordinary time t** and not proper time).
 
 **The Christoffel symbols on a sphere** can be calculated to be (see [this link](https://profoundphysics.com/christoffel-symbols-a-complete-guide-with-examples/#Christoffel_Symbols_On_a_Sphere) for more details):
 
-$\Gamma_{ij}^1=\begin{pmatrix}0&0\\0&-\sin\theta\cos\theta\end{pmatrix}\\\Gamma_{ij}^2=\begin{pmatrix}0&\cot\theta\\\cot\theta&0\end{pmatrix}/latex]
+$$\Gamma_{ij}^1=\begin{pmatrix}0&0\\0&-\sin\theta\cos\theta\end{pmatrix}\\\Gamma_{ij}^2=\begin{pmatrix}0&\cot\theta\\\cot\theta&0\end{pmatrix}/latex]
 <p class="has-small-font-size wp-block-paragraph">These Christoffel symbols are essentially the same as the ones in spherical coordinates we calculated earlier, but with the "slots" for the r-coordinate dropped out.</p>
 <p class="wp-block-paragraph">The geodesic equation for this particle will then be (using ordinary velocity instead of the four-velocity and latin indices instead of greek ones):</p>
-[latex display="true"]\frac{dv^i}{dt}=-\Gamma_{mn}^iv^mv^n$
+[latex display="true"]\frac{dv^i}{dt}=-\Gamma_{mn}^iv^mv^n$$
 
 Let's look at these for each i-component. First, we have i=1 (and summing over m and n):
 
 $$\frac{dv^1}{dt}=-\Gamma_{mn}^1v^mv^n=-\Gamma_{11}^1v^1v^1-\Gamma_{12}^1v^1v^2-...-\Gamma_{33}^1v^3v^3$$
 
-Here, the only non-zero Christoffel symbol is $Γ$122 (just take a look at the matrices given above), so we have left:
+Here, the only non-zero Christoffel symbol is Γ122 (just take a look at the matrices given above), so we have left:
 
 $$\frac{dv^1}{dt}=-\Gamma_{22}^1v^2v^2$$
 
-Now we just insert the velocity components and the Christoffel symbols ($Γ$122=-sin$θ$cos$θ$, v1=d$θ$/dt and v2=d$φ$/dt):
+Now we just insert the velocity components and the Christoffel symbols (Γ122=-sinθcosθ, v1=dθ/dt and v2=dφ/dt):
 
 $$\frac{d^2\theta}{dt^2}=\sin\theta\cos\theta\left(\frac{d\varphi}{dt}\right)^2$$
 
-This is indeed the first equation of motion, namely the **equation of motion for the coordinate $θ$ of this particle**. Next, we have the equation for i=2. The process here is exactly the same, but this time the non-zero Christoffel symbols are $Γ$212 and $Γ$221, so we have:
+This is indeed the first equation of motion, namely the **equation of motion for the coordinate θ of this particle**. Next, we have the equation for i=2. The process here is exactly the same, but this time the non-zero Christoffel symbols are Γ212 and Γ221, so we have:
 
 $$\frac{dv^2}{dt}=-\Gamma_{12}^2v^1v^2-\Gamma_{21}^2v^2v^1$$
 
-We can then insert the Christoffel symbols and the velocities ($Γ$212=$Γ$221=cot$θ$ and the velocities being the same ones as before). We then get:
+We can then insert the Christoffel symbols and the velocities (Γ212=Γ221=cotθ and the velocities being the same ones as before). We then get:
 
 $$\frac{d^2\varphi}{dt^2}=-2\cot\theta\frac{d\theta}{dt}\frac{d\varphi}{dt}$$
 
@@ -1275,15 +1275,15 @@ $$\frac{d^2\theta}{dt^2}=\sin\theta\cos\theta\left(\frac{d\varphi}{dt}\right)^2\
 
 These equations indeed **completely govern the geodesic motion of this particle** (we have one equation for each coordinate). Granted, these are not easy at all to analytically solve for the coordinates, but the bottom line is that these were quite easy to obtain. All we needed is the metric (the coordinates as well, of course) and everything followed pretty much automatically.
 
-Now, we can look at a **particular solution** to these equations - consider the coordinates of the particle being $θ$=$π$/2 and $φ$=$ω$t, where $ω$ is a constant (corresponding to the angular frequency of the particle). This is actually a solution to the above geodesic equations, which we can see by plugging them in:
+Now, we can look at a **particular solution** to these equations - consider the coordinates of the particle being θ=π/2 and φ=ωt, where ω is a constant (corresponding to the angular frequency of the particle). This is actually a solution to the above geodesic equations, which we can see by plugging them in:
 
 $$\frac{d^2\theta}{dt^2}=\sin\theta\cos\theta\left(\frac{d\varphi}{dt}\right)^2\ \ \Rightarrow\ \ 0=0$$
 
 $$\frac{d^2\varphi}{dt^2}=-2\cot\theta\frac{d\theta}{dt}\frac{d\varphi}{dt}\ \ \Rightarrow\ \ 0=0$$
 
-Since we get 0=0 from both of the equations, this means that the assumption we tried ($θ$=$π$/2 and $φ$=$ω$t) satisfies these geodesic equations and is indeed a **valid solution**.
+Since we get 0=0 from both of the equations, this means that the assumption we tried (θ=π/2 and φ=ωt) satisfies these geodesic equations and is indeed a **valid solution**.
 
-Therefore, a path where the particle moves with constant angular velocity around the equator on the surface of the sphere (the equator is described by setting $θ$=$π$/2) is a geodesic.
+Therefore, a path where the particle moves with constant angular velocity around the equator on the surface of the sphere (the equator is described by setting θ=π/2) is a geodesic.
 
 Now, this is just one particular solution and there are many more. The general set of solutions to the above geodesic equations are called **great circles**.
 
@@ -1441,7 +1441,7 @@ Note; if you want to see where exactly the Einstein field equations come from, y
 
 At first sight, this equation may seem fairly simple. Don't be mistaken though, it is actually extremely difficult to solve in reality.
 
-Moreover, this really represents multiple equations, since there is one for each combination of $μ$ and $ν$ (there is actually 10 independent equations in total contained in these field equations).
+Moreover, this really represents multiple equations, since there is one for each combination of µ and ν (there is actually 10 independent equations in total contained in these field equations).
 
 To get an idea of how complicated these field equations actually are, you can see them **fully written out in terms of the metric** (and its first and second derivatives) on [this page](https://profoundphysics.com/einstein-field-equations-fully-written-out-what-do-they-look-like-expanded/).
 
@@ -1451,7 +1451,7 @@ Remember from earlier that the Einstein tensor is a combination of the Ricci ten
 
 **The right-hand side is the energy-momentum tensor** (which may or may not have a complicated form, it depends on the problem).
 
-It is also combined with some **constants** (G is the gravitational constant and $c$ is the speed of light).
+It is also combined with some **constants** (G is the gravitational constant and c is the speed of light).
 
 A Comparison of the Einstein Field Equations To Newton's Law of Gravity (click to see more)
 
@@ -1487,7 +1487,7 @@ Now, where exactly do these constants come from? Couldn't we also have some othe
 
 We know that Newtonian gravity works quite well in many cases, so the more accurate theory, **general relativity, should reduce to simply Newtonian gravity** in the case where gravity is "not too strong" and objects are moving "relatively slowly" (this is called the *weak-field limit*).
 
-This can only be done if we have these exact constants, 8$π$G/c4, in the Einstein field equations. In that case, Einstein's equation will reduce to the **Poisson equation**, which is the Newtonian equivalent of a gravitational field equation.
+This can only be done if we have these exact constants, 8πG/c4, in the Einstein field equations. In that case, Einstein's equation will reduce to the **Poisson equation**, which is the Newtonian equivalent of a gravitational field equation.
 
 If you want to see how exactly these constants are found from the **weak-field limit**, this is done in my article on the full derivation of Einstein's field equations (which you'll find [here](https://profoundphysics.com/derivation-of-einstein-field-equations/), or in PDF form [here](https://profoundphysics.gumroad.com/l/einstein-field-equations)).
 
@@ -1511,9 +1511,9 @@ You therefore have to either use a computer and *solve them numerically* or make
 
 The most common simplifications and the solutions obtained from these are:
 
-- **Vacuum solutions**: these describe a spacetime which contains no matter (T$μ$$ν$=0), but the spacetime can still be curved. Examples of such solutions are the Schwarzschild metric (describing spacetime outside of a static, spherically symmetric object, like a planet) and the Kerr metric (which describes spacetime around a rotating object, such as a rotating black hole).
+- **Vacuum solutions**: these describe a spacetime which contains no matter (Tµν=0), but the spacetime can still be curved. Examples of such solutions are the Schwarzschild metric (describing spacetime outside of a static, spherically symmetric object, like a planet) and the Kerr metric (which describes spacetime around a rotating object, such as a rotating black hole).
 
-- **Weak-field solutions**: these describe a spacetime where gravity is "weak" (the metric only deviates slightly from the flat spacetime Minkowski metric, so it's of the form g$μ$$ν$=$η MATH0 ν$+h$μ$$ν$ where h$μ$$ν$ describes *small perturbations* in the metric). This type of formalism is also called **linearized gravity** and it is used to study gravitational waves as well as relate general relativity to Newtonian gravity.
+- **Weak-field solutions**: these describe a spacetime where gravity is "weak" (the metric only deviates slightly from the flat spacetime Minkowski metric, so it's of the form gµν=ηµν+hµν where hµν describes *small perturbations* in the metric). This type of formalism is also called **linearized gravity** and it is used to study gravitational waves as well as relate general relativity to Newtonian gravity.
 
 - **Symmetric solutions**: these describe spacetimes that have a large degree of symmetry, making the field equations much much simpler. Examples of this include spherical symmetry (Schwarzschild metric) and homogeneity or isotropy (such as the Friedmann-Robertson-Walker metric, which describes things like the expansion of the universe).
 
@@ -1570,7 +1570,7 @@ These properties include:
 - **The action should somehow involve curvature**, since we've determined that gravity has to do with curvature of spacetime (which is why the Ricci scalar R is there; it's the simplest possible curvature quantity we could have).
 - **The action has to be an invariant quantity or simply a scalar/scalar function** (meaning it has to be a **scalar**, which is why there is this weird square root term; it turns out that, in *curved spacetime*, integrals over a spacetime volume, d4x, have to be multiplied by such a term involving the *determinant of the metric*, g, otherwise they would not be invariant).
 
-Mathematically, **varying this and setting it to zero** (i.e. applying the principle of stationary action) means the following (the variation we denote by a $δ$-symbol, but it's really closely related to derivatives):
+Mathematically, **varying this and setting it to zero** (i.e. applying the principle of stationary action) means the following (the variation we denote by a δ-symbol, but it's really closely related to derivatives):
 
 $$\delta A=\frac{c^4}{16\pi G}\delta\int_{ }^{ }R\sqrt{-g}d^4x=0$$
 
@@ -1578,7 +1578,7 @@ What you'll get as the end result, are exactly the **Einstein field equations**:
 
 $$R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}=0$$
 
-These are the vacuum equations where T$μ$$ν$=0; it's also possible to derive the full field equations by using this principle.
+These are the vacuum equations where Tµν=0; it's also possible to derive the full field equations by using this principle.
 
 The mathematical steps to do this are quite complicated but if you're interested in seeing exactly how the field equations are derived from this action principle, this is indeed one of the two ways I derive them in my [article on the full derivation of Einstein's field equations](https://profoundphysics.com/derivation-of-einstein-field-equations/).
 

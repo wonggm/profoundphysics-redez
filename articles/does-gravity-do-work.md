@@ -27,7 +27,7 @@ That probably sounds more complicated than it is, so let me explain it more.
 
 Let’s say that some object, such as an orange (not an apple this time!) is falling downwards. The gravitational force will then be F=mg (mass of the orange times the gravitational acceleration).
 
-The **work done by gravity** in the case where the orange simply falls downwards is W=mgh ($h$ is the total height or distance the object falls). I’ll explain where this equation comes from later in the article.
+The **work done by gravity** in the case where the orange simply falls downwards is W=mgh (h is the total height or distance the object falls). I’ll explain where this equation comes from later in the article.
 
 Now, let’s take the orange moving down in a weird curved path that will be longer than just the downwards straight line (see picture down below). Will the work done by gravity then also be larger?
 
@@ -57,7 +57,7 @@ I’ll explain this equation more later in the article.
 
 A nice example of the above definition is that say, an object is falling downwards due to gravity. Since its height will **decrease**, the change in potential energy will be **negative**.
 
-Because $Δ$U is negative, the work done by gravity will be **positive** (opposite sign). The positive work will, in fact, correspond to an **increase in kinetic energy** as the object falls (I’ll explain this later).
+Because ΔU is negative, the work done by gravity will be **positive** (opposite sign). The positive work will, in fact, correspond to an **increase in kinetic energy** as the object falls (I’ll explain this later).
 
 If, on the other hand, the work done by gravity were negative, then that would correspond to a **decrease in kinetic energy and an increase in potential energy** (this is seen in, for example, when a ball is thrown upwards; its speed will go down and its height will increase).
 
@@ -90,9 +90,9 @@ Anyway, the only formula we will really need here is the **definition for work**
 **The work done by gravity can be calculated with the formula:**  
 $$W=F\Delta r\cos\theta$$
   
-, where $F$ is the gravitational force, $Δ$r is the total displacement and $θ$ is the angle between the force and the displacement.
+, where F is the gravitational force, Δr is the total displacement and θ is the angle between the force and the displacement.
 
-From this definition, it is clear that the work done by gravity is zero in the perpendicular direction to the displacement; if the force and displacement are perpendicular, it means that $θ$=90° and cos(90°)=0, so the work done would also be zero.
+From this definition, it is clear that the work done by gravity is zero in the perpendicular direction to the displacement; if the force and displacement are perpendicular, it means that θ=90° and cos(90°)=0, so the work done would also be zero.
 
 **Quick tip**: To fully understand where the above formula comes from, I’d highly recommend checking out my course **Advanced Math For Physics** that covers both the basics and some much more advanced stuff. You can find the course [here](https://courses.profoundphysics.com/p/advanced-math-for-physics-a-complete-self-study-course).
 
@@ -122,9 +122,9 @@ In the case of gravity, if we’re reasonably close to the surface of the Earth,
 
 $$\vec{F}\cdot\vec{dr}=Fdr\cos\theta$$
 
-Here F and dr are the magnitudes of the vectors and $θ$ is the angle between them.
+Here F and dr are the magnitudes of the vectors and θ is the angle between them.
 
-Inserting this into the integral above (and moving the constants F and cos$θ$ outside the integral sign), we get:
+Inserting this into the integral above (and moving the constants F and cosθ outside the integral sign), we get:
 
 $$W=F\cos\theta\int_{r_1}^{r_2}dr$$
 
@@ -144,9 +144,9 @@ The proof for this is extremely simple. Here’s a picture of the situation:
 
 ![](assets/images/does-gravity-do-work/img_11.webp)
 
-The total displacement ($Δ$r) is simply the height h and the force will be the gravitational force F=mg. We also know that the angle $θ$ is zero, which means that cos(0°)=1.
+The total displacement (Δr) is simply the height h and the force will be the gravitational force F=mg. We also know that the angle θ is zero, which means that cos(0°)=1.
 
-Inserting all of these into the formula for work (W=F$Δ$rcos$θ$), we get that the work done by gravity on a falling object is W=mgh.
+Inserting all of these into the formula for work (W=FΔrcosθ), we get that the work done by gravity on a falling object is W=mgh.
 
 **Work done by gravity on a falling object:**  
 $$W=mgh$$
@@ -180,11 +180,11 @@ $$W=mg\Delta r\cos\theta$$
 
 We can actually manipulate the above equation a little bit and see that it simplifies to a quite nice form.
 
-From the inclined plane triangle, we can see that the angle between $Δ$r (distance the object rolls down) and h (the total change in height of the object) is clearly $θ$ (see picture from above) and from that, we can find the expression for cos($θ$):
+From the inclined plane triangle, we can see that the angle between Δr (distance the object rolls down) and h (the total change in height of the object) is clearly θ (see picture from above) and from that, we can find the expression for cos(θ):
 
 ![](assets/images/does-gravity-do-work/img_15.webp)
 
-From this, simply multiply by $Δ$r and we have:
+From this, simply multiply by Δr and we have:
 
 $$\Delta r\cos\theta=h$$
 
@@ -206,7 +206,7 @@ Here is essentially what is happening; a pendulum starts swinging from some heig
 
 Work Done By Gravity On a Pendulum: Mathematical Proof (click to see more)
 
-The first thing we’ll do is notice that there is actually a relationship between the angles $α$ and $θ$, which can be seen from the picture down below:
+The first thing we’ll do is notice that there is actually a relationship between the angles α and θ, which can be seen from the picture down below:
 
 ![](assets/images/does-gravity-do-work/img_19.webp)
 
@@ -214,7 +214,7 @@ From this, we can get:
 
 $$\theta+\alpha=90°\ \ \Rightarrow\ \ \ \theta=90°-\alpha$$
 
-We can also find the displacement of the pendulum bob, which is simply the **arc length** as given by the picture below. For later purposes, we’ll want to use an *infinitesimal* displacement dr instead of the $Δ$r we used earlier.
+We can also find the displacement of the pendulum bob, which is simply the **arc length** as given by the picture below. For later purposes, we’ll want to use an *infinitesimal* displacement dr instead of the Δr we used earlier.
 
 ![](assets/images/does-gravity-do-work/img_21.webp)
 
@@ -222,13 +222,13 @@ Since the pendulum is swinging and is generally a little bit more of a complicat
 
 $$W=\int_{r_1}^{r_2}\vec{F}\cdot\vec{d}r=\int_{r_1}^{r_2}Fdr\cos\theta$$
 
-Now, dr is just the arc length from the picture above (dr=Ld$α$). We can also use the relationship between $θ$ and $α$ to get another expression for the cos($θ$) -term:
+Now, dr is just the arc length from the picture above (dr=Ldα). We can also use the relationship between θ and α to get another expression for the cos(θ) -term:
 
 $$\cos\theta=\cos\left(90°-\alpha\right)\ \ \ \ \ \parallel\theta=90°-\alpha$$
 
-If you know any [trigonometric relationships](https://mathbitsnotebook.com/Geometry/Trigonometry/TGTrigSineCosine.html) between sines and cosines, you’ll know that this is actually the same as simply sin($α$).
+If you know any [trigonometric relationships](https://mathbitsnotebook.com/Geometry/Trigonometry/TGTrigSineCosine.html) between sines and cosines, you’ll know that this is actually the same as simply sin(α).
 
-Therefore, inserting the above equations (dr=Ld$α$ and cos($θ$)=sin($α$) as well as the gravitational force F=mg), we get that the work done is (notice that we have to change the integration limits as well; we’re now integrating from the initial angle $α$ to 0, where the pendulum is completely vertically):
+Therefore, inserting the above equations (dr=Ldα and cos(θ)=sin(α) as well as the gravitational force F=mg), we get that the work done is (notice that we have to change the integration limits as well; we’re now integrating from the initial angle α to 0, where the pendulum is completely vertically):
 
 $$W=\int_{r_1}^{r_2}Fdr\cos\theta=mgL\int_{\alpha}^0\sin\alpha d\alpha$$
 
@@ -244,7 +244,7 @@ Inserting this, we get:
 
 $$W=mgL\left(\cos\alpha-1\right)=mgL\left(\frac{\Delta y}{L}-1\right)=mg\left(\Delta y-L\right)$$
 
-Now, what is $Δ$y – L? We know that $Δ$y+h=L, which can be seen when the pendulum is in the vertical position. From this, we get:
+Now, what is Δy – L? We know that Δy+h=L, which can be seen when the pendulum is in the vertical position. From this, we get:
 
 $$\Delta y-L=-h$$
 

@@ -95,15 +95,15 @@ In **Newtonian physics**, we can talk about how things change with time, we can 
 
 In **general relativity**, time is no longer special and is put on an equal footing with spatial coordinates. We describe everything using the concept of **spacetime**, which means that paths need to also be parameterized in a different way than by using time.
 
-**Paths in spacetime are called worldlines and we write them as $x^{$$μ$$}$($λ$)**. The upper $μ$ labels four coordinates ($μ$ = 0,1,2,3) and can be represented as a vector (called a four-vector):
+**Paths in spacetime are called worldlines and we write them as xµ(λ)**. The upper µ labels four coordinates (µ = 0,1,2,3) and can be represented as a vector (called a four-vector):
 
 $$x^{\mu}\left(\lambda\right)=\begin{pmatrix}x^0\left(\lambda\right)\\x^1\left(\lambda\right)\\x^2\left(\lambda\right)\\x^3\left(\lambda\right)\end{pmatrix}$$
 
-We’ve now seen the notation $x^{$$μ$$}$($λ$) or x(t) but what does this mean? **We treat the coordinates like functions**. In these two cases they are either functions of $λ$ or of t, time!
+We’ve now seen the notation xµ(λ) or x(t) but what does this mean? **We treat the coordinates like functions**. In these two cases they are either functions of λ or of t, time!
 
-This means that if you plug in some number for time or the “parameter variable”, the function will give you what $x^{$$μ$$}$ or x is at that time or parameter value.
+This means that if you plug in some number for time or the “parameter variable”, the function will give you what xµ or x is at that time or parameter value.
 
-Using a **general path parameter $λ$** in general relativity is just a mathematical tool to allow us to parameterize paths of particles in a similar way as in Newtonian physics, where time does this for us.
+Using a **general path parameter λ** in general relativity is just a mathematical tool to allow us to parameterize paths of particles in a similar way as in Newtonian physics, where time does this for us.
 
 Now, most of us have heard of **Pythagoras’ theorem**; this relates two sides of a right angled triangle to its hypotenuse, most famously as a2+b2=c2.
 
@@ -135,7 +135,7 @@ If you’d like to read an **intuitive introduction to special relativity**, you
 
 The important thing for us is that **the line element encodes all the information about gravity in general relativity**. Minkowski spacetime is the special case where there is *no gravity* in our spacetime!
 
-Much like how we economically write $x^{$$μ$$}$ for **coordinates** (worldlines), we often write the line element in a slightly different way as:
+Much like how we economically write xµ for **coordinates** (worldlines), we often write the line element in a slightly different way as:
 
 $$ds^2=g_{\mu\nu}dx^{\mu}dx^{\nu}$$
 
@@ -147,24 +147,24 @@ This is also an example of **index notation** and **Einstein’s summation conve
 2. Roman letters represent the numbers 1, 2, 3.
 3. If an index appears the same in an upper and lower position, we sum over all values of the index (according to rules 1 and 2).
 
-Before we see an example of this, let’s talk about this g$μ$$ν$ that we introduced. This is called **the metric tensor**. For most purposes, this is a 4$×$4 symmetric matrix.
+Before we see an example of this, let’s talk about this gµν that we introduced. This is called **the metric tensor**. For most purposes, this is a 4×4 symmetric matrix.
 
-To learn more about the **details behind the metric tensor**, check out [this article](https://profoundphysics.com/metric-tensor-a-complete-guide-with-examples/). But for our purposes, right now, the metric essentially tells us the coefficients of our small distances dx$μ$.
+To learn more about the **details behind the metric tensor**, check out [this article](https://profoundphysics.com/metric-tensor-a-complete-guide-with-examples/). But for our purposes, right now, the metric essentially tells us the coefficients of our small distances dxµ.
 
 The metric also describes how **distances are measured in spacetime**; if the spacetime is *curved*, the shortest distance between two points may not be a “straight” line anymore and this is all encoded in the metric!
 
-In the Minkowski line element above, we use the special letter g$μ$$ν$ = $η MATH0 ν$ with:
+In the Minkowski line element above, we use the special letter gµν = ηµν with:
 
 $$\eta_{\mu\nu}=\begin{pmatrix}\eta_{00}&\eta_{01}&\eta_{02}&\eta_{03}\\\eta_{10}&\eta_{11}&\eta_{12}&\eta_{13}\\\eta_{20}&\eta_{21}&\eta_{22}&\eta_{23}\\\eta_{30}&\eta_{31}&\eta_{32}&\eta_{33}\end{pmatrix}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}$$
 
-In the vocabulary of linear algebra, we say that this is a diagonal matrix and many metrics that are interesting to study are diagonal. The indices $μ$ and $ν$ label each entry in this matrix. Since it is diagonal, the non-zero entries are $η$00=-1, $η$11=1, $η$22=1 and $η$33=1.
+In the vocabulary of linear algebra, we say that this is a diagonal matrix and many metrics that are interesting to study are diagonal. The indices µ and ν label each entry in this matrix. Since it is diagonal, the non-zero entries are η00=-1, η11=1, η22=1 and η33=1.
 
 Example: Flat Spacetime Minkowski Line Element
 
 With the Minkowski metric tensor as above, we can look at writing the Minkowski line element in this more compact notation.
 $$ds^2=g_{\mu\nu}dx^{\mu}dx^{\nu}=\eta_{\mu\nu}dx^{\mu}dx^{\nu}$$
 
-Since we have $μ$ and $ν$ in both the upper and lower positions, we sum over these! But since we are only looking at diagonal matrices, this means that the only non-zero terms in the sum are when $μ$ = $ν$. This then becomes:
+Since we have µ and ν in both the upper and lower positions, we sum over these! But since we are only looking at diagonal matrices, this means that the only non-zero terms in the sum are when µ = ν. This then becomes:
 
 $$ds^2=\eta_{\mu\nu}dx^{\mu}dx^{\nu}=\eta_{00}\left(dx^0\right)^2+\eta_{11}dx^1\left(dx^1\right)^2+\eta_{22}\left(dx^2\right)^2+\eta_{33}\left(dx^3\right)^2$$
 
@@ -184,7 +184,7 @@ Before we see that, let’s recap **spherical coordinates** as these will be use
 
 We can describe the position of something in space by three coordinates (x,y,z) which are great in general but become difficult if we want to think about things that are **symmetric under rotations**, such as a sphere (which has a radius of **√**(x2+y2+z2) which is often difficult to work with!).
 
-Instead, we use spherical coordinates (r, $θ$, $φ$) which describes **a radius r** and **two angles of rotation**:
+Instead, we use spherical coordinates (r, θ, φ) which describes **a radius r** and **two angles of rotation**:
 
 ![](assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_8.webp)
 
@@ -254,11 +254,11 @@ Now, **how do we actually find the geodesics of photons**? The simplest and most
 
 $$\frac{d^2x^{\alpha}\left(\lambda\right)}{d\lambda^2}+\Gamma_{\mu\nu}^{\alpha}\frac{dx^{\mu}\left(\lambda\right)}{d\lambda}\frac{dx^{\nu}\left(\lambda\right)}{d\lambda}=0$$
 
-We can see the **parameterized worldlines x$α$($λ$)** in this equation that we discussed earlier appearing in three places here; the purpose of the geodesic equation is to solve for these to get the spacetime trajectories.
+We can see the **parameterized worldlines xα(λ)** in this equation that we discussed earlier appearing in three places here; the purpose of the geodesic equation is to solve for these to get the spacetime trajectories.
 
-The **first and second derivatives of the wordlines** are taken in the above – these derivatives describe how the wordlines x$α$($λ$) change as we vary the path parameter $λ$.
+The **first and second derivatives of the wordlines** are taken in the above – these derivatives describe how the wordlines xα(λ) change as we vary the path parameter λ.
 
-Finally, we have the **Christoffel symbols**, denoted by $Γ$. In short, these encode any **changes in coordinates** if we look at our system from different perspectives – just like when we changed from Cartesian (x,y,z) coordinates to spherical coordinates earlier!
+Finally, we have the **Christoffel symbols**, denoted by Γ. In short, these encode any **changes in coordinates** if we look at our system from different perspectives – just like when we changed from Cartesian (x,y,z) coordinates to spherical coordinates earlier!
 
 For those who are interested, the Christoffel symbols are mathematically given by:
 
@@ -279,7 +279,7 @@ In physics, the action is the object that tells us how things change and evolve.
 The path with the least action is the physical one! In general, we write it as the integral of a “Lagrangian” L – there’s a whole theory of Lagrangian mechanics and you can read about it in depth from [this article here](https://profoundphysics.com/lagrangian-mechanics-for-beginners/).
 
 The action for us is called the geodesic Lagrangian. For simplicity, if a variable has a dot above it,  
-this represents the derivative with respect to $λ$. The geodesic Lagrangian is
+this represents the derivative with respect to λ. The geodesic Lagrangian is
 
 $$S=\int_{ }^{ }Ld\lambda=\frac{1}{2}\int_{ }^{ }g_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu}d\lambda$$
 
@@ -291,13 +291,13 @@ $$\frac{d}{d\lambda}\frac{\partial L}{\partial\dot{x}^{\alpha}}=\frac{\partial L
 
 The right hand side of the equations is the easiest to deal with as we need to differentiate only once!
 
-We can see that the Lagrangian is made up of three product terms but x$α$ and ẋ$α$ are treated as independent variables in Lagrangian mechanics (meaning that the only thing in the Lagrangian that depends on x$α$ is the metric g$μ$$ν$), so we find:
+We can see that the Lagrangian is made up of three product terms but xα and ẋα are treated as independent variables in Lagrangian mechanics (meaning that the only thing in the Lagrangian that depends on xα is the metric gµν), so we find:
 
 $$\frac{\partial L}{\partial x^{\alpha}}=\frac{\partial}{\partial x^{\alpha}}\left(\frac{1}{2}g_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu}\right)=\frac{1}{2}\frac{\partial g_{\mu\nu}}{\partial x^{\alpha}}\dot{x}^{\mu}\dot{x}^{\nu}=\frac{1}{2}\partial_{\alpha}g_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu}$$
 
 In the last equality we changed the notation for the derivative as it makes writing much more convenient!
 
-Then, it is time to tackle the left hand side. First, we have via the product rule (note that the metric does not depend on ẋ$α$):
+Then, it is time to tackle the left hand side. First, we have via the product rule (note that the metric does not depend on ẋα):
 
 $$\frac{\partial L}{\partial\dot{x}^{\alpha}}=\frac{\partial}{\partial\dot{x}^{\alpha}}\left(\frac{1}{2}g_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu}\right)=\frac{1}{2}g_{\mu\nu}\frac{\partial\dot{x}^{\mu}}{\partial\dot{x}^{\alpha}}\dot{x}^{\nu}+\frac{1}{2}g_{\mu\nu}\dot{x}^{\mu}\frac{\partial\dot{x}^{\nu}}{\partial\dot{x}^{\alpha}}$$
 
@@ -305,7 +305,7 @@ We can clean this up a bit! There is a mathematical rule which says that for any
 
 $$\frac{\partial y^{\mu}}{\partial y^{\alpha}}=\delta_{\alpha}^{\mu}$$
 
-We call this $δ$ the Kronecker delta. It has the property of being either 0 or 1. It is 1 when $μ$=$α$ and 0 otherwise. For example $\delta_1^0=0$ but $\delta_2^2=1$. For those who know some linear algebra, this is the index notation form of the identity matrix.
+We call this δ the Kronecker delta. It has the property of being either 0 or 1. It is 1 when µ=α and 0 otherwise. For example $\delta_1^0=0$ but $\delta_2^2=1$. For those who know some linear algebra, this is the index notation form of the identity matrix.
 
 We can use the Kronecker delta to swap indices like this:
 
@@ -317,7 +317,7 @@ $$\frac{\partial L}{\partial\dot{x}^{\alpha}}=\frac{1}{2}g_{\mu\nu}\frac{\partia
 
 $$\Rightarrow\ \ \frac{\partial L}{\partial\dot{x}^{\alpha}}=\frac{1}{2}g_{\mu\nu}\delta_{\alpha}^{\mu}\dot{x}^{\nu}+\frac{1}{2}g_{\mu\nu}\dot{x}^{\mu}\delta_{\alpha}^{\nu}=\frac{1}{2}g_{\alpha\nu}\dot{x}^{\nu}+\frac{1}{2}g_{\mu\alpha}\dot{x}^{\mu}$$
 
-Now, to complete the derivation, we need to take the derivative with respect to lambda of this. Both x and the metric are functions of $λ$ – but the metric g$μ$$ν$ is a function of x which in itself is a function of $λ$ – we can handle this with the chain rule and product rule combined! This tells us that we can express the total derivative as:
+Now, to complete the derivation, we need to take the derivative with respect to lambda of this. Both x and the metric are functions of λ – but the metric gµν is a function of x which in itself is a function of λ – we can handle this with the chain rule and product rule combined! This tells us that we can express the total derivative as:
 
 $$\frac{d}{d\lambda}=\frac{dx^{\alpha}}{d\lambda}\frac{\partial}{\partial x^{\alpha}}=\dot{x}^{\alpha}\partial_{\alpha}$$
 
@@ -327,7 +327,7 @@ Before we do anything else, however, let’s use the fact that we can rename the
 
 $$\frac{\partial L}{\partial\dot{x}^{\alpha}}=\frac{1}{2}g_{\alpha\nu}\dot{x}^{\nu}+\frac{1}{2}g_{\mu\alpha}\dot{x}^{\mu}=\frac{1}{2}g_{\alpha\mu}\dot{x}^{\mu}+\frac{1}{2}g_{\mu\alpha}\dot{x}^{\mu}=\frac{1}{2}\left(g_{\alpha\mu}+g_{\mu\alpha}\right)\dot{x}^{\mu}$$
 
-Let’s now take this final derivative with respect to $λ$ using the product rule:
+Let’s now take this final derivative with respect to λ using the product rule:
 
 $$\frac{d}{d\lambda}\frac{\partial L}{\partial\dot{x}^{\alpha}}=\frac{1}{2}\frac{d}{d\lambda}\left(\left(g_{\alpha\mu}+g_{\mu\alpha}\right)\dot{x}^{\mu}\right)$$
 
@@ -335,21 +335,21 @@ $$=\frac{1}{2}\frac{d}{d\lambda}\left(g_{\alpha\mu}+g_{\mu\alpha}\right)\dot{x}^
 
 $$=\frac{1}{2}\dot{x}^{\nu}\partial_{\nu}\left(g_{\alpha\mu}+g_{\mu\alpha}\right)\dot{x}^{\mu}+g_{\alpha\mu}\frac{d\dot{x}^{\mu}}{d\lambda}$$
 
-In the last term we’ve used the fact that the metric is symmetric, i.e. g$α MATH0 μ$+g$μ$$α$=2g$α$$μ$.
+In the last term we’ve used the fact that the metric is symmetric, i.e. gαµ=gµα, so that gαµ+gµα=2gαµ.
 
 $$=\frac{1}{2}\left(\partial_{\mu}g_{\alpha\nu}+\partial_{\nu}g_{\mu\alpha}\right)\dot{x}^{\mu}\dot{x}^{\nu}+g_{\alpha\mu}\ddot{x}^{\mu}$$
 
-In the last step, we conveniently renamed our dummy variables in the first term (interchanging $μ$ and $ν$ as they are both dummy variables here).
+In the last step, we conveniently renamed our dummy variables in the first term (interchanging µ and ν as they are both dummy variables here).
 
 Now, let’s combine the two sides of the Euler-Lagrange equation:
 
 $$\frac{d}{d\lambda}\frac{\partial L}{\partial\dot{x}^{\alpha}}=\frac{\partial L}{\partial x^{\alpha}}\\\Rightarrow\ \ \frac{1}{2}\left(\partial_{\nu}g_{\alpha\mu}+\partial_{\nu}g_{\mu\alpha}\right)\dot{x}^{\mu}\dot{x}^{\nu}+g_{\alpha\mu}\ddot{x}^{\mu}=\frac{1}{2}\partial_{\alpha}g_{\mu\nu}\dot{x}^{\mu}\dot{x}^{\nu}\\\Rightarrow\ \ g_{\alpha\mu}\ddot{x}^{\mu}+\frac{1}{2}\left(\partial_{\mu}g_{\alpha\nu}+\partial_{\nu}g_{\mu\alpha}-\frac{1}{2}\partial_{\alpha}g_{\mu\nu}\right)\dot{x}^{\mu}\dot{x}^{\nu}=0$$
 
-There’s one more rule we need to know about that involves the “inverse metric” g$α$$μ$ and it is that:
+There’s one more rule we need to know about that involves the “inverse metric” gαµ and it is that:
 
 $$g^{\alpha\mu}g_{\alpha\nu}=\delta_{\nu}^{\mu}$$
 
-So if we contract (multiply) this whole equation by g$α$$σ$ (and use the index renaming property of the Kronecker delta), we get the result:
+So if we contract (multiply) this whole equation by gασ (and use the index renaming property of the Kronecker delta), we get the result:
 
 $$g^{\alpha\sigma}g_{\alpha\mu}\ddot{x}^{\mu}+\frac{1}{2}g^{\alpha\sigma}\left(\partial_{\mu}g_{\alpha\nu}+\partial_{\nu}g_{\mu\alpha}-\frac{1}{2}\partial_{\alpha}g_{\mu\nu}\right)\dot{x}^{\mu}\dot{x}^{\nu}=0\\\Rightarrow\ \ \ddot{x}^{\sigma}+\frac{1}{2}g^{\alpha\sigma}\left(\partial_{\mu}g_{\alpha\nu}+\partial_{\nu}g_{\mu\alpha}-\frac{1}{2}\partial_{\alpha}g_{\mu\nu}\right)\dot{x}^{\mu}\dot{x}^{\nu}=0$$
 
@@ -370,29 +370,29 @@ The most extreme case of this may be for a **photon orbiting around a black hole
 
 Example: Geodesics In Flat Spacetime
 
-Now, the derivative of a constant is always zero. Take for example the number 1 and think of it as a function of $λ$. As we change $λ$, the value of 1 is still 1, it doesn’t change – so we could write this mathematically as d(1)/d$λ$ = 0.
+Now, the derivative of a constant is always zero. Take for example the number 1 and think of it as a function of λ. As we change λ, the value of 1 is still 1, it doesn’t change – so we could write this mathematically as d(1)/dλ = 0.
 
 With this in mind, take the Minkowski metric tensor; it is constant, meaning all its components are constants (either -1’s, 1’s or zeros).
 
 This means that all the derivatives in the Christoffel symbols give us zero for the Minkowski metric, so all the Christoffel symbols are all zero too!
 
-So, for Minkowkski spacetime $η MATH0 ν$ (spacetime without gravity, i.e. flat spacetime), we have the geodesic equation:
+So, for Minkowkski spacetime ηµν (spacetime without gravity, i.e. flat spacetime), we have the geodesic equation:
 
 $$\frac{d^2x^{\alpha}\left(\lambda\right)}{d\lambda^2}=0$$
 
-The worldline x$α$($λ$) here consists of four different coordinates, a time coordinate t($λ$) and three spacial coordinates, which we can call x($λ$), y($λ$) and z($λ$). These are all functions of the path parameter $λ$.
+The worldline xα(λ) here consists of four different coordinates, a time coordinate t(λ) and three spacial coordinates, which we can call x(λ), y(λ) and z(λ). These are all functions of the path parameter λ.
 
 Looking at the geodesic equation component-by-component, we see that:
 
 $$\frac{d^2t}{d\lambda^2}=0\ {,}\ \ \frac{d^2x}{d\lambda^2}=0\ {,}\ \ \frac{d^2y}{d\lambda^2}=0\ {,}\ \ \frac{d^2z}{d\lambda^2}=0$$
 
-We can solve all these quite simply by integrating twice (don’t worry if you don’t know quite what that means!). Let’s also assume that our worldline x$α$ is along the x-axis with y = 0 and z = 0. Doing this, one solution is:
+We can solve all these quite simply by integrating twice (don’t worry if you don’t know quite what that means!). Let’s also assume that our worldline xα is along the x-axis with y = 0 and z = 0. Doing this, one solution is:
 
 $$t=\lambda\ {,}\ \ \ x=v\lambda+x_0$$
 
-Here, x0 is defined as the starting position of the worldline at $λ$ = 0 and v (a constant) is the derivative of x, corresponding to a constant velocity.
+Here, x0 is defined as the starting position of the worldline at λ = 0 and v (a constant) is the derivative of x, corresponding to a constant velocity.
 
-Since we have t = $λ$ here (meaning that physically, the path parameter is simply time in this simple example), we can combine these two equations into one:
+Since we have t = λ here (meaning that physically, the path parameter is simply time in this simple example), we can combine these two equations into one:
 
 $$x=vt+x_0$$
 
@@ -419,7 +419,7 @@ As we’ve seen, the geodesic equation in specific circumstances can tell us all
 
 Mathematically, a more elegant approach is to take the metric, look at its **geodesic Lagrangian** (explained earlier), calculate its **Euler-Lagrange equations**, and combine this with the fact that we are looking at **null geodesics for light**!
 
-We can easily get the geodesic Lagrangian by taking the line element, replacing any variable (such as dt, dr, dx etc.) by the same variable with a dot over it (ṫ, ṙ, ẋ etc.), representing a derivative with respect to $λ$ and putting a half in front of the whole thing!
+We can easily get the geodesic Lagrangian by taking the line element, replacing any variable (such as dt, dr, dx etc.) by the same variable with a dot over it (ṫ, ṙ, ẋ etc.), representing a derivative with respect to λ and putting a half in front of the whole thing!
 
 For example, in the Schwarzschild spacetime we briefly looked at earlier, we have (see the similarity between the line element and the geodesic Lagrangian?):
 
@@ -429,7 +429,7 @@ In fact, this can also be used as an efficient method for calculating Christoffe
 
 Now, to answer the main question: if photons are massless, how are they affected by gravity – **under the influence of gravity, photons travel on null geodesics** (ds2 = 0) and geodesics are described by the Euler-Lagrange equations of their geodesic Lagrangian (or equivalently by the geodesic equation; both describe the same thing).
 
-The equations we get are determined by the metric g$μ$$ν$ and in general relativity, gravity is the curving of spacetime rather than a force so **all the effects of gravity are wrapped up in the metric**.
+The equations we get are determined by the metric gµν and in general relativity, gravity is the curving of spacetime rather than a force so **all the effects of gravity are wrapped up in the metric**.
 
 Photons, like all matter, want to follow a geodesic because of the laziness of the universe and the easiest path to take is to follow how matter has bent and curved spacetime, causing gravity.
 
@@ -453,7 +453,7 @@ In general relativity, this is not true – the key result is that **a ray of li
 
 $$\delta=\frac{4GM}{c^2D}$$
 
-G is the gravitational constant, $c$ is the speed of light, $M$ is the mass of the star, and D is the smallest distance radially that the light gets to the star.
+G is the gravitational constant, c is the speed of light, M is the mass of the star, and D is the smallest distance radially that the light gets to the star.
 
 Essentially, this deflection angle describes how much a light ray would get bent as it passes near a star. In other words, **how much the path of the photon differs from being a straight line**.
 
@@ -463,7 +463,7 @@ This can be observed by looking at light rays (photons) coming from a distant st
 
 For some context, if we consider light just grazing the sun, this gives a measurement of 1.75 arcseconds – Arthur Eddington verified this empirically in 1919 and it was a key result in verifying general relativity experimentally!
 
-**The deflection angle $δ$ is typically very small**. For scale, an arcsecond is 1/3600th of a degree – so the result is very very small as expected – but crucially it is *not zero* as we would expect in Newtonian gravity!
+**The deflection angle δ is typically very small**. For scale, an arcsecond is 1/3600th of a degree – so the result is very very small as expected – but crucially it is *not zero* as we would expect in Newtonian gravity!
 
 This shows directly **how a massless photon is affected by gravity** – it must follow the natural bending of spacetime due to matter!
 
@@ -475,11 +475,11 @@ $$r\left(\varphi\right)=\frac{D^2}{M}\frac{1}{1+C\cos\varphi+\frac{D}{M}\sin\var
 
 Note; this is in units where G=c=1. In case you’re familiar with standard orbital mechanics, this may look somewhat similar to Kepler’s orbit equation describing, for example, the elliptical orbits of planets. In a sense, this is a more complicated “orbit equation” that describes the orbit of a photon.
 
-This describes the distance r of the photon to the star as a function of the angle $φ$ in polar coordinates (see picture below).
+This describes the distance r of the photon to the star as a function of the angle φ in polar coordinates (see picture below).
 
 ![](assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_18.webp)
 
-From this, we can derive the deflection angle $δ$=4GM/c2D. You’ll see the full derivation of this below.
+From this, we can derive the deflection angle δ=4GM/c2D. You’ll see the full derivation of this below.
 
 Derivation of Photon Geodesics & Deflection Angle Near a Star
 
@@ -493,14 +493,14 @@ This metric and its associated geodesic Lagrangian describes gravity outside of 
 
 We’ll be looking at geodesics, which are the shortest distance between two points. If we traced out these lines, we’d find that each individual one stays on one plane – it doesn’t wiggle around in three spatial dimensions since this wouldn’t be the shortest path anymore.
 
-We are then free to choose this plane and due to spherical symmetry (if we rotate our spacetime around the star it looks the same) we can choose, for example, the plane $θ$ = $π$/2 as this simplifies our geodesic Lagrangian in the following way:
+We are then free to choose this plane and due to spherical symmetry (if we rotate our spacetime around the star it looks the same) we can choose, for example, the plane θ = π/2 as this simplifies our geodesic Lagrangian in the following way:
 
 $$L=-\frac{1}{2}\left(1-\frac{2M}{r}\right)\dot{t}^2+\frac{1}{2}\frac{1}{1-\frac{2M}{r}}\dot{r}^2+\frac{1}{2}r^2\dot{\varphi}^2$$
 
-This follows because $θ$ is now a constant and we know the derivative of a constant is zero, hence $θ$-dot = 0 and also  
-sin($π$/2) = 1.
+This follows because θ is now a constant and we know the derivative of a constant is zero, hence θ-dot = 0 and also  
+sin(π/2) = 1.
 
-In the language of Lagrangian mechanics, we treat variables with dots above them and variables without dots above them as independent. We can see that the coefficients of each of the dotted variables in the geodesic Lagrangian only depend on r. This means that any derivative of L with respect to t or $φ$ would be zero – we call these variables cyclic coordinates.
+In the language of Lagrangian mechanics, we treat variables with dots above them and variables without dots above them as independent. We can see that the coefficients of each of the dotted variables in the geodesic Lagrangian only depend on r. This means that any derivative of L with respect to t or φ would be zero – we call these variables cyclic coordinates.
 
 In action, that means:
 
@@ -508,7 +508,7 @@ $$\frac{d}{d\lambda}\frac{\partial L}{\partial\dot{t}}=\frac{\partial L}{\partia
 
 $$\frac{d}{d\lambda}\frac{\partial L}{\partial\dot{\varphi}}=\frac{\partial L}{\partial\varphi}=0$$
 
-If the derivative of something is zero – this is the $λ$-derivative for us – then this means the thing we’re differentiating is constant. We can name these constants in nice ways as -E and L (not to be confused with the Lagrangian), so that:
+If the derivative of something is zero – this is the λ-derivative for us – then this means the thing we’re differentiating is constant. We can name these constants in nice ways as -E and L (not to be confused with the Lagrangian), so that:
 
 $$\frac{\partial L}{\partial\dot{t}}=-\left(1-\frac{2M}{r}\right)\dot{t}=-E$$
 
@@ -526,7 +526,7 @@ What we’ve done so far isn’t yet specific to us considering a photon on a nu
 
 $$-\left(1-\frac{2M}{r}\right)dt^2+\frac{1}{1-\frac{2M}{r}}dr^2+r^2d\varphi^2=0$$
 
-We can manipulate our equations for t-dot and $φ$-dot. Recalling, we have:
+We can manipulate our equations for t-dot and φ-dot. Recalling, we have:
 
 $$\dot{t}=\frac{dt}{d\lambda}=\frac{E}{1-\frac{2M}{r}}\ \ \Rightarrow\ \ dt=\frac{E}{1-\frac{2M}{r}}d\lambda$$
 
@@ -536,7 +536,7 @@ Let’s plug these into our null geodesic line element!
 
 $$-\left(1-\frac{2M}{r}\right)\left(\frac{E}{1-\frac{2M}{r}}d\lambda\right)^2+\frac{1}{1-\frac{2M}{r}}dr^2+r^2\left(\frac{L}{r^2}d\lambda\right)^2=0\\\Rightarrow\ \ -\frac{E^2}{1-\frac{2M}{r}}d\lambda^2+\frac{1}{1-\frac{2M}{r}}dr^2+\frac{L^2}{r^2}d\lambda^2=0$$
 
-If we divide by d$λ$2 and multiply by (1−2M/r), we get:
+If we divide by dλ2 and multiply by (1−2M/r), we get:
 
 $$-E^2+\dot{r}^2+\frac{L^2}{r^2}\left(1-\frac{2M}{r}\right)=0$$
 
@@ -557,9 +557,9 @@ Then, consider the following expression:
 
 $$\frac{\dot{r}^2}{\dot{\varphi}^2}=\frac{\left(\frac{dr}{d\lambda}\right)^2}{\left(\frac{d\varphi}{d\lambda}\right)^2}=\left(\frac{dr}{d\varphi}\right)^2=\frac{E^2-\frac{L^2}{r^2}\left(1-\frac{2M}{r}\right)}{\frac{L^2}{r^4}}\\\Rightarrow\ \ \left(\frac{dr}{d\varphi}\right)^2=\frac{E^2}{L^2}r^4-r^2\left(1-\frac{2M}{r}\right)$$
 
-This is now a differential equation describing r as a function of $φ$. Solving these types of equations falls within the topic of “orbital mechanics” and it is very common to use the change of variables u=1/r – this is because we have 1/r everywhere in our equations and it is easier if they were flipped!
+This is now a differential equation describing r as a function of φ. Solving these types of equations falls within the topic of “orbital mechanics” and it is very common to use the change of variables u=1/r – this is because we have 1/r everywhere in our equations and it is easier if they were flipped!
 
-We treat r as a function of $φ$ and so u is also as a function of $φ$. In our main expression we have dr/d$φ$, but after our variable change r=1/u, so this will change (using the chain rule) like this:
+We treat r as a function of φ and so u is also as a function of φ. In our main expression we have dr/dφ, but after our variable change r=1/u, so this will change (using the chain rule) like this:
 
 $$\frac{dr}{d\varphi}=\frac{d}{d\varphi}u^{-1}=-\frac{1}{u^2}\frac{du}{d\varphi}$$
 
@@ -571,13 +571,13 @@ Now let’s multiply by u4 and we are left with:
 
 $$\left(\frac{du}{d\varphi}\right)^2=\frac{E^2}{L^2}-u^2\left(1-2Mu\right)$$
 
-This expression isn’t very easy to work with at all, so we use a clever trick – we’ll take the $φ$-derivative of the whole expression (with the aid of the chain rule). The left and right hand sides of this equation become:
+This expression isn’t very easy to work with at all, so we use a clever trick – we’ll take the φ-derivative of the whole expression (with the aid of the chain rule). The left and right hand sides of this equation become:
 
 $$\frac{d}{d\varphi}\left(\frac{du}{d\varphi}\right)^2=\frac{d}{d\varphi}\left(\frac{E^2}{L^2}-u^2\left(1-2Mu\right)\right)\\\Rightarrow\ \ 2\frac{du}{d\varphi}\frac{d^2u}{d\varphi^2}=-2u\frac{du}{d\varphi}+6Mu^2\frac{du}{d\varphi}$$
 
-We can safely assume that du/d$φ$ ≠ 0. Why? Well, if we assume that it does equal zero, then we find u=constant, and so r=constant. This is just the equation of a circular orbit (if the radius doesn’t change, it must be a circle) and around a star, light cannot have circular orbit (only around a black hole, it can)!
+We can safely assume that du/dφ ≠ 0. Why? Well, if we assume that it does equal zero, then we find u=constant, and so r=constant. This is just the equation of a circular orbit (if the radius doesn’t change, it must be a circle) and around a star, light cannot have circular orbit (only around a black hole, it can)!
 
-Now, we can safely divide by 2du/d$φ$ and we recover (after some rearranging):
+Now, we can safely divide by 2du/dφ and we recover (after some rearranging):
 
 $$\frac{d^2u}{d\varphi^2}+u=3Mu^2$$
 
@@ -589,7 +589,7 @@ The trick to solving the above differential equation is to consider it in two �
 
 Now, since u=1/r, this is related to how close to the center of the star we can get. It is a fact that the radius of a star is greater than 2M (the star’s Schwarzschild radius) – otherwise our metric would break down!
 
-Even if we look at r=2M, this means u2=1/4M2, so Mu2=1/4M. But $M$ is the mass of the star which is massive! So 1/M is tiny – so small in fact that we will start our approximation by ignoring it, which turns out to give us the “first part” of our solution; we now solve the following equation:
+Even if we look at r=2M, this means u2=1/4M2, so Mu2=1/4M. But M is the mass of the star which is massive! So 1/M is tiny – so small in fact that we will start our approximation by ignoring it, which turns out to give us the “first part” of our solution; we now solve the following equation:
 
 $$\frac{d^2u}{d\varphi^2}+u=0$$
 
@@ -597,9 +597,9 @@ This is the equation we get if we set M = 0 as well – this is the zero gravity
 
 $$u=\frac{1}{D}\sin\left(\varphi-\varphi_0\right)$$
 
-D and $φ$0 here are just some arbitrary constants that appear when we solve this equation by integration.
+D and φ0 here are just some arbitrary constants that appear when we solve this equation by integration.
 
-D, however, has some physical meaning for us – recall that since u=1/r , then D=r sin($φ$ − $φ$0). But in polar coordinates, we have y=r sin($φ$) – this tells us that D is the vertical distance from a purely radial ray:
+D, however, has some physical meaning for us – recall that since u=1/r , then D=r sin(φ − φ0). But in polar coordinates, we have y=r sin(φ) – this tells us that D is the vertical distance from a purely radial ray:
 
 ![](assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_20.webp)
 
@@ -633,9 +633,9 @@ This is exactly the first two terms on the left-hand side, which must be zero so
 
 $$\frac{d^2u_1}{d\varphi^2}+u_1=u_0^2$$
 
-The nice thing now is that we know u0 in terms of $φ$ – this is now a differential equation we can solve for u1 as well!
+The nice thing now is that we know u0 in terms of φ – this is now a differential equation we can solve for u1 as well!
 
-So, u0=sin($φ$ − $φ$0)/D, but since $φ$0 is pretty arbitrary, we can simply assume $φ$0=0 (this wouldn’t change our results) to simplify this a bit. This then gives us the equation:
+So, u0=sin(φ − φ0)/D, but since φ0 is pretty arbitrary, we can simply assume φ0=0 (this wouldn’t change our results) to simplify this a bit. This then gives us the equation:
 
 $$\frac{d^2u_1}{d\varphi^2}+u_1=\frac{\sin^2\varphi}{D^2}$$
 
@@ -659,27 +659,27 @@ $$r=\frac{1}{\frac{\sin\varphi}{D}+\frac{M}{D^2}\left(1+C\cos\varphi+\cos^2\varp
 
 Now, here comes the geometry part – let’s calculate the angle of deflection. First, we know that at large r, u gets very small. Far away from the star – assuming there’s nothing else close by – the light will be effectively travelling on a straight line since the effect of the star will be very weak when far away.
 
-Let’s choose the angles that the light comes in and leaves to be −$ε$1 and $π$+$ε$2, like in this diagram:
+Let’s choose the angles that the light comes in and leaves to be −ε1 and π+ε2, like in this diagram:
 
 ![](assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_22.webp)
 
-The figure isn’t quite drawn to scale, as otherwise we wouldn’t be able to see the important details on it, but it represents the path of the light that we’re considering. On this diagram, the angle that the light gets deflected is called $δ$. This is the change in the actual position of the star versus where we perceive the star!
+The figure isn’t quite drawn to scale, as otherwise we wouldn’t be able to see the important details on it, but it represents the path of the light that we’re considering. On this diagram, the angle that the light gets deflected is called δ. This is the change in the actual position of the star versus where we perceive the star!
 
-We know that this effect is small so $ε$1 and $ε$2 are both very small too. Since these are angles, we want to plug these in to our solution u($φ$).
+We know that this effect is small so ε1 and ε2 are both very small too. Since these are angles, we want to plug these in to our solution u(φ).
 
-These angles represent what angle the light is when really far away from the star – far away, u is approximately zero (since r is really big and u=1/r is really small). On one hand, at $φ$=$π$+$ε$2 with u$≈$0, we have:
+These angles represent what angle the light is when really far away from the star – far away, u is approximately zero (since r is really big and u=1/r is really small). On one hand, at φ=π+ε2 with u≈0, we have:
 
 $$u\left(\pi+\varepsilon_2\right)=\frac{\sin\left(\pi+\varepsilon_2\right)}{D}+\frac{M}{D^2}\left(1+C\cos\left(\pi+\varepsilon_2\right)+\cos^2\left(\pi+\varepsilon_2\right)\right)=0$$
 
-This isn’t the easiest to deal with, however, we have two things to help us. First, the relations sin(x + $π$) = − sin(x) and cos(x + $π$) = -cos(x). These come from the fact that if you take the cosine or sine graph and translate it across by $π$-units, you find the same graph but upside down – i.e. (−1) times the original graph.
+This isn’t the easiest to deal with, however, we have two things to help us. First, the relations sin(x + π) = − sin(x) and cos(x + π) = -cos(x). These come from the fact that if you take the cosine or sine graph and translate it across by π-units, you find the same graph but upside down – i.e. (−1) times the original graph.
 
 Secondly, we have the “small angle approximations”. These allow us to approximate with good accuracy what a trigonometric function is without calculating it – so long as the angle is small!
 
-If $ε$ represents a small angle, then we can approximately write sin($ε$) = $ε$ and cos($ε$) = 1. Using all of this, we can write our expression as:
+If ε represents a small angle, then we can approximately write sin(ε) = ε and cos(ε) = 1. Using all of this, we can write our expression as:
 
 $$\frac{-\sin\left(\varepsilon_2\right)}{D}+\frac{M}{D^2}\left(1+C\cos\left(\varepsilon_2\right)+\cos^2\left(\varepsilon_2\right)\right)=0\\\Rightarrow\ \ -\frac{\varepsilon_2}{D}+\frac{M}{D^2}\left(1-C+1\right)=0\\\Rightarrow\ \ -\varepsilon_2+\frac{M}{D}\left(2-C\right)=0$$
 
-Looking now at the other angle, $φ$=−$ε$1 (again with u$≈$0 and with the same trigonometric “tricks”), we have:
+Looking now at the other angle, φ=−ε1 (again with u≈0 and with the same trigonometric “tricks”), we have:
 
 $$\frac{\sin\left(-\varepsilon_1\right)}{D}+\frac{M}{D^2}\left(1+C\cos\left(-\varepsilon_1\right)+\cos^2\left(-\varepsilon_1\right)\right)=0\\\Rightarrow\ \ -\varepsilon_1+\frac{M}{D}\left(2+C\right)=0$$
 
@@ -689,26 +689,26 @@ $$-\varepsilon_2+\frac{M}{D}\left(2-C\right)-\varepsilon_1+\frac{M}{D}\left(2+C\
 
 We can see that the arbitrary constant C had no physical meaning in terms of our problem, so it cancelled out of our equation.
 
-Now we just need to figure out what $ε$1+$ε$2 means in relation to our deflection angle, the thing we want to calculate.
+Now we just need to figure out what ε1+ε2 means in relation to our deflection angle, the thing we want to calculate.
 
 By drawing two parallel lines to our horizontal line in the previous diagram, we can write the straight line trajectories as:
 
 ![](assets/images/how-are-photons-affected-by-gravity-if-they-have-no-mass/img_24.webp)
 
-How do we read this? The bottom horizontal line is our original line (the x-axis, essentially) and the two crossed lines are the straight lines we draw at angles −$ε$1 and $ε$2+$π$.
+How do we read this? The bottom horizontal line is our original line (the x-axis, essentially) and the two crossed lines are the straight lines we draw at angles −ε1 and ε2+π.
 
 Here we have two types of angles since there are intersections of parallel lines – Z angles and F angles (also called corresponding angles and alternate angles).
 
 These tell us which angles are the same and in this diagram the corresponding  
-angles (F angles) are in black and alternate angles in red from the top two $ε$1 and $ε$2.
+angles (F angles) are in black and alternate angles in red from the top two ε1 and ε2.
 
-We can also see the deflection angle $δ$ marked on this diagram. The main point here is that from this, we can read the result $δ$=$ε$1+$ε$2. This is the link we needed!
+We can also see the deflection angle δ marked on this diagram. The main point here is that from this, we can read the result δ=ε1+ε2. This is the link we needed!
 
 We can now conclude that the full deflection angle is:
 
 $$\delta=\varepsilon_1+\varepsilon_2=\frac{4M}{D}$$
 
-However, in physics it is often convenient to set the constants G=1 and c=1 (as is done here) because we can always check the dimensions later and restore them. Let’s restore these back in, giving the promised result $δ$ = 4GM/c2D.
+However, in physics it is often convenient to set the constants G=1 and c=1 (as is done here) because we can always check the dimensions later and restore them. Let’s restore these back in, giving the promised result δ = 4GM/c2D.
 
 More importantly than the actual result of deflection, this is an example that directly shows that **photons are indeed affected by gravity** – how they are affected by gravity will depend on the particular **spacetime** we look at.
 

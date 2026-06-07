@@ -71,7 +71,7 @@ It’s quite common to collect these components into a **matrix**, with the inde
 
 ![](assets/images/metric-tensor-a-complete-guide-with-examples/img_4.webp) 
 
-In general, the number of components the metric has depends on the number of basis vectors in our coordinate system – for 3D coordinate systems, the metric has a total of 3$×$3=9 components (though not all of them are independent).
+In general, the number of components the metric has depends on the number of basis vectors in our coordinate system – for 3D coordinate systems, the metric has a total of 3×3=9 components (though not all of them are independent).
 
 Now, why such a definition? Well, the **dot product between basis vectors** is enough to describe the geometry of any given coordinate system.
 
@@ -86,7 +86,7 @@ Take, for example, the simple 3D Cartesian coordinate system, which consists of 
 Let’s look at the metric components in a bit more detail:
 
 - **The diagonal components (with i=j) describe the length squared of each basis vector**, because each one consists of the dot product of a given basis vector by itself.
-- **The off-diagonal elements (with i$≠$j) describe the overlap of a given basis vector with another one**. Thus, they determine the angles between each basis vector. For orthogonal coordinate systems, these components are always zero, so the metric is diagonal.
+- **The off-diagonal elements (with i≠j) describe the overlap of a given basis vector with another one**. Thus, they determine the angles between each basis vector. For orthogonal coordinate systems, these components are always zero, so the metric is diagonal.
 
 So, say we have some arbitrary coordinate system with coordinate axes x1 and x2 and basis vectors in the corresponding directions. The metric (at each point) would then describe the lengths of both basis vectors and the alignment of the basis vectors:
 
@@ -112,7 +112,7 @@ Then, we define a basis for that tangent space (which is again different at ever
   
 ![](assets/images/metric-tensor-a-complete-guide-with-examples/img_10.webp)
 
-As an illustrative example of what the metric tensor components actually tell us, let’s look at the **polar coordinate system**. This consists of a radial coordinate r and an angular coordinate $θ$, with basis vectors in the corresponding directions.
+As an illustrative example of what the metric tensor components actually tell us, let’s look at the **polar coordinate system**. This consists of a radial coordinate r and an angular coordinate θ, with basis vectors in the corresponding directions.
 
 The metric components have the following form in polar coordinates:
 
@@ -122,7 +122,7 @@ These, and many more metrics, are derived in detail in my ****[Mathematics of Ge
 
 First of all, the **off-diagonal elements** being zero here tells us that the polar basis vectors are orthogonal, since the dot products between them is zero. Moreover, the radial basis vector has a constant length of 1 everywhere (like the Cartesian basis vectors).
 
-The more interesting part is the metric component g22=g$θ$$θ$=r2, which tells us that the length squared of the $θ$-basis vector is r2. Therefore, the angular basis vector actually gets longer with radial distance to the origin:
+The more interesting part is the metric component g22=gθθ=r2, which tells us that the length squared of the θ-basis vector is r2. Therefore, the angular basis vector actually gets longer with radial distance to the origin:
 
 ![](assets/images/metric-tensor-a-complete-guide-with-examples/img_12.webp)
 
@@ -144,7 +144,7 @@ Scale factors are used quite often used in **vector calculus** in the context of
   
 For example, it’s possible to define a general formula for the **gradient in any orthogonal coordinate system** in terms of the scale factors (if you want to know more about this, check out my article **[Gradient In Different Coordinates](https://profoundphysics.com/gradient-in-different-coordinates/)**):
 
-As an example, if we are in polar coordinates with xi=(x1,x2)=(r,$θ$), the scale factors are given by h1=1 and h2=r (which can be seen directly from the metric in polar coordinates). Then, we could compute the gradient of some function f as:
+As an example, if we are in polar coordinates with xi=(x1,x2)=(r,θ), the scale factors are given by h1=1 and h2=r (which can be seen directly from the metric in polar coordinates). Then, we could compute the gradient of some function f as:
 
 $$\nabla f=\sum_i^{ }\frac{1}{h_i}\frac{\partial f}{\partial x^i}\hat{e}_i=\frac{1}{h_1}\frac{\partial f}{\partial x^1}\hat{e}_1+\frac{1}{h_2}\frac{\partial f}{\partial x^2}\hat{e}_2=\frac{\partial f}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial f}{\partial\theta}\hat{\theta}$$
 
@@ -162,9 +162,9 @@ The line element can be calculated from the components of the metric tensor as:
 
 $$ds^2=g_{ij}dx^idx^j$$
 
-Here, the dx’s refer to infinitesimal coordinate displacements. For example, in polar coordinates, these would be dr and d$θ$. We are also using the Einstein summation convention here, meaning that both i and j are summation indices.
+Here, the dx’s refer to infinitesimal coordinate displacements. For example, in polar coordinates, these would be dr and dθ. We are also using the Einstein summation convention here, meaning that both i and j are summation indices.
 
-The idea here is that these dx’s are **displacements in arbitrary coordinates**, which do not necessarily have to describe lengths directly, or even have units of length – for example, d$θ$ in polar coordinates describes an angular displacement. So, these coordinate displacements can be *anything*.
+The idea here is that these dx’s are **displacements in arbitrary coordinates**, which do not necessarily have to describe lengths directly, or even have units of length – for example, dθ in polar coordinates describes an angular displacement. So, these coordinate displacements can be *anything*.
 
 However, what the metric components do is they **convert these arbitrary coordinate displacements to actual lengths**, described by the line element. This is the idea behind the statement “the metric converts coordinates to lengths”.
 
@@ -182,16 +182,16 @@ As an illustrative example, let’s look at the polar coordinate system again. T
   
 $$g_{ij}=\begin{pmatrix}g_{11}&g_{12}\\g_{21}&g_{22}\end{pmatrix}=\begin{pmatrix}1&0\\0&r^2\end{pmatrix}$$
 
-With these, we can write down the **line element in polar coordinates** as (where dx1=dr and dx2=d$θ$):
+With these, we can write down the **line element in polar coordinates** as (where dx1=dr and dx2=dθ):
 
 $$ds^2=g_{ij}dx^idx^j=g_{11}dx^1dx^2+g_{12}dx^1dx^2+g_{21}dx^2dx^1+g_{22}dx^2dx^2=dr^2+r^2d\theta^2$$
   
   
 Writing down this line element is clearly a completely equivalent way of specifying the metric itself, since we can uniquely read off all the metric components from this formula.  
   
-In a geometric sense, this line element formula is telling us how to translate displacements in the coordinates r and $θ$ to an actual length. The coordinate displacement dr here already describes a perfectly valid length element, however, the coordinate displacement d$θ$ needs to be multiplied by a factor of r to obtain a valid length.  
+In a geometric sense, this line element formula is telling us how to translate displacements in the coordinates r and θ to an actual length. The coordinate displacement dr here already describes a perfectly valid length element, however, the coordinate displacement dθ needs to be multiplied by a factor of r to obtain a valid length.  
   
-This makes perfect sense if you think about it a bit – a given angular displacement (in the $θ$-coordinate) corresponds to a longer piece of length the further we are from the origin of the polar coordinate system:  
+This makes perfect sense if you think about it a bit – a given angular displacement (in the θ-coordinate) corresponds to a longer piece of length the further we are from the origin of the polar coordinate system:  
   
 ![](assets/images/metric-tensor-a-complete-guide-with-examples/img_20.webp)
 
@@ -225,7 +225,7 @@ The **determinant** of a diagonal metric like this is simple to calculate – it
 $$g_{ij}=\det\begin{pmatrix}1&0\\0&r^2\end{pmatrix}$$
   
   
-Now, the square root of this ($\sqrt{g}=r$) describes how a **piece of area** formed by the basis vectors scales with the coordinates. This is quite simple to understand – since the $θ$-basis vector gets longer proportional to r and the r-basis vector remains the same length, any area they span will also increase linearly with r:  
+Now, the square root of this ($\sqrt{g}=r$) describes how a **piece of area** formed by the basis vectors scales with the coordinates. This is quite simple to understand – since the θ-basis vector gets longer proportional to r and the r-basis vector remains the same length, any area they span will also increase linearly with r:  
   
 ![](assets/images/metric-tensor-a-complete-guide-with-examples/img_24.webp)
 
@@ -271,9 +271,9 @@ It turns out that for a radially symmetric mass M (think of a planet, for exampl
 
 $$\frac{d^2r}{dt^2}=\frac{c^2}{2}\frac{\partial g_{00}}{\partial r}$$
 
-Here, r is the radial coordinate (distance from the origin, as measured from the center of the mass M) and $c$ is the speed of light.
+Here, r is the radial coordinate (distance from the origin, as measured from the center of the mass M) and c is the speed of light.
 
-In Newtonian gravity, on the other hand, if we write down Newton’s second law (F=ma) for the exact same situation in terms of a **gravitational potential** ($Φ$), we have the following equation:
+In Newtonian gravity, on the other hand, if we write down Newton’s second law (F=ma) for the exact same situation in terms of a **gravitational potential** (Φ), we have the following equation:
 
 $$\frac{d^2r}{dt^2}=-\frac{\partial\Phi}{\partial r}$$
 
@@ -281,7 +281,7 @@ In order for these two equations to match – which they should in the weak-fiel
 
 $$g_{00}=1-\frac{2\Phi}{c^2}$$
 
-This 1 here is just a constant we are allowed to include in the metric in order for it to reduce to the flat spacetime metric when $Φ$=0.
+This 1 here is just a constant we are allowed to include in the metric in order for it to reduce to the flat spacetime metric when Φ=0.
 
 We can see from this that the metric is clearly very closely related to the gravitational potential of Newtonian gravity. This analogy is still valid for more complicated spacetimes – the metric is just the “relativistic extension” of the standard gravitational potential.
 
@@ -529,13 +529,13 @@ At surface value, this idea comes from the fact that the metric components appea
 
 $$ds^2=g_{ij}dx^idx^j$$
 
-Because ds2 represents the square of a distance element, it has **units of distance squared**. However, the coordinate displacements can be anything, so they can have any units (for example, in polar coordinates, we have both dr – something with units of length – and d$θ$, which is dimensionless).
+Because ds2 represents the square of a distance element, it has **units of distance squared**. However, the coordinate displacements can be anything, so they can have any units (for example, in polar coordinates, we have both dr – something with units of length – and dθ, which is dimensionless).
 
 Therefore, the rule is that **for any two arbitrary coordinate displacements, dx1 and dx2, the product g12dx1dx2 must have units of length squared** – thus, the metric converts coordinates to distances, unit-wise as well.
 
 As an example, **in Cartesian coordinates**, the metric has the components g11=g22=g33=1, with all other components zero. Therefore, the Cartesian metric is entirely dimensionless, which is simply because the coordinate displacements dx, dy and dz already naturally have units of length.  
   
-**In polar coordinates**, on the other hand, the metric has the non-zero components g11=1 and g22=r2, meaning that g11 is dimensionless and g22 has units of length squared. This is again because dr already has units of length. However, d$θ$ is dimensionless but g22d$θ$2 needs to have units of length squared – hence g22 itself having the units of length squared.
+**In polar coordinates**, on the other hand, the metric has the non-zero components g11=1 and g22=r2, meaning that g11 is dimensionless and g22 has units of length squared. This is again because dr already has units of length. However, dθ is dimensionless but g22dθ2 needs to have units of length squared – hence g22 itself having the units of length squared.
 
 Above, I mentioned “at surface value” – this is because there are actually a few different conventions being used for the units of the metric:
 
@@ -570,13 +570,13 @@ In Cartesian coordinates, the line element is given simply by the standard 3-dim
 
 $$ds^2=dx^2+dy^2+dz^2$$
 
-The metric is therefore just a bunch of ones and zeroes – often also denoted as $δ$ij – which can be written in matrix form as:
+The metric is therefore just a bunch of ones and zeroes – often also denoted as δij – which can be written in matrix form as:
 
 $$g_{ij}=\delta_{ij}=\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}$$
 
 ### Metric In Polar Coordinates
 
-In polar coordinates, all points are described by two coordinates (since polar coordinates, by definition, are a two-dimensional coordinates system), **r and $θ$**. A polar coordinate system still corresponds to flat space, not a curved one.
+In polar coordinates, all points are described by two coordinates (since polar coordinates, by definition, are a two-dimensional coordinates system), **r and θ**. A polar coordinate system still corresponds to flat space, not a curved one.
 
 The line element in polar coordinates is given by:
 
@@ -592,7 +592,7 @@ Note here that, unlike the Cartesian metric, the metric components in polar coor
 
 The spherical coordinate system is another example of a *flat space* that is represented in different coordinates than Cartesian coordinates.
 
-Spherical coordinates are the analogue of polar coordinates, but in three dimensions. All points in the spherical system are described by **three coordinates, r, $θ$ and $φ$** – a radial distance and two angles. The line element is given by:
+Spherical coordinates are the analogue of polar coordinates, but in three dimensions. All points in the spherical system are described by **three coordinates, r, θ and φ** – a radial distance and two angles. The line element is given by:
 
 $$ds^2=dr^2+r^2d\theta^2+r^2\sin^2\theta d\varphi^2$$
 
@@ -604,7 +604,7 @@ $$g_{ij}=\begin{pmatrix}1&0&0\\0&r^2&0\\0&0&r^2\sin^2\theta\end{pmatrix}$$
 
 The cylindrical coordinate system is equivalent to the spherical one, in the sense that both describe space in three dimensions using three coordinates.
 
-In the case of cylindrical coordinates, however, we have the coordinates **r, $φ$ and z** – a radial distance, and angle (which is the same as the polar angle) and the same z-coordinate as in Cartesian coordinates.
+In the case of cylindrical coordinates, however, we have the coordinates **r, φ and z** – a radial distance, and angle (which is the same as the polar angle) and the same z-coordinate as in Cartesian coordinates.
 
 The line element in cylindrical coordinates is given by:
 
@@ -646,7 +646,7 @@ The Schwarzschild metric is perhaps the most famous solution to the Einstein fie
 
 As a sidenote, if you’re interested in **applications of the Schwarzschild metric**, I discuss how this metric is applied to analyze **time dilation near a black hole** in [this article](https://profoundphysics.com/why-time-slows-down-near-a-black-hole/). The Schwarzschild metric can also be used to construct a so-called **effective potential** to analyze **orbital mechanics around black holes**, which I cover in [this article](https://profoundphysics.com/black-hole-orbits/).
 
-The most common way to represent the Schwarzschild metric is by using the so-called **Schwarzschild coordinates** (ct, r, $θ$ and $φ$). In these coordinates, the line element is given by:
+The most common way to represent the Schwarzschild metric is by using the so-called **Schwarzschild coordinates** (ct, r, θ and φ). In these coordinates, the line element is given by:
 
 $$ds^2=-\left(1-\frac{r_s}{r}\right)c^2dt^2+\left(1-\frac{r_s}{r}\right)^{-1}dr^2+r^2d\theta^2+r^2\sin^2\theta d\varphi^2$$
 
@@ -654,7 +654,7 @@ Here, rs is a parameter called the Schwarzschild radius and it is given by:
 
 $$r_s=\frac{2GM}{c^2}$$
 
-Here, G is the gravitational constant, $M$ is the mass of the central body causing the gravitational field and $c$ is the speed of light.
+Here, G is the gravitational constant, M is the mass of the central body causing the gravitational field and c is the speed of light.
 
 The metric components can also be written in matrix form as:
 
@@ -672,11 +672,11 @@ A noteworthy point about this metric is that something quite weird happens at r=
 
 The Kerr metric is another solution to the Einstein field equations, which describes the same type of spacetime as the Schwarzschild metric, except that the Kerr metric allows for the central mass to be **rotating**. So, the Kerr metric is a more general metric for describing planets, stars and black holes.
 
-The line element for this metric can be written in so-called **Boyer-Lindquist coordinates** (a form of spherical coordinates with the coordinates ct, r, $θ$ and $φ$) as:
+The line element for this metric can be written in so-called **Boyer-Lindquist coordinates** (a form of spherical coordinates with the coordinates ct, r, θ and φ) as:
 
 $$ds^2=-\left(1-\frac{r_sr}{\Sigma}\right)c^2dt^2-\frac{2r_sra\sin^2\theta}{\Sigma}cdtd\varphi+\frac{\Sigma}{\Delta}dr^2+\Sigma d\theta^2+\left(\mu+\frac{r_sra^2\sin^2\theta}{\Sigma}\right)\sin^2\theta d\varphi^2$$
 
-A noteworthy point about this metric is the *cross-term* between the time-coordinate ct and the angular coordinate $φ$; this is due to the fact that a rotating mass causes a so-called *frame dragging* effect in the spacetime around it. This, on the other hand, causes an additional time dilation effect, which can be seen from this coupling term between the angular displacement, d$φ$ and the “displacement in time, dt”. I actually discuss frame dragging and its effects on time dilation in [this article](https://profoundphysics.com/why-time-slows-down-near-a-black-hole/).
+A noteworthy point about this metric is the *cross-term* between the time-coordinate ct and the angular coordinate φ; this is due to the fact that a rotating mass causes a so-called *frame dragging* effect in the spacetime around it. This, on the other hand, causes an additional time dilation effect, which can be seen from this coupling term between the angular displacement, dφ and the “displacement in time, dt”. I actually discuss frame dragging and its effects on time dilation in [this article](https://profoundphysics.com/why-time-slows-down-near-a-black-hole/).
 
 The various parameters you see here are length scales of the Kerr spacetime (they all have units of length) defined by (with rs being the usual Schwarzschild radius 2GM/c2):
 
@@ -686,7 +686,7 @@ The metric components can be represented in matrix form as:
 
 $$g_{\mu\nu}=\begin{pmatrix}-\left(1-\frac{r_sr}{\Sigma}\right)&0&0&-\frac{r_sra\sin^2\theta}{\Sigma}\\0&\frac{\Sigma}{\Delta}&0&0\\0&0&\Sigma&0\\-\frac{r_sra\sin^2\theta}{\Sigma}&0&0&\left(\mu+\frac{r_sra^2\sin^2\theta}{\Sigma}\right)\sin^2\theta\end{pmatrix}$$
 
-Note that the metric is not diagonal in this case, since it has the t,$φ$ cross-terms, which reflect the frame dragging effect.
+Note that the metric is not diagonal in this case, since it has the t,φ cross-terms, which reflect the frame dragging effect.
 
 Notice that the Kerr metric reduces to the Schwarzschild metric in the case that a=0 – the black hole is fully stationary. Therefore, the Kerr metric is a generalization of the Schwarzschild metric.
 
@@ -694,7 +694,7 @@ Notice that the Kerr metric reduces to the Schwarzschild metric in the case that
 
 The Reissner-Nordström metric is another solution to the Einstein field equations, belonging to the same “class” of metrics as the Schwarzschild and Kerr metrics (by “class”, I mean the different black hole type solutions of general relativity).
 
-This metric describes a spherically symmetric and electrically charged (but non-rotating) mass. The line element can be written using the coordinates ct, r, $θ$ and $φ$ as:
+This metric describes a spherically symmetric and electrically charged (but non-rotating) mass. The line element can be written using the coordinates ct, r, θ and φ as:
 
 $$ds^2=-\left(1-\frac{r_s}{r}+\frac{r_Q^2}{r^2}\right)c^2dt^2+\left(1-\frac{r_s}{r}+\frac{r_Q^2}{r^2}\right)^{-1}dr^2+r^2d\theta^2+r^2\sin^2\theta d\varphi^2$$
 
@@ -702,7 +702,7 @@ Here, rs is again the Schwarzschild radius and $r_Q^2$ is a parameter related to
 
 $$r_Q^2=\frac{Q^2G}{4\pi\varepsilon_0c^4}$$
 
-Here, $Q$ is the charge of this mass, G is the gravitational constant, $c$ is the speed of light and $\varepsilon_0$ is the vacuum permittivity (another constant).
+Here, Q is the charge of this mass, G is the gravitational constant, c is the speed of light and ε0 is the vacuum permittivity (another constant).
 
 The metric components are:
 
@@ -714,17 +714,17 @@ Notice that this reduces to the Schwarzschild metric again when Q=0.
 
 The weak-field metric is a solution of general relativity in the limit that gravity is not “too strong” (more formally, that the metric only deviates slightly from the flat spacetime Minkowski metric; by slightly, I mean that the deviations only count to *linear order*).
 
-Another important aspect of this limit is we also assume that velocities are relatively small (this means that the ratio v/c can be approximated as zero and dt/d$τ$$≈$1).
+Another important aspect of this limit is we also assume that velocities are relatively small (this means that the ratio v/c can be approximated as zero and dt/dτ≈1).
 
 Anyway, the line element can be written in spherical coordinates as (you may also see it written in Cartesian coordinates):
 
 $$ds^2=-\left(1+\frac{2\Phi}{c^2}\right)c^2dt^2+\left(1-\frac{2\Phi}{c^2}\right)dr^2+\left(1-\frac{2\Phi}{c^2}\right)r^2d\theta^2+\left(1-\frac{2\Phi}{c^2}\right)r^2\sin^2\theta d\varphi^2$$
 
-Here, $Φ$ is the Newtonian gravitational potential, given by $\Phi=-\frac{GM}{r}$. The metric can also be written in the matrix form:
+Here, Φ is the Newtonian gravitational potential, given by $\Phi=-\frac{GM}{r}$. The metric can also be written in the matrix form:
 
 $$g_{\mu\nu}=\begin{pmatrix}-\left(1+\frac{2\Phi}{c^2}\right)&0&0&0\\0&1-\frac{2\Phi}{c^2}&0&0\\0&0&\left(1-\frac{2\Phi}{c^2}\right)r^2&0\\0&0&0&\left(1-\frac{2\Phi}{c^2}\right)r^2\sin^2\theta\end{pmatrix}$$
 
-Notice that in the case of $Φ$=0, this reduces to the standard flat spacetime metric for spherical coordinates. Therefore, with the assumption that $Φ$ is relatively small, this describes a “small deviation” from the flat spacetime metric.
+Notice that in the case of Φ=0, this reduces to the standard flat spacetime metric for spherical coordinates. Therefore, with the assumption that Φ is relatively small, this describes a “small deviation” from the flat spacetime metric.
 
 In fact, you’ll sometimes find this metric also written in the form $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$, where $\eta_{\mu\nu}$ is the Minkowski metric describing the flat spacetime of special relativity and $h_{\mu\nu}$ represents the weak-field corrections:
 
@@ -740,11 +740,11 @@ This metric can, for example, describe our universe on a large scale, and it is 
 
 I discuss the FRW metric, its associated Friedmann equations and their predictions more in [this article](https://profoundphysics.com/the-friedmann-equations-explained-a-complete-guide/), in case you’re interested.
 
-The line element for the FRW metric using the coordinates ct, r, $θ$ and $φ$ is:
+The line element for the FRW metric using the coordinates ct, r, θ and φ is:
 
 $$ds^2=-c^2dt^2+\frac{a^2\left(t\right)}{1-kr^2}dr^2+a^2\left(t\right)r^2d\theta^2+a^2\left(t\right)r^2\sin^2\theta d\phi^2$$
 
-Here, $k$ is a curvature parameter that can take on the values -1, 0 or 1, depending on the geometry of the spacetime (to describe a flat universe, k=0, for example). The a(t)-parameter is called the scale factor and it is a function of time that holds information about the expansion of the universe (or whatever space this metric happens to be describing).
+Here, k is a curvature parameter that can take on the values -1, 0 or 1, depending on the geometry of the spacetime (to describe a flat universe, k=0, for example). The a(t)-parameter is called the scale factor and it is a function of time that holds information about the expansion of the universe (or whatever space this metric happens to be describing).
 
 This metric has the matrix form:
 

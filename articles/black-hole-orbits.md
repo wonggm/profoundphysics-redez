@@ -71,11 +71,11 @@ Anyway, these types of orbits (which trace out curves that are conic sections) a
 
 The circular and elliptical orbits are both *bound orbits*, which means that the orbiting object returns to its starting point after a full period. The parabolic and hyperbolic orbits, on the other hand, are *unbound orbits*, meaning that the trajectory of the object only gets deflected before escaping from the gravitational pull of the central mass.
 
-All Kepler orbits are described by an equation known as the **orbit equation**, which gives the radius r (distance to the central mass) as a function of the angular position of the particle in orbit ($φ$):
+All Kepler orbits are described by an equation known as the **orbit equation**, which gives the radius r (distance to the central mass) as a function of the angular position of the particle in orbit (φ):
 
 ![r\left(\varphi\right)=\frac{p}{1+e\cos\varphi}](assets/images/black-hole-orbits/img_4.svg)
 
-Here, $p$ is a length parameter called the semi-latus rectum (essentially just a constant with dimensions of length) and $e$ is the eccentricity (a dimensionless constant, which in a sense, describes how much a conic section differs from being a circle which would have e=0).
+Here, p is a length parameter called the semi-latus rectum (essentially just a constant with dimensions of length) and e is the eccentricity (a dimensionless constant, which in a sense, describes how much a conic section differs from being a circle which would have e=0).
 
 The orbit equation essentially gives the *shape* of the orbit traced out by a particle orbiting around a central mass.
 
@@ -234,7 +234,7 @@ Mathematically, the IBCO and ISCO are given by (rs here is the Schwarzschild rad
 
 There are a few noteworthy points about the above values:
 
-- **The ISCO is the limit beyond which there does not exist any stable circular orbits**. So, it is possible to have stable circular orbits at r $≥$ rISCO.
+- **The ISCO is the limit beyond which there does not exist any stable circular orbits**. So, it is possible to have stable circular orbits at r ≥ rISCO.
 - **The IBCO is the limit beyond which there does not exist any circular orbits anymore, not even unstable ones**. So, a particle orbiting at a radius less than rIBCO will inevitably fall to the event horizon and into the black hole (unless using powerful rockets or something).
 - This is because **beyond the IBCO, a circular orbit would require an orbital velocity greater than the speed of light**, which is not possible.
 - **The IBCO is, in fact, the point at which orbiting is only possible at exactly the speed of light**. Therefore, no massive particle can have an orbit at the IBCO, only light can. This is why it is sometimes called the **photon sphere**.
@@ -340,9 +340,9 @@ In this system, **each orbit is characterized by three numbers**, (z,w,v). These
 
 Okay, what do these numbers mean exactly? Here’s a little summary of how this classification system works:
 
-- **The integer $z$ stands for the number of zooms or leaves in the orbit**; this is the number of “large loops” the orbiting particle traces out before returning back to its starting position at the apastron (largest distance from the black hole).
+- **The integer z stands for the number of zooms or leaves in the orbit**; this is the number of “large loops” the orbiting particle traces out before returning back to its starting position at the apastron (largest distance from the black hole).
 - **The integer w stands for the number of whirls in the orbit**; this is the number of “small loops” the orbiting particle traces out around the black hole before returning to the apastron.
-- **The integer $v$ stands for the sequence of vertices in the orbit**; this describes the order in which the orbiting particle moves from one vertex (= zoom or leaf) to another. In particular, v gives the next vertex the particle will move to from its starting vertex.
+- **The integer v stands for the sequence of vertices in the orbit**; this describes the order in which the orbiting particle moves from one vertex (= zoom or leaf) to another. In particular, v gives the next vertex the particle will move to from its starting vertex.
 
 Let’s look at an example of exactly how this works. Down below we have a (3,1,1) -orbit. This means that the orbit has a z-value of 3, a w-value of 1 and a v-value of 1.
 
@@ -494,7 +494,7 @@ This can be seen from the fact that there is some additional terms in the effect
 
 ![](assets/images/black-hole-orbits/img_66.webp) 
 
-Here, $M$ is the mass of the black hole and Q is its charge, L is the angular momentum of the orbiting particle and $ε$ is a parameter that is 1 for massive particles and 0 for massless particles (light or photons). I’ve also cleaned up some of these terms by setting the constants c=G=1 and ignoring the mass of the orbiting particle (which plays no role in the shape of the orbits or the potential, since we’re considering the black hole to be stationary and not effected by the gravity of the orbiting particle).
+Here, M is the mass of the black hole and Q is its charge, L is the angular momentum of the orbiting particle and ε is a parameter that is 1 for massive particles and 0 for massless particles (light or photons). I’ve also cleaned up some of these terms by setting the constants c=G=1 and ignoring the mass of the orbiting particle (which plays no role in the shape of the orbits or the potential, since we’re considering the black hole to be stationary and not effected by the gravity of the orbiting particle).
 
 These additional terms in the effective potential contribute specifically to the **repulsive parts of the gravitational force** that an orbiting particle would experience (terms with a plus-sign in the effective potential make up the repulsive forces, so in this case, the 1/r2 and 1/r4 terms).
 
@@ -566,7 +566,7 @@ In fact, around a rotating Kerr black hole, orbits of particles can have **fully
 
 There is, however, a special case of orbits that are much simpler to analyze; **equatorial orbits**. These are actually quite similar to the orbits we’ve already talked about, so we’ll look at these first.
 
-**Equatorial orbits are essentially orbits that lie in the equatorial plane**, which is characterized by the angle $θ$ = $π$/2 as measured relative to the z-axis (see picture below!).
+**Equatorial orbits are essentially orbits that lie in the equatorial plane**, which is characterized by the angle θ = π/2 as measured relative to the z-axis (see picture below!).
 
 However, a more intuitive picture for our case is that equatorial orbits are simple orbits that “rotate” in the same direction (or in the exactly opposite direction) as the black hole’s spin. The point is that these orbits lie in a single plane, which makes them qualitatively quite similar to the orbits we’ve talked about prevously.
 
@@ -606,7 +606,7 @@ For some reference, below is a table of the radii of different circular orbit li
 | ISCO | r = GM/c2 | r = 9GM/c2 |
 | IBCO (also the only circular orbit for light) | r = GM/c2 | r = 4GM/c2 |
 
-Here, G and c are constants (gravitational constant and speed of light) and $M$ is the mass of the black hole. A noteworthy point about the values above is that the ISCO and IBCO are located at the same radius for a prograde orbit, which also happens to be at the event horizon of the rotating black hole (which is at r = GM/c2). As a reminder, the event horizon of a non-rotating black hole is at r = 2GM/c2, while the ISCO and IBCO are at 6GM/c2 and 3GM/c2.
+Here, G and c are constants (gravitational constant and speed of light) and M is the mass of the black hole. A noteworthy point about the values above is that the ISCO and IBCO are located at the same radius for a prograde orbit, which also happens to be at the event horizon of the rotating black hole (which is at r = GM/c2). As a reminder, the event horizon of a non-rotating black hole is at r = 2GM/c2, while the ISCO and IBCO are at 6GM/c2 and 3GM/c2.
 
 Other types of possible orbits **in the equatorial plane** are very much similar to the case of a non-rotating black hole (the possible orbit types are precessing ellipses, zoom-whirl orbits etc.). This is because the effective potential (again, only in the equatorial plane) is similar to the Schwarzschild case (an inverse cubic polynomial of r):
 
@@ -636,13 +636,13 @@ This practically has the effect of ***rotating the orbital plane*** (see the pic
 
 We now have have a situation where the particle’s orbital motion is completely 3-dimensional; its orbital motion is basically 2-dimensional in a plane, **but the orbital plane itself is rotating in another direction**. The particle has fully 3D orbital dynamics!
 
-Now, the theme of this article has been to analyze orbital motion by using the effective potential. The problem with this approach in the Kerr spacetime is that the **effective potential actually depends on two coordinates, r and $θ$** (i.e. the radial distance as well as the angle of the orbital plane).
+Now, the theme of this article has been to analyze orbital motion by using the effective potential. The problem with this approach in the Kerr spacetime is that the **effective potential actually depends on two coordinates, r and θ** (i.e. the radial distance as well as the angle of the orbital plane).
 
 The effective potential also has a fairly ugly looking and complicated form:
 
 ![V_{eff}\left(r{,}\theta\right)\sim\frac{1-r+r^2}{r^2+\cos^2\theta}+\frac{r-r^2+r^3}{\left(r^2+\cos^2\theta\right)^2}-\frac{\left(r^2-r^3+r^4\right)\sin^2\theta}{\left(r^2+\cos^2\theta\right)\left(\left(r^2-r+\cos^2\theta\right)\left(1+r^2\right)^2+\left(\left(1+r^2\right)\left(r-r^2\right)+r^3-\left(1-r+r^2\right)\cos^2\theta\right)\sin^2\theta\right)}-\frac{1}{2}\frac{\frac{r^2-r^3+r^4}{r^2+\cos^2\theta}-\frac{r^3-r^4+r^5}{\left(r^2+\cos^2\theta\right)^2}-\left(1-r+r^2\right)\left(\frac{r^4+r^2}{\sin^2\theta}+\left(1+r^2\right)\cot^2\theta+r\right)\left(r\sin^2\theta+r^2-r+\cos^2\theta\right)^2}{\left(\left(r^2-r+\cos^2\theta\right)\left(1+r^2\right)^2+\left(1+r^2\right)\left(r-r^2\right)\sin^2\theta+r^3\sin^2\theta-\left(1-r+r^2\right)\cos^2\theta\sin^2\theta\right)^2}](assets/images/black-hole-orbits/img_86.svg)
 
-Note; this is only a schematic form of Veff (meaning that I’ve set all constants and parameters equal to 1) to give you a rough idea of how complicated the r- and $θ$-dependence would be.
+Note; this is only a schematic form of Veff (meaning that I’ve set all constants and parameters equal to 1) to give you a rough idea of how complicated the r- and θ-dependence would be.
 
 Most often we’d like to construct an effective potential that only depends on one variable, such as r, as this allows us to easily analyze, for example, circular orbits and their stability.
 
@@ -652,13 +652,13 @@ While this may not be very useful for visualizing the possible orbits like we’
 
 The key thing about this is to remember that **potentials are closely related to forces**.
 
-In particular, since the effective potential depends on both the r and $θ$ coordinates, this suggests that the “effective force” causing this potential should consist of two parts; a **radial force** (related to the r-coordinate) as well as a **force related to the coordinate $θ$**.
+In particular, since the effective potential depends on both the r and θ coordinates, this suggests that the “effective force” causing this potential should consist of two parts; a **radial force** (related to the r-coordinate) as well as a **force related to the coordinate θ**.
 
-Mathematically, these forces would be given by the gradients of the effective potential with respect to the coordinates, in other words, $∂$Veff/$∂$$θ$ and $∂$Veff/$∂$r. The exact form of these forces is not really important for us, however.
+Mathematically, these forces would be given by the gradients of the effective potential with respect to the coordinates, in other words, ∂Veff/∂θ and ∂Veff/∂r. The exact form of these forces is not really important for us, however.
 
 Now, the radial forces we are more or less familiar with; these are simply the “usual” **gravitational forces that allow a particle to maintain an orbit**.
 
-The interesting things are these new forces related to the angle of the orbital plane, $θ$. In fact, this “force” is simply the **effect of frame dragging that causes the orbital plane to rotate**, i.e. causes the $θ$-coordinate to change.
+The interesting things are these new forces related to the angle of the orbital plane, θ. In fact, this “force” is simply the **effect of frame dragging that causes the orbital plane to rotate**, i.e. causes the θ-coordinate to change.
 
 This force is just a result of the fact that **the particle’s orbit is not exactly aligned with the black hole’s axis of symmetry**. This then causes frame dragging effects to take place in a way that the particle is “dragged” around the black hole in all sorts of complicated (and 3-dimensional) ways.
 

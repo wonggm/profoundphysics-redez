@@ -25,9 +25,9 @@ In this article, we’ll unpack exactly what each version of the Schrödinger eq
 | --- |
 | **The time-dependent Schrödinger equation** (TDSE) is the fundamental equation governing the physics of non-relativistic quantum systems, and plays a role similar to Newton’s second law in classical mechanics. |
 | **The time-independent Schrödinger equation** (TISE), on the other hand, is only a part of the full (time-dependent) Schrödinger equation and applies specifically to *stationary states*. |
-| The time-independent Schrödinger equation is obtained by splitting the full TDSE into two separate equations for the wavefunction: one for the *spatial dependence* – the TISE – and another for the *temporal dependence*. Solutions obtained this way are called **separable solutions** and are of the form $Ψ$(x,t) = $ψ$(x)T(t). |
+| The time-independent Schrödinger equation is obtained by splitting the full TDSE into two separate equations for the wavefunction: one for the *spatial dependence* – the TISE – and another for the *temporal dependence*. Solutions obtained this way are called **separable solutions** and are of the form Ψ(x,t) = ψ(x)T(t). |
 | The temporal part can be solved exactly (irrespective of the potential) as $T(t)=\exp(\frac{iEt}{\hbar})$. The spatial part, on the other hand, cannot be solved further without explicitly knowing the potential.  Physically, separable solutions correspond to **states of definite energy** and their probability density $|\Psi(x,t)|^2=|\psi(x)|^2$ is time-independent. Hence, they are also called **stationary states**. |
-| **The general solution** to the full, time-*dependent* Schrödinger equation can be written in terms of separable solutions obtained from the time-*independent* Schrödinger equation. Even though separable solutions form a very small subset of *all* the possible solutions, *any solution* can be written as a weighted sum of such solutions {$Ψ$n(x, t)}, a property called *completeness*:  $$\Psi(x,t)=\sum_n c_n\Psi_n(x,t),$$  with coefficients $c_n,\ \sum_n|c_n|^2=1$ determined by the initial wavefunction. |
+| **The general solution** to the full, time-*dependent* Schrödinger equation can be written in terms of separable solutions obtained from the time-*independent* Schrödinger equation. Even though separable solutions form a very small subset of *all* the possible solutions, *any solution* can be written as a weighted sum of such solutions {Ψn(x, t)}, a property called *completeness*:  $$\Psi(x,t)=\sum_n c_n\Psi_n(x,t),$$  with coefficients $c_n,\ \sum_n|c_n|^2=1$ determined by the initial wavefunction. |
 
 ## What Is The Schrödinger Equation?
 
@@ -37,7 +37,7 @@ Similarly, for (non-relativistic) *quantum systems*, the equation that governs t
 
 $$i\hbar\frac{\partial\Psi(x,t)}{\partial t}=-\frac{\hbar^2}{2m}\frac{\partial^2\Psi(x,t)}{\partial x^2}+V(x,t)\Psi(x,t)$$
 
-*Here, V(x,t) is the potential of the particle (or system) and $Ψ$(x,t) its ”state”. Observable properties of the particle such as position, velocity, momentum and so on can be extracted from $Ψ$(x,t) by various methods. Note also that this is the equation of motion for just a 1D system, but it can be easily generalized to higher dimensions.*
+*Here, V(x,t) is the potential of the particle (or system) and Ψ(x,t) its ”state”. Observable properties of the particle such as position, velocity, momentum and so on can be extracted from Ψ(x,t) by various methods. Note also that this is the equation of motion for just a 1D system, but it can be easily generalized to higher dimensions.*
 
 That’s it! The time-dependent Schrödinger equation is the fundamental equation of motion that governs the (non-relativistic) quantum world, and it is, in fact, the ONLY equation you *really* need for describing any quantum system.
 
@@ -78,7 +78,7 @@ Okay, let’s see how this works. We’ll begin with the one-dimensional time-de
   
 $$i\hbar\frac{\partial\Psi(x,t)}{\partial t}=-\frac{\hbar^2}{2m}\frac{\partial^2\Psi(x,t)}{\partial x^2}+V(x)\Psi(x,t)$$
 
-This form of the Schrödinger equation is separable if we make an assumption about the form of $Ψ$(x,t) – we assume that it can be written as a product of two functions, which are themselves only a function of x and t, respectively. That is, $\Psi(x,t)=\psi(x)T(t)$.
+This form of the Schrödinger equation is separable if we make an assumption about the form of Ψ(x,t) – we assume that it can be written as a product of two functions, which are themselves only a function of x and t, respectively. That is, $\Psi(x,t)=\psi(x)T(t)$.
 
 At this point, this might seem like an ad-hoc assumption. One might think, and rightly  
 so, that imposing such a condition would get rid of basically 99% of the solutions. But, bare with me for a while: we’ll see later that this assumption is actually not so terrible and turns out quite reasonable in the end.
@@ -87,7 +87,7 @@ Now, even though the above assumption might seem like it came out of nowhere at 
 
 $$i\hbar\frac{\partial(\psi(x)T(t))}{\partial t}=-\frac{\hbar^2}{2m}\frac{\partial^2(\psi(x)T(t))}{\partial x^2}+V(x)\psi(x)T(t)\\\Rightarrow i\hbar\psi(x)\frac{dT(t)}{dt}=-\frac{\hbar^2}{2m}T(t)\frac{d^2\psi(x)}{dx^2}+V(x)\psi(x)T(t)$$
 
-What we’ve done here is changed the partial differentials ($\partial$) to *exact* differentials ($d$) in the second line since the functions depend on just one variable. Now, dividing both sides by $ψ$(x)T(t) (assuming neither factor is zero everywhere), we get:
+What we’ve done here is changed the partial differentials ($\partial$) to *exact* differentials ($d$) in the second line since the functions depend on just one variable. Now, dividing both sides by ψ(x)T(t) (assuming neither factor is zero everywhere), we get:
 
 $$i\hbar\frac{1}{T(t)}\frac{dT(t)}{dt}=-\frac{\hbar^2}{2m}\frac{1}{\psi(x)}\frac{d^2\psi(x)}{dx^2}+V(x)$$
 
@@ -104,7 +104,7 @@ Let’s look at the two equations we found in more detail, beginning with the te
 
 $$i\hbar\frac{dT(t)}{dt}=ET(t)\ \Rightarrow\ T(t)=T(0)e^{-iEt/\hbar}$$
 
-*Here, T(0) is an integration constant, which can be absorbed into the overall normalization of $Ψ$(x,t) without loss of generality.*
+*Here, T(0) is an integration constant, which can be absorbed into the overall normalization of Ψ(x,t) without loss of generality.*
 
 With this, we’ve just solved the full time-dependence of ***any* separable wavefunction**! Notably, the time evolution is entirely determined by the **energy E**: roughly put, the larger the energy, the faster the wavefunction *oscillates* in time.
 
@@ -124,7 +124,7 @@ $$\hat{H}\psi=E\psi$$
 
 The operator H is called the **Hamiltonian**, which, if you’ve studied quantum mechanics even a little bit before, you’re probably familiar with. For any system with potential V(x), we can specify its Hamiltonian, which turns out to describe the total energy of the system.
 
-Equations of the form above (H$ψ$ = E$ψ$) define something called an *eigenvalue problem*. The idea is that we can find the energies of the system (E) by solving such an eigenvalue problem for a given potential V(x).
+Equations of the form above (Hψ = Eψ) define something called an *eigenvalue problem*. The idea is that we can find the energies of the system (E) by solving such an eigenvalue problem for a given potential V(x).
 
 **Sidenote**: If you want to learn *why* the **Hamiltonian describes energy**, you might want to read up on **Hamiltonian mechanics**. I have a beginner-friendly introduction to the topic **[found here](https://profoundphysics.com/hamiltonian-mechanics-for-dummies/)**.  
   
@@ -140,7 +140,7 @@ However, solving even the time-*independent* Schrödinger equation is usually no
 
 ### Separable Solutions
 
-Assuming we can find some solution, let’s call it $ψ$(x), to the **time-independent** Schrödinger equation, then the full wavefunction – the solution to the full **time-dependent** Schrödinger equation – takes the form:
+Assuming we can find some solution, let’s call it ψ(x), to the **time-independent** Schrödinger equation, then the full wavefunction – the solution to the full **time-dependent** Schrödinger equation – takes the form:
 
 $$\Psi(x,t)=\psi(x)e^{-iEt/\hbar}$$
 
@@ -150,15 +150,15 @@ The answer is a bit ”mathematical”, but we’ll try to go slow. Take a deep 
 
 ### What Is The Use of Separable Solutions?
 
-So, say we’ve solved the TISE to get a separable solution $Ψ$(x,t) to the TDSE. What is the meaning of such solutions? **Separable solutions to the time-dependent Schrödinger equation can be interpreted as solutions with a fixed energy E**.
+So, say we’ve solved the TISE to get a separable solution Ψ(x,t) to the TDSE. What is the meaning of such solutions? **Separable solutions to the time-dependent Schrödinger equation can be interpreted as solutions with a fixed energy E**.
 
-So, anytime we find a solution $Ψ$(x,t) = $ψ$(x)e-iEt/$ℏ$ (where $ψ$(x) satisfies H$ψ$ = E$ψ$) we can interpret it as describing a quantum state with a specific energy E. Such solutions are very special because *not all* quantum states have a specific, fixed energy.
+So, anytime we find a solution Ψ(x,t) = ψ(x)e-iEt/ℏ (where ψ(x) satisfies Hψ = Eψ) we can interpret it as describing a quantum state with a specific energy E. Such solutions are very special because *not all* quantum states have a specific, fixed energy.
 
 States with a fixed energy are also called **stationary states**. The name comes from the feature that the probability density doesn’t depend on time at all for such states (i.e. it’s stationary in time):
 
 $$|\Psi(x,t)|^2=|\psi(x)e^{-iEt/\hbar}|^2=|\psi(x)|^2\underbrace{|e^{-iEt/\hbar}|^2}_{=1}=|\psi(x)|^2$$
 
-Therefore, the normalization of the wavefunction also boils down to a condition on only $ψ$(x):
+Therefore, the normalization of the wavefunction also boils down to a condition on only ψ(x):
 
 $$\int_{-\infty}^{\infty}|\psi(x)|^2dx=1$$
 
@@ -166,11 +166,11 @@ Okay, hopefully it’s now clear why the separable solutions found via the time-
 
 ### Completeness of Solutions
 
-The set of all solutions of the form $Ψ$(x,t) = $ψ$(x)e-iEt/$ℏ$ are said to form something called a **complete set of solutions**.
+The set of all solutions of the form Ψ(x,t) = ψ(x)e-iEt/ℏ are said to form something called a **complete set of solutions**.
 
-The word *complete* has a very strict meaning in the language of algebra, but for our purpose, a set of solutions {$Ψ$n} is said to be complete when *any* solution to the time-dependent Schrödinger equation can be written as a **weighted sum** (= linear combination) of the $Ψ$n’s.
+The word *complete* has a very strict meaning in the language of algebra, but for our purpose, a set of solutions {Ψn} is said to be complete when *any* solution to the time-dependent Schrödinger equation can be written as a **weighted sum** (= linear combination) of the Ψn’s.
 
-Can you see the importance of this? It means that any solution $ψ$ to the full time-dependent Schrödinger equation (with some caveats) can be written in the form $Ψ$ = $α$1$Ψ$1 + $α$2$Ψ$2 +…, or:
+Can you see the importance of this? It means that any solution ψ to the full time-dependent Schrödinger equation (with some caveats) can be written in the form Ψ = α1Ψ1 + α2Ψ2 +…, or:
 
 $$\Psi(x,t)=\sum_n\alpha_n\psi_n(x)e^{-iE_nt/\hbar}$$
 
@@ -180,12 +180,12 @@ So, the separable solutions obtained via the TISE are very important: using them
 
 We can put the ideas discussed in this article into a simple step-by-step framework for obtaining *any* solution to the Schrödinger equation:
 
-1. First assume the wavefunction is **separable**, so of the form $Ψ$(x,t) = $ψ$(x)e-iEt/$ℏ$.
-2. Solve the time-independent Schrödinger equation for the energy eigenfunctions $ψ$(x) and energy eigenvalues E:
+1. First assume the wavefunction is **separable**, so of the form Ψ(x,t) = ψ(x)e-iEt/ℏ.
+2. Solve the time-independent Schrödinger equation for the energy eigenfunctions ψ(x) and energy eigenvalues E:
 
 $$-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2}+V(x)\psi(x)=E\psi(x)\ \Rightarrow\ \psi_n(x),E_n=\ ?$$
 
-3. Once you have the wavefunctions $ψ$n(x) and energies En, the general solution has the form $\Psi(x,t)=\sum_n\alpha_n\psi_n(x)e^{-iE_nt/\hbar}$, where $α$n are obtained from the initial conditions.
+3. Once you have the wavefunctions ψn(x) and energies En, the general solution has the form $\Psi(x,t)=\sum_n\alpha_n\psi_n(x)e^{-iE_nt/\hbar}$, where αn are obtained from the initial conditions.
 
 With this, we can obtain essentially any solution to the full time-dependent Schrödinger equation, *even if* the full solution itself is not of a separable form.
 
@@ -197,7 +197,7 @@ We’ve talked a lot of theory so far, so let’s look at a simple, but practica
 
 Yes, I know, this is the typical first example you’ll see in any quantum mechanics textbook, however, our goal is to look at it from the perspective of 1) going from the full TDSE to 2) solving the “simpler” TISE, and finally back to 3) obtaining the full solution to the TDSE. Thus, this works as a great example to illustrate the key points from this article.
 
-Okay, let’s get started. We’ll consider a particle of mass m confined to an infinite potential well of width a, with potential V(x) = 0 inside the well (0<x<a) and V(x) = $∞$ outside. In practice, an “infinite” potential just means the particle can physically never be found outside the well.
+Okay, let’s get started. We’ll consider a particle of mass m confined to an infinite potential well of width a, with potential V(x) = 0 inside the well (0<x<a) and V(x) = ∞ outside. In practice, an “infinite” potential just means the particle can physically never be found outside the well.
 
 ![](assets/images/time-dependent-vs-time-independent-schrodinger-equation-what-is-the-difference/img_2.webp)
 
@@ -211,7 +211,7 @@ This is a very standard ordinary differential equation (ODE), which has a genera
 
 $$\psi(x)=A\sin(kx)+B\cos(kx)$$
 
-So, we’ve solved the *time-independent* Schrödinger equation for $ψ$(x). The next step is to apply boundary conditions (which is a part of solving the TISE) to find the energies and the coefficients A and B.
+So, we’ve solved the *time-independent* Schrödinger equation for ψ(x). The next step is to apply boundary conditions (which is a part of solving the TISE) to find the energies and the coefficients A and B.
 
 ### Boundary Conditions, Quantization & Normalization
 
@@ -219,10 +219,10 @@ Due to the potential being infinite outside the well, the wavefunction must go t
 
 $$\psi(0)=0\\\psi(a)=0$$
 
-Imposing these condition on the solution $ψ$(x) from above, we have:
+Imposing these condition on the solution ψ(x) from above, we have:
 
 - **At x = 0:** $\psi(0)=A\sin(0)+B\cos(0)=B=0$. Thus, $\psi(x)=A\sin(kx)$.
-- **At x = a:** $\psi(a)=A\sin(ka)=0$, and assuming A $≠$ 0, we require $ka=n\pi,n=1,2,3,...$ or $k_n=n\pi/a$.
+- **At x = a:** $\psi(a)=A\sin(ka)=0$, and assuming A ≠ 0, we require $ka=n\pi,n=1,2,3,...$ or $k_n=n\pi/a$.
 
 With these, we find the energies as $E_n=\frac{\hbar^2k_n^2}{2m}=\frac{\pi^2\hbar^2}{2ma^2}n^2$ and the spatial wavefunctions as $\psi_n(x)=A\sin(\frac{n\pi x}{a})$.
 
@@ -249,21 +249,21 @@ Here, we’ve plotted the wavefunctions corresponding to the first two energy le
 
 ### The Full Time-Dependent Solution
 
-Now that we’ve solved the TISE for the spatial part of our wavefunction, adding the time-dependence is simple: we just tag on the temporal wavefunction we’ve already solved, T(t) = e-iEt/$ℏ$.
+Now that we’ve solved the TISE for the spatial part of our wavefunction, adding the time-dependence is simple: we just tag on the temporal wavefunction we’ve already solved, T(t) = e-iEt/ℏ.
 
 The important part is that both the spatial and temporal solutions share the same energy E. This means the temporal function will also be quantized and have an index n denoting the possible energy level. With that, we have the full stationary state solutions $\Psi_n(x,t)=\psi_n(x)T_n(t)$:
 
 $$\Psi_n(x,t)=\sqrt{\frac{2}{a}}\sin(\frac{n\pi x}{a})e^{-\frac{iE_nt}{\hbar}}$$
 
-Okay, we’ve found the full stationary state solutions! Now, for a given n, the above $Ψ$n(x,t) represents *just one* (separable) solution. The **most general solution of the full time-dependent Schrödinger equation** would be a linear combination of *all* such solutions:
+Okay, we’ve found the full stationary state solutions! Now, for a given n, the above Ψn(x,t) represents *just one* (separable) solution. The **most general solution of the full time-dependent Schrödinger equation** would be a linear combination of *all* such solutions:
 
 $$\Psi(x,t)=\sum_{n)=1}^\infty c_n\Psi_n(x,t)=\sum_{n)=1}^\infty c_n\sqrt{\frac{2}{a}}\sin(\frac{n\pi x}{a})e^{-\frac{iE_nt}{\hbar}}$$
 
-Mathematically, the coefficients cn are determined by the initial wavefunction $Ψ$(x,0) as $c_n=\int_0^a\psi^\*_n(x)\Psi(x,0)dx$. And, since $Ψ$ is supposed to be normalized, we have the additional constraint $\sum_n|c_n|^2=1$.
+Mathematically, the coefficients cn are determined by the initial wavefunction Ψ(x,0) as $c_n=\int_0^a\psi^\*_n(x)\Psi(x,0)dx$. And, since Ψ is supposed to be normalized, we have the additional constraint $\sum_n|c_n|^2=1$.
 
-Below, you’ll find an **interactive plot** to play around with the general wavefunction shown above. You can specify the coefficients cn and see how the **probability |$Ψ$(x,t)|2** evolves *in both space and time* (the graph shows the *probability*, not the *complex* wavefunction itself). Clicking the *Play*-button next to the time slider shows an animation of how the probability evolves in time.
+Below, you’ll find an **interactive plot** to play around with the general wavefunction shown above. You can specify the coefficients cn and see how the **probability |Ψ(x,t)|2** evolves *in both space and time* (the graph shows the *probability*, not the *complex* wavefunction itself). Clicking the *Play*-button next to the time slider shows an animation of how the probability evolves in time.
 
-**Try yourself:** set the list of coefficients to c = [1,0,0,0,0,0,0,0] and c = [0,1,0,0,0,0,0,0], which correspond to the stationary states$ψ$1(x) and $ψ$2(x) (i.e. the ground state and the first excited state). If you now press *Play*, you’ll see that the probability doesn’t change with time, which illustrates the idea of a *stationary* state. How would the stationary state $ψ$3(x) look like?
+**Try yourself:** set the list of coefficients to c = [1,0,0,0,0,0,0,0] and c = [0,1,0,0,0,0,0,0], which correspond to the stationary statesψ1(x) and ψ2(x) (i.e. the ground state and the first excited state). If you now press *Play*, you’ll see that the probability doesn’t change with time, which illustrates the idea of a *stationary* state. How would the stationary state ψ3(x) look like?
 
 ### Key Takeaways From The Example
 
@@ -271,7 +271,7 @@ Below, you’ll find an **interactive plot** to play around with the general wav
 
 $$\frac{d^2\psi}{dx^2}+k^2\psi=0,\ k^2=2mE/\hbar^2$$
 
-- The boundary conditions $ψ$(0) = $ψ$(a) = 0 and normalization condition provide us a unique solution to the TISE, as well as quantized energy levels for the system: $E_n=n^2\pi^2\hbar^2/2ma^2$.
+- The boundary conditions ψ(0) = ψ(a) = 0 and normalization condition provide us a unique solution to the TISE, as well as quantized energy levels for the system: $E_n=n^2\pi^2\hbar^2/2ma^2$.
 - The full stationary state solutions for a given energy level n – which are solutions to the TDSE – then take the form:
 
 $$\Psi_n(x,t)=\sqrt{\frac{2}{a}}\sin(\frac{n\pi x}{a})e^{-iE_n t/\hbar}$$

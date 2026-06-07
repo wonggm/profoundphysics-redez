@@ -57,7 +57,7 @@ Now, these Riemannian manifolds also have an affine connection, and these affine
 
 There is also an additional requirement for the Levi-Civita connection to be “torsion-free”, which we’ll talk more about later.
 
-In a technical sense, the Levi-Civita connection refers to the **covariant derivative,** usually denoted by $∇$ (which is because it connects tangent spaces, as all affine connections do).
+In a technical sense, the Levi-Civita connection refers to the **covariant derivative,** usually denoted by ∇ (which is because it connects tangent spaces, as all affine connections do).
 
 Now, you may ask, what does all of this have to do with the Christoffel symbols (or connection coefficients)?
 
@@ -97,9 +97,9 @@ We can represent this more compactly as:
 
 $$\vec{V}=V^{\lambda}\vec{e}_{\lambda}$$
 
-Take note that whenever you see an index repeated in both the upstairs and downstairs position (like $λ$ here), it generally means a sum over that index. This is called *Einstein’s summation convention*.
+Take note that whenever you see an index repeated in both the upstairs and downstairs position (like λ here), it generally means a sum over that index. This is called *Einstein’s summation convention*.
 
-Now let’s take the derivative of this with respect to some coordinate $x^{$$μ$$}$ (if we account for the fact that the basis vectors may change from point to point, we have to actually use the product rule):
+Now let’s take the derivative of this with respect to some coordinate xµ (if we account for the fact that the basis vectors may change from point to point, we have to actually use the product rule):
 
 $$\frac{\partial\vec{V}}{\partial x^{\mu}}=\frac{\partial}{\partial x^{\mu}}\left(V^{\lambda}\vec{e}_{\lambda}\right)=\left(\frac{\partial}{\partial x^{\mu}}V^{\lambda}\right)\vec{e}_{\lambda}+V^{\lambda}\left(\frac{\partial}{\partial x^{\mu}}\vec{e}_{\lambda}\right)$$
 
@@ -115,17 +115,17 @@ With this, you can check that the expression above takes the form (with a little
 
 $$\frac{\partial\vec{V}}{\partial x^{\mu}}=\left(\partial_{\mu}V^{\lambda}+\Gamma_{\mu\alpha}^{\lambda}V^{\alpha}\right)\vec{e}_{\lambda}$$
 
-If you recognize it, the thing inside the parentheses is indeed the covariant derivative acting on the vector components ($∇$$μ$V$λ$).
+If you recognize it, the thing inside the parentheses is indeed the covariant derivative acting on the vector components (∇µVλ).
 
 Now, for our purposes, the more interesting thing is the definition we made above:
 
 $$\partial_{\mu}\vec{e}_{\lambda}=\Gamma_{\mu\lambda}^{\alpha}\vec{e}_{\alpha}$$
 
-We can “solve” for the Christoffel symbol here by multiplying both sides by e$α$:
+We can “solve” for the Christoffel symbol here by multiplying both sides by eα:
 
 $$\vec{e}^{\alpha}\cdot\partial_{\mu}\vec{e}_{\lambda}=\Gamma_{\mu\lambda}^{\alpha}\vec{e}_{\alpha}\cdot\vec{e}^{\alpha}\ \ \Rightarrow\ \ \Gamma_{\mu\lambda}^{\alpha}=\vec{e}^{\alpha}\cdot\partial_{\mu}\vec{e}_{\lambda}$$
 
-Here, I’ve used the fact that e$α$\*e$β$=$δ MATH0 β$ (this is the definition of a “dual basis”), which means that e$α$\*e$α$=1.
+Here, I’ve used the fact that eα\*eβ=δαβ (this is the definition of a “dual basis”), which means that eα\*eα=1.
 
 Now, let’s dissect what the Christoffel symbols really mean geometrically.
 
@@ -163,15 +163,15 @@ An easy way to see this is to write the definition of the Christoffel symbol in 
 
 $$\Gamma_{\mu\nu}^{\lambda}=\vec{e}^{\lambda}\cdot\partial_{\nu}\vec{e}_{\mu}\ \ \Rightarrow\ \ \partial_{\nu}\vec{e}_{\mu}=\Gamma_{\mu\nu}^{\lambda}\vec{e}_{\lambda}$$
 
-Here, I’ve simply multiplied by e$λ$ on both sides and used the definition that e$λ$e$λ$=1.
+Here, I’ve simply multiplied by eλ on both sides and used the definition that eλeλ=1.
 
-We’ll then sum over the index $λ$ here, since it’s a summation index (we’ll take it to run from 0 to 3 here, which is common in general relativity):
+We’ll then sum over the index λ here, since it’s a summation index (we’ll take it to run from 0 to 3 here, which is common in general relativity):
 
 $$\partial_{\nu}\vec{e}_{\mu}=\Gamma_{\mu\nu}^0\vec{e}_0+\Gamma_{\mu\nu}^1\vec{e}_1+\Gamma_{\mu\nu}^2\vec{e}_2+\Gamma_{\mu\nu}^3\vec{e}_3$$
 
 In general, any vector can be expressed as a *linear combination* of basis vectors and some *coefficients* (also known as vector components). This is what we have on the right-hand side.
 
-From this, we can clearly see that these Christoffel symbols indeed represent **different components of a vector** (namely, components of the vector $∂$$ν$e$μ$).
+From this, we can clearly see that these Christoffel symbols indeed represent **different components of a vector** (namely, components of the vector ∂νeµ).
 
 This also gives some insight into why they’re called *connection coefficients*, which is that they are coefficients (i.e. components) of these basis vectors for this derivative vector.
 
@@ -189,7 +189,7 @@ One of the key mathematical objects in differential geometry (and in general rel
 
 **The metric tensor, to put it simply, is used to define different geometric concepts in arbitrary coordinate systems or spaces** (such as length, volume, the dot product etc.). So, it is central for describing the geometry of, for example, a Riemannian manifold.
 
-The metric is typically denoted by a two-index tensor g$μ$$ν$ (in this article, I’m using mostly Greek indices since they are more common in general relativity).
+The metric is typically denoted by a two-index tensor gµν (in this article, I’m using mostly Greek indices since they are more common in general relativity).
 
 **Recommendation**: If you’re not familiar with the metric tensor, definitely check out my [full article](https://profoundphysics.com/metric-tensor-a-complete-guide-with-examples/) covering everything you need to know about it. You’ll learn about both the geometry behind the metric as well as its uses in general relativity.
 
@@ -215,7 +215,7 @@ $$\partial_{\alpha}\left(\vec{e}_{\mu}\cdot \vec{e}_{\nu}\right)=\vec{e}_{\nu}\c
 
 In the first step, I’ve used the product rule and in the second step, simply rearranges the terms.
 
-Let’s then insert the definition of the Christoffel symbol ($∂$$μ$e$ν$=e$λ MATH0 λ MATH1 ν$) into this equation to get:
+Let’s then insert the definition of the Christoffel symbol (∂µeν=eλΓλµν) into this equation to get:
 
 $$\vec{e}_{\mu}\cdot\vec{e}_{\lambda}\Gamma_{\alpha\nu}^{\lambda}\ =\partial_{\alpha}\left(\vec{e}_{\mu}\cdot\vec{e}_{\nu}\right)-\vec{e}_{\nu}\cdot\vec{e}_{\lambda}\Gamma_{\alpha\mu}^{\lambda}$$
 
@@ -235,7 +235,7 @@ Now we’ll add the first two equations together and subtract the third one (the
 
 $$\vec{e}_{\mu}\cdot\vec{e}_{\lambda}\Gamma_{\alpha\nu}^{\lambda}+\vec{e}_{\alpha}\cdot\vec{e}_{\lambda}\Gamma_{\nu\mu}^{\lambda}\ -\vec{e}_{\alpha}\cdot\vec{e}_{\lambda}\Gamma_{\mu\nu}^{\lambda}=\partial_{\alpha}\left(\vec{e}_{\mu}\cdot\vec{e}_{\nu}\right)-\vec{e}_{\nu}\cdot\vec{e}_{\lambda}\Gamma_{\alpha\mu}^{\lambda}+\partial_{\nu}\left(\vec{e}_{\alpha}\cdot\vec{e}_{\mu}\right)\\-\vec{e}_{\mu}\cdot\vec{e}_{\lambda}\Gamma_{\nu\alpha}^{\lambda}-\partial_{\mu}\left(\vec{e}_{\alpha}\cdot\vec{e}_{\nu}\right)+\vec{e}_{\nu}\cdot\vec{e}_{\lambda}\Gamma_{\mu\alpha}^{\lambda}$$
 
-We’ll now make use of the *torsion-free symmetry* of the Christoffel symbols (the two lower indices can be exchanged freely, meaning $Γ MATH0 μ MATH1 λ MATH2 μ$).
+We’ll now make use of the *torsion-free symmetry* of the Christoffel symbols (the two lower indices can be exchanged freely, meaning Γλµν=Γλνµ).
 
 This then means that the **second and third terms on the left-hand side cancel one another** (one has a plus sign and the other a minus sign). **On the right-hand side, the second and last terms will cancel one another**. After these simplifications, we’re left with:
 
@@ -245,7 +245,7 @@ Now we’ll move the Christoffel symbol term from the right-hand side to the lef
 
 $$2\vec{e}_{\mu}\cdot\vec{e}_{\lambda}\Gamma_{\alpha\nu}^{\lambda}=\partial_{\alpha}\left(\vec{e}_{\mu}\cdot\vec{e}_{\nu}\right)+\partial_{\nu}\left(\vec{e}_{\alpha}\cdot\vec{e}_{\mu}\right)-\partial_{\mu}\left(\vec{e}_{\alpha}\cdot\vec{e}_{\nu}\right)$$
 
-Let’s now divide by this factor of 2 and also multiply both sides by a factor of e$μ$\*e$ρ$. We then have:
+Let’s now divide by this factor of 2 and also multiply both sides by a factor of eµ\*eρ. We then have:
 
 $$\left(\vec{e}^{\mu}\cdot\vec{e}^{\rho}\right)\left(\vec{e}_{\mu}\cdot\vec{e}_{\lambda}\right)\Gamma_{\alpha\nu}^{\lambda}=\frac{1}{2}\vec{e}^{\mu}\cdot\vec{e}^{\rho}\left(\partial_{\alpha}\left(\vec{e}_{\mu}\cdot\vec{e}_{\nu}\right)+\partial_{\nu}\left(\vec{e}_{\alpha}\cdot\vec{e}_{\mu}\right)-\partial_{\mu}\left(\vec{e}_{\alpha}\cdot\vec{e}_{\nu}\right)\right)$$
 
@@ -261,7 +261,7 @@ Now, here we can see that each term on the right contains a dot product of two b
 
 $$g_{\mu\nu}=\vec{e}_{\mu}\cdot \vec{e}_{\nu}$$
 
-Also, the inverse metric is defined as g$μ$$ν$=e$μ$\*e$ν$.
+Also, the inverse metric is defined as gµν=eµ\*eν.
 
 Inserting this definition of the metric, we get the formula for the Christoffel symbols in terms of the metric:
 
@@ -379,11 +379,11 @@ You may also find my **[complete guide on learning general relativity on your ow
 
 ## How Do You Actually Read Christoffel Symbols? (A Visual Example)
 
-**The Christoffel symbols $\Gamma^{k}_{ij}$ can be read as follows; the two lower indices, i and j, describe the change in the i:th basis vector caused by a change in the j:th coordinate. The upper index k then gives the specific direction in which this change occurs in.**
+**The Christoffel symbols Γkij can be read as follows; the two lower indices, i and j, describe the change in the i:th basis vector caused by a change in the j:th coordinate. The upper index k then gives the specific direction in which this change occurs in.**
 
 A nice visual way to see how these Christoffel symbols can be interpreted is by considering the **Christoffel symbols in polar coordinates**.
 
-In a polar coordinate system, there are *two coordinate-axes*, r and $θ$ (r being the “radial” axis and $θ$ the “angular” axis) and every point can be labeled by an r-coordinate and a $θ$-coordinate. Both directions also have their corresponding basis vectors, which are always orthogonal but change direction from point to point.
+In a polar coordinate system, there are *two coordinate-axes*, r and θ (r being the “radial” axis and θ the “angular” axis) and every point can be labeled by an r-coordinate and a θ-coordinate. Both directions also have their corresponding basis vectors, which are always orthogonal but change direction from point to point.
 
 ![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_22.webp)
 
@@ -393,23 +393,23 @@ $$\Gamma_{r\theta}^{\theta}=\frac{1}{r}$$
 
 $$\Gamma_{r\theta}^r=0$$
 
-To interpret the meaning of these, let’s look at a small change in the $θ$-coordinate. Then, consider how the basis vector in the r-direction (er) changes due to the change in this $θ$-coordinate.
+To interpret the meaning of these, let’s look at a small change in the θ-coordinate. Then, consider how the basis vector in the r-direction (er) changes due to the change in this θ-coordinate.
 
-The Christoffel symbols essentially describe **how much of this change occurs in both the r- and the $θ$-directions** (i.e. they are the *components* of this derivative of a basis vector).
+The Christoffel symbols essentially describe **how much of this change occurs in both the r- and the θ-directions** (i.e. they are the *components* of this derivative of a basis vector).
 
 ![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_24.webp)
 
-Here, the red vector component $Γ$rr$θ$ is drawn as a “small arrow” even though it should be exactly zero – this is just for illustration purposes and to avoid making the picture cluttered.
+Here, the red vector component Γrrθ is drawn as a “small arrow” even though it should be exactly zero – this is just for illustration purposes and to avoid making the picture cluttered.
 
 Hopefully you can see the meaning of the Christoffel symbols from this example.
 
-Essentially, **the Christoffel symbol $Γ$rr$θ$=0 tells you that this er-basis vector does not change in the r-direction due to a change in the $θ$-coordinate**. This is what it means for this symbol to be zero.
+Essentially, **the Christoffel symbol Γrrθ=0 tells you that this er-basis vector does not change in the r-direction due to a change in the θ-coordinate**. This is what it means for this symbol to be zero.
 
-On the other hand, **$Γ$$θ$r$θ$=1/r tells you that the er-basis vector changes in the $θ$-direction (due to a change in the $θ$-coordinate) as inversely proportional to the radial distance from the origin** (the r-coordinate).
+On the other hand, **Γθrθ=1/r tells you that the er-basis vector changes in the θ-direction (due to a change in the θ-coordinate) as inversely proportional to the radial distance from the origin** (the r-coordinate).
 
-This makes sense intuitively as well; the further away you are from the origin (the greater r is), the smaller a change in the basis vector er will be for a given change in the $θ$-coordinate.
+This makes sense intuitively as well; the further away you are from the origin (the greater r is), the smaller a change in the basis vector er will be for a given change in the θ-coordinate.
 
-This can be seen from the fact that the “curvature” of the circles is smaller the further away you go, so for a given change in $θ$, the change in the er-vector won’t be as drastic for a larger r compared to a smaller r. That’s what this Christoffel symbol ($Γ$$θ$r$θ$=1/r) is essentially telling you.
+This can be seen from the fact that the “curvature” of the circles is smaller the further away you go, so for a given change in θ, the change in the er-vector won’t be as drastic for a larger r compared to a smaller r. That’s what this Christoffel symbol (Γθrθ=1/r) is essentially telling you.
 
 Now, the point of this example was to show you a nice visual interpretation of these Christoffel symbols.
 
@@ -419,7 +419,7 @@ In these cases, they are simply just used as **calculational tools** without too
 
 However, there is one case where the Christoffel symbols do have a nice and simple geometric interpretation, which is when one of them happens to be zero.
 
-**Generally, whenever a Christoffel symbol $\Gamma^{k}_{ij}$ is zero, it means that the i:th basis vector remains constant in the k:th direction with respect to a change in the j:th coordinate.**
+**Generally, whenever a Christoffel symbol Γkij is zero, it means that the i:th basis vector remains constant in the k:th direction with respect to a change in the j:th coordinate.**
 
 ## Are Christoffel Symbols Tensors?
 
@@ -433,7 +433,7 @@ This can be understood by essentially just looking at the transformation law for
 
 It is, first of all, worth stating what we really mean by a transformation here.
 
-Essentially, we’re just talking about **coordinate transformations**, which are simply a mathematical process that takes you from one set of spacetime coordinates ($x^{$$μ$$}$) to another set of spacetime coordinates (x̄$μ$).
+Essentially, we’re just talking about **coordinate transformations**, which are simply a mathematical process that takes you from one set of spacetime coordinates (xµ) to another set of spacetime coordinates (x̄µ).
 
 When applying these types of coordinate transformations on tensor, the rule is simple; you just **transform each tensor index** by a “transformation coefficient” which is the partial derivative of the new coordinates with respect to the old coordinates (or vice versa).
 
@@ -441,7 +441,7 @@ In particular, a **tensor with one upper and two lower indices** would transform
 
 ![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_26.webp) 
 
-It’s worth noting that a tensor itself is an object that is invariant under coordinate transformations. However, it’s components may change (I discuss this and its usefulness more in my [general relativity article](https://profoundphysics.com/general-relativity-for-dummies/)), which is what this transformation rule tells you; this rule allows you to calculate how the components of this tensor change as you go from the $x^{$$μ$$}$-coordinates to the x̄$μ$-coordinates.
+It’s worth noting that a tensor itself is an object that is invariant under coordinate transformations. However, it’s components may change (I discuss this and its usefulness more in my [general relativity article](https://profoundphysics.com/general-relativity-for-dummies/)), which is what this transformation rule tells you; this rule allows you to calculate how the components of this tensor change as you go from the xµ-coordinates to the x̄µ-coordinates.
 
 The above transformation property is actually often taken to be the ***definition of a tensor***. So, a tensor, in a simple sense, is just a **mathematical object that transforms under coordinate transformations according to the rule given above**.
 
@@ -465,7 +465,7 @@ We’ll also talk about the two different “versions” of the Christoffel symb
 
 ### Are Christoffel Symbols Symmetric (And Why)?
 
-**In short, Christoffel symbols are symmetric in the two lower indices, meaning that these indices can be interchanged freely ($Γ MATH0 μ MATH1 λ MATH2 μ$). This is due to the fact that Christoffel symbols are defined as connection coefficients for a torsion-free connection, which requires them to be symmetric.**
+**In short, Christoffel symbols are symmetric in the two lower indices, meaning that these indices can be interchanged freely (Γλµν=Γλνµ). This is due to the fact that Christoffel symbols are defined as connection coefficients for a torsion-free connection, which requires them to be symmetric.**
 
 To understand what the **torsion-free requirement** means, we need to understand what **torsion** itself means in the context of differential geometry.
 
@@ -527,9 +527,9 @@ $$\Gamma_{\mu\nu}^{\mu}=\frac{1}{2}g^{\mu\alpha}\left(\partial_{\mu}g_{\alpha\nu
 
 Here I’ve simply used the definition of the Christoffel symbol and set the upper and lower indices equal.
 
-Now we’ll take advantage of the fact that both the $α$- and $μ$ -indices here are *summation indices* (or sometimes called dummy indices). In other words, we can relabel them however we wish.
+Now we’ll take advantage of the fact that both the α- and µ -indices here are *summation indices* (or sometimes called dummy indices). In other words, we can relabel them however we wish.
 
-Here we’ll relabel the $μ$-index on the first term inside the parentheses to an $α$ and the $α$-index to a $μ$ (in other words, we’ve essentially just swapped the $μ$- and $α$ -indices, which is completely valid since they are both dummy indices).
+Here we’ll relabel the µ-index on the first term inside the parentheses to an α and the α-index to a µ (in other words, we’ve essentially just swapped the µ- and α -indices, which is completely valid since they are both dummy indices).
 
 Doing this, we get that the first and the third term are now the same (with opposite sign) and they cancel and we’re left with just the second term:
 
@@ -559,11 +559,11 @@ $$\frac{1}{\det M}\partial_{\nu}\det M=Tr\left(M^{-1}\partial_{\nu}M\right)$$
 
 Here comes the relevant part for the metric. If we think of the metric itself as a matrix (which it basically is, or more accurately, the “matrix elements”, which are denoted by the indices), we can apply this result directly to the metric.
 
-To do this, we’ll simply replace M by the metric g$α MATH0 μ$. Also, the determinant of the metric is denoted by |g|. We then have:
+To do this, we’ll simply replace M by the metric gαµ and its inverse will be the metric with upstairs indices, gαµ. Also, the determinant of the metric is denoted by |g|. We then have:
 
 $$\frac{1}{\left|g\right|}\partial_{\nu}\left|g\right|=g^{\alpha\mu}\partial_{\nu}g_{\alpha\mu}$$
 
-Here you may wonder what happened to the right-hand side. The answer is that the contraction of both of these indices $α$ and $μ$ IS already the trace of this quantity, since the trace of a matrix is defined by summing over all of the diagonal “components” or matrix elements, which is exactly what the index contraction here does (note that this only works since the metric is symmetric by definition). Therefore, no need to write the Tr() -thing explicitly.
+Here you may wonder what happened to the right-hand side. The answer is that the contraction of both of these indices α and µ IS already the trace of this quantity, since the trace of a matrix is defined by summing over all of the diagonal “components” or matrix elements, which is exactly what the index contraction here does (note that this only works since the metric is symmetric by definition). Therefore, no need to write the Tr() -thing explicitly.
 
 The last thing to do is to notice that the right-hand side here is exactly what we had in the contracted Christoffel symbol formula earlier (up to a factor of 1/2). So, we then get:
 
@@ -571,7 +571,7 @@ $$\Gamma_{\mu\nu}^{\mu}=\frac{1}{2}g^{\mu\alpha}\partial_{\nu}g_{\mu\alpha}\ \ \
 
 ### How Many Christoffel Symbols Are There In Total?
 
-**For a general N-dimensional space, there are N2(N+1)/2 possible independent Christoffel symbols. This number comes from the fact that the Christoffel symbols, $Γ MATH0 μ$$ν$, have three indices that can all take on N values and the two lower indices are symmetric.**
+**For a general N-dimensional space, there are N2(N+1)/2 possible independent Christoffel symbols. This number comes from the fact that the Christoffel symbols, Γλµν, have three indices that can all take on N values and the two lower indices are symmetric.**
 
 Note that the number of independent components for an object with three indices should generally be N3, but in the case of the Christoffel symbols, since they are symmetric in the lower indices, this number is slightly lower.
 
@@ -612,7 +612,7 @@ However, we could equivalently express the same thing in terms of the Christoffe
 
 $$\partial_{\mu}\vec{e}_{\nu}=\Gamma_{\lambda\mu\nu}\vec{e}^{\lambda}$$
 
-Basis vectors with upstairs indices are called dual basis vectors and they are related to the “ordinary” basis vectors by the equation e$μ$\*e$ν$=$δ MATH0 μ$. The dual basis vectors are therefore always orthogonal to the “ordinary” basis vectors, which makes them somewhat more abstract.
+Basis vectors with upstairs indices are called dual basis vectors and they are related to the “ordinary” basis vectors by the equation eµ\*eν=δνµ. The dual basis vectors are therefore always orthogonal to the “ordinary” basis vectors, which makes them somewhat more abstract.
 
 In other words, it’s possible to **express the change in a basis vector both in terms of the “ordinary” basis and the dual basis**.
 
@@ -650,9 +650,9 @@ $$\Gamma_{\mu\nu}^{\lambda}=\frac{1}{2}g^{\lambda\alpha}\left(\partial_{\mu}g_{\
 
 There are generally different ways to go about doing the calculation, but the **most efficient and fastest way** I’ve found goes by more or less the following steps:
 
-1. **Define a set of coordinates $x^{$$μ$$}$**. Typically you’ll have as many coordinates as there are dimensions in your space.
-2. **Write down the components of a specific metric, g$μ$$ν$, or equivalently, its line element, ds2, in these coordinates**. You’ll also need the inverse metric components.
-3. **Write down the formulas for the Christoffel symbols, $Γ MATH0 μ$$ν$, in terms of the metric for each value of the index $λ$ separately** (the upper index). You should have, in total, as many equations as there are coordinates.
+1. **Define a set of coordinates xµ**. Typically you’ll have as many coordinates as there are dimensions in your space.
+2. **Write down the components of a specific metric, gµν, or equivalently, its line element, ds2, in these coordinates**. You’ll also need the inverse metric components.
+3. **Write down the formulas for the Christoffel symbols, Γλµν, in terms of the metric for each value of the index λ separately** (the upper index). You should have, in total, as many equations as there are coordinates.
 4. **Based on the properties of the given metric, simplify the Christoffel symbol formulas as much as possible**.
 5. **Determine which coordinates the metric depends on**. By doing this, you’ll be able to tell which derivatives of the metric are zero and in many cases, directly tell which Christoffel symbols have to be zero.
 6. **Plug in the different components of the metric and its inverse into each of the Christoffel symbol formulas**.
@@ -662,7 +662,7 @@ Down below, you’ll find an example of calculating the Christoffel symbols exac
 
 Example: Christoffel Symbol Calculation In Polar Coordinates Using The Metric
 
-The first thing we do is define a set of coordinates. In polar coordinates, these will be the coordinates r and $θ$. Note that polar coordinates are basically defined in two dimensions (the equivalent of this in 3D would be spherical coordinates), so we have two coordinates:
+The first thing we do is define a set of coordinates. In polar coordinates, these will be the coordinates r and θ. Note that polar coordinates are basically defined in two dimensions (the equivalent of this in 3D would be spherical coordinates), so we have two coordinates:
 
 $$x^1=r{,}\ x^2=\theta$$
 
@@ -702,13 +702,13 @@ In this first equation, all of the terms inside the parentheses are zero for all
 
 In the second equation, the first and second terms also have to vanish based on the same logic. In the last term, the only non-zero possibility is j=2, since g22 is non-zero and it’s not a constant either.
 
-So, here we’ve concluded that the only non-zero Christoffel symbol out of these has to be $Γ$122. Let’s calculate what it is by using the second formula and plugging in the metric components:
+So, here we’ve concluded that the only non-zero Christoffel symbol out of these has to be Γ122. Let’s calculate what it is by using the second formula and plugging in the metric components:
 
 $$\Gamma_{22}^1=\frac{1}{2}g^{11}\left(\partial_2g_{21}+\partial_2g_{21}-\partial_1g_{22}\right)=-\frac{1}{2}g^{11}\partial_1g_{22}$$
 
 $$g^{11}=1{,}\ \partial_1=\partial_r{,}\ g_{22}=r^2\ \ \Rightarrow\ \ \Gamma_{22}^1=-\frac{1}{2}\partial_rr^2=-r$$
 
-For clarity, here $∂$1 is the derivative with respect to the first coordinate, which in our case is r.
+For clarity, here ∂1 is the derivative with respect to the first coordinate, which in our case is r.
 
 Now let’s repeat the same steps for the Christoffel symbols with upper index equal to 2:
 
@@ -724,7 +724,7 @@ Here I’ve used the fact that g21=0 (diagonality of the metric).
 
 Now, here comes one of the key simplification “techniques” that you can take advantage of pretty much in all Christoffel symbol calculations. It is to look at which coordinates the metric depends on (step #5).
 
-We now that none of the metric components depend on the coordinate $θ$. Therefore, any derivatives with respect to $θ$ (so things with $∂$2) are zero and we conclude that the last term in the Christoffel symbol has to be zero for all values of i and j, so we’re left with:
+We now that none of the metric components depend on the coordinate θ. Therefore, any derivatives with respect to θ (so things with ∂2) are zero and we conclude that the last term in the Christoffel symbol has to be zero for all values of i and j, so we’re left with:
 
 $$\Gamma_{ij}^2=\frac{1}{2}g^{22}\left(\partial_ig_{j2}+\partial_jg_{i2}\right)$$
 
@@ -736,11 +736,11 @@ Here, g12=0 based on the diagonality of the metric.
 
 $$\Gamma_{2j}^2=\frac{1}{2}g^{22}\left(\partial_2g_{j2}+\partial_jg_{22}\right)=\frac{1}{2}g^{22}\partial_jg_{22}$$
 
-Here I’ve again used the fact that the metric does not depend on $θ$, so all $∂$2-derivatives have to automatically be zero.
+Here I’ve again used the fact that the metric does not depend on θ, so all ∂2-derivatives have to automatically be zero.
 
-In the first equation, the only non-zero possibility is j=2, since j=1 would give g12, which is zero. So, we have the Christoffel symbol $Γ$212, which is non-zero.
+In the first equation, the only non-zero possibility is j=2, since j=1 would give g12, which is zero. So, we have the Christoffel symbol Γ212, which is non-zero.
 
-In the second equation, the only non-zero possibility is j=1 since j=2 would give a derivative with respect to $θ$, which is zero. So, we’d have $Γ$221. But, based on the symmetry of the Christoffel symbols, this is the same as from the first equation, namely $Γ$221=$Γ$212.
+In the second equation, the only non-zero possibility is j=1 since j=2 would give a derivative with respect to θ, which is zero. So, we’d have Γ221. But, based on the symmetry of the Christoffel symbols, this is the same as from the first equation, namely Γ221=Γ212.
 
 So, we then have two non-zero Christoffel symbols here, which are (plugging in the metric):
 
@@ -776,13 +776,13 @@ Essentially, this method uses a **Lagrangian** (L) constructed out of the metric
 
 $$L=\frac{1}{2}g_{\mu\nu}\dot x^{\mu}\dot x^{\nu}$$
 
-Here, the x$λ$ with a dot above it denotes the *proper time derivative* of the coordinates, i.e. “velocity”, dx$λ$/d$τ$.
+Here, the xλ with a dot above it denotes the *proper time derivative* of the coordinates, i.e. “velocity”, dxλ/dτ.
 
 The Lagrangian is then plugged into the **Euler-Lagrange equation**, which is then equated with the **geodesic equation** and the Christoffel symbols can be *read off* directly by comparing coefficients:
 
 $$\frac{d}{d\tau}\frac{\partial L}{\partial\dot{x}^{\lambda}}=\frac{\partial L}{\partial x^{\lambda}}\ \ \Leftrightarrow\ \ \ddot{x}^{\lambda}+\Gamma_{\mu\nu}^{\lambda}\dot{x}^{\mu}\dot{x}^{\nu}=0$$
 
-Here, the x$λ$ with two dots denotes the “acceleration”, d2x$λ$/d$τ$2. Note that this works for any *affine parameter* and the proper time is just a convenient choice.
+Here, the xλ with two dots denotes the “acceleration”, d2xλ/dτ2. Note that this works for any *affine parameter* and the proper time is just a convenient choice.
 
 If you’re not familiar with **Lagrangians** and the **Euler-Lagrange equation**, I’d recommend checking out my **[introductory article on Lagrangian mechanics](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)**, which covers the basics of both of these as well as much more.  
   
@@ -790,8 +790,8 @@ I also discuss the **geodesic equation** in detail in my **[introduction to gene
 
 Now, the steps for this method are more or less as follows:
 
-1. **Define a set of coordinates $x^{$$μ$$}$**. Typically you’ll have as many coordinates as there are dimensions in your space.
-2. **Write down the components of a specific metric, g$μ$$ν$, or equivalently, its line element, ds2, in these coordinates**. It’s often easier to write down the line element.
+1. **Define a set of coordinates xµ**. Typically you’ll have as many coordinates as there are dimensions in your space.
+2. **Write down the components of a specific metric, gµν, or equivalently, its line element, ds2, in these coordinates**. It’s often easier to write down the line element.
 3. **Write down the Lagrangian in terms of the metric components and the derivatives of the coordinates** (velocities).
 4. **Calculate the Euler-Lagrange equations for your Lagrangian for each coordinate**. Generally, you’ll have as many equations as there are coordinates.
 5. **Write down the geodesic equations in full for each coordinate**. This is done by explicitly writing out the sum in each geodesic equation.
@@ -803,7 +803,7 @@ The main advantage of this method is that you only have to do a few calculations
 
 You’ll also be able to **determine multiple Christoffel symbols at the same time from just one equation**.
 
-In fact, from one Euler-Lagrange equation (and its corresponding geodesic equation) for a particular value of the index $λ$, you’ll get ALL the Christoffel symbols, $Γ MATH0 μ$$ν$, for a given value of $λ$.
+In fact, from one Euler-Lagrange equation (and its corresponding geodesic equation) for a particular value of the index λ, you’ll get ALL the Christoffel symbols, Γλµν, for a given value of λ.
 
 Down below, you’ll find an example of exactly how to use this method.
 
@@ -835,7 +835,7 @@ $$\dot{x}^1=\dot{r}{,}\ \dot{x}^2=\dot{\theta}{,}\ g_{11}=1{,}\ g_{22}=r^2$$
 
 $$\Rightarrow\ \ L=\frac{1}{2}\dot r^2+\frac{1}{2}r^2\dot \theta^2$$
 
-The next step is to calculate the Euler-Lagrange equations for each coordinate by using this Lagrangian. Since we have two coordinates, we’ll have two Euler-Lagrange equations, one for r and one for $θ$:
+The next step is to calculate the Euler-Lagrange equations for each coordinate by using this Lagrangian. Since we have two coordinates, we’ll have two Euler-Lagrange equations, one for r and one for θ:
 
 $$\frac{d}{d\tau}\frac{\partial L}{\partial\dot{r}}-\frac{\partial L}{\partial r}=0$$
 
@@ -851,11 +851,11 @@ From the second equation, we get:
 
 $$\frac{d}{d\tau}\frac{\partial}{\partial\dot{\theta}}\left(\frac{1}{2}\dot{r}^2+\frac{1}{2}r^2\dot{\theta}^2\right)-\frac{\partial}{\partial\theta}\left(\frac{1}{2}\dot{r}^2+\frac{1}{2}r^2\dot{\theta}^2\right)=0$$
 
-Note; the Lagrangian does not depend on $θ$ at all, so all $θ$-derivatives are zero. This is indeed due to the metric being independent of $θ$, which we used to our advantage in the first method.
+Note; the Lagrangian does not depend on θ at all, so all θ-derivatives are zero. This is indeed due to the metric being independent of θ, which we used to our advantage in the first method.
 
 $$\frac{d}{d\tau}\left(r^2\dot{\theta}\right)=0$$
 
-Since both r and $\dot{\theta}$ here depend on $τ$, we have to use the product rule:
+Since both r and $\dot{\theta}$ here depend on τ, we have to use the product rule:
 
 $$r^2\frac{d\dot{\theta}}{d\tau}+\dot{\theta}\frac{dr^2}{d\tau}=0\ \ \Rightarrow\ \ \ddot \theta+\frac{2}{r}\dot{\theta}\dot{r}=0$$
 
@@ -879,7 +879,7 @@ $$\ddot{x}^2+\Gamma_{11}^2\dot{x}^1\dot{x}^1+\Gamma_{12}^2\dot{x}^1\dot{x}^2+\Ga
 
 This is the geodesic equation for k=2, where I’ve once again written the sum over i and j in full.
 
-We can now plug in our coordinates (x1=r and x2=$θ$). Also, by symmetry of the Christoffel symbols, we can combine the cross-terms and get a factor of 2:
+We can now plug in our coordinates (x1=r and x2=θ). Also, by symmetry of the Christoffel symbols, we can combine the cross-terms and get a factor of 2:
 
 $$\ddot{x}^1+\Gamma_{11}^1\dot{x}^1\dot{x}^1+2\Gamma_{12}^1\dot{x}^1\dot{x}^2+\Gamma_{22}^1\dot{x}^2\dot{x}^2=0$$
 
@@ -897,7 +897,7 @@ So, first let’s take the Euler-Lagrange equation for the coordinate r (i.e. x1
 
 Another way to get these Christoffel symbols (rather than just by looking at the two equations) would be to simply set both the Euler-Lagrange and the geodesic equation *equal* to one another (since they are really the same equation in disguise), move every term to one side, do some factoring and then conclude what the coefficients must be in order for the whole thing to be zero.
 
-We can do the same thing to the equations for $θ$:
+We can do the same thing to the equations for θ:
 
 ![](assets/images/christoffel-symbols-a-complete-guide-with-examples/img_42.webp)
 
@@ -907,7 +907,7 @@ The first time you see this method, it may seem like some sort of magic, but it�
 
 **Quick tip**: there is an incredibly fast way to obtain the corresponding Lagrangian if you are given the line element of a metric, ds2.
 
-Simply take your ds2, divide it by d$τ$2 (and also add a factor of 1/2) and there you have your Lagrangian. For example, in the case of polar coordinates, this would go as follows:
+Simply take your ds2, divide it by dτ2 (and also add a factor of 1/2) and there you have your Lagrangian. For example, in the case of polar coordinates, this would go as follows:
 
 $$L=\frac{1}{2}\frac{ds^2}{d\tau^2}=\frac{1}{2}\frac{dr^2}{d\tau^2}+\frac{1}{2}r^2\frac{d\theta^2}{d\tau^2}=\frac{1}{2}\dot{r}^2+\frac{1}{2}r^2\dot{\theta}^2$$
 
@@ -967,7 +967,7 @@ $$\Gamma_{ij}^k=0$$
 
 ### Christoffel Symbols In Polar Coordinates
 
-In polar coordinates, all points are described by two coordinates (since polar coordinates, by definition, are a two-dimensional coordinates system), **r and $θ$**. A polar coordinate system still corresponds to flat space, not a curved one, it is just a different set of coordinates.
+In polar coordinates, all points are described by two coordinates (since polar coordinates, by definition, are a two-dimensional coordinates system), **r and θ**. A polar coordinate system still corresponds to flat space, not a curved one, it is just a different set of coordinates.
 
 The line element in polar coordinates is given by:
 
@@ -989,7 +989,7 @@ Also, note that we calculated exactly these Christoffel symbols in two different
 
 The spherical coordinates system is another example of a *flat space*, which is simply represented in different coordinates than the typical Cartesian system.
 
-Spherical coordinates are the analogue of polar coordinates, but in two dimensions. All points in the spherical system are described by **three coordinates, r, $θ$ and $φ$**. The line element is given by:
+Spherical coordinates are the analogue of polar coordinates, but in two dimensions. All points in the spherical system are described by **three coordinates, r, θ and φ**. The line element is given by:
 
 $$ds^2=dr^2+r^2d\theta^2+r^2\sin^2\theta d\varphi^2$$
 
@@ -1007,7 +1007,7 @@ $$\Gamma_{ij}^3=\begin{pmatrix}0&0&\frac{1}{r}\\0&0&\cot\theta\\\frac{1}{r}&\cot
 
 ### Christoffel Symbols In Cylindrical Coordinates
 
-The cylindrical coordinate system is equivalent to the spherical system, in the sense that both describe space in three dimensions using three coordinates. In the case of cylindrical coordinates, however, we have the coordinates r, $φ$ and z.
+The cylindrical coordinate system is equivalent to the spherical system, in the sense that both describe space in three dimensions using three coordinates. In the case of cylindrical coordinates, however, we have the coordinates r, φ and z.
 
 The line element is given by:
 
@@ -1033,7 +1033,7 @@ Since this is a sphere we’re describing and a sphere is characterized by some 
 
 $$ds^2=r^2d\theta^2+r^2\sin^2\theta d\phi^2$$
 
-We therefore have only two metric components (since there are only two coordinates, the angles $θ$ and $φ$):
+We therefore have only two metric components (since there are only two coordinates, the angles θ and φ):
 
 $$g_{ij}=\begin{pmatrix}r^2&0\\0&r^2\sin^2\theta\end{pmatrix}$$
 
@@ -1067,7 +1067,7 @@ The Schwarzschild metric is perhaps the most famous solution to the Einstein fie
 
 As a sidenote, if you’re interested in **applications of the Schwarzschild metric**, I discuss how this metric is applied to analyze **time dilation near a black hole** in [this article](https://profoundphysics.com/why-time-slows-down-near-a-black-hole/). The Schwarzschild metric can also be used to construct a so-called **effective potential** to analyze **orbital mechanics around black holes**, which I cover in [this article](https://profoundphysics.com/black-hole-orbits/).
 
-The most common way to represent the Schwarzschild metric is by using the so-called **Schwarzschild coordinates** (ct, r, $θ$ and $φ$). In these coordinates, the line element is given by:
+The most common way to represent the Schwarzschild metric is by using the so-called **Schwarzschild coordinates** (ct, r, θ and φ). In these coordinates, the line element is given by:
 
 $$ds^2=-\left(1-\frac{r_s}{r}\right)c^2dt^2+\left(1-\frac{r_s}{r}\right)^{-1}dr^2+r^2d\theta^2+r^2\sin^2\theta d\varphi^2$$
 
@@ -1075,7 +1075,7 @@ Here, rs is a parameter called the Schwarzschild radius and it is given by:
 
 $$r_s=\frac{2GM}{c^2}$$
 
-Here, G is the gravitational constant, $M$ is the mass of the central body causing the gravitational field and $c$ is the speed of light.
+Here, G is the gravitational constant, M is the mass of the central body causing the gravitational field and c is the speed of light.
 
 The metric components can also be written in matrix form as:
 
@@ -1095,11 +1095,11 @@ $$\Gamma_{\mu\nu}^3=\begin{pmatrix}0&0&0&0\\0&0&0&\frac{1}{r}\\0&0&0&\cot\theta\
 
 The Kerr metric is another solution to the Einstein field equations, which describes the same type of spacetime as the Schwarzschild metric, except that the Kerr metric allows for the central mass to be rotating. So, the Kerr metric is a more general metric for describing planets and black holes, for example.
 
-The line element for this metric can be written in **Boyer-Lindquist coordinates** (a form of spherical coordinates with the coordinates ct, r, $θ$ and $φ$) as:
+The line element for this metric can be written in **Boyer-Lindquist coordinates** (a form of spherical coordinates with the coordinates ct, r, θ and φ) as:
 
 $$ds^2=-\left(1-\frac{r_sr}{\Sigma}\right)c^2dt^2-\frac{2r_sra\sin^2\theta}{\Sigma}cdtd\varphi+\frac{\Sigma}{\Delta}dr^2+\Sigma d\theta^2+\left(\mu+\frac{r_sra^2\sin^2\theta}{\Sigma}\right)\sin^2\theta d\varphi^2$$
 
-A noteworthy point about this metric is the *cross-term* between the time-coordinate ct and the angular coordinate $φ$; this is due to the fact that a rotating mass causes a so-called *frame dragging* effect in the spacetime around it. This, on the other hand, causes an additional time dilation effect, which can be seen from this coupling term between the angular displacement, d$φ$ and the “displacement in time, dt”. I actually discuss frame dragging and its effects on time dilation in [this article](https://profoundphysics.com/why-time-slows-down-near-a-black-hole/).
+A noteworthy point about this metric is the *cross-term* between the time-coordinate ct and the angular coordinate φ; this is due to the fact that a rotating mass causes a so-called *frame dragging* effect in the spacetime around it. This, on the other hand, causes an additional time dilation effect, which can be seen from this coupling term between the angular displacement, dφ and the “displacement in time, dt”. I actually discuss frame dragging and its effects on time dilation in [this article](https://profoundphysics.com/why-time-slows-down-near-a-black-hole/).
 
 These various letters you see here are length scales (they all have units of length) defined by (with rs being the usual Schwarzschild radius 2GM/c2):
 
@@ -1125,7 +1125,7 @@ $$\Gamma_{\mu\nu}^3=\begin{pmatrix}0&\frac{r_sa\left(r^2-a^2\cos^2\theta\right)}
 
 The Reissner-Nordström metric is another solution to the Einstein field equations, belonging to the same “class” of metrics as the Schwarzschild and Kerr metrics (by “class”, I mean the different black hole type solutions of general relativity).
 
-This metric describes a spherically symmetric and electrically charged (but non-rotating) mass. The line element can be written as (using the coordinates ct, r, $θ$ and $φ$):
+This metric describes a spherically symmetric and electrically charged (but non-rotating) mass. The line element can be written as (using the coordinates ct, r, θ and φ):
 
 $$ds^2=-\left(1-\frac{r_s}{r}+\frac{r_Q^2}{r^2}\right)c^2dt^2+\left(1-\frac{r_s}{r}+\frac{r_Q^2}{r^2}\right)^{-1}dr^2+r^2d\theta^2+r^2\sin^2\theta d\varphi^2$$
 
@@ -1133,7 +1133,7 @@ Here, rs is again the Schwarzschild radius and $r_Q^2$ is a parameter describing
 
 $$r_Q^2=\frac{Q^2G}{4\pi\varepsilon_0c^4}$$
 
-Here, $Q$ is the charge of this mass, G is the gravitational constant, $c$ is the speed of light and $\varepsilon_0$ is the vacuum permittivity (another constant).
+Here, Q is the charge of this mass, G is the gravitational constant, c is the speed of light and ε0 is the vacuum permittivity (another constant).
 
 The metric components are:
 
@@ -1153,13 +1153,13 @@ $$\Gamma_{\mu\nu}^3=\begin{pmatrix}0&0&0&0\\0&0&0&\frac{1}{r}\\0&0&0&\cot\theta\
 
 The weak-field metric is a solution of general relativity in the limit that gravity is not “too strong” (more formally, that the metric only deviates slightly from the flat spacetime Minkowski metric; by slightly, I mean that the deviations only count to *linear order*).
 
-Another important aspect of this limit is that we also assume that velocities are relatively small (this means that the ratio v/c can be approximated as zero and dt/d$τ$$≈$1).
+Another important aspect of this limit is that we also assume that velocities are relatively small (this means that the ratio v/c can be approximated as zero and dt/dτ≈1).
 
 Anyway, the line element can be written (here I’m writing it in spherical coordinates, although you may often see it written in the usual Cartesian coordinates):
 
 $$ds^2=-\left(1+\frac{2\Phi}{c^2}\right)c^2dt^2+\left(1-\frac{2\Phi}{c^2}\right)dr^2+\left(1-\frac{2\Phi}{c^2}\right)r^2d\theta^2+\left(1-\frac{2\Phi}{c^2}\right)r^2\sin^2\theta d\varphi^2$$
 
-Here, $Φ$ is the usual Newtonian gravitational potential given by $\Phi=-\frac{GM}{r}$.
+Here, Φ is the usual Newtonian gravitational potential given by $\Phi=-\frac{GM}{r}$.
 
 The metric can also be written in the matrix form:
 
@@ -1175,9 +1175,9 @@ $$\Gamma_{\mu\nu}^2=\begin{pmatrix}0&0&0&0\\0&0&\left(1-\frac{r}{c^2}\frac{\part
 
 $$\Gamma_{\mu\nu}^3=\begin{pmatrix}0&0&0&0\\0&0&0&\left(1-\frac{r}{c^2}\frac{\partial\Phi}{\partial r}\right)\frac{1}{r}\\0&0&0&\cot\theta\\0&\left(1-\frac{r}{c^2}\frac{\partial\Phi}{\partial r}\right)\frac{1}{r}&\cot\theta&0\end{pmatrix}$$
 
-An important approximation when calculating these is that 2$Φ$**≪**c2 (this is simply the assumption of a “weak” gravitational field). Using this approximation, all terms of the form 1/(2$Φ$$±$c2)$≈$1/c2.
+An important approximation when calculating these is that 2Φ**≪**c2 (this is simply the assumption of a “weak” gravitational field). Using this approximation, all terms of the form 1/(2Φ±c2)≈1/c2.
 
-Interestingly, these $∂$$Φ$/$∂$r- factors you see here are related to the **Newtonian inverse-square gravitational force**:
+Interestingly, these ∂Φ/∂r- factors you see here are related to the **Newtonian inverse-square gravitational force**:
 
 $$\frac{\partial\Phi}{\partial r}=\frac{\partial}{\partial r}\left(-\frac{GM}{r}\right)=\frac{GM}{r^2}$$
 
@@ -1195,7 +1195,7 @@ The line element for the FRW metric is (in spherical coordinates):
 
 $$ds^2=-c^2dt^2+\frac{a^2\left(t\right)}{1-kr^2}dr^2+a^2\left(t\right)r^2d\theta^2+a^2\left(t\right)r^2\sin^2\theta d\phi^2$$
 
-Here, $k$ is a curvature parameter that can take on the values -1, 0 or 1, depending on the geometry of the spacetime (to describe a flat universe, k=0, for example). The a(t)-parameter is called the scale factor and it is a function of time that holds information about the expansion of the universe (or whatever space this metric happens to be describing).
+Here, k is a curvature parameter that can take on the values -1, 0 or 1, depending on the geometry of the spacetime (to describe a flat universe, k=0, for example). The a(t)-parameter is called the scale factor and it is a function of time that holds information about the expansion of the universe (or whatever space this metric happens to be describing).
 
 This metric has the matrix form:
 
@@ -1205,7 +1205,7 @@ The Christoffel symbols are:
 
 $$\Gamma_{\mu\nu}^0=\begin{pmatrix}0&0&0&0\\0&\frac{a\dot{a}}{c\left(1-kr^2\right)}&0&0\\0&0&\frac{1}{c}a\dot{a}r^2&0\\0&0&0&\frac{1}{c}a\dot{a}r^2\sin^2\theta\end{pmatrix}$$
 
-Here, $\dot{a}$ denotes da/dt (a being a function of time) and $c$ is the speed of light.
+Here, $\dot{a}$ denotes da/dt (a being a function of time) and c is the speed of light.
 
 $$\Gamma_{\mu\nu}^1=\begin{pmatrix}0&\frac{\dot{a}}{ca}&0&0\\\frac{\dot{a}}{ca}&\frac{kr}{1-kr^2}&0&0\\0&0&-r\left(1-kr^2\right)&0\\0&0&0&-r\sin^2\theta\left(1-kr^2\right)\end{pmatrix}$$
 

@@ -156,7 +156,7 @@ The exact formula for this “new” magnetic field is given by (you’ll find a
 
 $$\vec{B}'=-\frac{\gamma}{c^2}\vec{v}\times\vec{E}=-\frac{v}{c^2}\frac{E_y}{\sqrt{1-\frac{v^2}{c^2}}}\hat{z}$$
 
-Here, Ey is the “original” y-component of the electric field, $v$ is the velocity of the moving observer and c the speed of light (a constant).
+Here, Ey is the “original” y-component of the electric field, v is the velocity of the moving observer and c the speed of light (a constant).
 
 More generally, this formula could be written as:
 
@@ -278,21 +278,21 @@ It’s common to represent the components of a vector as a “list” or a colum
 
 $$v^{\mu}=\begin{pmatrix}v_t\\v_x\\v_y\\v_z\end{pmatrix}$$
 
-The index $μ$ here (which can take on the values 0,1,2,3) labels which of these four-vector components we’re talking about. For example, $μ$=0 would refer to vt and $μ$=3 to vz. This is a standard piece of notation used in special relativity.
+The index µ here (which can take on the values 0,1,2,3) labels which of these four-vector components we’re talking about. For example, µ=0 would refer to vt and µ=3 to vz. This is a standard piece of notation used in special relativity.
 
 By the way, this **index notation** for vectors you’re seeing above is something I cover in detail in my **[Vector Calculus For Physics](https://profoundphysicscourses.com/advanced-math/)** -course, so if you want to learn that better, check out the course! I also cover things like **coordinate transformations**, which Lorentz transformations are just one example of.
 
-Similarly, a tensor (a 4$×$4-tensor in this case) is an object that can be represented as a “table” of stuff, which are its **tensor components**:
+Similarly, a tensor (a 4×4-tensor in this case) is an object that can be represented as a “table” of stuff, which are its **tensor components**:
 
 $$T^{\mu\nu}=\begin{pmatrix}T^{tt}&T^{tx}&T^{ty}&T^{tz}\\T^{xt}&T^{xx}&T^{xy}&T^{xz}\\T^{yt}&T^{yx}&T^{yy}&T^{yz}\\T^{zt}&T^{zx}&T^{zy}&T^{zz}\end{pmatrix}$$
 
-Here again, both $μ$ and $ν$ run from 0 to 3, so for example, the component with $μ$=0 and $ν$=2 would represent T02=Tty.
+Here again, both µ and ν run from 0 to 3, so for example, the component with µ=0 and ν=2 would represent T02=Tty.
 
-Now, how does all of this relate to the electromagnetic field? Well, **the electromagnetic field is represented by the electromagnetic field tensor, which is a 4$×$4-tensor with the electric and magnetic fields as its components**:
+Now, how does all of this relate to the electromagnetic field? Well, **the electromagnetic field is represented by the electromagnetic field tensor, which is a 4×4-tensor with the electric and magnetic fields as its components**:
 
 $$F^{\mu\nu}=\begin{pmatrix}0&-\frac{E_x}{c}&-\frac{E_y}{c}&-\frac{E_z}{c}\\\frac{E_x}{c}&0&-B_z&B_y\\\frac{E_y}{c}&B_z&0&-B_x\\\frac{E_z}{c}&-B_y&B_x&0\end{pmatrix}$$
 
-Here Ex, Ey and Ez are the components of the electric field, the B’s are the magnetic field components (whatever these happen to be for any given electromagnetic field configuration) and $c$ is the speed of light, i.e. a constant. Moreover, this type of tensor (an *antisymmetric* tensor) has only 6 independent components, corresponding to the 3 electric field components and to the 3 magnetic field components.
+Here Ex, Ey and Ez are the components of the electric field, the B’s are the magnetic field components (whatever these happen to be for any given electromagnetic field configuration) and c is the speed of light, i.e. a constant. Moreover, this type of tensor (an *antisymmetric* tensor) has only 6 independent components, corresponding to the 3 electric field components and to the 3 magnetic field components.
 
 This object is fundamentally what describes any electromagnetic field we observe.
 
@@ -368,7 +368,7 @@ A Lorentz transformation in the x-direction (i.e. into a moving observer’s fra
 
 $$\Lambda_{\alpha}^{\mu'}=\begin{pmatrix}\gamma&-\frac{\gamma v}{c}&0&0\\-\frac{\gamma v}{c}&\gamma&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}$$
 
-Here, $v$ is the velocity of the moving observer in the x-direction, $c$ is the speed of light and $γ$ is the Lorentz factor $γ$=(1-v2/c2)-1/2. These indices $μ$ and $α$ here (which both run from 0 to 3) just label the components of this matrix and the ‘-symbol represents the fact that this is a transformation to the “primed” coordinate frame of the moving observer.
+Here, v is the velocity of the moving observer in the x-direction, c is the speed of light and γ is the Lorentz factor γ=(1-v2/c2)-1/2. These indices µ and α here (which both run from 0 to 3) just label the components of this matrix and the ‘-symbol represents the fact that this is a transformation to the “primed” coordinate frame of the moving observer.
 
 In case this seems unfamiliar to you, I actually cover coordinate transformations, how they are practically used and everything we’re going to talk about here in my **[Advanced Math For Physics: A Complete Self-Study Course](https://courses.profoundphysics.com/p/advanced-math-for-physics-a-complete-self-study-course)** (click to check it out if you’re interested to learn more).
 
@@ -376,25 +376,25 @@ Anyway, the Lorentz transformation rule for the electromagnetic field tensor goe
 
 $$\vec{B}=\gamma\frac{\mu_0q}{4\pi}\frac{\vec{v}\times\hat{r}}{r^2}$$
 
-The $α$,$β$ -indices here are just “dummy” indices, meaning that they should be summed over from 0 to 3. This “primed” field tensor here, (F$μ$$ν$)’ is the electromagnetic field tensor (its components, to be precise) in the moving frame, while F$α$$β$ represents the field components in the original, stationary frame.
+The α,β -indices here are just “dummy” indices, meaning that they should be summed over from 0 to 3. This “primed” field tensor here, (Fµν)’ is the electromagnetic field tensor (its components, to be precise) in the moving frame, while Fαβ represents the field components in the original, stationary frame.
 
-Here, we need to firstly sum over these $α$- and $β$-indices from 0 to 3:
+Here, we need to firstly sum over these α- and β-indices from 0 to 3:
 
 $$\left(F^{\mu\nu}\right)'=\Lambda_{\alpha}^{\mu'}\Lambda_{\beta}^{\nu'}F^{\alpha\beta}=\Lambda_0^{\mu'}\Lambda_0^{\nu'}F^{00}+\Lambda_1^{\mu'}\Lambda_0^{\nu'}F^{10}+...+\Lambda_3^{\mu'}\Lambda_3^{\nu'}F^{33}$$
 
-The only non-zero terms here are the ones with $μ$=2, $ν$=0 (and also $μ$=0, $ν$=2) and $μ$=2, $ν$=1 (and also $μ$=1, $ν$=2). When $μ$=2 and $ν$=0, this sum reduces to just:
+The only non-zero terms here are the ones with µ=2, ν=0 (and also µ=0, ν=2) and µ=2, ν=1 (and also µ=1, ν=2). When µ=2 and ν=0, this sum reduces to just:
 
 $$\left(F^{20}\right)'=\Lambda_2^{2'}\Lambda_0^{0'}F^{20}$$
 
-Then, inserting all of the various components into this ($Λ$22′=1, $Λ$00′=$γ$ and F20=Ey/c), we get:
+Then, inserting all of the various components into this (Λ22′=1, Λ00′=γ and F20=Ey/c), we get:
 
 $$\left(F^{20}\right)'=\Lambda_2^{2'}\Lambda_0^{0'}F^{20}=\frac{\gamma E_y}{c}$$
 
-This is also the same as -(F02)’. Now, for the $μ$=2, $ν$=1 case, the sum reduces to:
+This is also the same as -(F02)’. Now, for the µ=2, ν=1 case, the sum reduces to:
 
 $$\left(F^{21}\right)'=\Lambda_2^{2'}\Lambda_0^{1'}F^{20}$$
 
-Inserting all the components into this ($Λ$22′=1, $Λ$10′=-$γ$v/c and F20=Ey/c), we get:
+Inserting all the components into this (Λ22′=1, Λ10′=-γv/c and F20=Ey/c), we get:
 
 $$\left(F^{21}\right)'=\Lambda_2^{2'}\Lambda_0^{1'}F^{20}=-\frac{\gamma vE_y}{c^2}$$
 
@@ -402,7 +402,7 @@ This is also the same as the -(F12)’ -component. We can then collect all the c
 
 $$\left(F^{\mu\nu}\right)'=\begin{pmatrix}0&0&-\frac{\gamma E_y}{c}&0\\0&0&\frac{\gamma vE_y}{c^2}&0\\\frac{\gamma E_y}{c}&-\frac{\gamma vE_y}{c^2}&0&0\\0&0&0&0\end{pmatrix}$$
 
-This is the electromagnetic field as seen from the frame in which the charge appears to be moving. We can see that, while the “original” electric field only had a y-component (Ey), the “new” electric field from the moving frame also has a y-component, but it is now $γ$Ey instead of the original Ey.
+This is the electromagnetic field as seen from the frame in which the charge appears to be moving. We can see that, while the “original” electric field only had a y-component (Ey), the “new” electric field from the moving frame also has a y-component, but it is now γEy instead of the original Ey.
 
 Moreover, the electromagnetic field, as seen by the moving observer, now also has a z-component of the magnetic field (since this F21-slot generally represents Bz), which originally was zero. This z-component of the magnetic field is given by:
 
@@ -418,9 +418,9 @@ If you were to insert to this the electric field of a point charge, you’d get:
 
 $$\vec{E}=\frac{q}{4\pi\varepsilon_0r^2}\hat{r}\ \ \Rightarrow\ \ \vec{B}=\gamma\mu_0\varepsilon_0\vec{v}\times\left(\frac{q}{4\pi\varepsilon_0r^2}\hat{r}\right)=\gamma\frac{\mu_0q}{4\pi}\frac{\vec{v}\times\hat{r}}{r^2}$$
 
-Here I’ve also used the definition of the speed of light, c=1/√$μ$0$\varepsilon_0$.
+Here I’ve also used the definition of the speed of light, c=1/√µ0ε0.
 
-This is indeed the standard formula for the magnetic field of a moving charged particle (or slow velocities, $γ$$≈$1). It’s quite interesting to see it how it can be derived from special relativity like this.
+This is indeed the standard formula for the magnetic field of a moving charged particle (or slow velocities, γ≈1). It’s quite interesting to see it how it can be derived from special relativity like this.
 
 The really interesting thing about all of this, however, is that the actual physics are still the same in both reference frames.
 
@@ -432,7 +432,7 @@ $$\vec{F}=q\vec{E}=qE_y\hat y$$
 
 The y-hat here is a unit vector in the y-direction.
 
-So, when viewed from the stationary frame (with only a y-component of the electric field), the charged particle’s momentum would change (in a time $Δ$t; for simplicity, we’re assuming the field to be constant with time) by the amount:
+So, when viewed from the stationary frame (with only a y-component of the electric field), the charged particle’s momentum would change (in a time Δt; for simplicity, we’re assuming the field to be constant with time) by the amount:
 
 $$\Delta\vec{p}=\vec{F}\Delta t=qE_y\Delta t\hat y$$
 
@@ -460,7 +460,7 @@ However, this 1-v2/c2 term is just:
 
 $$1-\frac{v^2}{c^2}=\left(\frac{1}{\left(1-\frac{v^2}{c^2}\right)^{-\frac{1}{2}}}\right)^2=\frac{1}{\gamma^2}$$
 
-Reminder: the Lorentz factor is $γ$=(1-v2/c2)-1/2.
+Reminder: the Lorentz factor is γ=(1-v2/c2)-1/2.
 
 So, the electromagnetic force in the moving frame is then:
 
@@ -472,9 +472,9 @@ So, the moving observer actually sees the time passed for the charged particle a
 
 $$\Delta t'=\gamma\Delta t$$
 
-Here, $Δ$t is the time passed in the frame of the charged particle itself and $Δ$t’ is the time passed as seen by the moving observer.
+Here, Δt is the time passed in the frame of the charged particle itself and Δt’ is the time passed as seen by the moving observer.
 
-Therefore, the change in the charged particle’s momentum in a time $Δ$t, *as seen from the frame o the moving observer*, would be:
+Therefore, the change in the charged particle’s momentum in a time Δt, *as seen from the frame o the moving observer*, would be:
 
 $$\Delta\vec{p}'=\vec{F}'\Delta t'=\frac{qE_y}{\gamma}\hat{y}\gamma\Delta t=qE_y\Delta t\hat{y}$$
 

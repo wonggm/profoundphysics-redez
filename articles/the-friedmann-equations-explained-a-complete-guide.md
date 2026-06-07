@@ -71,11 +71,11 @@ $$G_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}$$
 
 I have a [whole article](https://profoundphysics.com/derivation-of-einstein-field-equations/) dedicated to exploring and deriving the Einstein field equations in detail (as well as my [introduction to general relativity](https://profoundphysics.com/general-relativity-for-dummies/)), however for our purposes, we just need to know the basics.
 
-On the left-hand side of the above equation is all the information about gravity encoded in the **geometric** language of general relativity and is called the **Einstein tensor**, G$μ$$ν$.
+On the left-hand side of the above equation is all the information about gravity encoded in the **geometric** language of general relativity and is called the **Einstein tensor**, Gµν.
 
-The lower “indices” $μ$ and $ν$ are the Greek letters “mu” and “nu”. They appear here since the Einstein tensor isn’t just a single number or a function but instead can be imagined as a matrix (more accurately, a *tensor*), where each $μ$ and $ν$ run from 0 to 3, meaning we should view it as a 4$×$4 matrix.
+The lower “indices” µ and ν are the Greek letters “mu” and “nu”. They appear here since the Einstein tensor isn’t just a single number or a function but instead can be imagined as a matrix (more accurately, a *tensor*), where each μ and ν run from 0 to 3, meaning we should view it as a 4×4 matrix.
 
-The right-hand side tells us about the matter content of the universe. T$μ$$ν$ is called the **energy-momentum tensor**. This has different forms depending on the matter we want to put in the universe.
+The right-hand side tells us about the matter content of the universe. Tµν is called the **energy-momentum tensor**. This has different forms depending on the matter we want to put in the universe.
 
 The energy-momentum tensor is then multiplied by fundamental constants of nature respectively related to geometry, gravity, and relativity: pi, Newton’s gravitational constant G, and the speed of light c.
 
@@ -114,7 +114,7 @@ $$ds^2=g_{\mu\nu}dx^{\mu}dx^{\nu}=-c^2dt^2+a^2\left(t\right)d\mathbf{x}_{space}^
 
 The left-hand side (ds2) is short for an infinitesimally small distance squared and the right-hand side describes how the different coordinates in spacetime change.
 
-The middle is just a more general, shorthand way of writing the right-hand side and we can refer to just g$μ$$ν$ as the *metric* as it contains all the same information as ds2.
+The middle is just a more general, shorthand way of writing the right-hand side and we can refer to just gμν as the *metric* as it contains all the same information as ds2.
 
 We’ll discuss this line element in a bit more detail later.
 
@@ -158,7 +158,7 @@ Well, we are describing a **spacetime** with things in it and thanks to Wheeler�
 
 Whenever geometry and any kind of spherical shapes are involved, **pi** is never far behind.
 
-The formula for a circle’s circumference, namely circumference = $π$ x diameter, tells us (after rearranging) that the constant $π$ is defined as the ratio of a circle’s circumference to its diameter.
+The formula for a circle’s circumference, namely circumference = π x diameter, tells us (after rearranging) that the constant π is defined as the ratio of a circle’s circumference to its diameter.
 
 Now think back.
 
@@ -212,11 +212,11 @@ Line elements are essentially generalizations of **Pythagoras’ theorem** that 
 
 $$a^2+b^2=c^2$$
 
-These relate the three sides of a triangle, where $c$ is the length of the hypotenuse – however, this formula does more than that.
+These relate the three sides of a triangle, where c is the length of the hypotenuse – however, this formula does more than that.
 
 If we imagine a as the difference in the x-coordinates of two points and b as the difference in the y-coordinates of these points, then this is secretly telling us that the **shortest distance** between those two points is the straight line, the hypotenuse c, connecting them.
 
-We can generalize this to points in 3D where we would have a2+b2+c2=d2. Now the shortest distance between the two points is d and $c$ is the difference in the z-coordinates of the two points.
+We can generalize this to points in 3D where we would have a2+b2+c2=d2. Now the shortest distance between the two points is d and c is the difference in the z-coordinates of the two points.
 
 If we talk about space, it is convenient to talk about very small (infinitesimal) distances and we would write:
 
@@ -277,7 +277,7 @@ This describes a scale factor that increases with time – a universe where spat
 
 We’ll discuss various solutions to the Friedmann equations in more detail later.
 
-Back to the Friedmann equations – there are four pieces of the puzzle left, $ρ$(t), p(t), $κ$ and $Λ$.
+Back to the Friedmann equations – there are four pieces of the puzzle left, ρ(t), p(t), κ and Λ.
 
 [![](assets/images/the-friedmann-equations-explained-a-complete-guide/img_12.webp)](https://courses.profoundphysics.com/p/mathematics-of-general-relativity) 
 
@@ -285,7 +285,7 @@ My **Mathematics of General Relativity** -course will teach you all the math you
 
 ### The Cosmological Constant
 
-The odd triangle-looking thing appearing in the Friedmann equations, $Λ$, is the **cosmological constant** – referred to by Einstein himself as his “biggest blunder”, this mysterious term is a way of **including dark energy into our model**!
+The odd triangle-looking thing appearing in the Friedmann equations, Λ, is the **cosmological constant** – referred to by Einstein himself as his “biggest blunder”, this mysterious term is a way of **including dark energy into our model**!
 
 ![](assets/images/the-friedmann-equations-explained-a-complete-guide/img_14.webp)
 
@@ -293,17 +293,17 @@ The cosmological constant essentially acts like a form of energy with ***negativ
 
 ### The Curvature Term
 
-The constant $κ$ in the Friedmann equations is called the “scalar curvature” and this encapsulates the basic **geometric shape of the universe**.
+The constant κ in the Friedmann equations is called the “scalar curvature” and this encapsulates the basic **geometric shape of the universe**.
 
 ![](assets/images/the-friedmann-equations-explained-a-complete-guide/img_16.webp)
 
 There are three basic types of geometry we can have: **Euclidean**, **hyperbolic**, and **elliptical**.
 
-These can be characterized by different values of the scalar curvature parameter $κ$:
+These can be characterized by different values of the scalar curvature parameter κ:
 
-- **Elliptical: $κ$ > 0**
-- **Euclidean: $κ$ = 0**
-- **Hyperbolic: $κ$ < 0**
+- **Elliptical: κ > 0**
+- **Euclidean: κ = 0**
+- **Hyperbolic: κ < 0**
 
 Euclidean geometry is the familiar geometry you may have learned in school where the interior angles in a triangle add up to 180 degrees and so on.
 
@@ -321,9 +321,9 @@ For example, when we describe the universe as flat, this is only true at cosmolo
 
 ### Pressure and Density Terms
 
-Finally, we have the quantities $ρ$(t) and p(t) showing up in the Friedmann equations.
+Finally, we have the quantities ρ(t) and p(t) showing up in the Friedmann equations.
 
-Both of these come from the perfect fluid assumption mentioned earlier – **p(t) is the pressure of the matter content of the universe** and **$ρ$(t) ($ρ$ is the Greek letter “rho”) is the energy density of the universe**.
+Both of these come from the perfect fluid assumption mentioned earlier – **p(t) is the pressure of the matter content of the universe** and **ρ(t) (ρ is the Greek letter “rho”) is the energy density of the universe**.
 
 ![](assets/images/the-friedmann-equations-explained-a-complete-guide/img_20.webp)
 
@@ -361,7 +361,7 @@ Explicitly including the cosmological constant, the EFEs are given by:
 
 $$G_{\mu\nu}=\frac{8\pi G}{c^4}T_{\mu\nu}-\Lambda g_{\mu\nu}$$
 
-The **perfect fluid assumption** gives us the following form of the energy-momentum tensor T$μ$$ν$:
+The **perfect fluid assumption** gives us the following form of the energy-momentum tensor Tμν:
 
 $$T_{\mu\nu}=\begin{pmatrix}-\rho(t)c^2&0&0&0\\0&p(t)&0&0\\0&0&p(t)&0\\0&0&0&p(t)\end{pmatrix}$$
 
@@ -423,21 +423,21 @@ Hubble’s constant is based on the observation that **further away galaxies are
 
 $$v=H_0D$$
 
-where $v$ is the velocity of a galaxy’s recession and D is the distance between us and the galaxy.
+where v is the velocity of a galaxy’s recession and D is the distance between us and the galaxy.
 
-The next concept is subtler but nevertheless important – it is the **density of matter that corresponds to a flat universe today**. This is called the **critical density $ρ$c**.
+The next concept is subtler but nevertheless important – it is the **density of matter that corresponds to a flat universe today**. This is called the **critical density ρc**.
 
 We are interested in this as **current evidence suggests our universe to be flat** within a small error margin.
 
-An expression for the critical density can be derived by taking the first Friedmann equation evaluated today at t = t0, inserting the expression for the Hubble constant, setting $Λ$ = 0 and $κ$ = 0 to impose a flat universe, from which we get the critical density:
+An expression for the critical density can be derived by taking the first Friedmann equation evaluated today at t = t0, inserting the expression for the Hubble constant, setting Λ = 0 and κ = 0 to impose a flat universe, from which we get the critical density:
 
 $$H_0^2=\frac{8\pi G}{3}\rho_c\ \ \Rightarrow\ \ \rho_c=\frac{3H_0^2}{8\pi G}$$
 
-This expression for the critical density could be evaluated by inserting the current value of the Hubble constant (this gives a critical density value $ρ$c ∼ 10-27 kg/m3), but the exact numerical value isn’t so important here.
+This expression for the critical density could be evaluated by inserting the current value of the Hubble constant (this gives a critical density value ρc ∼ 10-27 kg/m3), but the exact numerical value isn’t so important here.
 
 The final (I mean it this time) quantity is a dimensionless one, which will later help us rewrite the Friedmann equations to see how different matter populates the universe.
 
-It is the ratio of the density $ρ$(t) to the critical density $ρ$c and we call it the **dimensionless density parameter**:
+It is the ratio of the density ρ(t) to the critical density ρc and we call it the **dimensionless density parameter**:
 
 $$\Omega=\frac{\rho\left(t\right)}{\rho_c}=\frac{8\pi G\rho\left(t\right)}{3H_0^2}$$
 
@@ -473,7 +473,7 @@ I will propose that the continuity equation can be rewritten in the following fo
 
 $$dU=-\frac{p\left(t\right)}{c^2}dV$$
 
-Here, $V$ is a volume in space and U = $ρ$$V$ is an energy density times a volume (i.e. an energy) and the letter “d” in front of variables is effectively a derivative or infinitesimal change like in “dx” earlier.
+Here, V is a volume in space and U = ρV is an energy density times a volume (i.e. an energy) and the letter “d” in front of variables is effectively a derivative or infinitesimal change like in “dx” earlier.
 
 For those interested, I’ll present the derivation of this below.
 
@@ -499,7 +499,7 @@ This gives the final expression:
 
 $$dV=3V\frac{\dot{a}\left(t\right)}{a\left(t\right)}dt$$
 
-Let’s handle the left hand side (with the energy density U = $ρ$V) too by using the product rule:
+Let’s handle the left hand side (with the energy density U = ρV) too by using the product rule:
 
 $$dU=d\left(\rho\left(t\right)V\right)=Vd\left(\rho\left(t\right)\right)+\rho\left(t\right)dV=V\frac{\partial\rho\left(t\right)}{\partial t}dt+\rho\left(t\right)3V\frac{\dot{a}\left(t\right)}{a\left(t\right)}dt$$
 
@@ -529,7 +529,7 @@ What does the continuity equation actually represent? How is it related to **ene
 
 To understand this, we will need to do a little bit of *tensor calculus*. You can get an introduction to this and general relativity as a whole in the article [General Relativity for Dummies: An Intuitive Introduction](https://profoundphysics.com/general-relativity-for-dummies/).
 
-Let’s first think about the fundamental quantity sourcing all of these equations: **the energy-momentum tensor T$μ$$ν$**.
+Let’s first think about the fundamental quantity sourcing all of these equations: **the energy-momentum tensor Tμν**.
 
 So far we have written it with both indices “downstairs” but in the language of general relativity we can raise them “upstairs” using the metric.
 
@@ -537,7 +537,7 @@ If we look at the index-up version of the Einstein field equations, we can see:
 
 $$G^{\mu\nu}=\frac{8\pi G}{c^4}T^{\mu\nu}-\Lambda g^{\mu\nu}$$
 
-We are at liberty to take the *covariant divergence* $∇$$μ$ of this equation – but why would we?
+We are at liberty to take the *covariant divergence* ∇μ of this equation – but why would we?
 
 Well, a **non-zero divergence** tells us that something is being added or taken from our system, roughly speaking.
 
@@ -560,7 +560,7 @@ $$\nabla_{\mu}T^{\mu\nu}=0$$
 
 Excellent – this *feels* like we’re on our way to discovering the continuity equation.
 
-There is only one index, $ν$, not being summed over (remember, when working with tensor indices, repeated indices like $μ$ here are being summed over) which tells us that this is actually four equations, one for each index value of $ν$:
+There is only one index, ν, not being summed over (remember, when working with tensor indices, repeated indices like μ here are being summed over) which tells us that this is actually four equations, one for each index value of ν:
 
 $$\nabla_{\mu}T^{\mu0}=0{,}\text{ }\nabla_{\mu}T^{\mu i}=0$$
 
@@ -574,7 +574,7 @@ By Einstein’s famous relation E = mc2, we know that **mass and energy can be s
 
 The intuitive explanation of the continuity equation involves the same mass entering and leaving an area and since mass and energy are the same, this leads us to look at the conservation of energy equation.
 
-**The first equation above with $ν$ = 0 is in fact the continuity equation in disguise**!
+**The first equation above with ν = 0 is in fact the continuity equation in disguise**!
 
 If you’re interested in seeing this explicitly, have a look at the derivation down below.
 
@@ -593,11 +593,11 @@ This has only one non-zero component, T00, since all terms like Ti0 are zero, he
 
 $$0=\nabla_{\mu}T^{\mu0}=\partial_{\mu}T^{\mu0}+\Gamma_{\mu\alpha}^{\mu}T^{\alpha0}+\Gamma_{\mu\alpha}^0T^{\mu\alpha}=\partial_0T^{00}+\Gamma_{\mu0}^{\mu}T^{00}+\Gamma_{\mu\alpha}^0T^{\mu\alpha}$$
 
-In the final term, we can simplify this one step further because unless $μ$ = $α$, the energy-momentum tensor will be zero, hence
+In the final term, we can simplify this one step further because unless μ = α, the energy-momentum tensor will be zero, hence
 
 $$\partial_0T^{00}+\Gamma_{\mu0}^{\mu}T^{00}+\Gamma_{\mu\mu}^0T^{\mu\mu}=0$$
 
-To get out the information we want, we need to know what the Christoffel symbols $Γ MATH0 μ$$ν$ are.
+To get out the information we want, we need to know what the Christoffel symbols Γαμν are.
 
 These can be looked up for the FRW universe (I actually have a list of them [on this page](https://profoundphysics.com/christoffel-symbols-a-complete-guide-with-examples/)) and the ones we require can be summarized as:
 
@@ -643,7 +643,7 @@ The simplest general equation of state is a ***linear* relationship**:
 
 ![](assets/images/the-friedmann-equations-explained-a-complete-guide/img_24.webp)
 
-This w here is a parameter that encapsulates information about **different types of matter**. Also, $c$ is the speed of light once again.
+This w here is a parameter that encapsulates information about **different types of matter**. Also, c is the speed of light once again.
 
 This is what we use to distinguish between different forms of matter and radiation. It is also what allows us to obtain different solutions to the Friedmann equations, as we will see later.
 
@@ -687,11 +687,11 @@ Here, “d” is essentially a derivative or a differential operator, which tell
 
 A **derivative being equal to zero tells us that the thing it is acting on is not changing – it is a constant**!
 
-So, the product $ρ$(t)V here must be a constant here.
+So, the product ρ(t)V here must be a constant here.
 
-However, generally both the energy density $ρ$(t) and volume V are functions of time, so neither of them is a constant individually – the only way their product can be a constant still is if they both **cancel each other out**.
+However, generally both the energy density ρ(t) and volume V are functions of time, so neither of them is a constant individually – the only way their product can be a constant still is if they both **cancel each other out**.
 
-This means that $ρ$(t) and V=Aa3(t) are inversely proportional to one another as this would result in $ρ$(t)V=constant:
+This means that ρ(t) and V=Aa3(t) are inversely proportional to one another as this would result in ρ(t)V=constant:
 
 $$d\left(\rho\left(t\right)V\right)=Ad\left(\rho\left(t\right)a^3\left(t\right)\right)=0$$
 
@@ -703,7 +703,7 @@ The interpretation of this is that **the energy density of matter gets diluted a
 
 In fact, this result may not be too surprising since in this case, the energy spreads out in much the same way as things on Earth do – imagine filling a square box of side length L with a gas. Let’s say the gas has mass M.
 
-The volume of the box is then L3 and the density of the gas is M/L3 – if we increase the side length, we dilute the gas, with its density scaling as $ρ$ $∝$ L-3!
+The volume of the box is then L3 and the density of the gas is M/L3 – if we increase the side length, we dilute the gas, with its density scaling as ρ ∝ L-3!
 
 This is exactly what is happening with regular matter on **cosmic scales** as the universe expands.
 
@@ -733,7 +733,7 @@ For the full derivation of this result, see below.
 
 Derivation of The Energy Density For Radiation
 
-If we take our equation of state, p(t)=1/3$ρ$(t)c2, and plug it into the continuity equation (now the differential equation form), we get the following:
+If we take our equation of state, p(t)=1/3ρ(t)c2, and plug it into the continuity equation (now the differential equation form), we get the following:
 
 $$\frac{\partial\rho\left(t\right)}{\partial t}+\frac{3\dot{a}\left(t\right)}{a\left(t\right)}\left(\rho\left(t\right)+\frac{p\left(t\right)}{c^2}\right)=0\\\Rightarrow\ \ \frac{\partial\rho\left(t\right)}{\partial t}+\frac{3\dot{a}\left(t\right)}{a\left(t\right)}\left(\rho\left(t\right)+\frac{\frac{1}{3}c^2\rho\left(t\right)}{c^2}\right)=0\\\Rightarrow\ \ \frac{\partial\rho\left(t\right)}{\partial t}+4\frac{\dot{a}\left(t\right)}{a\left(t\right)}\rho\left(t\right)=0$$
 
@@ -753,7 +753,7 @@ Now, based on the properties of logarithms, we can move the -4 to be a power of 
 
 $$\ln\rho\left(t\right)=\ln\left(a^{-4}\left(t\right)\right)\ \ \Rightarrow\ \ \rho\left(t\right)=a^{-4}\left(t\right)$$
 
-If we were to include the arbitrary integration constant, we would have some prefactor here in front of a-4(t) – so, in general, we find a proportionality $ρ$(t) $∝$ a-4(t).
+If we were to include the arbitrary integration constant, we would have some prefactor here in front of a-4(t) – so, in general, we find a proportionality ρ(t) ∝ a-4(t).
 
 ### Equation of State For Dark Energy
 
@@ -767,7 +767,7 @@ Playing the same game one final time to see how the **energy density of dark ene
 
 $$\rho_{\Lambda}\left(t\right)\propto a^0\left(t\right)$$
 
-Raising anything to the power of zero gives one, so a0(t) = 1. This means that **$ρ$$Λ$ is actually constant** – it does not get diluted with the expansion of the universe!
+Raising anything to the power of zero gives one, so a0(t) = 1. This means that **ρΛ is actually constant** – it does not get diluted with the expansion of the universe!
 
 If everything else does, we should expect that as more and more time passes since the Big Bang, **the universe should eventually become dominated by dark energy** as the energy densities of other forms of energy decrease.
 
@@ -775,9 +775,9 @@ Let’s recall for a moment that these are all energy *densities* rather than en
 
 When we say “density”, we usually refer to a mass density. When you multiply a mass density by a volume, you get a mass – this makes sense.
 
-This works exactly the same with energy densities: let’s multiply $ρ$ by a volume V, recalling that volumes are proportional to a3(t) since the universe is expanding in all directions equally.
+This works exactly the same with energy densities: let’s multiply ρ by a volume V, recalling that volumes are proportional to a3(t) since the universe is expanding in all directions equally.
 
-We can summarize **how the different forms of energy in the universe evolve in time as the universe expands** as follows (as a reminder, $ρ$m(t) $∝$ a-3(t), $ρ$r(t) $∝$ a-4(t), $ρ$$Λ$(t) $∝$ a0(t) and multiplying by V $∝$ a3(t) raises each by 3):
+We can summarize **how the different forms of energy in the universe evolve in time as the universe expands** as follows (as a reminder, ρm(t) ∝ a-3(t), ρr(t) ∝ a-4(t), ρΛ(t) ∝ a0(t) and multiplying by V ∝ a3(t) raises each by 3):
 
 $$E=\begin{cases}\rho_m\left(t\right)V\propto a^0\left(t\right){,}\\\rho_r\left(t\right)V\propto a^{-1}\left(t\right){,}\\\rho_{\Lambda}V\propto a^3\left(t\right)\end{cases}$$
 
@@ -805,7 +805,7 @@ In terms of the dimensionless density parameter, the first Friedmann equation ca
 
 $$H^2\left(t\right)=H_0^2\left(\Omega_{r{,}0}\left(\frac{a_0}{a\left(t\right)}\right)^4+\Omega_{m{,}0}\left(\frac{a_0}{a\left(t\right)}\right)^3+\Omega_{\kappa{,}0}\left(\frac{a_0}{a\left(t\right)}\right)^2+\Omega_{\Lambda}\right)$$
 
-Here, the $Ω$0‘s represent the present-day values of the dimensionless densities **for each form of energy** (the curvature of the universe is also treated as a form of “energy” here) and a0 is the present-day value of the scale factor.
+Here, the Ω0‘s represent the present-day values of the dimensionless densities **for each form of energy** (the curvature of the universe is also treated as a form of “energy” here) and a0 is the present-day value of the scale factor.
 
 This form of the first Friedmann equation will turn out very useful for us later. It’s also something you might encounter in the literature somewhere, so it’s worth mentioning here!
 
@@ -817,7 +817,7 @@ $$H^2\left(t\right)=\frac{8\pi G}{3}\left(\rho\left(t\right)-\frac{3\kappa c^2}{
 
 I’ve factored out some terms already so that we can identify the curvature term as a type of density that is proportional to a-2(t).
 
-With this, we can essentially “absorb” the curvature part into the energy density term, just keeping in mind that the total energy density $ρ$(t) now contains a curvature contribution also:
+With this, we can essentially “absorb” the curvature part into the energy density term, just keeping in mind that the total energy density ρ(t) now contains a curvature contribution also:
 
 $$H^2\left(t\right)=\frac{8\pi G}{3}\rho\left(t\right)$$
 
@@ -831,11 +831,11 @@ $$\Omega=\frac{\rho\left(t\right)}{\rho_c}=\frac{8\pi G\rho\left(t\right)}{3H_0^
 
 This means that instead of being proportional to ak(t), the energy densities will be proportional to ak0 (again, at the current age of our universe).
 
-We’ll then define $Ω$m,0 etc. as the present-day value of each density parameter. For example, the present-day value of the matter density parameter would be:
+We’ll then define Ωm,0 etc. as the present-day value of each density parameter. For example, the present-day value of the matter density parameter would be:
 
 $$\Omega_m=\frac{8\pi G}{3H_0^2}\rho_m\left(t\right)=\frac{\rho_m\left(t\right)}{\rho_{m{,}c}}=\frac{\rho_m\left(t_0\right)}{\rho_{m{,}c}}\frac{\rho_m\left(t\right)}{\rho_m\left(t_0\right)}=\Omega_{m{,}0}\left(\frac{a_0}{a\left(t\right)}\right)^3$$
 
-Here, I’ve multiplied by $ρ$m(t0)/$ρ$m(t0) = 1 and used the proportionality relation for matter we found earlier, $ρ$(t) $∝$ a-3(t). With this, we get the terms $ρ$m(t)/$ρ$m(t0)=a-3(t)/a-3(t0)=a03/a3(t) and $Ω$m,0=$ρ$m(t0)/$ρ$m,c.
+Here, I’ve multiplied by ρm(t0)/ρm(t0) = 1 and used the proportionality relation for matter we found earlier, ρ(t) ∝ a-3(t). With this, we get the terms ρm(t)/ρm(t0)=a-3(t)/a-3(t0)=a03/a3(t) and Ωm,0=ρm(t0)/ρm,c.
 
 We can do the same thing with the radiation and the curvature contributions to define analogous terms, which only differ by their proportionality relation to a(t).
 
@@ -851,7 +851,7 @@ Here, we’re treating the curvature part of Friedmann’s equations as an energ
 
 $$\rho_{\Lambda}\left(t\right)=\frac{3H_0^2}{8\pi G}\Omega_{\Lambda}$$
 
-Remember: the energy density of dark energy is constant as we saw before, so there is no need to define a present-day value for it. This is why we’re labeling it simply as $Ω$$Λ$.
+Remember: the energy density of dark energy is constant as we saw before, so there is no need to define a present-day value for it. This is why we’re labeling it simply as ΩΛ.
 
 Finally, if we multiply the first Friedmann equation by H02/H02 = 1 and split the energy density into its constituent parts (the total energy density is just the sum of energy densities for each type of energy), we massage the first Friedmann equation into the form:
 
@@ -875,19 +875,19 @@ The Friedmann equations, at their heart, are **differential equations** we can u
 
 So, **the goal of the Friedmann equations is to solve for the scale factor a(t)**.
 
-However, the difficult part comes from the fact that we have *three* time-dependent variables in the Friedmann equations – **the scale factor a(t)**, **the energy density $ρ$(t)** and **the pressure p(t)**.
+However, the difficult part comes from the fact that we have *three* time-dependent variables in the Friedmann equations – **the scale factor a(t)**, **the energy density ρ(t)** and **the pressure p(t)**.
 
 This is why we introduce an **equation of state** (as discussed earlier) – it allows us to eliminate one of the variables, namely, express pressure in terms of density.
 
-By doing this, we’re then left with two equations – the two Friedmann equations – and two time-dependent variables, a(t) and $ρ$(t), which we can solve from the Friedmann equations.
+By doing this, we’re then left with two equations – the two Friedmann equations – and two time-dependent variables, a(t) and ρ(t), which we can solve from the Friedmann equations.
 
-Typically, we use the second Friedmann equation to solve for the density $ρ$(t) in terms of the scale factor a(t) and insert this into the first Friedmann equation to solve for a(t).
+Typically, we use the second Friedmann equation to solve for the density ρ(t) in terms of the scale factor a(t) and insert this into the first Friedmann equation to solve for a(t).
 
-However, instead of the second Friedmann equation, we can equivalently use the **continuity equation** to find $ρ$(t) in terms of a(t). This is what we did earlier in this article.
+However, instead of the second Friedmann equation, we can equivalently use the **continuity equation** to find ρ(t) in terms of a(t). This is what we did earlier in this article.
 
 So, to summarize, here are the rough steps for solving the Friedmann equations:
 
-1. **Pick a particular universe model with scalar curvature parameter $κ$ and some form(s) of energy**.
+1. **Pick a particular universe model with scalar curvature parameter κ and some form(s) of energy**.
 2. **Write down an equation of state that relates pressure to energy density**.
 3. **Plug the pressure in terms of energy density into the second Friedmann equation or equivalently, into the continuity equation**.
 4. **Solve for the energy density in terms of the scale factor**.
@@ -900,7 +900,7 @@ This course aims to give you all the **mathematical tools** you need to understa
 
 ### Important Solutions of The Friedmann Equations
 
-Perhaps the most important class of solutions to the Friedmann equations are those for a **flat universe** – a universe that corresponds to a scalar curvature parameter $κ$ = 0.
+Perhaps the most important class of solutions to the Friedmann equations are those for a **flat universe** – a universe that corresponds to a scalar curvature parameter κ = 0.
 
 This is because all current evidence suggests our own universe to be flat, which is why the flat universe solutions are the most widely considered in a lot of current research.
 
@@ -931,10 +931,10 @@ It actually turns out that our universe was dominated by a single component in d
 
 Considering only the contribution of “stuff” (so ignoring how the curvature affects things – after all, our own universe looks to be flat from what we observe), we can find periods of time when each of the three components singularly dominate.
 
-- First we have the **radiation-dominated era**, for times such that 0 < a(t) < a0$Ω$r,0/$Ω$m,0.
-- After, matter starts to become more important around the time when a(t) $≈$ a0$Ω$r,0/$Ω$m,0.
-- Matter has its time to shine and with the **matter-dominated era** existing for a0$Ω$r,0/$Ω$m,0 < a(t) < a0($Ω$m,0/$Ω$$Λ$)1/3
-- In the end, as a(t) gets larger and larger, all terms like 1/a2(t), 1/a3(t) and 1/a4(t) get smaller and smaller and we’re left only with the dark energy contribution: **dark energy dominates** for the times when a(t)>a0($Ω$m,0/$Ω$$Λ$,0)1/3.
+- First we have the **radiation-dominated era**, for times such that 0 < a(t) < a0Ωr,0/Ωm,0.
+- After, matter starts to become more important around the time when a(t) ≈ a0Ωr,0/Ωm,0.
+- Matter has its time to shine and with the **matter-dominated era** existing for a0Ωr,0/Ωm,0 < a(t) < a0(Ωm,0/ΩΛ)1/3
+- In the end, as a(t) gets larger and larger, all terms like 1/a2(t), 1/a3(t) and 1/a4(t) get smaller and smaller and we’re left only with the dark energy contribution: **dark energy dominates** for the times when a(t)>a0(Ωm,0/ΩΛ,0)1/3.
 - Today, our universe is already in the “dark energy-dominant era” – the universe will **keep on expanding** due to dark energy being the dominant form of energy in our universe today.
 
 Now, where do these “eras of the universe” come from?
@@ -949,13 +949,13 @@ Speaking of “today”, **how old is our universe**? Do the Friedmann equations
 
 They do indeed! We can use **experimental observations** to aid us in this calculation.
 
-First, within a very small margin of error, **our universe appears to be flat** so we can say that $κ$ = $ρ MATH0 κ$ = 0. One term in the Friedmann equations eliminated!
+First, within a very small margin of error, **our universe appears to be flat** so we can say that κ = ρκ = Ωκ = 0. One term in the Friedmann equations eliminated!
 
-Now, here are some numbers for perspective: $Ω$r,0 $≈$ 9$×$10-5, $Ω$m,0 $≈$ 0.31, $Ω$$Λ$ $≈$ 0.69.
+Now, here are some numbers for perspective: Ωr,0 ≈ 9×10-5, Ωm,0 ≈ 0.31, ΩΛ ≈ 0.69.
 
 It also turns out that due to some symmetries of the FRW metric, we are free to set a0 = 1 (this just corresponds to picking a particular reference value for a0 and scaling the values of a(t) relative to this).
 
-Using the eras of the universe from above, we can see that radiation dominated for times when a(t) < 9$×$10-5/0.31 = 2.9$×$10-4.
+Using the eras of the universe from above, we can see that radiation dominated for times when a(t) < 9×10-5/0.31 = 2.9×10-4.
 
 This will be for a very short amount of time so effectively, we can ignore the radiation contribution, leading us to the following form of the **first Friedmann equation**:
 
@@ -979,7 +979,7 @@ The left-hand side can be calculated numerically to give a value of around 0.793
 
 The last piece of the puzzle is **Hubble’s constant** – thanks to its relation to the velocities of galaxies in Hubble’s law, this can also be observationally measured!
 
-**The roughly agreed-upon value of Hubble’s constant is 68km/s/Mpc**, where Mpc is a megaparsec (a peculiar unit used in astronomy) or in standard SI-units, about 2.2037$×$10-18.
+**The roughly agreed-upon value of Hubble’s constant is 68km/s/Mpc**, where Mpc is a megaparsec (a peculiar unit used in astronomy) or in standard SI-units, about 2.2037×10-18.
 
 This means that we can rearrange the above equation to solve for t0, the age of the universe. Doing this and plugging in the experimental values mentioned gives us the **age of our universe**:
 
@@ -1007,23 +1007,23 @@ $$\frac{H^2\left(t\right)}{H_0^2}=\frac{8\pi G\rho\left(t\right)}{3H_0^2}-\frac{
 
 This equation is true at all times but in particular, it is true today (when the left-hand side will equal 1 since H(t)=H0).
 
-If we evaluate this at t = t0, this equation simplifies greatly and we can use it to **solve for the scalar curvature parameter $κ$**:
+If we evaluate this at t = t0, this equation simplifies greatly and we can use it to **solve for the scalar curvature parameter κ**:
 
 $$1=\Omega-\frac{c^2\kappa}{a_0^2H_0^2}\ \ \Rightarrow\ \ \kappa=\frac{a_0^2H_0^2}{c^2}\left(\Omega-1\right)$$
 
-Here, we’ve used the definition of the dimensionless density parameter, $Ω$ = 8$π$G$ρ$(t)/3H02. Note that this parameter is for the total energy density of the universe, meaning it includes *all* forms of energy.
+Here, we’ve used the definition of the dimensionless density parameter, Ω = 8πGρ(t)/3H02. Note that this parameter is for the total energy density of the universe, meaning it includes *all* forms of energy.
 
 This means that depending on whether the dimensionless density parameter of the universe is less than, equal to, or greater than 1, **the curvature is either negative, zero, or positive**.
 
 Geometrically, these situations are very different!
 
-All positive curvature cases are similar and all negative curvature cases are roughly similar, so it’s enough for us to set $κ$=-1, 0, +1 to see the different possible outcomes.
+All positive curvature cases are similar and all negative curvature cases are roughly similar, so it’s enough for us to set κ=-1, 0, +1 to see the different possible outcomes.
 
 These also go hand-in-hand with the three types of universe:
 
-- **Open universe has negative curvature ($κ$ = -1)**
-- **Flat universe has zero curvature ($κ$ = 0)**
-- **Closed universe has positive curvature ($κ$ = 1)**
+- **Open universe has negative curvature (κ = -1)**
+- **Flat universe has zero curvature (κ = 0)**
+- **Closed universe has positive curvature (κ = 1)**
 
 Let’s look at how these different geometries affect **how the universe evolves into the far future** and how it might eventually end.
 
@@ -1065,7 +1065,7 @@ The second type of universe we’ll consider is a **closed universe.** You may h
 
 However, we’ll need to cover a few preliminaries before tackling this spacetime!
 
-In order to make calculations easier, we will change coordinates to something called **conformal time $η$** (Greek letter “eta”).
+In order to make calculations easier, we will change coordinates to something called **conformal time η** (Greek letter “eta”).
 
 Conformal time is a useful relativistic trick rather than being an observable quantity – it’s a mathematical “choice of coordinates” that allows us to do certain calculations.
 
@@ -1083,7 +1083,7 @@ We will also, for convenience, use the convention c = 1 – that is, we set the 
 
 This may seem bizarre at first but it is a commonly used convention as it simplifies many calculations and can always be added in again later by *dimensional analysis.*
 
-Finally, since we’re considering a **matter-dominated universe**, we’ll have an energy density of the form $ρ$m(t) = $ρ$0/a3(t).
+Finally, since we’re considering a **matter-dominated universe**, we’ll have an energy density of the form ρm(t) = ρ0/a3(t).
 
 Now, if we rearrange the first Friedmann equation for our closed universe, we find a slightly more complicated equation:
 
@@ -1115,13 +1115,13 @@ $$\eta=\ \sin^{-1}\left(\frac{3a}{4\pi G\rho_0}-1\right)+\frac{\pi}{2}$$
 
 Now we just have to rearrange this and solve for the scale factor to see the **fate of the closed universe!**
 
-Using the fact that sin(x-$π$/2)=-cos(x), we have:
+Using the fact that sin(x-π/2)=-cos(x), we have:
 
 $$a\left(\eta\right)=\frac{4\pi G\rho_0}{3}\left(1-\cos\eta\right)$$
 
-Note that at $η$=0 and $η$=2$π$, we have a(0) = a(2$π$) = 0. This is completely different to the flat universe!
+Note that at η=0 and η=2π, we have a(0) = a(2π) = 0. This is completely different to the flat universe!
 
-**The closed universe has a Big Bang, it expands and reaches a maximum scale factor of amax=4$π$G$ρ$0/3 and then shrinks again, resulting in what is typically called a Big Crunch**.
+**The closed universe has a Big Bang, it expands and reaches a maximum scale factor of amax=4πGρ0/3 and then shrinks again, resulting in what is typically called a Big Crunch**.
 
 So, the lifetime of a closed universe is *finite* with everything eventually collapsing together into a singular point.
 
@@ -1137,7 +1137,7 @@ The final category of universes for us to explore is the **open universe**.
 
 The calculation here follows exactly the same procedure with the same tricks as for the closed universe.
 
-The resulting integral equation is almost identical, except for a crucial sign change under the square root which changes the inevitable fate of the universe (this sign change comes from having $κ$ = -1 instead of +1 like we did for the closed universe):
+The resulting integral equation is almost identical, except for a crucial sign change under the square root which changes the inevitable fate of the universe (this sign change comes from having κ = -1 instead of +1 like we did for the closed universe):
 
 $$\int_{ }^{ }\frac{1}{\sqrt{\frac{8\pi G\rho_0}{3}a+a^2}}da=\int_{ }^{ }d\eta=\ \eta$$
 
@@ -1155,7 +1155,7 @@ $$a\left(\eta\right)\propto\sinh\eta$$
 
 But what do these results mean for the **fate of an open universe?**
 
-If we think on (conformal) timescales where $η$ gets large (which corresponds to saying that the universe evolves into the far future), we can use the approximations:
+If we think on (conformal) timescales where η gets large (which corresponds to saying that the universe evolves into the far future), we can use the approximations:
 
 $$\sinh\eta\approx\cosh\eta\approx\frac{1}{2}e^{\eta}$$
 
@@ -1175,7 +1175,7 @@ If we have either a flat or *open* geometry, then we have a **universe that will
 
 Well, we know that **any non-cosmological constant form of energy density (matter, radiation, curvature) will be diluted by the expansion of spacetime**.
 
-This means that as time passes in the above equation, $ρ$(t) will start to get smaller and smaller (reminder; $ρ$(t) $∝$ a-3(t) for radiation, $ρ$(t) $∝$ a-3(t) for matter and $ρ$(t) $∝$ a-2(t) for curvature).
+This means that as time passes in the above equation, ρ(t) will start to get smaller and smaller (reminder; ρ(t) ∝ a-3(t) for radiation, ρ(t) ∝ a-3(t) for matter and ρ(t) ∝ a-2(t) for curvature).
 
 If we’re considering only an open or flat universe, we’re safe to consider arbitrarily long timescales.
 

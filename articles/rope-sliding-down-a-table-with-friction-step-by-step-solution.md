@@ -149,7 +149,7 @@ Since the part of the rope where the friction force is applying stays in contact
 
 $$N=m_{\mu}\left(t\right)g$$
 
-The $m^{$$μ$$}$(t) here is the mass of the part of the rope that is on the table (which of course changes with time as the rope slides off).
+The mµ(t) here is the mass of the part of the rope that is on the table (which of course changes with time as the rope slides off).
 
 This mass term (mass of the rope on the table) here is simply the total mass (m) minus the mass that’s hanging off the table (M(t)). M(t) we already specified earlier, so this then becomes:
 
@@ -258,7 +258,7 @@ Now, here comes the interesting part, which is actually taking the Laplace trans
 
 On the left hand side, we have the **Laplace transform of the second derivative of a function**, which is identity #2 on our table from earlier! (just replace f(t) with x(t))
 
-On the right hand side, we have the **Laplace transform of simply a function of t**, which is just identity #1 as well as the **Laplace transform of a constant** ($μ$g), which is identity #3.
+On the right hand side, we have the **Laplace transform of simply a function of t**, which is just identity #1 as well as the **Laplace transform of a constant** (µg), which is identity #3.
 
 So, all in all from applying the Laplace transforms, we get:
 
@@ -344,7 +344,7 @@ In our problem, these would be:
 
 ![](assets/images/rope-sliding-down-a-table-with-friction-step-by-step-solution/img_9.webp)
 
-Notice that the function f here is simply a constant, so plugging in t-$τ$ doesn’t actually do anything.
+Notice that the function f here is simply a constant, so plugging in t-τ doesn’t actually do anything.
 
 Essentially what we’ve done now is converted this inverse Laplace transform into a simple integral:
 

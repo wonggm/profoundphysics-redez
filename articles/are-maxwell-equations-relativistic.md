@@ -170,27 +170,27 @@ An important fact to realize for our discussion is that in relativity, **time pl
   
 If you’re interested, you can read more about **what role time actually plays in relativity** from [this article](https://profoundphysics.com/is-time-a-vector/). In the article, we discuss whether it makes sense to fundamentally think of time as a scalar, a vector or perhaps as something entirely different.
 
-In relativity, we label the coordinates of an observer by a four-component object denoted as x$μ$, where the index $μ$ can take on values 0, 1, 2 or 3 (with $μ$=0 describing the temporal part and $μ$=1,2,3 describing the spatial coordinates).
+In relativity, we label the coordinates of an observer by a four-component object denoted as xμ, where the index μ can take on values 0, 1, 2 or 3 (with μ=0 describing the temporal part and μ=1,2,3 describing the spatial coordinates).
 
 We can imagine this as a column vector:
 
 $$x^{\mu}=\begin{pmatrix}ct\\x\\y\\z\end{pmatrix}$$
 
-Here, $c$ is the speed of light and is necessary to be there so that each component has the dimension of length (Recall distance = speed times time). So, c here is just a constant that works as a conversion factor.
+Here, c is the speed of light and is necessary to be there so that each component has the dimension of length (Recall distance = speed times time). So, c here is just a constant that works as a conversion factor.
 
-If we drop the superscript $μ$ for a moment and treat x$μ$ as a column vector, we can describe the family of **Poincaré transformations** from x to x’ as (x’ being just a set of different coordinates, the coordinates of another observer):
+If we drop the superscript μ for a moment and treat xμ as a column vector, we can describe the family of **Poincaré transformations** from x to x’ as (x’ being just a set of different coordinates, the coordinates of another observer):
 
 $$x'=\Lambda x+b$$
 
-Here, b represents the translations (including translations in time too) and the matrix $Λ$ encompasses the rotations and boosts.
+Here, b represents the translations (including translations in time too) and the matrix Λ encompasses the rotations and boosts.
 
-Let’s consider the **rotations** next. In particular, let’s rotate around the x-axis first. This is when b=0 and $Λ$ takes the form:
+Let’s consider the **rotations** next. In particular, let’s rotate around the x-axis first. This is when b=0 and Λ takes the form:
 
 $$\Lambda=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&\cos\theta&-\sin\theta\\0&0&\sin\theta&\cos\theta\end{pmatrix}$$
 
-This looks complicated at first, however, the first two rows just mean “do nothing to the time component or x-component”. The bottom right hand corner can be read as “rotate by angle $θ$” in the yz-plane.
+This looks complicated at first, however, the first two rows just mean “do nothing to the time component or x-component”. The bottom right hand corner can be read as “rotate by angle θ” in the yz-plane.
 
-In general, **a rotation is described by a 3$×$3 matrix R** that obeys the rule RRT= I, where I is the 3$×$3 identity matrix.
+In general, **a rotation is described by a 3×3 matrix R** that obeys the rule RRT= I, where I is the 3×3 identity matrix.
 
 RT is the “matrix transpose” – the rule is you do nothing along the diagonal but swap opposite entries along the diagonal, so if we take a matrix R:
 
@@ -204,7 +204,7 @@ Altogether, we can describe any rotation as:
 
 $$\Lambda=\begin{pmatrix}1&\vec{0}\\\vec{0}&R\end{pmatrix}$$
 
-Now we move on to **boosts** along the x-axis, which is a mixture between time and space. This is again a Lorentz transformation and is given by the case where b=0 and $Λ$ is given by:
+Now we move on to **boosts** along the x-axis, which is a mixture between time and space. This is again a Lorentz transformation and is given by the case where b=0 and Λ is given by:
 
 $$\Lambda=\begin{pmatrix}\cosh\psi&-\sinh\psi&0&0\\-\sinh\psi&\cosh\psi&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}$$
 
@@ -222,9 +222,9 @@ More explicitly, this says:
 
 $$\begin{pmatrix}ct'\\0\\0\\0\end{pmatrix}=\begin{pmatrix}\cosh(\psi) ct\sinh(\psi) x\\-\sinh(\psi)ct+\cosh(\psi)x\\y\\z\end{pmatrix}$$
 
-If we look at the new x’-coordinate, this tells us that x=tanh($ψ$)ct. This describes an observer moving at velocity v=tanh($ψ$)c.
+If we look at the new x’-coordinate, this tells us that x=tanh(ψ)ct. This describes an observer moving at velocity v=tanh(ψ)c.
 
-However, -1<tanh($ψ$)**<**1, therefore this boosted velocity is moving at a speed that is *less* than the speed of light!
+However, -1<tanh(ψ)**<**1, therefore this boosted velocity is moving at a speed that is *less* than the speed of light!
 
 Now we’ve seen how two different observers’ space and time coordinates change under Lorentz transformations, but this is not yet enough to see **how Maxwell’s equations transform**.
 
@@ -232,17 +232,17 @@ For that, we also need to know how **fields** (such as the electric field) trans
 
 To do this, we’ll introduce the superscript greek letters again.
 
-A **scalar field** $φ$(x) transforms very simply, $φ$(x)=$φ$'(x’) – it looks exactly the same in all frames! A **vector field**, however, transforms by the equation:
+A **scalar field** φ(x) transforms very simply, φ(x)=φ'(x’) – it looks exactly the same in all frames! A **vector field**, however, transforms by the equation:
 
 $$A'^{\mu}\left(x'\right)=\Lambda_{\nu}^{\mu}A^{\nu}\left(x\right)$$
 
-In this, we have introduced the “summation convention” – this means that if there is a repeated index in the upper and lower positions, we sum over that index (in our case, we would sum over $ν$ from 0 to 3).
+In this, we have introduced the “summation convention” – this means that if there is a repeated index in the upper and lower positions, we sum over that index (in our case, we would sum over ν from 0 to 3).
 
 This summation generalizes matrix multiplication. Similarly, something with two upper indices (which is called a **tensor field** and is often expressed as a matrix) transforms as:
 
 $$F'^{\mu\nu}\left(x'\right)=\Lambda_{\rho}^{\mu}\Lambda_{\sigma}^{\nu}F^{\rho\sigma}\left(x\right)$$
 
-If we don’t want to include the indices, we could write this purely in terms of matrices as F’ = $Λ$F$Λ$T.
+If we don’t want to include the indices, we could write this purely in terms of matrices as F’ = ΛFΛT.
 
 Finally, if something has a lower subscript such as a derivative, it transforms in the following way:
 
@@ -262,7 +262,7 @@ Maxwell’s theory of electromagnetism is governed by **four equations**:
 
 $$\nabla\cdot\vec{E}=\frac{\rho}{\varepsilon_0}\\\nabla\cdot\vec{B}=0\\\nabla\times\vec{E}=-\frac{\partial\vec{B}}{\partial t}\\\nabla\times\vec{B}=\mu_0\left(\vec{J}+\varepsilon_0\frac{\partial\vec{E}}{\partial t}\right)$$
 
-Where **E** and **B** are the electric and magnetic fields respectively, $ρ$ is the charge density, **J** is the current density and $μ$0 and $\varepsilon_0$ are two constants of nature relating to the electric and magnetic fields in a vacuum.
+Where **E** and **B** are the electric and magnetic fields respectively, ρ is the charge density, **J** is the current density and μ0 and ε0 are two constants of nature relating to the electric and magnetic fields in a vacuum.
 
 We can use some mathematical trickery to rewrite these equations in a slightly different way.
 
@@ -286,7 +286,7 @@ We can then introduce a second field, called the **scalar potential**, to define
 
 $$\vec{E}=-\nabla\phi-\frac{\partial \vec{A}}{\partial t}$$
 
-With these two defined, we can bundle up Maxwell’s equations in a nice form by writing them in terms of two vectors with indices, A$μ$ and J$μ$ with components:
+With these two defined, we can bundle up Maxwell’s equations in a nice form by writing them in terms of two vectors with indices, Aμ and Jμ with components:
 
 $$A^{\mu}=\left(\frac{1}{c}\phi,\vec{A}\right)\\J^{\mu}=\left(c\rho{,}\vec{J}\right)$$
 
@@ -308,7 +308,7 @@ Now, if we were to write out these equations component by component, we’d reco
 
 Therefore, this covariant form is exactly equivalent to the original form of Maxwell’s equations, just expressed in terms of different quantities.
 
-We can see that the first equation has one free index $ν$, whereas the second has three free indices. The useful thing about this is that we can now easily apply **Lorentz transformations** to these equations since we know how all of these objects with indices transform (as discussed earlier).
+We can see that the first equation has one free index ν, whereas the second has three free indices. The useful thing about this is that we can now easily apply **Lorentz transformations** to these equations since we know how all of these objects with indices transform (as discussed earlier).
 
 So, let’s see how these equations transform next!
 
@@ -344,19 +344,19 @@ We can now use a nice property of the Lorentz matrices, which is that whenever w
 
 $$\Lambda_{\mu}^{\lambda}\Lambda_{\rho}^{\mu}=\delta_{\rho}^{\lambda}$$
 
-The Kronecker delta is a simple mathematical object that is defined as 1 if $λ$=$ρ$ and 0 if $λ MATH0 ρ$. With this, our equation becomes:
+The Kronecker delta is a simple mathematical object that is defined as 1 if λ=ρ and 0 if λ≠ρ. With this, our equation becomes:
 
 $$\delta_{\rho}^{\lambda}\Lambda_{\sigma}^{\nu}\partial_{\lambda}F^{\rho\sigma}=\mu_0\Lambda_{\alpha}^{\nu}J^{\alpha}$$
 
-The Kronecker delta here has the property that $δ MATH0 ρ$=0 if $λ MATH1 ρ$, which would make the entire left-hand side of this equation go to zero. However, this equation does not generally hold if the left-hand side goes to zero and therefore, for this equation to remain true, we must have $λ$=$ρ$ (this is the only way for the left-hand side to NOT be zero).
+The Kronecker delta here has the property that δλρ=0 if λ≠ρ, which would make the entire left-hand side of this equation go to zero. However, this equation does not generally hold if the left-hand side goes to zero and therefore, for this equation to remain true, we must have λ=ρ (this is the only way for the left-hand side to NOT be zero).
 
-We can therefore effectively just replace $λ$ with $ρ$, which also means that $δ MATH0 ρ$=1. We then get:
+We can therefore effectively just replace λ with ρ, which also means that δλρ=1. We then get:
 
 $$\Lambda_{\sigma}^{\nu}\partial_{\rho}F^{\rho\sigma}=\mu_0\Lambda_{\alpha}^{\nu}J^{\alpha}$$
 
-On the left-hand side, $σ$ is just a summation index (by the “summation convention” mentioned earlier), so it doesn’t matter which letter we label it with (since it’s summed over anyway). We all this a dummy index and dummy indices can generally be relabeled freely.
+On the left-hand side, σ is just a summation index (by the “summation convention” mentioned earlier), so it doesn’t matter which letter we label it with (since it’s summed over anyway). We all this a dummy index and dummy indices can generally be relabeled freely.
 
-Therefore, we might as well just label the dummy index $σ$ as $α$ instead to get:
+Therefore, we might as well just label the dummy index σ as α instead to get:
 
 $$\Lambda_{\alpha}^{\nu}\partial_{\rho}F^{\rho\alpha}=\mu_0\Lambda_{\alpha}^{\nu}J^{\alpha}$$
 
@@ -386,7 +386,7 @@ Using this gauge, we can rewrite (one final time) the first Maxwell equation as:
 
 $$\mu_0J^\nu=\partial_\mu F^{\mu\nu}=\partial_\mu \left(\partial^\mu A^\nu-\partial^\nu A^\mu\right)\\=\partial^2 A^\nu-\partial_\mu\partial^\nu A^\mu=\partial^2 A^\nu-\partial^\nu\partial_\mu A^\mu=\partial^2 A^\nu$$
 
-Here, I’ve simply inserted the definition of the Faraday tensor from earlier. Also, since the combination $∂ MATH0 ∂$$μ$ contains a sum over the index $μ$, this term does not actually have any free indices and is therefore just a scalar (here labeled as $∂$2, however, this doesn’t *literally* mean “$∂$ squared” – it’s just notation).
+Here, I’ve simply inserted the definition of the Faraday tensor from earlier. Also, since the combination ∂µ∂µ contains a sum over the index µ, this term does not actually have any free indices and is therefore just a scalar (here labeled as ∂2, however, this doesn’t *literally* mean “∂ squared” – it’s just notation).
 
 It turns out that we can derive this equation from a **scalar quantity** and the nice thing is that a scalar is always the same for all observers – hence we know that this Maxwell’s equation *must* already be relativistic! You’ll find how this is done below.
 
@@ -398,29 +398,29 @@ $$S_{\text{Maxwell}}=-\frac{1}{4\mu_0}\int_{ }^{ }F^{\mu\nu}F_{\mu\nu}d^4x-\int_
 
 We get equations of motion (i.e. Maxwell’s equations) out of this by calculating the variation of this action and setting it equal to zero. This is called the principle of stationary action (if you want to know more about this and where it comes from, check out [this](https://profoundphysics.com/lagrangian-mechanics-for-beginners/) [i](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[n](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[t](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[r](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[o](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[d](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[u](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[c](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[t](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[i](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[o](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[n](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[t](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)[o](https://profoundphysics.com/lagrangian-mechanics-for-beginners/) [Lagrangian mechanics](https://profoundphysics.com/lagrangian-mechanics-for-beginners/)).
 
-To calculate the variation of this action, we let A$μ$ vary as A$μ$+$δ$A$μ$ and ignore anything that has a coefficient of ($δ$A$μ$)2 because this is much smaller than $δ$A$μ$ (in the same way 0.12=0.01, which is much smaller!)
+To calculate the variation of this action, we let Aμ vary as Aμ+δAμ and ignore anything that has a coefficient of (δAμ)2 because this is much smaller than δAμ (in the same way 0.12=0.01, which is much smaller!)
 
-Once we do this variation, we subtract away the original action and the term with a coefficient of $δ$A$μ$ is the equation of motion!
+Once we do this variation, we subtract away the original action and the term with a coefficient of δAμ is the equation of motion!
 
-To begin with F$μ$$ν$F$μ MATH0 ν$ = $∂$$μ$A$ν$ – $∂$$ν$A$μ$, which gives us
+To begin with FμνFμν can be expanded using the definition Fμν = ∂μAν – ∂νAμ, which gives us
 
 $$F^{\mu\nu}F_{\mu\nu}=2\partial^{\mu}A^{\nu}\partial_{\mu}A_{\nu}-2\partial^{\nu}A^{\mu}\partial_{\mu}A_{\nu}$$
 
-Then, let’s vary this! We just need to substitute in A$μ$+$δ$A$μ$ for $δ$A$μ$ and subtract away the above expression. This variation gives us
+Then, let’s vary this! We just need to substitute in Aμ+δAμ for δAμ and subtract away the above expression. This variation gives us
 
 $$\delta F^{\mu\nu}F_{\mu\nu}=2\partial^{\mu}(A^{\nu}+\delta A^{\nu})\partial_{\mu}(A_{\nu}+\delta A_{\nu})\\-2\partial^{\mu}(A^{\nu}+\delta A^{\nu})\partial_{\nu}(A_{\mu}+\delta A_{\mu})-\left(2\partial^{\mu}A^{\nu}\partial_{\mu}A_{\nu}-2\partial^{\nu}A^{\mu}\partial_{\mu}A_{\nu}\right)$$
 
-This can very fortunately be simplified to $δ$F$μ$$ν$F$μ$$ν$ = 4($∂ MATH0 ∂ MATH1 δ$A$ν$).
+This can very fortunately be simplified to δFμνFμν = 4(∂μAν∂νδAμ-∂νAμ∂μδAν).
 
-The second term in the action has the simplest variation since A$μ$ appears only contracted with J$μ$. If we follow the same prescription and vary it, we find $δ$(J$μ$A$μ$)=J$μ$$δ$A$μ$.
+The second term in the action has the simplest variation since Aμ appears only contracted with Jμ. If we follow the same prescription and vary it, we find δ(JμAμ)=JμδAμ.
 
 We’re ready to put this all together neatly as
 
 $$\delta S_{\text{Maxwell}}=\int_{ }^{ }-\frac{1}{\mu_0}\left(\partial^{\mu}A^{\nu}\partial_{\mu}\delta A_{\nu}-\partial^{\nu}A^{\mu}\partial_{\mu}\delta A_{\nu}\right)-J^{\mu}\delta A_{\mu}d^4x$$
 
-Integration by parts and the Lorenz gauge are the final pieces of the puzzle we need. First by integrating by parts to isolate the $δ$A$μ$ parts.
+Integration by parts and the Lorenz gauge are the final pieces of the puzzle we need. First by integrating by parts to isolate the δAμ parts.
 
-I’d like to note that the **specific letter $μ$ or $ν$ doesn’t matter – we can rename them** if they appear both in the upper and lower positions in a term (these are again called dummy indices), so in the last term we can relabel $μ$ to $ν$!
+I’d like to note that the **specific letter μ or ν doesn’t matter – we can rename them** if they appear both in the upper and lower positions in a term (these are again called dummy indices), so in the last term we can relabel μ to ν!
 
 Integration by parts and relabelling gives us:
 
@@ -430,7 +430,7 @@ Since we are using the Lorenz gauge, the second term vanishes and we are left wi
 
 $$\delta S_{\text{Maxwell}}=\int_{ }^{ }\left(\frac{1}{\mu_0}\partial^2A^{\nu}-J^{\nu}\right)\delta A_{\nu}d^4x$$
 
-Then, the thing in the brackets (with the $δ$A$ν$ coefficient) is our equation of motion! Explicitly, we read off
+Then, the thing in the brackets (with the δAν coefficient) is our equation of motion! Explicitly, we read off
 
 $$\partial^2A^{\nu}=\mu_0J^\nu$$
 
@@ -442,7 +442,7 @@ In general, this is a nice property of *action principles*. The action is always
 
 So far, we’ve seen that **one of our Maxwell’s equations is relativistic**. Let’s now show that our second equation looks the same for any observer, in other words, is also relativistic.
 
-The second equation is made of building blocks that look like $∂ MATH0 ν$, which transform as:
+The second equation is made of building blocks that look like ∂σFμν, which transform as:
 
 $$\partial'^{\sigma}F'^{\mu\nu}\ \ \Rightarrow\ \ \Lambda_{\rho}^{\sigma}\partial^{\rho}\left(\Lambda_{\alpha}^{\mu}\Lambda_{\beta}^{\nu}F^{\alpha\beta}\right)=\Lambda_{\alpha}^{\mu}\Lambda_{\beta}^{\nu}\Lambda_{\rho}^{\sigma}\partial^{\rho}F^{\alpha\beta}$$
 

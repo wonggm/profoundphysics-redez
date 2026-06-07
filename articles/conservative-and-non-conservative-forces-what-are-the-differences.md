@@ -43,7 +43,7 @@ In case any of the mathematical concepts in this article seem unfamiliar to you,
 
 ### Relationship Between a Conservative Force and Potential Energy
 
-**The relationship between a conservative force and potential energy is that a conservative force is defined as the negative gradient of a potential associated with that force. Mathematically, any conservative force can be expressed through this relationship as F=-$∇$U.**
+**The relationship between a conservative force and potential energy is that a conservative force is defined as the negative gradient of a potential associated with that force. Mathematically, any conservative force can be expressed through this relationship as F=-∇U.**
 
 Now, a gradient is an operator in vector calculus that acts on a **scalar function** (the potential in this case) and gives a **vector** as a result (the force):
 
@@ -121,7 +121,7 @@ We can write this as:
 
 $$\vec{F}=-\frac{GMm}{\left(x^2+y^2\right)^{\frac{3}{2}}}\left(x\hat{x}+y\hat{y}\right)$$
 
-This may not be in the form you’re used to seeing it (this is really Newton’s law of gravity in disguise). We can get this into a simpler form by switching to polar coordinates (r and $θ$), which are defined in terms of Cartesian coordinates as follows:
+This may not be in the form you’re used to seeing it (this is really Newton’s law of gravity in disguise). We can get this into a simpler form by switching to polar coordinates (r and θ), which are defined in terms of Cartesian coordinates as follows:
 
 $$x=r\cos\theta{,}\ y=r\sin\theta$$
 
@@ -335,15 +335,15 @@ Now, this dot product can be written in terms of the magnitudes of these two qua
 
 $$\vec{p}\cdot d\vec{p}=pdp\cos\theta=pdp$$
 
-Generally speaking, the “change” in momentum always occurs in the same direction of the momentum, or directly opposite to it (this can be deduced directly from Newton’s second law), which means that the angle between these two vectors here is either $θ$=0 or $θ$=$π$, which give either cos($θ$)=1 or cos($θ$)=-1. Here I’ve chosen the +1 solution.
+Generally speaking, the “change” in momentum always occurs in the same direction of the momentum, or directly opposite to it (this can be deduced directly from Newton’s second law), which means that the angle between these two vectors here is either θ=0 or θ=π, which give either cos(θ)=1 or cos(θ)=-1. Here I’ve chosen the +1 solution.
 
 Using this, the work done in terms of the momentum p is then:
 
 $$W=\frac{1}{m}\int_C^{ }pdp=\frac{\Delta p^2}{2m}$$
 
-This line integral of pdp here gives us p2/2 with the integration limits being the start and end points of the path C (a and b). Therefore, when we insert these limits, we simply get p2(b)-p2(a)=$Δ$p2, the change in the square of momentum.
+This line integral of pdp here gives us p2/2 with the integration limits being the start and end points of the path C (a and b). Therefore, when we insert these limits, we simply get p2(b)-p2(a)=Δp2, the change in the square of momentum.
 
-Now, if you recognize it, this is nothing but the change in kinetic energy, $Δ$T (by the relation between momentum and kinetic energy T=p2/2m; I discuss this in great detail in my [article on momentum vs kinetic energy](https://profoundphysics.com/momentum-vs-kinetic-energy-the-key-differences/)). The work done is then just:
+Now, if you recognize it, this is nothing but the change in kinetic energy, ΔT (by the relation between momentum and kinetic energy T=p2/2m; I discuss this in great detail in my [article on momentum vs kinetic energy](https://profoundphysics.com/momentum-vs-kinetic-energy-the-key-differences/)). The work done is then just:
 
 $$W=\Delta T$$
 
@@ -359,11 +359,11 @@ Here, we can take advantage of something called the **gradient theorem**, which 
 
 $$W=-\int_C^{ }\vec{\nabla}U\cdot d\vec{r}=-\left(U\left(b\right)-U\left(a\right)\right)$$
 
-The thing inside these parentheses, on the other hand, is nothing but the change in potential energy, $Δ$U:
+The thing inside these parentheses, on the other hand, is nothing but the change in potential energy, ΔU:
 
 $$W=-\Delta U$$
 
-We’ve now calculated the work done using two different ways; from the first one, we got W=$Δ$T and from the second one (which was unique to conservative forces only), we got W=-$Δ$U. These, of course, have to be equal, so we then get:
+We’ve now calculated the work done using two different ways; from the first one, we got W=ΔT and from the second one (which was unique to conservative forces only), we got W=-ΔU. These, of course, have to be equal, so we then get:
 
 $$\Delta T=-\Delta U\ \ \Rightarrow\ \ \Delta\left(T+U\right)=\Delta E=0$$
 
@@ -383,7 +383,7 @@ Really, the fundamental reason for why a non-conservative force does not conserv
 
 The simple way to understand this is to try and repeat the same energy conservation proof we did above, but for a conservative force; you can’t, simply because **you cannot define a non-conservative force as the gradient of some potential**.
 
-Therefore, we don’t get the general result of $Δ$E=0, so **energy is NOT conserved when a non-conservative force acts on an object** (which is also, I suppose, where the name ‘non-conservative force’ comes from).
+Therefore, we don’t get the general result of ΔE=0, so **energy is NOT conserved when a non-conservative force acts on an object** (which is also, I suppose, where the name ‘non-conservative force’ comes from).
 
 Now, let’s try to understand why this is the case from an intuitive perspective.
 
@@ -533,7 +533,7 @@ If we have a spring that is stretched in some direction (given by the r-unit vec
 
 $$\vec{F}\left(r\right)=-kr\hat{r}$$
 
-Note; this assumes that the spring constant $k$ is the same for all the x-, y- and z-directions.
+Note; this assumes that the spring constant k is the same for all the x-, y- and z-directions.
 
 This can be written as the negative gradient of the spring potential energy:
 

@@ -329,13 +329,13 @@ The motion of a particle in curved spacetime is described by the following Lagra
 
 $$L=mc\sqrt{g_{\mu\nu}\frac{dx^{\mu}}{dt}\frac{dx^{\nu}}{dt}}$$
 
-This is essentially analogous to the Lagrangian of a classical free particle, L=1/2mv2. This is because in general relativity, particles moving in curved spacetime *are* actually free particles (gravity is not a force in general relativity!) and the effect of the curvature of spacetime on the particle’s motion is encoded in this object g$μ$$ν$, called the metric tensor. The dx$μ$/dt with $μ$=0,1,2,3 here are the coordinate velocities of the particle.
+This is essentially analogous to the Lagrangian of a classical free particle, L=1/2mv2. This is because in general relativity, particles moving in curved spacetime *are* actually free particles (gravity is not a force in general relativity!) and the effect of the curvature of spacetime on the particle’s motion is encoded in this object gµν, called the metric tensor. The dxµ/dt with µ=0,1,2,3 here are the coordinate velocities of the particle.
 
 The dynamics of the particle are then obtained by calculating the **variation of the action** and setting it to zero (according to the principle of stationary action), just like we would do in classical Lagrangian mechanics. This leads to the so-called **geodesic equation**:
 
 $$\frac{d^2x^{\lambda}}{dt^2}+\Gamma_{\mu\nu}^{\lambda}\frac{dx^{\mu}}{dt}\frac{dx^{\nu}}{dt}=0$$
 
-The geodesic equation here gives the equations of motion for a free particle in curved spacetime. In fact, this geodesic equation is exactly the *Euler-Lagrange equation* for the particle (a second order differential equation). These objects $Γ MATH0 μ$$ν$ are called **Christoffel symbols** and they, in some sense, represent the gravitational forces acting on the particle (you can read more about the physical and intuitive meaning of these Christoffel symbols in [this article](https://profoundphysics.com/christoffel-symbols-a-complete-guide-with-examples/)).
+The geodesic equation here gives the equations of motion for a free particle in curved spacetime. In fact, this geodesic equation is exactly the *Euler-Lagrange equation* for the particle (a second order differential equation). These objects Γλµν are called **Christoffel symbols** and they, in some sense, represent the gravitational forces acting on the particle (you can read more about the physical and intuitive meaning of these Christoffel symbols in [this article](https://profoundphysics.com/christoffel-symbols-a-complete-guide-with-examples/)).
 
 That’s how the motion of particles is described relativistically using Lagrangian mechanics. But how about using **Hamiltonian mechanics**?
 
@@ -343,7 +343,7 @@ Now, when using Hamiltonian mechanics in general relativity, there is a small ca
 
 It turns out that using Hamiltonian mechanics in curved spacetime is much more complicated, which is why the Hamiltonian formulation is not so commonly used for that.
 
-The main reason for this is that relativistically, the **components of momentum** have to satisfy the so-called **Einstein’s energy-momentum relation**, which in curved spacetime, can be written in terms of the four-momenta as $g_{μν}$p$μ$$p^{$$μ$$}$=m2c2.
+The main reason for this is that relativistically, the **components of momentum** have to satisfy the so-called **Einstein’s energy-momentum relation**, which in curved spacetime, can be written in terms of the four-momenta as gµνpµpµ=m2c2.
 
 Essentially, this is an equation that relates the components of the momentum together in a particular way, making them not all independent of one another – this is a *constraint* on the momentum components.
 

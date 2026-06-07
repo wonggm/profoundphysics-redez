@@ -293,7 +293,7 @@ In my opinion, **the most difficult thing about the math of general relativity i
 
 While **tensors** are not necessarily difficult to understand and use, they certainly are very confusing when you first encounter them.
 
-For example, take something like the Ricci tensor, a commonly used tensor in general relativity. It is denoted by R$μ$$ν$.
+For example, take something like the Ricci tensor, a commonly used tensor in general relativity. It is denoted by Rµν.
 
 In reality, this simple one-letter expression of this tensor means the following:
 

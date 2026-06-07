@@ -195,7 +195,7 @@ Down below I’ve included a bunch of examples of how to actually use this as we
 
 Generally, the process for using the dissipation function in Lagrangian mechanics goes more or less like this:
 
-1. **Specify the total velocity of each object in the system using whatever coordinates you wish**. These could be the regular Cartesian coordinates (x,y,z) of whatever other generalized coordinates, such as an angle $θ$ in rotational motion.
+1. **Specify the total velocity of each object in the system using whatever coordinates you wish**. These could be the regular Cartesian coordinates (x,y,z) of whatever other generalized coordinates, such as an angle θ in rotational motion.
 2. **Specify the coefficients of friction for each object in the system**. This step can also be done later, since the coefficients won’t affect the calculations even if left unspecified. Also note that the coefficients may sometimes time-dependent; cj = cj(t).
 3. **Write down the dissipation function for the given system**. If the system has multiple object, the dissipation function will have a sum over the velocities and friction coefficients of each object.
 4. **Calculate the Euler-Lagrange equations with the dissipation function included**. Note that you will have one equation for each generalized coordinate.
@@ -228,7 +228,7 @@ Since the friction due to normal force can be thought of as being proportional t
 
 $$D=\frac{1}{0+1}c\dot{x}^{0+1}=c\dot x$$
 
-Now, what do we want this constant c to be? Well, think about the friction force again; F=$μ$mg. These are all constants, so we can define c as **c=$μ$mg**. We then have the finished dissipation function.
+Now, what do we want this constant c to be? Well, think about the friction force again; F=µmg. These are all constants, so we can define c as **c=µmg**. We then have the finished dissipation function.
 
 **Dissipation function for friction due to normal force:**  
 $$D=\mu mg\dot{x}$$
@@ -337,29 +337,29 @@ If you don’t know what generalized coordinates are or what they’re used for,
 
 Essentially, what we’re going to do is find the equations of motion for a pendulum with friction (air resistance).
 
-The way we’ll do this is by **choosing our generalized coordinate to be the angle to the vertical, $θ$** (we only need to know the angle to determine the motion of the pendulum) instead of the typical x and y coordinates. Everything we need can be seen in the picture below.
+The way we’ll do this is by **choosing our generalized coordinate to be the angle to the vertical, θ** (we only need to know the angle to determine the motion of the pendulum) instead of the typical x and y coordinates. Everything we need can be seen in the picture below.
 
 This is exactly the essence of using generalized coordinates; we can choose to describe the system by whatever coordinates we wish. All we need to do is convert from the x,y -coordinate system to the generalized coordinate system.
 
 ![This image has an empty alt attribute; its file name is image-28.jpg](assets/images/friction-in-lagrangian-mechanics/img_16.webp)
 
-Note that we’re taking the y-axis to go downwards (simply to avoid using a minus sign). The position of the pendulum bob is described by the distance from the origin r (length of the pendulum rod, which is just a constant) and the angle $θ$.
+Note that we’re taking the y-axis to go downwards (simply to avoid using a minus sign). The position of the pendulum bob is described by the distance from the origin r (length of the pendulum rod, which is just a constant) and the angle θ.
 
-Essentially, the relationship between the x and y -coordinates and the coordinate $θ$ are the following:
+Essentially, the relationship between the x and y -coordinates and the coordinate θ are the following:
 
 $$x=r\sin\theta\ {,}\ \ y=r\cos\theta$$
 
-The velocities in each direction are then simply the time derivatives of these (note that $θ$ here changes with time, so we have to use the chain rule):
+The velocities in each direction are then simply the time derivatives of these (note that θ here changes with time, so we have to use the chain rule):
 
 $$\dot{x}=r\dot{\theta}\cos\theta\ {,}\ \ \dot{y}=-r\dot{\theta}\sin\theta$$
 
-Here, $\dot{\theta}$ is the time derivative of $θ$.
+Here, $\dot{\theta}$ is the time derivative of θ.
 
 The total velocity is then simply (by the Pythagorean theorem):
 
 $$v=\sqrt{\dot{x}^2+\dot{y}^2}=\sqrt{\left(r\dot{\theta}\cos\theta\right)^2+\left(-r\dot{\theta}\sin\theta\right)^2}=\sqrt{r^2\dot{\theta}^2\left(\cos^2\theta+\sin^2\theta\right)}$$
 
-We know that sin2$θ$ + cos2$θ$ = 1, so the velocity is then:
+We know that sin2θ + cos2θ = 1, so the velocity is then:
 
 $$v=\sqrt{r^2\dot{\theta}^2\left(\cos^2\theta+\sin^2\theta\right)}=\sqrt{r^2\dot{\theta}^2}=r\dot \theta$$
 
@@ -373,10 +373,10 @@ This dissipation function can easily be **converted to generalized coordinates**
 
 $$D=3\pi\mu Rv^2\ \ \left(v=r\dot{\theta}\right)\Rightarrow\ \ D=3\pi\mu Rr^2\dot{\theta}^2$$
 
-**Dissipation function in terms of a generalized coordinate $θ$** (for linear friction):  
+**Dissipation function in terms of a generalized coordinate θ** (for linear friction):  
 $$D=3\pi\mu Rr^2\dot{\theta}^2$$
 
-From this, all we have to do is find the Lagrangian and then calculate the equations of motion from an Euler-Lagrange equation for our generalized coordinate $θ$. This is shown down below.
+From this, all we have to do is find the Lagrangian and then calculate the equations of motion from an Euler-Lagrange equation for our generalized coordinate θ. This is shown down below.
 
 Derivation of the Equations of Motion For a Pendulum With Friction (click to see more)
 
@@ -386,7 +386,7 @@ $$T=\frac{1}{2}mv^2\ \ \left(v=r\dot{\theta}\right)\Rightarrow\ \ T=\frac{1}{2}m
 
 For the pendulum, we also need its potential energy. If we choose the zero-level of the potential to be at the x-axis, then the potential energy will be simply V=mgy (since the height of the pendulum bob is basically the y-coordinate).
 
-This can be converted to be function of $θ$ by using the relationship between the y-coordinate and $θ$ (see the picture from earlier):
+This can be converted to be function of θ by using the relationship between the y-coordinate and θ (see the picture from earlier):
 
 $$V=mgy\ \ \ \left(y=r\cos\theta\right)\Rightarrow\ \ V=mgr\cos\theta$$
 
@@ -394,7 +394,7 @@ The Lagrangian for this pendulum bob will then be:
 
 $$L=T-V=\frac{1}{2}mr^2\dot{\theta}^2-mgr\cos\theta$$
 
-Now, plugging this thing and the dissipation function we got earlier into the Euler-Lagrange equations will give us (we now have the Euler-Lagrange equation for the coordinate $θ$ instead of x):
+Now, plugging this thing and the dissipation function we got earlier into the Euler-Lagrange equations will give us (we now have the Euler-Lagrange equation for the coordinate θ instead of x):
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}=\frac{\partial L}{\partial\theta}-\frac{\partial D}{\partial\dot{\theta}}$$
 
@@ -402,7 +402,7 @@ $$\frac{d}{dt}\frac{\partial}{\partial\dot{\theta}}\left(\frac{1}{2}mr^2\dot{\th
 
 $$\frac{d}{dt}\left(mr^2\dot{\theta}\right)=mgr\sin\theta-6\pi\mu Rr^2\dot{\theta}\\mr^2\ddot{\theta}=mgr\sin\theta-6\pi\mu Rr^2\dot{\theta}\ \ \ \Rightarrow\ \ \ \ddot{\theta}=\frac{g}{r}\sin\theta-\frac{6\pi\mu R}{m}\dot{\theta}$$
 
-This is the full equation of motion for a **pendulum with linear air resistance** (expressed in terms of the coordinate $θ$ and its time derivatives).
+This is the full equation of motion for a **pendulum with linear air resistance** (expressed in terms of the coordinate θ and its time derivatives).
 
 As mentioned earlier, if you’re looking to have a **deep understanding of Lagrangian mechanics**, my book **[Lagrangian Mechanics For The Non-Physicist](https://profoundphysicscourses.com/lagrangian-mechanics-book/)** (link to the book page) is the perfect starting point for you. The best part is that you’ll get to **learn everything from scratch** as the book gradually builds upon each topic to eventually cover things like **symmetries in physics** and **Noether’s theorem** – beginning all the way from basic Newtonian mechanics.
 

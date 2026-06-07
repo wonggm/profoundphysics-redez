@@ -31,7 +31,7 @@ Now, that might sound like a boat load, but to put it simply, this just means th
 
 ![This image has an empty alt attribute; its file name is image.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_1.webp)![This image has an empty alt attribute; its file name is image.jpg](assets/images/how-is-lagrangian-mechanics-useful/img_2.webp)
 
-Mathematically, the principle of stationary action states that the *variance* (denoted by this $δ$-symbol) in the action has to be zero.
+Mathematically, the principle of stationary action states that the *variance* (denoted by this δ-symbol) in the action has to be zero.
 
 But what even is the action? Essentially, **the action is just a quantity assigned with every path that describes that particular path** (you could think of it as just a number or a label that each path is defined by).
 
@@ -83,7 +83,7 @@ Now, to get the equations of motion, you just find whatever Lagrangian the syste
 
 Essentially, the process for solving almost all problems in Lagrangian mechanics goes more or less like this:
 
-1. **Find a set of convenient coordinates (= *generalized coordinates*, expressed by q’s) for the specific problem.** These might be the usual Cartesian coordinates (x, y, z), but it is also possible to use coordinate systems such as spherical coordinates (r, $θ$, $φ$).
+1. **Find a set of convenient coordinates (= *generalized coordinates*, expressed by q’s) for the specific problem.** These might be the usual Cartesian coordinates (x, y, z), but it is also possible to use coordinate systems such as spherical coordinates (r, θ, φ).
 2. **Define the Lagrangian through the generalized coordinates**. The Lagrangian will generally be the sum of the kinetic and potential energies of every object of the system:
 
 ![](assets/images/how-is-lagrangian-mechanics-useful/img_10.webp)
@@ -152,7 +152,7 @@ $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\lambda}}=\frac{\partial L}{\partia
 
 Note that from the third EL equation, we simply get back the constraint, so it is kind of trivial.
 
-Here, you then have **three equations with three unknown variables** (x, y, $λ$), which you can try to solve.
+Here, you then have **three equations with three unknown variables** (x, y, λ), which you can try to solve.
 
 Anyway, this pendulum example demonstrates quite well how the Lagrange multipliers can be used to essentially constrain a system to move in a certain way by using a very simple technique.
 
@@ -176,17 +176,17 @@ The q’s here are the generalized coordinates and they must be specified for a 
 
 These generalized coordinates have a few very useful advantages to the regular Cartesian coordinates:
 
-- **Generalized coordinates allow us to implicitly contain ALL information about the constraints** (for example, choosing polar coordinates r and $θ$ for a pendulum already includes the fact that the pendulum moves in a circular trajectory).
+- **Generalized coordinates allow us to implicitly contain ALL information about the constraints** (for example, choosing polar coordinates r and θ for a pendulum already includes the fact that the pendulum moves in a circular trajectory).
 - **The right choice of generalized coordinates can make a calculation extremely simple**.
 - **Generalized coordinates can reduce the number of variables needed in a specific problem**.
 
 In case you’re interested to learn more about all of this, I recommend reading [my complete guide on generalized coordinates](https://profoundphysics.com/generalized-coordinates/). It will teach you everything you need to know (and much more)!
 
-As an example, instead of the Cartesian coordinate system, you could choose a **polar coordinate system**, where the coordinates of every point are specified completely specified by the **distance from the origin (r)** and the **angle from the vertical ($θ$)**.
+As an example, instead of the Cartesian coordinate system, you could choose a **polar coordinate system**, where the coordinates of every point are specified completely specified by the **distance from the origin (r)** and the **angle from the vertical (θ)**.
 
-Polar coordinates are particularly useful in describing circular motion. Since the coordinates r and $θ$ are by themselves enough to describe a circle, we can completely eliminate the need for Lagrange multipliers this way.
+Polar coordinates are particularly useful in describing circular motion. Since the coordinates r and θ are by themselves enough to describe a circle, we can completely eliminate the need for Lagrange multipliers this way.
 
-A pendulum is a great example of this. The relation between the x,y -coordinates and the r,$θ$ -coordinates are as follows:
+A pendulum is a great example of this. The relation between the x,y -coordinates and the r,θ -coordinates are as follows:
 
 ![](assets/images/how-is-lagrangian-mechanics-useful/img_18.webp)
 
@@ -198,14 +198,14 @@ $$L=\frac{1}{2}m\left(\dot{x}^2+\dot{y}^2\right)-mgy\ \ \ \ \Rightarrow\ \ \ \ L
 
 The r here is taken to be a constant, simply the distance from the origin (i.e. the length of the pendulum rod), which doesn’t change.
 
-Then we simply just write the Euler-Lagrange equations (there is only one of them for $θ$), from which we get the equation of motion for the pendulum:
+Then we simply just write the Euler-Lagrange equations (there is only one of them for θ), from which we get the equation of motion for the pendulum:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}=\frac{\partial L}{\partial\theta}\ \ \ \Rightarrow\ \ \ \ddot\theta=\frac{g}{r}\sin\theta$$
 
 Notice a couple useful things with this method of using generalized coordinates:
 
 - We did not have to specify a single constraint; those were already secretly included in our choice of the generalized coordinates.
-- Instead of two equations of motion (for both x and y), we have only one (for $θ$); the angle is the only variable that is changing in polar coordinates.
+- Instead of two equations of motion (for both x and y), we have only one (for θ); the angle is the only variable that is changing in polar coordinates.
 
 ## Conservation Laws & Noether’s Theorem
 
@@ -229,9 +229,9 @@ If you want a concrete example of this, you can check out the article mentioned 
 
 Noether’s theorem (in the context of classical mechanics) is extremely useful for **three types of conservation laws** and their associated translational symmetries:
 
-- Position-translation symmetry (x ⇒ x + $Δ$x) → **momentum** conservation
-- Time-translation symmetry (t ⇒ t + $Δ$t) →**energy** conservation
-- Rotational symmetry ($θ$ ⇒ $θ$ + $Δ$$θ$) →**angular momentum** conservation
+- Position-translation symmetry (x ⇒ x + Δx) → **momentum** conservation
+- Time-translation symmetry (t ⇒ t + Δt) →**energy** conservation
+- Rotational symmetry (θ ⇒ θ + Δθ) →**angular momentum** conservation
 
 Anyway, the key point here is that Noether’s theorem gives a simple method for finding conservation laws, which is actually extremely powerful and works for any system you can find a Lagrangian for.
 

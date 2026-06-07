@@ -71,7 +71,7 @@ Now, here’s the important thing; **the tension and the radial component of gra
 
 This is why we have to add in this tension force in the first place; to constrain the pendulum to move in such a way that the length L is fixed and in practice, we do this by “balancing” out the forces such that this constraint is obeyed.
 
-Now, we can find the radial and tangential forces by placing the pendulum in an xy-coordinate system and specifying the angle $θ$, which can be used to split the force of gravity into its radial and tangential components:
+Now, we can find the radial and tangential forces by placing the pendulum in an xy-coordinate system and specifying the angle θ, which can be used to split the force of gravity into its radial and tangential components:
 
 ![](assets/images/constraints-in-lagrangian-mechanics/img_4.webp)
 
@@ -105,7 +105,7 @@ $$T=mL\dot{\theta}^2+mg\cos\theta$$
 
 $$\ddot{\theta}=-\frac{g}{L}\sin\theta$$
 
-The second equation is just the equation of motion for the $θ$-coordinate, which in principle, can be solve to find $θ$(t).
+The second equation is just the equation of motion for the θ-coordinate, which in principle, can be solve to find θ(t).
 
 The first equation, however, tells you **what the tension force has to be in order for the length of the rod to stay constant**.
 
@@ -145,9 +145,9 @@ Let’s go back to the pendulum example again. Before we did it using Newtonian 
 
 What we’ll discover is that we get the right equations of motion without needing to introduce any constraint forces.
 
-To get started, let’s again place the pendulum in an xy-coordinate system with the angle $θ$ (a function of time) being the angle between the pendulum rod and the y-axis. The mass is again m and the length of the rod is L.
+To get started, let’s again place the pendulum in an xy-coordinate system with the angle θ (a function of time) being the angle between the pendulum rod and the y-axis. The mass is again m and the length of the rod is L.
 
-Now, instead of adding in a bunch of forces, let’s just express the x- and y- coordinates of the pendulum using polar coordinates, r and $θ$ (the radial distance from the center and the angle to the vertical):
+Now, instead of adding in a bunch of forces, let’s just express the x- and y- coordinates of the pendulum using polar coordinates, r and θ (the radial distance from the center and the angle to the vertical):
 
 ![](assets/images/constraints-in-lagrangian-mechanics/img_8.webp)
 
@@ -161,7 +161,7 @@ Anyway, we now have a constraint equation we can use to eliminate one of our coo
 
 $$x=r\sin\theta\ \ \Rightarrow\ \ x=L\sin\theta\\y=-r\cos\theta\ \ \Rightarrow\ \ y=-L\cos\theta$$
 
-The nice thing is that we’ve now eliminated the r-coordinate completely and we have the coordinates of the pendulum expressed in terms of one generalized coordinate, $θ$.
+The nice thing is that we’ve now eliminated the r-coordinate completely and we have the coordinates of the pendulum expressed in terms of one generalized coordinate, θ.
 
 But even better, **this choice of generalized coordinates is now also consistent with the constraint** (the length of the rod must be L). Thus, the equations of motion we get will also obey the constraint.
 
@@ -181,7 +181,7 @@ So, our Lagrangian is:
 
 $$L=T-V=\frac{1}{2}mL^2\dot{\theta}^2+mgL\cos\theta$$
 
-We can get the equations of motion from the Euler-Lagrange equation for the $θ$-coordinate:
+We can get the equations of motion from the Euler-Lagrange equation for the θ-coordinate:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}-\frac{\partial L}{\partial\theta}=0$$
 
@@ -239,17 +239,17 @@ The motion of a unicycle is a classic example of where non-holonomic constraints
 
 Let’s place the unicycle in an x,y,z -coordinate system, so as it moves, its position is going to be described by some coordinates (x,y,z).
 
-Now, the special thing about a unicycle is that it can also have an “orientation”, meaning that at any point, the unicycle can be pointed in a different direction. We’ll label this orientation by an angle $θ$:
+Now, the special thing about a unicycle is that it can also have an “orientation”, meaning that at any point, the unicycle can be pointed in a different direction. We’ll label this orientation by an angle θ:
 
 ![](assets/images/constraints-in-lagrangian-mechanics/img_10.webp) 
 
 The vector v here describes the velocity of the unicycle.
 
-If the unicycle is not allowed to “jump” up and down, we have z=0, which reduces the degrees of freedom to just three; the position coordinates x and y as well as the orientation $θ$ (these are our generalized coordinates, which change with time, i.e. they are all functions of time).
+If the unicycle is not allowed to “jump” up and down, we have z=0, which reduces the degrees of freedom to just three; the position coordinates x and y as well as the orientation θ (these are our generalized coordinates, which change with time, i.e. they are all functions of time).
 
-However, while the angle $θ$ can point to any direction at different points (meaning that there is no straightforward relation or constraint between $θ$, x and y), the components of the velocity cannot just be anything.
+However, while the angle θ can point to any direction at different points (meaning that there is no straightforward relation or constraint between θ, x and y), the components of the velocity cannot just be anything.
 
-This is because the direction of the velocity v is determined by the orientation of the unicycle, in other words, by the angle $θ$. Thus, the components of the velocity (time derivatives of x and y) are given by:
+This is because the direction of the velocity v is determined by the orientation of the unicycle, in other words, by the angle θ. Thus, the components of the velocity (time derivatives of x and y) are given by:
 
 $$\dot{x}=v\cos\theta\\\dot{y}=v\sin\theta$$
 
@@ -267,11 +267,11 @@ You can certainly try to express the above non-holonomic constraint in terms of 
 
 $$\dot{y}=\dot{x}\tan\theta\ \ \Rightarrow\ \ y=\int_{ }^{ }\dot{x}\tan\theta dt$$
 
-The problem here is that both x-dot and $θ$ are independent functions of time. We therefore cannot do the integral on the right-hand side and thus, we cannot get a relation between the coordinates from this.
+The problem here is that both x-dot and θ are independent functions of time. We therefore cannot do the integral on the right-hand side and thus, we cannot get a relation between the coordinates from this.
 
 This is one of the key points about non-holonomic constraints; they do not allow us to reduce the degrees of freedom even though they technically do constrain the system in some way.
 
-Now, the situation would change if the angle $θ$ is assumed to NOT depend on time (i.e. the angle $θ$ is just some constant $θ$0, meaning that the unicycle cannot turn in another direction).
+Now, the situation would change if the angle θ is assumed to NOT depend on time (i.e. the angle θ is just some constant θ0, meaning that the unicycle cannot turn in another direction).
 
 In this case, we could integrate the constraint to get:
 
@@ -279,7 +279,7 @@ $$y=\int_{ }^{ }\dot{x}\tan\theta_0dt=\tan\theta_0\int_{ }^{ }dx=x\tan\theta_0$$
 
 Note that I’ve set the integration constants to zero here.
 
-So, we do get a relation between the coordinates here, namely that y=xtan($θ$0), so actually, our constraint here turns into a holonomic constraint and the system would therefore only need one generalized coordinate, the coordinate x (since by knowing x, we automatically know y also).
+So, we do get a relation between the coordinates here, namely that y=xtan(θ0), so actually, our constraint here turns into a holonomic constraint and the system would therefore only need one generalized coordinate, the coordinate x (since by knowing x, we automatically know y also).
 
 For the rest of the article, we’ll only be discussing **holonomic constraints** as these are the most common types of constraints and also the most useful ones, generally speaking.
 
@@ -346,11 +346,11 @@ For a more mathematical discussion of the Euler-Lagrange equation, I recommend a
 
 Example: Finding The Tension In a Pendulum
 
-Let’s consider the pendulum example again. Earlier, we found the following relations between the polar coordinates (r,$θ$) and the Cartesian coordinates (x,y) of the pendulum bob:
+Let’s consider the pendulum example again. Earlier, we found the following relations between the polar coordinates (r,θ) and the Cartesian coordinates (x,y) of the pendulum bob:
 
 $$x=r\sin\theta\ {,}\ \ y=-r\cos\theta$$
 
-We the used our constraint equation (r=L) to essentially “eliminate” the r-coordinate completely and only describe the system with the $θ$-coordinate.
+We the used our constraint equation (r=L) to essentially “eliminate” the r-coordinate completely and only describe the system with the θ-coordinate.
 
 We won’t do that now. Instead, we’ll construct the “unconstrained” Lagrangian for this system (meaning that the radial distance, the r-coordinate is allowed to vary, for now). We’ll then use our constraints later.
 
@@ -358,7 +358,7 @@ If we take the time derivatives of these “unconstrained” x- and y-coordinate
 
 $$\dot{x}=\dot{r}\sin\theta+r\dot{\theta}\cos\theta\\\dot y=-\dot{r}\cos\theta+r\dot{\theta}\sin\theta$$
 
-We can then get the kinetic energy by squaring these. I’ll skip a little bit of the algebra here, but what you’ll get (after cancelling terms and using cos2$θ$+sin2$θ$=1) is the following:
+We can then get the kinetic energy by squaring these. I’ll skip a little bit of the algebra here, but what you’ll get (after cancelling terms and using cos2θ+sin2θ=1) is the following:
 
 $$T=\frac{1}{2}m\left(\dot{x}^2+\dot{y}^2\right)=\frac{1}{2}m\left(\dot r^2+r^2\dot \theta^2\right)$$
 
@@ -370,11 +370,11 @@ Our “unconstrained” Lagrangian is then:
 
 $$L=T-V=\frac{1}{2}m\left(\dot{r}^2+r^2\dot{\theta}^2\right)+mgr\cos\theta$$
 
-Notice that we basically have two coordinates here, r and $θ$, so we’ll get an Euler-Lagrange equation for each of them. We also have to use the modified Euler-Lagrange equations here with the added stuff on the right-hand side:
+Notice that we basically have two coordinates here, r and θ, so we’ll get an Euler-Lagrange equation for each of them. We also have to use the modified Euler-Lagrange equations here with the added stuff on the right-hand side:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{q}_i}-\frac{\partial L}{\partial q_i}=\sum_j^{ }\lambda_j\frac{\partial f_j}{\partial q_i}$$
 
-In our case, we only have one constraint, so this sum over j has just one term (I’ll call these $λ$1=$λ$ and f1=f). For the r-coordinate, we have:
+In our case, we only have one constraint, so this sum over j has just one term (I’ll call these λ1=λ and f1=f). For the r-coordinate, we have:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{r}}-\frac{\partial L}{\partial r}=\lambda\frac{\partial f}{\partial r}$$
 
@@ -382,7 +382,7 @@ Let’s now recall what our constraint equation was for the pendulum: r=L. There
 
 $$f\left(r\right)=0\ {,}\ \ f\left(r\right)=r-L$$
 
-The partial derivative of this, $∂$f/$∂$r, is then just 1. So, the Euler-Lagrange equation becomes:
+The partial derivative of this, ∂f/∂r, is then just 1. So, the Euler-Lagrange equation becomes:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{r}}-\frac{\partial L}{\partial r}=\lambda\frac{\partial f}{\partial r}\ \ \Rightarrow\ \ \frac{d}{dt}\frac{\partial L}{\partial\dot{r}}-\frac{\partial L}{\partial r}=\lambda$$
 
@@ -390,11 +390,11 @@ By inserting the Lagrangian, we get the equation of motion for the r-coordinate:
 
 $$\frac{d}{dt}\left(m\dot{r}\right)-\frac{\partial}{\partial r}\left(\frac{1}{2}m\left(\dot{r}^2+r^2\dot{\theta}^2\right)+mgr\cos\theta\right)=\lambda\\\Rightarrow\ \ m\ddot{r}-mr\dot{\theta}^2-mg\cos\theta=\lambda\\\Rightarrow\ \ \ddot{r}=\frac{\lambda}{m}+r\dot{\theta}^2+g\cos\theta$$
 
-Let’s then look at the Euler-Lagrange equation for $θ$:
+Let’s then look at the Euler-Lagrange equation for θ:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}-\frac{\partial L}{\partial\theta}=\lambda\frac{\partial f}{\partial\theta}$$
 
-The right-hand side here goes to zero, since our constraint function f does not depend on $θ$ (so $∂$f/$∂$$θ$=0). We then have:
+The right-hand side here goes to zero, since our constraint function f does not depend on θ (so ∂f/∂θ=0). We then have:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}-\frac{\partial L}{\partial\theta}=0\\\Rightarrow\ \ \frac{d}{dt}\left(mr^2\dot{\theta}\right)-\frac{\partial}{\partial\theta}\left(\frac{1}{2}m\left(\dot{r}^2+r^2\dot{\theta}^2\right)+mgr\cos\theta\right)=0$$
 
@@ -408,7 +408,7 @@ $$\ddot{r}=\frac{\lambda}{m}+r\dot{\theta}^2+g\cos\theta$$
 
 $$\ddot{\theta}=-\frac{g}{r}\sin\theta-\frac{2}{r}\dot{r}\dot{\theta}$$
 
-We’ve essentially obtained the unconstrained equations of motion in order to get this additional equation for the Lagrange multiplier $λ$. We can NOW apply our constraint (r=L), which means that:
+We’ve essentially obtained the unconstrained equations of motion in order to get this additional equation for the Lagrange multiplier λ. We can NOW apply our constraint (r=L), which means that:
 
 $$\dot r=0\ {,}\ \ \ddot r=0$$
 
@@ -418,7 +418,7 @@ $$0=\frac{\lambda}{m}+L\dot{\theta}^2+g\cos\theta$$
 
 $$\ddot{\theta}=-\frac{g}{L}\sin\theta$$
 
-Do you see what just happened? We first obtained the unconstrained equations of motion and after that, we applied our constraint. This results in the right equation of motion (the one for $θ$), but we also got an additional equation that we can now solve for $λ$:
+Do you see what just happened? We first obtained the unconstrained equations of motion and after that, we applied our constraint. This results in the right equation of motion (the one for θ), but we also got an additional equation that we can now solve for λ:
 
 $$\lambda=-mL\dot{\theta}^2-mg\cos\theta$$
 
@@ -486,7 +486,7 @@ In other words, the gradients at this point are proportional to one another (whe
 
 ![](assets/images/constraints-in-lagrangian-mechanics/img_20.webp)
 
-An equivalent way of stating this would be that we can express these gradient vectors as multiples of one another by adding in a proportionality constant (we’ll call it $λ$):
+An equivalent way of stating this would be that we can express these gradient vectors as multiples of one another by adding in a proportionality constant (we’ll call it λ):
 
 $$\nabla g=\lambda\nabla f$$
 
@@ -496,11 +496,11 @@ Now, an important thing to realize here is that normally (when there aren’t an
 
 $$\nabla g=0$$
 
-However, when we require that these minima and maxima also obey some constraint f(x,y)=0, then the right-hand side is no longer zero, but instead contains this $λ$$∇$f-term (understanding this is important for the physical interpretation we’ll discuss soon).
+However, when we require that these minima and maxima also obey some constraint f(x,y)=0, then the right-hand side is no longer zero, but instead contains this λ∇f-term (understanding this is important for the physical interpretation we’ll discuss soon).
 
-This proportionality constant $λ$ here is exactly the Lagrange multiplier and geometrically, it tells you how much the gradients are pointing in the same direction, i.e. how much the function g changes (this is what $∇$g describes) due to a small change in f, the constraint (a small change in f being described by $∇$f).
+This proportionality constant λ here is exactly the Lagrange multiplier and geometrically, it tells you how much the gradients are pointing in the same direction, i.e. how much the function g changes (this is what ∇g describes) due to a small change in f, the constraint (a small change in f being described by ∇f).
 
-So, if the Lagrange multiplier $λ$ is very large, then by changing the constraint just a small amount will cause a big change in the maximum or minimum of the function g that is to be optimized.
+So, if the Lagrange multiplier λ is very large, then by changing the constraint just a small amount will cause a big change in the maximum or minimum of the function g that is to be optimized.
 
 Also, if the Lagrange multiplier happens to be zero, we can interpret this as saying that a change in the constraint does not affect the minima or maxima of g. This may be easier to interpret soon when we connect all of this to physics.
 
@@ -516,15 +516,15 @@ With no constraints, the condition that the action is minimized is that the Lagr
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{q}_i}-\frac{\partial L}{\partial q_i}=0$$
 
-This is roughly speaking, analogous to the fact that we minimize an “ordinary” multivariable function by setting its gradient ($∇$g, which is a bunch of partial derivatives just like the Euler-Lagrange equation) equal to zero.
+This is roughly speaking, analogous to the fact that we minimize an “ordinary” multivariable function by setting its gradient (∇g, which is a bunch of partial derivatives just like the Euler-Lagrange equation) equal to zero.
 
-Now, analogously to when a multivariable function is minimized *under constraints*, the right-hand side of the “minimum condition” ($∇$g=0) is no longer zero but now contains these Lagrange multipliers ($λ$$∇$f), the same happens when minimizing the action under constraints; we add in Lagrange multipliers and the “gradient” (partial derivatives) of the constraint function:
+Now, analogously to when a multivariable function is minimized *under constraints*, the right-hand side of the “minimum condition” (∇g=0) is no longer zero but now contains these Lagrange multipliers (λ∇f), the same happens when minimizing the action under constraints; we add in Lagrange multipliers and the “gradient” (partial derivatives) of the constraint function:
 
 ![](assets/images/constraints-in-lagrangian-mechanics/img_22.webp) 
 
 Also, if there are multiple constraints, you’d just sum over all of them on the right-hand side.
 
-Now, making this analogy between the constrained Euler-Lagrange equation and the constraint equation in multivariable calculus ($∇$g=$λ$$∇$f), we also gain a very nice physical interpretation of the Lagrange multipliers.
+Now, making this analogy between the constrained Euler-Lagrange equation and the constraint equation in multivariable calculus (∇g=λ∇f), we also gain a very nice physical interpretation of the Lagrange multipliers.
 
 Namely, since the Lagrange multipliers tell you how much the “function to be optimized” changes when the constraint is changed, then physically, the Lagrange multiplier tells us how much the action (or the Lagrangian) changes with a small change in the constraint.
 
@@ -554,7 +554,7 @@ As an example (which you’ll find more of later), consider the Lagrange multipl
 
 $$\lambda=-mL\dot{\theta}^2-mg\cos\theta$$
 
-The **constraint forces for the pendulum** (in both the r- and $θ$-directions) would then be:
+The **constraint forces for the pendulum** (in both the r- and θ-directions) would then be:
 
 $$Q_r=\lambda\frac{\partial f}{\partial r}=\lambda=-mL\dot{\theta}^2-mg\cos\theta$$
 
@@ -592,7 +592,7 @@ This is because, generally, the “position” derivative terms in the Euler-Lag
 
 $$L'=L+\lambda f=T-U\ {,}\ \ U=V-\lambda f$$
 
-So, we could, in a sense, interpret this $λ$f -term as a potential since it only depends on position (again, this is sort of trivial since f=0).
+So, we could, in a sense, interpret this λf -term as a potential since it only depends on position (again, this is sort of trivial since f=0).
 
 We could then say that the “total force”, let’s call it Fi, is given by the gradient (derivative with respect to the position coordinates, qi) of this:
 
@@ -602,11 +602,11 @@ And, as you may guess, this new force term resulting from the constraint f is ex
 
 Now, this constraint force term may not be zero even if the constraint function f itself is. The elegance of this method is that we’re practically not changing our Lagrangian at all (by only adding zero to it), yet these constraint forces just somehow happen to drop out of our equations.
 
-We can understand this by the fact that the constraint forces cannot do work, so they don’t change the system’s energy at all. We can see this by looking at an “infinitesimal” work done ($δ$W) by these constraint forces (Qi) if we displace all our coordinates qi by some small amount $δ$qi:
+We can understand this by the fact that the constraint forces cannot do work, so they don’t change the system’s energy at all. We can see this by looking at an “infinitesimal” work done (δW) by these constraint forces (Qi) if we displace all our coordinates qi by some small amount δqi:
 
 $$\delta W=\sum_i^{ }Q_i\delta q_i=\sum_i^{ }\lambda\frac{\partial f}{\partial q_i}\delta q_i$$
 
-This thing here with the sum over the partial derivatives and the displacements is just the total change in f ($δ$f). Now, if we assume that the constraint is satisfied at all times, then the equation f=0 (a constant) must hold and the “total change” in a constant is always zero:
+This thing here with the sum over the partial derivatives and the displacements is just the total change in f (δf). Now, if we assume that the constraint is satisfied at all times, then the equation f=0 (a constant) must hold and the “total change” in a constant is always zero:
 
 $$\delta W=\lambda\delta f=0$$
 
@@ -614,7 +614,7 @@ Indeed, the constraint forces do no work. They are just kind of there, but since
 
 In other words, we’ve just added constraint forces into our description in a way that is completely consistent with everything; you don’t have to add them in (you can work only with properly chosen generalized coordinates if you don’t want to deal with constraint forces), but you can.
 
-The nice thing, however, is that we get these $λ$’s in the Euler-Lagrange equations, which we can solve for. Then, after solving for these, we can compute the constraint forces by:
+The nice thing, however, is that we get these λ’s in the Euler-Lagrange equations, which we can solve for. Then, after solving for these, we can compute the constraint forces by:
 
 $$Q_i=\lambda\frac{\partial f}{\partial q_i}$$
 
@@ -646,17 +646,17 @@ The Lagrangian for the particle just consists of the kinetic energy, since there
 
 $$L=\frac{1}{2}m\left(\dot{r}^2+r^2\dot{\theta}^2\right)$$
 
-Note that I haven’t used the constraint at all yet, so this would be the Lagrangian for a freely moving particle. Our constraint function, in this case, can be obtained from the relation r=a$θ$, so:
+Note that I haven’t used the constraint at all yet, so this would be the Lagrangian for a freely moving particle. Our constraint function, in this case, can be obtained from the relation r=aθ, so:
 
 $$f\left(r{,}\theta\right)=r-a\theta=0$$
 
-For this system, we’ll have two equations of motion, one for the r-coordinate and one for $θ$. Later on, when we apply our constraint, we can reduce these to just an equation of motion for $θ$ as well as an expression for the constraint force.
+For this system, we’ll have two equations of motion, one for the r-coordinate and one for θ. Later on, when we apply our constraint, we can reduce these to just an equation of motion for θ as well as an expression for the constraint force.
 
 Now, the equation of motion for r will be (note that we have only one constraint, so the “sum” on the right-hand side just involves one term with only one Lagrange multiplier):
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{r}}-\frac{\partial L}{\partial r}=\lambda\frac{\partial f}{\partial r}\\\Rightarrow\ \ \frac{d}{dt}\left(m\dot{r}\right)-mr\dot \theta^2=\lambda\\\Rightarrow\ \ \ddot{r}=\frac{\lambda}{m}+r\dot{\theta}^2$$
 
-On the other hand, the equation of motion for $θ$ will be:
+On the other hand, the equation of motion for θ will be:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}-\frac{\partial L}{\partial\theta}=\lambda\frac{\partial f}{\partial\theta}\\\Rightarrow\ \ \frac{d}{dt}\left(mr^2\dot{\theta}\right)=\lambda\left(-a\right)\\\Rightarrow\ \ 2mr\dot{r}\dot{\theta}+mr^2\frac{d\dot{\theta}}{dt}=-a\lambda\\\Rightarrow\ \ \ddot{\theta}=-\frac{a\lambda}{mr^2}-\frac{2}{r}\dot{r}\dot{\theta}$$
 
@@ -666,11 +666,11 @@ $$\ddot{r}=\frac{\lambda}{m}+r\dot{\theta}^2$$
 
 $$\ddot{\theta}=-\frac{a\lambda}{mr^2}-\frac{2}{r}\dot{r}\dot{\theta}$$
 
-We will now apply the constraint r=a$θ$, which means that:
+We will now apply the constraint r=aθ, which means that:
 
 $$\dot{r}=a\dot{\theta}\ {,}\ \ \ddot{r}=a\ddot{\theta}$$
 
-So, using these and r=a$θ$, we have from the first equation of motion (for the r-coordinate):
+So, using these and r=aθ, we have from the first equation of motion (for the r-coordinate):
 
 $$a\ddot{\theta}=\frac{\lambda}{m}+a\theta\dot{\theta}^2\ \ \Rightarrow\ \ \ddot{\theta}=\frac{\lambda}{ma}+\theta\dot{\theta}^2$$
 
@@ -682,11 +682,11 @@ Now, these are both of course equal, so we have:
 
 $$\frac{\lambda}{ma}+\theta\dot{\theta}^2=-\frac{\lambda}{ma\theta^2}-\frac{2}{\theta}\dot{\theta}^2$$
 
-We can solve this for the Lagrange multiplier $λ$:
+We can solve this for the Lagrange multiplier λ:
 
 $$\lambda=-\frac{2\theta+\theta^3}{1+\theta^2}ma\dot{\theta}^2$$
 
-Then, we can also insert this into either of the equations of motion for $θ$ to obtain:
+Then, we can also insert this into either of the equations of motion for θ to obtain:
 
 $$\ddot{\theta}=\frac{\lambda}{ma}+\theta\dot{\theta}^2\\\Rightarrow\ \ \ddot{\theta}=-\frac{2\theta+\theta^3}{1+\theta^2}\dot{\theta}^2+\theta\dot{\theta}^2\\\Rightarrow\ \ \ddot{\theta}=-\frac{\theta}{1+\theta^2}\dot{\theta}^2$$
 
@@ -696,7 +696,7 @@ $$\ddot{\theta}=-\frac{\theta}{1+\theta^2}\dot{\theta}^2$$
 
 $$\lambda=-\frac{2\theta+\theta^3}{1+\theta^2}ma\dot{\theta}^2$$
 
-The constraint forces the directions of both r and $θ$ are then:
+The constraint forces the directions of both r and θ are then:
 
 $$Q_r=\lambda\frac{\partial f}{\partial r}=-\frac{2\theta+\theta^3}{1+\theta^2}ma\dot{\theta}^2$$
 
@@ -706,7 +706,7 @@ $$Q_{\theta}=\lambda\frac{\partial f}{\partial\theta}=\frac{2\theta+\theta^3}{1+
 
 The following example is basically a **particle that begins sliding (initially from rest) down a half-sphere**. At some point, it will **slide off the sphere** and we want to know exactly when the particle leaves the sphere.
 
-In particular, we can describe the particle’s position by an angle $θ$ (relative to the vertical). We therefore want to find the specific angle $θ$0 at which the particle falls off the sphere:
+In particular, we can describe the particle’s position by an angle θ (relative to the vertical). We therefore want to find the specific angle θ0 at which the particle falls off the sphere:
 
 ![](assets/images/constraints-in-lagrangian-mechanics/img_26.webp)
 
@@ -732,7 +732,7 @@ Let’s now look at the equations of motion, which we have two of. First, the eq
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{r}}-\frac{\partial L}{\partial r}=\lambda\frac{\partial f}{\partial r}\\\Rightarrow\ \ \frac{d}{dt}\left(m\dot{r}\right)-\left(mr\dot{\theta}^2-mg\cos\theta\right)=\lambda\\\Rightarrow\ \ \ddot{r}=\frac{\lambda}{m}+r\dot{\theta}^2-g\cos\theta$$
 
-For the $θ$-coordinate, we have:
+For the θ-coordinate, we have:
 
 $$\frac{d}{dt}\frac{\partial L}{\partial\dot{\theta}}-\frac{\partial L}{\partial\theta}=\lambda\frac{\partial f}{\partial\theta}\\\Rightarrow\ \ \frac{d}{dt}\left(mr^2\dot{\theta}\right)-mgr\sin\theta=0\\\Rightarrow\ \ \frac{d}{dt}\left(r^2\dot{\theta}\right)=gr\sin\theta$$
 
@@ -746,7 +746,7 @@ $$0=\frac{\lambda}{m}+R\dot{\theta}^2-g\cos\theta\ \ \Rightarrow\ \ \dot{\theta}
 
 $$\frac{d}{dt}\left(R^2\dot{\theta}\right)=gR\sin\theta\ \ \Rightarrow\ \ \ddot{\theta}=\frac{g}{R}\sin\theta$$
 
-Now, let’s take the time derivative of the first equation (note that we have to use the chain rule on the left-hand side and on the right, $λ$ is generally a function of time):
+Now, let’s take the time derivative of the first equation (note that we have to use the chain rule on the left-hand side and on the right, λ is generally a function of time):
 
 $$\frac{d}{dt}\dot{\theta}^2=\frac{d}{dt}\left(\frac{g}{R}\cos\theta-\frac{\lambda}{mR}\right)$$
 
@@ -754,7 +754,7 @@ $$\Rightarrow\ \ 2\ddot{\theta}\dot{\theta}=-\frac{g}{R}\dot{\theta}\sin\theta-\
 
 $$\Rightarrow\ \ \left(2\ddot{\theta}+\frac{g}{R}\sin\theta\right)\dot{\theta}=-\frac{\dot{\lambda}}{mR}$$
 
-We now use our second equation (the equation for $θ$-double dot) and insert it into this one to get:
+We now use our second equation (the equation for θ-double dot) and insert it into this one to get:
 
 $$\left(2\frac{g}{R}\sin\theta+\frac{g}{R}\sin\theta\right)\dot{\theta}=-\frac{\dot{\lambda}}{mR}\ \ \Rightarrow\ \ \frac{3g}{R}\sin\theta\dot{\theta}=-\frac{\dot{\lambda}}{mR}$$
 
@@ -770,15 +770,15 @@ Note that we also have to add in this integration constant C here. To figure out
 
 $$\dot{\theta}^2=\frac{g}{R}\cos\theta-\frac{\lambda}{mR}$$
 
-If we assume that the particle starts from rest initially, then at t=0, we have both $θ$=0 and $θ$-dot=0, so this equation would be:
+If we assume that the particle starts from rest initially, then at t=0, we have both θ=0 and θ-dot=0, so this equation would be:
 
 $$0=\frac{g}{R}\cos\left(0\right)-\frac{\lambda}{mR}\ \ \Rightarrow\ \ 0=\frac{g}{R}-\frac{\lambda}{mR}$$
 
-Now compare this to what happens for equation (1) from above at t=0 and $θ$=0:
+Now compare this to what happens for equation (1) from above at t=0 and θ=0:
 
 $$-\frac{3g}{R}\cos\left(0\right)=-\frac{1}{mR}\lambda+C\ \ \Rightarrow\ \ 0=\frac{3g}{R}-\frac{\lambda}{mR}+C$$
 
-We can see that in order for both of these equations to match at t=0 (which they should), we must have the terms not involving $λ$ to be equal:
+We can see that in order for both of these equations to match at t=0 (which they should), we must have the terms not involving λ to be equal:
 
 $$\frac{g}{R}=\frac{3g}{R}+C\ \ \Rightarrow\ \ C=-\frac{2g}{R}$$
 
@@ -792,11 +792,11 @@ Now, the normal force is just the constraint force in the radial direction and i
 
 $$Q_r=\lambda\frac{\partial f}{\partial r}=\lambda=0$$
 
-At the point where $λ$, the $θ$-coordinate will have some value $θ$0, which is the angle we’re looking for, so our equation from above then becomes:
+At the point where λ, the θ-coordinate will have some value θ0, which is the angle we’re looking for, so our equation from above then becomes:
 
 $$-\frac{3g}{R}\cos\theta=-\frac{1}{mR}\lambda-\frac{2g}{R}\\\Rightarrow\ \ -\frac{3g}{R}\cos\theta_0=-\frac{2g}{R}\\\Rightarrow\ \ \theta_0=\arccos\left(\frac{2}{3}\right)$$
 
-So, the particle falls off the sphere when the angle is at $θ$0=arccos(2/3), which is approximately $θ$0$≈$48°.
+So, the particle falls off the sphere when the angle is at θ0=arccos(2/3), which is approximately θ0≈48°.
 
 **Quick tip**: To build the mathematical skills necessary for understanding any advanced area of physics, I’d highly recommend checking out my **[Advanced Math For Physics: A Complete Self-Study Course](https://profoundphysicscourses.com/advanced-math/)**. This course will teach you **ALL the advanced math you need to know** – regardless of your previous knowledge – through lessons that focus on intuitive understanding, step-by-step physics examples and worksheets with tons of practice problems.
 

@@ -55,7 +55,7 @@ Larmor’s power formula tells us how much radiation or more precisely, the **po
 
 $$P=\frac{2}{3}\frac{q^2a^2}{4\pi\varepsilon_0c^3}$$
 
-Here, $q$ is the charge of the accelerating charged particle, $a$ is its acceleration, $c$ is the speed of light and $\varepsilon_0$ is the “vacuum  
+Here, q is the charge of the accelerating charged particle, a is its acceleration, c is the speed of light and ε0 is the “vacuum  
 permittivity” constant (a constant of nature that shows up a lot in electrodynamics).
 
 Now, why is this important? Well, **anything that is radiating will lose energy because it gives off radiation**.
@@ -88,11 +88,11 @@ $$\frac{dr}{dt}=\frac{dE}{dt}\frac{dr}{dE}=\frac{dE}{dt}\frac{1}{\frac{dE}{dr}}$
 
 We already have dE/dt from Larmor’s power formula so we just need a formula for the total energy in terms of the radius r.
 
-As in classical mechanics, the total energy is given by kinetic energy plus potential energy. The potential for a point charge in electrodynamics is given by the Coulomb potential (V=-e2/4$π$$\varepsilon_0$r), so we have:
+As in classical mechanics, the total energy is given by kinetic energy plus potential energy. The potential for a point charge in electrodynamics is given by the Coulomb potential (V=-e2/4πε0r), so we have:
 
 $$E=\frac{1}{2}mv^2-\frac{e^2}{4\pi\varepsilon_0r}$$
 
-The electron is in circular motion, which is defined by the following force equation (this comes from the fact that in a circular orbit, the Coulomb force F=e2/4$π$$\varepsilon_0$r2 is exactly balanced by the centrifugal force F=mv2/r):
+The electron is in circular motion, which is defined by the following force equation (this comes from the fact that in a circular orbit, the Coulomb force F=e2/4πε0r2 is exactly balanced by the centrifugal force F=mv2/r):
 
 $$\frac{mv^2}{r}=\frac{e^2}{4\pi\varepsilon_0r^2}$$
 
@@ -112,11 +112,11 @@ Now we can put this all together to find dr/dt:
 
 $$\frac{dr}{dt}=\frac{dE}{dt}\frac{1}{\frac{dE}{dr}}=-\frac{e^2a^2}{6\pi\varepsilon_0c^3}\frac{8\pi\varepsilon_0r^2}{e^2}=-\frac{4}{3}\frac{r^2}{c^3}a^2$$
 
-We still need an equation for the acceleration! Luckily, Newton’s second law (F=ma) handles this for us – the force acting on the electron is given by the Coulomb force F=e2/4$π$$\varepsilon_0$r2, so we have:
+We still need an equation for the acceleration! Luckily, Newton’s second law (F=ma) handles this for us – the force acting on the electron is given by the Coulomb force F=e2/4πε0r2, so we have:
 
 $$\frac{e^2}{4\pi\varepsilon_0r^2}=ma\ \ \Rightarrow\ \ a=\frac{e^2}{4\pi\varepsilon_0mr^2}$$
 
-Here, $m$ is the mass of the electron.
+Here, m is the mass of the electron.
 
 We can now insert this into the expression for dr/dt:
 
@@ -158,7 +158,7 @@ One of the most powerful tools discovered during the development of quantum mech
 
 $$i\hbar\frac{\partial\psi\left(x{,}t\right)}{\partial t}=\left(-\frac{\hbar^2}{2m}\nabla^2+V\left(x{,}t\right)\right)\psi\left(x{,}t\right)$$
 
-The main object in this equation is the **wave function $ψ$(x,t)**. This is a complex function and for an electron is related to the **probability** of finding the electron at a particular point in space and time.
+The main object in this equation is the **wave function ψ(x,t)**. This is a complex function and for an electron is related to the **probability** of finding the electron at a particular point in space and time.
 
 The exact probability is given by squaring the absolute value of the wave function:
 
@@ -166,7 +166,7 @@ $$P=\left|\psi\left(x{,}t\right)\right|^2$$
 
 The point of the Schrödinger equation is to **solve for the wave function**, given a particular potential V(x,t).
 
-The left-hand side of the Schrödinger equation tells us **how the wave function changes with time**. The i is the imaginary unit and $ℏ$ is the reduced Planck’s constant that tells us that what we are dealing with is a quantum object.
+The left-hand side of the Schrödinger equation tells us **how the wave function changes with time**. The i is the imaginary unit and ℏ is the reduced Planck’s constant that tells us that what we are dealing with is a quantum object.
 
 On the right-hand side, we have a **Hamiltonian** term that is a result of turning classical Hamiltonian mechanics into a quantum theory, essentially. If you’re interested, you can read more about Hamiltonian mechanics [here](https://profoundphysics.com/hamiltonian-mechanics-for-dummies/).
 
@@ -190,15 +190,15 @@ $$V\left(r\right)=-\frac{e^2}{4\pi\varepsilon_0r}$$
 
 Now, we’re not going to go through solving the Schrödinger equation for the hydrogen atom here since it’s incredibly complicated, all we need are the key results from it.
 
-When solving the full equation, the wave function separates into an **angular part** and a **radial part** when using **spherical coordinates (r,$θ$,$φ$)** – these are essentially two angles and a radial distance we use to describe the position of the electron around the nucleus.
+When solving the full equation, the wave function separates into an **angular part** and a **radial part** when using **spherical coordinates (r,θ,φ)** – these are essentially two angles and a radial distance we use to describe the position of the electron around the nucleus.
 
 ![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_6.webp)
 
-In this case, the wave function, related to the probability of finding the electron at some point (r,$θ$,$φ$), takes the following form:
+In this case, the wave function, related to the probability of finding the electron at some point (r,θ,φ), takes the following form:
 
 ![](assets/images/why-do-electrons-not-fall-into-the-nucleus/img_8.webp) 
 
-This solution to the wave function, $ψ$ℓnm, actually describes multiple wave functions, one for each value of ℓ, n and m. These are called quantum numbers and for electrons with different quantum numbers, we get different wave functions. We’ll look at these quantum numbers more very soon.
+This solution to the wave function, ψℓnm, actually describes multiple wave functions, one for each value of ℓ, n and m. These are called quantum numbers and for electrons with different quantum numbers, we get different wave functions. We’ll look at these quantum numbers more very soon.
 
 It makes sense to split the wave function like this since the potential is defined purely by radial distance.
 
@@ -206,9 +206,9 @@ Both the radial and the angular part of the wave function can be solved for from
 
 However, an interesting feature of these solutions is that they contain something called **quantum numbers**, which will be important for us.
 
-Now, if we consider the **angular part of the wave function**, the solution to these are something called **spherical harmonics**, denoted as Yℓm($θ$, $φ$).
+Now, if we consider the **angular part of the wave function**, the solution to these are something called **spherical harmonics**, denoted as Yℓm(θ, φ).
 
-These numbers m and ℓ come up naturally when solving the Schrödinger equation. They’re not just any numbers, they’re both integers with ℓ $≥$ 0 and −ℓ $≤$ m $≤$ ℓ.
+These numbers m and ℓ come up naturally when solving the Schrödinger equation. They’re not just any numbers, they’re both integers with ℓ ≥ 0 and −ℓ ≤ m ≤ ℓ.
 
 This may seem like an insignificant feature but what we have just introduced are two quantum numbers – specifically, m is called the **magnetic quantum number** andℓ is the **azimuthal quantum number**.
 
@@ -225,7 +225,7 @@ In fact, this positive integer n, the principal quantum number, describes the **
 $$E_n=-\frac{m_ee^4}{8h^2\varepsilon_0^2}\frac{1}{n^2}$$
 
 Here, me is the mass of the electron, h is Planck’s constant, n > 0 is the principal quantum number, and as before, e  
-and $\varepsilon_0$ are the charge of the electron and the vacuum permittivity constant.
+and ε0 are the charge of the electron and the vacuum permittivity constant.
 
 **It is due to these energy levels that electrons do not fall into the nucleus**.
 
@@ -253,7 +253,7 @@ I want to emphasize the key distinction here – **classically, ALL electrons wo
 
 The process we’re going to discuss next is called **electron capture**. This is when an electron is essentially “captured” by the nucleus, although the word “capturing” might not describe the phenomenon too accurately.
 
-Recall from earlier, we mentioned that the wave function $ψ$ℓnm(r,$θ$,$φ$) is related to the **probability of finding the electron in a specific place**.
+Recall from earlier, we mentioned that the wave function ψℓnm(r,θ,φ) is related to the **probability of finding the electron in a specific place**.
 
 A natural question to ask ourselves is; is it possible to find the electron inside of the nucleus?
 
@@ -261,7 +261,7 @@ Let’s look at a specific wave function – the **ground state wave functions**
 
 $$\psi_0^{10}\left(r{,}\theta{,}\varphi\right)=R_0^1\left(r\right)Y_0^0\left(\theta{,}\varphi\right)$$
 
-If we were to do all the math to find the expressions for R01(r) and Y00($θ$,$φ$) from the Schrödinger equation, we’d find the wave function only depends on the radial distance r and it would have the following form:
+If we were to do all the math to find the expressions for R01(r) and Y00(θ,φ) from the Schrödinger equation, we’d find the wave function only depends on the radial distance r and it would have the following form:
 
 $$\psi_0^{10}\left(r\right)=\frac{1}{\sqrt{\pi}}a_0^{-\frac{3}{2}}e^{-\frac{r}{a_0}}$$
 

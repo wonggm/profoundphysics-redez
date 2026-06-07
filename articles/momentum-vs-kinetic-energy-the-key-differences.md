@@ -83,8 +83,8 @@ Here’s a little comparison of both the momentum components and kinetic energy 
 | Coordinate system | Momentum components | Kinetic energy |
 | --- | --- | --- |
 | Cartesian (x,y,z) | $$p_x=mv_x\\p_y=mv_y\\p_z=mv_z$$ | $$T=\frac{1}{2}m\left(v_x^2+v_y^2+v_z^2\right)$$ |
-| Spherical (r,$θ$,$φ$):  $$x=r\cos\varphi\sin\theta\\y=r\sin\varphi\sin\theta\\z=r\cos\theta$$ | $$p_r=mv_r\\p_{\theta}=mrv_{\theta}\\p_{\varphi}=mr\sin\theta v_{\varphi}$$ | $$T=\frac{1}{2}mv_r^2+\frac{1}{2}mr^2\left(v_{\theta}^2+\sin^2\theta v_{\varphi}^2\right)$$ |
-| Cylindrical (r,$φ$,z):  $$x=r\cos\varphi\\y=r\sin\varphi\\z=z$$ | $$p_r=mv_r\\p_{\varphi}=mrv_{\varphi}\\p_z=mv_z$$ | $$T=\frac{1}{2}m\left(v_r^2+r^2v_{\varphi}^2+v_z^2\right)$$ |
+| Spherical (r,θ,φ):  $$x=r\cos\varphi\sin\theta\\y=r\sin\varphi\sin\theta\\z=r\cos\theta$$ | $$p_r=mv_r\\p_{\theta}=mrv_{\theta}\\p_{\varphi}=mr\sin\theta v_{\varphi}$$ | $$T=\frac{1}{2}mv_r^2+\frac{1}{2}mr^2\left(v_{\theta}^2+\sin^2\theta v_{\varphi}^2\right)$$ |
+| Cylindrical (r,φ,z):  $$x=r\cos\varphi\\y=r\sin\varphi\\z=z$$ | $$p_r=mv_r\\p_{\varphi}=mrv_{\varphi}\\p_z=mv_z$$ | $$T=\frac{1}{2}m\left(v_r^2+r^2v_{\varphi}^2+v_z^2\right)$$ |
 
 Don’t worry if you’re not familiar with how some of these quantities are obtained. The point is that **for momentum, three different values (its components) are required to specify it**. On the other hand, **only one value is needed to specify the kinetic energy (its magnitude)**.
 
@@ -144,7 +144,7 @@ This formula for the momentum is really just a “special case” of something c
 
 $$T=\left(\gamma-1\right)mc^2$$
 
-This $γ$-factor is called the **Lorentz factor** and it is defined as follows:
+This γ-factor is called the **Lorentz factor** and it is defined as follows:
 
 $$\gamma=\frac{1}{\sqrt{1-\frac{\vec{v}\cdot\vec{v}}{c^2}}}=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$$
 
@@ -463,7 +463,7 @@ Hamilton’s equation is defined as follows:
 
 $$\frac{\partial H}{\partial p_i}=\frac{dq_i}{dt}$$
 
-In this equation, $H$ represents the **Hamiltonian** (which is basically the total energy of a system and in many cases, it’s some form of p2/2m), pi is the i:th component of something called **generalized momentum** (for example, px would be the x-momentum) and dqi/dt is the **generalized velocity** (time derivative of “position”, which is represented by *generalized coordinates* in advanced mechanics).
+In this equation, H represents the **Hamiltonian** (which is basically the total energy of a system and in many cases, it’s some form of p2/2m), pi is the i:th component of something called **generalized momentum** (for example, px would be the x-momentum) and dqi/dt is the **generalized velocity** (time derivative of “position”, which is represented by *generalized coordinates* in advanced mechanics).
 
 If you’re interested, a simple introduction to **Hamiltonian mechanics** can be found [here](https://profoundphysics.com/hamiltonian-mechanics-for-dummies/), although I would recommend reading this [introduction to Lagrangian mechanics](https://profoundphysics.com/lagrangian-mechanics-for-beginners/) first.
 
@@ -501,7 +501,7 @@ For a particle with charge q and velocity v, the potential V can be written as:
 
 $$V=q\left(\varphi-\vec{A}\cdot\vec{v}\right)$$
 
-Here, $φ$ represents the electric potential and $A$ is the magnetic potential, both which are useful concepts in electromagnetism.
+Here, φ represents the electric potential and A is the magnetic potential, both which are useful concepts in electromagnetism.
 
 The Lagrangian is then (kinetic energy being simply T=1/2mv2):
 
@@ -535,11 +535,11 @@ $$\vec{p}=\gamma m\vec{v}$$
 **Kinetic energy in special relativity:**  
 $$T=\left(\gamma-1\right)mc^2$$
 
-This $γ$-term is called the **Lorentz factor** and it is a function of velocity defined as follows:
+This γ-term is called the **Lorentz factor** and it is a function of velocity defined as follows:
 
 $$\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$$
 
-Here, $c$ is the speed of light and thus, this Lorentz factor only becomes significantly greater than 1 if the object’s velocity is high enough.
+Here, c is the speed of light and thus, this Lorentz factor only becomes significantly greater than 1 if the object’s velocity is high enough.
 
 The key point in special relativity is that all the equations are slight corrections to classical mechanics which only come to play at high velocities.
 
@@ -563,7 +563,7 @@ From this, it may be easier to see the similarity to the classical equation:
 
 **The classical limit** is defined as the limit in which the speed of light c is MUCH larger than the velocity (or momentum). In this limit, all terms containing c in the denominator can be approximated as zero (since c is such a large number) and we retain the usual p2/2m relation.
 
-In special relativity, there is also an **analogous relation of momentum as the derivative of kinetic energy**. It is, however, slightly different as it contains an extra factor of $γ$2:
+In special relativity, there is also an **analogous relation of momentum as the derivative of kinetic energy**. It is, however, slightly different as it contains an extra factor of γ2:
 
 $$\gamma^2\vec{p}=\frac{\partial T}{\partial\vec{v}}$$
 
@@ -587,7 +587,7 @@ In this case, it’s possible to define a **total energy** for the object in ter
 
 $$E=\sqrt{\left(1-\frac{2GM}{c^2r}\right)m^2c^4+p^2c^2}$$
 
-Here, $M$ is the mass of the planet or whatever mass causing the gravitational field, $m$ is the object’s mass itself, $c$ is the speed of light, G is the gravitational constant and r is the distance (radius) between the object and the central mass M.
+Here, M is the mass of the planet or whatever mass causing the gravitational field, m is the object’s mass itself, c is the speed of light, G is the gravitational constant and r is the distance (radius) between the object and the central mass M.
 
 Here we can again use the binomial theorem and by doing that, we get a series of terms:
 
@@ -621,7 +621,7 @@ This is essentially the same as in classical mechanics, but the difference is th
 
 But what are these operators used for? **Essentially, in quantum mechanics there is something called the wave function, which describes any quantum system. These operators can then *act* on the wave function to obtain a physical quantity**.
 
-In the case of kinetic energy, the kinetic energy operator can act on a wave function $ψ$ to obtain the physical quantity T (this is called the Eigenvalue of the kinetic energy operator, but essentially this is just a value for the kinetic energy, which you have to solve for):
+In the case of kinetic energy, the kinetic energy operator can act on a wave function ψ to obtain the physical quantity T (this is called the Eigenvalue of the kinetic energy operator, but essentially this is just a value for the kinetic energy, which you have to solve for):
 
 $$\hat{T}\psi=T\psi$$
 
