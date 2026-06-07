@@ -55,6 +55,14 @@
     // Matches a Unicode math character anywhere in the text
     const hasMath = /[α-ωΑ-Ωεµℏ∂∇·×±≤≥≠≈∝∑∏∫ℒΩ²³⁰¹⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉⁻⁺∞ħℓ∈∉←→⇒⇔∧∨⊕⊗∫∮∝∞]/;
 
+    // Subscript digits (Unicode)
+    const subs = {'0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉'};
+    // Superscript digits (Unicode)
+    const sups = {'2':'²','3':'³','4':'⁴'};
+    // Context where digit is an exponent (not part of prose number):
+    // followed by / ),, . : ; = + - ( space \n \t or end-of-text
+    const exponentFollow = /(?=[\/(),.:;=+%\-(\s]|$)/;
+
     const walker = document.createTreeWalker(
       el, NodeFilter.SHOW_TEXT,
       {
@@ -76,21 +84,38 @@
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);
     for (const node of nodes) {
-      const text = node.textContent;
+      let text = node.textContent;
+
+      // --- PASS 1: Convert flat ASCII exponents/subscripts to Unicode ---
+      // Order matters: subscripts first, then superscripts (so word-boundary
+      // checks in superscript patterns work after subscript characters).
+      // 1a. Greek letter + digit → subscript (ε0→ε₀, μ0→μ₀, etc.)
+      text = text.replace(/([α-ωΑ-Ω])([0-9]+)/g, (m, l, d) =>
+        l + d.split('').map(c => subs[c] || c).join('')
+      );
+      // 1b. Capital letter + 0 → subscript (R0→R₀, T0→T₀, etc.)
+      text = text.replace(/(?<![a-zA-Z0-9])([A-Z])(0)(?![a-zA-Z0-9])/g, '$1₀');
+      // 1c. Unambiguous charge/light-speed exponents (e2,c2→e²,c²)
+      text = text.replace(/([eEcC])([234])(?=[\/(),.:;=+%+\-\s]|$)/g, (m, l, d) =>
+        l + (sups[d] || d)
+      );
+      // 1d. Common physics exponents before math context (r2/, v2/, p2⁄, etc.)
+      text = text.replace(/([rvapmlLTVMG])([234])(?=[\/(),.:;=+%+\-\s]|$)/g, (m, l, d) =>
+        l + (sups[d] || d)
+      );
+
+      // --- PASS 2: Detect and wrap math tokens in $...$ ---
       if (!hasMath.test(text)) continue;
 
-      // Split into tokens (words or punctuation groups), wrap math-containing tokens
       const tokens = text.split(/(\s+)/);
-      const result = tokens.map(token => {
-        if (token.trim().length === 0) return token;
-        if (hasMath.test(token)) {
-          // Check it's not already inside $...$
-          if (token.startsWith('$') && token.endsWith('$')) return token;
-          return '$' + token + '$';
+      tokens.forEach((token, i) => {
+        if (token.trim().length === 0) return;
+        if (hasMath.test(token) && !(token.startsWith('$') && token.endsWith('$'))) {
+          tokens[i] = '$' + token + '$';
         }
-        return token;
       });
-      const newText = result.join('');
+      const newText = tokens.join('');
+
       if (newText !== text) node.textContent = newText;
     }
   }
